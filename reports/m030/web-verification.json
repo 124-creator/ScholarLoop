@@ -1,0 +1,215 @@
+{
+  "schema_version": "m030.web_verification.v1",
+  "status": "PASS",
+  "W1_single_command_runnable": true,
+  "W1_benchmark_queries_accessible": true,
+  "benchmark_query_count": 30,
+  "W2_faithful_zero_fabrication": true,
+  "api_payload_matches_m020_json": true,
+  "render_field_checks": [
+    {
+      "query_id": "litsearch_000",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21695
+    },
+    {
+      "query_id": "litsearch_001",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22375
+    },
+    {
+      "query_id": "litsearch_002",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22087
+    },
+    {
+      "query_id": "litsearch_003",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21511
+    },
+    {
+      "query_id": "litsearch_004",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22966
+    },
+    {
+      "query_id": "litsearch_005",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21465
+    },
+    {
+      "query_id": "litsearch_006",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22114
+    },
+    {
+      "query_id": "litsearch_007",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21481
+    },
+    {
+      "query_id": "litsearch_008",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 20722
+    },
+    {
+      "query_id": "litsearch_009",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22229
+    },
+    {
+      "query_id": "litsearch_010",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 23652
+    },
+    {
+      "query_id": "litsearch_011",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22550
+    },
+    {
+      "query_id": "litsearch_012",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22322
+    },
+    {
+      "query_id": "litsearch_013",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22085
+    },
+    {
+      "query_id": "litsearch_014",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22505
+    },
+    {
+      "query_id": "litsearch_015",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21550
+    },
+    {
+      "query_id": "litsearch_016",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22952
+    },
+    {
+      "query_id": "litsearch_017",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21999
+    },
+    {
+      "query_id": "litsearch_018",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21431
+    },
+    {
+      "query_id": "litsearch_019",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21682
+    },
+    {
+      "query_id": "litsearch_020",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 22697
+    },
+    {
+      "query_id": "litsearch_021",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21184
+    },
+    {
+      "query_id": "litsearch_022",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 20915
+    },
+    {
+      "query_id": "litsearch_023",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 20844
+    },
+    {
+      "query_id": "litsearch_024",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21724
+    },
+    {
+      "query_id": "litsearch_025",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21946
+    },
+    {
+      "query_id": "litsearch_026",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21786
+    },
+    {
+      "query_id": "litsearch_027",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21487
+    },
+    {
+      "query_id": "litsearch_028",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21910
+    },
+    {
+      "query_id": "litsearch_029",
+      "ok": true,
+      "failures": [],
+      "html_bytes": 21131
+    }
+  ],
+  "official_missing_fields_policy_ok": true,
+  "offline_default": true,
+  "realtime_enabled_default": false,
+  "llm_calls_per_baseline_request": 0,
+  "two_renders_identical": true,
+  "status_badges_present": true,
+  "m010_unchanged": true,
+  "m020_unchanged": true,
+  "demo_manifest": "reports/m030/demo/demo_manifest.json",
+  "secret_scan": {
+    "scanned": [
+      "src",
+      "tests",
+      "reports\\m030",
+      "docs"
+    ],
+    "excluded": [
+      "secrets"
+    ],
+    "secret_like_hits": 0,
+    "hit_files": []
+  },
+  "smoke_console": "reports/m030/smoke_console.txt",
+  "single_command": "PYTHONPATH=src python -m scholarloop.web.app --host 127.0.0.1 --port 8765"
+}

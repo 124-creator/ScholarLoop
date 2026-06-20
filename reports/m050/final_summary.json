@@ -1,0 +1,65 @@
+{
+  "schema_version": "m050.final_summary.v1",
+  "status": "implemented_pending_review",
+  "generated_at": "2026-06-20T00:29:46.6677902Z",
+  "scope_guard": {
+    "wrote_only_m050_layer_and_plan_status": true,
+    "git_repository": false,
+    "upstream_modules_declared_read_only": [
+      "reports/m010",
+      "reports/m020",
+      "reports/m030",
+      "reports/m040",
+      "spike"
+    ]
+  },
+  "verification": {
+    "passed": true,
+    "files": 30,
+    "total_cards": 90,
+    "resolved_cards": 82,
+    "resolved_fields": 164,
+    "manual_fields_preserved": 16,
+    "field_resolution_rate": 0.9111111111111112,
+    "fabricated_count": 0,
+    "zero_fabrication": true,
+    "offline_replay_equals_enriched": true,
+    "crossref_smoke_status": "ok"
+  },
+  "tests": {
+    "pytest": ".....................                                                    [100%]\r\n21 passed in 40.38s",
+    "syntax": "syntax_ok files=10",
+    "verify_command_passed": true
+  },
+  "cache_counts": {
+    "crossref": 1,
+    "openalex": 90
+  },
+  "secret_scan": {
+    "scanned_files_excluding_secrets_dir": 173,
+    "secret_like_hits": 0,
+    "hit_paths_redacted": []
+  },
+  "hashes": {
+    "reports/m050/data-sources.md": "e5256b6d9c98a75589908c095f450f5836addbbb810aef430264c6eb05fb2ab0",
+    "src/scholarloop/connectors/resolver.py": "9c30d0ae936378919fdbb21e869b6ec5f4758a3ddb9c359a55fb695a62a7d691",
+    "docs/dev/plans/050-????API???-??.md": "10a44dff41c82f977d7dc566ba4d243eb98c3fd98ab685c9c115d6974e546817",
+    "reports/m050/verification.json": "9ca75f48840c3eeaded4e434644b13d68ff35d60edfc116aeaf8e8fd17b23339",
+    "src/scholarloop/connectors/verify.py": "c49c963650102f84fe4ea2542d4c79aaccd36df787d4341944f9bda9f655e4c5",
+    "docs/dev/retrospectives/050-????API???-??.md": "c477d3774211529fb8bb7bf8295d55de90fd29e7e273d2b0cbea0fb5ee6578d9",
+    "src/scholarloop/connectors/openalex.py": "23fdb7064ba8ad0d073f630c874fecf85e75a30600b0fb256483ca746e318de1",
+    "tests/test_m050_connectors.py": "e74581b88fc68ccc813a9d3773253bfb030f8f23072c416b111d234361325cb2",
+    "src/scholarloop/connectors/base.py": "f8490cee1772a70306e1e7b848a4a1c4a562dc50f4b61b8d105ce5712bc5e41b"
+  },
+  "primary_artifacts": [
+    "docs/dev/plans/050-????API???-??.md",
+    "docs/dev/retrospectives/050-????API???-??.md",
+    "reports/m050/data-sources.md",
+    "reports/m050/final_summary.json",
+    "reports/m050/verification.json",
+    "src/scholarloop/connectors/**",
+    "tests/fixtures/m050/openalex_search.json",
+    "tests/test_m050_connectors.py"
+  ],
+  "public_snapshot_note": "Raw caches/enriched data were excluded from the public resume-oriented snapshot; verification metrics are preserved in reports/m050/data-sources.md and this summary."
+}

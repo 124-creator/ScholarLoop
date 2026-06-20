@@ -1,0 +1,28 @@
+:root { --bg:#f6f8fb; --ink:#172033; --muted:#64748b; --line:#d9e2ef; --panel:#ffffff; --blue:#0f62fe; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+header { padding: 24px 32px; background: #111827; color: white; }
+header p { margin: 6px 0 0; color:#d1d5db; }
+main { padding: 24px; max-width: 1480px; margin: 0 auto; }
+.panel { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:20px; box-shadow:0 6px 18px rgba(15,23,42,.06); }
+.query { font-size:1.1rem; }
+.muted { color:var(--muted); }
+select, button { padding: 8px 10px; border:1px solid var(--line); border-radius:8px; }
+button { background:var(--blue); color:white; border-color:var(--blue); cursor:pointer; }
+table { width:100%; border-collapse:collapse; margin-top:10px; font-size:.92rem; }
+th, td { border:1px solid var(--line); padding:8px; vertical-align:top; }
+th { background:#eef4ff; text-align:left; }
+.table-wrap { overflow:auto; }
+.matrix th, .matrix td { min-width: 220px; }
+.matrix th:first-child, .matrix td:first-child { min-width:55px; }
+.matrix th:nth-child(2), .matrix td:nth-child(2) { min-width:110px; }
+.snippet { display:inline-block; max-width:360px; }
+.card { margin-top:18px; border-top:3px solid #dbeafe; padding-top:10px; }
+.badge { display:inline-block; margin:2px 6px 2px 0; padding:3px 8px; border-radius:999px; font-size:.82rem; font-weight:700; }
+.status-supported { background:#dcfce7; color:#166534; }
+.status-insufficient { background:#fee2e2; color:#991b1b; }
+.status-disputed { background:#fef3c7; color:#92400e; }
+.status-review { background:#e0e7ff; color:#3730a3; }
+.status-unknown { background:#e5e7eb; color:#374151; }
+.legend { margin: 12px 0; }
+.field-value { max-width: 720px; }

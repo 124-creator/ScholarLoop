@@ -1,0 +1,3 @@
+# Lightweight dependencies for the public smoke tests
+numpy
+pytest

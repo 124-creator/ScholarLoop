@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScholarLoop 科研证据链 Demo</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>ScholarLoop 科研证据链 Demo</h1>
+    <p>默认离线预计算，基准请求 0 LLM 调用；页面字段忠实来自 M020 JSON。</p>
+    <p><strong>{{demo_label}}</strong> · fabrication_rate={{fabrication_rate}} · request_llm_calls={{llm_calls}}</p>
+  </header>
+  <main>
+    <section class="panel">
+      <form method="get" action="/">
+        <label for="qid">选择基准/演示查询</label>
+        <select id="qid" name="qid">{{query_options}}</select>
+        <button type="submit">打开</button>
+      </form>
+      <h2>{{query_id}}</h2>
+      <p class="query">{{query}}</p>
+      {{status_legend}}
+    </section>
+
+    <section class="panel">
+      <h2>1. 查询拆解 / 判据</h2>
+      {{decomposition}}
+    </section>
+
+    <section class="panel">
+      <h2>2. M010 排序清单</h2>
+      <p class="muted">Score/reason 仅在 M010 报告已落字段时展示；未落字段不补写。</p>
+      {{ranking}}
+    </section>
+
+    <section class="panel">
+      <h2>3. 证据矩阵（论文 × 判据）</h2>
+      {{matrix}}
+    </section>
+
+    <section class="panel">
+      <h2>4. 逐篇 10 字段证据卡</h2>
+      <p class="muted">作者/年份、来源/DOI 在离线语料中缺失，恒显示“需人工核验 + 在线连接器提示”。</p>
+      {{cards}}
+    </section>
+  </main>
+</body>
+</html>

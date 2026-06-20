@@ -1,0 +1,50 @@
+{
+  "schema_version": "m050.fixture.openalex_search.v1",
+  "source": "openalex",
+  "method": "GET",
+  "url": "https://api.openalex.org/works",
+  "params": {
+    "search": "Contrastive Distillation on Intermediate Representations for Language Model Compression",
+    "per-page": "1"
+  },
+  "fetched_at": "2026-06-20T00:00:00Z",
+  "status_code": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body_json": {
+    "meta": {
+      "count": 1
+    },
+    "results": [
+      {
+        "id": "https://openalex.org/W3101066076",
+        "doi": "https://doi.org/10.18653/v1/2020.emnlp-main.552",
+        "title": "Contrastive Distillation on Intermediate Representations for Language Model Compression",
+        "display_name": "Contrastive Distillation on Intermediate Representations for Language Model Compression",
+        "publication_year": 2020,
+        "authorships": [
+          {
+            "author": {
+              "display_name": "Xiaoqi Jiao"
+            }
+          },
+          {
+            "author": {
+              "display_name": "Yichun Yin"
+            }
+          }
+        ],
+        "primary_location": {
+          "source": {
+            "display_name": "EMNLP"
+          }
+        },
+        "open_access": {
+          "oa_status": "green"
+        },
+        "cited_by_count": 42
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+# Optional dependencies for full local experiments
+pandas
+rank-bm25
+sentence-transformers
+openai
+arxiv

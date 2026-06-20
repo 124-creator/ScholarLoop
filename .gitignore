@@ -1,0 +1,43 @@
+# Runtime and agent state
+.omx/
+.omc/
+secrets/
+.env
+.env.*
+*.local
+
+# Large data / cache artifacts
+cache/
+raw/
+data/raw/
+*.npy
+*.npz
+*.parquet
+*.zip
+*.7z
+*.tar
+*.gz
+*.pt
+*.pth
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Logs and temporary output
+*.log
+logs/
+tmp/
+temp/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
