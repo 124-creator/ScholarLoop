@@ -27,7 +27,7 @@ The following metrics come from saved evaluation artifacts under `reports/`.
 | Evidence matrix | 30 rendered query docs, 0 fabricated citation fields in the public report |
 | External metadata | OpenAlex / Crossref resolver layer; 82 / 90 sample cards resolved in M050 |
 | M120 click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
-| Public smoke tests | 12 lightweight tests pass in this public snapshot |
+| Public smoke tests | 15 lightweight tests pass in this public snapshot |
 
 
 ## Public demo

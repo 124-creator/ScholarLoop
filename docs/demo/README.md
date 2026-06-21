@@ -6,6 +6,8 @@ This is a public-safe GitHub Pages demo for portfolio and internship review. It 
 
 - Search Loop: query decomposition -> hybrid retrieval -> reranking -> evidence card generation.
 - Trust Loop: source span verification -> trail audit -> human-review boundary.
+- Competition framing: F1, efficiency, structured display, and expert-review value are surfaced in the first screen.
+- Visual language: retrieval uses cyan/blue gradients, evidence uses green, efficiency uses amber, and risk/final-claim states use rose.
 - Honest boundary: the public page does not access private corpora, secrets, raw benchmark caches, or live LLM/API keys.
 
 ## Verification carried from local M120 artifacts
