@@ -23,11 +23,12 @@ The following metrics come from saved evaluation artifacts under `reports/`.
 | Retrieval benchmark | LitSearch 597 queries |
 | A-v2 ranking | F1 = 0.1312, Recall@20 = 0.7564, NDCG@20 = 0.5657 |
 | BM25 baseline | F1 = 0.0964, Recall@20 = 0.5683, NDCG@20 = 0.3931 |
-| Significance | A-v2 vs BM25 ΔF1 = 0.0348, 95% CI = [0.0287, 0.0409] |
+| Significance (LitSearch) | A-v2 vs BM25 ΔF1 = 0.0348, 95% CI = [0.0287, 0.0409] |
+| Cross-benchmark (zero-shot) | RealScholarQuery/PaSa: A-v2 F1 = 0.1972 vs BM25 F1 = 0.1058, ΔF1 = 0.0914, 95% CI = [0.0657, 0.1176], permutation p < 1e-4 — frozen M040 config |
 | Evidence matrix | 30 rendered query docs, 0 fabricated citation fields in the public report |
 | External metadata | OpenAlex / Crossref resolver layer; 82 / 90 sample cards resolved in M050 |
 | Click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
-| Public smoke tests | 15 lightweight tests pass in this public snapshot |
+| Public smoke tests | 17 lightweight tests pass in this public snapshot |
 
 
 ## Public demo
@@ -76,6 +77,7 @@ reports/m030/web-verification.json             Web rendering verification
 reports/m040/A-v2评测报告.md                    A-v2 ranking and significance report
 reports/m050/final_summary.json                metadata resolver summary
 reports/m050/data-sources.md                   public data-source notes
+reports/m060/RealScholarQuery-cross-benchmark.md  second-benchmark zero-shot generalization summary
 reports/m120/public_validation_summary.json      public demo verification summary
 ```
 
