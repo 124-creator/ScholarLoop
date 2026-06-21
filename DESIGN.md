@@ -8,9 +8,8 @@
   - `README.md`: repository-level project proof.
   - `docs/demo/README.md`: demo boundary and verification notes.
 - Evidence reviewed:
-  - Source project: `D:\碳价格\11\实验十一十一\田\工作流-agent\工作流解决第二个问题-人工智能比赛`
-  - M120 plan/report: click-to-verify demo, span fidelity, trail fidelity.
-  - M130 plan: flagship demo direction, deterministic SVG graph, design-token-driven visual upgrade.
+  - verified plan/report: click-to-verify demo, span fidelity, trail fidelity.
+  - flagship plan: flagship demo direction, deterministic SVG graph, design-token-driven visual upgrade.
   - Public reports: `reports/m120/public_validation_summary.json`.
 
 ## Brand
@@ -22,10 +21,10 @@
 - Goals:
   - Make the AI competition direction obvious in the first screen.
   - Show that ScholarLoop is a trusted academic search and evidence-chain agent, not only a ranking list.
-  - Translate local verified M120 artifacts into a public-safe recruiter-facing demo.
+  - Translate local verified artifacts into a public-safe recruiter-facing demo.
 - Non-goals:
   - Do not expose private corpora, secrets, raw caches, or unpublished competition data.
-  - Do not present M130 planned realtime features as verified production behavior.
+  - Do not present optional realtime search as verified production behavior.
 - Success signals:
   - Visitor can identify official scoring logic, Search Loop, Trust Loop, and verification metrics within 60 seconds.
   - Page contains zero fabricated live-service claims.
@@ -153,4 +152,4 @@
   - Render screenshot after visual changes.
 
 ## Open questions
-- [ ] If M130 realtime `/studio` becomes verified later, decide whether public demo should expose a separate “realtime non-verified” mode.
+- [ ] If flagship realtime `/studio` becomes verified later, decide whether public demo should expose a separate “realtime non-verified” mode.

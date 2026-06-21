@@ -26,7 +26,7 @@ The following metrics come from saved evaluation artifacts under `reports/`.
 | Significance | A-v2 vs BM25 ΔF1 = 0.0348, 95% CI = [0.0287, 0.0409] |
 | Evidence matrix | 30 rendered query docs, 0 fabricated citation fields in the public report |
 | External metadata | OpenAlex / Crossref resolver layer; 82 / 90 sample cards resolved in M050 |
-| M120 click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
+| Click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
 | Public smoke tests | 15 lightweight tests pass in this public snapshot |
 
 
@@ -40,7 +40,7 @@ The public page is designed for recruiter review and shows the core workflow wit
 - **Trust Loop:** source-span verification -> artifact trace -> human-review boundary.
 - **Click-to-verify:** fields are highlighted only when `source_text[char_span] == field value`; otherwise they remain marked for manual review.
 
-Local verified demo endpoints from M120: `/pro`, `/api/verify_span`, `/api/trail` (offline, 0 LLM calls per request).
+Verified offline demo endpoints: `/pro`, `/api/verify_span`, `/api/trail` (offline, 0 LLM calls per request).
 
 ## Architecture
 
