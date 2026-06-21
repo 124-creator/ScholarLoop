@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_245",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_245",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_245",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_245",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1787,
+      "latency_s": 11.489056500024162
+    },
+    {
+      "query_id": "litsearch_245",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 399,
+      "latency_s": 3.0169416000135243
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_245",
+    "gold": [
+      250390995
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "BERT zero-shot text classification Wikipedia training",
+      "BERT open domain zero-shot classification using Wikipedia",
+      "training BERT classifier with Wikipedia for zero-shot classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248779964,
+        214816511,
+        233364964,
+        199453032,
+        243885635,
+        202566001,
+        250390995,
+        252544759,
+        252763316,
+        243844970,
+        220045392,
+        247793148,
+        17789607,
+        15277269,
+        233365270,
+        250311633,
+        51879969,
+        13629456,
+        234777930,
+        222310263
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390995,
+        214816511,
+        236460138,
+        253237192,
+        222310263,
+        202566001,
+        222133909,
+        253116650,
+        236486219,
+        243844970,
+        220045392,
+        53082972,
+        235422323,
+        245218746,
+        243865290,
+        236460311,
+        226283900,
+        238857091,
+        259370850,
+        247793148
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226283900,
+        236460138,
+        250390995,
+        233324544,
+        241583343,
+        253107490,
+        216562574,
+        59604492,
+        258378161,
+        253237192,
+        222133199,
+        18795006,
+        2988658,
+        202566001,
+        219179429,
+        2426309,
+        236460311,
+        253762023,
+        15436060,
+        207853103
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253237192,
+        220045392,
+        236460138,
+        250390995,
+        252544759,
+        243844970,
+        202566001,
+        214816511,
+        222310263,
+        247793148,
+        233364964,
+        226283900
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390995,
+        236460138,
+        226283900,
+        253237192,
+        202566001,
+        241583343,
+        236460311,
+        216562574,
+        253762023,
+        222310263,
+        202782267,
+        59604492,
+        253116650,
+        202766917,
+        258378161,
+        219179429,
+        52247458,
+        259370850,
+        233324544,
+        238857091
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.192400100058876
+  },
+  "reason_example": {
+    "query_id": "litsearch_245",
+    "query": "Could you suggest research that investigates training BERT-based classifiers with Wikipedia data for zero-shot text classification in open domains?",
+    "top_results": [
+      {
+        "corpusid": 250390995,
+        "score": 0.9679027795791626,
+        "reason": "bm25=1.000; dense=0.947; sub_bm25=1.000; sub_dense=0.902"
+      },
+      {
+        "corpusid": 236460138,
+        "score": 0.9577810764312744,
+        "reason": "bm25=0.918; dense=0.984; sub_bm25=0.989; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226283900,
+        "score": 0.9078162908554077,
+        "reason": "bm25=0.770; dense=1.000; sub_bm25=0.810; sub_dense=0.933"
+      },
+      {
+        "corpusid": 253237192,
+        "score": 0.891292154788971,
+        "reason": "bm25=0.899; dense=0.886; sub_bm25=1.000; sub_dense=0.983"
+      },
+      {
+        "corpusid": 202566001,
+        "score": 0.8631042242050171,
+        "reason": "bm25=0.839; dense=0.879; sub_bm25=0.931; sub_dense=0.913"
+      }
+    ]
+  }
+}

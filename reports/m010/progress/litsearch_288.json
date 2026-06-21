@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_288",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_288",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_288",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_288",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1003,
+      "latency_s": 5.005326600046828
+    },
+    {
+      "query_id": "litsearch_288",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 346,
+      "latency_s": 2.7845189999789
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_288",
+    "gold": [
+      231648372
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "fine-tuning mBERT word alignment multilingual",
+      "improving word-level alignment multilingual BERT",
+      "mBERT fine-tuning cross-lingual word alignment"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6487607,
+        727900,
+        126584,
+        258463940,
+        2988891,
+        261431370,
+        16735640,
+        5877730,
+        245838346,
+        3295641,
+        258547278,
+        248779928,
+        235658689,
+        43289219,
+        248228052,
+        15662979,
+        42274547,
+        1241421,
+        11644259,
+        248779948
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237593117,
+        231719085,
+        237513452,
+        248779928,
+        256461301,
+        233364968,
+        223953566,
+        234168853,
+        236486098,
+        235097251,
+        259833873,
+        216915063,
+        237485603,
+        248779948,
+        249394890,
+        215745460,
+        218580945,
+        255894238,
+        222066642,
+        252819270
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7541406,
+        922215,
+        908361,
+        12497428,
+        2667234,
+        9936890,
+        7498059,
+        6487607,
+        8048647,
+        7899357,
+        11989788,
+        14728979,
+        2144821,
+        8088725,
+        10109731,
+        12366433,
+        17887326,
+        207925651,
+        9075846,
+        10146127
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        216915063,
+        223953566
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        223953566,
+        922215,
+        236486098,
+        225062494,
+        236940581,
+        237593117,
+        14531125,
+        231740666,
+        231648372,
+        231719085,
+        11503583,
+        233364968,
+        248779928,
+        6487607,
+        216915063,
+        8048647,
+        234168853,
+        14602909,
+        215745460,
+        225067077
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.725630800006911
+  },
+  "reason_example": {
+    "query_id": "litsearch_288",
+    "query": "Is there any paper that tried fine-tuning mBERT to enhance word-level alignment in a multilingual setting?",
+    "top_results": [
+      {
+        "corpusid": 223953566,
+        "score": 0.8817576766014099,
+        "reason": "bm25=0.877; dense=0.885; sub_bm25=0.802; sub_dense=0.927"
+      },
+      {
+        "corpusid": 922215,
+        "score": 0.8699432611465454,
+        "reason": "bm25=0.700; dense=0.983; sub_bm25=0.678; sub_dense=0.902"
+      },
+      {
+        "corpusid": 236486098,
+        "score": 0.8562159538269043,
+        "reason": "bm25=0.833; dense=0.872; sub_bm25=0.691; sub_dense=0.819"
+      },
+      {
+        "corpusid": 225062494,
+        "score": 0.8494141101837158,
+        "reason": "bm25=0.748; dense=0.917; sub_bm25=0.867; sub_dense=0.984"
+      },
+      {
+        "corpusid": 236940581,
+        "score": 0.8462141752243042,
+        "reason": "bm25=0.753; dense=0.908; sub_bm25=1.000; sub_dense=0.981"
+      }
+    ]
+  }
+}

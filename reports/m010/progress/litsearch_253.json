@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_253",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_253",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_253",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_253",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1307,
+      "latency_s": 8.056972800055519
+    },
+    {
+      "query_id": "litsearch_253",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 279,
+      "latency_s": 2.0989096000557765
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_253",
+    "gold": [
+      237532398
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "overfitting mitigation in weakly-supervised learning",
+      "adversarial training for weak supervision overfitting",
+      "labeling function influence hyperparameter feature representation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17173602,
+        5097820,
+        6723570,
+        8292781,
+        2069120,
+        16263080,
+        16584852,
+        18792136,
+        258685798,
+        12311990,
+        7849238,
+        249204465,
+        84591,
+        13400865,
+        17558767,
+        7567116,
+        13612096,
+        253628225,
+        237532398,
+        15218055
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237532398,
+        14432659,
+        52912118,
+        259370879,
+        84591,
+        250390873,
+        248427082,
+        252907833,
+        17746087,
+        256194556,
+        235293778,
+        246607791,
+        210902499,
+        220047277,
+        12167053,
+        260551862,
+        251341969,
+        220127956,
+        236477519,
+        184483044
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258959063,
+        237532398,
+        252762386,
+        174799895,
+        257913312,
+        220403547,
+        222091019,
+        258833682,
+        248427082,
+        253708071,
+        6706414,
+        256459301,
+        233210661,
+        237513714,
+        214107001,
+        3461223,
+        235313510,
+        251465642,
+        247518540,
+        53047456
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237532398,
+        84591,
+        236477519,
+        252762386,
+        258959063,
+        248427082,
+        220047277,
+        3461223,
+        14432659,
+        52912118,
+        259370879,
+        222290992
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237532398,
+        258959063,
+        248427082,
+        252762386,
+        222091019,
+        257913312,
+        3461223,
+        174799895,
+        220403547,
+        204824219,
+        236477519,
+        6706414,
+        222290992,
+        12167053,
+        260551862,
+        258987503,
+        252819177,
+        233481716,
+        14432659,
+        256194556
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.000718399998732
+  },
+  "reason_example": {
+    "query_id": "litsearch_253",
+    "query": "Has any research tried to mitigate overfitting in weakly-supervised settings by introducing an adversarial framework where the influence of the labeling function is a hyperparameter for the feature representation?",
+    "top_results": [
+      {
+        "corpusid": 237532398,
+        "score": 0.9816551208496094,
+        "reason": "bm25=1.000; dense=0.969; sub_bm25=0.916; sub_dense=0.889"
+      },
+      {
+        "corpusid": 258959063,
+        "score": 0.882038950920105,
+        "reason": "bm25=0.705; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248427082,
+        "score": 0.8453867435455322,
+        "reason": "bm25=0.807; dense=0.871; sub_bm25=1.000; sub_dense=0.908"
+      },
+      {
+        "corpusid": 252762386,
+        "score": 0.8283848762512207,
+        "reason": "bm25=0.673; dense=0.932; sub_bm25=0.999; sub_dense=0.963"
+      },
+      {
+        "corpusid": 222091019,
+        "score": 0.825069785118103,
+        "reason": "bm25=0.713; dense=0.900; sub_bm25=0.539; sub_dense=0.925"
+      }
+    ]
+  }
+}

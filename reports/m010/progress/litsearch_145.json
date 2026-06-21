@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_145",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_145",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_145",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_145",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1067,
+      "latency_s": 6.50616109999828
+    },
+    {
+      "query_id": "litsearch_145",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 339,
+      "latency_s": 2.9752349000191316
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_145",
+    "gold": [
+      249062748
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "feedback-driven decoding mathematical proofs language models",
+      "feedback decoding theorem proving language models",
+      "iterative refinement decoding proof generation LLMs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219309121,
+        764565,
+        8752606,
+        233029494,
+        199022672,
+        9078813,
+        2840902,
+        7591554,
+        15204692,
+        2175391,
+        3926047,
+        6168320,
+        7440991,
+        8349712,
+        8517763,
+        20776159,
+        23804177,
+        38405135,
+        119309472,
+        48356329
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257038305,
+        233189570,
+        235368289,
+        253098549,
+        220044873,
+        11636573,
+        19013767,
+        209387628,
+        549981,
+        1188168,
+        247940075,
+        256901172,
+        3543642,
+        259376659,
+        251371461,
+        247613006,
+        259376609,
+        15798344,
+        229371222,
+        12601574
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7067122,
+        14249992,
+        229371222,
+        253098549,
+        2860572,
+        19013767,
+        246485695,
+        257427208,
+        16956305,
+        1397113,
+        231879554,
+        233189570,
+        257038305,
+        263334074,
+        252693237,
+        262084051,
+        257404922,
+        85504763,
+        256901172,
+        222141025
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253098549,
+        229371222,
+        257427208,
+        263334074,
+        233189570,
+        216869018,
+        220044873,
+        235368289,
+        257038305,
+        19013767,
+        209387628,
+        256901172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257038305,
+        253098549,
+        233189570,
+        19013767,
+        229371222,
+        235368289,
+        256901172,
+        209387628,
+        7067122,
+        14249992,
+        2860572,
+        263334074,
+        262084051,
+        220044873,
+        257427208,
+        246485695,
+        222141025,
+        46928091,
+        216869018,
+        237372712
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.853685999987647
+  },
+  "reason_example": {
+    "query_id": "litsearch_145",
+    "query": "Could you recommend a study that uses feedback-driven decoding for producing mathematical proofs using language models?",
+    "top_results": [
+      {
+        "corpusid": 257038305,
+        "score": 0.9459081888198853,
+        "reason": "bm25=1.000; dense=0.910; sub_bm25=1.000; sub_dense=0.927"
+      },
+      {
+        "corpusid": 253098549,
+        "score": 0.9388664960861206,
+        "reason": "bm25=0.880; dense=0.978; sub_bm25=0.844; sub_dense=0.951"
+      },
+      {
+        "corpusid": 233189570,
+        "score": 0.9323238730430603,
+        "reason": "bm25=0.964; dense=0.911; sub_bm25=0.502; sub_dense=0.865"
+      },
+      {
+        "corpusid": 19013767,
+        "score": 0.9175321459770203,
+        "reason": "bm25=0.852; dense=0.961; sub_bm25=0.928; sub_dense=0.932"
+      },
+      {
+        "corpusid": 229371222,
+        "score": 0.8753429651260376,
+        "reason": "bm25=0.718; dense=0.980; sub_bm25=0.520; sub_dense=1.000"
+      }
+    ]
+  }
+}

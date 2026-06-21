@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_520",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_520",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_520",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_520",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2069,
+      "latency_s": 13.391166200046428
+    },
+    {
+      "query_id": "litsearch_520",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 380,
+      "latency_s": 2.9113391999853775
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_520",
+    "gold": [
+      259138821
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "Bayesian optimization modular continual learning",
+      "Bayesian optimization for modular continual learning",
+      "modular continual learning Bayesian optimization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7267216,
+        7440991,
+        7586460,
+        14324763,
+        17934328,
+        2136464,
+        32965084,
+        6395440,
+        5199533,
+        18619139,
+        6540287,
+        11846872,
+        2354804,
+        1705467,
+        9246755,
+        11702752,
+        18634342,
+        243865348,
+        18355003,
+        2862221
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259138821,
+        174802369,
+        246430145,
+        229363613,
+        209832425,
+        231639158,
+        6550107,
+        59523607,
+        259370817,
+        258987795,
+        12631751,
+        222272028,
+        263791008,
+        243865565,
+        246634117,
+        52910185,
+        248085415,
+        257532608,
+        235613568,
+        257019961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259138821,
+        229363613,
+        209832425,
+        13570924,
+        59523607,
+        227162606,
+        208202124,
+        222272028,
+        174802369,
+        256390383,
+        219636462,
+        257636846,
+        53100211,
+        7586460,
+        253707922,
+        259164684,
+        211132756,
+        249097739,
+        222290737,
+        48352800
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259138821,
+        229363613,
+        174802369,
+        59523607,
+        209832425,
+        258987795,
+        12631751,
+        259370817,
+        246430145,
+        7586460,
+        243865565,
+        1160947
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259138821,
+        229363613,
+        209832425,
+        174802369,
+        59523607,
+        222272028,
+        208202124,
+        246430145,
+        6550107,
+        13570924,
+        257636846,
+        258987795,
+        227162606,
+        7586460,
+        259370817,
+        257019961,
+        247793212,
+        53100211,
+        239024453,
+        211132756
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.052474499912933
+  },
+  "reason_example": {
+    "query_id": "litsearch_520",
+    "query": "Is there a paper which applies Bayesian optimization to modular continual learning?",
+    "top_results": [
+      {
+        "corpusid": 259138821,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.995; sub_dense=1.000"
+      },
+      {
+        "corpusid": 229363613,
+        "score": 0.912560224533081,
+        "reason": "bm25=0.918; dense=0.909; sub_bm25=0.947; sub_dense=0.890"
+      },
+      {
+        "corpusid": 209832425,
+        "score": 0.8941351175308228,
+        "reason": "bm25=0.913; dense=0.881; sub_bm25=0.980; sub_dense=0.898"
+      },
+      {
+        "corpusid": 174802369,
+        "score": 0.8413843512535095,
+        "reason": "bm25=0.947; dense=0.771; sub_bm25=0.977; sub_dense=0.797"
+      },
+      {
+        "corpusid": 59523607,
+        "score": 0.8306595087051392,
+        "reason": "bm25=0.863; dense=0.809; sub_bm25=0.923; sub_dense=0.825"
+      }
+    ]
+  }
+}

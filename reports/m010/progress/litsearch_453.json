@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_453",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_453",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_453",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_453",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1289,
+      "latency_s": 9.033534099929966
+    },
+    {
+      "query_id": "litsearch_453",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 782,
+      "latency_s": 7.418809099937789
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_453",
+    "gold": [
+      259370532
+    ],
+    "pool_size": 227,
+    "decomposition": [
+      "first demonstration cross-lingual transfer from multilingual masked language model training",
+      "paper shows multilingual BERT can do cross-lingual inference without parallel data",
+      "emergence of cross-lingual alignment in multilingual language models pretrained with MLM"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235313749,
+        258486881,
+        215548041,
+        207853103,
+        257353833,
+        236460170,
+        233364957,
+        2559807,
+        8033304,
+        248512463,
+        216641748,
+        196184195,
+        236155012,
+        235417503,
+        256461255,
+        216562431,
+        202539539,
+        259370532,
+        15156124,
+        248780442
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247476003,
+        259370532,
+        218580945,
+        215548041,
+        236460170,
+        52094910,
+        209079290,
+        53110354,
+        216553264,
+        248512463,
+        256461245,
+        207853103,
+        201124803,
+        257353833,
+        256461134,
+        258947845,
+        52271711,
+        26873455,
+        52307294,
+        235313749
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258947231,
+        53601909,
+        237513421,
+        247476003,
+        214727705,
+        235683062,
+        243865412,
+        11829630,
+        215548041,
+        222142647,
+        248240015,
+        199022396,
+        238531718,
+        216914383,
+        207853103,
+        237485603,
+        207880568,
+        253762088,
+        202539655,
+        202122091
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370532,
+        247476003,
+        235313749,
+        235683062,
+        218580945
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247476003,
+        259370532,
+        215548041,
+        258947231,
+        237513421,
+        243865412,
+        207853103,
+        235683062,
+        236460170,
+        222142647,
+        253762088,
+        214727705,
+        199022396,
+        52307294,
+        256461134,
+        218580945,
+        238531718,
+        256461245,
+        216914383,
+        255894238
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.919366499991156
+  },
+  "reason_example": {
+    "query_id": "litsearch_453",
+    "query": "Which paper first found that multilingual models can inference cross-lingual supervision in MLM training by themself?",
+    "top_results": [
+      {
+        "corpusid": 247476003,
+        "score": 0.959973931312561,
+        "reason": "bm25=1.000; dense=0.933; sub_bm25=1.000; sub_dense=0.977"
+      },
+      {
+        "corpusid": 259370532,
+        "score": 0.8584485054016113,
+        "reason": "bm25=0.942; dense=0.803; sub_bm25=0.957; sub_dense=0.986"
+      },
+      {
+        "corpusid": 215548041,
+        "score": 0.8338222503662109,
+        "reason": "bm25=0.754; dense=0.887; sub_bm25=0.683; sub_dense=0.945"
+      },
+      {
+        "corpusid": 258947231,
+        "score": 0.8117955923080444,
+        "reason": "bm25=0.529; dense=1.000; sub_bm25=0.832; sub_dense=0.944"
+      },
+      {
+        "corpusid": 237513421,
+        "score": 0.810487687587738,
+        "reason": "bm25=0.612; dense=0.943; sub_bm25=0.770; sub_dense=1.000"
+      }
+    ]
+  }
+}

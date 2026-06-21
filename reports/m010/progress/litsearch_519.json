@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_519",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_519",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_519",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_519",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1446,
+      "latency_s": 9.60459040000569
+    },
+    {
+      "query_id": "litsearch_519",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 253,
+      "latency_s": 1.9169026999734342
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_519",
+    "gold": [
+      262828485
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "code translation machine learning solver hybrid",
+      "mixed neural symbolic code translation",
+      "solver-assisted machine translation programming languages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14869687,
+        51881529,
+        6456225,
+        9290361,
+        16715295,
+        1160,
+        169053,
+        18359398,
+        2705641,
+        925851,
+        45897261,
+        7739917,
+        14727849,
+        20695016,
+        3681367,
+        13002040,
+        31466544,
+        2604125,
+        39840456,
+        1874608
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        215827471,
+        2684696,
+        17455216,
+        182486653,
+        29265999,
+        11536389,
+        258463940,
+        53080549,
+        248780371,
+        220845513,
+        138976,
+        5471567,
+        257767728,
+        7721579,
+        186206312,
+        235097347,
+        236478008,
+        236428698,
+        234336760,
+        12262608
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235097318,
+        256461253,
+        259261891,
+        6857627,
+        257102633,
+        16318677,
+        235097476,
+        232307359,
+        253098406,
+        215827471,
+        15332825,
+        250408279,
+        253761435,
+        253116642,
+        236478008,
+        235097593,
+        235097400,
+        3846429,
+        262828485,
+        258463940
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235097318,
+        215827471,
+        256461253,
+        235097476,
+        253098406,
+        258463940,
+        53080549,
+        236478008,
+        257102633,
+        259261891,
+        182486653,
+        3846429,
+        29265999,
+        235097593,
+        235097400,
+        6857627,
+        262828485,
+        246294794,
+        235097347,
+        243885635
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.49356119998265
+  },
+  "reason_example": {
+    "query_id": "litsearch_519",
+    "query": "Is there a paper that takes a mixed machine learning and solver based approach to code translation?",
+    "top_results": [
+      {
+        "corpusid": 235097318,
+        "score": 0.9535115957260132,
+        "reason": "bm25=0.884; dense=1.000; sub_bm25=0.676; sub_dense=0.895"
+      },
+      {
+        "corpusid": 215827471,
+        "score": 0.9118798971176147,
+        "reason": "bm25=1.000; dense=0.853; sub_bm25=0.806; sub_dense=0.896"
+      },
+      {
+        "corpusid": 256461253,
+        "score": 0.8820618987083435,
+        "reason": "bm25=0.711; dense=0.996; sub_bm25=0.962; sub_dense=0.947"
+      },
+      {
+        "corpusid": 235097476,
+        "score": 0.8757539987564087,
+        "reason": "bm25=0.891; dense=0.865; sub_bm25=1.000; sub_dense=0.983"
+      },
+      {
+        "corpusid": 253098406,
+        "score": 0.8667415380477905,
+        "reason": "bm25=0.870; dense=0.865; sub_bm25=0.891; sub_dense=0.946"
+      }
+    ]
+  }
+}

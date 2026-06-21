@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_272",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_272",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_272",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_272",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1663,
+      "latency_s": 10.540737099945545
+    },
+    {
+      "query_id": "litsearch_272",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 338,
+      "latency_s": 2.601086000096984
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_272",
+    "gold": [
+      252847559
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "conversational agents knowledge graph inner state",
+      "continually updated knowledge graph dialogue agent",
+      "environment-driven knowledge graph update conversational agent"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252519245,
+        330545,
+        62435274,
+        10707097,
+        9462924,
+        2638525,
+        2913402,
+        3557602,
+        247778993,
+        167261,
+        236460257,
+        24663,
+        2718048,
+        3721101,
+        262464409,
+        36483408,
+        15868179,
+        18210792,
+        143428758,
+        9431510
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        246634966,
+        258331519,
+        53080145,
+        252519245,
+        3921978,
+        3503217,
+        221446298,
+        248780350,
+        244270768,
+        237373991,
+        7825911,
+        8898217,
+        260611249,
+        249538584,
+        67855277,
+        222133043,
+        2718048,
+        262464409,
+        196471395,
+        248496316
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252519245,
+        226283651,
+        189762068,
+        3051772,
+        237373991,
+        5692875,
+        266903,
+        10998513,
+        16015588,
+        199000861,
+        5054452,
+        68167178,
+        6683636,
+        209062599,
+        121303947,
+        10674151,
+        7653072,
+        14395328,
+        11194244,
+        53218829
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252519245,
+        18434623,
+        10674151,
+        7825911,
+        237373991,
+        53080145,
+        196471395,
+        2718048,
+        262464409,
+        62435274,
+        246634966,
+        258331519
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252519245,
+        237373991,
+        189762068,
+        7825911,
+        226283651,
+        53080145,
+        258331519,
+        2751063,
+        246634966,
+        248496316,
+        3051772,
+        53218829,
+        196471395,
+        12703641,
+        18434623,
+        2718048,
+        262464409,
+        52891534,
+        52012539,
+        249926641
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.895279200049117
+  },
+  "reason_example": {
+    "query_id": "litsearch_272",
+    "query": "Have any research papers tried to create conversational agents with inner states represented by a knowledge graph that can be continually updated based on the agent’s environment?",
+    "top_results": [
+      {
+        "corpusid": 252519245,
+        "score": 0.9354063868522644,
+        "reason": "bm25=0.839; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237373991,
+        "score": 0.7745981216430664,
+        "reason": "bm25=0.767; dense=0.780; sub_bm25=1.000; sub_dense=0.871"
+      },
+      {
+        "corpusid": 189762068,
+        "score": 0.7427332401275635,
+        "reason": "bm25=0.664; dense=0.795; sub_bm25=0.868; sub_dense=0.989"
+      },
+      {
+        "corpusid": 7825911,
+        "score": 0.7160850763320923,
+        "reason": "bm25=0.763; dense=0.685; sub_bm25=0.937; sub_dense=0.705"
+      },
+      {
+        "corpusid": 226283651,
+        "score": 0.700650155544281,
+        "reason": "bm25=0.551; dense=0.800; sub_bm25=0.814; sub_dense=0.899"
+      }
+    ]
+  }
+}

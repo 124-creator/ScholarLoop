@@ -1,0 +1,17 @@
+{
+  "schema_version": "m100.upstream_hashes.v1",
+  "checked_at_utc": "2026-06-20T12:49:42.817951+00:00",
+  "baseline": "reports/m090/upstream_hashes.json for M010-M080 frozen reports/src-web; reports/m090 checked inside this validation window.",
+  "m010_to_m080_prior_files_checked": 3746,
+  "m010_to_m080_changed_vs_m090_count": 0,
+  "m010_to_m080_missing_count": 0,
+  "m010_to_m080_changed_vs_m090": [],
+  "m010_to_m080_missing": [],
+  "reports_m090_validation_window": {
+    "before_sha256": "c0627d2fd65358cab10a5c0b2b17a26b3ee54a359d7475a852e3460bb0da9674",
+    "after_sha256": "c0627d2fd65358cab10a5c0b2b17a26b3ee54a359d7475a852e3460bb0da9674",
+    "unchanged": true
+  },
+  "allowed_m100_changes_note": "M100 added new demo routes/modules and reports; M080 verified outputs remain checked through reports/m080 hashes.",
+  "passed": true
+}

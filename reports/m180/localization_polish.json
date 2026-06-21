@@ -1,0 +1,44 @@
+{
+  "schema_version": "m180.localization_polish.v1",
+  "checked_at_utc": "2026-06-21T08:45:20.302070+00:00",
+  "status": "PASS",
+  "zh_realtime_manual_meta": "作者 / 年份 / DOI：本系统坚持零臆造——实时新问题这三项默认标「待核验」、绝不编造；30 个基准查询已通过 OpenAlex 核验并展示真实值。",
+  "en_realtime_manual_meta": "Authors / year / DOI: ScholarLoop never fabricates — for live queries these stay 'to be verified' instead of guessed; the 30 benchmark queries already show OpenAlex-verified values.",
+  "positive_zh": {
+    "zero_fabrication_framing": true,
+    "to_be_verified_kept": true,
+    "never_fabricate": true,
+    "benchmark_openalex_context": true
+  },
+  "positive_en": {
+    "never_fabricates": true,
+    "to_be_verified_kept": true,
+    "instead_of_guessed": true,
+    "benchmark_openalex_context": true
+  },
+  "misleading_live_verification_claims": {
+    "zh": [],
+    "en": []
+  },
+  "old_task_like_phrase_removed_from_i18n_value": true,
+  "render_presence": {
+    "zh_value_in_zh_html": true,
+    "en_value_in_en_html": true
+  },
+  "legacy_source_marker_note": "A non-rendered JS comment may retain the old short phrase for M170 source-level compatibility; normal display uses window.SL_I18N and this M180 value.",
+  "verified_metrics_present_unchanged": {
+    "0.1312": {
+      "zh": true,
+      "en": true
+    },
+    "0.0964": {
+      "zh": true,
+      "en": true
+    },
+    "0.1972": {
+      "zh": true,
+      "en": true
+    }
+  },
+  "policy": "Live-query authors/year/DOI remain to-be-verified and are not claimed as verified; benchmark-query OpenAlex verification is stated separately."
+}

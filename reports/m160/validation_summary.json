@@ -1,0 +1,50 @@
+{
+  "schema_version": "m160.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T06:58:23.572789+00:00",
+  "module_status": "implemented_not_verified",
+  "status": "PASS",
+  "checks": {
+    "presentation_polish": true,
+    "fabrication_zero": true,
+    "studio_fidelity": true,
+    "graph_determinism": true,
+    "i18n_coverage": true,
+    "a11y_check": true,
+    "demo_replay": true,
+    "smoke": true,
+    "secret_scan": true,
+    "upstream_nonvolatile_compared": true,
+    "upstream_m100_cache_volatile_recorded": true,
+    "upstream_load_bearing_unchanged": true,
+    "pytest_full": true
+  },
+  "coverage": {
+    "m050_checked_field_count": 180,
+    "m050_matched_count": 164,
+    "m050_manual_review_count": 16,
+    "fabricated": 0
+  },
+  "report_files": [
+    "a11y_check.json",
+    "demo_replay.json",
+    "fabrication_zero.json",
+    "graph_determinism.json",
+    "i18n_coverage.json",
+    "m120_span_fidelity.json",
+    "m120_trail_fidelity.json",
+    "presentation_polish.json",
+    "pytest.txt",
+    "secret_scan.json",
+    "smoke.json",
+    "smoke.txt",
+    "studio_fidelity.json",
+    "upstream_hashes.json",
+    "validation_summary.json"
+  ],
+  "not_verified_by_codex": true,
+  "upstream_note": "Full reports/m100 hash differs from M150 due optional realtime raw/precheck cache; M150 already marked this directory volatile. Nonvolatile m010-m150 compared hashes and load-bearing frozen artifacts pass.",
+  "pytest": "reports/m160/pytest.txt",
+  "pytest_summary": "70 passed in 109.90s (0:01:49)",
+  "plan_status": "implemented",
+  "retro": "docs/dev/retrospectives/160-旗舰评委级呈现精修-复盘.md"
+}

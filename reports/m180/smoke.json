@@ -1,0 +1,22 @@
+{
+  "schema_version": "m180.smoke.v1",
+  "checked_at_utc": "2026-06-21T08:45:33.004518+00:00",
+  "status": "PASS",
+  "checks": {
+    "/healthz": {
+      "status": 200,
+      "bytes": 67
+    },
+    "/studio?lang=zh&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 75421,
+      "m180_copy_present": true
+    },
+    "/studio?lang=en&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 76251,
+      "m180_copy_present": true
+    }
+  },
+  "log": "reports/m180/smoke.txt"
+}

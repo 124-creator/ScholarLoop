@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_128",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_128",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_128",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_128",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 810,
+      "latency_s": 4.200966999982484
+    },
+    {
+      "query_id": "litsearch_128",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 490,
+      "latency_s": 3.9773287000134587
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_128",
+    "gold": [
+      248721770
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "embedding initialization multilingual transformer shared subwords",
+      "initializing embeddings for common subwords in multilingual models",
+      "transferring monolingual embeddings to multilingual transformer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6412585,
+        1241421,
+        38218347,
+        8191960,
+        8535026,
+        14288014,
+        235482360,
+        235732095,
+        42825371,
+        239049989,
+        128858,
+        3926047,
+        5989400,
+        7440991,
+        14948973,
+        31313505,
+        61492637,
+        239616082,
+        6197592,
+        52971170
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1356465,
+        239049989,
+        252968341,
+        202661136,
+        224814482,
+        256460868,
+        229924220,
+        216036089,
+        203591738,
+        247450716,
+        18454449,
+        162184257,
+        252735162,
+        248780197,
+        253762046,
+        195346835,
+        235097529,
+        129945216,
+        47021019,
+        252819313
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390514,
+        245124270,
+        29661510,
+        13888952,
+        204901567,
+        150149297,
+        258959033,
+        216914383,
+        52094910,
+        13694072,
+        252873220,
+        207847595,
+        21670015,
+        249209865,
+        222327390,
+        11332377,
+        215744881,
+        174800783,
+        196183628,
+        232233194
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222291680,
+        239049989
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252968341,
+        239049989,
+        216036089,
+        202661136,
+        229924220,
+        203591738,
+        18454449,
+        29661510,
+        174800783,
+        13694072,
+        222291680,
+        250390514,
+        52971170,
+        224814482,
+        15360016,
+        244920734,
+        11332377,
+        237491776,
+        247793725,
+        52094910
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.398307500057854
+  },
+  "reason_example": {
+    "query_id": "litsearch_128",
+    "query": "Could you recommend a study that initializes embeddings in multilingual transformer for subwords common with original vocabulary with original embeddings?",
+    "top_results": [
+      {
+        "corpusid": 252968341,
+        "score": 0.9242675304412842,
+        "reason": "bm25=0.983; dense=0.885; sub_bm25=0.627; sub_dense=0.943"
+      },
+      {
+        "corpusid": 239049989,
+        "score": 0.9211341142654419,
+        "reason": "bm25=0.995; dense=0.872; sub_bm25=0.640; sub_dense=0.857"
+      },
+      {
+        "corpusid": 216036089,
+        "score": 0.9073494672775269,
+        "reason": "bm25=0.952; dense=0.877; sub_bm25=0.899; sub_dense=0.939"
+      },
+      {
+        "corpusid": 202661136,
+        "score": 0.9064867496490479,
+        "reason": "bm25=0.979; dense=0.858; sub_bm25=1.000; sub_dense=0.947"
+      },
+      {
+        "corpusid": 229924220,
+        "score": 0.9051162004470825,
+        "reason": "bm25=0.955; dense=0.872; sub_bm25=0.714; sub_dense=0.881"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_026",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_026",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_026",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_026",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 989,
+      "latency_s": 6.6106862999731675
+    },
+    {
+      "query_id": "litsearch_026",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 326,
+      "latency_s": 2.695755900000222
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_026",
+    "gold": [
+      236477909,
+      236460157
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "stance detection tweet datasets individuals events 2020",
+      "Twitter stance detection dataset 2020 2021 2022 2023",
+      "recent stance detection datasets tweets specific person event"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3063608,
+        1805495,
+        17178436,
+        11083999,
+        256461358,
+        5536079,
+        235258254,
+        21692228,
+        250390518,
+        15139323,
+        218628834,
+        14085371,
+        15648889,
+        665630,
+        13309080,
+        250164086,
+        16023578,
+        18306813,
+        14054366,
+        247939207
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256461358,
+        218973859,
+        233189521,
+        236477909,
+        253761968,
+        256460913,
+        1013580,
+        52010043,
+        226262314,
+        222208845,
+        250390518,
+        9095511,
+        11872486,
+        189762439,
+        202789731,
+        248780402,
+        34700045,
+        232092599,
+        10341744,
+        254223324
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        218470042,
+        286464,
+        236460157,
+        253761968,
+        3837310,
+        15988381,
+        222208845,
+        503475,
+        236477909,
+        9105581,
+        9945376,
+        37022833,
+        233189521,
+        1013580,
+        226283922,
+        234679287,
+        2630999,
+        1768042,
+        16008848,
+        248069378
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256461358,
+        236477909,
+        222208845,
+        218973859
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256461358,
+        233189521,
+        236477909,
+        218470042,
+        253761968,
+        222208845,
+        1013580,
+        236460157,
+        256460913,
+        248780402,
+        15988381,
+        11872486,
+        503475,
+        3837310,
+        9095511,
+        202789731,
+        237421091,
+        37022833,
+        9945376,
+        9105581
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 11.073626299970783
+  },
+  "reason_example": {
+    "query_id": "litsearch_026",
+    "query": "Can you suggest some recent datasets that have been used for studying stance detection in tweets, particularly those targeting specific individuals and events since 2020?",
+    "top_results": [
+      {
+        "corpusid": 256461358,
+        "score": 0.9181151390075684,
+        "reason": "bm25=1.000; dense=0.864; sub_bm25=0.919; sub_dense=0.851"
+      },
+      {
+        "corpusid": 233189521,
+        "score": 0.8772892951965332,
+        "reason": "bm25=0.845; dense=0.899; sub_bm25=0.976; sub_dense=0.930"
+      },
+      {
+        "corpusid": 236477909,
+        "score": 0.8756715059280396,
+        "reason": "bm25=0.822; dense=0.912; sub_bm25=1.000; sub_dense=0.922"
+      },
+      {
+        "corpusid": 218470042,
+        "score": 0.8666099309921265,
+        "reason": "bm25=0.667; dense=1.000; sub_bm25=0.969; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253761968,
+        "score": 0.8647274971008301,
+        "reason": "bm25=0.761; dense=0.934; sub_bm25=0.893; sub_dense=0.885"
+      }
+    ]
+  }
+}

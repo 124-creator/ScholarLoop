@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_108",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_108",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_108",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_108",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1242,
+      "latency_s": 8.566638299962506
+    },
+    {
+      "query_id": "litsearch_108",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 237,
+      "latency_s": 4.94803700002376
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_108",
+    "gold": [
+      232185439
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "dialogue summarization dataset broadcast interviews",
+      "TV radio interview summarization dataset",
+      "broadcast news interview dialogue summarization corpus"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        94818,
+        7293586,
+        31420008,
+        7440991,
+        38406635,
+        49559981,
+        232185439,
+        53081887,
+        53083307,
+        250390867,
+        14269639,
+        29711347,
+        17423946,
+        258547350,
+        259833782,
+        15582309,
+        245616871,
+        247940018,
+        7469936,
+        247613006
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        13831954,
+        14769464,
+        232185439,
+        7721791,
+        6866845,
+        217602046,
+        247613006,
+        11583080,
+        15567696,
+        252819498,
+        3998394,
+        252378346,
+        233240744,
+        250627596,
+        10008738,
+        2433570,
+        253510465,
+        250210913,
+        15582309,
+        236477368
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232185439,
+        241583667,
+        208010268,
+        258378335,
+        252818999,
+        14639627,
+        235359080,
+        222133028,
+        224803222,
+        237353191,
+        263609485,
+        14129605,
+        13226783,
+        10732775,
+        433745,
+        8994087,
+        236460120,
+        244187,
+        234681504,
+        34703679
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        232185439
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        232185439,
+        208010268,
+        252819498,
+        247613006,
+        11583080,
+        224803222,
+        237353191,
+        250627596,
+        8994087,
+        248779962,
+        15567696,
+        233240744,
+        234681504,
+        248779954,
+        250210913,
+        253510465,
+        241583667,
+        235196029,
+        236460120,
+        2433570
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.934944199980237
+  },
+  "reason_example": {
+    "query_id": "litsearch_108",
+    "query": "Can you recommend a dialogue summarization dataset mined from broadcast interviews on the TV or radio?",
+    "top_results": [
+      {
+        "corpusid": 232185439,
+        "score": 0.9680758714675903,
+        "reason": "bm25=0.920; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 208010268,
+        "score": 0.8438758850097656,
+        "reason": "bm25=0.708; dense=0.934; sub_bm25=0.770; sub_dense=0.980"
+      },
+      {
+        "corpusid": 252819498,
+        "score": 0.8206894993782043,
+        "reason": "bm25=0.834; dense=0.812; sub_bm25=0.612; sub_dense=0.829"
+      },
+      {
+        "corpusid": 247613006,
+        "score": 0.8204936981201172,
+        "reason": "bm25=0.866; dense=0.790; sub_bm25=0.352; sub_dense=0.716"
+      },
+      {
+        "corpusid": 11583080,
+        "score": 0.8175990581512451,
+        "reason": "bm25=0.848; dense=0.797; sub_bm25=0.502; sub_dense=0.750"
+      }
+    ]
+  }
+}

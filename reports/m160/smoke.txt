@@ -1,0 +1,6 @@
+started http://127.0.0.1:61485 with SCHOLARLOOP_REALTIME_ENABLED=0
+GET /healthz -> 200 bytes=67
+GET /studio?lang=zh&qid=litsearch_000 -> 200 bytes=72315
+GET /studio?lang=en&qid=litsearch_000 -> 200 bytes=73103
+GET /api/graph_stable -> 200 bytes=68716
+GET /api/search?q=large%20language%20model%20compression -> 200 bytes=856

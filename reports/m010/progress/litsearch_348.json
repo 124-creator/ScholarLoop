@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_348",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_348",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_348",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_348",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 643,
+      "latency_s": 2.8895987999858335
+    },
+    {
+      "query_id": "litsearch_348",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 275,
+      "latency_s": 3.0803188999416307
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_348",
+    "gold": [
+      235166394
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "machine translation overconfidence fluent but inadequate",
+      "neural machine translation calibration overconfidence",
+      "translation quality fluency adequacy mismatch overconfidence"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        61207035,
+        45492851,
+        171820989,
+        61214793,
+        62527047,
+        1659667,
+        2705641,
+        3926837,
+        8718951,
+        9717543,
+        236457320,
+        258890931,
+        202579350,
+        6505137,
+        10101311,
+        34245575,
+        2785745,
+        6677774,
+        202540987,
+        30668669
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        12183141,
+        6505137,
+        235258254,
+        202579350,
+        253116664,
+        226262294,
+        248780588,
+        258890931,
+        237010903,
+        235258270,
+        10101311,
+        234763107,
+        231740565,
+        5324129,
+        16922546,
+        201687076,
+        67856213,
+        3053521,
+        235253968,
+        219573654
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        36754731,
+        512833,
+        67228497,
+        11280500,
+        219302901,
+        10179143,
+        11492268,
+        28436978,
+        235258270,
+        8282666,
+        52155342,
+        256358677,
+        233210507,
+        2730567,
+        218889274,
+        195767436,
+        218487046,
+        11830050,
+        226246329,
+        6198330
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        218487046,
+        226262294,
+        235258270,
+        258890931,
+        234763107,
+        6505137,
+        28436978,
+        231740565,
+        12183141,
+        6097881,
+        10101311,
+        3053521
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235258270,
+        258890931,
+        10101311,
+        28436978,
+        258378295,
+        218487046,
+        6505137,
+        218974086,
+        6097881,
+        36754731,
+        244116884,
+        220045438,
+        8524905,
+        10179143,
+        838156,
+        256358677,
+        11280500,
+        219302901,
+        220049291,
+        28739432
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.215689599979669
+  },
+  "reason_example": {
+    "query_id": "litsearch_348",
+    "query": "Which work suggests that machine translation models might get too confident and generate coherent but inadequant translations?",
+    "top_results": [
+      {
+        "corpusid": 235258270,
+        "score": 0.8979358673095703,
+        "reason": "bm25=0.840; dense=0.936; sub_bm25=0.471; sub_dense=0.955"
+      },
+      {
+        "corpusid": 258890931,
+        "score": 0.8607099056243896,
+        "reason": "bm25=0.843; dense=0.872; sub_bm25=0.360; sub_dense=0.614"
+      },
+      {
+        "corpusid": 10101311,
+        "score": 0.8442513942718506,
+        "reason": "bm25=0.835; dense=0.850; sub_bm25=0.366; sub_dense=0.826"
+      },
+      {
+        "corpusid": 28436978,
+        "score": 0.8308315873146057,
+        "reason": "bm25=0.658; dense=0.946; sub_bm25=0.365; sub_dense=0.907"
+      },
+      {
+        "corpusid": 258378295,
+        "score": 0.8104414939880371,
+        "reason": "bm25=0.738; dense=0.859; sub_bm25=0.391; sub_dense=0.965"
+      }
+    ]
+  }
+}

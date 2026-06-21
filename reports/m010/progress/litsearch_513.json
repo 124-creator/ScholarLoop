@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_513",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_513",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_513",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_513",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1712,
+      "latency_s": 10.4788609999232
+    },
+    {
+      "query_id": "litsearch_513",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 358,
+      "latency_s": 2.8290273000020534
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_513",
+    "gold": [
+      261530996
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "bilevel optimization nonconvex lower level solution existence",
+      "algorithm for bilevel optimization with nonconvex lower-level problem",
+      "theory of bilevel optimization nonconvex lower level"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        261530996,
+        7135235,
+        15420991,
+        3897601,
+        30167514,
+        8188191,
+        6284414,
+        7531574,
+        11869422,
+        235097672,
+        2644775,
+        6271137,
+        11000512,
+        254877249,
+        128486,
+        108334676,
+        9508540,
+        16650242,
+        53244973,
+        252847475
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        261530996,
+        254877249,
+        244714983,
+        14289377,
+        253237975,
+        108306764,
+        237292758,
+        247222973,
+        260683028,
+        201668203,
+        1004820,
+        108334676,
+        231855326,
+        263831863,
+        248392030,
+        62823235,
+        7496593,
+        259316755,
+        252846609,
+        235097672
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261530996,
+        244714983,
+        247222973,
+        251647177,
+        231855326,
+        257019874,
+        258887825,
+        225062378,
+        62823235,
+        209500529,
+        253237975,
+        252735252,
+        257366019,
+        252846263,
+        108306764,
+        254877249,
+        52903499,
+        252280608,
+        246411377,
+        51952942
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        261530996,
+        244714983,
+        254877249,
+        260683028,
+        247222973
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        261530996,
+        244714983,
+        247222973,
+        254877249,
+        251647177,
+        231855326,
+        253237975,
+        108306764,
+        62823235,
+        14289377,
+        260683028,
+        252846263,
+        257019874,
+        257366019,
+        209500529,
+        225062378,
+        52903499,
+        258887825,
+        51952942,
+        235313504
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.347713200026192
+  },
+  "reason_example": {
+    "query_id": "litsearch_513",
+    "query": "Can we find the solution of the Bilevel optimization when the lower-level problem is nonconvex?",
+    "top_results": [
+      {
+        "corpusid": 261530996,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.955; sub_dense=1.000"
+      },
+      {
+        "corpusid": 244714983,
+        "score": 0.814315915107727,
+        "reason": "bm25=0.769; dense=0.845; sub_bm25=0.684; sub_dense=0.824"
+      },
+      {
+        "corpusid": 247222973,
+        "score": 0.7813814878463745,
+        "reason": "bm25=0.722; dense=0.821; sub_bm25=0.763; sub_dense=0.842"
+      },
+      {
+        "corpusid": 254877249,
+        "score": 0.7760272026062012,
+        "reason": "bm25=0.948; dense=0.661; sub_bm25=1.000; sub_dense=0.698"
+      },
+      {
+        "corpusid": 251647177,
+        "score": 0.7384624481201172,
+        "reason": "bm25=0.627; dense=0.813; sub_bm25=0.606; sub_dense=0.800"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_082",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_082",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_082",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_082",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 742,
+      "latency_s": 3.1794863999821246
+    },
+    {
+      "query_id": "litsearch_082",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 383,
+      "latency_s": 3.079435699968599
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_082",
+    "gold": [
+      1781329
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "Chinese discourse treebank newswire",
+      "large Chinese discourse treebank",
+      "Chinese newswire discourse treebank train dev test split"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10823395,
+        226262328,
+        45438237,
+        156051989,
+        207926324,
+        10398193,
+        1963942,
+        1153515,
+        1742176,
+        241583483,
+        33703974,
+        256627769,
+        260063127,
+        252907640,
+        259833889,
+        9508540,
+        4895442,
+        18115519,
+        2540417,
+        250390698
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        588879,
+        258480179,
+        29200699,
+        218486922,
+        28391144,
+        247596807,
+        21684816,
+        52011355,
+        254591242,
+        17961054,
+        226262246,
+        252873216,
+        226262328,
+        227217599,
+        14524085,
+        218487319,
+        246015393,
+        6295936,
+        261494445,
+        12510425
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1781329,
+        28391144,
+        52011355,
+        5584533,
+        252992779,
+        21684816,
+        52012980,
+        1393626,
+        588879,
+        12226546,
+        11477299,
+        11498688,
+        212633786,
+        7450916,
+        244082155,
+        52120920,
+        313092,
+        15138793,
+        253762033,
+        5301456
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52011355,
+        21684816,
+        588879
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        28391144,
+        588879,
+        52011355,
+        21684816,
+        1781329,
+        5584533,
+        226262246,
+        212633786,
+        52012980,
+        313092,
+        17961054,
+        252992779,
+        15138793,
+        244082155,
+        3061602,
+        6492314,
+        7856640,
+        253762033,
+        11498688,
+        6392218
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.684173000045121
+  },
+  "reason_example": {
+    "query_id": "litsearch_082",
+    "query": "Where can I find a discourse treebank tailored to Chinese newswire articles that's large enough to make training, development, and test splits?",
+    "top_results": [
+      {
+        "corpusid": 28391144,
+        "score": 0.9587106704711914,
+        "reason": "bm25=0.912; dense=0.990; sub_bm25=0.860; sub_dense=0.997"
+      },
+      {
+        "corpusid": 588879,
+        "score": 0.9534738063812256,
+        "reason": "bm25=1.000; dense=0.922; sub_bm25=0.717; sub_dense=0.981"
+      },
+      {
+        "corpusid": 52011355,
+        "score": 0.927996039390564,
+        "reason": "bm25=0.877; dense=0.962; sub_bm25=0.880; sub_dense=0.974"
+      },
+      {
+        "corpusid": 21684816,
+        "score": 0.92702317237854,
+        "reason": "bm25=0.898; dense=0.947; sub_bm25=1.000; sub_dense=0.948"
+      },
+      {
+        "corpusid": 1781329,
+        "score": 0.903427243232727,
+        "reason": "bm25=0.759; dense=1.000; sub_bm25=0.865; sub_dense=1.000"
+      }
+    ]
+  }
+}

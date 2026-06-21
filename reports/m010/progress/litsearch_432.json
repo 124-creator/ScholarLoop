@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_432",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_432",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_432",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_432",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2061,
+      "latency_s": 14.572811999940313
+    },
+    {
+      "query_id": "litsearch_432",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 268,
+      "latency_s": 2.618195499991998
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_432",
+    "gold": [
+      258557145
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "event conceptualization task models",
+      "best performing model family event conceptualization",
+      "comparison of models event conceptualization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18792136,
+        18911648,
+        258685798,
+        1860368,
+        10952755,
+        322910,
+        17153466,
+        201692196,
+        15050524,
+        18461652,
+        29206719,
+        259370838,
+        7966916,
+        16192346,
+        226283556,
+        233029482,
+        8985261,
+        1021605,
+        12744446,
+        27787263
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258685552,
+        1949615,
+        8247565,
+        238857301,
+        257767722,
+        28250703,
+        16337520,
+        52942195,
+        226262216,
+        258557145,
+        218595233,
+        259376871,
+        17187757,
+        471397,
+        227905056,
+        243912265,
+        256461158,
+        18911648,
+        218537892,
+        475213
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1578341,
+        15349950,
+        254877737,
+        1216445,
+        233324363,
+        1817315,
+        560295,
+        33364495,
+        42716406,
+        253447291,
+        39617910,
+        8711257,
+        6540287,
+        256846362,
+        1383118,
+        16878067,
+        16166395,
+        252619938,
+        11014030,
+        237735642
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        227905056,
+        189928589,
+        52942195,
+        18911648,
+        475213,
+        254877737,
+        226283556,
+        28250703,
+        8247565,
+        16192346,
+        1949615,
+        10070203
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877737,
+        1578341,
+        560295,
+        237735642,
+        1383118,
+        33364495,
+        15349950,
+        1817315,
+        42716406,
+        21706146,
+        8711257,
+        6540287,
+        10432942,
+        14158419,
+        3921718,
+        10070203,
+        475213,
+        8247565,
+        233324363,
+        28250703
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.928527499898337
+  },
+  "reason_example": {
+    "query_id": "litsearch_432",
+    "query": "Which family of model generally perform the best for the event conceptualization task",
+    "top_results": [
+      {
+        "corpusid": 254877737,
+        "score": 0.9209688901901245,
+        "reason": "bm25=0.855; dense=0.965; sub_bm25=0.555; sub_dense=0.980"
+      },
+      {
+        "corpusid": 1578341,
+        "score": 0.9053367376327515,
+        "reason": "bm25=0.763; dense=1.000; sub_bm25=0.586; sub_dense=0.959"
+      },
+      {
+        "corpusid": 560295,
+        "score": 0.882460355758667,
+        "reason": "bm25=0.797; dense=0.939; sub_bm25=0.489; sub_dense=0.937"
+      },
+      {
+        "corpusid": 237735642,
+        "score": 0.8792459964752197,
+        "reason": "bm25=0.871; dense=0.885; sub_bm25=0.832; sub_dense=0.919"
+      },
+      {
+        "corpusid": 1383118,
+        "score": 0.8771910667419434,
+        "reason": "bm25=0.841; dense=0.901; sub_bm25=0.496; sub_dense=0.906"
+      }
+    ]
+  }
+}

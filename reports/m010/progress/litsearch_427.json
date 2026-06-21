@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_427",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_427",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_427",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_427",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1921,
+      "latency_s": 13.035547400009818
+    },
+    {
+      "query_id": "litsearch_427",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 3.46722640004009
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_427",
+    "gold": [
+      258615193
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "limitations of large language models in evaluating question answering",
+      "shortcomings of LLMs for information-seeking QA evaluation",
+      "challenges in assessing LLM performance on information-seeking questions"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14012397,
+        20167120,
+        6583976,
+        253762079,
+        259833850,
+        2770995,
+        6271137,
+        66999088,
+        237491743,
+        201792120,
+        236477368,
+        226283875,
+        248779936,
+        18002500,
+        6089322,
+        27016310,
+        10108216,
+        17336955,
+        24277319,
+        259370749
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234093776,
+        254096489,
+        225040142,
+        716983,
+        237635197,
+        236477368,
+        225040672,
+        237592932,
+        245218415,
+        222066993,
+        238259221,
+        237502990,
+        15813913,
+        260816720,
+        51875796,
+        253158014,
+        9551366,
+        221005781,
+        259370749,
+        258588125
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        225040142,
+        211205183,
+        196170479,
+        245218982,
+        264038841,
+        207917676,
+        239016221,
+        252693442,
+        52186951,
+        259370749,
+        13403541,
+        256461307,
+        226283875,
+        86611921,
+        256461139,
+        258212897,
+        215238965,
+        33855258,
+        716983,
+        3068831
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        225040142,
+        245218415,
+        254096489,
+        259370749,
+        258588125,
+        226283875
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        225040142,
+        234093776,
+        716983,
+        237635197,
+        259370749,
+        225040672,
+        207917676,
+        256461139,
+        254096489,
+        258588125,
+        239016221,
+        204734128,
+        226283875,
+        237502990,
+        245218415,
+        15813913,
+        260816720,
+        236477368,
+        511847,
+        33855258
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.654555600020103
+  },
+  "reason_example": {
+    "query_id": "litsearch_427",
+    "query": "What limitations do large language models have in evaluating information-seeking question answering?",
+    "top_results": [
+      {
+        "corpusid": 225040142,
+        "score": 0.9665377736091614,
+        "reason": "bm25=0.916; dense=1.000; sub_bm25=0.976; sub_dense=0.922"
+      },
+      {
+        "corpusid": 234093776,
+        "score": 0.938897967338562,
+        "reason": "bm25=1.000; dense=0.898; sub_bm25=0.874; sub_dense=0.910"
+      },
+      {
+        "corpusid": 716983,
+        "score": 0.9137818813323975,
+        "reason": "bm25=0.913; dense=0.914; sub_bm25=0.793; sub_dense=0.984"
+      },
+      {
+        "corpusid": 237635197,
+        "score": 0.9087914228439331,
+        "reason": "bm25=0.905; dense=0.912; sub_bm25=0.862; sub_dense=0.836"
+      },
+      {
+        "corpusid": 259370749,
+        "score": 0.8733048439025879,
+        "reason": "bm25=0.783; dense=0.933; sub_bm25=0.716; sub_dense=0.884"
+      }
+    ]
+  }
+}

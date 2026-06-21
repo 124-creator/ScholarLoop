@@ -1,0 +1,7 @@
+GET /healthz -> 200 llm_calls=0
+GET /api/graph_stable -> 200 nodes=25 edges=50 client_force=False
+GET /api/search -> 200 status=unavailable results=0 verified_load_bearing=False
+GET /studio -> 200, repeat -> 200, bytes=56785
+GET /pro -> 200 bytes=21445
+GET / -> 200 bytes=20199
+status=PASS

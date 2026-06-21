@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_472",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_472",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_472",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_472",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1477,
+      "latency_s": 9.079637499991804
+    },
+    {
+      "query_id": "litsearch_472",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 356,
+      "latency_s": 2.4921672000782564
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_472",
+    "gold": [
+      256900985
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "diversity of source tasks prompt tuning CrossFit",
+      "influence source task diversity target task performance prompt tuning",
+      "CrossFit prompt tuning task diversity"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2245732,
+        15749329,
+        18312172,
+        908030,
+        51882191,
+        26889702,
+        1449620,
+        9526061,
+        947063,
+        8373700,
+        12405045,
+        21166550,
+        32959350,
+        10370220,
+        8585933,
+        4948776,
+        1575363,
+        259376735,
+        6923335,
+        3870823
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253098972,
+        258378153,
+        256900985,
+        248780043,
+        254125751,
+        252780166,
+        248779986,
+        259833896,
+        248405974,
+        264172710,
+        259833855,
+        258378317,
+        947063,
+        232223089,
+        239016577,
+        249152035,
+        262054014,
+        250391006,
+        218614076,
+        37900168
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248405974,
+        254125751,
+        248376935,
+        257365136,
+        9935917,
+        253098972,
+        256461030,
+        259833855,
+        238857301,
+        252780166,
+        51872536,
+        715221,
+        258486848,
+        18270214,
+        256900985,
+        76666127,
+        248779961,
+        245144420,
+        248780177,
+        52008924
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256900985,
+        248405974,
+        257365136,
+        254125751,
+        253098972,
+        252780166,
+        258378153,
+        259833855,
+        248779986,
+        253116759,
+        252819085,
+        947063
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254125751,
+        248405974,
+        253098972,
+        256900985,
+        248376935,
+        259833855,
+        252780166,
+        257365136,
+        256461030,
+        258378153,
+        238857301,
+        248780177,
+        263608162,
+        245144420,
+        76666127,
+        237452236,
+        9935917,
+        264172710,
+        247594470,
+        252819085
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.687776200007647
+  },
+  "reason_example": {
+    "query_id": "litsearch_472",
+    "query": "Which paper investigates the influence of the diversity of source tasks on the performance of target tasks in prompt tuning using CrossFit?",
+    "top_results": [
+      {
+        "corpusid": 254125751,
+        "score": 0.9564048647880554,
+        "reason": "bm25=0.910; dense=0.987; sub_bm25=1.000; sub_dense=0.978"
+      },
+      {
+        "corpusid": 248405974,
+        "score": 0.9500564336776733,
+        "reason": "bm25=0.875; dense=1.000; sub_bm25=0.827; sub_dense=0.959"
+      },
+      {
+        "corpusid": 253098972,
+        "score": 0.9357904195785522,
+        "reason": "bm25=1.000; dense=0.893; sub_bm25=1.000; sub_dense=0.976"
+      },
+      {
+        "corpusid": 256900985,
+        "score": 0.8896148204803467,
+        "reason": "bm25=0.953; dense=0.847; sub_bm25=0.874; sub_dense=0.901"
+      },
+      {
+        "corpusid": 248376935,
+        "score": 0.8825318813323975,
+        "reason": "bm25=0.773; dense=0.956; sub_bm25=0.351; sub_dense=1.000"
+      }
+    ]
+  }
+}

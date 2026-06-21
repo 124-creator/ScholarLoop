@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_074",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_074",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_074",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_074",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1745,
+      "latency_s": 14.63855550007429
+    },
+    {
+      "query_id": "litsearch_074",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 360,
+      "latency_s": 3.2804744000313804
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_074",
+    "gold": [
+      218538004,
+      224818197
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "exposure bias hallucinations neural machine translation",
+      "exposure bias in neural machine translation",
+      "hallucinations in neural machine translation causes"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        45492851,
+        171820989,
+        2730567,
+        7136961,
+        14869687,
+        251980393,
+        237717628,
+        202616800,
+        51868421,
+        68153520,
+        196176486,
+        218889274,
+        222310161,
+        12385862,
+        253080830,
+        7297988,
+        1312573,
+        44090489,
+        2330566,
+        2705641
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        218538004,
+        247939224,
+        256000114,
+        233231373,
+        239615946,
+        261494433,
+        238634550,
+        251468136,
+        235098226,
+        261276856,
+        231740565,
+        234364832,
+        227230263,
+        221738957,
+        52132833,
+        254823170,
+        254853721,
+        261494470,
+        258378297,
+        256461463
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233231373,
+        218538004,
+        256000114,
+        251468136,
+        254823170,
+        254853721,
+        222290728,
+        248227301,
+        253097869,
+        247939224,
+        233296487,
+        226254579,
+        237329050,
+        252907639,
+        244909449,
+        235098226,
+        234763107,
+        52155342,
+        218889274,
+        250179935
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "single_llm": {
+      "ranked_top20": [
+        218538004,
+        247939224,
+        233231373,
+        251468136,
+        256000114,
+        254823170,
+        52155342,
+        218889274
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        218538004,
+        233231373,
+        256000114,
+        251468136,
+        254823170,
+        247939224,
+        254853721,
+        253097869,
+        235098226,
+        222290728,
+        248227301,
+        226254579,
+        233296487,
+        237329050,
+        244909449,
+        218889274,
+        52155342,
+        231740565,
+        234763107,
+        52132833
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 19.694071299978532
+  },
+  "reason_example": {
+    "query_id": "litsearch_074",
+    "query": "What prior works suggested that exposure bias could lead to hallucinations in neural machine translation models?",
+    "top_results": [
+      {
+        "corpusid": 218538004,
+        "score": 0.9867455959320068,
+        "reason": "bm25=1.000; dense=0.978; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233231373,
+        "score": 0.8784091472625732,
+        "reason": "bm25=0.696; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256000114,
+        "score": 0.8585910797119141,
+        "reason": "bm25=0.704; dense=0.962; sub_bm25=0.918; sub_dense=1.000"
+      },
+      {
+        "corpusid": 251468136,
+        "score": 0.8054171204566956,
+        "reason": "bm25=0.615; dense=0.932; sub_bm25=0.941; sub_dense=0.954"
+      },
+      {
+        "corpusid": 254823170,
+        "score": 0.7634091973304749,
+        "reason": "bm25=0.589; dense=0.879; sub_bm25=0.818; sub_dense=0.856"
+      }
+    ]
+  }
+}

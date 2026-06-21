@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_361",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_361",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_361",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_361",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 744,
+      "latency_s": 4.0276578000048175
+    },
+    {
+      "query_id": "litsearch_361",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 262,
+      "latency_s": 2.4207081999629736
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_361",
+    "gold": [
+      254685691
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "multimodal abstractive summarization target-oriented vision modeling",
+      "multilingual abstractive summarization vision modeling method",
+      "target-oriented vision modeling for summary quality improvement"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17409270,
+        196201849,
+        26889702,
+        7737976,
+        583930,
+        254685691,
+        1508909,
+        198901420,
+        2375338,
+        235097525,
+        1207251,
+        9443164,
+        53080384,
+        9151838,
+        1412569,
+        1465750,
+        29974541,
+        9467777,
+        15662979,
+        233189611
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        254685691,
+        1508909,
+        256460965,
+        248721759,
+        53079938,
+        258765282,
+        53046735,
+        258947845,
+        221970707,
+        226283913,
+        253080850,
+        9508540,
+        241583467,
+        222142312,
+        198985936,
+        53080384,
+        258714901,
+        258740707,
+        227230508,
+        195069392
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254685691,
+        2677577,
+        258378308,
+        53080384,
+        15743676,
+        261342129,
+        237420398,
+        42119295,
+        247626118,
+        2887802,
+        195069392,
+        223953416,
+        8717781,
+        6218032,
+        256826762,
+        253370346,
+        235313819,
+        203610250,
+        13276714,
+        14664231
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254685691
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254685691,
+        53080384,
+        237420398,
+        195069392,
+        258765282,
+        261342129,
+        2677577,
+        253370346,
+        9508540,
+        223953416,
+        13276714,
+        53046735,
+        258486857,
+        203610250,
+        2887802,
+        258714901,
+        208010268,
+        196201849,
+        258866156,
+        198985936
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.844532300019637
+  },
+  "reason_example": {
+    "query_id": "litsearch_361",
+    "query": "In multimodal (multilingual) abstractive summarization field, is there any paper that propose target-oriented vision modeling method to improve the quality of summaries?",
+    "top_results": [
+      {
+        "corpusid": 254685691,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53080384,
+        "score": 0.8168215751647949,
+        "reason": "bm25=0.737; dense=0.870; sub_bm25=0.444; sub_dense=0.918"
+      },
+      {
+        "corpusid": 237420398,
+        "score": 0.7997350692749023,
+        "reason": "bm25=0.716; dense=0.856; sub_bm25=0.751; sub_dense=0.866"
+      },
+      {
+        "corpusid": 195069392,
+        "score": 0.7971936464309692,
+        "reason": "bm25=0.731; dense=0.842; sub_bm25=0.578; sub_dense=0.839"
+      },
+      {
+        "corpusid": 258765282,
+        "score": 0.7924113273620605,
+        "reason": "bm25=0.766; dense=0.810; sub_bm25=0.596; sub_dense=0.892"
+      }
+    ]
+  }
+}

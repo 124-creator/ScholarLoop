@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_130",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_130",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_130",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_130",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 777,
+      "latency_s": 4.102192100021057
+    },
+    {
+      "query_id": "litsearch_130",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 266,
+      "latency_s": 2.803912300034426
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_130",
+    "gold": [
+      247158838
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "prefix vectors conditional natural language generation",
+      "prefix-tuning conditional generation",
+      "prefix embedding natural language generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7591554,
+        15204692,
+        245297783,
+        764565,
+        20776159,
+        23804177,
+        259370877,
+        2535099,
+        13170584,
+        15605878,
+        186206208,
+        233029500,
+        2891943,
+        7600496,
+        2718695,
+        1144073,
+        2145617,
+        7539145,
+        10168327,
+        14038010
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        230433941,
+        248987323,
+        230349190,
+        248721950,
+        2664856,
+        258999402,
+        247158838,
+        51876536,
+        2758040,
+        258865689,
+        247613006,
+        2872204,
+        12307380,
+        253802640,
+        258378194,
+        11250297,
+        235097693,
+        11795155,
+        12020891,
+        254044710
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        13250527,
+        12307380,
+        6645488,
+        772413,
+        14185702,
+        9643533,
+        17560213,
+        1060508,
+        14381340,
+        38084603,
+        7435436,
+        8842519,
+        28048967,
+        216107,
+        18754073,
+        10339151,
+        18499217,
+        10235660,
+        10823586,
+        6288243
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        230433941,
+        247158838,
+        248987323
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        230433941,
+        248987323,
+        12307380,
+        247158838,
+        51876536,
+        207853283,
+        15652746,
+        772413,
+        13250527,
+        11795155,
+        36627602,
+        6645488,
+        2664856,
+        10823586,
+        230349190,
+        248721950,
+        252917661,
+        14185702,
+        6288243,
+        259287175
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.820137600065209
+  },
+  "reason_example": {
+    "query_id": "litsearch_130",
+    "query": "Could you recommend a study that investigates employing prefix vectors for conditional natural language generation?",
+    "top_results": [
+      {
+        "corpusid": 230433941,
+        "score": 0.9139711856842041,
+        "reason": "bm25=1.000; dense=0.857; sub_bm25=1.000; sub_dense=0.912"
+      },
+      {
+        "corpusid": 248987323,
+        "score": 0.9108099937438965,
+        "reason": "bm25=0.962; dense=0.877; sub_bm25=1.000; sub_dense=0.902"
+      },
+      {
+        "corpusid": 12307380,
+        "score": 0.8939723968505859,
+        "reason": "bm25=0.776; dense=0.973; sub_bm25=0.681; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247158838,
+        "score": 0.8515158891677856,
+        "reason": "bm25=0.817; dense=0.875; sub_bm25=0.813; sub_dense=0.959"
+      },
+      {
+        "corpusid": 51876536,
+        "score": 0.8322054147720337,
+        "reason": "bm25=0.805; dense=0.850; sub_bm25=0.340; sub_dense=0.874"
+      }
+    ]
+  }
+}

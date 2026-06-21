@@ -1,0 +1,8 @@
+{
+  "status": "implemented_pending_review",
+  "wall_passed": true,
+  "candidate_fill_rate": 0.108,
+  "baseline_fill_rate": 0.022,
+  "paired_delta": 0.086,
+  "narration_out_of_evidence": 0
+}

@@ -16,7 +16,7 @@ from typing import Any
 from .cache import CacheEntry, ResponseCache
 
 
-USER_AGENT = "ScholarLoop-M050/0.1 (mailto:15517837680@163.com; academic metadata connector)"
+USER_AGENT = "ScholarLoop-M050/0.1 (mailto:no-public-email@example.com; academic metadata connector)"
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 
 

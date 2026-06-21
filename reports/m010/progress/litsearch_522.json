@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_522",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_522",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_522",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_522",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1238,
+      "latency_s": 6.827104900032282
+    },
+    {
+      "query_id": "litsearch_522",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 283,
+      "latency_s": 2.3528060000389814
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_522",
+    "gold": [
+      263620510
+    ],
+    "pool_size": 235,
+    "decomposition": [
+      "parameter-efficient fine-tuning adjustable parameter count any architecture",
+      "flexible number of trainable parameters PEFT method",
+      "tunable parameter budget fine-tuning adapter"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        237513887,
+        53023292,
+        248780547,
+        260063230,
+        53033211,
+        235313889,
+        12795660,
+        258832448,
+        215415943,
+        231672601,
+        261697072,
+        17807266,
+        257833499,
+        238857301,
+        2076339,
+        10014954,
+        239049989,
+        16059892,
+        12639841,
+        5129476
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258947572,
+        261697072,
+        260063230,
+        253265357,
+        235359141,
+        53033211,
+        235309789,
+        259370834,
+        259833855,
+        248986389,
+        257631760,
+        255440621,
+        248506096,
+        235313889,
+        258557131,
+        263620510,
+        238857301,
+        237513887,
+        248780547,
+        258960642
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        255440621,
+        259360526,
+        248986389,
+        246867041,
+        261697072,
+        259833855,
+        258947572,
+        238857301,
+        235359141,
+        240353697,
+        60500790,
+        252846121,
+        247084085,
+        249191923,
+        235458576,
+        256460956,
+        235352554,
+        248987313,
+        257405483,
+        6139243
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238857301,
+        259360526,
+        255440621,
+        258947572,
+        248986389,
+        246867041,
+        235359141,
+        261697072,
+        259833855,
+        237513887,
+        260063230,
+        235313889
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        255440621,
+        258947572,
+        261697072,
+        248986389,
+        259360526,
+        259833855,
+        238857301,
+        246867041,
+        235359141,
+        257631760,
+        252846121,
+        253098983,
+        253265357,
+        240353697,
+        248506096,
+        256460956,
+        258960434,
+        211532533,
+        248987313,
+        253116759
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.637963400105946
+  },
+  "reason_example": {
+    "query_id": "litsearch_522",
+    "query": "Is there a parameter-efficient fine-tuning method (PEFT) that allows adjusting the number of optimized parameters to any value, irrespective of the model's architecture or choice of the adapter?",
+    "top_results": [
+      {
+        "corpusid": 255440621,
+        "score": 0.9207022190093994,
+        "reason": "bm25=0.802; dense=1.000; sub_bm25=0.995; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258947572,
+        "score": 0.9021837711334229,
+        "reason": "bm25=1.000; dense=0.837; sub_bm25=1.000; sub_dense=0.884"
+      },
+      {
+        "corpusid": 261697072,
+        "score": 0.8708544969558716,
+        "reason": "bm25=0.908; dense=0.846; sub_bm25=1.000; sub_dense=0.875"
+      },
+      {
+        "corpusid": 248986389,
+        "score": 0.8476697206497192,
+        "reason": "bm25=0.811; dense=0.872; sub_bm25=0.803; sub_dense=0.898"
+      },
+      {
+        "corpusid": 259360526,
+        "score": 0.8471825122833252,
+        "reason": "bm25=0.709; dense=0.939; sub_bm25=0.610; sub_dense=0.895"
+      }
+    ]
+  }
+}

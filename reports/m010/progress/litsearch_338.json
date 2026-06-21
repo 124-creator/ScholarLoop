@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_338",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_338",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_338",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_338",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1770,
+      "latency_s": 15.543437600019388
+    },
+    {
+      "query_id": "litsearch_338",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 477,
+      "latency_s": 4.8936747999396175
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_338",
+    "gold": [
+      230433941
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "prefix tuning fine-tuning language models generation tasks",
+      "soft prompt tokens per layer language model fine-tuning",
+      "method training additional prompt tokens every layer fine-tuning generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3923764,
+        259095910,
+        260063238,
+        237416585,
+        231718729,
+        8517763,
+        258558199,
+        248780244,
+        256274922,
+        41981492,
+        215415943,
+        216036398,
+        254018376,
+        236155012,
+        258463920,
+        252819085,
+        253116759,
+        259833896,
+        226283808,
+        227905637
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252780166,
+        259833855,
+        230433941,
+        226262238,
+        256274922,
+        248405974,
+        248780244,
+        253098972,
+        248366286,
+        247628024,
+        248779986,
+        259833896,
+        254125751,
+        256826766,
+        249017865,
+        262054014,
+        216036398,
+        234339478,
+        260704723,
+        248986389
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259833855,
+        248780177,
+        230433941,
+        248779986,
+        253107420,
+        248405974,
+        252780166,
+        235652287,
+        239016577,
+        264172710,
+        263834884,
+        248506201,
+        257038392,
+        248084930,
+        233296808,
+        247447170,
+        259063796,
+        237452236,
+        253098983,
+        254125751
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        230433941,
+        253116759
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252780166,
+        259833855,
+        230433941,
+        248779986,
+        248405974,
+        248780177,
+        239016577,
+        254125751,
+        248084930,
+        248506201,
+        215415943,
+        237452236,
+        262054014,
+        264172710,
+        258378153,
+        259833896,
+        253238066,
+        248987323,
+        248986389,
+        253098627
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 21.88107260002289
+  },
+  "reason_example": {
+    "query_id": "litsearch_338",
+    "query": "Which method involves training additional prompt tokens for every layer during the fine-tuning of language models, specifically evaluating their performance on generation tasks?",
+    "top_results": [
+      {
+        "corpusid": 252780166,
+        "score": 0.9524097442626953,
+        "reason": "bm25=1.000; dense=0.921; sub_bm25=1.000; sub_dense=0.954"
+      },
+      {
+        "corpusid": 259833855,
+        "score": 0.9486232995986938,
+        "reason": "bm25=0.872; dense=1.000; sub_bm25=0.876; sub_dense=1.000"
+      },
+      {
+        "corpusid": 230433941,
+        "score": 0.9212788343429565,
+        "reason": "bm25=0.871; dense=0.955; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248779986,
+        "score": 0.8954260349273682,
+        "reason": "bm25=0.809; dense=0.953; sub_bm25=0.841; sub_dense=0.921"
+      },
+      {
+        "corpusid": 248405974,
+        "score": 0.8922151327133179,
+        "reason": "bm25=0.845; dense=0.924; sub_bm25=0.886; sub_dense=0.921"
+      }
+    ]
+  }
+}

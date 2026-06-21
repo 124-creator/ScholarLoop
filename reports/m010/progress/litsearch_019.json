@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_019",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_019",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_019",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_019",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 804,
+      "latency_s": 3.413054500008002
+    },
+    {
+      "query_id": "litsearch_019",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 357,
+      "latency_s": 2.452036099974066
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_019",
+    "gold": [
+      192530110
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "Word Mover's Distance sentence similarity word order",
+      "beyond bag-of-words text similarity word mover's distance",
+      "sentence-level document distance using word embeddings order"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8813310,
+        14284540,
+        6907887,
+        9366280,
+        12353337,
+        8141159,
+        17542297,
+        9751558,
+        1295036,
+        10261581,
+        15037844,
+        15794465,
+        252818919,
+        6120662,
+        7658188,
+        53081529,
+        17482666,
+        256739268,
+        479538,
+        9467777
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        53081529,
+        250390674,
+        8199785,
+        238857022,
+        11235653,
+        44108216,
+        1295036,
+        1835281,
+        12353337,
+        14284540,
+        27891001,
+        248780466,
+        8862807,
+        9366280,
+        222310704,
+        201739091,
+        15800455,
+        9120326,
+        10418456,
+        18284125
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        201739091,
+        248780466,
+        12191154,
+        192530110,
+        5298251,
+        18914615,
+        2103596,
+        2646329,
+        19013106,
+        820832,
+        7604967,
+        10221354,
+        16029757,
+        44673929,
+        2032165,
+        10560403,
+        35892073,
+        174800297,
+        238857022,
+        2694409
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        192530110,
+        201739091,
+        248780466,
+        222310704,
+        53081529
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        201739091,
+        248780466,
+        192530110,
+        12191154,
+        238857022,
+        250390674,
+        53081529,
+        2103596,
+        222310704,
+        19013106,
+        2694409,
+        2351337,
+        479538,
+        4948322,
+        16029757,
+        35892073,
+        5249960,
+        7604967,
+        174800868,
+        820832
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.780336599913426
+  },
+  "reason_example": {
+    "query_id": "litsearch_019",
+    "query": "Can you refer me to research that adapts the concept of Word Mover's Distance to sentences, addressing the limitations of bag-of-words approaches and considering the order of words for text similarity?",
+    "top_results": [
+      {
+        "corpusid": 201739091,
+        "score": 0.9675230979919434,
+        "reason": "bm25=0.919; dense=1.000; sub_bm25=0.864; sub_dense=0.969"
+      },
+      {
+        "corpusid": 248780466,
+        "score": 0.9547679424285889,
+        "reason": "bm25=0.932; dense=0.970; sub_bm25=0.888; sub_dense=1.000"
+      },
+      {
+        "corpusid": 192530110,
+        "score": 0.9166864156723022,
+        "reason": "bm25=0.889; dense=0.935; sub_bm25=0.921; sub_dense=0.832"
+      },
+      {
+        "corpusid": 12191154,
+        "score": 0.8994331359863281,
+        "reason": "bm25=0.808; dense=0.961; sub_bm25=0.403; sub_dense=0.766"
+      },
+      {
+        "corpusid": 238857022,
+        "score": 0.8905999064445496,
+        "reason": "bm25=0.964; dense=0.842; sub_bm25=0.680; sub_dense=0.631"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_168",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_168",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_168",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_168",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1718,
+      "latency_s": 12.232202399987727
+    },
+    {
+      "query_id": "litsearch_168",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.568439200054854
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_168",
+    "gold": [
+      236460287
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "data augmentation contrastive learning NLP word removal truncation",
+      "conventional augmentation methods contrastive learning natural language processing",
+      "contrastive learning text augmentation word deletion sequence truncation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2251088,
+        258378239,
+        13616471,
+        186206301,
+        253098436,
+        248780437,
+        7478643,
+        6602375,
+        8676363,
+        174799713,
+        15401237,
+        2032073,
+        9875297,
+        235422673,
+        17902141,
+        14359014,
+        252780482,
+        2937095,
+        4896064,
+        15483536
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235352852,
+        258378289,
+        258959304,
+        250390973,
+        253107551,
+        235422673,
+        258960366,
+        259370576,
+        232222259,
+        52010923,
+        248227429,
+        253098436,
+        253018834,
+        233365325,
+        256503461,
+        250391032,
+        253097844,
+        235652429,
+        8790370,
+        231632265
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235422524,
+        248779925,
+        237491889,
+        258378297,
+        225062312,
+        227231247,
+        244346011,
+        244479233,
+        21725995,
+        225041226,
+        59523656,
+        235422673,
+        226262205,
+        241583288,
+        253107551,
+        252819197,
+        224726548,
+        248299679,
+        2205238,
+        248779957
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253107551,
+        258959304,
+        250390973,
+        235422524,
+        248227350,
+        258378289,
+        248779925,
+        235422673,
+        235352852,
+        248780437,
+        253098436
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248779925,
+        235422524,
+        225062312,
+        258959304,
+        237491889,
+        253107551,
+        235422673,
+        250390973,
+        244346011,
+        244479233,
+        235352852,
+        248780437,
+        258378297,
+        248227350,
+        227231247,
+        226262205,
+        233296292,
+        224726548,
+        53083830,
+        252819197
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.142370499903336
+  },
+  "reason_example": {
+    "query_id": "litsearch_168",
+    "query": "Could you recommend research that investigates applying conventional data augmentation methods such as removing words and truncating sequences to contrastive learning in NLP applications?",
+    "top_results": [
+      {
+        "corpusid": 248779925,
+        "score": 0.9234641790390015,
+        "reason": "bm25=0.815; dense=0.996; sub_bm25=0.758; sub_dense=0.925"
+      },
+      {
+        "corpusid": 235422524,
+        "score": 0.9024378061294556,
+        "reason": "bm25=0.756; dense=1.000; sub_bm25=0.713; sub_dense=0.985"
+      },
+      {
+        "corpusid": 225062312,
+        "score": 0.8911607265472412,
+        "reason": "bm25=0.797; dense=0.954; sub_bm25=0.591; sub_dense=0.934"
+      },
+      {
+        "corpusid": 258959304,
+        "score": 0.8844189643859863,
+        "reason": "bm25=0.971; dense=0.827; sub_bm25=1.000; sub_dense=0.852"
+      },
+      {
+        "corpusid": 237491889,
+        "score": 0.8819153308868408,
+        "reason": "bm25=0.721; dense=0.989; sub_bm25=0.949; sub_dense=1.000"
+      }
+    ]
+  }
+}

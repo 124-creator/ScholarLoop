@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_495",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_495",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_495",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_495",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2229,
+      "latency_s": 15.815319199929945
+    },
+    {
+      "query_id": "litsearch_495",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 214,
+      "latency_s": 1.5475244000554085
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_495",
+    "gold": [
+      259370780
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "efficient in-context learning methods",
+      "computational efficiency in-context learning",
+      "reduce cost in-context learning papers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        221761488,
+        253116759,
+        534638,
+        11702752,
+        15201887,
+        51734726,
+        5260380,
+        1589010,
+        19653906,
+        2324333,
+        51848072,
+        7136961,
+        202120468,
+        202660778,
+        7883094,
+        3523156,
+        3510512,
+        5486621,
+        14471969
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235358808,
+        11833862,
+        263835059,
+        16255057,
+        17801454,
+        222291172,
+        247450929,
+        1291519,
+        252873449,
+        11743245,
+        255775285,
+        252693198,
+        33897266,
+        248780161,
+        253107666,
+        15201887,
+        989542,
+        259095584,
+        238353966,
+        202120468
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254853961,
+        253420743,
+        241035330,
+        259262608,
+        263909148,
+        259370786,
+        257365525,
+        259064260,
+        261959395,
+        258686160,
+        259370780,
+        263620583,
+        260203032,
+        254043800,
+        259108565,
+        257921399,
+        248427215,
+        246823263,
+        258967265,
+        254877590
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370780
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370780,
+        254853961,
+        259370786,
+        263620583,
+        257365525,
+        241035330,
+        259064260,
+        253420743,
+        202120468,
+        258686160,
+        260203032,
+        261959395,
+        259262608,
+        258715048,
+        257921399,
+        246823263,
+        17801454,
+        254877590,
+        258461313,
+        239016858
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.1340614000801
+  },
+  "reason_example": {
+    "query_id": "litsearch_495",
+    "query": "Which papers develop methods to make in-context learning more computationally efficient?",
+    "top_results": [
+      {
+        "corpusid": 259370780,
+        "score": 0.8541158437728882,
+        "reason": "bm25=0.737; dense=0.932; sub_bm25=0.851; sub_dense=0.962"
+      },
+      {
+        "corpusid": 254853961,
+        "score": 0.8527802228927612,
+        "reason": "bm25=0.632; dense=1.000; sub_bm25=0.785; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370786,
+        "score": 0.8460201621055603,
+        "reason": "bm25=0.677; dense=0.959; sub_bm25=0.792; sub_dense=0.961"
+      },
+      {
+        "corpusid": 263620583,
+        "score": 0.8396300077438354,
+        "reason": "bm25=0.703; dense=0.931; sub_bm25=0.726; sub_dense=0.952"
+      },
+      {
+        "corpusid": 257365525,
+        "score": 0.8239538669586182,
+        "reason": "bm25=0.638; dense=0.948; sub_bm25=0.770; sub_dense=1.000"
+      }
+    ]
+  }
+}

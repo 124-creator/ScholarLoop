@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_264",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_264",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_264",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_264",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1086,
+      "latency_s": 5.476380300009623
+    },
+    {
+      "query_id": "litsearch_264",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 377,
+      "latency_s": 2.7522743000881746
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_264",
+    "gold": [
+      225040574
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "multilingual text-to-text transformers low-resource languages performance",
+      "cross-lingual transfer learning for transformers under-resourced languages",
+      "evaluation of multilingual T5 on low-resource languages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5213689,
+        13539364,
+        6695616,
+        11999594,
+        246000055,
+        19653906,
+        727900,
+        3049463,
+        18232089,
+        168170148,
+        219305420,
+        252624512,
+        1218354,
+        8997127,
+        21547774,
+        1856988,
+        235097593,
+        214742998,
+        2064584,
+        15156124
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390518,
+        15156124,
+        168170148,
+        214742998,
+        247595108,
+        246000055,
+        11743245,
+        235828923,
+        239049874,
+        218515777,
+        249017999,
+        218580964,
+        69289238,
+        247597009,
+        248780465,
+        232076061,
+        14668888,
+        221186888,
+        9652120,
+        251466247
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1500888,
+        258947231,
+        61129329,
+        248780442,
+        258461441,
+        18692534,
+        199022396,
+        204747860,
+        252819213,
+        225040574,
+        2626026,
+        252439131,
+        151042048,
+        145030692,
+        61863536,
+        252780005,
+        257353790,
+        51995091,
+        236486259,
+        10526796
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252186430,
+        214742998,
+        221186888,
+        258714901,
+        246000055,
+        232076061,
+        250390518,
+        233289623
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258947231,
+        214742998,
+        18692534,
+        236486098,
+        252439131,
+        221186888,
+        249017999,
+        233289623,
+        252780005,
+        252186430,
+        61129329,
+        235352637,
+        259002930,
+        229924220,
+        225040574,
+        145030692,
+        258887622,
+        151042048,
+        258461441,
+        237352964
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.508993099909276
+  },
+  "reason_example": {
+    "query_id": "litsearch_264",
+    "query": "Have any research papers examined the efficacy of multilingual text-to-text transformers across various languages, particularly those less represented in pretraining corpora?",
+    "top_results": [
+      {
+        "corpusid": 258947231,
+        "score": 0.8450092077255249,
+        "reason": "bm25=0.679; dense=0.956; sub_bm25=0.644; sub_dense=0.878"
+      },
+      {
+        "corpusid": 214742998,
+        "score": 0.8416107296943665,
+        "reason": "bm25=0.942; dense=0.775; sub_bm25=0.485; sub_dense=0.740"
+      },
+      {
+        "corpusid": 18692534,
+        "score": 0.8380804061889648,
+        "reason": "bm25=0.828; dense=0.845; sub_bm25=0.546; sub_dense=0.831"
+      },
+      {
+        "corpusid": 236486098,
+        "score": 0.8256487846374512,
+        "reason": "bm25=0.845; dense=0.813; sub_bm25=0.675; sub_dense=0.842"
+      },
+      {
+        "corpusid": 252439131,
+        "score": 0.8167979717254639,
+        "reason": "bm25=0.795; dense=0.831; sub_bm25=0.531; sub_dense=0.785"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_062",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_062",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_062",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_062",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1601,
+      "latency_s": 11.501140799955465
+    },
+    {
+      "query_id": "litsearch_062",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 458,
+      "latency_s": 3.7210388999665156
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_062",
+    "gold": [
+      9268430
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "reinforcement learning multi-hop reasoning spurious correlations",
+      "reward hacking multi-hop reasoning",
+      "shortcut learning in reinforcement learning multi-hop reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        126584,
+        11194244,
+        2338256,
+        232185558,
+        4986998,
+        252000636,
+        155089817,
+        2913402,
+        59222819,
+        647426,
+        253420419,
+        19653906,
+        258378173,
+        259376681,
+        3113377,
+        8309203,
+        9475256,
+        51848072,
+        234742074,
+        14774554
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258378173,
+        202541359,
+        248157178,
+        59222819,
+        238531510,
+        208637067,
+        52143467,
+        226236740,
+        27254961,
+        211259464,
+        174801764,
+        202583429,
+        123758373,
+        189927896,
+        220041969,
+        247778993,
+        91184200,
+        254221022,
+        14717992,
+        3921978
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258378173,
+        252873630,
+        52143467,
+        222133043,
+        236493649,
+        257426979,
+        209832300,
+        236411231,
+        7719615,
+        210157251,
+        893234,
+        208857488,
+        264802502,
+        17443269,
+        232147821,
+        246210292,
+        252716080,
+        6188348,
+        245837268,
+        1360818
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258378173,
+        208857488,
+        52143467,
+        202541359
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258378173,
+        52143467,
+        252873630,
+        222133043,
+        208857488,
+        209832300,
+        236493649,
+        208637067,
+        10681279,
+        253098210,
+        246210292,
+        202541359,
+        210157251,
+        232147821,
+        259064088,
+        27254961,
+        59222819,
+        222134075,
+        211092828,
+        7719615
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.369090900057927
+  },
+  "reason_example": {
+    "query_id": "litsearch_062",
+    "query": "In the field of reinforcement learning models for multi-hop reasoning, what issue involves an agent erroneously correlating a successful outcome with irrelevant or coincidental actions, and are there any papers discussing this phenomenon?",
+    "top_results": [
+      {
+        "corpusid": 258378173,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52143467,
+        "score": 0.8575241565704346,
+        "reason": "bm25=0.809; dense=0.890; sub_bm25=0.835; sub_dense=0.995"
+      },
+      {
+        "corpusid": 252873630,
+        "score": 0.8283791542053223,
+        "reason": "bm25=0.733; dense=0.892; sub_bm25=0.825; sub_dense=0.899"
+      },
+      {
+        "corpusid": 222133043,
+        "score": 0.827623724937439,
+        "reason": "bm25=0.737; dense=0.888; sub_bm25=0.461; sub_dense=0.771"
+      },
+      {
+        "corpusid": 208857488,
+        "score": 0.7845896482467651,
+        "reason": "bm25=0.715; dense=0.831; sub_bm25=0.481; sub_dense=0.760"
+      }
+    ]
+  }
+}

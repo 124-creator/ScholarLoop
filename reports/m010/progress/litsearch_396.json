@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_396",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_396",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_396",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_396",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1297,
+      "latency_s": 9.253858200041577
+    },
+    {
+      "query_id": "litsearch_396",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 246,
+      "latency_s": 2.5761398000176996
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_396",
+    "gold": [
+      258557186
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "code LLM iterative refinement with execution feedback",
+      "code generation using execution results to improve performance",
+      "LLM generate code refine loop with execution"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7030749,
+        18074518,
+        19754679,
+        8920526,
+        281213,
+        18769971,
+        14848792,
+        202712637,
+        51870722,
+        246430932,
+        233296719,
+        11645684,
+        6798950,
+        9328025,
+        206467,
+        254853913,
+        1405599,
+        5295491,
+        8326937,
+        9410421
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258557186,
+        253761967,
+        260900008,
+        189999405,
+        251197051,
+        263671510,
+        263605851,
+        250920542,
+        248377325,
+        224803367,
+        202661093,
+        46919506,
+        5471567,
+        233364968,
+        232290577,
+        252819311,
+        252222356,
+        252734772,
+        252734952,
+        248157108
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259164815,
+        258557186,
+        260886874,
+        260334759,
+        263671510,
+        250920542,
+        248157108,
+        263834884,
+        247362946,
+        259341641,
+        251197051,
+        250408279,
+        259088657,
+        260900008,
+        9556453,
+        233364968,
+        215828318,
+        202776931,
+        253116642,
+        257427177
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        260900008,
+        258557186,
+        250920542,
+        263671510,
+        251197051
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258557186,
+        259164815,
+        263671510,
+        250920542,
+        260900008,
+        251197051,
+        253761967,
+        248157108,
+        260886874,
+        189999405,
+        233364968,
+        260334759,
+        259088657,
+        257427177,
+        248377325,
+        250408279,
+        263605851,
+        259341641,
+        8820379,
+        215828318
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.024551599984989
+  },
+  "reason_example": {
+    "query_id": "litsearch_396",
+    "query": "Is there any paper that employs code LLMs to iteratively generate and refine code with execution results to improve the performance?",
+    "top_results": [
+      {
+        "corpusid": 258557186,
+        "score": 0.9646346569061279,
+        "reason": "bm25=1.000; dense=0.941; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259164815,
+        "score": 0.8628023862838745,
+        "reason": "bm25=0.657; dense=1.000; sub_bm25=0.484; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263671510,
+        "score": 0.820266842842102,
+        "reason": "bm25=0.816; dense=0.823; sub_bm25=0.787; sub_dense=0.897"
+      },
+      {
+        "corpusid": 250920542,
+        "score": 0.791179895401001,
+        "reason": "bm25=0.781; dense=0.798; sub_bm25=0.759; sub_dense=0.936"
+      },
+      {
+        "corpusid": 260900008,
+        "score": 0.7883503437042236,
+        "reason": "bm25=0.867; dense=0.736; sub_bm25=0.696; sub_dense=0.910"
+      }
+    ]
+  }
+}

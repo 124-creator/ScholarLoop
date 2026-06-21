@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_101",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_101",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_101",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_101",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1614,
+      "latency_s": 10.271101900027134
+    },
+    {
+      "query_id": "litsearch_101",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.1925026000244543
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_101",
+    "gold": [
+      236477655
+    ],
+    "pool_size": 248,
+    "decomposition": [
+      "radiology report summarization graph neural networks",
+      "biomedical entity extraction radiology report summarization",
+      "graph neural networks biomedical entity extraction radiology"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38964517,
+        5195887,
+        236179518,
+        210063635,
+        8997127,
+        236460257,
+        252819333,
+        59608662,
+        207764605,
+        588477,
+        8404331,
+        752623,
+        29281294,
+        9787601,
+        1420479,
+        21022858,
+        19170988,
+        41607,
+        14263284,
+        44470886
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247476265,
+        235097248,
+        259376752,
+        259376823,
+        236477655,
+        14475841,
+        226283909,
+        41607,
+        220059896,
+        13482248,
+        252819466,
+        224803298,
+        235248430,
+        35207135,
+        18743753,
+        253762055,
+        259376493,
+        12095245,
+        252819333,
+        253553576
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247922414,
+        259376890,
+        252819333,
+        259376823,
+        257767705,
+        259376911,
+        252819335,
+        13482248,
+        258486902,
+        236477655,
+        207794190,
+        252670538,
+        269225,
+        258999996,
+        53216170,
+        259376493,
+        259376752,
+        259095457,
+        216552978,
+        218718706
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247922414,
+        236477655,
+        259376823,
+        247476265,
+        252819333,
+        259376752,
+        207794190,
+        26698484,
+        235097248,
+        252819466,
+        258999996,
+        5195887
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259376823,
+        236477655,
+        247922414,
+        247476265,
+        259376752,
+        235097248,
+        252819333,
+        13482248,
+        259376890,
+        257767705,
+        259376493,
+        207794190,
+        252819335,
+        235097573,
+        6532096,
+        259376911,
+        53216170,
+        258999996,
+        26698484,
+        253762055
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.478542100056075
+  },
+  "reason_example": {
+    "query_id": "litsearch_101",
+    "query": "Are there any research papers investigating the improvement of radiology report summarization through the application of graph neural networks in conjunction with biomedical entity extraction?",
+    "top_results": [
+      {
+        "corpusid": 259376823,
+        "score": 0.9203755855560303,
+        "reason": "bm25=0.899; dense=0.935; sub_bm25=0.936; sub_dense=0.975"
+      },
+      {
+        "corpusid": 236477655,
+        "score": 0.8939011096954346,
+        "reason": "bm25=0.880; dense=0.903; sub_bm25=0.943; sub_dense=0.905"
+      },
+      {
+        "corpusid": 247922414,
+        "score": 0.8881263732910156,
+        "reason": "bm25=0.720; dense=1.000; sub_bm25=0.820; sub_dense=0.985"
+      },
+      {
+        "corpusid": 247476265,
+        "score": 0.8856438398361206,
+        "reason": "bm25=1.000; dense=0.809; sub_bm25=1.000; sub_dense=0.907"
+      },
+      {
+        "corpusid": 259376752,
+        "score": 0.8811987042427063,
+        "reason": "bm25=0.906; dense=0.865; sub_bm25=1.000; sub_dense=0.884"
+      }
+    ]
+  }
+}

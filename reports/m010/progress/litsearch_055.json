@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_055",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_055",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_055",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_055",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 937,
+      "latency_s": 4.79170029994566
+    },
+    {
+      "query_id": "litsearch_055",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 363,
+      "latency_s": 2.1806846000254154
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_055",
+    "gold": [
+      218516743
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "discourse parsing Parseval procedure micro-averaged F1",
+      "original Parseval evaluation discourse parsing",
+      "micro-averaged F1 score discourse parsing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10108216,
+        679264,
+        17565543,
+        878415,
+        15297336,
+        46277238,
+        1412569,
+        15557579,
+        12735028,
+        15423144,
+        3863077,
+        19826970,
+        9177856,
+        15974189,
+        6243853,
+        16706302,
+        226283780,
+        15077869,
+        20110212,
+        6726437
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        20110212,
+        241583248,
+        235097618,
+        18497095,
+        16662635,
+        5301456,
+        3061602,
+        3223155,
+        15077869,
+        19826970,
+        227231574,
+        2531955,
+        236459897,
+        258378143,
+        15557579,
+        17961054,
+        211146100,
+        16489279,
+        447387,
+        15833184
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        20110212,
+        514191,
+        5187426,
+        7956913,
+        17016748,
+        44968305,
+        930523,
+        11919464,
+        16323263,
+        237099283,
+        153312413,
+        2361247,
+        15461160,
+        16498520,
+        241583457,
+        219963636,
+        17961054,
+        1794968,
+        3258671,
+        1234375
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        20110212
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        20110212,
+        514191,
+        17961054,
+        2361247,
+        241583248,
+        15461160,
+        15077869,
+        17016748,
+        235097618,
+        153312413,
+        227231574,
+        930523,
+        5187426,
+        16489279,
+        11919464,
+        198904598,
+        13183091,
+        7956913,
+        237099283,
+        241583457
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.31051069998648
+  },
+  "reason_example": {
+    "query_id": "litsearch_055",
+    "query": "In discourse parsing literature, which works have explored parser performance by adopting the original Parseval procedure and reporting micro-averaged F1 scores?",
+    "top_results": [
+      {
+        "corpusid": 20110212,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.940"
+      },
+      {
+        "corpusid": 514191,
+        "score": 0.8279188871383667,
+        "reason": "bm25=0.602; dense=0.979; sub_bm25=0.585; sub_dense=1.000"
+      },
+      {
+        "corpusid": 17961054,
+        "score": 0.8208918571472168,
+        "reason": "bm25=0.787; dense=0.844; sub_bm25=0.471; sub_dense=0.869"
+      },
+      {
+        "corpusid": 2361247,
+        "score": 0.8186443448066711,
+        "reason": "bm25=0.758; dense=0.859; sub_bm25=0.710; sub_dense=0.919"
+      },
+      {
+        "corpusid": 241583248,
+        "score": 0.818513810634613,
+        "reason": "bm25=0.906; dense=0.760; sub_bm25=0.806; sub_dense=0.878"
+      }
+    ]
+  }
+}

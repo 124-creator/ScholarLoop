@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_061",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_061",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_061",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_061",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 889,
+      "latency_s": 4.18139489996247
+    },
+    {
+      "query_id": "litsearch_061",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 283,
+      "latency_s": 2.238495900062844
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_061",
+    "gold": [
+      8476273
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "ground-truth alignment generation simultaneous machine translation",
+      "incremental translation alignment training data techniques",
+      "simultaneous MT alignment supervision methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        554151,
+        51878325,
+        7478301,
+        8060911,
+        419762,
+        8749531,
+        1412569,
+        12985296,
+        14020929,
+        1296031,
+        3198684,
+        7297988,
+        14734025,
+        10077982,
+        249204419,
+        21714975,
+        11294512,
+        189999088,
+        19012205,
+        201686118
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865150,
+        227230690,
+        259165076,
+        219601957,
+        17272416,
+        237010903,
+        67856029,
+        189999088,
+        959566,
+        17257526,
+        256461355,
+        219124176,
+        238259902,
+        1258901,
+        2443486,
+        226262294,
+        2694568,
+        2241526,
+        251564535,
+        44108216
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8476273,
+        17900228,
+        2948428,
+        7191961,
+        16422813,
+        2720865,
+        226940747,
+        698317,
+        231933756,
+        15069542,
+        8031067,
+        14531125,
+        250150874,
+        690548,
+        11447348,
+        8718951,
+        1069316,
+        16572349,
+        227230690,
+        743967
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865150,
+        16391184,
+        1258901,
+        2948428,
+        227230690,
+        11294512,
+        419762,
+        6097881
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        227230690,
+        2948428,
+        17900228,
+        243865150,
+        10687761,
+        2443486,
+        219124176,
+        15069542,
+        14565147,
+        16422813,
+        16391184,
+        1258901,
+        2720865,
+        17257526,
+        259370839,
+        8031067,
+        5091430,
+        226940747,
+        222158312,
+        14020929
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.011939099989831
+  },
+  "reason_example": {
+    "query_id": "litsearch_061",
+    "query": "In the context of simultaneous machine translation, which tool or technique could I use to generate ground-truth alignments for training models to interpret and generate translations incrementally?",
+    "top_results": [
+      {
+        "corpusid": 227230690,
+        "score": 0.9514762163162231,
+        "reason": "bm25=0.994; dense=0.923; sub_bm25=0.946; sub_dense=0.934"
+      },
+      {
+        "corpusid": 2948428,
+        "score": 0.9278528094291687,
+        "reason": "bm25=0.833; dense=0.991; sub_bm25=0.646; sub_dense=0.990"
+      },
+      {
+        "corpusid": 17900228,
+        "score": 0.9043344259262085,
+        "reason": "bm25=0.763; dense=0.999; sub_bm25=0.957; sub_dense=0.973"
+      },
+      {
+        "corpusid": 243865150,
+        "score": 0.9028545618057251,
+        "reason": "bm25=1.000; dense=0.838; sub_bm25=0.936; sub_dense=0.791"
+      },
+      {
+        "corpusid": 10687761,
+        "score": 0.8797416687011719,
+        "reason": "bm25=0.863; dense=0.891; sub_bm25=0.310; sub_dense=0.887"
+      }
+    ]
+  }
+}

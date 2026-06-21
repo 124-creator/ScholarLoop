@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_364",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_364",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_364",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_364",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1114,
+      "latency_s": 7.243975299992599
+    },
+    {
+      "query_id": "litsearch_364",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 245,
+      "latency_s": 2.4055446999846026
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_364",
+    "gold": [
+      254877406
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "decoder-only language model raw bytes no tokenizer",
+      "byte-level decoder-only transformer",
+      "model operating on raw text bytes without tokenization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5399186,
+        3891855,
+        6798577,
+        202712637,
+        17561814,
+        5498664,
+        252907549,
+        226283605,
+        220768717,
+        487442,
+        17675456,
+        5460282,
+        44197490,
+        8277151,
+        15043144,
+        8095956,
+        18969591,
+        258480179,
+        5238983,
+        215761208
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        384520,
+        221246120,
+        1965270,
+        14433519,
+        1044865,
+        6771196,
+        26348515,
+        8027785,
+        7672097,
+        257258159,
+        67865692,
+        229924220,
+        184482605,
+        14325382,
+        222291070,
+        257365203,
+        10905329,
+        21915013,
+        259188071,
+        247741039
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        384520,
+        222140632,
+        232185112,
+        215416175,
+        226262326,
+        13012068,
+        221246120,
+        235097614,
+        18057757,
+        245425218,
+        259188071,
+        234487247,
+        227905005,
+        5160989,
+        487442,
+        248986585,
+        8027785,
+        216868277,
+        7227918,
+        259833873
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        384520,
+        221246120,
+        487442
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        384520,
+        221246120,
+        14433519,
+        8027785,
+        259188071,
+        232185112,
+        13012068,
+        259833873,
+        234487247,
+        229924220,
+        257258159,
+        248366702,
+        215416175,
+        235195590,
+        487442,
+        252873220,
+        227905005,
+        21686399,
+        256460898,
+        245123905
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.011578600038774
+  },
+  "reason_example": {
+    "query_id": "litsearch_364",
+    "query": "Is there a decoder-only language model that does not use a tokenizer and operates on raw text bytes?",
+    "top_results": [
+      {
+        "corpusid": 384520,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221246120,
+        "score": 0.9111669659614563,
+        "reason": "bm25=0.938; dense=0.894; sub_bm25=0.996; sub_dense=0.938"
+      },
+      {
+        "corpusid": 14433519,
+        "score": 0.8757835626602173,
+        "reason": "bm25=0.897; dense=0.861; sub_bm25=0.535; sub_dense=0.846"
+      },
+      {
+        "corpusid": 8027785,
+        "score": 0.8660486340522766,
+        "reason": "bm25=0.859; dense=0.871; sub_bm25=0.536; sub_dense=0.895"
+      },
+      {
+        "corpusid": 259188071,
+        "score": 0.8555275201797485,
+        "reason": "bm25=0.818; dense=0.881; sub_bm25=0.570; sub_dense=0.854"
+      }
+    ]
+  }
+}

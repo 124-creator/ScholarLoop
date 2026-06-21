@@ -1,0 +1,716 @@
+{
+  "benchmark": "RealScholarQuery/PaSa",
+  "query_count": 50,
+  "official_gold_count": 791,
+  "resolvable_gold_count": 739,
+  "unresolvable_gold_count": 52,
+  "resolvable_ratio": 0.934260429835651,
+  "queries_with_unresolvable_gold_count": 22,
+  "per_query_unresolvable": [
+    {
+      "query_id": "RealScholarQuery_1",
+      "gold_count": 29,
+      "unresolvable_count": 2
+    },
+    {
+      "query_id": "RealScholarQuery_2",
+      "gold_count": 21,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_3",
+      "gold_count": 42,
+      "unresolvable_count": 3
+    },
+    {
+      "query_id": "RealScholarQuery_4",
+      "gold_count": 44,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_5",
+      "gold_count": 7,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_6",
+      "gold_count": 24,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_7",
+      "gold_count": 35,
+      "unresolvable_count": 4
+    },
+    {
+      "query_id": "RealScholarQuery_8",
+      "gold_count": 16,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_10",
+      "gold_count": 15,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_13",
+      "gold_count": 12,
+      "unresolvable_count": 2
+    },
+    {
+      "query_id": "RealScholarQuery_14",
+      "gold_count": 9,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_19",
+      "gold_count": 37,
+      "unresolvable_count": 3
+    },
+    {
+      "query_id": "RealScholarQuery_24",
+      "gold_count": 11,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "gold_count": 16,
+      "unresolvable_count": 14
+    },
+    {
+      "query_id": "RealScholarQuery_34",
+      "gold_count": 7,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_37",
+      "gold_count": 10,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_40",
+      "gold_count": 5,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_42",
+      "gold_count": 10,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "gold_count": 28,
+      "unresolvable_count": 7
+    },
+    {
+      "query_id": "RealScholarQuery_46",
+      "gold_count": 65,
+      "unresolvable_count": 3
+    },
+    {
+      "query_id": "RealScholarQuery_48",
+      "gold_count": 8,
+      "unresolvable_count": 1
+    },
+    {
+      "query_id": "RealScholarQuery_49",
+      "gold_count": 8,
+      "unresolvable_count": 1
+    }
+  ],
+  "unresolvable_gold": [
+    {
+      "query_id": "RealScholarQuery_1",
+      "ordinal": 7,
+      "title": "What Do Language Models Learn in Context? The Structured Task Hypothesis",
+      "arxiv_id": "2406.04216",
+      "title_key": "whatdolanguagemodelslearnincontextthestructuredtaskhypothesis",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_1",
+      "ordinal": 9,
+      "title": "In-context Learning and Induction Heads",
+      "arxiv_id": "2209.11895",
+      "title_key": "incontextlearningandinductionheads",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_2",
+      "ordinal": 20,
+      "title": "Emu3: Next token prediction is all you need",
+      "arxiv_id": "2409.18869",
+      "title_key": "emu3nexttokenpredictionisallyouneed",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_3",
+      "ordinal": 12,
+      "title": "Gemini: A Family of Highly Capable Multimodal Models",
+      "arxiv_id": "2312.11805",
+      "title_key": "geminiafamilyofhighlycapablemultimodalmodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_3",
+      "ordinal": 16,
+      "title": "Video Understanding as Machine Translation",
+      "arxiv_id": "2006.07203",
+      "title_key": "videounderstandingasmachinetranslation",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_3",
+      "ordinal": 24,
+      "title": "Imagebind: One embedding space to bind them all",
+      "arxiv_id": "2305.05665",
+      "title_key": "imagebindoneembeddingspacetobindthemall",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_4",
+      "ordinal": 18,
+      "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+      "arxiv_id": "2409.12917",
+      "title_key": "traininglanguagemodelstoselfcorrectviareinforcementlearning",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_5",
+      "ordinal": 5,
+      "title": "Enhancing Image Caption Generation Using Reinforcement Learning with Human Feedback",
+      "arxiv_id": "2403.06735",
+      "title_key": "enhancingimagecaptiongenerationusingreinforcementlearningwithhumanfeedback",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_6",
+      "ordinal": 19,
+      "title": "HOLMES: Hyper-Relational Knowledge Graphs for Multi-hop Question Answering using LLMs",
+      "arxiv_id": "2406.06027",
+      "title_key": "holmeshyperrelationalknowledgegraphsformultihopquestionansweringusingllms",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_7",
+      "ordinal": 9,
+      "title": "LVBench: An Extreme Long Video Understanding Benchmark",
+      "arxiv_id": "2406.08035",
+      "title_key": "lvbenchanextremelongvideounderstandingbenchmark",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_7",
+      "ordinal": 28,
+      "title": "Learning Video Representations from Large Language Models",
+      "arxiv_id": "2212.04501",
+      "title_key": "learningvideorepresentationsfromlargelanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_7",
+      "ordinal": 30,
+      "title": "Synopses of movie narratives: a video-language dataset for story understanding",
+      "arxiv_id": "2203.05711",
+      "title_key": "synopsesofmovienarrativesavideolanguagedatasetforstoryunderstanding",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_7",
+      "ordinal": 33,
+      "title": "Videoagent: A memory-augmented multimodal agent for video understanding.",
+      "arxiv_id": "2403.11481",
+      "title_key": "videoagentamemoryaugmentedmultimodalagentforvideounderstanding",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_8",
+      "ordinal": 8,
+      "title": "Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft",
+      "arxiv_id": "2312.09238",
+      "title_key": "automcrewardautomateddenserewarddesignwithlargelanguagemodelsforminecraft",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_10",
+      "ordinal": 5,
+      "title": "Are Bigger Encoders Always Better in Vision Large Models?",
+      "arxiv_id": "2408.00620",
+      "title_key": "arebiggerencodersalwaysbetterinvisionlargemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_13",
+      "ordinal": 6,
+      "title": "On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks",
+      "arxiv_id": "2402.08115",
+      "title_key": "ontheselfverificationlimitationsoflargelanguagemodelsonreasoningandplanningtasks",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_13",
+      "ordinal": 11,
+      "title": "GPT-4 Doesn't Know It's Wrong: An Analysis of Iterative Prompting for Reasoning Problems",
+      "arxiv_id": "2310.12397",
+      "title_key": "gpt4doesntknowitswrongananalysisofiterativepromptingforreasoningproblems",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_14",
+      "ordinal": 7,
+      "title": "Leveraging Long-Context Large Language Models for Multi-Document Understanding and Summarization in Enterprise Applications",
+      "arxiv_id": "2409.18454",
+      "title_key": "leveraginglongcontextlargelanguagemodelsformultidocumentunderstandingandsummarizationinenterpriseapplications",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_19",
+      "ordinal": 7,
+      "title": "Duwak: Dual Watermarks in Large Language Models",
+      "arxiv_id": "2403.13000",
+      "title_key": "duwakdualwatermarksinlargelanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_19",
+      "ordinal": 17,
+      "title": "Unbiased Watermark for Large Language Models",
+      "arxiv_id": "2310.10669",
+      "title_key": "unbiasedwatermarkforlargelanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_19",
+      "ordinal": 30,
+      "title": "Watermarking Text Generated by Black-Box Language Models",
+      "arxiv_id": "2305.08883",
+      "title_key": "watermarkingtextgeneratedbyblackboxlanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_24",
+      "ordinal": 1,
+      "title": "(Perhaps) Beyond Human Translation: Harnessing Multi-Agent Collaboration for Translating Ultra-Long Literary Texts\n",
+      "arxiv_id": "2405.11804",
+      "title_key": "perhapsbeyondhumantranslationharnessingmultiagentcollaborationfortranslatingultralongliterarytexts",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 1,
+      "title": "Universal Performance Gap of Neural Quantum States Applied to the Hofstadter-Bose-Hubbard Model",
+      "arxiv_id": "2405.01981",
+      "title_key": "universalperformancegapofneuralquantumstatesappliedtothehofstadterbosehubbardmodel",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 2,
+      "title": "Variational Quantum Monte Carlo Method with a Neural-Network Ansatz for\n  Open Quantum Systems",
+      "arxiv_id": "1902.09483",
+      "title_key": "variationalquantummontecarlomethodwithaneuralnetworkansatzforopenquantumsystems",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 3,
+      "title": "Discovering Quantum Phase Transitions with Fermionic Neural Networks",
+      "arxiv_id": "2202.05183",
+      "title_key": "discoveringquantumphasetransitionswithfermionicneuralnetworks",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 4,
+      "title": "Ab-initio quantum chemistry with neural-network wavefunctions",
+      "arxiv_id": "2208.12590",
+      "title_key": "abinitioquantumchemistrywithneuralnetworkwavefunctions",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 5,
+      "title": "Second-order optimisation strategies for neural network quantum states",
+      "arxiv_id": "2401.17550",
+      "title_key": "secondorderoptimisationstrategiesforneuralnetworkquantumstates",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 6,
+      "title": "NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems",
+      "arxiv_id": "2112.10526",
+      "title_key": "netket3machinelearningtoolboxformanybodyquantumsystems",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 7,
+      "title": "Deep learning quantum Monte Carlo for solids",
+      "arxiv_id": "2407.00707",
+      "title_key": "deeplearningquantummontecarloforsolids",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 8,
+      "title": "Neural network quantum state with proximal optimization: a ground-state\n  searching scheme based on variational Monte Carlo",
+      "arxiv_id": "2210.16493",
+      "title_key": "neuralnetworkquantumstatewithproximaloptimizationagroundstatesearchingschemebasedonvariationalmontecarlo",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 9,
+      "title": "Variational Monte Carlo with Neural Network Quantum States for Yang-Mills Matrix Model",
+      "arxiv_id": "2409.00398",
+      "title_key": "variationalmontecarlowithneuralnetworkquantumstatesforyangmillsmatrixmodel",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 10,
+      "title": "Natural Quantum Monte Carlo Computation of Excited States",
+      "arxiv_id": "2308.16848",
+      "title_key": "naturalquantummontecarlocomputationofexcitedstates",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 11,
+      "title": "Neural Quantum States in Variational Monte Carlo Method: A Brief Summary",
+      "arxiv_id": "2406.01017",
+      "title_key": "neuralquantumstatesinvariationalmontecarlomethodabriefsummary",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 12,
+      "title": "Forward Laplacian: A New Computational Framework for Neural\n  Network-based Variational Monte Carlo",
+      "arxiv_id": "2307.08214",
+      "title_key": "forwardlaplaciananewcomputationalframeworkforneuralnetworkbasedvariationalmontecarlo",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 13,
+      "title": "Solving the nuclear pairing model with neural network quantum states",
+      "arxiv_id": "2211.04614",
+      "title_key": "solvingthenuclearpairingmodelwithneuralnetworkquantumstates",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_32",
+      "ordinal": 15,
+      "title": "Penalty and auxiliary wave function methods for electronic Excitation in neural network variational Monte Carlo",
+      "arxiv_id": "2311.17595",
+      "title_key": "penaltyandauxiliarywavefunctionmethodsforelectronicexcitationinneuralnetworkvariationalmontecarlo",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_34",
+      "ordinal": 4,
+      "title": "3D-VirtFusion: Synthetic 3D Data Augmentation through Generative Diffusion Models and Controllable Editing",
+      "arxiv_id": "2408.13788",
+      "title_key": "3dvirtfusionsynthetic3ddataaugmentationthroughgenerativediffusionmodelsandcontrollableediting",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_37",
+      "ordinal": 3,
+      "title": "Incorporating Large Language Models into Production Systems for Enhanced Task Automation and Flexibility",
+      "arxiv_id": "2407.08550",
+      "title_key": "incorporatinglargelanguagemodelsintoproductionsystemsforenhancedtaskautomationandflexibility",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_40",
+      "ordinal": 3,
+      "title": "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+      "arxiv_id": "2305.17888",
+      "title_key": "llmqatdatafreequantizationawaretrainingforlargelanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_42",
+      "ordinal": 5,
+      "title": "Key Frame Extraction with Attention Based Deep Neural Networks",
+      "arxiv_id": "2306.13176",
+      "title_key": "keyframeextractionwithattentionbaseddeepneuralnetworks",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 9,
+      "title": "How to Hallucinate Functional Proteins",
+      "arxiv_id": "1903.00458",
+      "title_key": "howtohallucinatefunctionalproteins",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 14,
+      "title": "A framework for conditional diffusion modelling with applications in motif scaffolding for protein design",
+      "arxiv_id": "2312.09236",
+      "title_key": "aframeworkforconditionaldiffusionmodellingwithapplicationsinmotifscaffoldingforproteindesign",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 15,
+      "title": "Fast protein backbone generation with SE(3) flow matching",
+      "arxiv_id": "2310.05297",
+      "title_key": "fastproteinbackbonegenerationwithse3flowmatching",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 19,
+      "title": "Preference optimization of protein language models as a multi-objective\n  binder design paradigm",
+      "arxiv_id": "2403.04187",
+      "title_key": "preferenceoptimizationofproteinlanguagemodelsasamultiobjectivebinderdesignparadigm",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 24,
+      "title": "Leveraging Deep Generative Model For Computational Protein Design And Optimization",
+      "arxiv_id": "2408.17241",
+      "title_key": "leveragingdeepgenerativemodelforcomputationalproteindesignandoptimization",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 26,
+      "title": "Controllable Protein Design with Language Models",
+      "arxiv_id": "2201.07338",
+      "title_key": "controllableproteindesignwithlanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_43",
+      "ordinal": 27,
+      "title": "Generative artificial intelligence for de novo protein design",
+      "arxiv_id": "2310.09685",
+      "title_key": "generativeartificialintelligencefordenovoproteindesign",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_46",
+      "ordinal": 5,
+      "title": "DELTA: Decomposed Efficient Long-Term Robot Task Planning using Large Language Models",
+      "arxiv_id": "2404.03275",
+      "title_key": "deltadecomposedefficientlongtermrobottaskplanningusinglargelanguagemodels",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_46",
+      "ordinal": 27,
+      "title": "RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot",
+      "arxiv_id": "2307.00595",
+      "title_key": "rh20tacomprehensiveroboticdatasetforlearningdiverseskillsinoneshot",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_46",
+      "ordinal": 32,
+      "title": "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning",
+      "arxiv_id": "2307.06135",
+      "title_key": "sayplangroundinglargelanguagemodelsusing3dscenegraphsforscalablerobottaskplanning",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_48",
+      "ordinal": 4,
+      "title": "Linking microblogging sentiments to stock price movement: An application of GPT-4",
+      "arxiv_id": "2308.16771",
+      "title_key": "linkingmicrobloggingsentimentstostockpricemovementanapplicationofgpt4",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    },
+    {
+      "query_id": "RealScholarQuery_49",
+      "ordinal": 3,
+      "title": "Atari-GPT: Investigating the Capabilities of Multimodal Large Language Models as Low-Level Policies for Atari Games",
+      "arxiv_id": "2408.15950",
+      "title_key": "atarigptinvestigatingthecapabilitiesofmultimodallargelanguagemodelsaslowlevelpoliciesforatarigames",
+      "resolvable": false,
+      "corpusid": null,
+      "method": "unresolved",
+      "reason": "not_in_id2paper_and_title_not_in_zip"
+    }
+  ],
+  "dual_verification_method": {
+    "arxiv_path": "normalize answer_arxiv_id; check membership in paper_database/id2paper.json keys",
+    "title_path": "normalize answer title with [^a-z0-9]+ removal; check membership in cs_paper_2nd.zip namelist",
+    "resolvable_if": "arxiv_path OR title_path",
+    "full791_policy": "unresolvable official gold are represented by unreachable synthetic ids and count as misses for every system"
+  },
+  "unexpected_unparseable_causes": [],
+  "raw_files": {
+    "test_jsonl": {
+      "path": "reports\\m060\\raw\\pasa-dataset\\RealScholarQuery\\test.jsonl",
+      "bytes": 84709
+    },
+    "id2paper_json": {
+      "path": "reports\\m060\\raw\\pasa-dataset\\paper_database\\id2paper.json",
+      "bytes": 60575400
+    },
+    "cs_paper_zip": {
+      "path": "reports\\m060\\raw\\pasa-dataset\\paper_database\\cs_paper_2nd.zip",
+      "bytes": 2514939832
+    }
+  }
+}

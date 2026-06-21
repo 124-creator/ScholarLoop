@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_416",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_416",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_416",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_416",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 947,
+      "latency_s": 6.226351200020872
+    },
+    {
+      "query_id": "litsearch_416",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 272,
+      "latency_s": 3.38244489999488
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_416",
+    "gold": [
+      258546855
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "adversarial attacks on dialogue generation",
+      "language model vulnerability in conversational AI",
+      "robustness of generative dialogue models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17336955,
+        36102155,
+        5128289,
+        253762079,
+        29974541,
+        252907549,
+        3258280,
+        36849009,
+        53099585,
+        2248908,
+        3158796,
+        6609459,
+        14736978,
+        222378565,
+        203905467,
+        40421696,
+        6089322,
+        27016310,
+        253420419,
+        3923764
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        203905467,
+        248524755,
+        216641718,
+        248299824,
+        226283607,
+        234487236,
+        219981806,
+        21692511,
+        3229801,
+        253080850,
+        51940055,
+        238407985,
+        259075723,
+        1184214,
+        249538400,
+        51918669,
+        53099585,
+        232269939,
+        243865419,
+        231942635
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        221971299,
+        237513633,
+        248524755,
+        252907607,
+        247940075,
+        259108610,
+        248965347,
+        258546855,
+        41769338,
+        221739314,
+        174798410,
+        250113401,
+        3923764,
+        2859241,
+        263835408,
+        8482412,
+        258762468,
+        2361961,
+        8700252,
+        51940055
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248524755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248524755,
+        221971299,
+        248299824,
+        203905467,
+        51940055,
+        221186631,
+        222272299,
+        234487236,
+        253080850,
+        216641718,
+        258762468,
+        133468229,
+        259108610,
+        247940075,
+        14949670,
+        258546855,
+        248965347,
+        222134008,
+        238407985,
+        248780270
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.623453399981372
+  },
+  "reason_example": {
+    "query_id": "litsearch_416",
+    "query": "Is there any work that attacks language models in dialogue generation?",
+    "top_results": [
+      {
+        "corpusid": 248524755,
+        "score": 0.9344774484634399,
+        "reason": "bm25=0.909; dense=0.951; sub_bm25=0.809; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221971299,
+        "score": 0.9121290445327759,
+        "reason": "bm25=0.780; dense=1.000; sub_bm25=0.561; sub_dense=0.936"
+      },
+      {
+        "corpusid": 248299824,
+        "score": 0.8408216238021851,
+        "reason": "bm25=0.901; dense=0.800; sub_bm25=0.596; sub_dense=0.870"
+      },
+      {
+        "corpusid": 203905467,
+        "score": 0.8394414186477661,
+        "reason": "bm25=1.000; dense=0.732; sub_bm25=0.759; sub_dense=0.787"
+      },
+      {
+        "corpusid": 51940055,
+        "score": 0.8305220603942871,
+        "reason": "bm25=0.819; dense=0.838; sub_bm25=0.643; sub_dense=0.961"
+      }
+    ]
+  }
+}

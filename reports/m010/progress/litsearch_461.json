@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_461",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_461",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_461",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_461",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 674,
+      "latency_s": 2.5812087999656796
+    },
+    {
+      "query_id": "litsearch_461",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 293,
+      "latency_s": 2.644726200029254
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_461",
+    "gold": [
+      258960136
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "first Chinese-English text image translation dataset",
+      "real-world Chinese-English text image translation dataset paper",
+      "original paper text image translation Chinese English dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        280387,
+        53366105,
+        7440991,
+        14609354,
+        252624485,
+        17205221,
+        705693,
+        59800522,
+        251395456,
+        250390466,
+        235097691,
+        1902688,
+        252211791,
+        24553,
+        2104869,
+        16627872,
+        34045500,
+        61355894,
+        247446773,
+        235417347
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258960136,
+        3662564,
+        259370754,
+        243848320,
+        236459946,
+        6600821,
+        252847523,
+        252596292,
+        235417347,
+        259370871,
+        249953983,
+        232404024,
+        9037546,
+        280387,
+        252763281,
+        253761985,
+        227905138,
+        259370649,
+        14489358,
+        52100616
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14580933,
+        2304895,
+        51871755,
+        18591698,
+        258960136,
+        18192617,
+        14189632,
+        17565276,
+        2776693,
+        220275515,
+        223953396,
+        46111577,
+        51880115,
+        5744000,
+        34990046,
+        61449780,
+        19123459,
+        7347732,
+        62354451,
+        42255
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258960136
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258960136,
+        51871755,
+        3662564,
+        280387,
+        17565276,
+        14489358,
+        19123459,
+        2304895,
+        243848320,
+        52001093,
+        61449780,
+        235417347,
+        14189632,
+        223953396,
+        259370649,
+        14580933,
+        15203457,
+        52010128,
+        250390437,
+        4380496
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.216781900031492
+  },
+  "reason_example": {
+    "query_id": "litsearch_461",
+    "query": "Which paper first published a real-world Chinese-English text image translation dataset?",
+    "top_results": [
+      {
+        "corpusid": 258960136,
+        "score": 0.9530801773071289,
+        "reason": "bm25=1.000; dense=0.922; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 51871755,
+        "score": 0.8516473174095154,
+        "reason": "bm25=0.668; dense=0.974; sub_bm25=0.700; sub_dense=0.907"
+      },
+      {
+        "corpusid": 3662564,
+        "score": 0.8300410509109497,
+        "reason": "bm25=0.897; dense=0.785; sub_bm25=0.882; sub_dense=0.742"
+      },
+      {
+        "corpusid": 280387,
+        "score": 0.8299968242645264,
+        "reason": "bm25=0.796; dense=0.853; sub_bm25=0.744; sub_dense=0.881"
+      },
+      {
+        "corpusid": 17565276,
+        "score": 0.8287926912307739,
+        "reason": "bm25=0.705; dense=0.911; sub_bm25=0.548; sub_dense=0.885"
+      }
+    ]
+  }
+}

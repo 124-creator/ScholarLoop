@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_552",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_552",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_552",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_552",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 656,
+      "latency_s": 2.8741396999685094
+    },
+    {
+      "query_id": "litsearch_552",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 363,
+      "latency_s": 3.3538883000146598
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_552",
+    "gold": [
+      259287121
+    ],
+    "pool_size": 288,
+    "decomposition": [
+      "first paper decoupled workers distributed reinforcement learning",
+      "decoupled workers in distributed RL system",
+      "first introduction of decoupled workers for reinforcement learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7133783,
+        7511544,
+        15287917,
+        1241421,
+        1402974,
+        17350305,
+        8535026,
+        9208282,
+        10059432,
+        8176139,
+        18076825,
+        13113753,
+        16213194,
+        18209016,
+        44080975,
+        248182543,
+        9784084,
+        41297504,
+        839014,
+        14635744
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259287121,
+        220831336,
+        235613427,
+        13748235,
+        1770217,
+        254018196,
+        108296106,
+        231718715,
+        232170613,
+        254275597,
+        235742951,
+        52897771,
+        2486284,
+        12373647,
+        1198091,
+        208527831,
+        211204780,
+        235352985,
+        256697567,
+        2408119
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2186770,
+        14478849,
+        53773168,
+        53366105,
+        6568949,
+        45927246,
+        14232489,
+        1380342,
+        2872582,
+        263862157,
+        58774356,
+        20908501,
+        46121275,
+        250179930,
+        779651,
+        21724522,
+        220831336,
+        235613427,
+        496893,
+        23828765
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259287121
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        220831336,
+        235613427,
+        259287121,
+        108296106,
+        254018196,
+        231718715,
+        13748235,
+        247613032,
+        256827824,
+        254877249,
+        1770217,
+        52897771,
+        1380342,
+        871522,
+        58774356,
+        715157,
+        8227522,
+        14635744,
+        6131180,
+        15330088
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.072148100007325
+  },
+  "reason_example": {
+    "query_id": "litsearch_552",
+    "query": "What paper first uses decoupled workers in distributed RL system?",
+    "top_results": [
+      {
+        "corpusid": 220831336,
+        "score": 0.8536251783370972,
+        "reason": "bm25=0.944; dense=0.793; sub_bm25=0.994; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235613427,
+        "score": 0.8536251783370972,
+        "reason": "bm25=0.944; dense=0.793; sub_bm25=0.994; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259287121,
+        "score": 0.797430694103241,
+        "reason": "bm25=1.000; dense=0.662; sub_bm25=1.000; sub_dense=0.917"
+      },
+      {
+        "corpusid": 108296106,
+        "score": 0.76114821434021,
+        "reason": "bm25=0.824; dense=0.719; sub_bm25=0.871; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254018196,
+        "score": 0.7459750175476074,
+        "reason": "bm25=0.827; dense=0.692; sub_bm25=0.740; sub_dense=0.952"
+      }
+    ]
+  }
+}

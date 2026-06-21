@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_379",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_379",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_379",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_379",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1260,
+      "latency_s": 8.439175999956205
+    },
+    {
+      "query_id": "litsearch_379",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.4017388001084328
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_379",
+    "gold": [
+      256901172
+    ],
+    "pool_size": 286,
+    "decomposition": [
+      "tree structure of mathematical equations in language models",
+      "autoregressive language models for mathematical expressions",
+      "tree-structured representation for equation generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219305462,
+        5153623,
+        12405045,
+        14169049,
+        45897261,
+        5871781,
+        29974541,
+        18414132,
+        10627917,
+        1247839,
+        7542363,
+        10513825,
+        12859640,
+        1913374,
+        17409270,
+        8841728,
+        57916,
+        3923764,
+        9550766,
+        30908728
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        202771662,
+        53298878,
+        239016717,
+        248085338,
+        51881558,
+        1851460,
+        249121064,
+        8841728,
+        257427208,
+        52009450,
+        247058691,
+        51881520,
+        26610119,
+        52947902,
+        1690927,
+        253097956,
+        253801800,
+        256901172,
+        16064459,
+        252763296
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        19840120,
+        256461017,
+        256901172,
+        14426470,
+        253097956,
+        235097243,
+        3197112,
+        8248280,
+        1397113,
+        2369967,
+        26610119,
+        3090702,
+        128364343,
+        61243968,
+        32091121,
+        202771662,
+        7717167,
+        15618468,
+        14094139,
+        171415694
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        202771662,
+        256901172,
+        253097956
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202771662,
+        256901172,
+        253097956,
+        26610119,
+        235097243,
+        8841728,
+        14426470,
+        51881558,
+        1085023,
+        1458372,
+        8420349,
+        247058691,
+        2369967,
+        954408,
+        3197112,
+        7317741,
+        9108161,
+        128364343,
+        11970767,
+        19750423
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.8841989999637
+  },
+  "reason_example": {
+    "query_id": "litsearch_379",
+    "query": "Is there a paper that uses the tree structure of math equations in autoregressive language models?",
+    "top_results": [
+      {
+        "corpusid": 202771662,
+        "score": 0.8490408658981323,
+        "reason": "bm25=1.000; dense=0.748; sub_bm25=1.000; sub_dense=0.917"
+      },
+      {
+        "corpusid": 256901172,
+        "score": 0.8058930039405823,
+        "reason": "bm25=0.779; dense=0.824; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253097956,
+        "score": 0.8036821484565735,
+        "reason": "bm25=0.781; dense=0.819; sub_bm25=0.799; sub_dense=0.993"
+      },
+      {
+        "corpusid": 26610119,
+        "score": 0.7728168964385986,
+        "reason": "bm25=0.784; dense=0.766; sub_bm25=0.639; sub_dense=0.781"
+      },
+      {
+        "corpusid": 235097243,
+        "score": 0.766659677028656,
+        "reason": "bm25=0.710; dense=0.805; sub_bm25=0.699; sub_dense=1.000"
+      }
+    ]
+  }
+}

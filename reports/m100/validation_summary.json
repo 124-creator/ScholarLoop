@@ -1,0 +1,41 @@
+{
+  "schema_version": "m100.validation_summary.v1",
+  "checked_at_utc": "2026-06-20T12:49:42.821030+00:00",
+  "status": "implemented_not_verified",
+  "frequency_ablation": {
+    "report": "reports/m100/gap_frequency_ablation.json",
+    "conclusion": "frequency_is_primary_driver_or_signal_absent",
+    "claim_boundary": "频率配平后空白预测信号减弱或消失；创新主张必须收紧为频率驱动下的候选生成启发。",
+    "m070_original_delta": 0.086,
+    "frequency_matched_delta": -0.198,
+    "frequency_matched_passed": false
+  },
+  "graph_fidelity": {
+    "report": "reports/m100/graph_fidelity.json",
+    "status": "PASS",
+    "fabrication": 0,
+    "node_count": 25,
+    "edge_count": 50
+  },
+  "realtime_smoke": {
+    "report": "reports/m100/realtime_smoke.txt",
+    "passed": true,
+    "default_offline_zero_cost": true
+  },
+  "tests": {
+    "report": "reports/m100/pytest.txt",
+    "passed": true,
+    "summary_line": "42 passed in 107.45s (0:01:47)",
+    "py_compile_passed": true
+  },
+  "compliance": {
+    "secret_scan": "reports/m100/secret_scan.json",
+    "secret_scan_passed": true,
+    "upstream_hashes": "reports/m100/upstream_hashes.json",
+    "upstream_hashes_passed": true
+  },
+  "submission_append": "docs/submission/09-M100-专家分与结构化补充.md",
+  "retrospective": "docs/dev/retrospectives/100-专家分攻坚与演示升级-复盘.md",
+  "plan_status": "implemented",
+  "passed_for_implementation": true
+}

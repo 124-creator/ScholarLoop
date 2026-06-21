@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_401",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_401",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_401",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_401",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1190,
+      "latency_s": 8.20462169998791
+    },
+    {
+      "query_id": "litsearch_401",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 319,
+      "latency_s": 3.7958577999379486
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_401",
+    "gold": [
+      259203682
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "syntactic rules guide text generation",
+      "explicit syntax guidance text generation",
+      "syntax tree controlled text generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9025428,
+        1405599,
+        32807064,
+        252907549,
+        1763584,
+        16677309,
+        2287804,
+        259376784,
+        17575823,
+        44197490,
+        8358691,
+        5213689,
+        17336955,
+        8446444,
+        15168504,
+        2684,
+        233864951,
+        15322018,
+        16229734,
+        219306987
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233864951,
+        15208097,
+        235352659,
+        32807064,
+        225066692,
+        258378217,
+        17676483,
+        13225085,
+        16677309,
+        16638999,
+        244130351,
+        2597486,
+        238634690,
+        34048,
+        3087412,
+        31750455,
+        281336,
+        231878362,
+        44174597,
+        3908274
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9403299,
+        17336955,
+        15359997,
+        14269639,
+        13250527,
+        373507,
+        6504336,
+        53248322,
+        8277151,
+        1693203,
+        17769145,
+        53083307,
+        6927513,
+        18178933,
+        9598874,
+        216107,
+        38084603,
+        259203682,
+        249062554,
+        17082258
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        13225085,
+        9403299,
+        15208097,
+        1918444,
+        32807064,
+        17769145,
+        233864951,
+        38084603,
+        8277151,
+        17676483,
+        16638999,
+        2287804
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        9403299,
+        32807064,
+        17769145,
+        38084603,
+        16638999,
+        233864951,
+        13225085,
+        15208097,
+        8277151,
+        13250527,
+        53083307,
+        16911568,
+        5771683,
+        5387767,
+        1918444,
+        928590,
+        53248322,
+        15628268,
+        16392208,
+        225066692
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.702823200030252
+  },
+  "reason_example": {
+    "query_id": "litsearch_401",
+    "query": "Is there any paper that leverages syntactic rules to explicitly guide text generation?",
+    "top_results": [
+      {
+        "corpusid": 9403299,
+        "score": 0.8530101776123047,
+        "reason": "bm25=0.633; dense=1.000; sub_bm25=0.572; sub_dense=1.000"
+      },
+      {
+        "corpusid": 32807064,
+        "score": 0.8502955436706543,
+        "reason": "bm25=0.888; dense=0.825; sub_bm25=0.785; sub_dense=0.734"
+      },
+      {
+        "corpusid": 17769145,
+        "score": 0.8349399566650391,
+        "reason": "bm25=0.712; dense=0.917; sub_bm25=0.624; sub_dense=0.900"
+      },
+      {
+        "corpusid": 38084603,
+        "score": 0.8287193775177002,
+        "reason": "bm25=0.712; dense=0.907; sub_bm25=0.756; sub_dense=0.874"
+      },
+      {
+        "corpusid": 16638999,
+        "score": 0.8258880376815796,
+        "reason": "bm25=0.780; dense=0.856; sub_bm25=0.383; sub_dense=0.707"
+      }
+    ]
+  }
+}

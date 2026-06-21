@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_187",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_187",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_187",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_187",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1379,
+      "latency_s": 9.05342159990687
+    },
+    {
+      "query_id": "litsearch_187",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 309,
+      "latency_s": 2.3428910999791697
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_187",
+    "gold": [
+      235313508
+    ],
+    "pool_size": 228,
+    "decomposition": [
+      "temporal knowledge graph question answering datasets",
+      "broad coverage temporal knowledge graph QA datasets",
+      "time-aware knowledge graph datasets for question answering"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2136580,
+        248779936,
+        235482414,
+        2000271,
+        2580910,
+        237366250,
+        8191960,
+        8919638,
+        258967690,
+        2770995,
+        3926047,
+        7440991,
+        119309472,
+        53223062,
+        15622750,
+        9800912,
+        186232078,
+        252624485,
+        250390632,
+        17632922
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370736,
+        252781069,
+        8919638,
+        221978039,
+        235313508,
+        52009210,
+        237372057,
+        235097561,
+        96535,
+        253180414,
+        218487288,
+        233025411,
+        248780039,
+        235254629,
+        53619502,
+        226262367,
+        247594360,
+        251438610,
+        52228931,
+        214390104
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252781069,
+        235313508,
+        12348021,
+        259370736,
+        259165281,
+        28968115,
+        221978039,
+        52228931,
+        250127391,
+        11816014,
+        52009210,
+        252847495,
+        259137386,
+        53079802,
+        237372057,
+        16017753,
+        52057510,
+        52011953,
+        3031815,
+        238744031
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248779936,
+        235313508,
+        259370736,
+        221978039,
+        252781069,
+        259165281,
+        237372057,
+        52009210,
+        52228931,
+        2136580,
+        8919638,
+        96535
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370736,
+        252781069,
+        235313508,
+        221978039,
+        52009210,
+        12348021,
+        259165281,
+        237372057,
+        52228931,
+        247594360,
+        28968115,
+        218487288,
+        3986974,
+        250127391,
+        235097561,
+        226262367,
+        348944,
+        14250965,
+        259376626,
+        246063745
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.418733799946494
+  },
+  "reason_example": {
+    "query_id": "litsearch_187",
+    "query": "Could you suggest a dataset for question-answering frameworks utilizing temporal knowledge graphs with broad coverage?",
+    "top_results": [
+      {
+        "corpusid": 259370736,
+        "score": 0.989082932472229,
+        "reason": "bm25=1.000; dense=0.982; sub_bm25=1.000; sub_dense=0.980"
+      },
+      {
+        "corpusid": 252781069,
+        "score": 0.9817172288894653,
+        "reason": "bm25=0.954; dense=1.000; sub_bm25=0.919; sub_dense=0.981"
+      },
+      {
+        "corpusid": 235313508,
+        "score": 0.9537990093231201,
+        "reason": "bm25=0.899; dense=0.990; sub_bm25=0.891; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221978039,
+        "score": 0.8949769139289856,
+        "reason": "bm25=0.909; dense=0.886; sub_bm25=0.686; sub_dense=0.896"
+      },
+      {
+        "corpusid": 52009210,
+        "score": 0.8696504831314087,
+        "reason": "bm25=0.893; dense=0.854; sub_bm25=0.767; sub_dense=0.952"
+      }
+    ]
+  }
+}

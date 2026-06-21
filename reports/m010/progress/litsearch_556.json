@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_556",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_556",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_556",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_556",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2247,
+      "latency_s": 18.057541999965906
+    },
+    {
+      "query_id": "litsearch_556",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 253,
+      "latency_s": 1.953693800023757
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_556",
+    "gold": [
+      262013288
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "multilingual masked language model vocabulary size limitation",
+      "contrastive loss pretraining multilingual MLM",
+      "mitigating large vocabulary in multilingual BERT"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219309121,
+        219305462,
+        5153623,
+        248182535,
+        10513825,
+        226262200,
+        17153466,
+        764565,
+        2175391,
+        7440991,
+        8517763,
+        258463920,
+        259376508,
+        222090785,
+        34423589,
+        248780193,
+        21715751,
+        258486870,
+        252819404,
+        8194292
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259861505,
+        256827260,
+        237421110,
+        229924220,
+        258463920,
+        203586495,
+        202888986,
+        243865577,
+        248506039,
+        252819190,
+        240288762,
+        229924184,
+        237453212,
+        258480094,
+        222291680,
+        204901567,
+        226262199,
+        236155179,
+        256598350,
+        252907593
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233481097,
+        246867373,
+        207880568,
+        247519076,
+        233365297,
+        250390731,
+        216553665,
+        229924220,
+        257622986,
+        235352637,
+        249017999,
+        254685579,
+        259370615,
+        252873220,
+        248182535,
+        253383782,
+        252780005,
+        221995575,
+        256461134,
+        254877112
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        203586495,
+        226262200,
+        258463920,
+        256827260,
+        235352637,
+        259370615,
+        229924220,
+        237421110,
+        255096237,
+        249017999,
+        252819190,
+        226262199
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        229924220,
+        237421110,
+        233481097,
+        256827260,
+        249017999,
+        259370615,
+        233365297,
+        207880568,
+        235352637,
+        203586495,
+        221995575,
+        255096237,
+        204901567,
+        226262200,
+        252819190,
+        258463920,
+        229923783,
+        256598350,
+        247628024,
+        255749416
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.01910030003637
+  },
+  "reason_example": {
+    "query_id": "litsearch_556",
+    "query": "What paper mitigates the vocabulary size limitation when pretraining multilingual masked language models using a contrastive loss?",
+    "top_results": [
+      {
+        "corpusid": 229924220,
+        "score": 0.9053555727005005,
+        "reason": "bm25=0.948; dense=0.877; sub_bm25=0.677; sub_dense=0.843"
+      },
+      {
+        "corpusid": 237421110,
+        "score": 0.8903523683547974,
+        "reason": "bm25=0.971; dense=0.837; sub_bm25=0.951; sub_dense=0.777"
+      },
+      {
+        "corpusid": 233481097,
+        "score": 0.8855507373809814,
+        "reason": "bm25=0.714; dense=1.000; sub_bm25=0.698; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256827260,
+        "score": 0.8660386800765991,
+        "reason": "bm25=0.995; dense=0.780; sub_bm25=1.000; sub_dense=0.922"
+      },
+      {
+        "corpusid": 249017999,
+        "score": 0.8599258065223694,
+        "reason": "bm25=0.838; dense=0.875; sub_bm25=0.654; sub_dense=0.912"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_035",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_035",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_035",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_035",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1390,
+      "latency_s": 9.493526199948974
+    },
+    {
+      "query_id": "litsearch_035",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 2.121514099999331
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_035",
+    "gold": [
+      3033526
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "relation extraction tree LSTM",
+      "tree LSTM syntax dependency relation extraction",
+      "tree structured LSTM relation extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18629393,
+        5224609,
+        8832939,
+        3849958,
+        2052791,
+        8507410,
+        13205080,
+        6723570,
+        14568267,
+        256461072,
+        1208298,
+        5453178,
+        7343474,
+        14869687,
+        10087698,
+        3179848,
+        5778990,
+        231879840,
+        8775253,
+        11789111
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13205080,
+        220047189,
+        2476229,
+        4971762,
+        32616705,
+        190001673,
+        236478166,
+        2052791,
+        49544037,
+        2941631,
+        12739272,
+        221186730,
+        919980,
+        7780173,
+        52009451,
+        44172025,
+        7780730,
+        5702359,
+        15470416,
+        174800674
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2204967,
+        4883168,
+        44155628,
+        2010873,
+        13205080,
+        3698344,
+        25169775,
+        208164181,
+        226262289,
+        9729940,
+        8835255,
+        5282346,
+        51877560,
+        18979967,
+        52115592,
+        235313469,
+        2476229,
+        1256385,
+        3179848,
+        220047189
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2476229
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        13205080,
+        220047189,
+        2476229,
+        2204967,
+        190001673,
+        25169775,
+        7780173,
+        919980,
+        5282346,
+        236478166,
+        441563,
+        32616705,
+        2010873,
+        5702359,
+        3179848,
+        49544037,
+        3698344,
+        236460104,
+        18979967,
+        8835255
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.57298240007367
+  },
+  "reason_example": {
+    "query_id": "litsearch_035",
+    "query": "Could you suggest a paper that introduces an approach to relation extraction that involves learning syntax dependency structures using a tree LSTM model?",
+    "top_results": [
+      {
+        "corpusid": 13205080,
+        "score": 0.9780476093292236,
+        "reason": "bm25=1.000; dense=0.963; sub_bm25=0.787; sub_dense=0.818"
+      },
+      {
+        "corpusid": 220047189,
+        "score": 0.9423662424087524,
+        "reason": "bm25=0.986; dense=0.914; sub_bm25=0.736; sub_dense=0.915"
+      },
+      {
+        "corpusid": 2476229,
+        "score": 0.9222671985626221,
+        "reason": "bm25=0.926; dense=0.919; sub_bm25=1.000; sub_dense=0.956"
+      },
+      {
+        "corpusid": 2204967,
+        "score": 0.9130736589431763,
+        "reason": "bm25=0.783; dense=1.000; sub_bm25=0.687; sub_dense=0.970"
+      },
+      {
+        "corpusid": 190001673,
+        "score": 0.8945767879486084,
+        "reason": "bm25=0.871; dense=0.910; sub_bm25=0.518; sub_dense=0.924"
+      }
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_230",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_230",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_230",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_230",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1801,
+      "latency_s": 12.216807399992831
+    },
+    {
+      "query_id": "litsearch_230",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.4126304000383243
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_230",
+    "gold": [
+      249151979
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "cross-lingual comparison of dictionary definitions and word embeddings",
+      "multilingual evaluation of word embeddings vs lexical definitions",
+      "comparing word embeddings to dictionary definitions across languages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        199553035,
+        3926837,
+        6339908,
+        51995104,
+        235446743,
+        243885635,
+        13499279,
+        2441691,
+        39807256,
+        53601909,
+        51872374,
+        252819468,
+        15360016,
+        196185011,
+        216868816,
+        433476,
+        11734261,
+        253762079,
+        259212844,
+        17323614
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259833852,
+        14745914,
+        231847008,
+        195317107,
+        6160155,
+        10752503,
+        230349190,
+        232134931,
+        199553035,
+        86667,
+        216868816,
+        259212844,
+        37059607,
+        202769963,
+        150149297,
+        254246982,
+        41072002,
+        1923291,
+        231698423,
+        231719085
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        433476,
+        219303784,
+        236459876,
+        15536608,
+        13888952,
+        226301012,
+        21685859,
+        53081791,
+        1310912,
+        5357629,
+        128858,
+        15689686,
+        5249960,
+        1320993,
+        18729729,
+        52013100,
+        250958913,
+        2138123,
+        254405065,
+        207847595
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        232134931,
+        3071736,
+        216868816,
+        14745914,
+        259833852,
+        258463965
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833852,
+        53081791,
+        37059607,
+        259833851,
+        86667,
+        14745914,
+        15360016,
+        258463965,
+        195317107,
+        20750425,
+        236459876,
+        231847008,
+        3071736,
+        13102841,
+        13499279,
+        222290596,
+        2646329,
+        150149297,
+        207847595,
+        2685794
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.989937400096096
+  },
+  "reason_example": {
+    "query_id": "litsearch_230",
+    "query": "Could you suggest research that investigates across multiple languages how dictionary definitions and word embedding models compare?",
+    "top_results": [
+      {
+        "corpusid": 259833852,
+        "score": 0.94318687915802,
+        "reason": "bm25=1.000; dense=0.905; sub_bm25=0.957; sub_dense=0.917"
+      },
+      {
+        "corpusid": 53081791,
+        "score": 0.8845279216766357,
+        "reason": "bm25=0.769; dense=0.962; sub_bm25=0.918; sub_dense=0.997"
+      },
+      {
+        "corpusid": 37059607,
+        "score": 0.872221827507019,
+        "reason": "bm25=0.809; dense=0.914; sub_bm25=0.491; sub_dense=0.816"
+      },
+      {
+        "corpusid": 259833851,
+        "score": 0.8657194375991821,
+        "reason": "bm25=0.783; dense=0.921; sub_bm25=0.802; sub_dense=0.851"
+      },
+      {
+        "corpusid": 86667,
+        "score": 0.848007321357727,
+        "reason": "bm25=0.824; dense=0.864; sub_bm25=0.620; sub_dense=0.854"
+      }
+    ]
+  }
+}

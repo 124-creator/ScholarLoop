@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_360",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_360",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_360",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_360",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1421,
+      "latency_s": 10.86916890006978
+    },
+    {
+      "query_id": "litsearch_360",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 252,
+      "latency_s": 2.883854700019583
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_360",
+    "gold": [
+      259370710
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "training dialog agents for navigation assistance",
+      "human-in-the-loop environment navigation with conversational AI",
+      "benchmarks for interactive embodied assistant"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        26685646,
+        12703641,
+        12342899,
+        9450716,
+        28410457,
+        247025836,
+        8464860,
+        11194244,
+        202712761,
+        3457087,
+        233365004,
+        216049909,
+        202565538,
+        5470471,
+        441914,
+        222141138,
+        253761435,
+        11329372,
+        6621538,
+        1949172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247025836,
+        224803224,
+        14911774,
+        202565538,
+        207853069,
+        219965999,
+        7825911,
+        246634966,
+        3457087,
+        258331519,
+        259370710,
+        14724343,
+        236478290,
+        256598360,
+        53729114,
+        6378775,
+        3503217,
+        12703641,
+        233306884,
+        244714829
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        5466972,
+        21555043,
+        20252912,
+        202538463,
+        6436356,
+        226283651,
+        252847514,
+        224803224,
+        245906443,
+        232417521,
+        37409061,
+        6847778,
+        243865338,
+        46203101,
+        11788643,
+        152282449,
+        10674151,
+        5054452,
+        58007087,
+        29175200
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        224803224,
+        7825911,
+        4862861,
+        164019,
+        12703641,
+        53729114,
+        14911774,
+        247025836,
+        3457087,
+        237048136,
+        202565538,
+        219965999
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        224803224,
+        226283651,
+        232417521,
+        202538463,
+        14911774,
+        7825911,
+        5466972,
+        164019,
+        12703641,
+        51867690,
+        13442159,
+        258331519,
+        53080145,
+        258298063,
+        207853069,
+        4862861,
+        12365528,
+        52897771,
+        6436356,
+        17983556
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.35452399996575
+  },
+  "reason_example": {
+    "query_id": "litsearch_360",
+    "query": "If one would like to train (or evaluate) a helpful assistant agent that can converse with humans while the humans traverse an environment, which work has the most suitable resource?",
+    "top_results": [
+      {
+        "corpusid": 224803224,
+        "score": 0.9457986950874329,
+        "reason": "bm25=0.990; dense=0.916; sub_bm25=1.000; sub_dense=0.704"
+      },
+      {
+        "corpusid": 226283651,
+        "score": 0.8795154094696045,
+        "reason": "bm25=0.798; dense=0.934; sub_bm25=0.460; sub_dense=0.815"
+      },
+      {
+        "corpusid": 232417521,
+        "score": 0.8703380227088928,
+        "reason": "bm25=0.805; dense=0.914; sub_bm25=0.433; sub_dense=0.748"
+      },
+      {
+        "corpusid": 202538463,
+        "score": 0.861309289932251,
+        "reason": "bm25=0.750; dense=0.936; sub_bm25=0.932; sub_dense=0.988"
+      },
+      {
+        "corpusid": 14911774,
+        "score": 0.8569985032081604,
+        "reason": "bm25=0.981; dense=0.774; sub_bm25=0.819; sub_dense=0.773"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_034",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_034",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_034",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_034",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1504,
+      "latency_s": 11.263737899949774
+    },
+    {
+      "query_id": "litsearch_034",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 241,
+      "latency_s": 1.6755140000022948
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_034",
+    "gold": [
+      222140735
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "supervised constituency parser few-shot learning baseline",
+      "pre-training data augmentation constituency parsing",
+      "few-shot parsing pre-training data augmentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8395279,
+        197676367,
+        247519084,
+        220046230,
+        215800827,
+        17548805,
+        67877118,
+        237532574,
+        221535522,
+        256460883,
+        59523656,
+        258999402,
+        15164488,
+        46939562,
+        243865412,
+        53235209,
+        259376755,
+        15437490,
+        2114002,
+        9324974
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247519084,
+        256808612,
+        232233485,
+        247244827,
+        222140735,
+        202230734,
+        226283493,
+        238259429,
+        237502871,
+        248810745,
+        243865331,
+        252819507,
+        221891676,
+        259129847,
+        259376755,
+        236486141,
+        253107694,
+        252992469,
+        258378279,
+        256231333
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222140735,
+        252819507,
+        19206893,
+        235313683,
+        5040602,
+        57189558,
+        9934746,
+        15030289,
+        10579581,
+        51876536,
+        52010243,
+        16032289,
+        235368314,
+        9220360,
+        71197,
+        1356465,
+        14079757,
+        2065626,
+        5679981,
+        231709547
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        51876536,
+        19206893,
+        252819507,
+        10028905,
+        2308603,
+        222140735,
+        16032289,
+        215800827,
+        237532574,
+        5679981,
+        2252070,
+        247519084
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222140735,
+        252819507,
+        19206893,
+        51876536,
+        15030289,
+        5679981,
+        16032289,
+        10579581,
+        257258172,
+        8317576,
+        5040602,
+        57189558,
+        14079757,
+        10028905,
+        44158569,
+        243865611,
+        1356465,
+        986399,
+        19227196,
+        2308603
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.499630699981935
+  },
+  "reason_example": {
+    "query_id": "litsearch_034",
+    "query": "Could you recommend studies that provide a baseline for experiments using supervised constituency parsers with a focus on few-shot learning settings and have also reported on the use of pre-training and data augmentation techniques for parser performance improvement?",
+    "top_results": [
+      {
+        "corpusid": 222140735,
+        "score": 0.9775784015655518,
+        "reason": "bm25=0.944; dense=1.000; sub_bm25=0.956; sub_dense=0.999"
+      },
+      {
+        "corpusid": 252819507,
+        "score": 0.9391944408416748,
+        "reason": "bm25=0.916; dense=0.954; sub_bm25=0.944; sub_dense=1.000"
+      },
+      {
+        "corpusid": 19206893,
+        "score": 0.8840256929397583,
+        "reason": "bm25=0.833; dense=0.918; sub_bm25=0.707; sub_dense=0.965"
+      },
+      {
+        "corpusid": 51876536,
+        "score": 0.8388550281524658,
+        "reason": "bm25=0.824; dense=0.849; sub_bm25=0.680; sub_dense=0.914"
+      },
+      {
+        "corpusid": 15030289,
+        "score": 0.8312177658081055,
+        "reason": "bm25=0.754; dense=0.882; sub_bm25=0.941; sub_dense=0.915"
+      }
+    ]
+  }
+}

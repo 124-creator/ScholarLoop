@@ -1,0 +1,50 @@
+{
+  "schema_version": "m150.frozen_eval_invariance.v1",
+  "checked_at_utc": "2026-06-21T05:49:18.062762+00:00",
+  "status": "PASS",
+  "unchanged": true,
+  "checks": {
+    "m040_results_sha256": true,
+    "m040_a_v2_f1": true,
+    "m060_resolvable_a_v2_f1": true,
+    "m060_full791_a_v2_f1": true,
+    "dense_dim_384": true,
+    "model_version_string_unchanged": true,
+    "fingerprint_unchanged": true,
+    "dense_cache_key_unchanged": true,
+    "a_v2_ranking_digest_unchanged": true,
+    "a_v2_out_of_pool_zero": true
+  },
+  "environment": {
+    "sentence_transformers": "5.6.0"
+  },
+  "m040": {
+    "results_sha256": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "expected_sha256": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "a_v2_f1": 0.1311870490590176,
+    "bm25_f1": 0.09639377930835218,
+    "ranking_digest_sha256": "d3c1b4916ae81a9c43c97562649fbf5d5077ab3021067ec98f59b1c3b3126f8d",
+    "reasons_top5_digest_sha256": "3cb7fbb34482b3924d614008c1d7ebc8fbe54c1edcc21896d084ba6b538a6751",
+    "query_count": 597
+  },
+  "m060": {
+    "results_sha256": "bb309155780d9705be3efb71584f80811685fbf8202abd620e041f423db833e6",
+    "resolvable_a_v2_f1": 0.19720789003669367,
+    "full791_a_v2_f1": 0.19288213975584717
+  },
+  "dense_cache": {
+    "model_name": "BAAI/bge-small-en-v1.5",
+    "model_version": "BAAI/bge-small-en-v1.5; dim=384; modules=['0', '1', '2']; device=cpu",
+    "fingerprint": "11bddb2dab1c0d65",
+    "npy_path": "reports\\m040\\cache\\dense_v2\\dense_v2_BAAI_bge_small_en_v1_5_11bddb2dab1c0d65.npy",
+    "meta_path": "reports\\m040\\cache\\dense_v2\\dense_v2_BAAI_bge_small_en_v1_5_11bddb2dab1c0d65.json",
+    "npy_exists": true,
+    "meta_exists": true,
+    "shape": [
+      64183,
+      384
+    ],
+    "cache_key_policy": "unchanged: _paths stem remains dense_v2_{slug}_{_fingerprint}"
+  },
+  "scope_note": "No M040/M060 frozen artifact was rewritten; invariance is checked against committed report/cache constants and per-query ranking digest."
+}

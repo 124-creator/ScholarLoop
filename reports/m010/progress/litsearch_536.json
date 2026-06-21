@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_536",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_536",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_536",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_536",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1504,
+      "latency_s": 11.720180199947208
+    },
+    {
+      "query_id": "litsearch_536",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 355,
+      "latency_s": 3.689085700083524
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_536",
+    "gold": [
+      264555202
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "LLM inference time privacy benchmarks input",
+      "evaluation benchmarks for input privacy in LLM inference",
+      "benchmarks measuring privacy leakage from model inputs during inference"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11725374,
+        21721649,
+        249204419,
+        7191961,
+        15371885,
+        16718900,
+        247939207,
+        226262400,
+        12181252,
+        235313804,
+        250243645,
+        211146346,
+        5070505,
+        222177785,
+        237433614,
+        1441185,
+        8060911,
+        195776133,
+        256274806,
+        218486922
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263834989,
+        264555202,
+        258832501,
+        21721649,
+        260899983,
+        232046284,
+        258436870,
+        250243645,
+        208076137,
+        259370785,
+        258841681,
+        259129748,
+        221655222,
+        231979264,
+        227231494,
+        14130578,
+        248780015,
+        8696462,
+        254877188,
+        184483107
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256627683,
+        232046284,
+        238419564,
+        264555202,
+        258967363,
+        8696462,
+        238743879,
+        252735292,
+        251563977,
+        248227918,
+        221655783,
+        258823013,
+        235377198,
+        232233355,
+        264439585,
+        248780476,
+        248512871,
+        221655222,
+        250243645,
+        237353275
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264555202,
+        263834989
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263834989,
+        264555202,
+        256627683,
+        232046284,
+        8696462,
+        250243645,
+        221655222,
+        258832501,
+        238419564,
+        254877188,
+        21721649,
+        252735292,
+        208076137,
+        253107364,
+        237353275,
+        258967363,
+        232233355,
+        248227918,
+        238743879,
+        256461419
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.675822599907406
+  },
+  "reason_example": {
+    "query_id": "litsearch_536",
+    "query": "What are some evaluation benchmarks for LLM privacy at inference time, targeted towards model input and NOT the training data.",
+    "top_results": [
+      {
+        "corpusid": 263834989,
+        "score": 0.8491264581680298,
+        "reason": "bm25=1.000; dense=0.749; sub_bm25=1.000; sub_dense=0.753"
+      },
+      {
+        "corpusid": 264555202,
+        "score": 0.8426492810249329,
+        "reason": "bm25=0.760; dense=0.898; sub_bm25=0.905; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256627683,
+        "score": 0.8374027609825134,
+        "reason": "bm25=0.594; dense=1.000; sub_bm25=0.614; sub_dense=1.000"
+      },
+      {
+        "corpusid": 232046284,
+        "score": 0.8171945810317993,
+        "reason": "bm25=0.646; dense=0.931; sub_bm25=0.649; sub_dense=0.964"
+      },
+      {
+        "corpusid": 8696462,
+        "score": 0.7711317539215088,
+        "reason": "bm25=0.609; dense=0.880; sub_bm25=0.527; sub_dense=0.883"
+      }
+    ]
+  }
+}

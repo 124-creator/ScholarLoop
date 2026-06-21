@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_505",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_505",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_505",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_505",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1137,
+      "latency_s": 5.725270299939439
+    },
+    {
+      "query_id": "litsearch_505",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 508,
+      "latency_s": 4.256045300047845
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_505",
+    "gold": [
+      258588364
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "first paper addressing over-smoothing in sentence embeddings",
+      "over-smoothing problem in sentence embedding models",
+      "mitigating over-smoothing for sentence embedding"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        226262276,
+        19020387,
+        94818,
+        37602879,
+        1342240,
+        258486958,
+        1891955,
+        2649448,
+        9497515,
+        11066599,
+        10839983,
+        18053326,
+        229220464,
+        53238603,
+        227230517,
+        5601748,
+        10740890,
+        9289495,
+        1688924,
+        18751045
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258588364,
+        248405783,
+        246904522,
+        247292603,
+        237453212,
+        235254714,
+        28797516,
+        252211791,
+        236428800,
+        254854373,
+        8206654,
+        212859361,
+        493280,
+        174799551,
+        3521890,
+        237940468,
+        216562635,
+        225076303,
+        51872484,
+        219309661
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235358456,
+        174798413,
+        247158913,
+        16763786,
+        13746426,
+        237453212,
+        13052370,
+        245877654,
+        208617785,
+        1433925,
+        51874490,
+        258588364,
+        196178651,
+        58554701,
+        59336240,
+        236486260,
+        21688828,
+        1070893,
+        235422673,
+        24461982
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258588364,
+        237453212
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258588364,
+        237453212,
+        1433925,
+        8206654,
+        493280,
+        247158913,
+        235358456,
+        28797516,
+        58554701,
+        245877654,
+        16953896,
+        16763786,
+        3521890,
+        222379592,
+        1070893,
+        49434227,
+        254854373,
+        248405783,
+        2280543,
+        38536724
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.864538999972865
+  },
+  "reason_example": {
+    "query_id": "litsearch_505",
+    "query": "which paper first focuses on addressing the over-smoothing issue for sentence embedding?",
+    "top_results": [
+      {
+        "corpusid": 258588364,
+        "score": 0.9488835334777832,
+        "reason": "bm25=1.000; dense=0.915; sub_bm25=0.961; sub_dense=0.954"
+      },
+      {
+        "corpusid": 237453212,
+        "score": 0.8924566507339478,
+        "reason": "bm25=0.831; dense=0.934; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1433925,
+        "score": 0.8503094911575317,
+        "reason": "bm25=0.750; dense=0.917; sub_bm25=0.842; sub_dense=0.944"
+      },
+      {
+        "corpusid": 8206654,
+        "score": 0.8310270309448242,
+        "reason": "bm25=0.778; dense=0.867; sub_bm25=0.826; sub_dense=0.904"
+      },
+      {
+        "corpusid": 493280,
+        "score": 0.8222252726554871,
+        "reason": "bm25=0.775; dense=0.853; sub_bm25=0.840; sub_dense=0.866"
+      }
+    ]
+  }
+}

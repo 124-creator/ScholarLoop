@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_482",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_482",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_482",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_482",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1201,
+      "latency_s": 7.2966649000300094
+    },
+    {
+      "query_id": "litsearch_482",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.405563100008294
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_482",
+    "gold": [
+      258947268
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "lyrics machine translation length control rhyme type suggestion",
+      "human translator considerations integration into machine translation for lyrics",
+      "machine translation model compatibility with unseen melodies lyrics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29358494,
+        34293248,
+        15420991,
+        49560309,
+        554151,
+        15292611,
+        119977,
+        32782433,
+        42910362,
+        61214793,
+        62345967,
+        14564364,
+        21706647,
+        6602296,
+        22121313,
+        10539419,
+        474465,
+        479222,
+        989779,
+        3906011
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        44159724,
+        119977,
+        259376710,
+        248780195,
+        182916006,
+        202638005,
+        221818991,
+        34293248,
+        14364015,
+        44625358,
+        814656,
+        16521671,
+        4646778,
+        247518800,
+        237010904,
+        258890935,
+        231698917,
+        253510989,
+        36653853,
+        10539419
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        44163335,
+        258947268,
+        8570505,
+        24544953,
+        237010904,
+        260091296,
+        17025529,
+        247748628,
+        32376255,
+        3019829,
+        32129444,
+        227217163,
+        14232084,
+        6098385,
+        31657732,
+        235258270,
+        11830050,
+        51871049,
+        17525652,
+        259370564
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        44159724,
+        8570505,
+        260091296,
+        34293248,
+        237010904,
+        29358494,
+        119977,
+        49560309,
+        989779,
+        4646778,
+        258890935,
+        22121313
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237010904,
+        8570505,
+        258947268,
+        44163335,
+        260091296,
+        3019829,
+        258890935,
+        227217163,
+        34293248,
+        44159724,
+        245855664,
+        182916006,
+        8524905,
+        2430921,
+        32129444,
+        248780389,
+        24544953,
+        40764884,
+        13585141,
+        14706128
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.386652400018647
+  },
+  "reason_example": {
+    "query_id": "litsearch_482",
+    "query": "Which paper proposed the integration of human translators' considerations, such as length control, rhyme type control and suggestion, and enhancing compatibility between translation output and unseen melodies, into the design of machine translation models when translating lyrics?",
+    "top_results": [
+      {
+        "corpusid": 237010904,
+        "score": 0.9040396213531494,
+        "reason": "bm25=0.884; dense=0.918; sub_bm25=0.949; sub_dense=1.000"
+      },
+      {
+        "corpusid": 8570505,
+        "score": 0.895685076713562,
+        "reason": "bm25=0.837; dense=0.935; sub_bm25=0.656; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258947268,
+        "score": 0.876044511795044,
+        "reason": "bm25=0.756; dense=0.956; sub_bm25=0.593; sub_dense=1.000"
+      },
+      {
+        "corpusid": 44163335,
+        "score": 0.8601211309432983,
+        "reason": "bm25=0.650; dense=1.000; sub_bm25=0.491; sub_dense=0.894"
+      },
+      {
+        "corpusid": 260091296,
+        "score": 0.852076530456543,
+        "reason": "bm25=0.818; dense=0.875; sub_bm25=0.893; sub_dense=0.960"
+      }
+    ]
+  }
+}

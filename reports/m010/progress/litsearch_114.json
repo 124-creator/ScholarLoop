@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_114",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_114",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_114",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_114",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 933,
+      "latency_s": 5.51974939997308
+    },
+    {
+      "query_id": "litsearch_114",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 474,
+      "latency_s": 4.43746749998536
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_114",
+    "gold": [
+      248779910
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "zero-shot word sense disambiguation",
+      "word sense disambiguation for rare senses",
+      "few-shot word sense disambiguation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        28343036,
+        6602375,
+        1412569,
+        20056888,
+        8813310,
+        10982377,
+        15037844,
+        186206301,
+        16173223,
+        19653906,
+        229365770,
+        727900,
+        8775324,
+        2433496,
+        6749590,
+        2251088,
+        3073489,
+        5257325,
+        10837599,
+        11966916
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        16173223,
+        233394513,
+        222291089,
+        235435767,
+        1125088,
+        224803418,
+        236478383,
+        236460274,
+        239993316,
+        53082972,
+        202775306,
+        5942812,
+        236460311,
+        248779910,
+        2430766,
+        248780565,
+        259370697,
+        189762140,
+        261431366,
+        259075346
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1551311,
+        17671782,
+        2935674,
+        6979466,
+        41603009,
+        42274547,
+        2281602,
+        777346,
+        258463935,
+        39807256,
+        15006012,
+        65265001,
+        1381650,
+        15283562,
+        5922218,
+        444365,
+        12477242,
+        6401055,
+        2725819,
+        15392775
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236460008,
+        233394513,
+        236460274,
+        15037844,
+        12803768,
+        15283562,
+        16173223,
+        17671782,
+        258463935,
+        281213,
+        28343036,
+        727900
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        17671782,
+        6979466,
+        16173223,
+        258463935,
+        2935674,
+        233394513,
+        236460274,
+        777346,
+        12477242,
+        5152228,
+        1125088,
+        444365,
+        15006012,
+        917675,
+        5942812,
+        16480841,
+        65265001,
+        6478930,
+        15283562,
+        248779910
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.165887400042266
+  },
+  "reason_example": {
+    "query_id": "litsearch_114",
+    "query": "Could you point me to research that tackles the issue of disambiguating word senses in infrequent and zero-shot scenarios?",
+    "top_results": [
+      {
+        "corpusid": 17671782,
+        "score": 0.8294360637664795,
+        "reason": "bm25=0.591; dense=0.988; sub_bm25=0.808; sub_dense=1.000"
+      },
+      {
+        "corpusid": 6979466,
+        "score": 0.8256475925445557,
+        "reason": "bm25=0.654; dense=0.940; sub_bm25=0.781; sub_dense=0.930"
+      },
+      {
+        "corpusid": 16173223,
+        "score": 0.8117963671684265,
+        "reason": "bm25=1.000; dense=0.686; sub_bm25=0.508; sub_dense=0.752"
+      },
+      {
+        "corpusid": 258463935,
+        "score": 0.8076934814453125,
+        "reason": "bm25=0.646; dense=0.916; sub_bm25=0.631; sub_dense=0.889"
+      },
+      {
+        "corpusid": 2935674,
+        "score": 0.7982654571533203,
+        "reason": "bm25=0.563; dense=0.955; sub_bm25=0.805; sub_dense=0.924"
+      }
+    ]
+  }
+}

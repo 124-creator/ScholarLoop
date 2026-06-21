@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_374",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_374",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_374",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_374",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1124,
+      "latency_s": 7.010405300068669
+    },
+    {
+      "query_id": "litsearch_374",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 3.6197574000107124
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_374",
+    "gold": [
+      259370596
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "automated coherence metrics topic model evaluation",
+      "topic coherence metrics evaluation topic models",
+      "use of coherence measures for topic model validation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12405045,
+        13412990,
+        29974541,
+        18414132,
+        17409270,
+        11789111,
+        18837411,
+        8035278,
+        6741003,
+        15057133,
+        1298443,
+        17173602,
+        18061836,
+        16753572,
+        6389592,
+        14679201,
+        18969604,
+        15651747,
+        1161892,
+        8912414
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        17304254,
+        259370596,
+        1130599,
+        235683542,
+        9898640,
+        15651747,
+        21685616,
+        15257361,
+        102351258,
+        5963564,
+        235097275,
+        261045137,
+        235097517,
+        246294574,
+        170079259,
+        10823586,
+        5238983,
+        222209112,
+        259376861,
+        6525455
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370596,
+        15257361,
+        17304254,
+        15702125,
+        7775454,
+        170079259,
+        235683542,
+        15651747,
+        53081756,
+        5797133,
+        3042304,
+        253762008,
+        237277900,
+        10254261,
+        5894749,
+        258887874,
+        52182945,
+        234487230,
+        233365317,
+        17965611
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370596,
+        7775454,
+        170079259,
+        17304254,
+        15651747,
+        15257361,
+        53081756,
+        235683542,
+        62584539,
+        1130599
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370596,
+        17304254,
+        15257361,
+        235683542,
+        170079259,
+        15651747,
+        7775454,
+        15702125,
+        53081756,
+        52182945,
+        246294574,
+        237277900,
+        233365317,
+        5963564,
+        10254261,
+        3042304,
+        258887874,
+        102351258,
+        244078729,
+        6525455
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.842995100072585
+  },
+  "reason_example": {
+    "query_id": "litsearch_374",
+    "query": "Is there a paper that supports the use of automated coherence metrics in topic model evaluations?",
+    "top_results": [
+      {
+        "corpusid": 259370596,
+        "score": 0.9946706891059875,
+        "reason": "bm25=0.987; dense=1.000; sub_bm25=1.000; sub_dense=0.982"
+      },
+      {
+        "corpusid": 17304254,
+        "score": 0.9904714822769165,
+        "reason": "bm25=1.000; dense=0.984; sub_bm25=0.853; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15257361,
+        "score": 0.9393704533576965,
+        "reason": "bm25=0.852; dense=0.998; sub_bm25=0.806; sub_dense=0.999"
+      },
+      {
+        "corpusid": 235683542,
+        "score": 0.8911648392677307,
+        "reason": "bm25=0.945; dense=0.855; sub_bm25=0.973; sub_dense=0.853"
+      },
+      {
+        "corpusid": 170079259,
+        "score": 0.8446120023727417,
+        "reason": "bm25=0.816; dense=0.864; sub_bm25=1.000; sub_dense=0.928"
+      }
+    ]
+  }
+}

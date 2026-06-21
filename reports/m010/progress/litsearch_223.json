@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_223",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_223",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_223",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_223",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1070,
+      "latency_s": 5.516340599977411
+    },
+    {
+      "query_id": "litsearch_223",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 379,
+      "latency_s": 2.5406383000081405
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_223",
+    "gold": [
+      233296292
+    ],
+    "pool_size": 232,
+    "decomposition": [
+      "independently sampled dropout masks contrastive learning sentence embeddings",
+      "dropout as data augmentation for positive pairs contrastive learning",
+      "SimCSE dropout positive pairs sentence embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        39654639,
+        53643423,
+        247450777,
+        235732095,
+        13042734,
+        17063555,
+        246823998,
+        234487239,
+        252438842,
+        4643315,
+        2913402,
+        5035841,
+        6781837,
+        32575724,
+        247158769,
+        17396787,
+        33871285,
+        196179812,
+        245838284,
+        11318559
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233296292,
+        252438842,
+        246411155,
+        247158769,
+        247450777,
+        254200096,
+        246823772,
+        256598350,
+        247410985,
+        248780405,
+        258947412,
+        219530980,
+        235490074,
+        252847570,
+        259370833,
+        237386548,
+        23144639,
+        235422673,
+        232222259,
+        246823998
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233296292,
+        248299679,
+        247158698,
+        237453212,
+        259370833,
+        246411155,
+        252438842,
+        248496439,
+        250390973,
+        240288762,
+        250390592,
+        247450777,
+        259370776,
+        248377556,
+        174798413,
+        235352852,
+        253107551,
+        229156351,
+        52185177,
+        248572170
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233296292
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        233296292,
+        252438842,
+        246411155,
+        248299679,
+        259370833,
+        247450777,
+        247158698,
+        248496439,
+        252847570,
+        247410985,
+        235422673,
+        229156351,
+        240288762,
+        250390973,
+        248572170,
+        248780405,
+        219530980,
+        258947412,
+        246823998,
+        237453212
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.174539500032552
+  },
+  "reason_example": {
+    "query_id": "litsearch_223",
+    "query": "Could you suggest research that explores employing independently sampled dropout masks to generate positive pairs in contrastive learning for sentence embeddings?",
+    "top_results": [
+      {
+        "corpusid": 233296292,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252438842,
+        "score": 0.9184771776199341,
+        "reason": "bm25=0.942; dense=0.903; sub_bm25=0.727; sub_dense=0.884"
+      },
+      {
+        "corpusid": 246411155,
+        "score": 0.8957606554031372,
+        "reason": "bm25=0.868; dense=0.914; sub_bm25=0.768; sub_dense=0.886"
+      },
+      {
+        "corpusid": 248299679,
+        "score": 0.8632084131240845,
+        "reason": "bm25=0.708; dense=0.966; sub_bm25=0.799; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370833,
+        "score": 0.85912024974823,
+        "reason": "bm25=0.774; dense=0.916; sub_bm25=0.747; sub_dense=0.912"
+      }
+    ]
+  }
+}

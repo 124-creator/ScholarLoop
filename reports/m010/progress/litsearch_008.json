@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_008",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_008",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_008",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_008",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1169,
+      "latency_s": 5.438845099997707
+    },
+    {
+      "query_id": "litsearch_008",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.6666666666666666,
+      "F1": 0.1739130434782609,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.4684784000273794
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_008",
+    "gold": [
+      561429,
+      17553490,
+      16509032
+    ],
+    "pool_size": 241,
+    "decomposition": [
+      "semantic role labeling evaluation metrics precision",
+      "SemEval shared task semantic role labeling evaluation script",
+      "precision recall semantic role labeling shared task"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8857864,
+        16509032,
+        32769621,
+        39357895,
+        13532481,
+        14876718,
+        5510770,
+        17788734,
+        3200114,
+        14568267,
+        14353321,
+        2032205,
+        129092,
+        7038187,
+        3262157,
+        8882144,
+        18357549,
+        19754679,
+        18594903,
+        2023843
+      ],
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383
+    },
+    "bm25": {
+      "ranked_top20": [
+        252818920,
+        241583234,
+        219179431,
+        253802645,
+        252846088,
+        254877384,
+        259376611,
+        252118604,
+        16509032,
+        258378181,
+        18823236,
+        51875892,
+        15281193,
+        11162815,
+        31521611,
+        2331493,
+        224705359,
+        4556853,
+        248780095,
+        8130938
+      ],
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16509032,
+        32769621,
+        39357895,
+        17553490,
+        1502375,
+        1085929,
+        252846088,
+        17876020,
+        2331493,
+        219124034,
+        2464290,
+        250390642,
+        5681182,
+        237605201,
+        19754679,
+        14897419,
+        11016710,
+        561429,
+        8245223,
+        7298349
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252846088,
+        16509032,
+        8857864
+      ],
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        16509032,
+        252846088,
+        2331493,
+        1502375,
+        237605201,
+        11162815,
+        11318178,
+        17876020,
+        241583234,
+        2051151,
+        12362040,
+        17553490,
+        2464290,
+        219124034,
+        11016710,
+        12623074,
+        260734785,
+        14954567,
+        26716716,
+        16872779
+      ],
+      "P@10": 0.1,
+      "R@20": 0.6666666666666666,
+      "F1": 0.1739130434782609
+    },
+    "elapsed_s": 10.946411900105886
+  },
+  "reason_example": {
+    "query_id": "litsearch_008",
+    "query": "Can you list some publications that discuss the evaluation metrics used in semantic role labeling tasks, specifically focusing on precision and evaluation scripts used in shared tasks like SemEval?",
+    "top_results": [
+      {
+        "corpusid": 16509032,
+        "score": 0.9262467622756958,
+        "reason": "bm25=0.816; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252846088,
+        "score": 0.823834240436554,
+        "reason": "bm25=0.830; dense=0.819; sub_bm25=0.789; sub_dense=0.889"
+      },
+      {
+        "corpusid": 2331493,
+        "score": 0.8073444366455078,
+        "reason": "bm25=0.798; dense=0.813; sub_bm25=0.944; sub_dense=0.874"
+      },
+      {
+        "corpusid": 1502375,
+        "score": 0.7723830938339233,
+        "reason": "bm25=0.638; dense=0.862; sub_bm25=0.736; sub_dense=0.931"
+      },
+      {
+        "corpusid": 237605201,
+        "score": 0.7538501024246216,
+        "reason": "bm25=0.721; dense=0.776; sub_bm25=0.827; sub_dense=0.746"
+      }
+    ]
+  }
+}

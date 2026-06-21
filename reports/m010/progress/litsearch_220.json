@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_220",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_220",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_220",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_220",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1121,
+      "latency_s": 5.304337800014764
+    },
+    {
+      "query_id": "litsearch_220",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.37475540000014
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_220",
+    "gold": [
+      235446386
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "weakly labeled dataset challenges named entity recognition",
+      "noise mitigation techniques weak supervision NER",
+      "weakly supervised named entity recognition data noise reduction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10749859,
+        157061108,
+        3262157,
+        236317335,
+        248780437,
+        115191769,
+        5231912,
+        41607,
+        2840902,
+        12311990,
+        15270509,
+        252568200,
+        27242794,
+        15591672,
+        9128091,
+        237420553,
+        235097307,
+        10296349,
+        15419664,
+        41822059
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235446386,
+        252568200,
+        235097307,
+        18256594,
+        252780822,
+        237420553,
+        259370518,
+        259370892,
+        236317335,
+        248085344,
+        320184,
+        226283888,
+        226246206,
+        236478172,
+        195218673,
+        236477519,
+        248780437,
+        256460960,
+        13075113,
+        14715684
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        174800839,
+        216867841,
+        261211338,
+        228084090,
+        13949438,
+        13939690,
+        236477519,
+        174797886,
+        259376842,
+        258959063,
+        16576270,
+        235446386,
+        14731867,
+        3278107,
+        3884897,
+        17566758,
+        320184,
+        15006246,
+        251449240,
+        5357084
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235446386,
+        174800839,
+        259376842,
+        236317335,
+        252568200,
+        237420553,
+        248780437,
+        235097307,
+        16576270,
+        10749859,
+        15591672,
+        3262157
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235446386,
+        174800839,
+        236477519,
+        320184,
+        16576270,
+        259376842,
+        258959063,
+        236317335,
+        216867841,
+        174797886,
+        14731867,
+        237420553,
+        252568200,
+        228084090,
+        13939690,
+        261211338,
+        251449240,
+        259370518,
+        259370892,
+        252847533
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.01464340009261
+  },
+  "reason_example": {
+    "query_id": "litsearch_220",
+    "query": "Could you suggest research that examines the difficulties in employing weakly labeled datasets for named entity recognition and offers techniques to mitigate the associated data noise?",
+    "top_results": [
+      {
+        "corpusid": 235446386,
+        "score": 0.9381269216537476,
+        "reason": "bm25=1.000; dense=0.897; sub_bm25=1.000; sub_dense=0.971"
+      },
+      {
+        "corpusid": 174800839,
+        "score": 0.9035725593566895,
+        "reason": "bm25=0.759; dense=1.000; sub_bm25=0.684; sub_dense=0.837"
+      },
+      {
+        "corpusid": 236477519,
+        "score": 0.860784649848938,
+        "reason": "bm25=0.787; dense=0.910; sub_bm25=0.932; sub_dense=1.000"
+      },
+      {
+        "corpusid": 320184,
+        "score": 0.8349817395210266,
+        "reason": "bm25=0.823; dense=0.843; sub_bm25=1.000; sub_dense=0.974"
+      },
+      {
+        "corpusid": 16576270,
+        "score": 0.8342955112457275,
+        "reason": "bm25=0.739; dense=0.898; sub_bm25=0.750; sub_dense=0.895"
+      }
+    ]
+  }
+}

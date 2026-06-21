@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_020",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_020",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_020",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_020",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1647,
+      "latency_s": 11.607440200052224
+    },
+    {
+      "query_id": "litsearch_020",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.1471561000216752
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_020",
+    "gold": [
+      21725691
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "French encyclopedia corpus with FrameNet semantic annotations",
+      "French FrameNet-annotated corpus including question-answer triplets",
+      "Manually written QA test set for French FrameNet semantic analysis"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        60779225,
+        18002694,
+        6959594,
+        14848907,
+        7656873,
+        8870875,
+        10083809,
+        3069696,
+        4981128,
+        14483267,
+        12305813,
+        241583598,
+        36562731,
+        17931477,
+        227183229,
+        174800075,
+        10984971,
+        19020387,
+        34124005,
+        16246188
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        6959594,
+        10083809,
+        8870875,
+        247518940,
+        252819456,
+        30530226,
+        1675452,
+        3235119,
+        17218347,
+        7656873,
+        174800075,
+        218973818,
+        118643912,
+        14848907,
+        11904633,
+        11727829,
+        232307160,
+        18468911,
+        18936938,
+        18810611
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        6959594,
+        30530226,
+        983587,
+        578036,
+        1505336,
+        28632902,
+        13940057,
+        13611390,
+        21725691,
+        41665377,
+        51876481,
+        2355279,
+        17719042,
+        56475913,
+        14032498,
+        6614720,
+        9404755,
+        32260611,
+        33855258,
+        11952964
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        6959594,
+        218973818
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        6959594,
+        30530226,
+        983587,
+        7656873,
+        218973818,
+        21725691,
+        18316102,
+        118643912,
+        3235119,
+        12554678,
+        8870875,
+        18468911,
+        247518940,
+        2355279,
+        10083809,
+        1505336,
+        915079,
+        252624625,
+        677816,
+        52011485
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.552416300051846
+  },
+  "reason_example": {
+    "query_id": "litsearch_020",
+    "query": "Can you suggest a corpus that contains French encyclopedia documents with semantic annotations and includes a test set of manually written question/answer triplets that align with the constraints of FrameNet semantic analysis?",
+    "top_results": [
+      {
+        "corpusid": 6959594,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.996; sub_dense=1.000"
+      },
+      {
+        "corpusid": 30530226,
+        "score": 0.9260574579238892,
+        "reason": "bm25=0.893; dense=0.948; sub_bm25=0.877; sub_dense=0.990"
+      },
+      {
+        "corpusid": 983587,
+        "score": 0.872782826423645,
+        "reason": "bm25=0.781; dense=0.934; sub_bm25=1.000; sub_dense=0.973"
+      },
+      {
+        "corpusid": 7656873,
+        "score": 0.8269970417022705,
+        "reason": "bm25=0.877; dense=0.794; sub_bm25=0.647; sub_dense=0.900"
+      },
+      {
+        "corpusid": 218973818,
+        "score": 0.822800874710083,
+        "reason": "bm25=0.854; dense=0.802; sub_bm25=0.882; sub_dense=0.967"
+      }
+    ]
+  }
+}

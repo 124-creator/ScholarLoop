@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_584",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_584",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_584",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_584",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 712,
+      "latency_s": 2.912268799962476
+    },
+    {
+      "query_id": "litsearch_584",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 469,
+      "latency_s": 4.6354280998930335
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_584",
+    "gold": [
+      262944419
+    ],
+    "pool_size": 287,
+    "decomposition": [
+      "language model emulating tool executions risk study",
+      "first paper simulated tool calls for agent safety",
+      "using language model to simulate tool use risk analysis"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18414132,
+        8284594,
+        53764089,
+        612963,
+        57916,
+        3923764,
+        30908728,
+        280387,
+        258685798,
+        10707097,
+        235293834,
+        3266239,
+        43335647,
+        5498664,
+        27787263,
+        52798630,
+        129969,
+        252819412,
+        10512592,
+        8517763
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        262944419,
+        247619066,
+        8427158,
+        252907607,
+        10634770,
+        3222941,
+        233219560,
+        210911499,
+        14717392,
+        53589436,
+        233241100,
+        207968532,
+        71144630,
+        248218465,
+        263909212,
+        6440957,
+        232352537,
+        2241526,
+        6338418,
+        259376548
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252907607,
+        262944419,
+        15694898,
+        261341825,
+        8028944,
+        248779883,
+        247619066,
+        260682249,
+        10878179,
+        2186770,
+        249204403,
+        248524755,
+        3196275,
+        227231085,
+        169724747,
+        3104512,
+        252968000,
+        264038804,
+        39590706,
+        218973741
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        262944419
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        262944419,
+        252907607,
+        247619066,
+        15694898,
+        52012037,
+        248779883,
+        260334759,
+        248524755,
+        260682249,
+        6683636,
+        260611249,
+        261341825,
+        18710694,
+        252968000,
+        235293810,
+        227231085,
+        258762609,
+        247996635,
+        46919506,
+        51871755
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.63208830007352
+  },
+  "reason_example": {
+    "query_id": "litsearch_584",
+    "query": "Which paper first used language models to emulate tool executions for studying the risks of language model agents?",
+    "top_results": [
+      {
+        "corpusid": 262944419,
+        "score": 0.9858264923095703,
+        "reason": "bm25=1.000; dense=0.976; sub_bm25=0.994; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252907607,
+        "score": 0.8880218267440796,
+        "reason": "bm25=0.720; dense=1.000; sub_bm25=0.323; sub_dense=0.920"
+      },
+      {
+        "corpusid": 247619066,
+        "score": 0.8040724396705627,
+        "reason": "bm25=0.754; dense=0.838; sub_bm25=0.327; sub_dense=0.753"
+      },
+      {
+        "corpusid": 15694898,
+        "score": 0.7487307786941528,
+        "reason": "bm25=0.491; dense=0.921; sub_bm25=0.605; sub_dense=0.666"
+      },
+      {
+        "corpusid": 52012037,
+        "score": 0.7158233523368835,
+        "reason": "bm25=0.624; dense=0.777; sub_bm25=0.602; sub_dense=0.752"
+      }
+    ]
+  }
+}

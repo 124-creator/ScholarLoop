@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_261",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_261",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_261",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_261",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2328,
+      "latency_s": 16.400828500045463
+    },
+    {
+      "query_id": "litsearch_261",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 285,
+      "latency_s": 2.395299900090322
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_261",
+    "gold": [
+      220347683
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "sentence embedding models for low-resource languages",
+      "semantic representation of sentences in Slovenian",
+      "multilingual sentence encoders for under-resourced languages like Romanian"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        261494520,
+        249204483,
+        1274371,
+        252403180,
+        7557552,
+        17524865,
+        16232976,
+        18766258,
+        38708803,
+        233189591,
+        17625727,
+        16724067,
+        6199029,
+        2239641,
+        214693392,
+        259376641,
+        2391734,
+        3458670,
+        202661093,
+        236486201
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        261494520,
+        251267923,
+        252403180,
+        252411778,
+        252624504,
+        232233062,
+        252624421,
+        6231125,
+        2239641,
+        259370810,
+        252624743,
+        252624674,
+        19656944,
+        218973986,
+        261048677,
+        252187959,
+        2391734,
+        10089709,
+        7008881,
+        797222
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232335496,
+        258486899,
+        27029347,
+        17101359,
+        47759232,
+        208617785,
+        202695513,
+        13848633,
+        33107619,
+        17808544,
+        14054208,
+        9092992,
+        256460923,
+        1533087,
+        3502245,
+        16051864,
+        51995091,
+        252624504,
+        18444016,
+        204916051
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        232335496,
+        261494520,
+        249204483,
+        218973986,
+        19656944,
+        252624504,
+        233189591,
+        259370810,
+        232233062,
+        38708803,
+        252403180,
+        16479804
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252624504,
+        218973986,
+        19656944,
+        232335496,
+        252624743,
+        203530902,
+        236034103,
+        16342913,
+        16479804,
+        2518673,
+        258486899,
+        261494520,
+        17101359,
+        232233062,
+        47759232,
+        6231125,
+        203610215,
+        22520284,
+        214742998,
+        10089709
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.085440199938603
+  },
+  "reason_example": {
+    "query_id": "litsearch_261",
+    "query": "Have any research papers been published on models for representing sentences in under-resourced languages like Slovenian or Romanian?",
+    "top_results": [
+      {
+        "corpusid": 252624504,
+        "score": 0.9183821678161621,
+        "reason": "bm25=0.927; dense=0.913; sub_bm25=0.678; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218973986,
+        "score": 0.8889187574386597,
+        "reason": "bm25=0.860; dense=0.908; sub_bm25=0.760; sub_dense=0.835"
+      },
+      {
+        "corpusid": 19656944,
+        "score": 0.870365560054779,
+        "reason": "bm25=0.866; dense=0.873; sub_bm25=0.655; sub_dense=0.952"
+      },
+      {
+        "corpusid": 232335496,
+        "score": 0.8372362852096558,
+        "reason": "bm25=0.593; dense=1.000; sub_bm25=0.572; sub_dense=0.922"
+      },
+      {
+        "corpusid": 252624743,
+        "score": 0.8315183520317078,
+        "reason": "bm25=0.883; dense=0.797; sub_bm25=0.987; sub_dense=0.892"
+      }
+    ]
+  }
+}

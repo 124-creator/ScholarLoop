@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_250",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_250",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_250",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_250",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 943,
+      "latency_s": 4.763835399993695
+    },
+    {
+      "query_id": "litsearch_250",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 220,
+      "latency_s": 2.202077400055714
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_250",
+    "gold": [
+      229924402
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "multimodal contrastive learning",
+      "contrastive learning multimodal models",
+      "multimodal representation learning contrastive"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248182527,
+        6553227,
+        248779964,
+        7403346,
+        52195444,
+        247518757,
+        215543504,
+        15969603,
+        7038187,
+        53109277,
+        32392814,
+        6855603,
+        53639109,
+        220047102,
+        2922053,
+        1710724,
+        23892230,
+        5743458,
+        247475776,
+        2954152
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257557257,
+        254974222,
+        248377556,
+        258480094,
+        247518757,
+        222272463,
+        252199913,
+        259370654,
+        247572586,
+        256358690,
+        250390575,
+        247774353,
+        227230870,
+        249395677,
+        254200096,
+        253384407,
+        15969603,
+        235097228,
+        257365623,
+        252819166
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        220302636,
+        257557257,
+        253384407,
+        229924402,
+        257039090,
+        232185558,
+        230770298,
+        259370654,
+        204838340,
+        222310695,
+        259376748,
+        237605175,
+        13056261,
+        254974222,
+        248779993,
+        250390575,
+        235377428,
+        246823998,
+        248506039,
+        235606307
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        257557257,
+        248377556,
+        254974222,
+        258480094,
+        253384407,
+        220302636
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257557257,
+        220302636,
+        254974222,
+        253384407,
+        259370654,
+        250390575,
+        258480094,
+        248377556,
+        248506039,
+        248779993,
+        263609175,
+        252819166,
+        15969603,
+        222310695,
+        252199913,
+        232185558,
+        249395677,
+        247518757,
+        246823998,
+        257404839
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.617546599940397
+  },
+  "reason_example": {
+    "query_id": "litsearch_250",
+    "query": "Could you suggest some work that develops multimodal models with contrastive learning approaches?",
+    "top_results": [
+      {
+        "corpusid": 257557257,
+        "score": 0.9532592296600342,
+        "reason": "bm25=1.000; dense=0.922; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 220302636,
+        "score": 0.8618643283843994,
+        "reason": "bm25=0.655; dense=1.000; sub_bm25=0.901; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254974222,
+        "score": 0.8191202878952026,
+        "reason": "bm25=0.853; dense=0.796; sub_bm25=0.858; sub_dense=0.909"
+      },
+      {
+        "corpusid": 253384407,
+        "score": 0.8091881275177002,
+        "reason": "bm25=0.693; dense=0.887; sub_bm25=0.922; sub_dense=0.946"
+      },
+      {
+        "corpusid": 259370654,
+        "score": 0.7848762273788452,
+        "reason": "bm25=0.735; dense=0.818; sub_bm25=1.000; sub_dense=0.914"
+      }
+    ]
+  }
+}

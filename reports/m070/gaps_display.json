@@ -1,0 +1,1722 @@
+{
+  "format": "list_plus_relation_matrix",
+  "s5_status_values": [
+    "已有证据支持",
+    "证据不足",
+    "存在争议"
+  ],
+  "items": [
+    {
+      "id": "gap_0000",
+      "concept_a": "few shot",
+      "concept_b": "multi agent",
+      "score": 8185.377950665562,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2224,
+        "past_count_b": 2490,
+        "recent_count_a": 1216,
+        "recent_count_b": 1062,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220505282,
+        220506331,
+        220506743,
+        220512446,
+        220512880,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": "The concepts 'few shot' and 'multi agent' have never co-occurred in past publications (cooccur count 0), despite high individual recent counts (1216 for few shot, 1062 for multi agent). The allowed paper IDs (220505282, 220506331, 220506743, 220512446, 220512880, 220515473) are suggested as potential candidates to explore this gap. The evidence status is insufficient, indicating no existing cross-study."
+    },
+    {
+      "id": "gap_0001",
+      "concept_a": "multi agent",
+      "concept_b": "semi supervised",
+      "score": 6855.769984804553,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 2253,
+        "recent_count_a": 1062,
+        "recent_count_b": 888,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220506331,
+        220506963,
+        220509802,
+        220512880,
+        220514230,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": "Both 'multi agent' and 'semi supervised' have high individual research activity, with 2490 and 2253 past papers respectively, and 1062 and 888 recent papers. However, there is zero co-occurrence between them in the past, indicating a clear research gap with no existing work combining these concepts."
+    },
+    {
+      "id": "gap_0002",
+      "concept_a": "multi agent",
+      "concept_b": "semantic segmentation",
+      "score": 6571.138627732398,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1956,
+        "recent_count_a": 1062,
+        "recent_count_b": 867,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220501515,
+        220501550,
+        220503650,
+        220506331,
+        220512880,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": "Despite high individual publication counts for 'multi agent' (2490 past, 1062 recent) and 'semantic segmentation' (1956 past, 867 recent), there are zero past co-occurrences and zero future fill counts, indicating a complete lack of integration between these concepts in the dataset. The evidence status is insufficient, suggesting that this may represent a potential research gap. No specific papers from the allowed list bridge these topics."
+    },
+    {
+      "id": "gap_0003",
+      "concept_a": "semantic segmentation",
+      "concept_b": "anomaly detection",
+      "score": 6143.679104858835,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1956,
+        "past_count_b": 1653,
+        "recent_count_a": 867,
+        "recent_count_b": 829,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220501515,
+        220501550,
+        220502935,
+        220503650,
+        220508362,
+        220511611
+      ],
+      "future_fill_example_ids": [],
+      "narration": "Semantic segmentation and anomaly detection have been individually studied with high counts (past: 1956, 1653; recent: 867, 829) but have zero co-occurrences in the past and no future fills, indicating a research gap. The allowed paper IDs (220501515, 220501550, 220502935, 220503650, 220508362, 220511611) are provided for potential exploration."
+    },
+    {
+      "id": "gap_0004",
+      "concept_a": "multi agent",
+      "concept_b": "domain adaptation",
+      "score": 5830.275590625723,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 2000,
+        "recent_count_a": 1062,
+        "recent_count_b": 767,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500895,
+        220506331,
+        220511821,
+        220512880,
+        220513508,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": "Multi-agent and domain adaptation are highly studied individually (past counts 2490 and 2000, recent 1062 and 767), but have zero past co-occurrences. The allowed paper IDs (220500895, 220506331, 220511821, 220512880, 220513508, 220515473) may serve as candidate works to fill this gap."
+    },
+    {
+      "id": "gap_0005",
+      "concept_a": "multi agent",
+      "concept_b": "pre training",
+      "score": 5802.491482894,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1302,
+        "recent_count_a": 1062,
+        "recent_count_b": 809,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220506331,
+        220507830,
+        220510363,
+        220512880,
+        220514338,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0006",
+      "concept_a": "object detection",
+      "concept_b": "question answering",
+      "score": 5333.654366596831,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 1791,
+        "recent_count_a": 1346,
+        "recent_count_b": 712,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500949,
+        220501515,
+        220504841,
+        220505245,
+        220508148,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0007",
+      "concept_a": "semantic segmentation",
+      "concept_b": "question answering",
+      "score": 5333.654366596831,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1956,
+        "past_count_b": 1791,
+        "recent_count_a": 867,
+        "recent_count_b": 712,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500949,
+        220501515,
+        220501550,
+        220503650,
+        220508148,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0008",
+      "concept_a": "time series",
+      "concept_b": "question answering",
+      "score": 5333.654366596831,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1791,
+        "recent_count_a": 1013,
+        "recent_count_b": 712,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7112062,
+        160103769,
+        160105654,
+        220500949,
+        220508148,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0009",
+      "concept_a": "multi agent",
+      "concept_b": "point cloud",
+      "score": 4641.735709268624,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1290,
+        "recent_count_a": 1062,
+        "recent_count_b": 648,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220501550,
+        220506331,
+        220509594,
+        220512880,
+        220514999,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0010",
+      "concept_a": "time series",
+      "concept_b": "medical image",
+      "score": 4323.130954958454,
+      "evidence_status": "已有证据支持",
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1103,
+        "recent_count_a": 1013,
+        "recent_count_b": 617,
+        "past_cooccur_count": 0,
+        "future_fill_count": 1
+      },
+      "historical_evidence_ids": [
+        7112062,
+        160103769,
+        160105654,
+        220501733,
+        220506551,
+        220515658
+      ],
+      "future_fill_example_ids": [
+        240307513
+      ],
+      "narration": null
+    },
+    {
+      "id": "gap_0011",
+      "concept_a": "object detection",
+      "concept_b": "image segmentation",
+      "score": 4142.101733049242,
+      "evidence_status": "已有证据支持",
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 1294,
+        "recent_count_a": 1346,
+        "recent_count_b": 578,
+        "past_cooccur_count": 0,
+        "future_fill_count": 1
+      },
+      "historical_evidence_ids": [
+        220501515,
+        220501733,
+        220501777,
+        220504841,
+        220505245,
+        220506779
+      ],
+      "future_fill_example_ids": [
+        240803393
+      ],
+      "narration": null
+    },
+    {
+      "id": "gap_0012",
+      "concept_a": "question answering",
+      "concept_b": "image segmentation",
+      "score": 4142.101733049242,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1791,
+        "past_count_b": 1294,
+        "recent_count_a": 712,
+        "recent_count_b": 578,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500949,
+        220501733,
+        220501777,
+        220506779,
+        220508148,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0013",
+      "concept_a": "point cloud",
+      "concept_b": "image segmentation",
+      "score": 4140.313641909359,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1290,
+        "past_count_b": 1294,
+        "recent_count_a": 648,
+        "recent_count_b": 578,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220501550,
+        220501733,
+        220501777,
+        220506779,
+        220509594,
+        220514999
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0014",
+      "concept_a": "anomaly detection",
+      "concept_b": "pose estimation",
+      "score": 4085.915841976412,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1653,
+        "past_count_b": 1436,
+        "recent_count_a": 829,
+        "recent_count_b": 562,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500076,
+        220501515,
+        220502935,
+        220508362,
+        220510611,
+        220511611
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0015",
+      "concept_a": "question answering",
+      "concept_b": "pose estimation",
+      "score": 4085.915841976412,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1791,
+        "past_count_b": 1436,
+        "recent_count_a": 712,
+        "recent_count_b": 562,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500076,
+        220500949,
+        220501515,
+        220508148,
+        220510611,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0016",
+      "concept_a": "time series",
+      "concept_b": "pose estimation",
+      "score": 4085.915841976412,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1436,
+        "recent_count_a": 1013,
+        "recent_count_b": 562,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7112062,
+        160103769,
+        160105654,
+        220500076,
+        220501515,
+        220510611
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0017",
+      "concept_a": "image segmentation",
+      "concept_b": "pose estimation",
+      "score": 4027.4414774631045,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1294,
+        "past_count_b": 1436,
+        "recent_count_a": 578,
+        "recent_count_b": 562,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500076,
+        220501515,
+        220501733,
+        220501777,
+        220506779,
+        220510611
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0018",
+      "concept_a": "anomaly detection",
+      "concept_b": "super resolution",
+      "score": 3982.986215595442,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1653,
+        "past_count_b": 1433,
+        "recent_count_a": 829,
+        "recent_count_b": 548,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160106243,
+        220502935,
+        220508362,
+        220510406,
+        220511611,
+        220513847
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0019",
+      "concept_a": "multi agent",
+      "concept_b": "super resolution",
+      "score": 3982.986215595442,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1433,
+        "recent_count_a": 1062,
+        "recent_count_b": 548,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160106243,
+        220506331,
+        220510406,
+        220512880,
+        220513847,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0020",
+      "concept_a": "question answering",
+      "concept_b": "super resolution",
+      "score": 3982.986215595442,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1791,
+        "past_count_b": 1433,
+        "recent_count_a": 712,
+        "recent_count_b": 548,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160106243,
+        220500949,
+        220508148,
+        220510406,
+        220513847,
+        220514981
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0021",
+      "concept_a": "domain adaptation",
+      "concept_b": "research council",
+      "score": 3975.7507051558505,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2000,
+        "past_count_b": 1972,
+        "recent_count_a": 767,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220500895,
+        220504643,
+        220511821,
+        220513508
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0022",
+      "concept_a": "medical image",
+      "concept_b": "pose estimation",
+      "score": 3937.7627174824165,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1103,
+        "past_count_b": 1436,
+        "recent_count_a": 617,
+        "recent_count_b": 562,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500076,
+        220501515,
+        220501733,
+        220506551,
+        220510611,
+        220515658
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0023",
+      "concept_a": "pre training",
+      "concept_b": "super resolution",
+      "score": 3930.488668264415,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1302,
+        "past_count_b": 1433,
+        "recent_count_a": 809,
+        "recent_count_b": 548,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160106243,
+        220507830,
+        220510363,
+        220510406,
+        220513847,
+        220514338
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0024",
+      "concept_a": "anomaly detection",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1653,
+        "past_count_b": 1428,
+        "recent_count_a": 829,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220502935,
+        220508362,
+        220511611,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0025",
+      "concept_a": "multi agent",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1428,
+        "recent_count_a": 1062,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220506331,
+        220512880,
+        220514326,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0026",
+      "concept_a": "object detection",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 1428,
+        "recent_count_a": 1346,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220501515,
+        220504841,
+        220505245,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0027",
+      "concept_a": "pose estimation",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1436,
+        "past_count_b": 1428,
+        "recent_count_a": 562,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220500076,
+        220501515,
+        220510611,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0028",
+      "concept_a": "semantic segmentation",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1956,
+        "past_count_b": 1428,
+        "recent_count_a": 867,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220501515,
+        220501550,
+        220503650,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0029",
+      "concept_a": "super resolution",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1433,
+        "past_count_b": 1428,
+        "recent_count_a": 548,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106243,
+        160106581,
+        220510406,
+        220513847,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0030",
+      "concept_a": "time series",
+      "concept_b": "speech recognition",
+      "score": 3922.9542960821286,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1428,
+        "recent_count_a": 1013,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7112062,
+        160102553,
+        160103769,
+        160105654,
+        160106581,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0031",
+      "concept_a": "zero shot",
+      "concept_b": "research council",
+      "score": 3921.8091690819324,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1779,
+        "past_count_b": 1972,
+        "recent_count_a": 1024,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220504643,
+        220506130,
+        220515290,
+        230709384
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0032",
+      "concept_a": "image segmentation",
+      "concept_b": "fine grained",
+      "score": 3869.7836260321646,
+      "evidence_status": "已有证据支持",
+      "counts": {
+        "past_count_a": 1294,
+        "past_count_b": 1333,
+        "recent_count_a": 578,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 1
+      },
+      "historical_evidence_ids": [
+        14073867,
+        220501733,
+        220501777,
+        220506779,
+        220512491,
+        220513115
+      ],
+      "future_fill_example_ids": [
+        240913637
+      ],
+      "narration": null
+    },
+    {
+      "id": "gap_0033",
+      "concept_a": "image segmentation",
+      "concept_b": "speech recognition",
+      "score": 3869.7836260321646,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1294,
+        "past_count_b": 1428,
+        "recent_count_a": 578,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220501733,
+        220501777,
+        220506779,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0034",
+      "concept_a": "point cloud",
+      "concept_b": "speech recognition",
+      "score": 3868.113091057187,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1290,
+        "past_count_b": 1428,
+        "recent_count_a": 648,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220501550,
+        220509594,
+        220514326,
+        220514999
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0035",
+      "concept_a": "pose estimation",
+      "concept_b": "research council",
+      "score": 3809.643952305409,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1436,
+        "past_count_b": 1972,
+        "recent_count_a": 562,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220500076,
+        220501515,
+        220504643,
+        220510611
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0036",
+      "concept_a": "super resolution",
+      "concept_b": "research council",
+      "score": 3808.5488630876125,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1433,
+        "past_count_b": 1972,
+        "recent_count_a": 548,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        160106243,
+        220504643,
+        220510406,
+        220513847
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0037",
+      "concept_a": "speech recognition",
+      "concept_b": "research council",
+      "score": 3806.7186132352504,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1428,
+        "past_count_b": 1972,
+        "recent_count_a": 540,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        160102553,
+        160106581,
+        220504643,
+        220514326
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0038",
+      "concept_a": "medical image",
+      "concept_b": "speech recognition",
+      "score": 3783.615422492002,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1103,
+        "past_count_b": 1428,
+        "recent_count_a": 617,
+        "recent_count_b": 540,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        160102553,
+        160106581,
+        220501733,
+        220506551,
+        220514326,
+        220515658
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0039",
+      "concept_a": "pre training",
+      "concept_b": "research council",
+      "score": 3758.350478413419,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1302,
+        "past_count_b": 1972,
+        "recent_count_a": 809,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220504643,
+        220507830,
+        220510363,
+        220514338
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0040",
+      "concept_a": "point cloud",
+      "concept_b": "research council",
+      "score": 3753.5023328036405,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1290,
+        "past_count_b": 1972,
+        "recent_count_a": 648,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220501550,
+        220504643,
+        220509594,
+        220514999
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0041",
+      "concept_a": "multi agent",
+      "concept_b": "weakly supervised",
+      "score": 3615.049568651307,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2490,
+        "past_count_b": 1284,
+        "recent_count_a": 1062,
+        "recent_count_b": 505,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        14071208,
+        160100706,
+        220506331,
+        220506779,
+        220512880,
+        220515473
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0042",
+      "concept_a": "real time",
+      "concept_b": "weakly supervised",
+      "score": 3615.049568651307,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 3151,
+        "past_count_b": 1284,
+        "recent_count_a": 1057,
+        "recent_count_b": 505,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        12015450,
+        14071208,
+        14073820,
+        160100706,
+        220506779,
+        220508657
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0043",
+      "concept_a": "time series",
+      "concept_b": "weakly supervised",
+      "score": 3615.049568651307,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1284,
+        "recent_count_a": 1013,
+        "recent_count_b": 505,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7112062,
+        14071208,
+        160100706,
+        160103769,
+        160105654,
+        220506779
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0044",
+      "concept_a": "pre trained",
+      "concept_b": "weakly supervised",
+      "score": 3610.3114572714903,
+      "evidence_status": "已有证据支持",
+      "counts": {
+        "past_count_a": 1272,
+        "past_count_b": 1284,
+        "recent_count_a": 818,
+        "recent_count_b": 505,
+        "past_cooccur_count": 0,
+        "future_fill_count": 1
+      },
+      "historical_evidence_ids": [
+        14071208,
+        160100706,
+        220500506,
+        220501841,
+        220506779,
+        220507303
+      ],
+      "future_fill_example_ids": [
+        240809411
+      ],
+      "narration": null
+    },
+    {
+      "id": "gap_0045",
+      "concept_a": "knowledge distillation",
+      "concept_b": "research council",
+      "score": 3581.072979138451,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 928,
+        "past_count_b": 1972,
+        "recent_count_a": 537,
+        "recent_count_b": 524,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        7110348,
+        14073130,
+        220504643,
+        220511098,
+        230707768,
+        230710191
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0046",
+      "concept_a": "domain adaptation",
+      "concept_b": "artificial intelligence",
+      "score": 3552.128494723822,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 2000,
+        "past_count_b": 1199,
+        "recent_count_a": 767,
+        "recent_count_b": 501,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500167,
+        220500895,
+        220505406,
+        220508404,
+        220511821,
+        220513508
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0047",
+      "concept_a": "image segmentation",
+      "concept_b": "artificial intelligence",
+      "score": 3552.128494723822,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1294,
+        "past_count_b": 1199,
+        "recent_count_a": 578,
+        "recent_count_b": 501,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500167,
+        220501733,
+        220501777,
+        220505406,
+        220506779,
+        220508404
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0048",
+      "concept_a": "multi view",
+      "concept_b": "artificial intelligence",
+      "score": 3552.128494723822,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1285,
+        "past_count_b": 1199,
+        "recent_count_a": 604,
+        "recent_count_b": 501,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500167,
+        220502507,
+        220505406,
+        220508404,
+        220509228,
+        220515075
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    },
+    {
+      "id": "gap_0049",
+      "concept_a": "point cloud",
+      "concept_b": "artificial intelligence",
+      "score": 3552.128494723822,
+      "evidence_status": "证据不足",
+      "counts": {
+        "past_count_a": 1290,
+        "past_count_b": 1199,
+        "recent_count_a": 648,
+        "recent_count_b": 501,
+        "past_cooccur_count": 0,
+        "future_fill_count": 0
+      },
+      "historical_evidence_ids": [
+        220500167,
+        220501550,
+        220505406,
+        220508404,
+        220509594,
+        220514999
+      ],
+      "future_fill_example_ids": [],
+      "narration": null
+    }
+  ],
+  "concept_nodes": [
+    {
+      "id": 0,
+      "label": "few shot"
+    },
+    {
+      "id": 1,
+      "label": "multi agent"
+    },
+    {
+      "id": 2,
+      "label": "semi supervised"
+    },
+    {
+      "id": 3,
+      "label": "semantic segmentation"
+    },
+    {
+      "id": 4,
+      "label": "anomaly detection"
+    },
+    {
+      "id": 5,
+      "label": "domain adaptation"
+    },
+    {
+      "id": 6,
+      "label": "pre training"
+    },
+    {
+      "id": 7,
+      "label": "object detection"
+    },
+    {
+      "id": 8,
+      "label": "question answering"
+    },
+    {
+      "id": 9,
+      "label": "time series"
+    },
+    {
+      "id": 10,
+      "label": "point cloud"
+    },
+    {
+      "id": 11,
+      "label": "medical image"
+    },
+    {
+      "id": 12,
+      "label": "image segmentation"
+    },
+    {
+      "id": 13,
+      "label": "pose estimation"
+    },
+    {
+      "id": 14,
+      "label": "super resolution"
+    },
+    {
+      "id": 15,
+      "label": "research council"
+    },
+    {
+      "id": 16,
+      "label": "speech recognition"
+    },
+    {
+      "id": 17,
+      "label": "zero shot"
+    },
+    {
+      "id": 18,
+      "label": "fine grained"
+    },
+    {
+      "id": 19,
+      "label": "weakly supervised"
+    },
+    {
+      "id": 20,
+      "label": "real time"
+    },
+    {
+      "id": 21,
+      "label": "pre trained"
+    },
+    {
+      "id": 22,
+      "label": "knowledge distillation"
+    },
+    {
+      "id": 23,
+      "label": "artificial intelligence"
+    },
+    {
+      "id": 24,
+      "label": "multi view"
+    }
+  ],
+  "matrix_edges": [
+    {
+      "source": "few shot",
+      "target": "multi agent",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "semi supervised",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "semantic segmentation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "semantic segmentation",
+      "target": "anomaly detection",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "domain adaptation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "pre training",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "object detection",
+      "target": "question answering",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "semantic segmentation",
+      "target": "question answering",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "time series",
+      "target": "question answering",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "point cloud",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "time series",
+      "target": "medical image",
+      "past_cooccur_count": 0,
+      "future_fill_count": 1,
+      "evidence_status": "已有证据支持"
+    },
+    {
+      "source": "object detection",
+      "target": "image segmentation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 1,
+      "evidence_status": "已有证据支持"
+    },
+    {
+      "source": "question answering",
+      "target": "image segmentation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "point cloud",
+      "target": "image segmentation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "anomaly detection",
+      "target": "pose estimation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "question answering",
+      "target": "pose estimation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "time series",
+      "target": "pose estimation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "image segmentation",
+      "target": "pose estimation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "anomaly detection",
+      "target": "super resolution",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "super resolution",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "question answering",
+      "target": "super resolution",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "domain adaptation",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "medical image",
+      "target": "pose estimation",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "pre training",
+      "target": "super resolution",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "anomaly detection",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "object detection",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "pose estimation",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "semantic segmentation",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "super resolution",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "time series",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "zero shot",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "image segmentation",
+      "target": "fine grained",
+      "past_cooccur_count": 0,
+      "future_fill_count": 1,
+      "evidence_status": "已有证据支持"
+    },
+    {
+      "source": "image segmentation",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "point cloud",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "pose estimation",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "super resolution",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "speech recognition",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "medical image",
+      "target": "speech recognition",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "pre training",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "point cloud",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi agent",
+      "target": "weakly supervised",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "real time",
+      "target": "weakly supervised",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "time series",
+      "target": "weakly supervised",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "pre trained",
+      "target": "weakly supervised",
+      "past_cooccur_count": 0,
+      "future_fill_count": 1,
+      "evidence_status": "已有证据支持"
+    },
+    {
+      "source": "knowledge distillation",
+      "target": "research council",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "domain adaptation",
+      "target": "artificial intelligence",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "image segmentation",
+      "target": "artificial intelligence",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "multi view",
+      "target": "artificial intelligence",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    },
+    {
+      "source": "point cloud",
+      "target": "artificial intelligence",
+      "past_cooccur_count": 0,
+      "future_fill_count": 0,
+      "evidence_status": "证据不足"
+    }
+  ]
+}

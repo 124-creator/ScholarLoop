@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "wall_passed": true,
+  "query_count": 597,
+  "a_v2_f1": 0.1311870490590176,
+  "a_v1_f1": 0.11277564471796502,
+  "bm25_f1": 0.09639377930835218,
+  "neural_v2_f1": 0.106493618051407,
+  "a_v2_vs_bm25": {
+    "mean_delta": 0.03479326975066543,
+    "ci95": [
+      0.028661553349667836,
+      0.040876097660017256
+    ],
+    "resamples": 10000,
+    "passed": true
+  },
+  "a_v2_vs_a_v1": {
+    "mean_delta": 0.01841140434105258,
+    "ci95": [
+      0.013472568748950657,
+      0.023421360883672443
+    ],
+    "resamples": 10000,
+    "passed": true
+  },
+  "split_deltas": {
+    "a_v2_vs_bm25": {
+      "train": 0.034159662261465024,
+      "holdout": 0.03965435606060605,
+      "test": 0.0309090909090909
+    },
+    "a_v2_vs_a_v1": {
+      "train": 0.01849577703236241,
+      "holdout": 0.019767992424242403,
+      "test": 0.016363636363636358
+    }
+  },
+  "h5": 0,
+  "repro_stable_equal": true,
+  "secret_hits": 0,
+  "m010_results_unchanged": true,
+  "m010_significance_unchanged": true,
+  "pytest_record": "................                                                         [100%]\n16 passed in 41.07s",
+  "stop_report_exists": false
+}

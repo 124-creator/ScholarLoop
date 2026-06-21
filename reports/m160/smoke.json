@@ -1,0 +1,31 @@
+{
+  "schema_version": "m160.smoke.v1",
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:61485",
+  "checks": {
+    "/healthz": {
+      "status": 200,
+      "bytes": 67
+    },
+    "/studio?lang=zh&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 72315
+    },
+    "/studio?lang=en&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 73103
+    },
+    "/api/graph_stable": {
+      "status": 200,
+      "bytes": 68716
+    },
+    "/api/search?q=large%20language%20model%20compression": {
+      "status": 200,
+      "bytes": 856,
+      "payload_status": "unavailable",
+      "enabled": false,
+      "llm_calls": 0
+    }
+  },
+  "log": "reports/m160/smoke.txt"
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_175",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_175",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_175",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_175",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1603,
+      "latency_s": 10.253379800007679
+    },
+    {
+      "query_id": "litsearch_175",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 233,
+      "latency_s": 1.6891621000831947
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_175",
+    "gold": [
+      231704318
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "neural passage retrieval dual encoder synthetic questions",
+      "enhancing retrieval with synthetic query generation dual encoder",
+      "dual encoder passage ranking synthetic question training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3923764,
+        10982377,
+        8011103,
+        21022858,
+        459718,
+        6185167,
+        8738739,
+        10307715,
+        13568275,
+        18571877,
+        30167514,
+        38964517,
+        51868421,
+        9988418,
+        8338282,
+        2143884,
+        5940554,
+        7733490,
+        10250647,
+        14365335
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254877181,
+        257913267,
+        249926985,
+        248177840,
+        218516730,
+        231815627,
+        258947148,
+        256461326,
+        231704318,
+        15108674,
+        236459960,
+        253098237,
+        11150519,
+        202565869,
+        9988418,
+        249191264,
+        256461050,
+        243865304,
+        8001994,
+        237532327
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236459960,
+        231704318,
+        249926985,
+        258486853,
+        231815627,
+        248177840,
+        252819436,
+        250390910,
+        253553743,
+        195750836,
+        4025123,
+        202769358,
+        204916064,
+        6468765,
+        222141606,
+        256461326,
+        252819005,
+        150252449,
+        227746078,
+        249209905
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        249926985,
+        231704318,
+        252819436,
+        202769358,
+        243865304,
+        231815627,
+        248177840,
+        257913267,
+        254877181,
+        236459960,
+        218516730,
+        11150519
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249926985,
+        236459960,
+        231815627,
+        231704318,
+        248177840,
+        256461326,
+        218516730,
+        202769358,
+        252819436,
+        254877181,
+        250390910,
+        258486853,
+        202565869,
+        257913267,
+        8001994,
+        249191264,
+        4025123,
+        248218489,
+        258947148,
+        241583598
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.31192930007819
+  },
+  "reason_example": {
+    "query_id": "litsearch_175",
+    "query": "Could you recommend research that investigates the enhancement of neural passage retrieval through the application of dual encoders and the generation of synthetic questions?",
+    "top_results": [
+      {
+        "corpusid": 249926985,
+        "score": 0.9593899250030518,
+        "reason": "bm25=0.930; dense=0.979; sub_bm25=0.612; sub_dense=0.963"
+      },
+      {
+        "corpusid": 236459960,
+        "score": 0.9453763961791992,
+        "reason": "bm25=0.863; dense=1.000; sub_bm25=0.932; sub_dense=0.995"
+      },
+      {
+        "corpusid": 231815627,
+        "score": 0.9443885684013367,
+        "reason": "bm25=0.917; dense=0.962; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231704318,
+        "score": 0.9403855204582214,
+        "reason": "bm25=0.879; dense=0.981; sub_bm25=0.837; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248177840,
+        "score": 0.932092547416687,
+        "reason": "bm25=0.926; dense=0.936; sub_bm25=0.980; sub_dense=0.966"
+      }
+    ]
+  }
+}

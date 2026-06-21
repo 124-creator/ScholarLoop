@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_263",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_263",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_263",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_263",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1563,
+      "latency_s": 8.459217400057241
+    },
+    {
+      "query_id": "litsearch_263",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 429,
+      "latency_s": 2.9203819000395015
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_263",
+    "gold": [
+      248512647
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "non-autoregressive translation speed comparison autoregressive",
+      "inference time non-autoregressive vs autoregressive machine translation",
+      "performance speed analysis non-autoregressive translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21022858,
+        16020183,
+        33548672,
+        22408096,
+        37527673,
+        21547774,
+        218688152,
+        32782433,
+        256461103,
+        231692950,
+        3438497,
+        14478849,
+        1874608,
+        676609,
+        30167514,
+        51868421,
+        229923438,
+        19653906,
+        256461239,
+        252819394
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235613631,
+        231692950,
+        248987145,
+        252819394,
+        229923438,
+        254125416,
+        256461239,
+        225075898,
+        221702970,
+        260379236,
+        254246545,
+        201698174,
+        256358677,
+        207847275,
+        232307330,
+        220046693,
+        259376875,
+        3438497,
+        234357798,
+        248512647
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248512647,
+        231692950,
+        256358677,
+        254125416,
+        253018690,
+        248987145,
+        45221071,
+        1874608,
+        232307330,
+        2722451,
+        241583440,
+        254246545,
+        257039110,
+        229923438,
+        221150562,
+        4646778,
+        256461103,
+        207847275,
+        11280500,
+        219302901
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248512647,
+        235613631,
+        254125416,
+        229923438,
+        248987145,
+        256461239,
+        231692950,
+        252819394,
+        232307330,
+        256358677,
+        3438497,
+        253018690
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        231692950,
+        235613631,
+        254125416,
+        248987145,
+        229923438,
+        248512647,
+        256358677,
+        232307330,
+        254246545,
+        207847275,
+        253018690,
+        218486806,
+        256461239,
+        252819394,
+        257039110,
+        216056470,
+        256461391,
+        3480671,
+        226262326,
+        220046693
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.933918600087054
+  },
+  "reason_example": {
+    "query_id": "litsearch_263",
+    "query": "Have any research papers critically analyzed the performance speed of non-autoregressive translation models compared to autoregressive models",
+    "top_results": [
+      {
+        "corpusid": 231692950,
+        "score": 0.9700927734375,
+        "reason": "bm25=0.972; dense=0.969; sub_bm25=0.958; sub_dense=0.986"
+      },
+      {
+        "corpusid": 235613631,
+        "score": 0.9233807325363159,
+        "reason": "bm25=1.000; dense=0.872; sub_bm25=1.000; sub_dense=0.932"
+      },
+      {
+        "corpusid": 254125416,
+        "score": 0.9200993776321411,
+        "reason": "bm25=0.855; dense=0.964; sub_bm25=1.000; sub_dense=0.979"
+      },
+      {
+        "corpusid": 248987145,
+        "score": 0.9182905554771423,
+        "reason": "bm25=0.875; dense=0.947; sub_bm25=0.906; sub_dense=0.967"
+      },
+      {
+        "corpusid": 229923438,
+        "score": 0.9030156135559082,
+        "reason": "bm25=0.861; dense=0.931; sub_bm25=0.913; sub_dense=0.915"
+      }
+    ]
+  }
+}

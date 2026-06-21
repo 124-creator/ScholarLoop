@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_174",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_174",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_174",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_174",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1362,
+      "latency_s": 8.447491600061767
+    },
+    {
+      "query_id": "litsearch_174",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 290,
+      "latency_s": 2.3286948000313714
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_174",
+    "gold": [
+      238856938
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "counterfactual examples question answering generation",
+      "T5 retrieval augmented counterfactual training",
+      "enhancing QA systems counterfactual examples"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        261494455,
+        235482414,
+        7078517,
+        252780775,
+        3841315,
+        207994922,
+        11703281,
+        184487171,
+        5080441,
+        14669758,
+        511847,
+        14194446,
+        246294611,
+        9751558,
+        226283874,
+        15876467,
+        222290708,
+        6796158,
+        656434,
+        6883700
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252780775,
+        253237331,
+        237490881,
+        246294611,
+        238856938,
+        263608822,
+        249926985,
+        243865275,
+        222291772,
+        235367702,
+        225040672,
+        511847,
+        235898880,
+        261494455,
+        252992654,
+        184482937,
+        235731975,
+        51875796,
+        238419007,
+        199379633
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245385766,
+        235358557,
+        236772808,
+        221761220,
+        238856938,
+        238259486,
+        258947371,
+        220830688,
+        235266322,
+        248780430,
+        261341859,
+        225040142,
+        254096489,
+        220935896,
+        51871017,
+        254877039,
+        222291772,
+        235731975,
+        250089342,
+        165163607
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238856938,
+        261341859
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238856938,
+        222291772,
+        235358557,
+        263608822,
+        249926985,
+        236772808,
+        235731975,
+        245385766,
+        261341859,
+        235266322,
+        238259486,
+        252992654,
+        254877039,
+        248780430,
+        243865275,
+        51871017,
+        235254629,
+        226262284,
+        249191264,
+        237498988
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.996486700023524
+  },
+  "reason_example": {
+    "query_id": "litsearch_174",
+    "query": "Could you recommend research that investigates techniques for creating counterfactual examples to enhance question-answering systems, such as training a T5 model augmented with retrieval?",
+    "top_results": [
+      {
+        "corpusid": 238856938,
+        "score": 0.9142622947692871,
+        "reason": "bm25=0.915; dense=0.914; sub_bm25=0.852; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222291772,
+        "score": 0.8541621565818787,
+        "reason": "bm25=0.900; dense=0.824; sub_bm25=0.958; sub_dense=0.903"
+      },
+      {
+        "corpusid": 235358557,
+        "score": 0.8424498438835144,
+        "reason": "bm25=0.643; dense=0.976; sub_bm25=0.740; sub_dense=0.986"
+      },
+      {
+        "corpusid": 263608822,
+        "score": 0.8391342163085938,
+        "reason": "bm25=0.910; dense=0.792; sub_bm25=0.684; sub_dense=0.767"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.8378313183784485,
+        "reason": "bm25=0.909; dense=0.791; sub_bm25=0.496; sub_dense=0.807"
+      }
+    ]
+  }
+}

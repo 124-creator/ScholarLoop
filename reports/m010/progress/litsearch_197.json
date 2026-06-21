@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_197",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_197",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_197",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_197",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1289,
+      "latency_s": 7.1746025999309495
+    },
+    {
+      "query_id": "litsearch_197",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 276,
+      "latency_s": 2.421982100000605
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_197",
+    "gold": [
+      229923710
+    ],
+    "pool_size": 283,
+    "decomposition": [
+      "prompt tuning as alternative to fine-tuning",
+      "prompt-based fine-tuning language models",
+      "prompt optimization vs standard regularization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15751424,
+        219305462,
+        17558767,
+        48356329,
+        5153623,
+        16657732,
+        140609,
+        236460248,
+        7174676,
+        260063225,
+        2375338,
+        224705337,
+        7989398,
+        12735028,
+        45438237,
+        218688152,
+        8349712,
+        14370835,
+        236460291,
+        248085344
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226222232,
+        245144420,
+        247793717,
+        220045413,
+        248506201,
+        258079331,
+        233231453,
+        258887528,
+        202750126,
+        252907221,
+        237292758,
+        257038392,
+        207847598,
+        252683720,
+        18444016,
+        226283524,
+        248069177,
+        232222259,
+        259370884,
+        211678094
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264172710,
+        252716013,
+        237416760,
+        257038392,
+        258332119,
+        245144420,
+        241033259,
+        259833855,
+        247619066,
+        250279831,
+        259833814,
+        248780567,
+        248780177,
+        248779986,
+        259376547,
+        263834884,
+        252439170,
+        264426355,
+        246485605,
+        235652287
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780177,
+        259833855,
+        248506201,
+        245144420,
+        226222232,
+        236912915,
+        233231453,
+        257038392,
+        258332119,
+        250390802,
+        235458576,
+        249062554
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245144420,
+        257038392,
+        252716013,
+        258332119,
+        237416760,
+        226222232,
+        233231453,
+        264172710,
+        259833855,
+        248780177,
+        263834884,
+        246485605,
+        250390802,
+        248506201,
+        248006390,
+        241033259,
+        236912915,
+        247619066,
+        252439170,
+        235652287
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.96575530001428
+  },
+  "reason_example": {
+    "query_id": "litsearch_197",
+    "query": "Could you suggest a study that explores the idea of using prompts to fine-tune language models, potentially providing an alternative viewpoint to standard optimization and regularization methods?",
+    "top_results": [
+      {
+        "corpusid": 245144420,
+        "score": 0.9498617649078369,
+        "reason": "bm25=0.994; dense=0.921; sub_bm25=0.766; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257038392,
+        "score": 0.9237947463989258,
+        "reason": "bm25=0.868; dense=0.961; sub_bm25=0.129; sub_dense=0.963"
+      },
+      {
+        "corpusid": 252716013,
+        "score": 0.9131247997283936,
+        "reason": "bm25=0.785; dense=0.998; sub_bm25=0.483; sub_dense=0.906"
+      },
+      {
+        "corpusid": 258332119,
+        "score": 0.8838039636611938,
+        "reason": "bm25=0.825; dense=0.923; sub_bm25=0.590; sub_dense=0.902"
+      },
+      {
+        "corpusid": 237416760,
+        "score": 0.8738886117935181,
+        "reason": "bm25=0.721; dense=0.976; sub_bm25=0.526; sub_dense=0.907"
+      }
+    ]
+  }
+}

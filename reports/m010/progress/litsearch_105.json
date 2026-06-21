@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_105",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_105",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_105",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_105",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 888,
+      "latency_s": 5.013385699945502
+    },
+    {
+      "query_id": "litsearch_105",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 277,
+      "latency_s": 2.4805692000081763
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_105",
+    "gold": [
+      221005781
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "question answering performance on unseen queries",
+      "zero-shot question answering evaluation",
+      "generalization of QA models to out-of-distribution questions"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6290422,
+        20167120,
+        7638635,
+        17144339,
+        9393321,
+        18573065,
+        427742,
+        257920051,
+        201669046,
+        10665510,
+        52054725,
+        12348021,
+        11721856,
+        5080441,
+        173990423,
+        236486104,
+        258987923,
+        13939690,
+        2126817,
+        248182537
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        10665510,
+        11721856,
+        6290422,
+        221005781,
+        235303644,
+        51873979,
+        196174735,
+        219124093,
+        256460927,
+        257920051,
+        236207863,
+        259370544,
+        226262188,
+        231709298,
+        245218563,
+        13898293,
+        255775285,
+        252992633,
+        253510248,
+        52054725
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        225040142,
+        3068831,
+        86611921,
+        235294302,
+        874565,
+        235313893,
+        221005781,
+        5102500,
+        248780583,
+        11721856,
+        1373518,
+        51871017,
+        16715199,
+        259376626,
+        504397,
+        253523033,
+        319124,
+        5541486,
+        1321,
+        231709697
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        221005781,
+        245218415,
+        11721856,
+        245218563,
+        236486104,
+        219124093,
+        427742,
+        17144339,
+        6290422,
+        10665510,
+        257920051,
+        52054725
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11721856,
+        221005781,
+        10665510,
+        6290422,
+        225040142,
+        16715199,
+        86611921,
+        3068831,
+        1969946,
+        231933816,
+        245218563,
+        257920051,
+        504397,
+        259833830,
+        256461370,
+        236459854,
+        427742,
+        51871017,
+        219124093,
+        234093776
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.6612354000099
+  },
+  "reason_example": {
+    "query_id": "litsearch_105",
+    "query": "Are there studies examining how well question answering systems perform on queries that cannot be directly recalled from their training data?",
+    "top_results": [
+      {
+        "corpusid": 11721856,
+        "score": 0.9301940202713013,
+        "reason": "bm25=0.933; dense=0.929; sub_bm25=0.927; sub_dense=0.856"
+      },
+      {
+        "corpusid": 221005781,
+        "score": 0.9090606570243835,
+        "reason": "bm25=0.868; dense=0.936; sub_bm25=0.731; sub_dense=0.864"
+      },
+      {
+        "corpusid": 10665510,
+        "score": 0.8551931977272034,
+        "reason": "bm25=1.000; dense=0.759; sub_bm25=0.871; sub_dense=0.772"
+      },
+      {
+        "corpusid": 6290422,
+        "score": 0.8349793553352356,
+        "reason": "bm25=0.873; dense=0.810; sub_bm25=0.748; sub_dense=0.837"
+      },
+      {
+        "corpusid": 225040142,
+        "score": 0.8140543699264526,
+        "reason": "bm25=0.535; dense=1.000; sub_bm25=0.791; sub_dense=0.969"
+      }
+    ]
+  }
+}

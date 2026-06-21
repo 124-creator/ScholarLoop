@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_016",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_016",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_016",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_016",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1278,
+      "latency_s": 8.060325199970976
+    },
+    {
+      "query_id": "litsearch_016",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 268,
+      "latency_s": 2.2945771999657154
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_016",
+    "gold": [
+      216914087
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "controllable text generation framework scalable English sentences",
+      "sentence generation with controllable semantic syntactic attributes",
+      "data augmentation NLP controllable generation framework"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        19005379,
+        14711007,
+        17643319,
+        9933207,
+        11796795,
+        5608910,
+        6723570,
+        17596252,
+        202889089,
+        3102322,
+        11358655,
+        11943393,
+        5971866,
+        22918090,
+        18594903,
+        8584287,
+        16056702,
+        7771402,
+        16982984,
+        8621713
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865674,
+        202889089,
+        216914087,
+        253082255,
+        248780219,
+        233204282,
+        16931101,
+        174797999,
+        237605176,
+        252763334,
+        252819502,
+        236460352,
+        12183989,
+        15549605,
+        237373124,
+        32260611,
+        7609686,
+        222291070,
+        209387737,
+        260063224
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        5555941,
+        216914087,
+        232021982,
+        256460860,
+        14185702,
+        46918664,
+        252586876,
+        51876481,
+        59916558,
+        227230312,
+        263609622,
+        232124786,
+        59940,
+        211990050,
+        3517281,
+        1505336,
+        15950784,
+        13460750,
+        13068107,
+        238744120
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        216914087,
+        235266322,
+        253082255,
+        233204282,
+        237373124,
+        11796795
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        216914087,
+        1505336,
+        252586876,
+        59940,
+        43193238,
+        32260611,
+        253082255,
+        2757555,
+        260063224,
+        248780219,
+        247748809,
+        49215805,
+        252819502,
+        227230312,
+        251465374,
+        235266322,
+        238744120,
+        11796795,
+        226262281,
+        7609686
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.768861899967305
+  },
+  "reason_example": {
+    "query_id": "litsearch_016",
+    "query": "Can you recommend a foundational paper that provides a scalable framework for generating English sentences with controllable semantic and syntactic attributes for the purpose of augmenting datasets in NLP tasks?",
+    "top_results": [
+      {
+        "corpusid": 216914087,
+        "score": 0.9755187630653381,
+        "reason": "bm25=0.963; dense=0.984; sub_bm25=0.791; sub_dense=0.988"
+      },
+      {
+        "corpusid": 1505336,
+        "score": 0.8635959625244141,
+        "reason": "bm25=0.792; dense=0.911; sub_bm25=0.312; sub_dense=0.769"
+      },
+      {
+        "corpusid": 252586876,
+        "score": 0.8564063310623169,
+        "reason": "bm25=0.740; dense=0.934; sub_bm25=0.653; sub_dense=0.967"
+      },
+      {
+        "corpusid": 59940,
+        "score": 0.8474971055984497,
+        "reason": "bm25=0.743; dense=0.917; sub_bm25=0.774; sub_dense=0.925"
+      },
+      {
+        "corpusid": 43193238,
+        "score": 0.8446704149246216,
+        "reason": "bm25=0.828; dense=0.855; sub_bm25=0.380; sub_dense=0.568"
+      }
+    ]
+  }
+}

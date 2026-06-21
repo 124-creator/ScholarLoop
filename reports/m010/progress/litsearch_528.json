@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_528",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_528",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_528",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_528",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1303,
+      "latency_s": 8.875086500076577
+    },
+    {
+      "query_id": "litsearch_528",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 258,
+      "latency_s": 2.3668441000627354
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_528",
+    "gold": [
+      258833682
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "adversarial training semantic aware labels without extra training data",
+      "efficient adversarial training label modification no pretraining",
+      "adversarial robustness semantic labels no additional data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        220045424,
+        11406047,
+        259376915,
+        168170148,
+        1136032,
+        8057832,
+        52128306,
+        225062658,
+        34190303,
+        218538329,
+        202766917,
+        9616531,
+        257232577,
+        7303682,
+        1099233,
+        2994998,
+        153312772,
+        237532398,
+        258463961,
+        259370718
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248177895,
+        202766917,
+        34190303,
+        4956100,
+        248300043,
+        225062658,
+        219966609,
+        258833682,
+        250407963,
+        238215582,
+        250144478,
+        257038592,
+        259262427,
+        237532398,
+        259376915,
+        222133140,
+        218522109,
+        235254289,
+        44097146,
+        257232577
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247450508,
+        224724415,
+        248300043,
+        253708071,
+        222339089,
+        238634635,
+        5643996,
+        237532398,
+        253510521,
+        258079331,
+        250390500,
+        261341543,
+        51839897,
+        250407963,
+        102353948,
+        248811614,
+        259833875,
+        256416103,
+        256459301,
+        215814371
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259262427,
+        248300043,
+        237532398,
+        222339089,
+        248177895
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248300043,
+        248177895,
+        237532398,
+        253708071,
+        222339089,
+        250407963,
+        258833682,
+        202766917,
+        250144478,
+        34190303,
+        259370718,
+        259262427,
+        258079331,
+        257038592,
+        235254289,
+        247450508,
+        256389762,
+        174800177,
+        7303682,
+        261341543
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.354079299955629
+  },
+  "reason_example": {
+    "query_id": "litsearch_528",
+    "query": "Is there any paper improves adversarial training by forming semantic aware label without extra pre-train time or data?",
+    "top_results": [
+      {
+        "corpusid": 248300043,
+        "score": 0.9344137907028198,
+        "reason": "bm25=0.863; dense=0.982; sub_bm25=0.916; sub_dense=0.969"
+      },
+      {
+        "corpusid": 248177895,
+        "score": 0.9110651016235352,
+        "reason": "bm25=1.000; dense=0.852; sub_bm25=0.636; sub_dense=0.693"
+      },
+      {
+        "corpusid": 237532398,
+        "score": 0.9036985635757446,
+        "reason": "bm25=0.804; dense=0.970; sub_bm25=0.658; sub_dense=0.980"
+      },
+      {
+        "corpusid": 253708071,
+        "score": 0.8993924856185913,
+        "reason": "bm25=0.779; dense=0.979; sub_bm25=0.528; sub_dense=0.920"
+      },
+      {
+        "corpusid": 222339089,
+        "score": 0.8974621295928955,
+        "reason": "bm25=0.776; dense=0.979; sub_bm25=0.450; sub_dense=0.821"
+      }
+    ]
+  }
+}

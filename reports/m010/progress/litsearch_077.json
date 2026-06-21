@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_077",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_077",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_077",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_077",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1056,
+      "latency_s": 5.361882500001229
+    },
+    {
+      "query_id": "litsearch_077",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 281,
+      "latency_s": 2.6823989999247715
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_077",
+    "gold": [
+      234337605
+    ],
+    "pool_size": 227,
+    "decomposition": [
+      "named entity recognition with external context retrieval",
+      "retrieval-augmented named entity recognition",
+      "improving NER using retrieved external knowledge"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        238582894,
+        15270509,
+        258960666,
+        14899593,
+        236179518,
+        252763330,
+        7107756,
+        11909682,
+        7741748,
+        3852572,
+        232335657,
+        234741719,
+        256460875,
+        259376488,
+        16485372,
+        17409918,
+        6076022,
+        157061108,
+        22909596,
+        234337605
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234337605,
+        226307751,
+        196187320,
+        104292554,
+        12645846,
+        10857609,
+        3852572,
+        1709114,
+        257767701,
+        53080784,
+        259833796,
+        11676263,
+        259376482,
+        247475975,
+        259376704,
+        12569557,
+        11909682,
+        247594812,
+        235097200,
+        14715684
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        51878103,
+        234337605,
+        259376482,
+        259376672,
+        259376884,
+        258587849,
+        259376502,
+        14343843,
+        11249236,
+        259376704,
+        250391019,
+        259376850,
+        11437540,
+        259376697,
+        259376902,
+        226307751,
+        259376719,
+        259376759,
+        247187671,
+        13939690
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        234337605,
+        226307751,
+        196187320,
+        104292554,
+        259376488
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234337605,
+        226307751,
+        259376482,
+        104292554,
+        259376704,
+        51878103,
+        259376672,
+        196187320,
+        259376759,
+        11249236,
+        12645846,
+        258587849,
+        14715684,
+        1709114,
+        7107756,
+        53080784,
+        259376488,
+        259370518,
+        259370892,
+        250391019
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.39586910000071
+  },
+  "reason_example": {
+    "query_id": "litsearch_077",
+    "query": "What research has been done on improving named entity recognition tasks by augmenting them with retrieval of external contexts?",
+    "top_results": [
+      {
+        "corpusid": 234337605,
+        "score": 0.9872332811355591,
+        "reason": "bm25=1.000; dense=0.979; sub_bm25=0.853; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226307751,
+        "score": 0.9178774356842041,
+        "reason": "bm25=0.957; dense=0.892; sub_bm25=1.000; sub_dense=0.987"
+      },
+      {
+        "corpusid": 259376482,
+        "score": 0.9033108949661255,
+        "reason": "bm25=0.810; dense=0.966; sub_bm25=0.815; sub_dense=0.939"
+      },
+      {
+        "corpusid": 104292554,
+        "score": 0.8849304914474487,
+        "reason": "bm25=0.925; dense=0.858; sub_bm25=0.961; sub_dense=0.963"
+      },
+      {
+        "corpusid": 259376704,
+        "score": 0.8717991709709167,
+        "reason": "bm25=0.807; dense=0.915; sub_bm25=0.689; sub_dense=0.860"
+      }
+    ]
+  }
+}

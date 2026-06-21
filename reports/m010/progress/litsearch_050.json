@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_050",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_050",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_050",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_050",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 968,
+      "latency_s": 4.391883200034499
+    },
+    {
+      "query_id": "litsearch_050",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 254,
+      "latency_s": 1.5968511999817565
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_050",
+    "gold": [
+      207556454
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "morphological embedding word2vec character n-grams",
+      "character n-gram embeddings word2vec extension",
+      "subword information word2vec model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2131122,
+        40146954,
+        52013100,
+        220058506,
+        19867257,
+        11600477,
+        4708673,
+        3868053,
+        12373647,
+        3707608,
+        11068904,
+        11385008,
+        11636854,
+        146843,
+        11807399,
+        37605145,
+        67724965,
+        17011784,
+        1659659,
+        7044122
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        12942757,
+        12373647,
+        14483142,
+        1615409,
+        39718481,
+        40146954,
+        67724965,
+        17915814,
+        11600477,
+        67856138,
+        222124972,
+        1598382,
+        21669304,
+        16444263,
+        257079026,
+        246441850,
+        52113643,
+        32202776,
+        52154053,
+        31501537
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2078255,
+        16326127,
+        7511759,
+        198993530,
+        207556454,
+        252819273,
+        16611324,
+        14771996,
+        53093808,
+        12048298,
+        227230672,
+        12168363,
+        174799849,
+        8796808,
+        6645826,
+        44119185,
+        14277325,
+        1709713,
+        6286444,
+        53101886
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        207556454,
+        3202289,
+        7511759,
+        2078255
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        2078255,
+        7511759,
+        12942757,
+        52154053,
+        52113643,
+        16611324,
+        207556454,
+        3202289,
+        40146954,
+        53101886,
+        237291795,
+        227230489,
+        5224480,
+        21669304,
+        49870417,
+        226262352,
+        16326127,
+        14483142,
+        11600477,
+        1244912
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.446127399918623
+  },
+  "reason_example": {
+    "query_id": "litsearch_050",
+    "query": "I'm looking into morphological embedding algorithms that build upon the word2vec model by utilizing character n-grams. Which papers should I read to learn more about this approach?",
+    "top_results": [
+      {
+        "corpusid": 2078255,
+        "score": 0.9068821668624878,
+        "reason": "bm25=0.767; dense=1.000; sub_bm25=0.817; sub_dense=1.000"
+      },
+      {
+        "corpusid": 7511759,
+        "score": 0.8739550113677979,
+        "reason": "bm25=0.773; dense=0.942; sub_bm25=0.697; sub_dense=0.943"
+      },
+      {
+        "corpusid": 12942757,
+        "score": 0.8623455166816711,
+        "reason": "bm25=1.000; dense=0.771; sub_bm25=0.779; sub_dense=0.776"
+      },
+      {
+        "corpusid": 52154053,
+        "score": 0.852713942527771,
+        "reason": "bm25=0.823; dense=0.873; sub_bm25=0.963; sub_dense=0.938"
+      },
+      {
+        "corpusid": 52113643,
+        "score": 0.8522907495498657,
+        "reason": "bm25=0.833; dense=0.865; sub_bm25=0.566; sub_dense=0.817"
+      }
+    ]
+  }
+}

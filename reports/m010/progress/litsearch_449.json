@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_449",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_449",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_449",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_449",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 972,
+      "latency_s": 5.565447899978608
+    },
+    {
+      "query_id": "litsearch_449",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 688,
+      "latency_s": 6.165504900040105
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_449",
+    "gold": [
+      254877323
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "\"positioned error test\" MAUVE",
+      "\"positioned error test\" \"MAUVE metric\"",
+      "first \"positioned error test\" metric evaluation MAUVE"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9497515,
+        18065622,
+        199371687,
+        17695222,
+        2013509,
+        16766006,
+        15859907,
+        562554,
+        252091142,
+        1400498,
+        10740890,
+        46984294,
+        10649858,
+        16877788,
+        176201,
+        18770689,
+        245855914,
+        9013911,
+        12161321,
+        16190053
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        22146755,
+        245855914,
+        8803650,
+        15859907,
+        51880779,
+        6820419,
+        3275125,
+        4350,
+        251403743,
+        8553283,
+        16766006,
+        259298198,
+        254877323,
+        259376838,
+        252818940,
+        5454540,
+        2029816,
+        11239061,
+        10678830,
+        258486932
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        10460252,
+        3236851,
+        46427575,
+        232022000,
+        232021958,
+        28394837,
+        11801961,
+        2036449,
+        9766960,
+        46162210,
+        45927246,
+        14968961,
+        12754074,
+        264038751,
+        9427353,
+        32417024,
+        220445696,
+        958775,
+        163271823,
+        264038849
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5092868,
+        13747175,
+        46427575,
+        2066695,
+        4350,
+        17352509,
+        10460252,
+        20210020,
+        261494434,
+        254877323,
+        163271823,
+        40328883,
+        148831616,
+        1178199,
+        262083735,
+        2036449,
+        10649858,
+        28394837,
+        32417024,
+        8617003
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.471622699988075
+  },
+  "reason_example": {
+    "query_id": "litsearch_449",
+    "query": "Which paper first conducted the positioned error test for the MAUVE metric?",
+    "top_results": [
+      {
+        "corpusid": 5092868,
+        "score": 0.8277081251144409,
+        "reason": "bm25=0.868; dense=0.801; sub_bm25=0.523; sub_dense=0.917"
+      },
+      {
+        "corpusid": 13747175,
+        "score": 0.7973568439483643,
+        "reason": "bm25=0.857; dense=0.757; sub_bm25=0.851; sub_dense=0.975"
+      },
+      {
+        "corpusid": 46427575,
+        "score": 0.7719916701316833,
+        "reason": "bm25=0.547; dense=0.922; sub_bm25=0.181; sub_dense=0.916"
+      },
+      {
+        "corpusid": 2066695,
+        "score": 0.7717623710632324,
+        "reason": "bm25=0.783; dense=0.764; sub_bm25=0.281; sub_dense=0.829"
+      },
+      {
+        "corpusid": 4350,
+        "score": 0.764578104019165,
+        "reason": "bm25=0.924; dense=0.658; sub_bm25=0.756; sub_dense=0.765"
+      }
+    ]
+  }
+}

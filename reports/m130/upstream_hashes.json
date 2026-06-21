@@ -1,0 +1,44 @@
+{
+  "schema_version": "m130.upstream_hashes.v1",
+  "checked_at_utc": "2026-06-21T02:20:32.983939+00:00",
+  "m010_to_m070_current": {
+    "reports/m010": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+    "reports/m020": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+    "reports/m030": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+    "reports/m040": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+    "reports/m050": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+    "reports/m060": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+    "reports/m070": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+    "src/scholarloop/web": "b0f0be0b300ff4d72471ad1ce83c9a0a1479aea7d0d6d8c6eadf2f28936655cf",
+    "reports/m040/results.json": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9"
+  },
+  "m080_verify_replay_unchanged_during_verification": true,
+  "frozen_demo_files_sha256": {
+    "src/scholarloop/demo/render.py": "adf118ce798ad318a48c9cd34a6712ed64a8f53d29093aa9af16f3b9c3bbebc2",
+    "src/scholarloop/demo/verify.py": "b5e3b82d04f57f95ff89a4823a69ffe12cb0297d8d0688799385fca54511c22a",
+    "src/scholarloop/demo/interactive.py": "b0a453a118af01de0599f12890d27ad7409d60dc0647a208479f111482c6c58d",
+    "src/scholarloop/demo/source_text.py": "6bfaa6478d9f67c01442ec5a975dc6be1e056572e88248e28ef1e4f34fa21e39"
+  },
+  "new_m130_files_sha256": {
+    "src/scholarloop/demo/design.py": "49654238bfafdc1043d29bc620f781cabfc0bd5d261151d7e9be913578324741",
+    "src/scholarloop/demo/graph_layout.py": "610aa7139945da8803dd2408232a1d65deaed0b1f104afe3e236df5fc911031a",
+    "src/scholarloop/demo/studio.py": "e8953b88a050be832710d746ecf9915dcd167cf4ac6a74d992054de06fcb1d4f",
+    "tests/test_m130_flagship_demo.py": "5004caabedcc80ca6dc8ed1d01b266796340b78e7d60832648b6b261422c568c",
+    "docs/dev/plans/130-Demo旗舰级全面顶尖化-计划.md": "925733678c172e6e581ba84b0117ee4d732fb1edd904130c298f9cdca002d35b",
+    "docs/dev/retrospectives/130-Demo旗舰级全面顶尖化-复盘.md": "dafdd867e292255fae0e5aaf1162be679e8ef98b42532df97af3ea8e6221e1c3"
+  },
+  "reports_m010_to_m120_hashes": {
+    "reports/m010": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+    "reports/m020": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+    "reports/m030": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+    "reports/m040": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+    "reports/m050": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+    "reports/m060": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+    "reports/m070": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+    "reports/m080": "45a469900e9b0a3bd3aa73b6076bf0fc44444abc5bb44cd76797bcb09521b143",
+    "reports/m090": "f2d58b135727b9ec2d67d5cc2c7f8a9cca1b57f87a87c0fd8182f40b5261ea39",
+    "reports/m100": "3ad09134f18b032a337958fd1cefbde640f1765dfe5aa71949d2e743548fe263",
+    "reports/m110": "fb88f4875abad993d604801311807b8eb79b0eda3fb60812776801eda63ef12b",
+    "reports/m120": "e603f868b2b9816d360ed98515eac5c2c518498576b3f857de2eb0726cd98294"
+  }
+}

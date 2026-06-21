@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_313",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_313",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_313",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_313",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1255,
+      "latency_s": 6.7606004000408575
+    },
+    {
+      "query_id": "litsearch_313",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 241,
+      "latency_s": 2.2398799000075087
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_313",
+    "gold": [
+      259833781
+    ],
+    "pool_size": 233,
+    "decomposition": [
+      "knowledge graph enhanced language models for complex question answering",
+      "integrating knowledge graph with pretrained language models QA",
+      "graph neural networks language model question answering knowledge graph"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11885212,
+        248780482,
+        3920851,
+        225062645,
+        247475975,
+        2136580,
+        37453604,
+        53633715,
+        259833850,
+        4948776,
+        243865630,
+        1891955,
+        2770995,
+        10919045,
+        208527419,
+        46918664,
+        2741054,
+        259376704,
+        9923087,
+        2251088
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780482,
+        259370736,
+        53079601,
+        247702013,
+        236460186,
+        53079802,
+        259833781,
+        19187663,
+        247475975,
+        250390946,
+        237491743,
+        52009210,
+        258866132,
+        247362971,
+        253510248,
+        52824771,
+        245616876,
+        238419359,
+        233025411,
+        215768725
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259833781,
+        53079802,
+        253522964,
+        261341583,
+        211205183,
+        957320,
+        53079601,
+        256461307,
+        220047976,
+        52009210,
+        250390991,
+        16634564,
+        30164212,
+        248834551,
+        202539551,
+        14170854,
+        53113673,
+        243865277,
+        252070626,
+        14148941
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259833781,
+        233219869,
+        208527419,
+        53079601,
+        53079802,
+        248780482,
+        247702013,
+        237491743,
+        238419359,
+        247475975,
+        19187663,
+        236460186
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833781,
+        53079802,
+        53079601,
+        52009210,
+        248780482,
+        261341583,
+        220047976,
+        250390991,
+        259370736,
+        253522964,
+        233219869,
+        6972449,
+        957320,
+        252070626,
+        53113673,
+        3986974,
+        247702013,
+        247475975,
+        259095910,
+        260063238
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.037486899993382
+  },
+  "reason_example": {
+    "query_id": "litsearch_313",
+    "query": "What research exists on incorporating knowledge graphs into language models to improve their complex question-answering capabilities?",
+    "top_results": [
+      {
+        "corpusid": 259833781,
+        "score": 0.9477406740188599,
+        "reason": "bm25=0.869; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53079802,
+        "score": 0.9100279211997986,
+        "reason": "bm25=0.879; dense=0.931; sub_bm25=0.775; sub_dense=0.946"
+      },
+      {
+        "corpusid": 53079601,
+        "score": 0.9020287990570068,
+        "reason": "bm25=0.950; dense=0.870; sub_bm25=0.632; sub_dense=0.924"
+      },
+      {
+        "corpusid": 52009210,
+        "score": 0.8537397384643555,
+        "reason": "bm25=0.846; dense=0.859; sub_bm25=0.690; sub_dense=0.814"
+      },
+      {
+        "corpusid": 248780482,
+        "score": 0.8395363092422485,
+        "reason": "bm25=1.000; dense=0.733; sub_bm25=0.721; sub_dense=0.690"
+      }
+    ]
+  }
+}

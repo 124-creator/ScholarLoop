@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_163",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_163",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_163",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_163",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1206,
+      "latency_s": 8.900281799957156
+    },
+    {
+      "query_id": "litsearch_163",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.7940410999581218
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_163",
+    "gold": [
+      248118561
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "loss of spatial information global features visual tasks",
+      "global features vs local features spatial information computer vision",
+      "impact of spatial information loss on feature representation in image recognition"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763288,
+        9526061,
+        1420479,
+        5153623,
+        1899106,
+        10513825,
+        174803689,
+        15428492,
+        12755666,
+        1933154,
+        7658188,
+        38964517,
+        1036169,
+        12706259,
+        19754679,
+        8101866,
+        14886962,
+        44757354,
+        44096233,
+        6271137
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        44073134,
+        232222259,
+        252354995,
+        245828046,
+        239049842,
+        258823353,
+        20210923,
+        14411795,
+        9829985,
+        248157178,
+        222141733,
+        247450642,
+        174803689,
+        253237810,
+        248496506,
+        44117465,
+        44096233,
+        16100561,
+        53235218,
+        235717
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        197254,
+        16100561,
+        247450642,
+        1583135,
+        235717,
+        248496506,
+        247763148,
+        44117465,
+        12125811,
+        102353142,
+        1786876,
+        304957,
+        85529011,
+        6033877,
+        17954444,
+        219301105,
+        763569,
+        218974151,
+        248182525,
+        239768514
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248496506,
+        258823353,
+        247450642,
+        44096233,
+        9829985,
+        174803689,
+        14411795,
+        16100561,
+        235717,
+        44073134,
+        44117465,
+        49667446
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        16100561,
+        247450642,
+        248496506,
+        235717,
+        44117465,
+        258823353,
+        174803689,
+        44073134,
+        14411795,
+        234790212,
+        218974151,
+        304957,
+        85529011,
+        174797767,
+        763569,
+        226283468,
+        9829985,
+        44096233,
+        53235218,
+        247763148
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.898555199964903
+  },
+  "reason_example": {
+    "query_id": "litsearch_163",
+    "query": "Could you recommend research that explores how the loss of spatial information impacts the effectiveness of global features in visual tasks?",
+    "top_results": [
+      {
+        "corpusid": 16100561,
+        "score": 0.9292141199111938,
+        "reason": "bm25=0.921; dense=0.935; sub_bm25=0.747; sub_dense=0.838"
+      },
+      {
+        "corpusid": 247450642,
+        "score": 0.9256617426872253,
+        "reason": "bm25=0.947; dense=0.912; sub_bm25=0.857; sub_dense=0.887"
+      },
+      {
+        "corpusid": 248496506,
+        "score": 0.9150474071502686,
+        "reason": "bm25=0.938; dense=0.900; sub_bm25=0.725; sub_dense=0.893"
+      },
+      {
+        "corpusid": 235717,
+        "score": 0.9047703742980957,
+        "reason": "bm25=0.911; dense=0.900; sub_bm25=0.680; sub_dense=0.819"
+      },
+      {
+        "corpusid": 44117465,
+        "score": 0.9032583236694336,
+        "reason": "bm25=0.934; dense=0.883; sub_bm25=1.000; sub_dense=0.849"
+      }
+    ]
+  }
+}

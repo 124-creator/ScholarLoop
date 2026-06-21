@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_390",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_390",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_390",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_390",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 975,
+      "latency_s": 5.31756860006135
+    },
+    {
+      "query_id": "litsearch_390",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 462,
+      "latency_s": 4.2708990999963135
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_390",
+    "gold": [
+      253734400
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "curriculum learning natural language generation tasks",
+      "curriculum learning NLG without metrics",
+      "metric-free curriculum learning text generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2717337,
+        168170148,
+        250390577,
+        5399186,
+        232307483,
+        227905451,
+        240288892,
+        215238664,
+        2147770,
+        161340,
+        51870722,
+        252907549,
+        9153051,
+        6540287,
+        9489563,
+        202712637,
+        13746426,
+        3264822,
+        14439818,
+        14774554
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226262365,
+        237492016,
+        259370824,
+        218470266,
+        258461336,
+        236428698,
+        237491889,
+        231979380,
+        211532588,
+        239769065,
+        248810977,
+        3091656,
+        207757258,
+        250391006,
+        237507028,
+        249018149,
+        260203032,
+        155089817,
+        1929239,
+        246240044
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370648,
+        237492016,
+        235097584,
+        6753339,
+        14439818,
+        211990050,
+        16827188,
+        258685435,
+        243865335,
+        10438447,
+        6605323,
+        485551,
+        273749,
+        48918,
+        1929239,
+        239016062,
+        10412283,
+        16426981,
+        45598818,
+        237553761
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        155089817
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237492016,
+        259370648,
+        235097584,
+        258685435,
+        1929239,
+        14439818,
+        231979380,
+        258461336,
+        248810977,
+        243865335,
+        239016062,
+        249018149,
+        226262365,
+        259370824,
+        253734400,
+        10438447,
+        16638999,
+        211532588,
+        155089817,
+        1374619
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.52523640007712
+  },
+  "reason_example": {
+    "query_id": "litsearch_390",
+    "query": "Is there any paper that applies curriculum learning to various NLG tasks without depending on specific metrics?",
+    "top_results": [
+      {
+        "corpusid": 237492016,
+        "score": 0.9562770128250122,
+        "reason": "bm25=0.900; dense=0.994; sub_bm25=0.692; sub_dense=0.932"
+      },
+      {
+        "corpusid": 259370648,
+        "score": 0.8654893636703491,
+        "reason": "bm25=0.664; dense=1.000; sub_bm25=0.774; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235097584,
+        "score": 0.8629593849182129,
+        "reason": "bm25=0.731; dense=0.951; sub_bm25=0.832; sub_dense=0.909"
+      },
+      {
+        "corpusid": 258685435,
+        "score": 0.8467224836349487,
+        "reason": "bm25=0.733; dense=0.922; sub_bm25=0.901; sub_dense=0.841"
+      },
+      {
+        "corpusid": 1929239,
+        "score": 0.8141222596168518,
+        "reason": "bm25=0.766; dense=0.846; sub_bm25=0.868; sub_dense=0.867"
+      }
+    ]
+  }
+}

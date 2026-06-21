@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_080",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_080",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_080",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_080",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1342,
+      "latency_s": 8.5344661999261
+    },
+    {
+      "query_id": "litsearch_080",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 2.4285235999850556
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_080",
+    "gold": [
+      1331239,
+      11771220
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "CCG annotation corpus for NLP tasks",
+      "CCG supertagging corpus",
+      "notable work on CCG supertagging with corpus"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        32306529,
+        224281690,
+        27787263,
+        186206301,
+        8502465,
+        14784553,
+        15672460,
+        13472488,
+        263608162,
+        18066504,
+        3073489,
+        6891645,
+        7600496,
+        18414132,
+        2104869,
+        3891855,
+        284317,
+        1298443,
+        14323173,
+        5440348
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14218244,
+        2530120,
+        9096784,
+        10932704,
+        129295226,
+        7821379,
+        259370777,
+        49574683,
+        18021631,
+        2418142,
+        14183953,
+        21710364,
+        15314162,
+        215980972,
+        250391068,
+        37618366,
+        10077,
+        254308102,
+        13040693,
+        888430
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16141969,
+        17639798,
+        11771220,
+        9096784,
+        1627573,
+        2418142,
+        5943308,
+        11781952,
+        3201076,
+        15909369,
+        15984880,
+        577634,
+        233324275,
+        4160293,
+        9910975,
+        52124316,
+        903259,
+        14104683,
+        8701528,
+        2530120
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1627573,
+        2418142,
+        9096784,
+        16141969,
+        11771220,
+        2530120,
+        259370777,
+        14218244,
+        36242,
+        21697053,
+        6302443,
+        2525588
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        9096784,
+        16141969,
+        2418142,
+        11771220,
+        2530120,
+        17639798,
+        1627573,
+        14218244,
+        5943308,
+        31382372,
+        259370777,
+        6183421,
+        8701528,
+        577634,
+        52124316,
+        21697053,
+        261507859,
+        261509673,
+        13040693,
+        233324275
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 12.559259400004521
+  },
+  "reason_example": {
+    "query_id": "litsearch_080",
+    "query": "Where can I find a corpus of CCG annotations for natural language processing tasks, and what notable work has leveraged this corpus specifically in the domain of supertagging?",
+    "top_results": [
+      {
+        "corpusid": 9096784,
+        "score": 0.954913854598999,
+        "reason": "bm25=0.928; dense=0.973; sub_bm25=0.879; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16141969,
+        "score": 0.9386075735092163,
+        "reason": "bm25=0.847; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2418142,
+        "score": 0.9315283298492432,
+        "reason": "bm25=0.905; dense=0.949; sub_bm25=1.000; sub_dense=0.877"
+      },
+      {
+        "corpusid": 11771220,
+        "score": 0.9138153791427612,
+        "reason": "bm25=0.823; dense=0.974; sub_bm25=0.863; sub_dense=0.981"
+      },
+      {
+        "corpusid": 2530120,
+        "score": 0.9031559228897095,
+        "reason": "bm25=0.942; dense=0.878; sub_bm25=0.914; sub_dense=0.877"
+      }
+    ]
+  }
+}

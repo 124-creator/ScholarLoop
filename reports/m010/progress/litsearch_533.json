@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_533",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_533",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_533",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_533",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1206,
+      "latency_s": 7.651038100011647
+    },
+    {
+      "query_id": "litsearch_533",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 365,
+      "latency_s": 3.3228571999352425
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_533",
+    "gold": [
+      264306002
+    ],
+    "pool_size": 283,
+    "decomposition": [
+      "\"Lipschitz continuity\" \"dynamics model\" learning",
+      "Lipschitz neural network dynamics learning",
+      "Lipschitz constraint \"model-based reinforcement learning\""
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12405045,
+        15007330,
+        29974541,
+        31856765,
+        8358691,
+        235732095,
+        252907549,
+        16229734,
+        17409270,
+        202712637,
+        42994580,
+        6957391,
+        236411231,
+        11644259,
+        168170148,
+        1161892,
+        7440991,
+        8150087,
+        8368494,
+        8912414
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256503666,
+        264306002,
+        258212627,
+        3699386,
+        244117259,
+        225062378,
+        238419007,
+        228063783,
+        252355297,
+        257365037,
+        248377437,
+        213513188,
+        263829270,
+        203837733,
+        52131263,
+        252683782,
+        247476396,
+        227338206,
+        220666191,
+        247761945
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256503666,
+        219965819,
+        256231349,
+        216077591,
+        246706127,
+        226282371,
+        231627780,
+        222272443,
+        246485884,
+        16326763,
+        248178090,
+        247476396,
+        202541346,
+        209334533,
+        257365037,
+        219708206,
+        53216818,
+        88522409,
+        252781188,
+        48352800
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256503666
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256503666,
+        264306002,
+        219965819,
+        257365037,
+        247476396,
+        258212627,
+        244117259,
+        222272443,
+        228063783,
+        202541346,
+        231627780,
+        252762329,
+        248085573,
+        246706127,
+        259212224,
+        263829270,
+        225062378,
+        239009555,
+        256231349,
+        233423379
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.276987299905159
+  },
+  "reason_example": {
+    "query_id": "litsearch_533",
+    "query": "Is there any paper that uses Lipschitz continuity in learning a dynamics model?",
+    "top_results": [
+      {
+        "corpusid": 256503666,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264306002,
+        "score": 0.774834930896759,
+        "reason": "bm25=0.860; dense=0.718; sub_bm25=0.917; sub_dense=0.720"
+      },
+      {
+        "corpusid": 219965819,
+        "score": 0.7170538306236267,
+        "reason": "bm25=0.484; dense=0.872; sub_bm25=0.638; sub_dense=0.994"
+      },
+      {
+        "corpusid": 257365037,
+        "score": 0.7110753059387207,
+        "reason": "bm25=0.603; dense=0.783; sub_bm25=0.692; sub_dense=0.863"
+      },
+      {
+        "corpusid": 247476396,
+        "score": 0.709479570388794,
+        "reason": "bm25=0.574; dense=0.800; sub_bm25=0.549; sub_dense=0.876"
+      }
+    ]
+  }
+}

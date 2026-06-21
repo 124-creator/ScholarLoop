@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_085",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_085",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_085",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_085",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 940,
+      "latency_s": 4.594629000057466
+    },
+    {
+      "query_id": "litsearch_085",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 261,
+      "latency_s": 2.149896400049329
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_085",
+    "gold": [
+      2239324
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "event factuality annotation categories certain probable underspecified",
+      "degrees of factuality in text annotation",
+      "annotation scheme for event factuality levels"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        42994580,
+        5899668,
+        6552710,
+        5099944,
+        6723570,
+        12799708,
+        9933207,
+        36800561,
+        7643917,
+        15766210,
+        16883813,
+        25041690,
+        9240490,
+        15794465,
+        16272478,
+        196196857,
+        1586708,
+        6121997,
+        36562731,
+        5882669
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        2239324,
+        605188,
+        236460155,
+        258309129,
+        2683954,
+        5099944,
+        244909449,
+        235352805,
+        5503760,
+        52126479,
+        17789607,
+        1649240,
+        14145024,
+        9084411,
+        258378295,
+        17772255,
+        18487317,
+        12686568,
+        2209767,
+        15766210
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        605188,
+        2239324,
+        20340070,
+        850180,
+        1900483,
+        53652545,
+        15139323,
+        8052901,
+        7231965,
+        5688042,
+        15626029,
+        3137086,
+        1969429,
+        53629190,
+        6364632,
+        12046735,
+        10328681,
+        232269681,
+        9875909,
+        13459265
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2239324,
+        236460155,
+        605188,
+        2683954
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        2239324,
+        605188,
+        2683954,
+        20340070,
+        15626029,
+        236460155,
+        1649240,
+        15139323,
+        2209767,
+        5503760,
+        259376833,
+        1969429,
+        237735642,
+        7231965,
+        251712737,
+        12686568,
+        5688042,
+        12788401,
+        8052901,
+        21715999
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.509620000026189
+  },
+  "reason_example": {
+    "query_id": "litsearch_085",
+    "query": "Where can I find a paper that discusses annotating events in text with degrees of factuality, including categories such as certain, probable, and underspecified?",
+    "top_results": [
+      {
+        "corpusid": 2239324,
+        "score": 0.9984868764877319,
+        "reason": "bm25=1.000; dense=0.997; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 605188,
+        "score": 0.9390605688095093,
+        "reason": "bm25=0.848; dense=1.000; sub_bm25=0.958; sub_dense=0.980"
+      },
+      {
+        "corpusid": 2683954,
+        "score": 0.8166933059692383,
+        "reason": "bm25=0.701; dense=0.894; sub_bm25=0.812; sub_dense=0.905"
+      },
+      {
+        "corpusid": 20340070,
+        "score": 0.8078648447990417,
+        "reason": "bm25=0.531; dense=0.992; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15626029,
+        "score": 0.7978388071060181,
+        "reason": "bm25=0.592; dense=0.935; sub_bm25=0.473; sub_dense=0.909"
+      }
+    ]
+  }
+}

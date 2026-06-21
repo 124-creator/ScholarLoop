@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_291",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_291",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_291",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_291",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1393,
+      "latency_s": 7.063418400008231
+    },
+    {
+      "query_id": "litsearch_291",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 392,
+      "latency_s": 2.9828224999364465
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_291",
+    "gold": [
+      240288892
+    ],
+    "pool_size": 229,
+    "decomposition": [
+      "language model AND mental health detection AND social media",
+      "specialized model AND mental health AND social media AND NLP",
+      "deep learning AND mental illness detection AND social media posts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5498664,
+        248780521,
+        8972892,
+        29165442,
+        248780526,
+        248780371,
+        2491133,
+        232290704,
+        40413181,
+        250390602,
+        31107411,
+        258486960,
+        5399186,
+        248962366,
+        259129748,
+        9626793,
+        51877709,
+        240288892,
+        12223284,
+        258685798
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226283450,
+        257767696,
+        259129748,
+        232290704,
+        245334804,
+        251402261,
+        248085838,
+        254877034,
+        256461018,
+        5421142,
+        235358754,
+        259370819,
+        273935,
+        259376588,
+        236486181,
+        250390740,
+        52011836,
+        248780526,
+        32413548,
+        218974505
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        96824,
+        49208337,
+        16839927,
+        5600230,
+        53366932,
+        203469808,
+        259370819,
+        359250,
+        2307113,
+        248085560,
+        226283501,
+        252819299,
+        235254726,
+        32436585,
+        240288892,
+        17145831,
+        605706,
+        5421142,
+        34941822,
+        15791327
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370819,
+        240288892,
+        226283450,
+        259129748,
+        235358754,
+        254877034,
+        232290704,
+        96824,
+        5421142,
+        248780371
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        96824,
+        226283450,
+        16839927,
+        259370819,
+        49208337,
+        5421142,
+        203469808,
+        232290704,
+        259129748,
+        240288892,
+        254877034,
+        250150926,
+        251402261,
+        252819299,
+        256461018,
+        235358754,
+        245334804,
+        259076167,
+        207916220,
+        218974505
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.924209099961445
+  },
+  "reason_example": {
+    "query_id": "litsearch_291",
+    "query": "Is there research on a specialized language model designed to detect mental health issues on social media platforms?",
+    "top_results": [
+      {
+        "corpusid": 96824,
+        "score": 0.8866379261016846,
+        "reason": "bm25=0.717; dense=1.000; sub_bm25=0.688; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226283450,
+        "score": 0.8733997941017151,
+        "reason": "bm25=1.000; dense=0.789; sub_bm25=0.701; sub_dense=0.833"
+      },
+      {
+        "corpusid": 16839927,
+        "score": 0.8406820297241211,
+        "reason": "bm25=0.767; dense=0.890; sub_bm25=0.944; sub_dense=0.981"
+      },
+      {
+        "corpusid": 259370819,
+        "score": 0.8383750915527344,
+        "reason": "bm25=0.817; dense=0.852; sub_bm25=1.000; sub_dense=0.925"
+      },
+      {
+        "corpusid": 49208337,
+        "score": 0.8360136151313782,
+        "reason": "bm25=0.702; dense=0.925; sub_bm25=0.838; sub_dense=0.923"
+      }
+    ]
+  }
+}

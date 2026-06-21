@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_067",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_067",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_067",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_067",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1467,
+      "latency_s": 9.537889100029133
+    },
+    {
+      "query_id": "litsearch_067",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.5574049999704584
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_067",
+    "gold": [
+      211003735
+    ],
+    "pool_size": 223,
+    "decomposition": [
+      "multi-hop question decomposition training systems",
+      "parsing complex questions into subquestion sequences",
+      "multi-step query decomposition for improved QA"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        20167120,
+        235482414,
+        12348021,
+        250390946,
+        243865277,
+        18405819,
+        220047976,
+        245616876,
+        202783651,
+        9838551,
+        67239762,
+        7454803,
+        211258744,
+        15174121,
+        174800228,
+        235294302,
+        8244257,
+        10351543,
+        227905310,
+        252763325
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        211258744,
+        243865277,
+        174800228,
+        226236740,
+        251718892,
+        250390991,
+        202773198,
+        211258645,
+        235436105,
+        233219849,
+        252780709,
+        233405184,
+        254408974,
+        235294302,
+        245616876,
+        248827723,
+        203610361,
+        3986974,
+        236477336,
+        220047976
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        211258744,
+        220047976,
+        248780551,
+        174801080,
+        202712552,
+        174801764,
+        3986974,
+        252780709,
+        236486248,
+        247362971,
+        211258645,
+        251718892,
+        243865277,
+        174800228,
+        225066758,
+        226236740,
+        53079601,
+        252819457,
+        250390792,
+        8352081
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        211258645,
+        251718892,
+        220047976,
+        243865277,
+        211258744,
+        53079601,
+        250390991
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        211258744,
+        243865277,
+        174800228,
+        226236740,
+        251718892,
+        220047976,
+        211258645,
+        252780709,
+        3986974,
+        250390991,
+        248780551,
+        174801080,
+        254408974,
+        247362971,
+        236477336,
+        53079601,
+        245616876,
+        247518809,
+        202773198,
+        236486248
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.206201499910094
+  },
+  "reason_example": {
+    "query_id": "litsearch_067",
+    "query": "What are some recent advancements in training systems to parse complex multi-hop questions into a sequence of simpler query steps for improved question answering?",
+    "top_results": [
+      {
+        "corpusid": 211258744,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.991; sub_dense=1.000"
+      },
+      {
+        "corpusid": 243865277,
+        "score": 0.8801361322402954,
+        "reason": "bm25=0.910; dense=0.860; sub_bm25=0.526; sub_dense=0.859"
+      },
+      {
+        "corpusid": 174800228,
+        "score": 0.8702239394187927,
+        "reason": "bm25=0.893; dense=0.855; sub_bm25=0.672; sub_dense=0.802"
+      },
+      {
+        "corpusid": 226236740,
+        "score": 0.8610554933547974,
+        "reason": "bm25=0.882; dense=0.847; sub_bm25=0.760; sub_dense=0.916"
+      },
+      {
+        "corpusid": 251718892,
+        "score": 0.8555176258087158,
+        "reason": "bm25=0.848; dense=0.860; sub_bm25=0.911; sub_dense=0.847"
+      }
+    ]
+  }
+}

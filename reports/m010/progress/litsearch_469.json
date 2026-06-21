@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_469",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_469",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_469",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_469",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2093,
+      "latency_s": 14.213342000031844
+    },
+    {
+      "query_id": "litsearch_469",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 385,
+      "latency_s": 3.339250099961646
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_469",
+    "gold": [
+      259262427
+    ],
+    "pool_size": 230,
+    "decomposition": [
+      "distributionally robust optimization adversarial training without adversarial samples",
+      "DRO training objective adversarial training no adversarial examples",
+      "adversarial training DRO objective without constructing adversarial samples"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2294286,
+        3926047,
+        7440991,
+        232307483,
+        203593433,
+        235482414,
+        219966609,
+        264590713,
+        3602416,
+        300361,
+        6610705,
+        2308603,
+        5461896,
+        3298378,
+        7878702,
+        12405045,
+        43421388,
+        258486952,
+        1684853,
+        235436157
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254221009,
+        259262427,
+        264590713,
+        3602416,
+        248779966,
+        248300043,
+        247570285,
+        3571422,
+        232269775,
+        253180351,
+        202719276,
+        260351224,
+        258833682,
+        201103950,
+        646822,
+        209444850,
+        53047456,
+        257255156,
+        236477723,
+        211259530
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        260351224,
+        13900194,
+        256808752,
+        3488815,
+        54447167,
+        53047456,
+        247158827,
+        27174168,
+        248779966,
+        9398766,
+        258833682,
+        6230637,
+        67855552,
+        209444850,
+        52169956,
+        247593852,
+        247594888,
+        1755439,
+        264590713,
+        213513188
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247570285,
+        247593852,
+        248779966,
+        254221009,
+        259262427,
+        264590713,
+        13900194,
+        248300043,
+        209444850
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        260351224,
+        13900194,
+        264590713,
+        248779966,
+        254221009,
+        53047456,
+        259262427,
+        258833682,
+        232269775,
+        209444850,
+        247570285,
+        67855552,
+        6230637,
+        247593852,
+        247158827,
+        3602416,
+        9398766,
+        211259530,
+        237940634,
+        202719276
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.655366999912076
+  },
+  "reason_example": {
+    "query_id": "litsearch_469",
+    "query": "Which paper introduce a DRO (distribution robust optimization) like training objective for doing adversarial training without constructing adversarial samples.",
+    "top_results": [
+      {
+        "corpusid": 260351224,
+        "score": 0.9107989072799683,
+        "reason": "bm25=0.777; dense=1.000; sub_bm25=0.796; sub_dense=0.974"
+      },
+      {
+        "corpusid": 13900194,
+        "score": 0.8892663717269897,
+        "reason": "bm25=0.729; dense=0.996; sub_bm25=0.922; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264590713,
+        "score": 0.8852213621139526,
+        "reason": "bm25=0.922; dense=0.861; sub_bm25=0.833; sub_dense=0.865"
+      },
+      {
+        "corpusid": 248779966,
+        "score": 0.8730481266975403,
+        "reason": "bm25=0.831; dense=0.901; sub_bm25=0.869; sub_dense=0.946"
+      },
+      {
+        "corpusid": 254221009,
+        "score": 0.8682730197906494,
+        "reason": "bm25=1.000; dense=0.780; sub_bm25=1.000; sub_dense=0.800"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_580",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_580",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_580",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_580",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1079,
+      "latency_s": 7.215518900076859
+    },
+    {
+      "query_id": "litsearch_580",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 361,
+      "latency_s": 3.100650299922563
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_580",
+    "gold": [
+      264172668
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "first paper extraction task-specific knowledge from LLM using seed samples",
+      "transfer task-specific knowledge between LLMs via parameter-efficient fine-tuning",
+      "seed samples knowledge extraction LLM parameter transfer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258841719,
+        235309789,
+        17859685,
+        258960434,
+        235313889,
+        215415943,
+        15647240,
+        259370751,
+        12178716,
+        14343843,
+        14085371,
+        259376838,
+        3707608,
+        248392209,
+        11663521,
+        16555705,
+        630188,
+        16041559,
+        13534980,
+        218614076
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        255440621,
+        235309789,
+        254125751,
+        258865689,
+        258841719,
+        263620510,
+        235313889,
+        259095584,
+        252819282,
+        258960434,
+        258832448,
+        238583580,
+        240353697,
+        258947572,
+        238857301,
+        259370834,
+        250390946,
+        235359141,
+        257365136,
+        258960642
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254125751,
+        264172668,
+        235248419,
+        247518570,
+        264306063,
+        204207649,
+        261697072,
+        259342096,
+        247613500,
+        235309789,
+        259370786,
+        247446857,
+        18816757,
+        252819437,
+        233189631,
+        8125776,
+        264490642,
+        248780060,
+        257254973,
+        571598
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        215415943,
+        257365136,
+        258960434,
+        263620510,
+        235313889
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254125751,
+        235309789,
+        261697072,
+        238857301,
+        257365136,
+        258960434,
+        258947572,
+        263620510,
+        238583580,
+        250390946,
+        264306063,
+        258378176,
+        248779862,
+        259360526,
+        258841719,
+        258960642,
+        253098972,
+        215415943,
+        258557131,
+        264172668
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.83322859997861
+  },
+  "reason_example": {
+    "query_id": "litsearch_580",
+    "query": "Which paper first showed that task-specific knowledge embedded in parameters can be extracted from one LLM using seed samples and transferred to another via parameter-efficient fine-tuning?",
+    "top_results": [
+      {
+        "corpusid": 254125751,
+        "score": 0.9945400953292847,
+        "reason": "bm25=0.986; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235309789,
+        "score": 0.930120587348938,
+        "reason": "bm25=0.994; dense=0.887; sub_bm25=0.917; sub_dense=0.946"
+      },
+      {
+        "corpusid": 261697072,
+        "score": 0.8425475358963013,
+        "reason": "bm25=0.749; dense=0.905; sub_bm25=0.739; sub_dense=0.852"
+      },
+      {
+        "corpusid": 238857301,
+        "score": 0.8423870205879211,
+        "reason": "bm25=0.863; dense=0.829; sub_bm25=0.752; sub_dense=0.823"
+      },
+      {
+        "corpusid": 257365136,
+        "score": 0.8372591137886047,
+        "reason": "bm25=0.817; dense=0.851; sub_bm25=0.779; sub_dense=0.905"
+      }
+    ]
+  }
+}

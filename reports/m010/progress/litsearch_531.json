@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_531",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_531",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_531",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_531",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1186,
+      "latency_s": 7.136081999982707
+    },
+    {
+      "query_id": "litsearch_531",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 283,
+      "latency_s": 2.067592400009744
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_531",
+    "gold": [
+      264825357
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "operator learning multigrid PDE",
+      "multigrid neural operator",
+      "multigrid structure operator learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29974541,
+        263831268,
+        224705257,
+        17409270,
+        8150087,
+        525305,
+        10052258,
+        39654639,
+        14324763,
+        6559235,
+        214693392,
+        13292908,
+        264825357,
+        45897261,
+        17173602,
+        126584,
+        254685748,
+        13553993,
+        6077317,
+        258463915
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        224705257,
+        264825357,
+        263831268,
+        254685748,
+        214693392,
+        244709251,
+        211838009,
+        252595953,
+        208921206,
+        252683970,
+        258417863,
+        219708206,
+        226048947,
+        5776935,
+        252683964,
+        244714159,
+        209334533,
+        246430821,
+        218487350,
+        264490587
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254685748,
+        252683970,
+        68221207,
+        264825357,
+        263831268,
+        211838009,
+        246634432,
+        224705257,
+        252199584,
+        219708206,
+        5776935,
+        252595953,
+        244714159,
+        249394665,
+        214693392,
+        258417863,
+        208921206,
+        246430821,
+        15630723,
+        247518670
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264825357
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        224705257,
+        264825357,
+        254685748,
+        263831268,
+        252683970,
+        211838009,
+        214693392,
+        252595953,
+        219708206,
+        5776935,
+        258417863,
+        208921206,
+        68221207,
+        244714159,
+        226048947,
+        246634432,
+        244709251,
+        252199584,
+        246430821,
+        209334533
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.16095040005166
+  },
+  "reason_example": {
+    "query_id": "litsearch_531",
+    "query": "Is there any paper that seamlessly integrates the multigrid structure in operator learning for solving partial differential equations (PDEs)?",
+    "top_results": [
+      {
+        "corpusid": 224705257,
+        "score": 0.9594087600708008,
+        "reason": "bm25=1.000; dense=0.932; sub_bm25=0.772; sub_dense=0.896"
+      },
+      {
+        "corpusid": 264825357,
+        "score": 0.9582839012145996,
+        "reason": "bm25=0.977; dense=0.946; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254685748,
+        "score": 0.9527416229248047,
+        "reason": "bm25=0.882; dense=1.000; sub_bm25=0.750; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263831268,
+        "score": 0.9500778317451477,
+        "reason": "bm25=0.956; dense=0.946; sub_bm25=0.961; sub_dense=0.968"
+      },
+      {
+        "corpusid": 252683970,
+        "score": 0.8830819129943848,
+        "reason": "bm25=0.763; dense=0.963; sub_bm25=0.547; sub_dense=0.968"
+      }
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_092",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_092",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_092",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_092",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1077,
+      "latency_s": 5.01143630000297
+    },
+    {
+      "query_id": "litsearch_092",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 367,
+      "latency_s": 3.3626563999569044
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_092",
+    "gold": [
+      244345901,
+      237507028
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "evaluation of factual consistency in text summarization",
+      "metrics for consistency in generated summaries",
+      "datasets for consistency evaluation in summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14122119,
+        908030,
+        33548672,
+        252763288,
+        252763330,
+        9526061,
+        11966916,
+        21166550,
+        3920857,
+        258486963,
+        1420479,
+        6614930,
+        33742593,
+        10513825,
+        12808898,
+        7595380,
+        33579458,
+        18285513,
+        19038173,
+        38964517
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259833772,
+        222142312,
+        248475947,
+        1318419,
+        258999861,
+        248780431,
+        259376699,
+        256460965,
+        12435114,
+        256416131,
+        12238390,
+        9604627,
+        256231270,
+        233189560,
+        231951460,
+        237571505,
+        204976362,
+        16495042,
+        233210362,
+        2700066
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        12435114,
+        12238390,
+        13276714,
+        248780499,
+        226282456,
+        243865625,
+        9898640,
+        17452735,
+        258999861,
+        5312836,
+        256711,
+        1130599,
+        14826169,
+        14473583,
+        10807387,
+        16147701,
+        245218667,
+        12968935,
+        16482037,
+        252118507
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        12435114,
+        233210362,
+        258999861,
+        259833772,
+        252118507,
+        222142312,
+        12238390,
+        9604627,
+        248475947,
+        248780431,
+        259376699,
+        1318419
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        12435114,
+        12238390,
+        258999861,
+        259833772,
+        9898640,
+        222142312,
+        226282456,
+        13276714,
+        252118507,
+        253080850,
+        233189560,
+        9604627,
+        233210362,
+        248475947,
+        231951460,
+        2700066,
+        256460965,
+        256416131,
+        237571505,
+        9686262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.549857400008477
+  },
+  "reason_example": {
+    "query_id": "litsearch_092",
+    "query": "Where might I find research on the evaluation of consistency in generated summaries?",
+    "top_results": [
+      {
+        "corpusid": 12435114,
+        "score": 0.9643502831459045,
+        "reason": "bm25=0.911; dense=1.000; sub_bm25=0.887; sub_dense=0.942"
+      },
+      {
+        "corpusid": 12238390,
+        "score": 0.9477406740188599,
+        "reason": "bm25=0.899; dense=0.980; sub_bm25=0.716; sub_dense=0.860"
+      },
+      {
+        "corpusid": 258999861,
+        "score": 0.935822606086731,
+        "reason": "bm25=0.937; dense=0.935; sub_bm25=0.959; sub_dense=0.931"
+      },
+      {
+        "corpusid": 259833772,
+        "score": 0.9300717115402222,
+        "reason": "bm25=1.000; dense=0.883; sub_bm25=1.000; sub_dense=0.897"
+      },
+      {
+        "corpusid": 9898640,
+        "score": 0.9036552309989929,
+        "reason": "bm25=0.822; dense=0.958; sub_bm25=0.738; sub_dense=0.904"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_030",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_030",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_030",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_030",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1211,
+      "latency_s": 7.3028310999507084
+    },
+    {
+      "query_id": "litsearch_030",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 227,
+      "latency_s": 1.599161499994807
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_030",
+    "gold": [
+      198918735,
+      218974489
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "dialectal variation normalized text Arabic NLP",
+      "Japanese dialect normalization text processing",
+      "non-Latin script dialect normalization studies"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17929137,
+        18679099,
+        29063930,
+        52119279,
+        255340736,
+        263875901,
+        13588360,
+        16069211,
+        14004367,
+        15100365,
+        1080758,
+        9911858,
+        6520568,
+        5171529,
+        14980120,
+        1095471,
+        235097207,
+        9113,
+        2531372,
+        198992410
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13588360,
+        17929137,
+        51867514,
+        21717882,
+        45539635,
+        6520568,
+        13554714,
+        18987788,
+        9911858,
+        3588955,
+        252624613,
+        250444894,
+        44140631,
+        6975411,
+        15389538,
+        21686399,
+        257921487,
+        15225095,
+        227231213,
+        1378015
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        34147474,
+        232021897,
+        943365,
+        195064031,
+        222310445,
+        208617633,
+        8436524,
+        12163907,
+        259833884,
+        11781069,
+        59893320,
+        14869503,
+        9830179,
+        32773716,
+        53491913,
+        21717882,
+        8028944,
+        102483587,
+        5983392,
+        13515810
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        17929137,
+        21717882,
+        45539635,
+        13554714,
+        13588360,
+        9911858,
+        51867514,
+        4039253,
+        257921487,
+        21686399
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        21717882,
+        13588360,
+        51867514,
+        17929137,
+        13554714,
+        257921487,
+        18987788,
+        11696905,
+        23832010,
+        252624560,
+        250444894,
+        21714084,
+        943365,
+        16303315,
+        89899,
+        15618774,
+        12678205,
+        199379793,
+        34147474,
+        245616854
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.610277200001292
+  },
+  "reason_example": {
+    "query_id": "litsearch_030",
+    "query": "Could you point me to studies that have investigated dialectal variations and normalized text in non-Latin scripts, such as Arabic or Japanese?",
+    "top_results": [
+      {
+        "corpusid": 21717882,
+        "score": 0.8801319599151611,
+        "reason": "bm25=0.816; dense=0.923; sub_bm25=0.696; sub_dense=0.842"
+      },
+      {
+        "corpusid": 13588360,
+        "score": 0.8419748544692993,
+        "reason": "bm25=1.000; dense=0.737; sub_bm25=0.591; sub_dense=0.773"
+      },
+      {
+        "corpusid": 51867514,
+        "score": 0.8267402648925781,
+        "reason": "bm25=0.829; dense=0.825; sub_bm25=0.706; sub_dense=0.899"
+      },
+      {
+        "corpusid": 17929137,
+        "score": 0.8219016790390015,
+        "reason": "bm25=0.912; dense=0.762; sub_bm25=0.863; sub_dense=0.725"
+      },
+      {
+        "corpusid": 13554714,
+        "score": 0.8170958757400513,
+        "reason": "bm25=0.766; dense=0.851; sub_bm25=0.953; sub_dense=0.905"
+      }
+    ]
+  }
+}

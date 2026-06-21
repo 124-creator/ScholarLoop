@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_005",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_005",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_005",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_005",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1947,
+      "latency_s": 7.276718500070274
+    },
+    {
+      "query_id": "litsearch_005",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 247,
+      "latency_s": 2.2126000999705866
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_005",
+    "gold": [
+      17297069
+    ],
+    "pool_size": 227,
+    "decomposition": [
+      "CNN RNN relation extraction multiple feature types",
+      "convolutional recurrent neural network relation extraction features",
+      "hybrid CNN RNN relation extraction multi-feature"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6532096,
+        31263144,
+        10687787,
+        1428271,
+        53081052,
+        5420466,
+        59524257,
+        201671261,
+        7153934,
+        16389974,
+        9954976,
+        11909076,
+        3228703,
+        51880415,
+        14481304,
+        258463937,
+        12585424,
+        5720899,
+        15007330,
+        250391009
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        16389974,
+        12585424,
+        6495498,
+        6532096,
+        5993225,
+        236478166,
+        10691183,
+        53081052,
+        27628462,
+        483255,
+        44062949,
+        1125700,
+        28626817,
+        5420466,
+        1774259,
+        196211486,
+        15178809,
+        202718810,
+        3228703,
+        184487889
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        4696194,
+        1338096,
+        17297069,
+        12585424,
+        29866769,
+        5420466,
+        11250154,
+        248085496,
+        208267281,
+        9524495,
+        44102766,
+        39067862,
+        5282346,
+        12873739,
+        237366368,
+        17069935,
+        7437060,
+        18087464,
+        2476229,
+        5993225
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        17297069,
+        4696194,
+        1774259,
+        29866769
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        12585424,
+        16389974,
+        17297069,
+        5420466,
+        5993225,
+        4696194,
+        29866769,
+        11250154,
+        6532096,
+        44062949,
+        39067862,
+        184487889,
+        12873739,
+        1774259,
+        1125700,
+        3574064,
+        5282346,
+        237366368,
+        196211486,
+        202718810
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.68100559990853
+  },
+  "reason_example": {
+    "query_id": "litsearch_005",
+    "query": "Are there studies that combine convolutional and recurrent neural network approaches to extract multiple types of features for relation extraction? If so, could you point me to one of them?",
+    "top_results": [
+      {
+        "corpusid": 12585424,
+        "score": 0.9567936062812805,
+        "reason": "bm25=0.983; dense=0.939; sub_bm25=0.952; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16389974,
+        "score": 0.920543909072876,
+        "reason": "bm25=1.000; dense=0.868; sub_bm25=0.880; sub_dense=0.947"
+      },
+      {
+        "corpusid": 17297069,
+        "score": 0.8916347026824951,
+        "reason": "bm25=0.795; dense=0.956; sub_bm25=0.943; sub_dense=0.972"
+      },
+      {
+        "corpusid": 5420466,
+        "score": 0.8852875232696533,
+        "reason": "bm25=0.831; dense=0.921; sub_bm25=0.859; sub_dense=0.881"
+      },
+      {
+        "corpusid": 5993225,
+        "score": 0.8831271529197693,
+        "reason": "bm25=0.886; dense=0.881; sub_bm25=0.864; sub_dense=0.910"
+      }
+    ]
+  }
+}

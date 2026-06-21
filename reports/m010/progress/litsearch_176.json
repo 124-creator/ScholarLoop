@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_176",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_176",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_176",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_176",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1336,
+      "latency_s": 10.602597899967805
+    },
+    {
+      "query_id": "litsearch_176",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 309,
+      "latency_s": 2.6209750999696553
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_176",
+    "gold": [
+      248299679
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "word deletion data augmentation NLP overfitting",
+      "random word removal sentence augmentation NLP",
+      "data augmentation by dropping words NLP"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252624581,
+        10707097,
+        248780437,
+        10367144,
+        21547774,
+        9875297,
+        44177418,
+        2251088,
+        16067124,
+        5977811,
+        9685049,
+        235482360,
+        220047833,
+        7851568,
+        48356329,
+        245838261,
+        249204538,
+        231698515,
+        256461008,
+        10513825
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256461357,
+        248779925,
+        256194556,
+        220057135,
+        14842425,
+        221836078,
+        247618876,
+        251880789,
+        235294217,
+        257364835,
+        8790370,
+        52078335,
+        232222259,
+        219179868,
+        243865567,
+        248780550,
+        225062312,
+        235248098,
+        216035781,
+        258486921
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235422524,
+        248779925,
+        225062312,
+        227231247,
+        244346011,
+        244479233,
+        59523656,
+        258378297,
+        21725995,
+        52078335,
+        241583288,
+        222133959,
+        257364835,
+        247158913,
+        250479403,
+        842523,
+        259002938,
+        59336240,
+        256461050,
+        249062526
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256461357,
+        52078335,
+        225062312,
+        248779925,
+        256461050,
+        248780437,
+        259376886,
+        21725995,
+        53083830,
+        220057135,
+        257364835,
+        256461008
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248779925,
+        225062312,
+        52078335,
+        235422524,
+        257364835,
+        256461357,
+        21725995,
+        221836078,
+        220057135,
+        244346011,
+        244479233,
+        249062526,
+        258486921,
+        235248098,
+        258378140,
+        232428269,
+        21697740,
+        247618876,
+        53083830,
+        248780437
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.344737399951555
+  },
+  "reason_example": {
+    "query_id": "litsearch_176",
+    "query": "Could you recommend research that investigates the impact of randomly removing words from sentences as a data augmentation strategy to mitigate overfitting in NLP models?",
+    "top_results": [
+      {
+        "corpusid": 248779925,
+        "score": 0.9666925668716431,
+        "reason": "bm25=0.995; dense=0.948; sub_bm25=0.971; sub_dense=0.969"
+      },
+      {
+        "corpusid": 225062312,
+        "score": 0.8885250091552734,
+        "reason": "bm25=0.828; dense=0.929; sub_bm25=0.966; sub_dense=0.927"
+      },
+      {
+        "corpusid": 52078335,
+        "score": 0.8808600902557373,
+        "reason": "bm25=0.855; dense=0.898; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235422524,
+        "score": 0.8597304821014404,
+        "reason": "bm25=0.649; dense=1.000; sub_bm25=0.980; sub_dense=0.985"
+      },
+      {
+        "corpusid": 257364835,
+        "score": 0.859302282333374,
+        "reason": "bm25=0.865; dense=0.855; sub_bm25=0.694; sub_dense=0.759"
+      }
+    ]
+  }
+}

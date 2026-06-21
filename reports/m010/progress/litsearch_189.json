@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_189",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_189",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_189",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_189",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1427,
+      "latency_s": 10.07326059998013
+    },
+    {
+      "query_id": "litsearch_189",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 385,
+      "latency_s": 3.097848500008695
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_189",
+    "gold": [
+      229923720
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "Transformer feed-forward network factual knowledge encoding",
+      "How transformer FFN stores factual information",
+      "Mechanism of factual knowledge in transformer feed-forward layers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235482401,
+        7440991,
+        16771067,
+        222133863,
+        13100783,
+        235490333,
+        252819190,
+        202541078,
+        14538453,
+        226262232,
+        220445474,
+        199553035,
+        10687323,
+        16657732,
+        59523799,
+        221761488,
+        233029494,
+        252819333,
+        14443844,
+        2952144
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247958465,
+        58981389,
+        229923720,
+        52154927,
+        49667762,
+        226262232,
+        256808600,
+        259108831,
+        7541452,
+        12857568,
+        222090359,
+        14538453,
+        202541078,
+        252819190,
+        14443844,
+        3856903,
+        3470596,
+        44063263,
+        210861275,
+        16215253
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        229923720,
+        247958465,
+        202541078,
+        236460291,
+        237730643,
+        204824061,
+        218487351,
+        221739041,
+        226281941,
+        49667762,
+        252089779,
+        259370787,
+        239890013,
+        235446334,
+        260539432,
+        224814158,
+        264406180,
+        247315171,
+        219708219,
+        253255190
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        229923720,
+        247958465,
+        202541078,
+        237730643
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247958465,
+        229923720,
+        202541078,
+        49667762,
+        237730643,
+        259108831,
+        259075420,
+        224814158,
+        252089779,
+        209315300,
+        204824061,
+        16733173,
+        257038220,
+        235446334,
+        207853045,
+        259370787,
+        202541012,
+        221739041,
+        51880415,
+        253255190
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.465522899990901
+  },
+  "reason_example": {
+    "query_id": "litsearch_189",
+    "query": "Could you suggest a study examining how transformer models utilize feed-forward neural networks (FFNs) to encode factual information?",
+    "top_results": [
+      {
+        "corpusid": 247958465,
+        "score": 0.9917275905609131,
+        "reason": "bm25=1.000; dense=0.986; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 229923720,
+        "score": 0.8490616083145142,
+        "reason": "bm25=0.623; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202541078,
+        "score": 0.8026148676872253,
+        "reason": "bm25=0.583; dense=0.949; sub_bm25=0.573; sub_dense=0.946"
+      },
+      {
+        "corpusid": 49667762,
+        "score": 0.7731537818908691,
+        "reason": "bm25=0.620; dense=0.875; sub_bm25=0.754; sub_dense=0.749"
+      },
+      {
+        "corpusid": 237730643,
+        "score": 0.7548028826713562,
+        "reason": "bm25=0.509; dense=0.919; sub_bm25=0.730; sub_dense=0.801"
+      }
+    ]
+  }
+}

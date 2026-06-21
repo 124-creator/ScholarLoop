@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_079",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_079",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_079",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_079",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1518,
+      "latency_s": 12.984915100038052
+    },
+    {
+      "query_id": "litsearch_079",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 282,
+      "latency_s": 2.1972548000048846
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_079",
+    "gold": [
+      201646309
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "mean pooling vs CLS token sentence embedding semantic similarity",
+      "pooling strategy comparison BERT sentence embeddings",
+      "mean pooling outperforms CLS sentence similarity"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248227901,
+        256461142,
+        129092,
+        6907887,
+        223953532,
+        233864633,
+        207853396,
+        1541076,
+        256461348,
+        209082217,
+        16883813,
+        52197809,
+        248780351,
+        229365775,
+        14029756,
+        240288762,
+        184482880,
+        8320612,
+        258765234,
+        236486130
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248227901,
+        49434227,
+        250526649,
+        218470367,
+        253553743,
+        222290596,
+        238408063,
+        256739268,
+        252816084,
+        234487226,
+        207853396,
+        13694466,
+        251224409,
+        235187469,
+        253157513,
+        252212258,
+        252716077,
+        256739260,
+        224725731,
+        220045902
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        218486873,
+        252847570,
+        234487226,
+        252212258,
+        252716034,
+        52012412,
+        49231593,
+        3986339,
+        8037356,
+        13043763,
+        235097321,
+        220347683,
+        52010612,
+        18410255,
+        53245704,
+        23591179,
+        256739268,
+        246634531,
+        237302466,
+        235417501
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        49434227,
+        252847570,
+        252212258,
+        248227901,
+        256461142,
+        253553743,
+        207853396,
+        14029756,
+        18410255,
+        209082217,
+        256739268,
+        234487226
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248227901,
+        49434227,
+        253553743,
+        234487226,
+        218470367,
+        256739268,
+        252212258,
+        18410255,
+        13694466,
+        252847570,
+        222290596,
+        251224409,
+        256461142,
+        238408063,
+        14029756,
+        250390895,
+        246634531,
+        256461015,
+        252780109,
+        207853396
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.313185999984853
+  },
+  "reason_example": {
+    "query_id": "litsearch_079",
+    "query": "When using pretrained transformer models for generating sentence embeddings, I've heard different strategies such as mean pooling and using the CLS token's embedding. What study shows that mean pooling outperforms CLS in semantic similarity tasks?",
+    "top_results": [
+      {
+        "corpusid": 248227901,
+        "score": 0.911649227142334,
+        "reason": "bm25=1.000; dense=0.853; sub_bm25=1.000; sub_dense=0.823"
+      },
+      {
+        "corpusid": 49434227,
+        "score": 0.8876960873603821,
+        "reason": "bm25=0.914; dense=0.870; sub_bm25=1.000; sub_dense=0.853"
+      },
+      {
+        "corpusid": 253553743,
+        "score": 0.8827701807022095,
+        "reason": "bm25=0.867; dense=0.893; sub_bm25=0.719; sub_dense=0.806"
+      },
+      {
+        "corpusid": 234487226,
+        "score": 0.8627476692199707,
+        "reason": "bm25=0.751; dense=0.938; sub_bm25=0.561; sub_dense=0.945"
+      },
+      {
+        "corpusid": 218470367,
+        "score": 0.8523123264312744,
+        "reason": "bm25=0.897; dense=0.823; sub_bm25=0.939; sub_dense=0.784"
+      }
+    ]
+  }
+}

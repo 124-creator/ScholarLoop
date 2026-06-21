@@ -1,0 +1,634 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_022",
+  "query": "Can you suggest literature on a dataset that categorizes various emotions like anger, anticipation, fear, joy, and sadness in Facebook posts across multiple languages?",
+  "criteria": [
+    "multilingual emotion dataset Facebook posts anger anticipation fear joy sadness",
+    "Facebook post emotion classification dataset multiple languages",
+    "cross-lingual emotion recognition Facebook posts"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_022.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_022",
+      "corpusid": 7397938,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Word Affect Intensities",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            23
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Saif M. Mohammad (2018)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2611755161",
+            "fetched_at": "2026-06-20T00:19:40Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\45196e7d75247f078b451dcf.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/58igjzkfg9k5; Source: https://doi.org/10.63317/58igjzkfg9k5; OA: gold; Citations: 27",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2611755161",
+            "fetched_at": "2026-06-20T00:19:40Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\45196e7d75247f078b451dcf.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Antonymous terms tend to co-occur with each other more often than chance, and are particularly problematic when one uses automatic co-occurrence-based statistical methods to capture word-emotion connotations.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            5863,
+            6071
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": ") We refer to this dataset as the NRC Affect Intensity Lexicon, or AIL for short.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            750,
+            831
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "BWS improves annotation consistency and obtains reliable fine-grained scores (split-half reliability > 0.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            957,
+            1062
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, existing manually created lexicons for basic emotions (such as anger and fear) indicate only coarse categories of affect association (for example, associated with anger or not associated with anger).",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            138,
+            346
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2216,
+        "elapsed_s": 14.63903369999025,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_022_7397938.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2611755161",
+        "title": "Word Affect Intensities",
+        "authors": [
+          "Saif M. Mohammad"
+        ],
+        "year": 2018,
+        "venue": "https://doi.org/10.63317/58igjzkfg9k5",
+        "doi": "10.63317/58igjzkfg9k5",
+        "oa_status": "gold",
+        "citation_count": 27,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:40Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\45196e7d75247f078b451dcf.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Word Affect Intensities",
+          "candidate_title": "Word Affect Intensities",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_022",
+      "corpusid": 5203085,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Classification of Emotion Words in Russian and Romanian Languages",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            65
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Marina Sokolova, Victoria Bobicev (2009)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2250988804",
+            "fetched_at": "2026-06-20T00:19:42Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\7ab77c0e5e59afe579c2d3fb.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: Recent Advances in Natural Language Processing; OA: closed; Citations: 16",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2250988804",
+            "fetched_at": "2026-06-20T00:19:42Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\7ab77c0e5e59afe579c2d3fb.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "This paper presents a machine learning study of affective words in Russian and Romanian languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            98
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "tag the word affective meaning by one of the WordNet Affect six labels anger, disgust, fear, joy, sadness, surprise",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            102,
+            217
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We use the word spelling, a word form, to represent words in machine learning experiments to solve the multiclass classification and binary classification problems.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            316,
+            480
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Russian and Romanian languages",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            67,
+            97
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "the word form can be a reliable source of learning the affect",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            503,
+            564
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, some problems have been a challenge for algorithmic solutions, although humans routinely solve such tasks, e.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1359,
+            1477
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "This paper presents a machine learning study of affective words in Russian and Romanian languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            98
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1483,
+        "elapsed_s": 10.497070800047368,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_022_5203085.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2250988804",
+        "title": "Classification of Emotion Words in Russian and Romanian Languages",
+        "authors": [
+          "Marina Sokolova",
+          "Victoria Bobicev"
+        ],
+        "year": 2009,
+        "venue": "Recent Advances in Natural Language Processing",
+        "doi": "",
+        "oa_status": "closed",
+        "citation_count": 16,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:42Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\7ab77c0e5e59afe579c2d3fb.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Classification of Emotion Words in Russian and Romanian Languages",
+          "candidate_title": "Classification of Emotion Words in Russian and Romanian Languages",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_022",
+      "corpusid": 233364964,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Universal Joy A Data Set and Results for Classifying Emotions Across Languages",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            78
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Sotiris Lamprinidis, Federico Bianchi, Daniel Hardt, Dirk Hovy (2021)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3153519660",
+            "fetched_at": "2026-06-20T00:19:43Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\4e4041c6f36e867f20d8e6bc.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: CBS Research Portal (Copenhagen Business School); OA: green; Citations: 20",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3153519660",
+            "fetched_at": "2026-06-20T00:19:43Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\4e4041c6f36e867f20d8e6bc.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We introduce a new data set of over 530k anonymized public Facebook posts across 18 languages, labeled with five different emotions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            130,
+            262
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Using multilingual BERT embeddings, we show that emotions can be reliably inferred both within and across languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            263,
+            379
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Using multilingual BERT embeddings",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            263,
+            297
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "a new data set of over 530k anonymized public Facebook posts across 18 languages, labeled with five different emotions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            143,
+            262
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Our results suggest that there are commonalities underlying the expression of emotion in different languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            761,
+            870
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, most existing research has focused either on English or used very small multilingual data sets.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            2566,
+            2670
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "While emotions are universal aspects of human psychology, they are expressed differently across different languages and cultures.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            129
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1590,
+        "elapsed_s": 9.668028700049035,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_022_233364964.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3153519660",
+        "title": "Universal Joy A Data Set and Results for Classifying Emotions Across Languages",
+        "authors": [
+          "Sotiris Lamprinidis",
+          "Federico Bianchi",
+          "Daniel Hardt",
+          "Dirk Hovy"
+        ],
+        "year": 2021,
+        "venue": "CBS Research Portal (Copenhagen Business School)",
+        "doi": "",
+        "oa_status": "green",
+        "citation_count": 20,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:43Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\4e4041c6f36e867f20d8e6bc.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Universal Joy A Data Set and Results for Classifying Emotions Across Languages",
+          "candidate_title": "Universal Joy A Data Set and Results for Classifying Emotions Across Languages",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 7397938,
+      "title": "Word Affect Intensities",
+      "cells": [
+        {
+          "criterion": "multilingual emotion dataset Facebook posts anger anticipation fear joy sadness",
+          "addresses": true,
+          "snippet": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ]
+        },
+        {
+          "criterion": "Facebook post emotion classification dataset multiple languages",
+          "addresses": true,
+          "snippet": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ]
+        },
+        {
+          "criterion": "cross-lingual emotion recognition Facebook posts",
+          "addresses": true,
+          "snippet": "Words often convey affect-emotions, feelings, and attitudes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 5203085,
+      "title": "Classification of Emotion Words in Russian and Romanian Languages",
+      "cells": [
+        {
+          "criterion": "multilingual emotion dataset Facebook posts anger anticipation fear joy sadness",
+          "addresses": true,
+          "snippet": "We tag the word affective meaning by one of the WordNet Affect six labels anger, disgust, fear, joy, sadness, surprise and group into \"positive\" (joy, surprise) and \"negative\" (anger, disgust, fear, sadness) classes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            99,
+            315
+          ]
+        },
+        {
+          "criterion": "Facebook post emotion classification dataset multiple languages",
+          "addresses": true,
+          "snippet": "This paper presents a machine learning study of affective words in Russian and Romanian languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            98
+          ]
+        },
+        {
+          "criterion": "cross-lingual emotion recognition Facebook posts",
+          "addresses": true,
+          "snippet": "Classification of Emotion Words in Russian and Romanian Languages",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 233364964,
+      "title": "Universal Joy A Data Set and Results for Classifying Emotions Across Languages",
+      "cells": [
+        {
+          "criterion": "multilingual emotion dataset Facebook posts anger anticipation fear joy sadness",
+          "addresses": true,
+          "snippet": "While emotions are universal aspects of human psychology, they are expressed differently across different languages and cultures.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            129
+          ]
+        },
+        {
+          "criterion": "Facebook post emotion classification dataset multiple languages",
+          "addresses": true,
+          "snippet": "While emotions are universal aspects of human psychology, they are expressed differently across different languages and cultures.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            129
+          ]
+        },
+        {
+          "criterion": "cross-lingual emotion recognition Facebook posts",
+          "addresses": true,
+          "snippet": "While emotions are universal aspects of human psychology, they are expressed differently across different languages and cultures.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            129
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      5203085,
+      7397938,
+      233364964
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

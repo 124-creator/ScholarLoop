@@ -1,0 +1,7 @@
+started http://127.0.0.1:59699
+GET /healthz -> 200 {'ok': True, 'mode': 'offline', 'llm_calls_per_request': 0}
+GET /api/queries -> 200 count=30 first=litsearch_000
+GET /api/verify_span -> 200 highlightable=True mismatch=False
+GET /api/trail -> 200 steps=4 fabrication=0
+GET /pro -> 200 bytes=21445 markers=True
+status=PASS

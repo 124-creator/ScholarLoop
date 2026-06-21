@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_257",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_257",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_257",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_257",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1577,
+      "latency_s": 10.324612599913962
+    },
+    {
+      "query_id": "litsearch_257",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 231,
+      "latency_s": 1.9139701999956742
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_257",
+    "gold": [
+      244345901,
+      233219059
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "metrics for factual consistency in text summarization",
+      "evaluation of factuality in abstractive summarization",
+      "automatic metrics for summary factuality alignment"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12284744,
+        231951460,
+        9186277,
+        235669817,
+        11200749,
+        21547774,
+        249204476,
+        698317,
+        201641505,
+        2433570,
+        2948428,
+        209053721,
+        15522871,
+        11801961,
+        218688152,
+        9287023,
+        40110441,
+        5116147,
+        3203102,
+        21022858
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        231951460,
+        222142312,
+        233407441,
+        258947273,
+        256231270,
+        258999861,
+        259833772,
+        204976362,
+        256460965,
+        256461175,
+        253098682,
+        249204476,
+        253080850,
+        252186415,
+        249268802,
+        245218843,
+        12284744,
+        253157611,
+        202541447,
+        258841145
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226282456,
+        256711,
+        17452735,
+        249062579,
+        241583629,
+        13276714,
+        196201415,
+        226282223,
+        248300244,
+        8651371,
+        5312836,
+        14826169,
+        9898640,
+        220047754,
+        14195306,
+        252819014,
+        253098066,
+        11325092,
+        253761434,
+        38926436
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258947273,
+        231951460,
+        233407441,
+        256460965,
+        253080850,
+        209053721
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        231951460,
+        222142312,
+        258947273,
+        233407441,
+        256711,
+        226282456,
+        258999861,
+        253080850,
+        256460965,
+        259833772,
+        241583629,
+        258866156,
+        249268802,
+        249062579,
+        202541447,
+        258841548,
+        237558754,
+        253098682,
+        38926436,
+        253157611
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.910559399984777
+  },
+  "reason_example": {
+    "query_id": "litsearch_257",
+    "query": "Have any new metrics been developed to assess the factual alignment of machine-generated summaries with their original source texts?",
+    "top_results": [
+      {
+        "corpusid": 231951460,
+        "score": 0.8805273175239563,
+        "reason": "bm25=1.000; dense=0.801; sub_bm25=0.998; sub_dense=0.921"
+      },
+      {
+        "corpusid": 222142312,
+        "score": 0.8675800561904907,
+        "reason": "bm25=0.941; dense=0.819; sub_bm25=0.866; sub_dense=0.847"
+      },
+      {
+        "corpusid": 258947273,
+        "score": 0.853044867515564,
+        "reason": "bm25=0.883; dense=0.833; sub_bm25=0.772; sub_dense=0.997"
+      },
+      {
+        "corpusid": 233407441,
+        "score": 0.8498082160949707,
+        "reason": "bm25=0.889; dense=0.824; sub_bm25=0.868; sub_dense=0.939"
+      },
+      {
+        "corpusid": 256711,
+        "score": 0.8243687152862549,
+        "reason": "bm25=0.650; dense=0.941; sub_bm25=0.678; sub_dense=0.943"
+      }
+    ]
+  }
+}

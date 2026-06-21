@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_171",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_171",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_171",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_171",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 885,
+      "latency_s": 5.039762999978848
+    },
+    {
+      "query_id": "litsearch_171",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.6859592999098822
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_171",
+    "gold": [
+      234335834,
+      247187518
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "data augmentation for logical reasoning in natural language",
+      "improving text reasoning with data augmentation",
+      "logical reasoning text augmentation methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15569102,
+        62132187,
+        2000271,
+        8005006,
+        64631730,
+        656434,
+        44757354,
+        6362566,
+        10823271,
+        15530764,
+        235313469,
+        1144879,
+        14898349,
+        16127702,
+        259376755,
+        33871285,
+        235097405,
+        7521670,
+        15406016,
+        56336392
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234335834,
+        209485573,
+        247187518,
+        139105363,
+        235368289,
+        247613006,
+        5655307,
+        259370794,
+        49213156,
+        215548215,
+        258841105,
+        247518855,
+        246680186,
+        256461192,
+        253398396,
+        215238846,
+        250390686,
+        252819415,
+        251649222,
+        252819276
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        234335834,
+        247187518,
+        209485573,
+        58248297,
+        236772808,
+        10202504,
+        241583288,
+        235422524,
+        258378297,
+        218665411,
+        226262374,
+        259370689,
+        248779925,
+        139105363,
+        254853913,
+        256461050,
+        235898880,
+        222177123,
+        253098787,
+        252763335
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        234335834
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234335834,
+        247187518,
+        209485573,
+        139105363,
+        215238846,
+        222177123,
+        253098787,
+        247518855,
+        232104941,
+        259370794,
+        246680186,
+        10202504,
+        226262374,
+        253398396,
+        258841105,
+        26490087,
+        241583288,
+        256461192,
+        247447492,
+        255186100
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 9.314542400068603
+  },
+  "reason_example": {
+    "query_id": "litsearch_171",
+    "query": "Could you recommend research that investigates how to use data augmentation for improving logical reasoning over text?",
+    "top_results": [
+      {
+        "corpusid": 234335834,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247187518,
+        "score": 0.8884361982345581,
+        "reason": "bm25=0.899; dense=0.881; sub_bm25=1.000; sub_dense=0.883"
+      },
+      {
+        "corpusid": 209485573,
+        "score": 0.8353885412216187,
+        "reason": "bm25=0.908; dense=0.787; sub_bm25=0.703; sub_dense=0.832"
+      },
+      {
+        "corpusid": 139105363,
+        "score": 0.7793120741844177,
+        "reason": "bm25=0.826; dense=0.748; sub_bm25=0.872; sub_dense=0.830"
+      },
+      {
+        "corpusid": 215238846,
+        "score": 0.7311156392097473,
+        "reason": "bm25=0.733; dense=0.730; sub_bm25=0.639; sub_dense=0.800"
+      }
+    ]
+  }
+}

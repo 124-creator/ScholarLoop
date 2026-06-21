@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_323",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_323",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_323",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_323",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 959,
+      "latency_s": 6.518209400004707
+    },
+    {
+      "query_id": "litsearch_323",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 242,
+      "latency_s": 2.2538558000233024
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_323",
+    "gold": [
+      236477874
+    ],
+    "pool_size": 232,
+    "decomposition": [
+      "within-document coreference resolution scaling",
+      "coreference resolution for long texts",
+      "scalable coreference resolution methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        245307445,
+        260744613,
+        3343295,
+        18335795,
+        8305322,
+        211893,
+        11380974,
+        27661257,
+        257038566,
+        58513664,
+        5607967,
+        7151201,
+        11629466,
+        258486920,
+        4854156,
+        9176267,
+        825928,
+        6420881,
+        3920851,
+        46886854
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235294128,
+        238582765,
+        18335795,
+        11168941,
+        3343295,
+        7830261,
+        14759124,
+        236477874,
+        16608926,
+        13508500,
+        11085158,
+        6420881,
+        6309434,
+        248780376,
+        708539,
+        7151201,
+        214503011,
+        473898,
+        9170598,
+        245307445
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236477874,
+        6897473,
+        9170598,
+        16472801,
+        233296978,
+        6557193,
+        18904161,
+        208547632,
+        2893471,
+        535939,
+        1189640,
+        5836395,
+        2994838,
+        14521311,
+        245307445,
+        260744613,
+        5175754,
+        4854156,
+        825928,
+        13114958
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236477874
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235294128,
+        236477874,
+        9170598,
+        3343295,
+        245307445,
+        260744613,
+        16608926,
+        18335795,
+        11168941,
+        4854156,
+        9503922,
+        6557193,
+        233296978,
+        5836395,
+        18904161,
+        6420881,
+        208547632,
+        2994838,
+        394655,
+        80418
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.603002800024115
+  },
+  "reason_example": {
+    "query_id": "litsearch_323",
+    "query": "What research has been conducted on scaling within-document coreference resolution in extended texts?",
+    "top_results": [
+      {
+        "corpusid": 235294128,
+        "score": 0.9406387805938721,
+        "reason": "bm25=1.000; dense=0.901; sub_bm25=1.000; sub_dense=0.896"
+      },
+      {
+        "corpusid": 236477874,
+        "score": 0.9350435733795166,
+        "reason": "bm25=0.838; dense=1.000; sub_bm25=0.935; sub_dense=0.985"
+      },
+      {
+        "corpusid": 9170598,
+        "score": 0.8975730538368225,
+        "reason": "bm25=0.797; dense=0.965; sub_bm25=0.885; sub_dense=0.894"
+      },
+      {
+        "corpusid": 3343295,
+        "score": 0.890791654586792,
+        "reason": "bm25=0.878; dense=0.900; sub_bm25=0.919; sub_dense=0.842"
+      },
+      {
+        "corpusid": 245307445,
+        "score": 0.8642110824584961,
+        "reason": "bm25=0.796; dense=0.910; sub_bm25=0.792; sub_dense=0.844"
+      }
+    ]
+  }
+}

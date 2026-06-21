@@ -1,0 +1,26 @@
+{
+  "schema_version": "m110.frozen_hashes.v1",
+  "checked_at_utc": "2026-06-20T13:18:21.356919+00:00",
+  "note": "M110 modifies docs/submission wording, adds tests/test_m110_*.py, reports/m110/**, retrospective, and plan status only. Frozen data/code checks focus on reports/m070, reports/m100, and src.",
+  "checks": [
+    {
+      "path": "reports/m070",
+      "before_sha256": "3398c17bc73c0d7a8ed0ff27886684d61142e3bb2a828ebfa59fb0bf165af63e",
+      "after_sha256": "3398c17bc73c0d7a8ed0ff27886684d61142e3bb2a828ebfa59fb0bf165af63e",
+      "unchanged": true
+    },
+    {
+      "path": "reports/m100",
+      "before_sha256": "10494a64f50fcdbfc8ec0e6e35adcee09919cee6ec3da8557d3b1e77843fa21c",
+      "after_sha256": "10494a64f50fcdbfc8ec0e6e35adcee09919cee6ec3da8557d3b1e77843fa21c",
+      "unchanged": true
+    },
+    {
+      "path": "src",
+      "before_sha256": "a406c817d656e27cc89e92ae8fd60ad236ca89990474e477b225ebef0dac5d25",
+      "after_sha256": "a406c817d656e27cc89e92ae8fd60ad236ca89990474e477b225ebef0dac5d25",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

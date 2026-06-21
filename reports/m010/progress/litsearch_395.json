@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_395",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_395",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_395",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_395",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1773,
+      "latency_s": 15.594307699939236
+    },
+    {
+      "query_id": "litsearch_395",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 292,
+      "latency_s": 2.9748853999190032
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_395",
+    "gold": [
+      252918792
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "entity-to-entity correlations data augmentation",
+      "augmented training data entity relations",
+      "training data construction entity correlation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        24663,
+        32093443,
+        26889702,
+        53079155,
+        208134958,
+        7343474,
+        1851389,
+        17575823,
+        25036575,
+        15792551,
+        18454652,
+        10044222,
+        18247996,
+        252819353,
+        9337134,
+        32965084,
+        583930,
+        41785053,
+        5461896,
+        236486276
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249062703,
+        254853687,
+        247595093,
+        174799781,
+        261342050,
+        104292554,
+        196184772,
+        236459901,
+        8642539,
+        6042994,
+        237513667,
+        254246921,
+        8469161,
+        258968157,
+        218973841,
+        12292498,
+        15006246,
+        1112316,
+        28784495,
+        259370509
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226262289,
+        252819516,
+        202120468,
+        7781827,
+        225067549,
+        250390460,
+        49901898,
+        254069490,
+        59599768,
+        259376884,
+        226222116,
+        235293851,
+        251903333,
+        2243116,
+        2745836,
+        1066131,
+        13335215,
+        3081080,
+        253082073,
+        258378298
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259376719,
+        201666359,
+        18958973
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        104292554,
+        201666359,
+        236459901,
+        49901898,
+        250390460,
+        249062703,
+        53079443,
+        252819516,
+        28784495,
+        233296875,
+        227231468,
+        254044368,
+        231602921,
+        18958973,
+        53080998,
+        2745836,
+        71148539,
+        248780333,
+        11406047,
+        2465100
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 19.536951799993403
+  },
+  "reason_example": {
+    "query_id": "litsearch_395",
+    "query": "Is there any paper that constructs augmented training data based on the entity-to-entity correlations?",
+    "top_results": [
+      {
+        "corpusid": 104292554,
+        "score": 0.9178704023361206,
+        "reason": "bm25=0.945; dense=0.900; sub_bm25=0.830; sub_dense=0.817"
+      },
+      {
+        "corpusid": 201666359,
+        "score": 0.8810337781906128,
+        "reason": "bm25=0.870; dense=0.889; sub_bm25=0.704; sub_dense=0.749"
+      },
+      {
+        "corpusid": 236459901,
+        "score": 0.8624709248542786,
+        "reason": "bm25=0.913; dense=0.829; sub_bm25=0.856; sub_dense=0.801"
+      },
+      {
+        "corpusid": 49901898,
+        "score": 0.8614336848258972,
+        "reason": "bm25=0.752; dense=0.934; sub_bm25=0.921; sub_dense=0.902"
+      },
+      {
+        "corpusid": 250390460,
+        "score": 0.8596545457839966,
+        "reason": "bm25=0.734; dense=0.943; sub_bm25=0.651; sub_dense=0.909"
+      }
+    ]
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_015",
+  "query": "Can you recommend a conversational QA dataset where the human questioner does not have access to the evidence passage to simulate a more real-world information-seeking environment?",
+  "criteria": [
+    "conversational QA dataset blind to evidence",
+    "information-seeking conversational QA without passage access",
+    "questioner not shown passage conversational dataset"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_015",
+      "corpusid": 257920051,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "INSCIT: Information-Seeking Conversations with Mixed-Initiative Interactions",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            76
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "human-human conversations where the agent searches over Wikipedia",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            477,
+            542
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "In an information-seeking conversation, a user may ask questions that are under-specified or unanswerable.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            106
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "4.7K user-agent turns from 805 human-human conversations where the agent searches over Wikipedia",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            446,
+            542
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "either directly answers, asks for clarification, or provides relevant information",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            547,
+            628
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Both systems significantly underperform humans, suggesting ample room for improvement in future studies.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            955,
+            1059
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, most current studies either fail to or artificially incorporate such agent-side initiative.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            222,
+            322
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "INSCIT, a dataset for Information-Seeking Conversations with mixed-initiative Interactions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            342,
+            433
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1793,
+        "elapsed_s": 11.327877800096758,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_015_257920051.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_015",
+      "corpusid": 218487043,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "DoQA -Accessing Domain-Specific FAQs via Conversational QA",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            58
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "using the Wizard of Oz method with crowdsourcing",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            287,
+            335
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "a more realistic information retrieval (IR) scenario where the system needs to find the answer in any of the FAQ documents",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            537,
+            659
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "it is possible to build high quality conversational QA systems for FAQs without indomain training data",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            811,
+            913
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "DoQA contains two scenarios: in the standard scenario the test data comprises the questions and the target document from which the answers need to be extracted; in the information retrieval (IR) scenario the test data contains the questions, but the target document is unknown, and the system needs to select the documents which contain the answers among all documents in the collection.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            3603,
+            3990
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1675,
+        "elapsed_s": 10.289102499955334,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_015_218487043.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_015",
+      "corpusid": 253098861,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Generating Information-Seeking Conversations from Unlabeled Documents",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            69
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "SIMSEEK-ASYM first generates the question and then finds its corresponding answer under the conversational context.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            535,
+            650
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "while modeling information needs is an essential key, only few studies have discussed it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            152,
+            241
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "SIMSEEK-ASYM first generates the question and then finds its corresponding answer under the conversational context.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            535,
+            650
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "WIKI-SIMSEEK, containing 2 million CQA pairs built upon Wikipedia documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            988,
+            1064
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "conversations from SIMSEEK-ASYM not only make more improvements in our experiments but also are favorably reviewed in a human evaluation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            780,
+            917
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "As a result, conversations from SIMSEEK-ASYM not only make more improvements in our experiments but also are favorably reviewed in a human evaluation.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            767,
+            917
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "state-of-the-art performance on a recent CQA benchmark, QuAC",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1110,
+            1170
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1934,
+        "elapsed_s": 11.240160200046375,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_015_253098861.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 257920051,
+      "title": "INSCIT: Information-Seeking Conversations with Mixed-Initiative Interactions",
+      "cells": [
+        {
+          "criterion": "conversational QA dataset blind to evidence",
+          "addresses": true,
+          "snippet": "This work presents INSCIT, a dataset for Information-Seeking Conversations with mixed-initiative Interactions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            323,
+            433
+          ]
+        },
+        {
+          "criterion": "information-seeking conversational QA without passage access",
+          "addresses": true,
+          "snippet": "In an information-seeking conversation, a user may ask questions that are under-specified or unanswerable.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            106
+          ]
+        },
+        {
+          "criterion": "questioner not shown passage conversational dataset",
+          "addresses": true,
+          "snippet": "This work presents INSCIT, a dataset for Information-Seeking Conversations with mixed-initiative Interactions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            323,
+            433
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 218487043,
+      "title": "DoQA -Accessing Domain-Specific FAQs via Conversational QA",
+      "cells": [
+        {
+          "criterion": "conversational QA dataset blind to evidence",
+          "addresses": true,
+          "snippet": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        },
+        {
+          "criterion": "information-seeking conversational QA without passage access",
+          "addresses": true,
+          "snippet": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        },
+        {
+          "criterion": "questioner not shown passage conversational dataset",
+          "addresses": true,
+          "snippet": "The goal of this work is to build conversational Question Answering (QA) interfaces for the large body of domain-specific information available in FAQ sites.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 253098861,
+      "title": "Generating Information-Seeking Conversations from Unlabeled Documents",
+      "cells": [
+        {
+          "criterion": "conversational QA dataset blind to evidence",
+          "addresses": true,
+          "snippet": "Synthesizing datasets for conversational question answering (CQA) from unlabeled documents remains challenging due to its interactive nature.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            141
+          ]
+        },
+        {
+          "criterion": "information-seeking conversational QA without passage access",
+          "addresses": true,
+          "snippet": "Synthesizing datasets for conversational question answering (CQA) from unlabeled documents remains challenging due to its interactive nature.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            141
+          ]
+        },
+        {
+          "criterion": "questioner not shown passage conversational dataset",
+          "addresses": true,
+          "snippet": "Synthesizing datasets for conversational question answering (CQA) from unlabeled documents remains challenging due to its interactive nature.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            141
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      218487043,
+      253098861,
+      257920051
+    ],
+    "edges": [
+      {
+        "source": 257920051,
+        "target": 218487043
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

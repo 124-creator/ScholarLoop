@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_100",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_100",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_100",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_100",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1009,
+      "latency_s": 5.852412800071761
+    },
+    {
+      "query_id": "litsearch_100",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 421,
+      "latency_s": 3.2355773000745103
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_100",
+    "gold": [
+      235313967
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "expert anti-expert models text generation toxicity mitigation",
+      "using expert and anti-expert to guide generation",
+      "mitigating toxic output with expert and anti-expert models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        218688152,
+        5460282,
+        3923764,
+        5213689,
+        236460248,
+        10492906,
+        62047898,
+        1405599,
+        1874608,
+        1449408,
+        258999402,
+        13700629,
+        199480526,
+        27849960,
+        231821638,
+        474726,
+        15360146,
+        176201,
+        9025428,
+        41981492
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235313967,
+        263608332,
+        18417896,
+        248884476,
+        253107497,
+        12425280,
+        26388611,
+        243865637,
+        3119193,
+        31600041,
+        244896105,
+        247741137,
+        237363790,
+        13879455,
+        5710677,
+        5707226,
+        591655,
+        21687124,
+        14927439,
+        263877476
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        221878771,
+        252907607,
+        259370534,
+        1906653,
+        250390702,
+        248884476,
+        258378272,
+        231861515,
+        254223269,
+        263608332,
+        261341825,
+        218487448,
+        5317323,
+        235313967,
+        236460146,
+        162552,
+        2310572,
+        239618388,
+        16954677,
+        236460300
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235313967
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235313967,
+        248884476,
+        221878771,
+        263608332,
+        259370534,
+        252907607,
+        18417896,
+        16954677,
+        254223269,
+        5317323,
+        231861515,
+        258378272,
+        162552,
+        218487448,
+        252819068,
+        260063224,
+        236460028,
+        254247260,
+        17667889,
+        8373986
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.903909499989823
+  },
+  "reason_example": {
+    "query_id": "litsearch_100",
+    "query": "Are there any recent papers investigating the use of expert and anti-expert models together to guide text generation and mitigate toxic output?",
+    "top_results": [
+      {
+        "corpusid": 235313967,
+        "score": 0.9345153570175171,
+        "reason": "bm25=1.000; dense=0.891; sub_bm25=1.000; sub_dense=0.849"
+      },
+      {
+        "corpusid": 248884476,
+        "score": 0.8799879550933838,
+        "reason": "bm25=0.773; dense=0.951; sub_bm25=0.607; sub_dense=0.908"
+      },
+      {
+        "corpusid": 221878771,
+        "score": 0.873276948928833,
+        "reason": "bm25=0.683; dense=1.000; sub_bm25=0.566; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263608332,
+        "score": 0.8694252371788025,
+        "reason": "bm25=0.793; dense=0.921; sub_bm25=0.718; sub_dense=0.830"
+      },
+      {
+        "corpusid": 259370534,
+        "score": 0.8667572736740112,
+        "reason": "bm25=0.683; dense=0.989; sub_bm25=0.601; sub_dense=0.874"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_428",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_428",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_428",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_428",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2784,
+      "latency_s": 20.365734299994074
+    },
+    {
+      "query_id": "litsearch_428",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 376,
+      "latency_s": 3.3942607999779284
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_428",
+    "gold": [
+      254591475
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "human vs language model non-literal interpretation deceit irony humor",
+      "comparison of humans and language models on figurative language understanding",
+      "evaluating language models on pragmatic inferences irony deception humor"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259833850,
+        14475949,
+        259370633,
+        263866951,
+        3926837,
+        14323173,
+        16248365,
+        32306529,
+        248779924,
+        254591475,
+        222090785,
+        53080023,
+        11637792,
+        15769193,
+        19840120,
+        186206301,
+        219300512,
+        3906011,
+        9181084,
+        14095338
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        254591475,
+        18878239,
+        14059455,
+        258486847,
+        240417252,
+        51950470,
+        236486113,
+        250390553,
+        253761976,
+        258378296,
+        52012194,
+        227231492,
+        260063038,
+        14095338,
+        252819343,
+        2946678,
+        15607400,
+        18051891,
+        10956955,
+        253107899
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207870018,
+        30046385,
+        35724462,
+        248986645,
+        256461174,
+        8968011,
+        3903723,
+        235293738,
+        15361672,
+        10048823,
+        3101865,
+        51991342,
+        241583731,
+        18130574,
+        201764856,
+        51880154,
+        256504027,
+        218973758,
+        3926837,
+        1406305
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254591475,
+        259370770,
+        237371845,
+        207870018,
+        258486847,
+        51880154,
+        9181084,
+        18878239,
+        53080023,
+        248986645,
+        14095338
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254591475,
+        207870018,
+        248986645,
+        10048823,
+        35724462,
+        51880154,
+        14059455,
+        258486847,
+        18878239,
+        218973984,
+        237371845,
+        3903723,
+        40136822,
+        258378296,
+        256461174,
+        259095915,
+        30046385,
+        7154681,
+        240417252,
+        241583731
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 25.10498689999804
+  },
+  "reason_example": {
+    "query_id": "litsearch_428",
+    "query": "What paper compares humans' and language models' non-literal interpretations of utterances featuring phenomena like deceit, irony, and humor?",
+    "top_results": [
+      {
+        "corpusid": 254591475,
+        "score": 0.8657351136207581,
+        "reason": "bm25=1.000; dense=0.776; sub_bm25=0.999; sub_dense=0.743"
+      },
+      {
+        "corpusid": 207870018,
+        "score": 0.8271628022193909,
+        "reason": "bm25=0.568; dense=1.000; sub_bm25=0.967; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248986645,
+        "score": 0.7574969530105591,
+        "reason": "bm25=0.594; dense=0.866; sub_bm25=0.817; sub_dense=0.880"
+      },
+      {
+        "corpusid": 10048823,
+        "score": 0.7386919260025024,
+        "reason": "bm25=0.587; dense=0.840; sub_bm25=0.785; sub_dense=1.000"
+      },
+      {
+        "corpusid": 35724462,
+        "score": 0.7332467436790466,
+        "reason": "bm25=0.517; dense=0.877; sub_bm25=0.815; sub_dense=0.911"
+      }
+    ]
+  }
+}

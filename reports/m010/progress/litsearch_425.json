@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_425",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_425",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_425",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_425",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 837,
+      "latency_s": 4.043492799974047
+    },
+    {
+      "query_id": "litsearch_425",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 379,
+      "latency_s": 3.2919597000582144
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_425",
+    "gold": [
+      259370699
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "first paper temporal knowledge graph prediction",
+      "early work dynamic knowledge graph forecasting",
+      "pioneering work on evolving knowledge graph link prediction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17031271,
+        259370699,
+        30167514,
+        37012896,
+        15126937,
+        26710153,
+        16078731,
+        18454652,
+        44166475,
+        19822138,
+        14392847,
+        250390554,
+        16285911,
+        150383654,
+        239009625,
+        8807545,
+        18829318,
+        29923784,
+        399261,
+        66945452
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370699,
+        257219743,
+        243848292,
+        250279739,
+        257766465,
+        6290664,
+        258968082,
+        4669223,
+        26710153,
+        202565600,
+        211171395,
+        250390554,
+        1886389,
+        18802320,
+        184483809,
+        904439,
+        252595881,
+        52009210,
+        16642152,
+        207852450
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370699,
+        140116781,
+        252762171,
+        222124934,
+        253098905,
+        14523174,
+        13752342,
+        234763248,
+        52183483,
+        14047545,
+        261341583,
+        207852450,
+        241583556,
+        13475624,
+        221808425,
+        221857750,
+        221090697,
+        235097561,
+        196166986,
+        236459932
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370699,
+        52183483,
+        235097561
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370699,
+        52183483,
+        140116781,
+        207852450,
+        222124934,
+        235097561,
+        235658634,
+        241583556,
+        261341583,
+        26710153,
+        252762171,
+        234763248,
+        253098905,
+        257766465,
+        13475624,
+        13752342,
+        236459932,
+        202777324,
+        257219743,
+        226283940
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.532628600019962
+  },
+  "reason_example": {
+    "query_id": "litsearch_425",
+    "query": "What is the first paper to address the problem of predicting knowledge graphs whose nodes, links and attributes change with time?",
+    "top_results": [
+      {
+        "corpusid": 259370699,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52183483,
+        "score": 0.7496558427810669,
+        "reason": "bm25=0.680; dense=0.796; sub_bm25=0.819; sub_dense=1.000"
+      },
+      {
+        "corpusid": 140116781,
+        "score": 0.7422340512275696,
+        "reason": "bm25=0.582; dense=0.849; sub_bm25=0.589; sub_dense=0.984"
+      },
+      {
+        "corpusid": 207852450,
+        "score": 0.7322250604629517,
+        "reason": "bm25=0.689; dense=0.761; sub_bm25=0.557; sub_dense=0.821"
+      },
+      {
+        "corpusid": 222124934,
+        "score": 0.7050604820251465,
+        "reason": "bm25=0.513; dense=0.833; sub_bm25=0.767; sub_dense=0.924"
+      }
+    ]
+  }
+}

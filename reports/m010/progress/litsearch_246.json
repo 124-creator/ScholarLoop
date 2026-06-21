@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_246",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_246",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_246",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_246",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 922,
+      "latency_s": 4.224948500050232
+    },
+    {
+      "query_id": "litsearch_246",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 332,
+      "latency_s": 2.2823267000494525
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_246",
+    "gold": [
+      245855878
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "limitations of BERTScore evaluation metric",
+      "alignment of automatic metrics with human judgments in NLP",
+      "shortcomings of pretraining evaluation measures correlation with human assessment"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3765717,
+        9072431,
+        44177418,
+        2823118,
+        8717781,
+        15100365,
+        17986230,
+        42119295,
+        259370695,
+        9429534,
+        16961297,
+        1788612,
+        199529543,
+        40630771,
+        773710,
+        8596576,
+        230349190,
+        7647892,
+        263885694,
+        4891934
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        2823118,
+        11325092,
+        12674337,
+        252167892,
+        198229379,
+        14195306,
+        220045419,
+        252089573,
+        252818958,
+        259376861,
+        8577994,
+        248780502,
+        259370695,
+        260887189,
+        201679886,
+        263609467,
+        253553349,
+        261705995,
+        18810611,
+        230349190
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        227217601,
+        227216975,
+        247922557,
+        248780362,
+        234487226,
+        182952400,
+        250390579,
+        517616,
+        245855878,
+        199001173,
+        247619066,
+        222133199,
+        235703772,
+        243865616,
+        219558527,
+        237558750,
+        259376510,
+        9309095,
+        258437266,
+        226283932
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252089573,
+        11035270,
+        230349190,
+        14195306,
+        15153066
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        227216975,
+        252089573,
+        245855878,
+        248780362,
+        182952400,
+        235097584,
+        517616,
+        12674337,
+        227217601,
+        226289695,
+        12518512,
+        11035270,
+        220045419,
+        11325092,
+        234487226,
+        15153066,
+        14195306,
+        258685435,
+        13100810,
+        237492016
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.815394400036894
+  },
+  "reason_example": {
+    "query_id": "litsearch_246",
+    "query": "Could you suggest research that offers an in-depth examination of the shortcomings associated with pretraining evaluation measures such as BERTScore, particularly regarding their alignment with human evaluative assessments?",
+    "top_results": [
+      {
+        "corpusid": 227216975,
+        "score": 0.807602047920227,
+        "reason": "bm25=0.572; dense=0.965; sub_bm25=0.674; sub_dense=0.937"
+      },
+      {
+        "corpusid": 252089573,
+        "score": 0.7934466600418091,
+        "reason": "bm25=0.795; dense=0.792; sub_bm25=0.955; sub_dense=0.860"
+      },
+      {
+        "corpusid": 245855878,
+        "score": 0.7732598185539246,
+        "reason": "bm25=0.618; dense=0.877; sub_bm25=0.791; sub_dense=0.963"
+      },
+      {
+        "corpusid": 248780362,
+        "score": 0.7704342603683472,
+        "reason": "bm25=0.557; dense=0.912; sub_bm25=0.721; sub_dense=0.853"
+      },
+      {
+        "corpusid": 182952400,
+        "score": 0.7685849666595459,
+        "reason": "bm25=0.595; dense=0.884; sub_bm25=0.520; sub_dense=0.743"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "file_count": 1201,
+  "total_bytes": 25954254,
+  "included_reports": [
+    "m010",
+    "m010_diag",
+    "m010_smoke",
+    "m010_smoke2",
+    "m010_smoke_fast",
+    "m020",
+    "m030",
+    "m040",
+    "m050",
+    "m060",
+    "m070",
+    "m080",
+    "m090",
+    "m100",
+    "m110",
+    "m120",
+    "m130",
+    "m140",
+    "m150",
+    "m160",
+    "m170",
+    "m180"
+  ],
+  "excluded": [
+    "secrets",
+    ".omx",
+    ".omc",
+    "raw",
+    "cache",
+    "*.npy",
+    "*.parquet",
+    "*.zip"
+  ],
+  "public_tests": "tests/test_public_snapshot.py",
+  "full_local_test_evidence": "reports/m180/pytest.txt"
+}

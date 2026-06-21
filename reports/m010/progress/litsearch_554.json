@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_554",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_554",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_554",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_554",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1146,
+      "latency_s": 8.329062000033446
+    },
+    {
+      "query_id": "litsearch_554",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 3.202678000088781
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_554",
+    "gold": [
+      259108266
+    ],
+    "pool_size": 293,
+    "decomposition": [
+      "finetuned LLM as judge reliability",
+      "LLM-as-judge evaluation first paper",
+      "finetuned language model reliable judge"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        37012896,
+        53093808,
+        239890013,
+        2500356,
+        1312573,
+        12735028,
+        13907064,
+        45438237,
+        1458921,
+        7015571,
+        58740369,
+        197254,
+        17348676,
+        1402974,
+        7922144,
+        9923087,
+        12178716,
+        17931477,
+        17577978,
+        10627917
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        36448679,
+        259108266,
+        257636907,
+        258987298,
+        258461287,
+        263333921,
+        259095643,
+        256460989,
+        264406064,
+        238856973,
+        253098700,
+        250390474,
+        203593355,
+        263605851,
+        258865836,
+        248887549,
+        15187062,
+        247411224,
+        7081750,
+        259308864
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        220319558,
+        53081560,
+        252386170,
+        253628215,
+        7081750,
+        219307933,
+        8398654,
+        26419733,
+        253628220,
+        253244423,
+        259376479,
+        256460989,
+        12705175,
+        258463915,
+        235248187,
+        239020549,
+        3005460,
+        253802652,
+        118648396,
+        51623591
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        7081750
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        7081750,
+        256460989,
+        252386170,
+        253628215,
+        235248187,
+        259376479,
+        53081560,
+        8398654,
+        253628220,
+        5570804,
+        12705175,
+        253244423,
+        14512374,
+        233394205,
+        196199072,
+        220319558,
+        258463915,
+        259108266,
+        196182481,
+        253802652
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.408588299993426
+  },
+  "reason_example": {
+    "query_id": "litsearch_554",
+    "query": "What paper is the first to prove finetuned LLM can be a reliable judge?",
+    "top_results": [
+      {
+        "corpusid": 7081750,
+        "score": 0.9038751125335693,
+        "reason": "bm25=0.856; dense=0.936; sub_bm25=0.880; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256460989,
+        "score": 0.8562362194061279,
+        "reason": "bm25=0.889; dense=0.834; sub_bm25=0.921; sub_dense=0.772"
+      },
+      {
+        "corpusid": 252386170,
+        "score": 0.8470607995986938,
+        "reason": "bm25=0.652; dense=0.977; sub_bm25=0.906; sub_dense=0.865"
+      },
+      {
+        "corpusid": 253628215,
+        "score": 0.7681841850280762,
+        "reason": "bm25=0.478; dense=0.962; sub_bm25=0.000; sub_dense=0.750"
+      },
+      {
+        "corpusid": 235248187,
+        "score": 0.7646719217300415,
+        "reason": "bm25=0.689; dense=0.815; sub_bm25=0.527; sub_dense=0.730"
+      }
+    ]
+  }
+}

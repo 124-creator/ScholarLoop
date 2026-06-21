@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_241",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_241",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_241",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_241",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2528,
+      "latency_s": 18.287232500035316
+    },
+    {
+      "query_id": "litsearch_241",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 390,
+      "latency_s": 3.052231300040148
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_241",
+    "gold": [
+      253098758
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "neural language models syntactic surprisal human processing correlation",
+      "language model predictions human syntactic processing",
+      "surprisal theory neural network models psycholinguistics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        186206301,
+        1010309,
+        235358922,
+        17336955,
+        174803689,
+        10079196,
+        219300512,
+        6698479,
+        258378354,
+        3930720,
+        62323919,
+        12670725,
+        379633,
+        3073489,
+        666688,
+        8333909,
+        44177418,
+        218971966,
+        248299678,
+        47020134
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1323575,
+        9325240,
+        253098758,
+        235358922,
+        7234265,
+        47020134,
+        199566033,
+        10586665,
+        8333909,
+        227231063,
+        3915049,
+        849726,
+        3934380,
+        3112492,
+        222290491,
+        3931902,
+        3122088,
+        248780502,
+        248780384,
+        235097436
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11294949,
+        236460083,
+        8968011,
+        222290491,
+        72940921,
+        47020134,
+        2652169,
+        256627634,
+        6185167,
+        253270480,
+        253098758,
+        258486918,
+        52118297,
+        196210504,
+        202734477,
+        4460159,
+        222290667,
+        16240697,
+        226283903,
+        261341900
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253098758,
+        47020134,
+        222290491,
+        222377784,
+        258378354,
+        11294949,
+        236460083
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11294949,
+        253098758,
+        1323575,
+        47020134,
+        236460083,
+        222290491,
+        3915049,
+        196210504,
+        7234265,
+        222290667,
+        258486918,
+        9325240,
+        236460166,
+        8968011,
+        235358922,
+        2652169,
+        199566033,
+        72940921,
+        222377784,
+        53095955
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 23.63886549999006
+  },
+  "reason_example": {
+    "query_id": "litsearch_241",
+    "query": "Could you suggest research that investigates how neural language models' forecasts correlate with human linguistic processing, especially in terms of syntactic surprisal?",
+    "top_results": [
+      {
+        "corpusid": 11294949,
+        "score": 0.8829389810562134,
+        "reason": "bm25=0.707; dense=1.000; sub_bm25=1.000; sub_dense=0.916"
+      },
+      {
+        "corpusid": 253098758,
+        "score": 0.8662289381027222,
+        "reason": "bm25=0.951; dense=0.810; sub_bm25=1.000; sub_dense=0.888"
+      },
+      {
+        "corpusid": 1323575,
+        "score": 0.8568385243415833,
+        "reason": "bm25=1.000; dense=0.761; sub_bm25=0.988; sub_dense=0.934"
+      },
+      {
+        "corpusid": 47020134,
+        "score": 0.8553903102874756,
+        "reason": "bm25=0.859; dense=0.853; sub_bm25=0.920; sub_dense=0.931"
+      },
+      {
+        "corpusid": 236460083,
+        "score": 0.8521376848220825,
+        "reason": "bm25=0.772; dense=0.905; sub_bm25=0.736; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_150",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_150",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_150",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_150",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1569,
+      "latency_s": 11.174480900052004
+    },
+    {
+      "query_id": "litsearch_150",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.7334158000303432
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_150",
+    "gold": [
+      233296808,
+      230433941
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "prompt tuning catastrophic forgetting generalization",
+      "prompt tuning improves generalizability pretrained models",
+      "prompt tuning avoid catastrophic forgetting pre-trained models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259342087,
+        248780437,
+        239016577,
+        18460498,
+        259224492,
+        17524865,
+        202777169,
+        238582879,
+        234681927,
+        237558720,
+        258967945,
+        247594392,
+        259376583,
+        236477943,
+        238744065,
+        17153466,
+        70349945,
+        247446604,
+        9443164,
+        258378136
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        238582879,
+        247446604,
+        259203213,
+        249062610,
+        258079422,
+        248405974,
+        239016577,
+        259833855,
+        252780166,
+        238198383,
+        258967945,
+        222142503,
+        12730344,
+        259224492,
+        261530381,
+        252439170,
+        247292399,
+        220525308,
+        259370834,
+        262054014
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        262054014,
+        248780177,
+        256390383,
+        1916665,
+        253244504,
+        222133066,
+        247619066,
+        259203213,
+        226227476,
+        256868814,
+        53941707,
+        248693115,
+        12730344,
+        252815378,
+        237416760,
+        249097739,
+        252992469,
+        259833855,
+        55481903,
+        258967945
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256390383,
+        247446604,
+        248780177,
+        248405974,
+        259342087,
+        259833855,
+        238582879,
+        258967945,
+        262054014,
+        259203213,
+        259224492,
+        252780166
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        262054014,
+        238582879,
+        247446604,
+        259203213,
+        248780177,
+        259833855,
+        12730344,
+        256390383,
+        258967945,
+        259224492,
+        252780166,
+        248693115,
+        222133066,
+        226227476,
+        237452236,
+        220525308,
+        53941707,
+        247315450,
+        216553067,
+        256868814
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.244975300040096
+  },
+  "reason_example": {
+    "query_id": "litsearch_150",
+    "query": "Could you recommend research that analyses prompt tuning as a method to improve the generalizability of pre-trained models while avoiding catastrophic forgetting?",
+    "top_results": [
+      {
+        "corpusid": 262054014,
+        "score": 0.8928807973861694,
+        "reason": "bm25=0.732; dense=1.000; sub_bm25=0.774; sub_dense=1.000"
+      },
+      {
+        "corpusid": 238582879,
+        "score": 0.8440468311309814,
+        "reason": "bm25=1.000; dense=0.740; sub_bm25=0.907; sub_dense=0.736"
+      },
+      {
+        "corpusid": 247446604,
+        "score": 0.8233444690704346,
+        "reason": "bm25=0.980; dense=0.719; sub_bm25=1.000; sub_dense=0.858"
+      },
+      {
+        "corpusid": 259203213,
+        "score": 0.8096513748168945,
+        "reason": "bm25=0.831; dense=0.795; sub_bm25=0.688; sub_dense=0.795"
+      },
+      {
+        "corpusid": 248780177,
+        "score": 0.7920551300048828,
+        "reason": "bm25=0.717; dense=0.842; sub_bm25=0.993; sub_dense=1.000"
+      }
+    ]
+  }
+}

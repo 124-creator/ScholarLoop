@@ -1,0 +1,11 @@
+{
+  "status": "implemented_pending_review",
+  "wall_passed": true,
+  "query_count": 50,
+  "official_gold_count": 791,
+  "resolvable_gold_count": 739,
+  "unresolvable_gold_count": 52,
+  "primary_delta_f1": 0.09136378135549549,
+  "primary_passed": true,
+  "stop_reasons": []
+}

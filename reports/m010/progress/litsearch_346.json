@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_346",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_346",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_346",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_346",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1281,
+      "latency_s": 10.689968799939379
+    },
+    {
+      "query_id": "litsearch_346",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 368,
+      "latency_s": 3.3025495000183582
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_346",
+    "gold": [
+      250390500
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "instance-level uncertainty metrics active learning sample redundancy",
+      "only uncertainty sampling leads to redundancy active learning",
+      "limitations of instance-level uncertainty in active learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14824776,
+        19035533,
+        3258280,
+        215814371,
+        15667475,
+        298740,
+        3849958,
+        10360754,
+        51839897,
+        248863268,
+        5594021,
+        2812117,
+        184487889,
+        248266701,
+        15841279,
+        6790148,
+        1286260,
+        4303517,
+        201686118,
+        256358497
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14824776,
+        215814371,
+        227209515,
+        250390500,
+        235593405,
+        15672460,
+        248266701,
+        227461,
+        1731383,
+        256358497,
+        237442331,
+        235828923,
+        399489,
+        254974222,
+        52901322,
+        10575412,
+        202712831,
+        224724415,
+        51839897,
+        235742735
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9783945,
+        15672460,
+        201070265,
+        231719707,
+        182953134,
+        10575412,
+        237442331,
+        257050884,
+        256846841,
+        227209515,
+        232135338,
+        235828923,
+        14824776,
+        5594021,
+        12183141,
+        399489,
+        258486916,
+        1875594,
+        16263922,
+        235742735
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        227209515,
+        14824776,
+        215814371,
+        235593405,
+        15841279,
+        19035533,
+        5594021,
+        51839897,
+        1731383,
+        10575412,
+        399489,
+        15672460
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14824776,
+        15672460,
+        215814371,
+        10575412,
+        227209515,
+        237442331,
+        182953134,
+        235828923,
+        256846841,
+        231719707,
+        399489,
+        235742735,
+        257050884,
+        201070265,
+        256105559,
+        15146176,
+        5594021,
+        15841279,
+        202712831,
+        252595603
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.157626100000925
+  },
+  "reason_example": {
+    "query_id": "litsearch_346",
+    "query": "Which work shows that only emplying instance-level uncertainty metrics could results in sample redundancy in active learning?",
+    "top_results": [
+      {
+        "corpusid": 14824776,
+        "score": 0.894792914390564,
+        "reason": "bm25=1.000; dense=0.825; sub_bm25=1.000; sub_dense=0.826"
+      },
+      {
+        "corpusid": 15672460,
+        "score": 0.8633214235305786,
+        "reason": "bm25=0.689; dense=0.979; sub_bm25=0.913; sub_dense=1.000"
+      },
+      {
+        "corpusid": 215814371,
+        "score": 0.8353155851364136,
+        "reason": "bm25=0.897; dense=0.794; sub_bm25=0.945; sub_dense=0.824"
+      },
+      {
+        "corpusid": 10575412,
+        "score": 0.8091839551925659,
+        "reason": "bm25=0.640; dense=0.922; sub_bm25=0.921; sub_dense=0.913"
+      },
+      {
+        "corpusid": 227209515,
+        "score": 0.8062300682067871,
+        "reason": "bm25=0.762; dense=0.836; sub_bm25=1.000; sub_dense=0.850"
+      }
+    ]
+  }
+}

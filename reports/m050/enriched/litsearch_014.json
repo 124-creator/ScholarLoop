@@ -1,0 +1,645 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_014",
+  "query": "Can you point to studies or tasks focused on detecting patronizing and condescending language, particularly in contexts involving vulnerable communities?",
+  "criteria": [
+    "patronizing language detection vulnerable communities",
+    "condescending language recognition marginalized groups",
+    "detecting condescending speech vulnerable populations"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_014.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_014",
+      "corpusid": 250390607,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "SemEval-2022 Task 4: Patronizing and Condescending Language Detection",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            69
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Carla Perez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4287889344",
+            "fetched_at": "2026-06-20T00:18:58Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\7ae5157243dc895908f7b407.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.semeval-1.38; Source: Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022); OA: hybrid; Citations: 44",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4287889344",
+            "fetched_at": "2026-06-20T00:18:58Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\7ae5157243dc895908f7b407.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "This paper presents an overview of Task 4 at SemEval-2022, which was focused on detecting Patronizing and Condescending Language (PCL) towards vulnerable communities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            166
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "focused on detecting Patronizing and Condescending Language (PCL) towards vulnerable communities",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            69,
+            165
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Two sub-tasks were considered: a binary classification task, where participants needed to classify a given paragraph as containing PCL or not, and a multi-label classification task, where participants needed to identify which types of PCL are present (if any)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            167,
+            426
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "towards vulnerable communities",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            135,
+            165
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "summarize the main resulting insights about PCL detection and categorization",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            588,
+            664
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Two sub-tasks were considered: a binary classification task, where participants needed to classify a given paragraph as containing PCL or not, and a multi-label classification task, where participants needed to identify which types of PCL are present (if any).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            167,
+            427
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "detecting Patronizing and Condescending Language (PCL) towards vulnerable communities",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            80,
+            165
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1935,
+        "elapsed_s": 11.187858600053005,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_014_250390607.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4287889344",
+        "title": "SemEval-2022 Task 4: Patronizing and Condescending Language Detection",
+        "authors": [
+          "Carla Perez-Almendros",
+          "Luis Espinosa-Anke",
+          "Steven Schockaert"
+        ],
+        "year": 2022,
+        "venue": "Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)",
+        "doi": "10.18653/v1/2022.semeval-1.38",
+        "oa_status": "hybrid",
+        "citation_count": 44,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:58Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\7ae5157243dc895908f7b407.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "SemEval-2022 Task 4: Patronizing and Condescending Language Detection",
+          "candidate_title": "SemEval-2022 Task 4: Patronizing and Condescending Language Detection",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_014",
+      "corpusid": 226976077,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            115
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Carla Pérez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2020)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3104616942",
+            "fetched_at": "2026-06-20T00:19:01Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2a3fd3b32c27173a3dd106ba.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2011.08320; Source: arXiv (Cornell University); OA: green; Citations: 3",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3104616942",
+            "fetched_at": "2026-06-20T00:19:01Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2a3fd3b32c27173a3dd106ba.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we introduce a new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.g. refugees, homeless people, poor families).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            15,
+            263
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "identify and categorize language that is patronizing or condescending towards vulnerable communities",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            114,
+            214
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Our analysis of the proposed dataset shows that identifying PCL is hard for standard NLP models, with language models such as BERT achieving the best results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            653,
+            811
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.g. refugees, homeless people, poor families).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            30,
+            263
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "identifying PCL is hard for standard NLP models, with language models such as BERT achieving the best results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            701,
+            811
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "In this paper, we introduce a new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            115
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1433,
+        "elapsed_s": 6.780891199945472,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_014_226976077.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3104616942",
+        "title": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+        "authors": [
+          "Carla Pérez-Almendros",
+          "Luis Espinosa-Anke",
+          "Steven Schockaert"
+        ],
+        "year": 2020,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2011.08320",
+        "oa_status": "green",
+        "citation_count": 3,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:01Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\2a3fd3b32c27173a3dd106ba.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+          "candidate_title": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_014",
+      "corpusid": 250141213,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Pre-Training Language Models for Identifying Patronizing and Condescending Language: An Analysis",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            96
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Carla Perez Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W7160295793",
+            "fetched_at": "2026-06-20T00:19:02Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\f9bc28b11be4eba8ecdfc5f8.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/28828gdna3y2; Source: https://doi.org/10.63317/28828gdna3y2; OA: gold; Citations: 0",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W7160295793",
+            "fetched_at": "2026-06-20T00:19:02Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\f9bc28b11be4eba8ecdfc5f8.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Patronizing and Condescending Language (PCL) is a subtle but harmful type of discourse, yet the task of recognizing PCL remains under-studied by the NLP community.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            163
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we study to what extent PCL detection models can be improved by pre-training them on other, more established NLP tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            362,
+            481
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "pre-training them on other, more established NLP tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            426,
+            481
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "available datasets are limited in size",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            233,
+            271
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "performance gains are indeed possible in this way, in particular when pre-training on tasks focusing on sentiment, harmful language and commonsense morality.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            495,
+            652
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "available datasets are limited in size",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            233,
+            271
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Pre-Training Language Models for Identifying Patronizing and Condescending Language",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            83
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2189,
+        "elapsed_s": 13.44981519994326,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_014_250141213.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W7160295793",
+        "title": "Pre-Training Language Models for Identifying Patronizing and Condescending Language: An Analysis",
+        "authors": [
+          "Carla Perez Almendros",
+          "Luis Espinosa-Anke",
+          "Steven Schockaert"
+        ],
+        "year": 2022,
+        "venue": "https://doi.org/10.63317/28828gdna3y2",
+        "doi": "10.63317/28828gdna3y2",
+        "oa_status": "gold",
+        "citation_count": 0,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:02Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\f9bc28b11be4eba8ecdfc5f8.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Pre-Training Language Models for Identifying Patronizing and Condescending Language: An Analysis",
+          "candidate_title": "Pre-Training Language Models for Identifying Patronizing and Condescending Language: An Analysis",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 250390607,
+      "title": "SemEval-2022 Task 4: Patronizing and Condescending Language Detection",
+      "cells": [
+        {
+          "criterion": "patronizing language detection vulnerable communities",
+          "addresses": true,
+          "snippet": "This paper presents an overview of Task 4 at SemEval-2022, which was focused on detecting Patronizing and Condescending Language (PCL) towards vulnerable communities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            166
+          ]
+        },
+        {
+          "criterion": "condescending language recognition marginalized groups",
+          "addresses": true,
+          "snippet": "This paper presents an overview of Task 4 at SemEval-2022, which was focused on detecting Patronizing and Condescending Language (PCL) towards vulnerable communities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            166
+          ]
+        },
+        {
+          "criterion": "detecting condescending speech vulnerable populations",
+          "addresses": true,
+          "snippet": "This paper presents an overview of Task 4 at SemEval-2022, which was focused on detecting Patronizing and Condescending Language (PCL) towards vulnerable communities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            166
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 226976077,
+      "title": "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities",
+      "cells": [
+        {
+          "criterion": "patronizing language detection vulnerable communities",
+          "addresses": true,
+          "snippet": "In this paper, we introduce a new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        },
+        {
+          "criterion": "condescending language recognition marginalized groups",
+          "addresses": true,
+          "snippet": "In this paper, we introduce a new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        },
+        {
+          "criterion": "detecting condescending speech vulnerable populations",
+          "addresses": true,
+          "snippet": "In this paper, we introduce a new annotated dataset which is aimed at supporting the development of NLP models to identify and categorize language that is patronizing or condescending towards vulnerable communities (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 250141213,
+      "title": "Pre-Training Language Models for Identifying Patronizing and Condescending Language: An Analysis",
+      "cells": [
+        {
+          "criterion": "patronizing language detection vulnerable communities",
+          "addresses": true,
+          "snippet": "Patronizing and Condescending Language (PCL) is a subtle but harmful type of discourse, yet the task of recognizing PCL remains under-studied by the NLP community.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            163
+          ]
+        },
+        {
+          "criterion": "condescending language recognition marginalized groups",
+          "addresses": true,
+          "snippet": "Patronizing and Condescending Language (PCL) is a subtle but harmful type of discourse, yet the task of recognizing PCL remains under-studied by the NLP community.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            163
+          ]
+        },
+        {
+          "criterion": "detecting condescending speech vulnerable populations",
+          "addresses": true,
+          "snippet": "Patronizing and Condescending Language (PCL) is a subtle but harmful type of discourse, yet the task of recognizing PCL remains under-studied by the NLP community.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            163
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      226976077,
+      250141213,
+      250390607
+    ],
+    "edges": [
+      {
+        "source": 250390607,
+        "target": 226976077
+      },
+      {
+        "source": 250141213,
+        "target": 226976077
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

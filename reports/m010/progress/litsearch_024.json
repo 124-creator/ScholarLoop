@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_024",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_024",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_024",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_024",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1392,
+      "latency_s": 9.464606199995615
+    },
+    {
+      "query_id": "litsearch_024",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 252,
+      "latency_s": 2.348888300010003
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_024",
+    "gold": [
+      210838924
+    ],
+    "pool_size": 241,
+    "decomposition": [
+      "prompt fine-tuning semi-supervised learning natural language understanding",
+      "semi-supervised prompt tuning NLU",
+      "prompt-based semi-supervised learning for text classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7539145,
+        186206208,
+        30488100,
+        7591554,
+        15204692,
+        259833809,
+        219124482,
+        13170584,
+        15605878,
+        233029500,
+        250391006,
+        226283830,
+        243865412,
+        85464175,
+        243865402,
+        1729543,
+        2718695,
+        219307312,
+        1580295,
+        1144073
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259833809,
+        248779986,
+        253761978,
+        239016577,
+        248366286,
+        237452236,
+        236912915,
+        248506201,
+        258959304,
+        256461030,
+        248084930,
+        221761685,
+        226262238,
+        243865412,
+        249017865,
+        248405974,
+        262054014,
+        252780166,
+        248780177,
+        259833855
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248779986,
+        257038347,
+        237452662,
+        237416760,
+        248780177,
+        259833809,
+        248084930,
+        257038392,
+        252519660,
+        264426355,
+        237532411,
+        252089424,
+        259370687,
+        247447170,
+        235652287,
+        258041372,
+        256461393,
+        226222232,
+        229923710,
+        241033259
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        257038347
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248779986,
+        259833809,
+        253761978,
+        248780177,
+        248084930,
+        237452236,
+        257038347,
+        239016577,
+        248366286,
+        229923710,
+        236912915,
+        256461030,
+        243865402,
+        252089424,
+        237416760,
+        248506201,
+        1729543,
+        30368763,
+        252847501,
+        256900985
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.213099100044928
+  },
+  "reason_example": {
+    "query_id": "litsearch_024",
+    "query": "Can you suggest recent studies that have integrated prompt fine-tuning into semi-supervised learning workflows for natural language understanding tasks?",
+    "top_results": [
+      {
+        "corpusid": 248779986,
+        "score": 0.9822307825088501,
+        "reason": "bm25=0.956; dense=1.000; sub_bm25=0.813; sub_dense=0.944"
+      },
+      {
+        "corpusid": 259833809,
+        "score": 0.9581670761108398,
+        "reason": "bm25=1.000; dense=0.930; sub_bm25=0.859; sub_dense=0.801"
+      },
+      {
+        "corpusid": 253761978,
+        "score": 0.8923665285110474,
+        "reason": "bm25=0.939; dense=0.861; sub_bm25=0.999; sub_dense=0.700"
+      },
+      {
+        "corpusid": 248780177,
+        "score": 0.8885195255279541,
+        "reason": "bm25=0.822; dense=0.933; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248084930,
+        "score": 0.8882923722267151,
+        "reason": "bm25=0.839; dense=0.921; sub_bm25=0.928; sub_dense=0.850"
+      }
+    ]
+  }
+}

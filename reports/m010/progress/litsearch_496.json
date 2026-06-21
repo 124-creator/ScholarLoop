@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_496",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_496",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_496",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_496",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 899,
+      "latency_s": 4.210021800012328
+    },
+    {
+      "query_id": "litsearch_496",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 344,
+      "latency_s": 3.1007455999497324
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_496",
+    "gold": [
+      259370520
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "\"targeted training data extraction\" privacy attack",
+      "\"extracting training data\" neural networks first paper",
+      "early targeted model inversion attack"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        19674199,
+        21022858,
+        20209175,
+        38324728,
+        53222920,
+        29169306,
+        5209776,
+        7102676,
+        14478849,
+        252624581,
+        26645651,
+        236459836,
+        13350236,
+        543369,
+        203688452,
+        233029490,
+        11300640,
+        19987797,
+        251623168,
+        11846745
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        220045125,
+        259370520,
+        184482940,
+        10482640,
+        44163645,
+        19674199,
+        2391734,
+        218613972,
+        216641773,
+        26645651,
+        251465142,
+        17707860,
+        5209776,
+        184483086,
+        5828698,
+        259370795,
+        18176126,
+        237366368,
+        196178503,
+        18635274
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        196019,
+        5195887,
+        14800475,
+        12422320,
+        6551679,
+        11706793,
+        6083197,
+        110538282,
+        219308172,
+        3176893,
+        559683,
+        12134560,
+        115914779,
+        10799660,
+        1194739,
+        1400165,
+        1441185,
+        216641773,
+        1851959,
+        13525347
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        216641773,
+        10482640,
+        44163645,
+        12134560,
+        115914779,
+        2938247,
+        2391734,
+        1291519,
+        219308172,
+        11706793,
+        3254638,
+        14817314,
+        2407879,
+        182952938,
+        14968425,
+        1453540,
+        35207135,
+        220045125,
+        2473942,
+        1701627
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.183504899963737
+  },
+  "reason_example": {
+    "query_id": "litsearch_496",
+    "query": "Which papers were among the first to explore the task of targeted training data extraction?",
+    "top_results": [
+      {
+        "corpusid": 216641773,
+        "score": 0.9077298641204834,
+        "reason": "bm25=0.949; dense=0.880; sub_bm25=0.650; sub_dense=0.946"
+      },
+      {
+        "corpusid": 10482640,
+        "score": 0.8886688947677612,
+        "reason": "bm25=0.966; dense=0.837; sub_bm25=0.314; sub_dense=0.775"
+      },
+      {
+        "corpusid": 44163645,
+        "score": 0.8730966448783875,
+        "reason": "bm25=0.965; dense=0.812; sub_bm25=0.599; sub_dense=0.708"
+      },
+      {
+        "corpusid": 12134560,
+        "score": 0.8656400442123413,
+        "reason": "bm25=0.818; dense=0.897; sub_bm25=0.277; sub_dense=0.712"
+      },
+      {
+        "corpusid": 115914779,
+        "score": 0.862671971321106,
+        "reason": "bm25=0.818; dense=0.892; sub_bm25=0.208; sub_dense=0.761"
+      }
+    ]
+  }
+}

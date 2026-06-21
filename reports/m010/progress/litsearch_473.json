@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_473",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_473",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_473",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_473",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 793,
+      "latency_s": 3.6386997000081465
+    },
+    {
+      "query_id": "litsearch_473",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 406,
+      "latency_s": 3.6285057000350207
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_473",
+    "gold": [
+      258832883
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "early work sign language translation using large-scale online video subtitle pairs",
+      "first sign language recognition from YouTube subtitles",
+      "pioneering sign language dataset from internet videos with subtitles"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        26889702,
+        10496324,
+        260063173,
+        1588267,
+        2251088,
+        2607493,
+        28550367,
+        1412569,
+        6945479,
+        1708411,
+        2106657,
+        393421,
+        323451,
+        2302063,
+        226283654,
+        6124685,
+        8765117,
+        15937393,
+        7550493,
+        21869081
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1588267,
+        251265038,
+        15766667,
+        29180066,
+        36952284,
+        259376805,
+        10496324,
+        258309620,
+        250121189,
+        238634536,
+        253384454,
+        253762047,
+        227231418,
+        53080252,
+        11529003,
+        7971358,
+        1263341,
+        35296395,
+        59336862,
+        252819331
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251435546,
+        252624654,
+        801130,
+        7120486,
+        535622,
+        252624777,
+        6186855,
+        34427362,
+        252125671,
+        258960455,
+        29180066,
+        42950632,
+        249204537,
+        33295819,
+        922538,
+        249204415,
+        254994143,
+        252624440,
+        18508139,
+        41413360
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        249062667
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        29180066,
+        7120486,
+        251435546,
+        252624654,
+        801130,
+        6186855,
+        535622,
+        10496324,
+        33295819,
+        249062667,
+        252125671,
+        1588267,
+        42950632,
+        211133237,
+        214794987,
+        15270867,
+        34427362,
+        252624756,
+        219303000,
+        252624755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.603430100018159
+  },
+  "reason_example": {
+    "query_id": "litsearch_473",
+    "query": "Which paper is among the earliest to train on extensive collection of signing video and subtitle pairs available from online platforms?",
+    "top_results": [
+      {
+        "corpusid": 29180066,
+        "score": 0.902717113494873,
+        "reason": "bm25=0.906; dense=0.900; sub_bm25=0.643; sub_dense=0.727"
+      },
+      {
+        "corpusid": 7120486,
+        "score": 0.8996299505233765,
+        "reason": "bm25=0.763; dense=0.990; sub_bm25=0.800; sub_dense=0.982"
+      },
+      {
+        "corpusid": 251435546,
+        "score": 0.8931386470794678,
+        "reason": "bm25=0.733; dense=1.000; sub_bm25=0.620; sub_dense=0.866"
+      },
+      {
+        "corpusid": 252624654,
+        "score": 0.8931386470794678,
+        "reason": "bm25=0.733; dense=1.000; sub_bm25=0.620; sub_dense=0.866"
+      },
+      {
+        "corpusid": 801130,
+        "score": 0.8910655379295349,
+        "reason": "bm25=0.738; dense=0.993; sub_bm25=0.637; sub_dense=0.903"
+      }
+    ]
+  }
+}

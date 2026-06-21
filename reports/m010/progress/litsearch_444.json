@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_444",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_444",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_444",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_444",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 982,
+      "latency_s": 6.340676599997096
+    },
+    {
+      "query_id": "litsearch_444",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 338,
+      "latency_s": 2.6170973000116646
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_444",
+    "gold": [
+      258841145
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "chain-of-thought text summarization first paper",
+      "chain-of-thought prompting summarization initial work",
+      "CoT summarization original paper"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5213689,
+        12405045,
+        9025428,
+        562554,
+        1420479,
+        33742593,
+        14263284,
+        2630663,
+        2100529,
+        6077317,
+        16041559,
+        16418952,
+        38964517,
+        18065622,
+        15399459,
+        704114,
+        2055088,
+        196180835,
+        2106657,
+        2143884
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        704114,
+        258841145,
+        247595263,
+        259376724,
+        6797823,
+        3875737,
+        254823156,
+        11818253,
+        252693237,
+        196180835,
+        252735112,
+        254877569,
+        604475,
+        258463946,
+        37893133,
+        245616869,
+        53046735,
+        15548746,
+        16188305,
+        14263284
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1465750,
+        94818,
+        5607967,
+        81603,
+        5523893,
+        13068050,
+        11944261,
+        6767366,
+        12238390,
+        6122207,
+        11680756,
+        233189611,
+        16372881,
+        17557921,
+        12968935,
+        17228952,
+        15714062,
+        1320,
+        258378335,
+        202741107
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5607967,
+        704114,
+        13068050,
+        81603,
+        6797823,
+        6122207,
+        6767366,
+        11944261,
+        12238390,
+        1026180,
+        10275988,
+        11664367,
+        233189611,
+        7737976,
+        15342371,
+        202741107,
+        16232037,
+        8437725,
+        12968935,
+        1843005
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.833596699987538
+  },
+  "reason_example": {
+    "query_id": "litsearch_444",
+    "query": "Which paper first applied the chain-of-thought technique in the text summarization field?",
+    "top_results": [
+      {
+        "corpusid": 5607967,
+        "score": 0.8949324488639832,
+        "reason": "bm25=0.790; dense=0.965; sub_bm25=0.690; sub_dense=0.961"
+      },
+      {
+        "corpusid": 704114,
+        "score": 0.8927093148231506,
+        "reason": "bm25=1.000; dense=0.821; sub_bm25=0.880; sub_dense=0.836"
+      },
+      {
+        "corpusid": 13068050,
+        "score": 0.8921301364898682,
+        "reason": "bm25=0.804; dense=0.951; sub_bm25=0.721; sub_dense=0.964"
+      },
+      {
+        "corpusid": 81603,
+        "score": 0.8539152145385742,
+        "reason": "bm25=0.701; dense=0.956; sub_bm25=0.474; sub_dense=0.891"
+      },
+      {
+        "corpusid": 6797823,
+        "score": 0.8529485464096069,
+        "reason": "bm25=0.896; dense=0.824; sub_bm25=0.533; sub_dense=0.847"
+      }
+    ]
+  }
+}

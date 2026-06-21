@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_162",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_162",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_162",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_162",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 999,
+      "latency_s": 6.098764700000174
+    },
+    {
+      "query_id": "litsearch_162",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 226,
+      "latency_s": 1.9560962999239564
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_162",
+    "gold": [
+      233296494
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "example sequencing impact few-shot learning performance",
+      "order of examples influence few-shot model accuracy",
+      "sequence of training examples few-shot learning efficacy"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        33548672,
+        30908728,
+        254877171,
+        908030,
+        18995018,
+        252763288,
+        252763330,
+        51878325,
+        9526061,
+        3740285,
+        12405045,
+        21166550,
+        21547774,
+        259833814,
+        6456225,
+        248780137,
+        258486963,
+        51918763,
+        2245732,
+        248722157
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780145,
+        243865653,
+        238408406,
+        238408300,
+        216080986,
+        257206086,
+        258041372,
+        236478383,
+        252816059,
+        227231868,
+        250607486,
+        243865172,
+        237532321,
+        256460948,
+        235652287,
+        238856821,
+        196173298,
+        254877171,
+        240419611,
+        248118703
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202888950,
+        71145737,
+        232240622,
+        237091103,
+        236956577,
+        248228003,
+        235652287,
+        3507990,
+        259164846,
+        235313574,
+        218596002,
+        49868626,
+        202230734,
+        252280753,
+        252992469,
+        243865676,
+        252222346,
+        248780567,
+        202712906,
+        207847274
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        220424770
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202888950,
+        235652287,
+        258041372,
+        71145737,
+        238408300,
+        257206086,
+        250607486,
+        238856821,
+        202230734,
+        235313574,
+        256460948,
+        259164846,
+        220424770,
+        253475828,
+        238408406,
+        216080986,
+        248780145,
+        248118703,
+        232240622,
+        243865653
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.636688999948092
+  },
+  "reason_example": {
+    "query_id": "litsearch_162",
+    "query": "Could you recommend research that examines the effect of example sequencing on machine learning model efficacy in few-shot learning scenarios?",
+    "top_results": [
+      {
+        "corpusid": 202888950,
+        "score": 0.9031018018722534,
+        "reason": "bm25=0.758; dense=1.000; sub_bm25=0.961; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235652287,
+        "score": 0.8835257291793823,
+        "reason": "bm25=0.894; dense=0.876; sub_bm25=0.848; sub_dense=0.916"
+      },
+      {
+        "corpusid": 258041372,
+        "score": 0.8764975070953369,
+        "reason": "bm25=0.916; dense=0.850; sub_bm25=0.739; sub_dense=0.862"
+      },
+      {
+        "corpusid": 71145737,
+        "score": 0.873517632484436,
+        "reason": "bm25=0.719; dense=0.976; sub_bm25=0.876; sub_dense=0.956"
+      },
+      {
+        "corpusid": 238408300,
+        "score": 0.8710304498672485,
+        "reason": "bm25=0.952; dense=0.817; sub_bm25=0.913; sub_dense=0.901"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_434",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_434",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_434",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_434",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1242,
+      "latency_s": 7.500188200036064
+    },
+    {
+      "query_id": "litsearch_434",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 269,
+      "latency_s": 2.33454830001574
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_434",
+    "gold": [
+      251710245
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "knowledge graph completion memory efficient feature pruning",
+      "knowledge graph completion lightweight sparse features",
+      "knowledge graph completion reduce memory pruning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18868491,
+        251710245,
+        9142373,
+        14554263,
+        10661378,
+        260734865,
+        260735195,
+        261283932,
+        261509211,
+        262318946,
+        16485372,
+        5679499,
+        52076072,
+        259833818,
+        3144218,
+        30963769,
+        14170854,
+        13907064,
+        51991797,
+        6242473
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        251710245,
+        14554263,
+        248085410,
+        235421836,
+        252873220,
+        14170854,
+        196206886,
+        252367868,
+        233297003,
+        257219743,
+        235097561,
+        252819398,
+        259370667,
+        13475624,
+        16484912,
+        221970688,
+        202237123,
+        221090697,
+        256616217,
+        13266502
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251710245,
+        207852450,
+        140116781,
+        196206886,
+        14554263,
+        221090697,
+        202777324,
+        241583556,
+        236459932,
+        252367868,
+        258947197,
+        59316623,
+        51984717,
+        221738987,
+        227231162,
+        252284039,
+        243865621,
+        221970688,
+        256461412,
+        258378211
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        251710245
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        251710245,
+        14554263,
+        196206886,
+        221090697,
+        252367868,
+        202777324,
+        207852450,
+        221738987,
+        14170854,
+        221970688,
+        248085410,
+        235421836,
+        235097561,
+        140116781,
+        16484912,
+        227231162,
+        258841813,
+        252284039,
+        256461412,
+        259370784
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.81935520004481
+  },
+  "reason_example": {
+    "query_id": "litsearch_434",
+    "query": "Which knowledge graph completion method focuses on reducing memory usage by pruning features?",
+    "top_results": [
+      {
+        "corpusid": 251710245,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14554263,
+        "score": 0.8785791397094727,
+        "reason": "bm25=0.812; dense=0.923; sub_bm25=1.000; sub_dense=0.992"
+      },
+      {
+        "corpusid": 196206886,
+        "score": 0.8557087182998657,
+        "reason": "bm25=0.749; dense=0.927; sub_bm25=0.877; sub_dense=0.943"
+      },
+      {
+        "corpusid": 221090697,
+        "score": 0.8163748979568481,
+        "reason": "bm25=0.677; dense=0.909; sub_bm25=0.905; sub_dense=0.967"
+      },
+      {
+        "corpusid": 252367868,
+        "score": 0.8144753575325012,
+        "reason": "bm25=0.740; dense=0.864; sub_bm25=0.840; sub_dense=0.919"
+      }
+    ]
+  }
+}

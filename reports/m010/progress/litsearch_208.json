@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_208",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_208",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_208",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_208",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1020,
+      "latency_s": 5.224443300045095
+    },
+    {
+      "query_id": "litsearch_208",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 378,
+      "latency_s": 2.932797299930826
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_208",
+    "gold": [
+      236460230
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "fine-grained hate speech detection at phrase or token level",
+      "identifying hateful spans in sentences for content moderation",
+      "sub-sentence hateful expression detection for sentence-level standardization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13282731,
+        230349190,
+        8287503,
+        2423990,
+        14199087,
+        18751045,
+        219305230,
+        1639660,
+        6215504,
+        237592943,
+        9072431,
+        2470574,
+        27661257,
+        245877546,
+        1925205,
+        5659368,
+        44121293,
+        14775851,
+        14839256,
+        10031131
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        230349190,
+        256461095,
+        257038107,
+        258959384,
+        53083054,
+        250390661,
+        236486134,
+        237592943,
+        237048417,
+        9072431,
+        1925205,
+        10031131,
+        248780437,
+        207996257,
+        201703375,
+        7861345,
+        236486113,
+        222290588,
+        15114694,
+        259370629
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390661,
+        259376682,
+        215548382,
+        236486132,
+        252847467,
+        256460907,
+        258378158,
+        248427054,
+        233210607,
+        19182892,
+        218973764,
+        1721388,
+        252819068,
+        226283547,
+        258486956,
+        12477446,
+        196188987,
+        252624736,
+        258378311,
+        21689549
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258378311,
+        258959384,
+        250390661,
+        202895301,
+        258486956
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390661,
+        257038107,
+        256461095,
+        258959384,
+        215548382,
+        258378311,
+        263609408,
+        258486956,
+        253018845,
+        237048417,
+        258378158,
+        1721388,
+        256194379,
+        235097628,
+        201703375,
+        202895301,
+        259376682,
+        253762090,
+        256460907,
+        250144216
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.682473100023344
+  },
+  "reason_example": {
+    "query_id": "litsearch_208",
+    "query": "Could you suggest research that concentrates on pinpointing sentence components that carry hateful expressions, potentially aiding in sentence-level standardization for content moderation?",
+    "top_results": [
+      {
+        "corpusid": 250390661,
+        "score": 0.9580065011978149,
+        "reason": "bm25=0.895; dense=1.000; sub_bm25=0.645; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257038107,
+        "score": 0.9121115207672119,
+        "reason": "bm25=0.992; dense=0.859; sub_bm25=1.000; sub_dense=0.874"
+      },
+      {
+        "corpusid": 256461095,
+        "score": 0.8792846202850342,
+        "reason": "bm25=0.997; dense=0.801; sub_bm25=0.802; sub_dense=0.873"
+      },
+      {
+        "corpusid": 258959384,
+        "score": 0.8712596297264099,
+        "reason": "bm25=0.971; dense=0.805; sub_bm25=0.652; sub_dense=0.792"
+      },
+      {
+        "corpusid": 215548382,
+        "score": 0.8617429733276367,
+        "reason": "bm25=0.690; dense=0.976; sub_bm25=0.465; sub_dense=0.902"
+      }
+    ]
+  }
+}

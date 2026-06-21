@@ -1,0 +1,17 @@
+{
+  "schema_version": "m100.graph_fidelity.v1",
+  "status": "PASS",
+  "fabrication": 0,
+  "failures": [],
+  "source_paths": {
+    "m070_gaps_display": "reports\\m070\\gaps_display.json",
+    "m020_evidence_dir": "reports\\m020\\evidence"
+  },
+  "node_count": 25,
+  "edge_count": 50,
+  "checked": {
+    "nodes_equal_m070_concept_nodes": true,
+    "edges_equal_m070_matrix_edges": true,
+    "m020_evidence_sources_equal": true
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_538",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_538",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_538",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_538",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1336,
+      "latency_s": 9.120403700042516
+    },
+    {
+      "query_id": "litsearch_538",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 262,
+      "latency_s": 2.8457231000065804
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_538",
+    "gold": [
+      263609164
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "data collected in bundles reinforcement learning",
+      "batch reinforcement learning data collection",
+      "reinforcement learning bundled data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        243865348,
+        235482360,
+        5097820,
+        7440991,
+        8368494,
+        11158443,
+        51985896,
+        11637114,
+        12349789,
+        36574384,
+        12405045,
+        261494441,
+        10357166,
+        202712637,
+        6559235,
+        7966473,
+        13968505,
+        248779964,
+        15302622,
+        14445929
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        199532063,
+        252682980,
+        247476396,
+        15551089,
+        11637114,
+        53081211,
+        249625698,
+        258486924,
+        231861903,
+        233296243,
+        225039786,
+        249152222,
+        1989432,
+        248227500,
+        226281876,
+        235742951,
+        235377459,
+        247778993,
+        246679865,
+        253107613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53215593,
+        10419594,
+        3461154,
+        264802502,
+        261706069,
+        238408056,
+        118696157,
+        10458880,
+        245334837,
+        20864422,
+        238634325,
+        236493649,
+        233181840,
+        252780137,
+        209832300,
+        258426655,
+        13748235,
+        245117682,
+        259360601,
+        251719318
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231861903,
+        257232713,
+        252682980,
+        246679865,
+        247476396,
+        248227500,
+        235377459,
+        53215593,
+        235742951,
+        15551089,
+        12203802,
+        243865348
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        53215593,
+        3461154,
+        238408056,
+        238634325,
+        247476396,
+        233181840,
+        252682980,
+        225068784,
+        225039786,
+        252780137,
+        235742951,
+        257232713,
+        209832300,
+        264802502,
+        251719318,
+        245334837,
+        12203802,
+        56177829,
+        10458880,
+        253107613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.772233200026676
+  },
+  "reason_example": {
+    "query_id": "litsearch_538",
+    "query": "What is a paper studying data being collected in bundles in reinforcement learning ?",
+    "top_results": [
+      {
+        "corpusid": 53215593,
+        "score": 0.9202086925506592,
+        "reason": "bm25=0.801; dense=1.000; sub_bm25=0.731; sub_dense=0.950"
+      },
+      {
+        "corpusid": 3461154,
+        "score": 0.863904595375061,
+        "reason": "bm25=0.672; dense=0.992; sub_bm25=0.617; sub_dense=0.999"
+      },
+      {
+        "corpusid": 238408056,
+        "score": 0.8555881977081299,
+        "reason": "bm25=0.705; dense=0.956; sub_bm25=0.663; sub_dense=0.940"
+      },
+      {
+        "corpusid": 238634325,
+        "score": 0.8489593267440796,
+        "reason": "bm25=0.711; dense=0.941; sub_bm25=0.769; sub_dense=0.990"
+      },
+      {
+        "corpusid": 247476396,
+        "score": 0.84683758020401,
+        "reason": "bm25=0.861; dense=0.838; sub_bm25=0.969; sub_dense=0.838"
+      }
+    ]
+  }
+}

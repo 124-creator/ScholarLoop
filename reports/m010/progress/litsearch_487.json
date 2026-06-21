@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_487",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_487",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_487",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_487",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2100,
+      "latency_s": 13.872252900036983
+    },
+    {
+      "query_id": "litsearch_487",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 283,
+      "latency_s": 2.345862500020303
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_487",
+    "gold": [
+      256868814
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "training instabilities language models assessment levels",
+      "training stability analysis large language models multi-level",
+      "evaluating training dynamics language model instabilities"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8752606,
+        199022672,
+        554151,
+        32959350,
+        21711611,
+        2840902,
+        21702338,
+        2038851,
+        13160233,
+        237433536,
+        49210174,
+        5981377,
+        195063864,
+        6594741,
+        52008989,
+        7896774,
+        8517763,
+        16248365,
+        38405135,
+        253762073
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        262824542,
+        201676778,
+        46937952,
+        14900300,
+        13086372,
+        195063864,
+        236459811,
+        253080367,
+        250150803,
+        4940347,
+        5134380,
+        11379865,
+        233029479,
+        6016956,
+        45598818,
+        14231310,
+        6594741,
+        9691480,
+        226283813,
+        250390646
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253762079,
+        15449152,
+        251594643,
+        233365297,
+        2809637,
+        9955187,
+        249892255,
+        250390646,
+        9372411,
+        17518705,
+        260899983,
+        248368718,
+        45598818,
+        253762003,
+        247613500,
+        252819451,
+        13848633,
+        1662042,
+        18697469,
+        253762005
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        251594643,
+        17934328,
+        2938773,
+        9691480,
+        14761787,
+        245855668,
+        250390646,
+        14900300,
+        9372411,
+        45598818,
+        250150803,
+        21702338
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390646,
+        45598818,
+        251594643,
+        9691480,
+        14761787,
+        14900300,
+        2938773,
+        253080367,
+        13086372,
+        233365297,
+        245855668,
+        18697469,
+        9955187,
+        250150803,
+        249892255,
+        9372411,
+        258378362,
+        2809637,
+        253762003,
+        262824542
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.14090939995367
+  },
+  "reason_example": {
+    "query_id": "litsearch_487",
+    "query": "Which paper shows assessment of training instabilities at different levels for language models?",
+    "top_results": [
+      {
+        "corpusid": 250390646,
+        "score": 0.8884377479553223,
+        "reason": "bm25=0.755; dense=0.978; sub_bm25=0.625; sub_dense=0.916"
+      },
+      {
+        "corpusid": 45598818,
+        "score": 0.8685083389282227,
+        "reason": "bm25=0.769; dense=0.935; sub_bm25=0.496; sub_dense=0.833"
+      },
+      {
+        "corpusid": 251594643,
+        "score": 0.8485772609710693,
+        "reason": "bm25=0.632; dense=0.993; sub_bm25=0.536; sub_dense=0.892"
+      },
+      {
+        "corpusid": 9691480,
+        "score": 0.8370132446289062,
+        "reason": "bm25=0.761; dense=0.888; sub_bm25=0.499; sub_dense=0.840"
+      },
+      {
+        "corpusid": 14761787,
+        "score": 0.8322744369506836,
+        "reason": "bm25=0.713; dense=0.912; sub_bm25=0.582; sub_dense=0.914"
+      }
+    ]
+  }
+}

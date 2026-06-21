@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_596",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_596",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_596",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_596",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 886,
+      "latency_s": 4.021548799937591
+    },
+    {
+      "query_id": "litsearch_596",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 648,
+      "latency_s": 7.339706500060856
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_596",
+    "gold": [
+      261276856
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "systematic examination input mismatch between training and sampling in diffusion models",
+      "diffusion model training and sampling input mismatch analysis",
+      "study of input distribution shift in diffusion models from training to sampling"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        479222,
+        10724165,
+        6124685,
+        261276856,
+        554151,
+        16418952,
+        21711611,
+        3193864,
+        17611516,
+        3926837,
+        9163485,
+        36965648,
+        236477566,
+        11741466,
+        9655643,
+        2499521,
+        13292908,
+        37342723,
+        203593433,
+        204790835
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        261276856,
+        248476097,
+        260091821,
+        252815987,
+        245144350,
+        252596252,
+        261682404,
+        263909446,
+        214802971,
+        235254145,
+        252734897,
+        263334587,
+        258833483,
+        257220165,
+        256900618,
+        247763065,
+        259937490,
+        264426451,
+        261697392,
+        261582259
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261276856,
+        248476097,
+        263909446,
+        256390009,
+        256846467,
+        249626510,
+        256459906,
+        246016304,
+        256662277,
+        246823323,
+        252438904,
+        261682404,
+        264172506,
+        246863713,
+        259316542,
+        256846836,
+        258557287,
+        238198403,
+        244117259,
+        256231177
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        261276856,
+        252815987,
+        246823323,
+        260091821,
+        247763065,
+        222140788,
+        248476097,
+        252596252,
+        249626510,
+        263909446
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        261276856,
+        248476097,
+        263909446,
+        261682404,
+        249626510,
+        256390009,
+        252815987,
+        252596252,
+        246823323,
+        256459906,
+        257220165,
+        260091821,
+        258557287,
+        256846467,
+        256662277,
+        222140788,
+        238198403,
+        264172506,
+        256231177,
+        252734897
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.499742899904959
+  },
+  "reason_example": {
+    "query_id": "litsearch_596",
+    "query": "Which paper systematically examed the input mismatch between training and sampling in diffusion models",
+    "top_results": [
+      {
+        "corpusid": 261276856,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248476097,
+        "score": 0.7843310832977295,
+        "reason": "bm25=0.688; dense=0.848; sub_bm25=0.845; sub_dense=0.901"
+      },
+      {
+        "corpusid": 263909446,
+        "score": 0.7491903305053711,
+        "reason": "bm25=0.607; dense=0.844; sub_bm25=0.787; sub_dense=0.859"
+      },
+      {
+        "corpusid": 261682404,
+        "score": 0.7027952671051025,
+        "reason": "bm25=0.615; dense=0.762; sub_bm25=0.873; sub_dense=0.814"
+      },
+      {
+        "corpusid": 249626510,
+        "score": 0.7003914713859558,
+        "reason": "bm25=0.552; dense=0.799; sub_bm25=0.796; sub_dense=0.858"
+      }
+    ]
+  }
+}

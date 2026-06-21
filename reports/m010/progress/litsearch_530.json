@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_530",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_530",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_530",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_530",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1022,
+      "latency_s": 5.749465800006874
+    },
+    {
+      "query_id": "litsearch_530",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 491,
+      "latency_s": 4.558834300027229
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_530",
+    "gold": [
+      251320513
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "conformal prediction risk control",
+      "prediction sets risk control",
+      "controlling risk using prediction sets conformal prediction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6739957,
+        7739917,
+        219306987,
+        2100529,
+        8775324,
+        17575823,
+        12823405,
+        18454652,
+        24663,
+        26889702,
+        654690,
+        2245732,
+        219305804,
+        583930,
+        11689669,
+        18136430,
+        42274547,
+        1179515,
+        8446444,
+        14962753
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        251320513,
+        247025626,
+        252683779,
+        259203582,
+        252668316,
+        235485300,
+        239016463,
+        221995507,
+        222134008,
+        264306282,
+        247476245,
+        231861903,
+        252763315,
+        5087912,
+        173990564,
+        14327519,
+        246824069,
+        246634506,
+        221340643,
+        255186293
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251320513,
+        247025626,
+        239016463,
+        252683779,
+        252668316,
+        255186293,
+        222290886,
+        221995507,
+        235485300,
+        264306282,
+        259203582,
+        624106,
+        248780032,
+        26917344,
+        600412,
+        209531600,
+        263605617,
+        226221794,
+        262825257,
+        258378272
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        251320513,
+        255186293
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        251320513,
+        247025626,
+        239016463,
+        252683779,
+        252668316,
+        259203582,
+        235485300,
+        221995507,
+        264306282,
+        255186293,
+        222290886,
+        231861903,
+        247292293,
+        260680805,
+        256616226,
+        246634506,
+        220046708,
+        14327519,
+        209531600,
+        202541346
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.38137600000482
+  },
+  "reason_example": {
+    "query_id": "litsearch_530",
+    "query": "Is there any paper that previously proposed to control a risk using prediction sets, based on the literature in conformal prediction?",
+    "top_results": [
+      {
+        "corpusid": 251320513,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247025626,
+        "score": 0.892440140247345,
+        "reason": "bm25=0.986; dense=0.830; sub_bm25=0.945; sub_dense=0.890"
+      },
+      {
+        "corpusid": 239016463,
+        "score": 0.807103157043457,
+        "reason": "bm25=0.828; dense=0.793; sub_bm25=0.706; sub_dense=0.820"
+      },
+      {
+        "corpusid": 252683779,
+        "score": 0.7922236919403076,
+        "reason": "bm25=0.952; dense=0.686; sub_bm25=0.820; sub_dense=0.698"
+      },
+      {
+        "corpusid": 252668316,
+        "score": 0.7668088674545288,
+        "reason": "bm25=0.892; dense=0.684; sub_bm25=0.726; sub_dense=0.704"
+      }
+    ]
+  }
+}

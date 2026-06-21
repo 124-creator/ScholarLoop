@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_109",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_109",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_109",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_109",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1425,
+      "latency_s": 10.912574799964204
+    },
+    {
+      "query_id": "litsearch_109",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 269,
+      "latency_s": 2.453911800053902
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_109",
+    "gold": [
+      229923710
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "LLM generated prompts from input output examples",
+      "automatic prompt template generation using language models",
+      "LLM prompt optimization given task demonstrations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236477934,
+        222272207,
+        6248304,
+        259376539,
+        226262320,
+        5059618,
+        234337809,
+        5925661,
+        5971866,
+        237353087,
+        263609523,
+        108306873,
+        8761370,
+        918796,
+        252847541,
+        1948673,
+        235390382,
+        13742826,
+        7692118,
+        202583571
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252716013,
+        238856973,
+        263834884,
+        264426355,
+        235652287,
+        234337809,
+        245218561,
+        248084930,
+        264406064,
+        236477934,
+        258378340,
+        246485605,
+        247518984,
+        247475919,
+        836219,
+        257038392,
+        248834505,
+        259370749,
+        259370697,
+        258887528
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264426355,
+        264172710,
+        235652287,
+        248506201,
+        253265328,
+        252716013,
+        263834884,
+        248780177,
+        237532411,
+        245144420,
+        259833855,
+        246485605,
+        252519660,
+        218665670,
+        241033259,
+        237452236,
+        252780166,
+        261557296,
+        256415953,
+        261494012
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248084930,
+        252716013,
+        264426355,
+        248506201
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252716013,
+        264426355,
+        263834884,
+        235652287,
+        248506201,
+        246485605,
+        253265328,
+        238856973,
+        264172710,
+        252519660,
+        257038392,
+        245144420,
+        248084930,
+        261557296,
+        237452236,
+        248780177,
+        261494012,
+        263609523,
+        258332119,
+        237532411
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.155119900009595
+  },
+  "reason_example": {
+    "query_id": "litsearch_109",
+    "query": "Can you recommend research that uses an LLM to generate better prompts/tempates given task input/output?",
+    "top_results": [
+      {
+        "corpusid": 252716013,
+        "score": 0.9510743618011475,
+        "reason": "bm25=1.000; dense=0.918; sub_bm25=0.821; sub_dense=0.912"
+      },
+      {
+        "corpusid": 264426355,
+        "score": 0.9307621121406555,
+        "reason": "bm25=0.827; dense=1.000; sub_bm25=1.000; sub_dense=0.922"
+      },
+      {
+        "corpusid": 263834884,
+        "score": 0.9097974896430969,
+        "reason": "bm25=0.948; dense=0.885; sub_bm25=0.826; sub_dense=0.940"
+      },
+      {
+        "corpusid": 235652287,
+        "score": 0.8991503715515137,
+        "reason": "bm25=0.819; dense=0.953; sub_bm25=0.619; sub_dense=0.923"
+      },
+      {
+        "corpusid": 248506201,
+        "score": 0.8125885725021362,
+        "reason": "bm25=0.631; dense=0.933; sub_bm25=0.803; sub_dense=1.000"
+      }
+    ]
+  }
+}

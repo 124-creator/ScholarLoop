@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_382",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_382",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_382",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_382",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1072,
+      "latency_s": 7.442269499995746
+    },
+    {
+      "query_id": "litsearch_382",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 254,
+      "latency_s": 2.786344000021927
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_382",
+    "gold": [
+      258866035
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "automatic speech-text segmentation tool",
+      "forced alignment finer grained",
+      "speech transcription alignment segmentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        254823129,
+        12735028,
+        1405599,
+        251623168,
+        36562731,
+        29096360,
+        5989400,
+        6934412,
+        6626680,
+        3010439,
+        864303,
+        17008452,
+        16606493,
+        16128750,
+        17329159,
+        249204419,
+        7851568,
+        7465678,
+        21704391,
+        10792760
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1650496,
+        12788401,
+        16543540,
+        11043480,
+        18187835,
+        15992475,
+        864303,
+        11964922,
+        244117525,
+        37129110,
+        252624546,
+        2953233,
+        9445484,
+        17008452,
+        21700896,
+        311756,
+        2894920,
+        3656086,
+        17351003,
+        33673706
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14139006,
+        10903198,
+        1914513,
+        8287419,
+        14063720,
+        16774085,
+        10631818,
+        12660751,
+        248780175,
+        724894,
+        5443628,
+        253098305,
+        16543540,
+        247693994,
+        7980298,
+        6996024,
+        247594028,
+        7227754,
+        2910396,
+        233388058
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1914513,
+        8287419,
+        16543540,
+        1650496,
+        254823129,
+        18187835,
+        10956955,
+        11043480,
+        218974085,
+        16606493,
+        3656086,
+        16051863
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        10903198,
+        8287419,
+        16543540,
+        1914513,
+        1650496,
+        33673706,
+        3656086,
+        18187835,
+        14063720,
+        218973822,
+        10956955,
+        218974085,
+        252312526,
+        14139006,
+        252624627,
+        5443628,
+        298096,
+        5629999,
+        16774085,
+        252667572
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.233437499962747
+  },
+  "reason_example": {
+    "query_id": "litsearch_382",
+    "query": "Is there a tool that can automatically segment speech and the corresponding text transcriptions, to obtain a finer grained alignment?",
+    "top_results": [
+      {
+        "corpusid": 10903198,
+        "score": 0.9336045384407043,
+        "reason": "bm25=0.848; dense=0.991; sub_bm25=0.617; sub_dense=0.947"
+      },
+      {
+        "corpusid": 8287419,
+        "score": 0.9220296740531921,
+        "reason": "bm25=0.845; dense=0.974; sub_bm25=0.852; sub_dense=0.917"
+      },
+      {
+        "corpusid": 16543540,
+        "score": 0.9207385778427124,
+        "reason": "bm25=0.906; dense=0.931; sub_bm25=0.602; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1914513,
+        "score": 0.8920413851737976,
+        "reason": "bm25=0.746; dense=0.990; sub_bm25=0.809; sub_dense=0.928"
+      },
+      {
+        "corpusid": 1650496,
+        "score": 0.8882327675819397,
+        "reason": "bm25=1.000; dense=0.814; sub_bm25=0.774; sub_dense=0.884"
+      }
+    ]
+  }
+}

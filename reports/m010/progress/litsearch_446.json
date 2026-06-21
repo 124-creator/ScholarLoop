@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_446",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_446",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_446",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_446",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1174,
+      "latency_s": 7.536898700054735
+    },
+    {
+      "query_id": "litsearch_446",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 340,
+      "latency_s": 3.0972808999940753
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_446",
+    "gold": [
+      259370602
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "Hierarchical Text Classification label dependencies same-level",
+      "first paper label correlations hierarchical classification",
+      "early work exploiting label dependencies in hierarchical text classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18501319,
+        240354628,
+        259370602,
+        44153001,
+        42978253,
+        13753905,
+        236486084,
+        1922970,
+        15667475,
+        5232618,
+        7153934,
+        226283674,
+        9012785,
+        248986847,
+        226262332,
+        252846544,
+        18051270,
+        236460056,
+        7021843,
+        7191507
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370602,
+        32115967,
+        240354628,
+        226262332,
+        7021843,
+        13753905,
+        1830581,
+        248986847,
+        236460056,
+        18501319,
+        226283674,
+        233210195,
+        227231762,
+        252763314,
+        15667475,
+        252818937,
+        258987586,
+        51876056,
+        256827488,
+        10720575
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        459520,
+        246702364,
+        18954792,
+        259370602,
+        258378217,
+        236459950,
+        248524999,
+        220044881,
+        32115967,
+        201651711,
+        196175224,
+        233210195,
+        236460056,
+        231592352,
+        222291430,
+        53083689,
+        243865566,
+        232076145,
+        259096135,
+        237485311
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370602,
+        459520,
+        236460056,
+        233210195,
+        236459950,
+        248524999,
+        252818937
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370602,
+        459520,
+        32115967,
+        246702364,
+        248524999,
+        236460056,
+        233210195,
+        258378217,
+        236459950,
+        220044881,
+        18954792,
+        201651711,
+        252818937,
+        258987586,
+        18501319,
+        13753905,
+        231592352,
+        196175224,
+        257038592,
+        222291430
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.700107600074261
+  },
+  "reason_example": {
+    "query_id": "litsearch_446",
+    "query": "Which paper first attempts to take potential dependencies among same-level labels into account in Hierarchical Text Classification?",
+    "top_results": [
+      {
+        "corpusid": 259370602,
+        "score": 0.9263588190078735,
+        "reason": "bm25=1.000; dense=0.877; sub_bm25=0.798; sub_dense=0.927"
+      },
+      {
+        "corpusid": 459520,
+        "score": 0.873895525932312,
+        "reason": "bm25=0.685; dense=1.000; sub_bm25=0.827; sub_dense=1.000"
+      },
+      {
+        "corpusid": 32115967,
+        "score": 0.8670539855957031,
+        "reason": "bm25=0.924; dense=0.829; sub_bm25=1.000; sub_dense=0.969"
+      },
+      {
+        "corpusid": 246702364,
+        "score": 0.834289014339447,
+        "reason": "bm25=0.657; dense=0.952; sub_bm25=0.729; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248524999,
+        "score": 0.8134526014328003,
+        "reason": "bm25=0.778; dense=0.837; sub_bm25=0.963; sub_dense=0.923"
+      }
+    ]
+  }
+}

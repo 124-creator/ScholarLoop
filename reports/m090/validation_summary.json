@@ -1,0 +1,106 @@
+{
+  "checked_at_utc": "2026-06-20T11:41:23.336067+00:00",
+  "revision": "rev2",
+  "m090_status": "blocked_t0_rev2_not_significant",
+  "gate_passed": false,
+  "plan_status_observed": "approved",
+  "plan_status_line": "- 状态：approved · 修订轮次 2（2026-06-20 Router 人类批准 draft→approved；**目标：抬绝对 F1（42% 主轴）+ 补官方 3.1.2 迭代检索核心功能**。**rev1 在 T0 停机但欠测**——第十四次初查查实 rev1 桩只测 RRF 重融合 + 引文混合、**未实现承重主路径「迭代 LLM 检索 + 强化重排」**；人类裁定 **rev2 重发**：强制实现并测试真正的迭代 LLM 检索（重构子查询→DenseV2/BM25 再检索→合并新候选）+ 强化重排（listwise LLM / 更大 cross-encoder，直击 P@10），并先修复环境缺失的 `rank_bm25`。承重红线不变）",
+  "implemented_status_updated": false,
+  "true_two_knives_evidence": {
+    "iterative_llm_retrieval": true,
+    "whole_corpus_retrieval": true,
+    "new_candidates_required": true,
+    "llm_listwise_rerank": true,
+    "not_rrf_or_citation_only": true
+  },
+  "sample": {
+    "selection": "deterministic sha256(query_id|m090-rev2-t0), split-stratified, not selected by gold or metric quality",
+    "counts": {
+      "train": 4,
+      "holdout": 3,
+      "test": 3
+    },
+    "query_ids": [
+      "litsearch_263",
+      "litsearch_346",
+      "litsearch_430",
+      "litsearch_482",
+      "litsearch_469",
+      "litsearch_438",
+      "litsearch_549",
+      "litsearch_224",
+      "litsearch_078",
+      "litsearch_107"
+    ]
+  },
+  "delta_f1_by_split": {
+    "train": 0.0,
+    "holdout": 0.0,
+    "test": 0.0,
+    "all": 0.0
+  },
+  "paired_bootstrap_f1": {
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "resamples": 10000,
+    "passed": false
+  },
+  "cost": {
+    "llm_calls": 20,
+    "llm_cached_calls": 0,
+    "tokens": 61388,
+    "latency_s": 273.2301495999709,
+    "new_candidate_count": 600,
+    "wall_s": 273.2432952999952
+  },
+  "h5_final_out_of_pool": 0,
+  "llm_invalid_ids_before_sanitization": 0,
+  "new_candidate_counts": [
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60
+  ],
+  "raw_llm_dir": "reports/m090/raw/llm",
+  "stop_report": {
+    "exists": true,
+    "path": "reports/m090/STOP_REPORT.md"
+  },
+  "pytest": {
+    "command": "pytest tests/ -q",
+    "passed": true,
+    "summary": "37 passed in 88.46s"
+  },
+  "secret_scan": {
+    "passed": true,
+    "findings_count": 0,
+    "path": "reports/m090/secret_scan.json"
+  },
+  "upstream_hash_check": {
+    "passed": true,
+    "changed_during_validation_count": 0,
+    "path": "reports/m090/upstream_hashes.json"
+  },
+  "dependency_fix": "reports/m090/dependency_fix.json",
+  "retrospective": "docs/dev/retrospectives/090-agentic-retrieval-rerank-retrospective.md",
+  "stop_reasons": [
+    "A-v3 rev2 T0 F1 delta was not positive on train split.",
+    "A-v3 rev2 T0 F1 delta was not positive on holdout split.",
+    "A-v3 rev2 T0 F1 delta was not positive on test split.",
+    "Paired bootstrap CI lower bound was not > 0."
+  ],
+  "targeted_pytest_after_docs": {
+    "command": "pytest tests/test_m090_agentic_spike.py -q",
+    "passed": true,
+    "summary": "4 passed in 59.28s"
+  }
+}

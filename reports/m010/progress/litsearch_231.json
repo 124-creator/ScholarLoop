@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_231",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_231",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_231",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_231",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1326,
+      "latency_s": 7.918109699967317
+    },
+    {
+      "query_id": "litsearch_231",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 222,
+      "latency_s": 1.992396799963899
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_231",
+    "gold": [
+      237420821
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "combinatorial optimization entity matching",
+      "unsupervised entity matching techniques",
+      "combinatorial optimization for data integration"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16355213,
+        6113477,
+        10749859,
+        17638194,
+        8305946,
+        15283562,
+        2025320,
+        18242616,
+        6218136,
+        230349190,
+        3050178,
+        15527245,
+        225076039,
+        656434,
+        51918763,
+        8567966,
+        216651425,
+        186206301,
+        14068874,
+        236460343
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        9701597,
+        258378193,
+        8305946,
+        15571177,
+        44159347,
+        255546240,
+        230349190,
+        15283562,
+        16355213,
+        17188191,
+        18256594,
+        246275797,
+        222378486,
+        656434,
+        235458218,
+        258960366,
+        2801545,
+        222177226,
+        7496593,
+        236460343
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        596576,
+        8002074,
+        1004820,
+        7296233,
+        5061403,
+        8338820,
+        247158648,
+        5708734,
+        18949950,
+        9701597,
+        13525347,
+        4983428,
+        141147540,
+        15276785,
+        258378264,
+        11051924,
+        1917423,
+        52009631,
+        63689630,
+        6471645
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        44159347,
+        2801545,
+        8305946,
+        258378193,
+        9701597,
+        6471645,
+        15571177,
+        15283562,
+        10749859,
+        1130969,
+        13525347,
+        16355213
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        9701597,
+        258378193,
+        8305946,
+        44159347,
+        15571177,
+        6471645,
+        16355213,
+        2801545,
+        13525347,
+        15276785,
+        17731861,
+        255546240,
+        235458218,
+        5708734,
+        218595930,
+        1130969,
+        18223613,
+        8713824,
+        557383,
+        5061403
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.276457100058906
+  },
+  "reason_example": {
+    "query_id": "litsearch_231",
+    "query": "Could you suggest research that investigates applying combinatorial optimization techniques in unsupervised entity matching?",
+    "top_results": [
+      {
+        "corpusid": 9701597,
+        "score": 0.9262634515762329,
+        "reason": "bm25=1.000; dense=0.877; sub_bm25=1.000; sub_dense=0.976"
+      },
+      {
+        "corpusid": 258378193,
+        "score": 0.8538763523101807,
+        "reason": "bm25=0.953; dense=0.788; sub_bm25=0.878; sub_dense=0.876"
+      },
+      {
+        "corpusid": 8305946,
+        "score": 0.8457814455032349,
+        "reason": "bm25=0.942; dense=0.781; sub_bm25=0.819; sub_dense=0.730"
+      },
+      {
+        "corpusid": 44159347,
+        "score": 0.8134381175041199,
+        "reason": "bm25=0.906; dense=0.752; sub_bm25=1.000; sub_dense=0.814"
+      },
+      {
+        "corpusid": 15571177,
+        "score": 0.801971435546875,
+        "reason": "bm25=0.935; dense=0.713; sub_bm25=0.964; sub_dense=0.788"
+      }
+    ]
+  }
+}

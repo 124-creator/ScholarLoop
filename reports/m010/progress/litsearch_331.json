@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_331",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_331",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_331",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_331",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1256,
+      "latency_s": 9.063826699974015
+    },
+    {
+      "query_id": "litsearch_331",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 3.3681137000676244
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_331",
+    "gold": [
+      232075836
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "long document summarization under resource constraints",
+      "low-resource text summarization techniques",
+      "efficient summarization frameworks limited compute"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258212587,
+        14928935,
+        226283493,
+        258486952,
+        17585853,
+        4660265,
+        352512,
+        14118934,
+        9730206,
+        27314264,
+        17178436,
+        1743238,
+        3247663,
+        31093860,
+        216011074,
+        17393896,
+        5616838,
+        18039958,
+        252918537,
+        6626547
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        10984754,
+        259376467,
+        226283493,
+        17585853,
+        216107,
+        226246215,
+        252918537,
+        31479391,
+        9730206,
+        32392814,
+        7774343,
+        289313,
+        5616838,
+        235097217,
+        14928935,
+        252365247,
+        11488783,
+        52156032,
+        49208337,
+        219300331
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11944261,
+        16372881,
+        15714062,
+        6767366,
+        218502513,
+        235265871,
+        1465750,
+        236772881,
+        10275988,
+        18066027,
+        17228952,
+        248780473,
+        34413521,
+        233189611,
+        1843005,
+        12079994,
+        2482257,
+        43390,
+        34668305,
+        15945816
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        227231042,
+        14666654,
+        222341644,
+        15342371,
+        239890025,
+        52011109
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        227231042,
+        222341644,
+        15342371,
+        252818920,
+        18066027,
+        239890025,
+        1888636,
+        1843005,
+        252763332,
+        14666654,
+        248887364,
+        2991926,
+        2482257,
+        7774343,
+        248780473,
+        53223951,
+        261944073,
+        1299971,
+        256460883,
+        9686262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.268918200046755
+  },
+  "reason_example": {
+    "query_id": "litsearch_331",
+    "query": "What techniques and frameworks have been suggested for summarizing extensive texts under resource-constrained conditions?",
+    "top_results": [
+      {
+        "corpusid": 227231042,
+        "score": 0.8459104299545288,
+        "reason": "bm25=0.780; dense=0.890; sub_bm25=0.346; sub_dense=0.890"
+      },
+      {
+        "corpusid": 222341644,
+        "score": 0.8376939296722412,
+        "reason": "bm25=0.734; dense=0.907; sub_bm25=0.306; sub_dense=0.852"
+      },
+      {
+        "corpusid": 15342371,
+        "score": 0.8327817320823669,
+        "reason": "bm25=0.760; dense=0.882; sub_bm25=0.506; sub_dense=0.759"
+      },
+      {
+        "corpusid": 252818920,
+        "score": 0.8189951777458191,
+        "reason": "bm25=0.763; dense=0.856; sub_bm25=0.427; sub_dense=0.799"
+      },
+      {
+        "corpusid": 18066027,
+        "score": 0.7745028734207153,
+        "reason": "bm25=0.521; dense=0.944; sub_bm25=0.535; sub_dense=0.915"
+      }
+    ]
+  }
+}

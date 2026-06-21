@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_345",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_345",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_345",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_345",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1718,
+      "latency_s": 13.390115999965928
+    },
+    {
+      "query_id": "litsearch_345",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 398,
+      "latency_s": 4.0879841999849305
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_345",
+    "gold": [
+      229923538
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "ternary network quantization BERT",
+      "ternary weight quantization BERT model compression",
+      "ternary neural networks BERT low-bit"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12405045,
+        229923538,
+        32526624,
+        143326,
+        220319558,
+        962094,
+        8035278,
+        18461192,
+        248722157,
+        1860368,
+        1021605,
+        3340951,
+        260063225,
+        248780197,
+        11636854,
+        11865562,
+        18792136,
+        219305462,
+        14675184,
+        8997127
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        229923538,
+        224893,
+        231861390,
+        259075884,
+        3340951,
+        17299045,
+        12130431,
+        12857568,
+        220445945,
+        245425026,
+        237940329,
+        253735201,
+        263333921,
+        3323727,
+        252918639,
+        238353991,
+        221970445,
+        257102379,
+        211011309,
+        7067017
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        229923538,
+        256461070,
+        221970445,
+        224893,
+        259075884,
+        247741658,
+        3520830,
+        263333921,
+        238408001,
+        245425026,
+        221136343,
+        231672601,
+        234469796,
+        225062299,
+        246863709,
+        259370840,
+        247593909,
+        235390766,
+        248780571,
+        221761140
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        221970445
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        229923538,
+        224893,
+        221970445,
+        259075884,
+        256461070,
+        231861390,
+        3520830,
+        247741658,
+        263333921,
+        245425026,
+        12130431,
+        17299045,
+        259370840,
+        221136343,
+        246863709,
+        237940329,
+        247593909,
+        257102379,
+        3340951,
+        234469796
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.589148900005966
+  },
+  "reason_example": {
+    "query_id": "litsearch_345",
+    "query": "Which work pushes the limit of model quantization in BERT models by introducing a ternary network?",
+    "top_results": [
+      {
+        "corpusid": 229923538,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 224893,
+        "score": 0.7671540379524231,
+        "reason": "bm25=0.614; dense=0.869; sub_bm25=1.000; sub_dense=0.904"
+      },
+      {
+        "corpusid": 221970445,
+        "score": 0.7428645491600037,
+        "reason": "bm25=0.442; dense=0.944; sub_bm25=0.634; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259075884,
+        "score": 0.7398175597190857,
+        "reason": "bm25=0.591; dense=0.839; sub_bm25=0.958; sub_dense=0.881"
+      },
+      {
+        "corpusid": 256461070,
+        "score": 0.7351303100585938,
+        "reason": "bm25=0.403; dense=0.956; sub_bm25=0.502; sub_dense=0.978"
+      }
+    ]
+  }
+}

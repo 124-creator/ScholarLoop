@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_402",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_402",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_402",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_402",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1146,
+      "latency_s": 6.04137069999706
+    },
+    {
+      "query_id": "litsearch_402",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 277,
+      "latency_s": 3.184975799988024
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_402",
+    "gold": [
+      259203396
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "adversarial training frame level audio-visual representation learning",
+      "adversarial learning per frame audio video representation",
+      "adversarial training frame-wise multimodal representation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13488062,
+        226283830,
+        202712637,
+        250390721,
+        1586274,
+        224799710,
+        252907549,
+        5461896,
+        2717337,
+        9489563,
+        1174836,
+        51869382,
+        4778308,
+        232307483,
+        251125494,
+        6344097,
+        8959989,
+        218869965,
+        233324175,
+        34190303
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259203396,
+        251125494,
+        252907593,
+        245769552,
+        12072571,
+        245218746,
+        257353585,
+        235390890,
+        2350854,
+        218901061,
+        254636202,
+        25080548,
+        258557844,
+        248476236,
+        4986726,
+        51876695,
+        220047836,
+        52056513,
+        259202515,
+        14142473
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        52891543,
+        252907593,
+        52197662,
+        257353585,
+        259202515,
+        258865688,
+        233740397,
+        52890982,
+        256416230,
+        53483414,
+        67856213,
+        251125494,
+        226236703,
+        256808752,
+        245769552,
+        247025836,
+        54447167,
+        259370598,
+        202676699,
+        248476236
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259203396
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252907593,
+        251125494,
+        259203396,
+        257353585,
+        52891543,
+        259202515,
+        245769552,
+        52890982,
+        248476236,
+        233740397,
+        226236703,
+        258865688,
+        67856213,
+        245218746,
+        248300043,
+        247025836,
+        14142473,
+        259370598,
+        52898972,
+        12072571
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.087608700036071
+  },
+  "reason_example": {
+    "query_id": "litsearch_402",
+    "query": "Is there any paper that performs adversarial training on frame level for audio-visual representation learning?",
+    "top_results": [
+      {
+        "corpusid": 252907593,
+        "score": 0.9007973074913025,
+        "reason": "bm25=0.832; dense=0.947; sub_bm25=0.861; sub_dense=1.000"
+      },
+      {
+        "corpusid": 251125494,
+        "score": 0.8817320466041565,
+        "reason": "bm25=0.916; dense=0.859; sub_bm25=1.000; sub_dense=0.803"
+      },
+      {
+        "corpusid": 259203396,
+        "score": 0.8816920518875122,
+        "reason": "bm25=1.000; dense=0.803; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257353585,
+        "score": 0.8701807260513306,
+        "reason": "bm25=0.805; dense=0.914; sub_bm25=0.724; sub_dense=0.958"
+      },
+      {
+        "corpusid": 52891543,
+        "score": 0.8417785167694092,
+        "reason": "bm25=0.604; dense=1.000; sub_bm25=0.824; sub_dense=1.000"
+      }
+    ]
+  }
+}

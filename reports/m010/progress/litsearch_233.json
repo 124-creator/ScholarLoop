@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_233",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_233",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_233",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_233",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1008,
+      "latency_s": 4.43263970001135
+    },
+    {
+      "query_id": "litsearch_233",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 291,
+      "latency_s": 2.5560730000725016
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_233",
+    "gold": [
+      231672601
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "parameter-efficient fine-tuning language models few parameters",
+      "adapter tuning transformer models minimal parameter update",
+      "low-rank adaptation LLM lightweight fine-tuning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1494871,
+        53633715,
+        248779924,
+        186206301,
+        259833814,
+        259064260,
+        263834782,
+        17347947,
+        6089322,
+        27016310,
+        252544759,
+        235652287,
+        9830179,
+        17336955,
+        258486914,
+        248780177,
+        486306,
+        248084930,
+        6583976,
+        248780137
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235652287,
+        258486914,
+        259095948,
+        259833814,
+        258676495,
+        202750126,
+        21613313,
+        248665662,
+        247084085,
+        252992469,
+        226283990,
+        216553665,
+        7861345,
+        15925479,
+        235359141,
+        235266322,
+        246867041,
+        246702340,
+        258947572,
+        259129486
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        246867041,
+        256460956,
+        252873220,
+        237593117,
+        253107420,
+        231672601,
+        258765272,
+        210714061,
+        8672140,
+        216914731,
+        9955187,
+        184488346,
+        248986389,
+        252847490,
+        235458576,
+        238856900,
+        252846121,
+        13848633,
+        237490383,
+        252819451
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231672601,
+        248780177,
+        235359141,
+        246867041,
+        235652287
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        246867041,
+        235652287,
+        247084085,
+        248665662,
+        259833814,
+        226283990,
+        202750126,
+        258486914,
+        253107420,
+        231672601,
+        252847490,
+        237439234,
+        258765272,
+        235359141,
+        252991162,
+        216869396,
+        248986389,
+        216553665,
+        238583580,
+        256460956
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.039854699978605
+  },
+  "reason_example": {
+    "query_id": "litsearch_233",
+    "query": "Could you suggest research that investigates efficient finetuning methods that only trains very very few parameters in language models?",
+    "top_results": [
+      {
+        "corpusid": 246867041,
+        "score": 0.8936555981636047,
+        "reason": "bm25=0.734; dense=1.000; sub_bm25=0.676; sub_dense=0.922"
+      },
+      {
+        "corpusid": 235652287,
+        "score": 0.8814259171485901,
+        "reason": "bm25=1.000; dense=0.802; sub_bm25=0.505; sub_dense=0.768"
+      },
+      {
+        "corpusid": 247084085,
+        "score": 0.8179671764373779,
+        "reason": "bm25=0.780; dense=0.843; sub_bm25=0.339; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248665662,
+        "score": 0.8119739294052124,
+        "reason": "bm25=0.787; dense=0.829; sub_bm25=0.272; sub_dense=0.714"
+      },
+      {
+        "corpusid": 259833814,
+        "score": 0.8091152906417847,
+        "reason": "bm25=0.793; dense=0.820; sub_bm25=0.576; sub_dense=0.728"
+      }
+    ]
+  }
+}

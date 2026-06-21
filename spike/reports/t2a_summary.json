@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "reproducible": true,
+  "non_empty": true,
+  "aggregate": [
+    {
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.02,
+      "F1": 0.0
+    },
+    {
+      "system": "bm25",
+      "P@10": 0.08,
+      "R@20": 0.36,
+      "F1": 0.13
+    },
+    {
+      "system": "embedding_lsa",
+      "P@10": 0.0,
+      "R@20": 0.15,
+      "F1": 0.0
+    }
+  ],
+  "report_path": "spike\\x1a-评测桩与无LLM基线.md"
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_545",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_545",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_545",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_545",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 825,
+      "latency_s": 3.649641399970278
+    },
+    {
+      "query_id": "litsearch_545",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 403,
+      "latency_s": 3.965199999976903
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_545",
+    "gold": [
+      258832670
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "ControlNet video generation training-free",
+      "first paper ControlNet continuous video",
+      "training-free video generation ControlNet"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9337134,
+        259833790,
+        2266741,
+        6723570,
+        7440991,
+        8832939,
+        10919045,
+        16771067,
+        12281387,
+        9290361,
+        10740890,
+        1402974,
+        3130833,
+        5389622,
+        6602375,
+        12405045,
+        16516994,
+        221761488,
+        261431370,
+        10496324
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258832670,
+        252715594,
+        263909549,
+        257663639,
+        235248336,
+        37631816,
+        174800279,
+        231802365,
+        222290473,
+        219124176,
+        252595919,
+        216642069,
+        212657753,
+        211204780,
+        830283,
+        237440242,
+        6143937,
+        252819257,
+        257365137,
+        203836132
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258832670,
+        252715594,
+        119304640,
+        254636478,
+        232275342,
+        257365137,
+        235613604,
+        249209614,
+        247025714,
+        3330768,
+        203836132,
+        258714896,
+        60441438,
+        236134152,
+        235125628,
+        263909549,
+        252595919,
+        24069181,
+        257663639,
+        258212627
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258832670
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258832670,
+        252715594,
+        263909549,
+        257663639,
+        257365137,
+        252595919,
+        203836132,
+        247025714,
+        119304640,
+        231802365,
+        232275342,
+        24069181,
+        5037032,
+        235613604,
+        3514022,
+        263908842,
+        238419356,
+        205514,
+        236134152,
+        249953817
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.44735429994762
+  },
+  "reason_example": {
+    "query_id": "litsearch_545",
+    "query": "What paper first adapted ControlNet to generate continuous videos in a training-free manner?",
+    "top_results": [
+      {
+        "corpusid": 258832670,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252715594,
+        "score": 0.824535608291626,
+        "reason": "bm25=0.754; dense=0.872; sub_bm25=0.573; sub_dense=0.875"
+      },
+      {
+        "corpusid": 263909549,
+        "score": 0.7574816346168518,
+        "reason": "bm25=0.706; dense=0.792; sub_bm25=0.660; sub_dense=0.867"
+      },
+      {
+        "corpusid": 257663639,
+        "score": 0.7378557324409485,
+        "reason": "bm25=0.673; dense=0.781; sub_bm25=0.443; sub_dense=0.933"
+      },
+      {
+        "corpusid": 257365137,
+        "score": 0.7304408550262451,
+        "reason": "bm25=0.579; dense=0.831; sub_bm25=0.493; sub_dense=0.817"
+      }
+    ]
+  }
+}

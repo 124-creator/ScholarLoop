@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_271",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_271",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_271",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_271",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1786,
+      "latency_s": 12.09340830007568
+    },
+    {
+      "query_id": "litsearch_271",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 276,
+      "latency_s": 2.052043200004846
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_271",
+    "gold": [
+      253420743
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "automatic selection of in-context examples",
+      "techniques for choosing in-context examples",
+      "in-context example retrieval methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258212587,
+        221761488,
+        1494871,
+        19653906,
+        2450427,
+        6113477,
+        15058350,
+        5154017,
+        6626547,
+        16783997,
+        258685798,
+        8954365,
+        42149039,
+        3049463,
+        14655999,
+        18757632,
+        6075024,
+        10168327,
+        39654639,
+        219302828
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14655999,
+        3960960,
+        11743245,
+        15402420,
+        246823215,
+        8858050,
+        220665912,
+        8797227,
+        255775289,
+        5154017,
+        16030483,
+        15363009,
+        218930278,
+        2450427,
+        17732741,
+        14191017,
+        14817314,
+        253420743,
+        16136048,
+        216641970
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        67332552,
+        261959395,
+        258558112,
+        14655999,
+        21721676,
+        1494871,
+        249953841,
+        260203032,
+        6923915,
+        239016858,
+        14802888,
+        253420743,
+        14724444,
+        246823215,
+        11602146,
+        231632658,
+        252819463,
+        241035330,
+        7770237,
+        254877590
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253420743,
+        246823215
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14655999,
+        246823215,
+        258558112,
+        253420743,
+        261959395,
+        260203032,
+        1494871,
+        67332552,
+        239016858,
+        15363009,
+        14191017,
+        252819154,
+        231632658,
+        21721676,
+        254877590,
+        258461313,
+        245218561,
+        259370795,
+        6923915,
+        258967265
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.51172059995588
+  },
+  "reason_example": {
+    "query_id": "litsearch_271",
+    "query": "Have any research papers suggested techniques for automatically choosing in-context examples?",
+    "top_results": [
+      {
+        "corpusid": 14655999,
+        "score": 0.9479360580444336,
+        "reason": "bm25=1.000; dense=0.913; sub_bm25=0.668; sub_dense=0.733"
+      },
+      {
+        "corpusid": 246823215,
+        "score": 0.8680403232574463,
+        "reason": "bm25=0.908; dense=0.842; sub_bm25=0.914; sub_dense=0.986"
+      },
+      {
+        "corpusid": 258558112,
+        "score": 0.8489544987678528,
+        "reason": "bm25=0.738; dense=0.923; sub_bm25=0.911; sub_dense=0.926"
+      },
+      {
+        "corpusid": 253420743,
+        "score": 0.8488460779190063,
+        "reason": "bm25=0.852; dense=0.847; sub_bm25=1.000; sub_dense=0.946"
+      },
+      {
+        "corpusid": 261959395,
+        "score": 0.829424262046814,
+        "reason": "bm25=0.588; dense=0.990; sub_bm25=0.717; sub_dense=1.000"
+      }
+    ]
+  }
+}

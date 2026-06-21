@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_335",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_335",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_335",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_335",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1470,
+      "latency_s": 9.535116699989885
+    },
+    {
+      "query_id": "litsearch_335",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.969215100049041
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_335",
+    "gold": [
+      237372185,
+      236460184
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "multimodal sentiment analysis fusion techniques",
+      "enhancing multimodal sentiment analysis via modality fusion",
+      "fusion methods for multimodal sentiment analysis"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10919045,
+        235669817,
+        11521431,
+        251465572,
+        2954176,
+        51991738,
+        14118934,
+        16240203,
+        11051461,
+        20184660,
+        7913732,
+        5099467,
+        16908961,
+        121125604,
+        53168791,
+        3832345,
+        202781416,
+        970522,
+        4077585,
+        259376574
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236460152,
+        236478321,
+        259370654,
+        245838255,
+        252819166,
+        49668568,
+        258378168,
+        49565742,
+        47005718,
+        219571176,
+        51868869,
+        54434776,
+        252762207,
+        220250648,
+        950292,
+        46895984,
+        259203396,
+        256461316,
+        252819261,
+        227231517
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        12506231,
+        49565742,
+        245838255,
+        249209826,
+        247618934,
+        236478321,
+        259370654,
+        950292,
+        250150814,
+        253735139,
+        15093608,
+        248780245,
+        227231517,
+        49668568,
+        51868869,
+        218900756,
+        252819166,
+        248779970,
+        261124675,
+        236459862
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        950292,
+        54434776,
+        236460152,
+        252819166,
+        259370654,
+        236478321,
+        51868869,
+        47005718,
+        49668568,
+        245838255,
+        258378168,
+        49565742
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245838255,
+        236478321,
+        259370654,
+        49565742,
+        252819166,
+        49668568,
+        236460152,
+        950292,
+        51868869,
+        12506231,
+        258378168,
+        227231517,
+        54434776,
+        250150814,
+        252762207,
+        249209826,
+        253735139,
+        222163890,
+        46895984,
+        247618934
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.423481100006029
+  },
+  "reason_example": {
+    "query_id": "litsearch_335",
+    "query": "What techniques have been investigated to enhance multimodal sentiment analysis by fusing different modalities?",
+    "top_results": [
+      {
+        "corpusid": 245838255,
+        "score": 0.9334484338760376,
+        "reason": "bm25=0.923; dense=0.940; sub_bm25=0.882; sub_dense=0.980"
+      },
+      {
+        "corpusid": 236478321,
+        "score": 0.9187620878219604,
+        "reason": "bm25=0.968; dense=0.886; sub_bm25=0.940; sub_dense=0.956"
+      },
+      {
+        "corpusid": 259370654,
+        "score": 0.9039490222930908,
+        "reason": "bm25=0.935; dense=0.883; sub_bm25=0.728; sub_dense=0.942"
+      },
+      {
+        "corpusid": 49565742,
+        "score": 0.903064489364624,
+        "reason": "bm25=0.830; dense=0.952; sub_bm25=0.642; sub_dense=0.911"
+      },
+      {
+        "corpusid": 252819166,
+        "score": 0.8590940237045288,
+        "reason": "bm25=0.908; dense=0.826; sub_bm25=0.637; sub_dense=0.826"
+      }
+    ]
+  }
+}

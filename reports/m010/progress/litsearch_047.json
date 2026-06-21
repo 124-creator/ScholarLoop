@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_047",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_047",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_047",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_047",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1453,
+      "latency_s": 8.41939029993955
+    },
+    {
+      "query_id": "litsearch_047",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 300,
+      "latency_s": 2.075372499995865
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_047",
+    "gold": [
+      4711425
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "fact verification datasets",
+      "influential datasets for fact checking",
+      "comprehensive fact verification research datasets"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17173602,
+        6388125,
+        2735574,
+        3024142,
+        3002355,
+        258685798,
+        884211,
+        15218055,
+        16584852,
+        6293901,
+        8535026,
+        7981427,
+        8292781,
+        5977811,
+        10151424,
+        3926047,
+        5989400,
+        7440991,
+        8130930,
+        14907272
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257833671,
+        258557100,
+        235254775,
+        229923350,
+        235731930,
+        226299460,
+        235457983,
+        251468136,
+        4711425,
+        232233599,
+        252819029,
+        226262202,
+        253384265,
+        243865564,
+        235248022,
+        241583343,
+        224706966,
+        12968935,
+        222291705,
+        202541363
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11770023,
+        233365077,
+        218974149,
+        1669264,
+        198917339,
+        7966473,
+        202541363,
+        249953983,
+        85556928,
+        218613630,
+        252819395,
+        224802782,
+        222291705,
+        235731930,
+        257206126,
+        5061667,
+        257833671,
+        253107194,
+        1434196,
+        234742074
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        4711425,
+        202541363,
+        235457983,
+        235731930,
+        258557100,
+        1669264
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257833671,
+        235731930,
+        229923350,
+        258557100,
+        235254775,
+        226299460,
+        198917339,
+        202541363,
+        235457983,
+        4711425,
+        218974149,
+        222291705,
+        1669264,
+        218613630,
+        249953983,
+        253384265,
+        28297509,
+        257206126,
+        224802782,
+        232233599
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.495039399946108
+  },
+  "reason_example": {
+    "query_id": "litsearch_047",
+    "query": "I'm looking for a comprehensive dataset that has been influential in fact verification research",
+    "top_results": [
+      {
+        "corpusid": 257833671,
+        "score": 0.9330089092254639,
+        "reason": "bm25=1.000; dense=0.888; sub_bm25=1.000; sub_dense=0.942"
+      },
+      {
+        "corpusid": 235731930,
+        "score": 0.9182556867599487,
+        "reason": "bm25=0.942; dense=0.903; sub_bm25=0.848; sub_dense=0.902"
+      },
+      {
+        "corpusid": 229923350,
+        "score": 0.8971564769744873,
+        "reason": "bm25=0.944; dense=0.866; sub_bm25=0.893; sub_dense=0.861"
+      },
+      {
+        "corpusid": 258557100,
+        "score": 0.892613410949707,
+        "reason": "bm25=0.994; dense=0.825; sub_bm25=0.858; sub_dense=0.841"
+      },
+      {
+        "corpusid": 235254775,
+        "score": 0.8921189308166504,
+        "reason": "bm25=0.960; dense=0.847; sub_bm25=0.977; sub_dense=0.846"
+      }
+    ]
+  }
+}

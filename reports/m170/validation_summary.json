@@ -1,0 +1,38 @@
+{
+  "schema_version": "m170.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T08:10:56.971111+00:00",
+  "module_status": "implemented_not_verified",
+  "status": "PASS",
+  "checks": {
+    "cache_equivalence": true,
+    "realtime_examples": true,
+    "frozen_eval_invariance": true,
+    "studio_fidelity": true,
+    "localization": true,
+    "demo_replay": true,
+    "smoke": true,
+    "secret_scan": true,
+    "pytest_full": true
+  },
+  "pytest": "reports/m170/pytest.txt",
+  "not_verified_by_codex": true,
+  "reports": [
+    "cache_equivalence.json",
+    "demo_replay.json",
+    "frozen_eval_invariance.json",
+    "localization.json",
+    "m120_span_fidelity.json",
+    "m120_trail_fidelity.json",
+    "pytest.txt",
+    "realtime_examples.json",
+    "secret_scan.json",
+    "smoke.json",
+    "smoke.txt",
+    "studio_fidelity.json",
+    "upstream_hashes.json",
+    "validation_summary.json"
+  ],
+  "pytest_summary": "73 passed in 145.46s (0:02:25)",
+  "plan_status": "implemented",
+  "retro": "docs/dev/retrospectives/170-实时演示可用性与中文友好化-复盘.md"
+}

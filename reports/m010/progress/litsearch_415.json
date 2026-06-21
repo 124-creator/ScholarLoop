@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_415",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_415",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_415",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_415",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1099,
+      "latency_s": 7.676160800037906
+    },
+    {
+      "query_id": "litsearch_415",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 408,
+      "latency_s": 4.081858600024134
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_415",
+    "gold": [
+      258999673
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "Efficient encoding of multiple model outputs in a single forward pass with causal language models",
+      "Comparing or ranking many generated texts using causal LMs in one forward pass",
+      "Single-pass evaluation of multiple candidate outputs by causal language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1298443,
+        45246326,
+        254877171,
+        223040911,
+        260063225,
+        241583483,
+        9808585,
+        250390934,
+        2310240,
+        6241932,
+        13553993,
+        233365004,
+        1405599,
+        220047777,
+        2428290,
+        258865836,
+        12526413,
+        86111,
+        259376719,
+        258762609
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252683429,
+        251732759,
+        8085085,
+        9725544,
+        53802740,
+        235266229,
+        258762609,
+        245123965,
+        231719413,
+        259370568,
+        222341528,
+        257532608,
+        259298536,
+        236170938,
+        257482853,
+        244909258,
+        4884517,
+        257405475,
+        259129342,
+        258378260
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248300079,
+        235247884,
+        264439657,
+        259129342,
+        248780067,
+        255340449,
+        5509327,
+        258378260,
+        258947736,
+        13805803,
+        233296808,
+        253116568,
+        235417439,
+        259203213,
+        252118558,
+        234342906,
+        256274941,
+        53601909,
+        248986389,
+        259164398
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258762609,
+        245123965,
+        244909258,
+        255942546,
+        250390934,
+        259370568,
+        233365004,
+        2310240,
+        223040911,
+        258378260,
+        9808585,
+        1298443
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259129342,
+        264439657,
+        258378260,
+        244909258,
+        248300079,
+        252683429,
+        218901061,
+        235247884,
+        248780067,
+        255942546,
+        245123965,
+        235293810,
+        256358895,
+        263609006,
+        253244237,
+        259203213,
+        256105273,
+        256274941,
+        253116568,
+        258762609
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.52169490000233
+  },
+  "reason_example": {
+    "query_id": "litsearch_415",
+    "query": "Is there any work that allows large numbers of model outputs to be encoded and compared by causal language models in a single forward pass?",
+    "top_results": [
+      {
+        "corpusid": 259129342,
+        "score": 0.8621494174003601,
+        "reason": "bm25=0.837; dense=0.879; sub_bm25=0.820; sub_dense=0.946"
+      },
+      {
+        "corpusid": 264439657,
+        "score": 0.847968339920044,
+        "reason": "bm25=0.738; dense=0.921; sub_bm25=0.742; sub_dense=0.944"
+      },
+      {
+        "corpusid": 258378260,
+        "score": 0.843631386756897,
+        "reason": "bm25=0.837; dense=0.848; sub_bm25=0.951; sub_dense=0.902"
+      },
+      {
+        "corpusid": 244909258,
+        "score": 0.8239411115646362,
+        "reason": "bm25=0.851; dense=0.806; sub_bm25=0.868; sub_dense=0.886"
+      },
+      {
+        "corpusid": 248300079,
+        "score": 0.8151939511299133,
+        "reason": "bm25=0.538; dense=1.000; sub_bm25=0.531; sub_dense=0.998"
+      }
+    ]
+  }
+}

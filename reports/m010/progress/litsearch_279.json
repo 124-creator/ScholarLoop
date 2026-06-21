@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_279",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_279",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_279",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_279",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1516,
+      "latency_s": 9.549258600105532
+    },
+    {
+      "query_id": "litsearch_279",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 370,
+      "latency_s": 2.6361855999566615
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_279",
+    "gold": [
+      237592852
+    ],
+    "pool_size": 243,
+    "decomposition": [
+      "multi-hop question answering per-hop retrieval evaluation",
+      "independent hop retrieval evaluation multi-hop QA",
+      "per-hop retrieval metrics multi-hop reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2770995,
+        7649081,
+        8478554,
+        15185389,
+        16753572,
+        8912414,
+        16536417,
+        5232546,
+        2055088,
+        6149114,
+        203610361,
+        62016582,
+        16717495,
+        14012397,
+        20167120,
+        42994580,
+        884211,
+        17815197,
+        8358691,
+        12405045
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237592852,
+        249049410,
+        226236740,
+        236477336,
+        174801764,
+        3806582,
+        234776197,
+        189927857,
+        211258744,
+        203610361,
+        252780709,
+        202583429,
+        248827723,
+        189927896,
+        254221022,
+        252819457,
+        233219392,
+        225066758,
+        211258645,
+        256460981
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237592852,
+        256827818,
+        249049410,
+        221970302,
+        174801764,
+        234776197,
+        250391000,
+        202583429,
+        233295975,
+        225066758,
+        202712552,
+        202773198,
+        189927857,
+        211258744,
+        237502990,
+        123758373,
+        128345225,
+        254877499,
+        248780583,
+        12243703
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233219392,
+        189927857,
+        248827723,
+        202583429
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237592852,
+        249049410,
+        174801764,
+        256827818,
+        234776197,
+        202583429,
+        189927857,
+        211258744,
+        225066758,
+        202773198,
+        221970302,
+        254221022,
+        233219392,
+        248827723,
+        226236740,
+        252780709,
+        252819457,
+        128345225,
+        203610361,
+        251718892
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.984080499969423
+  },
+  "reason_example": {
+    "query_id": "litsearch_279",
+    "query": "In multi-hop question answering, is there a paper that explores \"per-hop\" retrieval evaluation that treats each hop of retrieval independently?",
+    "top_results": [
+      {
+        "corpusid": 237592852,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.972; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249049410,
+        "score": 0.9097870588302612,
+        "reason": "bm25=0.984; dense=0.860; sub_bm25=0.891; sub_dense=1.000"
+      },
+      {
+        "corpusid": 174801764,
+        "score": 0.8723359107971191,
+        "reason": "bm25=0.919; dense=0.841; sub_bm25=1.000; sub_dense=0.878"
+      },
+      {
+        "corpusid": 256827818,
+        "score": 0.8637595772743225,
+        "reason": "bm25=0.802; dense=0.905; sub_bm25=0.969; sub_dense=0.978"
+      },
+      {
+        "corpusid": 234776197,
+        "score": 0.8633804321289062,
+        "reason": "bm25=0.910; dense=0.833; sub_bm25=0.906; sub_dense=0.904"
+      }
+    ]
+  }
+}

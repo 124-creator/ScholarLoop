@@ -1,0 +1,31 @@
+{
+  "schema_version": "m180.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T08:50:45.465289+00:00",
+  "module_status": "implemented_not_verified",
+  "status": "PASS",
+  "checks": {
+    "localization_polish": true,
+    "i18n_coverage": true,
+    "studio_fidelity": true,
+    "frozen_eval_invariance": true,
+    "smoke": true,
+    "secret_scan": true,
+    "pytest_full": true
+  },
+  "pytest": "reports/m180/pytest.txt",
+  "not_verified_by_codex": true,
+  "reports": [
+    "frozen_eval_invariance.json",
+    "i18n_coverage.json",
+    "localization_polish.json",
+    "pytest.txt",
+    "secret_scan.json",
+    "smoke.json",
+    "smoke.txt",
+    "studio_fidelity.json",
+    "validation_summary.json"
+  ],
+  "pytest_summary": "77 passed in 150.79s (0:02:30)",
+  "plan_status": "implemented",
+  "retro": "docs/dev/retrospectives/180-实时卡零幻觉措辞优化-复盘.md"
+}

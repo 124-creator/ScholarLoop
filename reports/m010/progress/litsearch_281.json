@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_281",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_281",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_281",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_281",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 651,
+      "latency_s": 2.260772699955851
+    },
+    {
+      "query_id": "litsearch_281",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 328,
+      "latency_s": 2.7362812999635935
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_281",
+    "gold": [
+      239010011
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "benchmark social bias question answering ambiguity resolution",
+      "social bias categories QA framework benchmark",
+      "bias detection QA ambiguous instances dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6089322,
+        60513490,
+        13412990,
+        259370703,
+        15975555,
+        12098470,
+        2200840,
+        222090785,
+        12535,
+        7733490,
+        16248365,
+        237277931,
+        2928175,
+        1705467,
+        14331898,
+        252280503,
+        236460084,
+        18252135,
+        14167126,
+        236460248
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252907310,
+        239010011,
+        251698859,
+        258959496,
+        247450590,
+        236477795,
+        259951175,
+        207853290,
+        252222228,
+        57761084,
+        190000105,
+        248780290,
+        252624694,
+        211204926,
+        252280503,
+        237485538,
+        250391013,
+        237491743,
+        241583472,
+        250390904
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        239010011,
+        252907310,
+        236460084,
+        10047522,
+        207853290,
+        241583472,
+        252222228,
+        249017555,
+        248780290,
+        257205850,
+        258686693,
+        190000105,
+        218971825,
+        258486946,
+        239015827,
+        247450590,
+        202537179,
+        128296356,
+        250390561,
+        250390904
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        239010011
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        239010011,
+        252907310,
+        207853290,
+        252222228,
+        248780290,
+        247450590,
+        190000105,
+        241583472,
+        236460084,
+        249017555,
+        258686693,
+        252624694,
+        250390904,
+        237485538,
+        128296356,
+        236477795,
+        251698859,
+        258486946,
+        211204926,
+        256389777
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.164300300064497
+  },
+  "reason_example": {
+    "query_id": "litsearch_281",
+    "query": "Is there a benchmark designed to assess language models' social biases within question answering frameworks, specifically one encompassing diverse categories of social bias and offering instances of ambiguity and its resolution?",
+    "top_results": [
+      {
+        "corpusid": 239010011,
+        "score": 0.9870560169219971,
+        "reason": "bm25=0.968; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252907310,
+        "score": 0.911271333694458,
+        "reason": "bm25=1.000; dense=0.852; sub_bm25=0.663; sub_dense=0.950"
+      },
+      {
+        "corpusid": 207853290,
+        "score": 0.8474770784378052,
+        "reason": "bm25=0.894; dense=0.816; sub_bm25=0.660; sub_dense=0.723"
+      },
+      {
+        "corpusid": 252222228,
+        "score": 0.8368046283721924,
+        "reason": "bm25=0.890; dense=0.801; sub_bm25=0.610; sub_dense=0.839"
+      },
+      {
+        "corpusid": 248780290,
+        "score": 0.8319442272186279,
+        "reason": "bm25=0.881; dense=0.799; sub_bm25=0.681; sub_dense=0.676"
+      }
+    ]
+  }
+}

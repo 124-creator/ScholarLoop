@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_274",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_274",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_274",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_274",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 804,
+      "latency_s": 3.4501089999685064
+    },
+    {
+      "query_id": "litsearch_274",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 326,
+      "latency_s": 2.4873976999660954
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_274",
+    "gold": [
+      232185112
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "character-level language models without tokenization",
+      "advancements in non-tokenized language models",
+      "benefits of character-level encoding over subword tokenization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1463401,
+        981424,
+        235097443,
+        59604474,
+        18184246,
+        27016310,
+        6271137,
+        8584287,
+        14323173,
+        46482966,
+        13495961,
+        1136032,
+        19007990,
+        14029756,
+        18021407,
+        12160022,
+        234342689,
+        184483194,
+        259376686,
+        1694022
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248986585,
+        235624202,
+        258378250,
+        221246120,
+        249394509,
+        215416175,
+        252186402,
+        237332926,
+        5972337,
+        245425218,
+        248366702,
+        232185112,
+        10509498,
+        46482966,
+        1896571,
+        222140632,
+        237513469,
+        252357829,
+        245124270,
+        196199527
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245425218,
+        237291795,
+        249394509,
+        232185112,
+        221246120,
+        215416175,
+        49587517,
+        248069436,
+        252873220,
+        216868277,
+        2078255,
+        248986557,
+        51871061,
+        258564506,
+        259188071,
+        248366702,
+        21697629,
+        222140632,
+        75134948,
+        248780519
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        232185112,
+        10509498,
+        13495961,
+        248986585,
+        236459780,
+        221246120,
+        245425218,
+        51871061,
+        14029756,
+        2078255,
+        249394509,
+        258378250
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249394509,
+        245425218,
+        221246120,
+        232185112,
+        215416175,
+        237291795,
+        258378250,
+        248986585,
+        248366702,
+        235624202,
+        222140632,
+        51871061,
+        2078255,
+        236459780,
+        248986557,
+        15409824,
+        21697629,
+        231985794,
+        245124270,
+        259833797
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.265841800021008
+  },
+  "reason_example": {
+    "query_id": "litsearch_274",
+    "query": "Have there been any advancements in language models that operate without tokenization and emphasize encoding at the character level, and what benefits might they have compared to conventional methods using subword tokenization?",
+    "top_results": [
+      {
+        "corpusid": 249394509,
+        "score": 0.9681872129440308,
+        "reason": "bm25=0.957; dense=0.976; sub_bm25=0.867; sub_dense=1.000"
+      },
+      {
+        "corpusid": 245425218,
+        "score": 0.9540656208992004,
+        "reason": "bm25=0.885; dense=1.000; sub_bm25=1.000; sub_dense=0.997"
+      },
+      {
+        "corpusid": 221246120,
+        "score": 0.9458407163619995,
+        "reason": "bm25=0.958; dense=0.938; sub_bm25=0.976; sub_dense=0.940"
+      },
+      {
+        "corpusid": 232185112,
+        "score": 0.9309170246124268,
+        "reason": "bm25=0.872; dense=0.970; sub_bm25=0.751; sub_dense=0.910"
+      },
+      {
+        "corpusid": 215416175,
+        "score": 0.9210131168365479,
+        "reason": "bm25=0.903; dense=0.933; sub_bm25=0.904; sub_dense=0.907"
+      }
+    ]
+  }
+}

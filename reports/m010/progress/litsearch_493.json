@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_493",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_493",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_493",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_493",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1156,
+      "latency_s": 6.702639500028454
+    },
+    {
+      "query_id": "litsearch_493",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 18.23921969998628
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_493",
+    "gold": [
+      259370722
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "language model generating lyrics for given melody",
+      "lyrics generation with melody conditioning using neural networks",
+      "singable lyrics from language models and musical constraints"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        253098557,
+        236477566,
+        10707097,
+        53093808,
+        8774624,
+        241583598,
+        8028944,
+        45438237,
+        252411630,
+        259370703,
+        235732200,
+        7306663,
+        53639109,
+        219310074,
+        1827666,
+        23776473,
+        182916006,
+        197254,
+        1906653,
+        21706647
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370722,
+        44159724,
+        236688506,
+        182916006,
+        16127825,
+        235732200,
+        9454296,
+        9017492,
+        227217163,
+        226283635,
+        248780389,
+        256739245,
+        14448505,
+        19018265,
+        231705323,
+        235166497,
+        11529003,
+        9786783,
+        17439586,
+        226283901
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        44159724,
+        14448505,
+        182916006,
+        236688506,
+        252411630,
+        7492076,
+        35435461,
+        259370722,
+        222066982,
+        17439586,
+        231705323,
+        9017492,
+        9454296,
+        259370877,
+        258378258,
+        226283635,
+        248780389,
+        16127825,
+        220445858,
+        258947268
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        44159724,
+        259370722,
+        16127825,
+        231705323,
+        236688506,
+        182916006,
+        226283635,
+        235732200,
+        14448505,
+        9017492,
+        9454296,
+        252411630
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370722,
+        44159724,
+        236688506,
+        182916006,
+        14448505,
+        16127825,
+        9454296,
+        9017492,
+        252411630,
+        226283635,
+        231705323,
+        17439586,
+        222066982,
+        248780389,
+        227217163,
+        35435461,
+        248780392,
+        256461065,
+        19018265,
+        258378258
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 25.98213559994474
+  },
+  "reason_example": {
+    "query_id": "litsearch_493",
+    "query": "Which paper utilizes language models to generate singable lyrics that can go well with a predefined melody?",
+    "top_results": [
+      {
+        "corpusid": 259370722,
+        "score": 0.938374400138855,
+        "reason": "bm25=1.000; dense=0.897; sub_bm25=0.987; sub_dense=0.913"
+      },
+      {
+        "corpusid": 44159724,
+        "score": 0.9156273603439331,
+        "reason": "bm25=0.789; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236688506,
+        "score": 0.8349149227142334,
+        "reason": "bm25=0.690; dense=0.932; sub_bm25=1.000; sub_dense=0.962"
+      },
+      {
+        "corpusid": 182916006,
+        "score": 0.83431077003479,
+        "reason": "bm25=0.672; dense=0.943; sub_bm25=0.660; sub_dense=0.870"
+      },
+      {
+        "corpusid": 14448505,
+        "score": 0.7806965708732605,
+        "reason": "bm25=0.485; dense=0.978; sub_bm25=0.664; sub_dense=0.949"
+      }
+    ]
+  }
+}

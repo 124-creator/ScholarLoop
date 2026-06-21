@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_133",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_133",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_133",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_133",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1313,
+      "latency_s": 9.135751300025731
+    },
+    {
+      "query_id": "litsearch_133",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 359,
+      "latency_s": 3.140582100022584
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_133",
+    "gold": [
+      235097361
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "graph-based multimodal interaction temporal modeling non-aligned sequential data",
+      "inter-modality interaction graph temporal sequences unaligned",
+      "graph neural network multimodal sequential data alignment-free"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219305462,
+        10687323,
+        248118963,
+        252819166,
+        5769254,
+        19914801,
+        219571176,
+        235482360,
+        628974,
+        10616026,
+        241583473,
+        248524998,
+        4792796,
+        259076423,
+        13156058,
+        19025907,
+        52013453,
+        12277102,
+        14894761,
+        233189611
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819166,
+        235097361,
+        52055964,
+        173990158,
+        258480094,
+        9648987,
+        219571176,
+        250390906,
+        236460184,
+        254823126,
+        258378175,
+        196208194,
+        234763208,
+        259370654,
+        13807507,
+        236460152,
+        20210923,
+        259370517,
+        247613006,
+        248524998
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235097361,
+        257039090,
+        13431802,
+        1494369,
+        173990158,
+        218973732,
+        234763208,
+        21701086,
+        2063652,
+        261124675,
+        21692777,
+        9726830,
+        250150859,
+        252519245,
+        18827045,
+        248780457,
+        17993065,
+        16249912,
+        27719343,
+        16530798
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097361,
+        252819166,
+        248524998,
+        250390906,
+        236460184
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235097361,
+        173990158,
+        252819166,
+        234763208,
+        9648987,
+        259096096,
+        248780457,
+        257039090,
+        16530798,
+        222310695,
+        250390906,
+        51868869,
+        254823126,
+        248524998,
+        13807507,
+        2895422,
+        13431802,
+        21701086,
+        251403526,
+        1494369
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.011590100009926
+  },
+  "reason_example": {
+    "query_id": "litsearch_133",
+    "query": "Could you recommend a study that investigates graph-based modeling of interactivity among various modalities over time within non-aligned multimodal sequential datasets?",
+    "top_results": [
+      {
+        "corpusid": 235097361,
+        "score": 0.9734472036361694,
+        "reason": "bm25=0.934; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 173990158,
+        "score": 0.9037563800811768,
+        "reason": "bm25=0.894; dense=0.911; sub_bm25=0.802; sub_dense=0.910"
+      },
+      {
+        "corpusid": 252819166,
+        "score": 0.8668557405471802,
+        "reason": "bm25=1.000; dense=0.778; sub_bm25=0.702; sub_dense=0.770"
+      },
+      {
+        "corpusid": 234763208,
+        "score": 0.852178692817688,
+        "reason": "bm25=0.776; dense=0.903; sub_bm25=0.522; sub_dense=0.804"
+      },
+      {
+        "corpusid": 9648987,
+        "score": 0.7988558411598206,
+        "reason": "bm25=0.814; dense=0.789; sub_bm25=0.658; sub_dense=0.795"
+      }
+    ]
+  }
+}

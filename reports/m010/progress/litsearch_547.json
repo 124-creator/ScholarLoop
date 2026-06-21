@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_547",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_547",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_547",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_547",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 734,
+      "latency_s": 2.9248069999739528
+    },
+    {
+      "query_id": "litsearch_547",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 322,
+      "latency_s": 2.984041600022465
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_547",
+    "gold": [
+      264147054
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "rotary positional encoding multi-view transformer",
+      "camera geometry encoding RoPE",
+      "first paper rope multi-view"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258378308,
+        15058350,
+        10740890,
+        201651596,
+        264147054,
+        231643130,
+        9199648,
+        39654639,
+        18678163,
+        257154232,
+        1402974,
+        259075184,
+        17350305,
+        1168278,
+        71689,
+        666417,
+        2202801,
+        2243765,
+        3906867,
+        8535026
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        264147054,
+        235489690,
+        256827775,
+        245124443,
+        222290948,
+        256460973,
+        243728757,
+        211483460,
+        219708219,
+        256194482,
+        1181016,
+        261493986,
+        247434179,
+        254591805,
+        239009915,
+        8265070,
+        237491776,
+        220249871,
+        226262328,
+        208144205
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264147054,
+        256194482,
+        237491629,
+        264038763,
+        263605591,
+        2170948,
+        257254909,
+        248780488,
+        256827775,
+        246904988,
+        264436566,
+        264038819,
+        235376961,
+        218502632,
+        2208884,
+        246430476,
+        244488490,
+        7424695,
+        243865185,
+        249209614
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264147054
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264147054,
+        256194482,
+        256827775,
+        243728757,
+        256460973,
+        219708219,
+        235489690,
+        263605591,
+        237491629,
+        244488490,
+        211483460,
+        2170948,
+        222290948,
+        261493986,
+        245124443,
+        256104917,
+        247434179,
+        218502632,
+        248780488,
+        264038763
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.0606089000357315
+  },
+  "reason_example": {
+    "query_id": "litsearch_547",
+    "query": "What paper first extends rotary positional encoding (RoPE) for camera-geometry encoding in multi-view transformers?",
+    "top_results": [
+      {
+        "corpusid": 264147054,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256194482,
+        "score": 0.8546450138092041,
+        "reason": "bm25=0.643; dense=0.996; sub_bm25=0.678; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256827775,
+        "score": 0.8032943606376648,
+        "reason": "bm25=0.781; dense=0.818; sub_bm25=0.766; sub_dense=0.932"
+      },
+      {
+        "corpusid": 243728757,
+        "score": 0.7197864055633545,
+        "reason": "bm25=0.676; dense=0.749; sub_bm25=0.725; sub_dense=0.843"
+      },
+      {
+        "corpusid": 256460973,
+        "score": 0.7107534408569336,
+        "reason": "bm25=0.709; dense=0.712; sub_bm25=0.764; sub_dense=0.761"
+      }
+    ]
+  }
+}

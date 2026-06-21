@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_349",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_349",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_349",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_349",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1719,
+      "latency_s": 13.668699999921955
+    },
+    {
+      "query_id": "litsearch_349",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 359,
+      "latency_s": 3.593927099951543
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_349",
+    "gold": [
+      259089125
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "training large language models on mathematical data causal reasoning emergence",
+      "structural data language models causal reasoning faster emergence",
+      "purely mathematical training LLMs causal abilities"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248811371,
+        16248365,
+        248779924,
+        264147017,
+        259370703,
+        29164993,
+        52299393,
+        44119311,
+        7841001,
+        236477566,
+        17030617,
+        16565880,
+        32080089,
+        254877399,
+        251196761,
+        7619470,
+        248780527,
+        253761979,
+        239009471,
+        235422606
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256901172,
+        263829563,
+        254877399,
+        243865253,
+        236460013,
+        262084051,
+        257663312,
+        247656360,
+        252595921,
+        254823424,
+        218901061,
+        252683429,
+        258959201,
+        256274941,
+        234778324,
+        254877175,
+        248780309,
+        235368289,
+        259370801,
+        214774853
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259129342,
+        259370567,
+        64435976,
+        248300079,
+        235732204,
+        235417439,
+        256461249,
+        258378260,
+        252819453,
+        247656360,
+        14456180,
+        252199592,
+        235247884,
+        259370886,
+        238419341,
+        247656607,
+        235097200,
+        256274941,
+        227210092,
+        235293810
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        262084051,
+        264147017,
+        259129342,
+        259370567,
+        254877399
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259129342,
+        247656360,
+        259370567,
+        258378260,
+        235732204,
+        256274941,
+        254877399,
+        262084051,
+        257663312,
+        248780309,
+        259370886,
+        218901061,
+        235097200,
+        214774853,
+        14456180,
+        235417439,
+        238419341,
+        248085064,
+        247656607,
+        256461249
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 18.75692389998585
+  },
+  "reason_example": {
+    "query_id": "litsearch_349",
+    "query": "Which works shows that training large language models with purely mathematical and structural data can exhibit emergence of causal reasoning faster?",
+    "top_results": [
+      {
+        "corpusid": 259129342,
+        "score": 0.9035898447036743,
+        "reason": "bm25=0.759; dense=1.000; sub_bm25=1.000; sub_dense=0.997"
+      },
+      {
+        "corpusid": 247656360,
+        "score": 0.8535336256027222,
+        "reason": "bm25=0.876; dense=0.838; sub_bm25=0.920; sub_dense=0.955"
+      },
+      {
+        "corpusid": 259370567,
+        "score": 0.8283729553222656,
+        "reason": "bm25=0.658; dense=0.942; sub_bm25=0.683; sub_dense=0.953"
+      },
+      {
+        "corpusid": 258378260,
+        "score": 0.823724627494812,
+        "reason": "bm25=0.798; dense=0.841; sub_bm25=0.870; sub_dense=0.872"
+      },
+      {
+        "corpusid": 235732204,
+        "score": 0.8188145160675049,
+        "reason": "bm25=0.741; dense=0.871; sub_bm25=0.765; sub_dense=0.937"
+      }
+    ]
+  }
+}

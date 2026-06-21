@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_029",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_029",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_029",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_029",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1464,
+      "latency_s": 9.916738900006749
+    },
+    {
+      "query_id": "litsearch_029",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 268,
+      "latency_s": 2.1991057000122964
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_029",
+    "gold": [
+      10318045
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "open information extraction lexical syntactic constraints coherent extraction",
+      "development open information extraction systems lexical constraints informative",
+      "syntactic constraints open IE coherence informativeness"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        22918090,
+        1455080,
+        15373688,
+        15168504,
+        10318045,
+        218688152,
+        1412569,
+        5537030,
+        6185167,
+        8738739,
+        8143282,
+        9319303,
+        15691543,
+        8852106,
+        1871953,
+        12252477,
+        14388447,
+        813729,
+        1571038,
+        14206097
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        10318045,
+        2154023,
+        51871263,
+        6983197,
+        258378284,
+        6234837,
+        12134560,
+        14386043,
+        1453540,
+        9319303,
+        2931182,
+        226262274,
+        464513,
+        12646830,
+        248780117,
+        11715916,
+        12433832,
+        3026902,
+        29904330,
+        6856969
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        49215220,
+        1455080,
+        52811129,
+        10318045,
+        74065,
+        18760550,
+        236145027,
+        7371343,
+        17991416,
+        43676130,
+        52010258,
+        216653443,
+        6983197,
+        2077889,
+        53091100,
+        12433832,
+        18620281,
+        1442452,
+        1441185,
+        12422320
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        6234837,
+        2931182,
+        10318045,
+        49215220,
+        52010258,
+        5537030,
+        743925,
+        2154023,
+        14388447,
+        52811129
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        10318045,
+        49215220,
+        52811129,
+        6983197,
+        258378284,
+        6234837,
+        12433832,
+        52010258,
+        18620281,
+        2154023,
+        12134560,
+        13481251,
+        254246319,
+        237513626,
+        74065,
+        2931182,
+        945247,
+        13589134,
+        216653443,
+        45287459
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.156300199916586
+  },
+  "reason_example": {
+    "query_id": "litsearch_029",
+    "query": "Could you point me to studies that discuss the development of open information extraction systems with lexical and syntactic constraints to ensure the extraction is coherent and informative?",
+    "top_results": [
+      {
+        "corpusid": 10318045,
+        "score": 0.9640471935272217,
+        "reason": "bm25=1.000; dense=0.940; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 49215220,
+        "score": 0.9195135831832886,
+        "reason": "bm25=0.799; dense=1.000; sub_bm25=0.663; sub_dense=0.969"
+      },
+      {
+        "corpusid": 52811129,
+        "score": 0.8925331830978394,
+        "reason": "bm25=0.818; dense=0.942; sub_bm25=0.642; sub_dense=0.946"
+      },
+      {
+        "corpusid": 6983197,
+        "score": 0.8883845806121826,
+        "reason": "bm25=0.891; dense=0.887; sub_bm25=0.808; sub_dense=0.937"
+      },
+      {
+        "corpusid": 258378284,
+        "score": 0.8717302083969116,
+        "reason": "bm25=0.889; dense=0.860; sub_bm25=0.805; sub_dense=0.954"
+      }
+    ]
+  }
+}

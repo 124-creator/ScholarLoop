@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_302",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_302",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_302",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_302",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1188,
+      "latency_s": 6.877241600072011
+    },
+    {
+      "query_id": "litsearch_302",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.619933799956925
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_302",
+    "gold": [
+      218487319
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "test set contamination random division machine learning datasets",
+      "random split data leakage machine learning",
+      "issues with random train test split in machine learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6271137,
+        201686118,
+        12596803,
+        8571409,
+        30908728,
+        237353165,
+        215548041,
+        250390461,
+        6937902,
+        258547350,
+        259833782,
+        17620646,
+        1161892,
+        17288641,
+        198992711,
+        908030,
+        250391063,
+        11329372,
+        9035305,
+        14329451
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        255595748,
+        198992711,
+        237592932,
+        218900504,
+        14794619,
+        6884242,
+        7591934,
+        221005781,
+        53235792,
+        195064645,
+        253098682,
+        53503062,
+        10832190,
+        18487464,
+        215548041,
+        5951198,
+        222133287,
+        85556928,
+        263310823,
+        235421978
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263310823,
+        220128149,
+        218487319,
+        250491294,
+        247244739,
+        29778779,
+        256662499,
+        239009938,
+        254275077,
+        5195887,
+        212718244,
+        245877810,
+        252992876,
+        254044657,
+        247011642,
+        263310960,
+        244129839,
+        221507913,
+        246679938,
+        258967501
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263310823,
+        258967501,
+        7610287,
+        255595748,
+        29778779,
+        215548041,
+        250390461,
+        237592932,
+        218900504,
+        198992711,
+        12596803,
+        5195887
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263310823,
+        218487319,
+        258967501,
+        220128149,
+        11770707,
+        255595748,
+        29778779,
+        231609191,
+        195755478,
+        239016463,
+        5195887,
+        3544583,
+        247011642,
+        254275077,
+        6212000,
+        252408526,
+        244129839,
+        258999368,
+        250491294,
+        256416262
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.338384800008498
+  },
+  "reason_example": {
+    "query_id": "litsearch_302",
+    "query": "What concerns or key points have been highlighted in scholarly articles about employing random divisions in machine learning datasets, especially with respect to contamination of the test set?",
+    "top_results": [
+      {
+        "corpusid": 263310823,
+        "score": 0.9386303424835205,
+        "reason": "bm25=0.847; dense=1.000; sub_bm25=0.738; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218487319,
+        "score": 0.8488082885742188,
+        "reason": "bm25=0.691; dense=0.954; sub_bm25=0.966; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258967501,
+        "score": 0.8133794069290161,
+        "reason": "bm25=0.775; dense=0.839; sub_bm25=0.701; sub_dense=0.855"
+      },
+      {
+        "corpusid": 220128149,
+        "score": 0.8052574992179871,
+        "reason": "bm25=0.546; dense=0.978; sub_bm25=0.523; sub_dense=1.000"
+      },
+      {
+        "corpusid": 11770707,
+        "score": 0.7883486747741699,
+        "reason": "bm25=0.844; dense=0.751; sub_bm25=1.000; sub_dense=0.880"
+      }
+    ]
+  }
+}

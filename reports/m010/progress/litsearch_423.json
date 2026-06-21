@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_423",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_423",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_423",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_423",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1453,
+      "latency_s": 7.616304900031537
+    },
+    {
+      "query_id": "litsearch_423",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 253,
+      "latency_s": 2.314082699944265
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_423",
+    "gold": [
+      259370817
+    ],
+    "pool_size": 238,
+    "decomposition": [
+      "class-incremental continual learning methods",
+      "approaches for class-incremental learning",
+      "techniques to solve class-incremental problem"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29206719,
+        15075946,
+        12744446,
+        1791179,
+        259370522,
+        8590250,
+        24546582,
+        24957784,
+        30908728,
+        252780357,
+        259370762,
+        13883427,
+        1420866,
+        220047441,
+        3920851,
+        16147979,
+        3247663,
+        11073992,
+        186206208,
+        16567212
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257636846,
+        259370684,
+        252780822,
+        249097739,
+        5907822,
+        220525844,
+        239024453,
+        211132756,
+        13570924,
+        251647177,
+        259224492,
+        259108957,
+        226227476,
+        247594025,
+        219636462,
+        247793212,
+        246634117,
+        252410658,
+        11451209,
+        222272028
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222272028,
+        211132756,
+        229363613,
+        256390383,
+        249097739,
+        220424510,
+        53100211,
+        259138821,
+        247315339,
+        219636462,
+        239024453,
+        247476090,
+        257636846,
+        247793212,
+        13570924,
+        227162606,
+        259224492,
+        246430145,
+        208202124,
+        244954755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370684,
+        239024453,
+        259224492,
+        211132756,
+        13570924,
+        219636462,
+        256390383,
+        257636846,
+        222272028,
+        249097739,
+        252780822,
+        1791179
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        211132756,
+        222272028,
+        257636846,
+        249097739,
+        239024453,
+        13570924,
+        256390383,
+        219636462,
+        259224492,
+        247793212,
+        259370684,
+        252780822,
+        227162606,
+        247594025,
+        246430145,
+        220525844,
+        209832425,
+        53100211,
+        244954755,
+        174802369
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.737229299964383
+  },
+  "reason_example": {
+    "query_id": "litsearch_423",
+    "query": "What are some methods for solving the class-incremetal continual learning problems?",
+    "top_results": [
+      {
+        "corpusid": 211132756,
+        "score": 0.9656779766082764,
+        "reason": "bm25=0.951; dense=0.975; sub_bm25=0.593; sub_dense=0.959"
+      },
+      {
+        "corpusid": 222272028,
+        "score": 0.9571219682693481,
+        "reason": "bm25=0.893; dense=1.000; sub_bm25=0.535; sub_dense=0.912"
+      },
+      {
+        "corpusid": 257636846,
+        "score": 0.9465923309326172,
+        "reason": "bm25=1.000; dense=0.911; sub_bm25=0.770; sub_dense=0.948"
+      },
+      {
+        "corpusid": 249097739,
+        "score": 0.9414259195327759,
+        "reason": "bm25=0.957; dense=0.931; sub_bm25=0.840; sub_dense=0.936"
+      },
+      {
+        "corpusid": 239024453,
+        "score": 0.9281059503555298,
+        "reason": "bm25=0.952; dense=0.912; sub_bm25=0.925; sub_dense=0.908"
+      }
+    ]
+  }
+}

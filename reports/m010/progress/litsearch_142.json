@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_142",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_142",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_142",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_142",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 871,
+      "latency_s": 4.594351900042966
+    },
+    {
+      "query_id": "litsearch_142",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 2.631978000048548
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_142",
+    "gold": [
+      234334398
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "sparse attention mechanism long document",
+      "efficient attention for long sequences",
+      "sparsity in transformer attention"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        962094,
+        16657732,
+        8507410,
+        14894761,
+        219305462,
+        6732044,
+        21695934,
+        49430466,
+        1868,
+        15751424,
+        51876536,
+        7989398,
+        11801961,
+        12795660,
+        45438237,
+        218688152,
+        258960366,
+        5331373,
+        6104581,
+        5153623
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252818993,
+        201692852,
+        5331373,
+        260063222,
+        259833859,
+        3643309,
+        256739246,
+        248811280,
+        26490087,
+        199552244,
+        118648396,
+        13528696,
+        235293987,
+        236477957,
+        259376659,
+        5559315,
+        215814331,
+        6081625,
+        218674216,
+        15717555
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1935605,
+        102352287,
+        245131261,
+        235293798,
+        246867127,
+        3832345,
+        248780273,
+        229923177,
+        27970287,
+        1513924,
+        6654414,
+        226262310,
+        248426893,
+        207847640,
+        9808585,
+        232380086,
+        668597,
+        5567072,
+        254926669,
+        226262233
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235293987,
+        221970983,
+        249063064,
+        256739246,
+        260063222,
+        220045413
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1935605,
+        235293798,
+        201692852,
+        245131261,
+        235293987,
+        233231308,
+        249063064,
+        220045413,
+        234777911,
+        237940880,
+        256739246,
+        248811280,
+        226262310,
+        248780077,
+        221970983,
+        102352287,
+        27970287,
+        226262233,
+        6857205,
+        237513393
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.5382298999466
+  },
+  "reason_example": {
+    "query_id": "litsearch_142",
+    "query": "Could you recommend a study that investigates the implementation of sparsity within attention mechanisms to enhance the performance of models processing extremely lengthy documents?",
+    "top_results": [
+      {
+        "corpusid": 1935605,
+        "score": 0.8839401006698608,
+        "reason": "bm25=0.710; dense=1.000; sub_bm25=0.403; sub_dense=0.883"
+      },
+      {
+        "corpusid": 235293798,
+        "score": 0.8828698992729187,
+        "reason": "bm25=0.788; dense=0.946; sub_bm25=0.727; sub_dense=0.866"
+      },
+      {
+        "corpusid": 201692852,
+        "score": 0.8631160259246826,
+        "reason": "bm25=0.983; dense=0.784; sub_bm25=0.339; sub_dense=0.821"
+      },
+      {
+        "corpusid": 245131261,
+        "score": 0.8602701425552368,
+        "reason": "bm25=0.725; dense=0.951; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235293987,
+        "score": 0.8593736886978149,
+        "reason": "bm25=0.872; dense=0.851; sub_bm25=0.897; sub_dense=0.818"
+      }
+    ]
+  }
+}

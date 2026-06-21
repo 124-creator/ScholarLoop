@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_548",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_548",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_548",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_548",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 624,
+      "latency_s": 1.9130375999957323
+    },
+    {
+      "query_id": "litsearch_548",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 260,
+      "latency_s": 2.62635360006243
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_548",
+    "gold": [
+      264555382
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "robust perceptual similarity metric certificate first paper",
+      "certified robustness perceptual similarity metric",
+      "first proposed robust perceptual similarity with certificates"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        206728,
+        6881568,
+        15859907,
+        36718281,
+        11888861,
+        12729872,
+        14237344,
+        3261520,
+        6855603,
+        7718505,
+        11177959,
+        6723570,
+        53079155,
+        10119880,
+        16159457,
+        17002440,
+        15501721,
+        17759436,
+        1519586
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264555382,
+        263829511,
+        11888861,
+        36718281,
+        248780351,
+        15859907,
+        17048503,
+        247475891,
+        219981806,
+        3527879,
+        10678830,
+        19161058,
+        7204869,
+        9761304,
+        53082881,
+        1253703,
+        5280872,
+        174800868,
+        258988004,
+        257154238
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        6305097,
+        257154238,
+        264555382,
+        256739260,
+        17786749,
+        256739268,
+        239024909,
+        30016177,
+        8635289,
+        14929234,
+        4983428,
+        20745626,
+        235367817,
+        5713900,
+        3605426,
+        264038749,
+        2414880,
+        253224118,
+        14983672,
+        18466836
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264555382
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264555382,
+        257154238,
+        263829511,
+        6305097,
+        235367817,
+        17786749,
+        17107031,
+        4983428,
+        253224118,
+        8635289,
+        256739260,
+        263830446,
+        250607914,
+        1359050,
+        19161058,
+        239024909,
+        17330608,
+        20745626,
+        1580295,
+        19013106
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.335109899984673
+  },
+  "reason_example": {
+    "query_id": "litsearch_548",
+    "query": "What paper first proposed a robust perceptual similarity metric with certificates?",
+    "top_results": [
+      {
+        "corpusid": 264555382,
+        "score": 0.9405535459518433,
+        "reason": "bm25=1.000; dense=0.901; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257154238,
+        "score": 0.7459038496017456,
+        "reason": "bm25=0.492; dense=0.915; sub_bm25=0.461; sub_dense=0.906"
+      },
+      {
+        "corpusid": 263829511,
+        "score": 0.742527961730957,
+        "reason": "bm25=0.688; dense=0.779; sub_bm25=0.791; sub_dense=0.895"
+      },
+      {
+        "corpusid": 6305097,
+        "score": 0.7039546370506287,
+        "reason": "bm25=0.260; dense=1.000; sub_bm25=0.223; sub_dense=0.985"
+      },
+      {
+        "corpusid": 235367817,
+        "score": 0.6860529184341431,
+        "reason": "bm25=0.488; dense=0.818; sub_bm25=0.494; sub_dense=0.905"
+      }
+    ]
+  }
+}

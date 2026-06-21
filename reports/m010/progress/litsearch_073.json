@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_073",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_073",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_073",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_073",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1696,
+      "latency_s": 13.67454729997553
+    },
+    {
+      "query_id": "litsearch_073",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 231,
+      "latency_s": 1.8463669000193477
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_073",
+    "gold": [
+      4711425
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "datasets for fact verification using Wikipedia evidence",
+      "shared tasks fact verification Wikipedia",
+      "Wikipedia based fact checking datasets"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12295680,
+        10512852,
+        18575199,
+        17033179,
+        14478849,
+        1785399,
+        52158121,
+        6195875,
+        209082830,
+        236460248,
+        6580561,
+        32392814,
+        237581112,
+        238251650,
+        244464099,
+        4982036,
+        22510714,
+        229365770,
+        241583576,
+        14719746
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235293804,
+        232233599,
+        241583576,
+        251929366,
+        4711425,
+        222291705,
+        235254775,
+        234790199,
+        6580561,
+        198917339,
+        241583343,
+        18575199,
+        235248022,
+        247546590,
+        53505803,
+        53372532,
+        253581551,
+        237503128,
+        226262202,
+        220665912
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        218974149,
+        216867133,
+        17110906,
+        53372532,
+        241583576,
+        198917339,
+        1978468,
+        251929366,
+        222291705,
+        53505803,
+        241583343,
+        69593290,
+        236477851,
+        85556928,
+        47020225,
+        202541363,
+        224802782,
+        7966473,
+        231779510,
+        235293804
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        4711425,
+        241583576,
+        198917339,
+        235248022,
+        218974149
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        241583576,
+        198917339,
+        251929366,
+        218974149,
+        53372532,
+        235293804,
+        222291705,
+        4711425,
+        241583343,
+        53505803,
+        232233599,
+        216867133,
+        236477851,
+        235254775,
+        253581551,
+        239009616,
+        235248022,
+        220665912,
+        69593290,
+        224802782
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.648309000069275
+  },
+  "reason_example": {
+    "query_id": "litsearch_073",
+    "query": "What papers should I refer to if I want to explore datasets and shared tasks designed for the purpose of fact verification using evidence from Wikipedia?",
+    "top_results": [
+      {
+        "corpusid": 241583576,
+        "score": 0.9620465040206909,
+        "reason": "bm25=0.956; dense=0.966; sub_bm25=0.858; sub_dense=1.000"
+      },
+      {
+        "corpusid": 198917339,
+        "score": 0.9291090369224548,
+        "reason": "bm25=0.879; dense=0.963; sub_bm25=0.930; sub_dense=0.983"
+      },
+      {
+        "corpusid": 251929366,
+        "score": 0.9287971258163452,
+        "reason": "bm25=0.936; dense=0.924; sub_bm25=0.848; sub_dense=0.857"
+      },
+      {
+        "corpusid": 218974149,
+        "score": 0.9224591255187988,
+        "reason": "bm25=0.806; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53372532,
+        "score": 0.9199579954147339,
+        "reason": "bm25=0.841; dense=0.973; sub_bm25=0.914; sub_dense=0.994"
+      }
+    ]
+  }
+}

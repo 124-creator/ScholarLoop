@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_524",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_524",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_524",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_524",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1034,
+      "latency_s": 4.132406299933791
+    },
+    {
+      "query_id": "litsearch_524",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 319,
+      "latency_s": 2.5351617999840528
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_524",
+    "gold": [
+      260316137
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "theory why momentum does not improve neural network training",
+      "limitations of momentum in gradient descent optimization",
+      "when momentum fails to accelerate convergence in deep learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15057133,
+        202712637,
+        220665885,
+        12277102,
+        237365390,
+        37387939,
+        218538004,
+        15269745,
+        237717628,
+        245634500,
+        245838244,
+        215548273,
+        220046457,
+        220324396,
+        173990423,
+        220045422,
+        5399186,
+        51877754,
+        8737624,
+        258486862
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256503815,
+        227342850,
+        52948669,
+        211532533,
+        3511502,
+        220665885,
+        7242855,
+        173990423,
+        219310118,
+        238634411,
+        59317031,
+        220324396,
+        248266593,
+        222290992,
+        53577360,
+        212802994,
+        248780244,
+        259145131,
+        35615696,
+        202750253
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        260316137,
+        212802994,
+        203591459,
+        53112107,
+        3516266,
+        211532533,
+        238215172,
+        3508234,
+        51952942,
+        4560095,
+        204734206,
+        246706127,
+        231925076,
+        16209268,
+        252668622,
+        221878944,
+        232076011,
+        201058750,
+        252762329,
+        53388625
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        260316137,
+        256503815
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        212802994,
+        260316137,
+        211532533,
+        256503815,
+        238215172,
+        53112107,
+        204734206,
+        35615696,
+        4560095,
+        52948669,
+        62823235,
+        57373762,
+        244908535,
+        248266593,
+        227342850,
+        235359192,
+        252762329,
+        3511502,
+        203610572,
+        203591459
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.996833999990486
+  },
+  "reason_example": {
+    "query_id": "litsearch_524",
+    "query": "Is there a theory paper that explains why sometimes tuning momentum does not boost performance for training a neural network?",
+    "top_results": [
+      {
+        "corpusid": 212802994,
+        "score": 0.9233472347259521,
+        "reason": "bm25=0.841; dense=0.978; sub_bm25=0.939; sub_dense=0.958"
+      },
+      {
+        "corpusid": 260316137,
+        "score": 0.8725675344467163,
+        "reason": "bm25=0.681; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 211532533,
+        "score": 0.8615835309028625,
+        "reason": "bm25=0.950; dense=0.802; sub_bm25=0.687; sub_dense=0.651"
+      },
+      {
+        "corpusid": 256503815,
+        "score": 0.7891032695770264,
+        "reason": "bm25=1.000; dense=0.649; sub_bm25=1.000; sub_dense=0.877"
+      },
+      {
+        "corpusid": 238215172,
+        "score": 0.7791274785995483,
+        "reason": "bm25=0.764; dense=0.789; sub_bm25=0.591; sub_dense=0.736"
+      }
+    ]
+  }
+}

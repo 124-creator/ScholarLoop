@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_343",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_343",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_343",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_343",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1020,
+      "latency_s": 6.179494300042279
+    },
+    {
+      "query_id": "litsearch_343",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 359,
+      "latency_s": 3.583697200054303
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_343",
+    "gold": [
+      235694265
+    ],
+    "pool_size": 288,
+    "decomposition": [
+      "differences between experts and non-experts in detecting AI-generated texts",
+      "aspects or features focused on by humans when identifying AI-generated content",
+      "comparison of expert vs non-expert attention in AI text detection tasks"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16658793,
+        18446213,
+        52896891,
+        49671404,
+        203593298,
+        6609459,
+        235258245,
+        44098387,
+        907869,
+        628974,
+        14483267,
+        16855529,
+        247939526,
+        259833865,
+        14254027,
+        233364961,
+        611486,
+        13907064,
+        6539004,
+        10103892
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249847951,
+        259833865,
+        11492613,
+        235313967,
+        1556206,
+        9314479,
+        10438447,
+        248299996,
+        3119193,
+        254102968,
+        256461453,
+        248239888,
+        218613715,
+        3498424,
+        26388611,
+        218889727,
+        15540635,
+        202670693,
+        90258162,
+        258461287
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7658188,
+        259165572,
+        247594674,
+        3832248,
+        5472320,
+        536951,
+        264038809,
+        253420419,
+        8388465,
+        1150143,
+        259370534,
+        1428271,
+        159040684,
+        3927803,
+        252089594,
+        17368365,
+        226227269,
+        21686891,
+        250164361,
+        215754413
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370534
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370534,
+        26388611,
+        249847951,
+        1906653,
+        237702957,
+        3119193,
+        52130958,
+        10438447,
+        3050712,
+        263608332,
+        235313967,
+        202670693,
+        252089594,
+        256460953,
+        259833865,
+        3927803,
+        233304856,
+        237502721,
+        254102968,
+        173188413
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.231122999917716
+  },
+  "reason_example": {
+    "query_id": "litsearch_343",
+    "query": "Which paper shows that human experts and non-experts focus on very different aspects when identifying AI=generated texts?",
+    "top_results": [
+      {
+        "corpusid": 259370534,
+        "score": 0.8673112988471985,
+        "reason": "bm25=0.754; dense=0.943; sub_bm25=0.775; sub_dense=0.948"
+      },
+      {
+        "corpusid": 26388611,
+        "score": 0.8245104551315308,
+        "reason": "bm25=0.822; dense=0.826; sub_bm25=0.828; sub_dense=0.815"
+      },
+      {
+        "corpusid": 249847951,
+        "score": 0.8227319717407227,
+        "reason": "bm25=1.000; dense=0.705; sub_bm25=0.975; sub_dense=0.765"
+      },
+      {
+        "corpusid": 1906653,
+        "score": 0.8190076351165771,
+        "reason": "bm25=0.789; dense=0.839; sub_bm25=0.771; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237702957,
+        "score": 0.807829737663269,
+        "reason": "bm25=0.712; dense=0.872; sub_bm25=0.741; sub_dense=0.892"
+      }
+    ]
+  }
+}

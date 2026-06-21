@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_125",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_125",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_125",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_125",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1399,
+      "latency_s": 8.1248431999702
+    },
+    {
+      "query_id": "litsearch_125",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 314,
+      "latency_s": 2.550530800013803
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_125",
+    "gold": [
+      237485334
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "multi-label text classification label distribution loss function",
+      "improving multi-label classification with label distribution aware loss",
+      "label distribution incorporation into loss function for multi-label text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763297,
+        5383666,
+        38491634,
+        6305097,
+        253628225,
+        258486916,
+        233204526,
+        17153466,
+        52280542,
+        13092480,
+        17001271,
+        218595134,
+        225062783,
+        233029494,
+        52116003,
+        16127702,
+        3832329,
+        9482302,
+        195218693,
+        40985730
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237485334,
+        258486916,
+        202542534,
+        243865265,
+        220044881,
+        236460056,
+        3871844,
+        252819370,
+        226262193,
+        248496004,
+        248962296,
+        251465642,
+        231985619,
+        243865566,
+        222178293,
+        4732544,
+        32115967,
+        236912915,
+        9365010,
+        7021843
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237485334,
+        202542534,
+        251465642,
+        258486916,
+        6917126,
+        53082972,
+        243865265,
+        244464114,
+        8133501,
+        257038592,
+        259376762,
+        252819339,
+        202772508,
+        258378221,
+        5907822,
+        235358926,
+        11645684,
+        247451015,
+        32115967,
+        258987586
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237485334,
+        3871844
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237485334,
+        202542534,
+        258486916,
+        243865265,
+        251465642,
+        53082972,
+        259376762,
+        248962296,
+        3871844,
+        32115967,
+        9365010,
+        53080839,
+        6917126,
+        257038592,
+        202772508,
+        8133501,
+        252819370,
+        166227797,
+        7021843,
+        10102019
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.21227490005549
+  },
+  "reason_example": {
+    "query_id": "litsearch_125",
+    "query": "Could you recommend a study that explores strategies for improving multi-label text classification by incorporating information about label distribution directly into the loss function?",
+    "top_results": [
+      {
+        "corpusid": 237485334,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202542534,
+        "score": 0.9551254510879517,
+        "reason": "bm25=0.917; dense=0.981; sub_bm25=0.858; sub_dense=0.935"
+      },
+      {
+        "corpusid": 258486916,
+        "score": 0.9450479745864868,
+        "reason": "bm25=0.974; dense=0.926; sub_bm25=0.772; sub_dense=0.785"
+      },
+      {
+        "corpusid": 243865265,
+        "score": 0.9042826890945435,
+        "reason": "bm25=0.915; dense=0.897; sub_bm25=0.726; sub_dense=0.883"
+      },
+      {
+        "corpusid": 251465642,
+        "score": 0.872915506362915,
+        "reason": "bm25=0.782; dense=0.934; sub_bm25=0.739; sub_dense=0.922"
+      }
+    ]
+  }
+}

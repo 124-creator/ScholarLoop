@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_088",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_088",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_088",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_088",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1548,
+      "latency_s": 11.078396399971098
+    },
+    {
+      "query_id": "litsearch_088",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 287,
+      "latency_s": 2.4722686999011785
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_088",
+    "gold": [
+      236486131
+    ],
+    "pool_size": 229,
+    "decomposition": [
+      "evaluation of creative natural language generation systems",
+      "interdisciplinary approaches to evaluating NLG creativity",
+      "computational creativity NLG evaluation methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        245297783,
+        8396538,
+        37122890,
+        2718695,
+        2145617,
+        207852642,
+        5189365,
+        16047614,
+        28048967,
+        167261,
+        10878179,
+        236486131,
+        474726,
+        236881439,
+        252847487,
+        14841930,
+        2878037,
+        14774554,
+        1891955,
+        5531167
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236486131,
+        15240627,
+        37606613,
+        14774554,
+        8396538,
+        10438447,
+        3942023,
+        216869072,
+        16315892,
+        14185702,
+        226262222,
+        243865557,
+        226281842,
+        53096901,
+        6114503,
+        236881439,
+        248300077,
+        52010727,
+        2652169,
+        232233376
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236486131,
+        18816789,
+        261507859,
+        261509673,
+        2747226,
+        12203752,
+        14185702,
+        208541377,
+        36568471,
+        8256717,
+        7802977,
+        973609,
+        10438447,
+        37203718,
+        248780007,
+        235097584,
+        9849992,
+        13250527,
+        16426981,
+        2930317
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236486131,
+        10438447,
+        235097584,
+        14774554,
+        248300077,
+        2747226,
+        8396538,
+        15240627,
+        236881439,
+        37606613,
+        474726,
+        36627602
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236486131,
+        10438447,
+        15240627,
+        14185702,
+        14774554,
+        261507859,
+        261509673,
+        2747226,
+        8396538,
+        248300077,
+        8256717,
+        52010727,
+        973609,
+        235097584,
+        37606613,
+        2652169,
+        18816789,
+        230349190,
+        53235639,
+        36627602
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.899776099948213
+  },
+  "reason_example": {
+    "query_id": "litsearch_088",
+    "query": "Where can I find interdisciplinary research that investigates how creative natural language generation (NLG) systems are evaluated?",
+    "top_results": [
+      {
+        "corpusid": 236486131,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 10438447,
+        "score": 0.8080570697784424,
+        "reason": "bm25=0.863; dense=0.771; sub_bm25=0.806; sub_dense=0.764"
+      },
+      {
+        "corpusid": 15240627,
+        "score": 0.7939942479133606,
+        "reason": "bm25=0.953; dense=0.688; sub_bm25=0.823; sub_dense=0.705"
+      },
+      {
+        "corpusid": 14185702,
+        "score": 0.7904385328292847,
+        "reason": "bm25=0.788; dense=0.792; sub_bm25=0.823; sub_dense=0.793"
+      },
+      {
+        "corpusid": 14774554,
+        "score": 0.7899342179298401,
+        "reason": "bm25=0.890; dense=0.723; sub_bm25=0.908; sub_dense=0.817"
+      }
+    ]
+  }
+}

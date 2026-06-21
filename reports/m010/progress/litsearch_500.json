@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_500",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_500",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_500",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_500",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 775,
+      "latency_s": 2.480259699979797
+    },
+    {
+      "query_id": "litsearch_500",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.4708631999092177
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_500",
+    "gold": [
+      258959382
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "vision language model token reduction 2023",
+      "reduce input tokens inference speed vision language model",
+      "efficient vision language model input token compression 2023"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2260284,
+        233204526,
+        921306,
+        5260380,
+        1827666,
+        258557266,
+        1591992,
+        236477566,
+        15276369,
+        1269169,
+        258959382,
+        10526796,
+        259376512,
+        2202801,
+        2375338,
+        1400498,
+        11533588,
+        13639078,
+        16242416,
+        236486235
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258959382,
+        256827775,
+        258557266,
+        232417692,
+        3455952,
+        263134283,
+        3140413,
+        213704197,
+        90258012,
+        258378340,
+        23294944,
+        259376512,
+        218517099,
+        259376754,
+        252780545,
+        259376593,
+        263889455,
+        250391099,
+        261682321,
+        235436185
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        239016231,
+        263889455,
+        252873220,
+        258959382,
+        258968058,
+        237251782,
+        252780545,
+        258557914,
+        218610661,
+        238856697,
+        261682321,
+        241583700,
+        259064260,
+        248780519,
+        259188071,
+        216553665,
+        252222320,
+        253762079,
+        237416760,
+        259370703
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258959382,
+        263889455
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258959382,
+        263889455,
+        239016231,
+        252780545,
+        261682321,
+        256827775,
+        258557266,
+        258557914,
+        232417692,
+        227905681,
+        261494012,
+        241583700,
+        235436185,
+        237452717,
+        263134283,
+        257637187,
+        3140413,
+        235377417,
+        90258012,
+        252873220
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.9901108999038115
+  },
+  "reason_example": {
+    "query_id": "litsearch_500",
+    "query": "Which vision-language model paper in 2023 developed techniques that reduce input tokens to improve model inference speed?",
+    "top_results": [
+      {
+        "corpusid": 258959382,
+        "score": 0.9401460886001587,
+        "reason": "bm25=1.000; dense=0.900; sub_bm25=1.000; sub_dense=0.949"
+      },
+      {
+        "corpusid": 263889455,
+        "score": 0.8340345621109009,
+        "reason": "bm25=0.643; dense=0.961; sub_bm25=0.567; sub_dense=1.000"
+      },
+      {
+        "corpusid": 239016231,
+        "score": 0.800986111164093,
+        "reason": "bm25=0.502; dense=1.000; sub_bm25=0.410; sub_dense=0.899"
+      },
+      {
+        "corpusid": 252780545,
+        "score": 0.790457010269165,
+        "reason": "bm25=0.646; dense=0.887; sub_bm25=0.740; sub_dense=0.835"
+      },
+      {
+        "corpusid": 261682321,
+        "score": 0.7682362794876099,
+        "reason": "bm25=0.641; dense=0.853; sub_bm25=0.566; sub_dense=0.893"
+      }
+    ]
+  }
+}

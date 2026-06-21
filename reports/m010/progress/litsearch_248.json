@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_248",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_248",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_248",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_248",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1196,
+      "latency_s": 6.767038699937984
+    },
+    {
+      "query_id": "litsearch_248",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 324,
+      "latency_s": 2.771446500089951
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_248",
+    "gold": [
+      240288892
+    ],
+    "pool_size": 238,
+    "decomposition": [
+      "language model trained on mental health social media data",
+      "mental health detection using social media text",
+      "fine-tuning language models on mental health data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13996830,
+        235254726,
+        240288892,
+        3926837,
+        21055784,
+        248780521,
+        259129748,
+        259002939,
+        252907549,
+        2251088,
+        6187154,
+        17262840,
+        232290704,
+        249017494,
+        259076167,
+        10724165,
+        11256667,
+        51882454,
+        52158272,
+        235358754
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        240288892,
+        259129748,
+        218974505,
+        16839927,
+        96824,
+        250150926,
+        5421142,
+        245334804,
+        235358754,
+        226283450,
+        253157444,
+        19001656,
+        259076167,
+        232290704,
+        49208337,
+        259376588,
+        254877034,
+        250390740,
+        235254726,
+        259370819
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        96824,
+        49208337,
+        16839927,
+        5421142,
+        5600230,
+        240288892,
+        250150926,
+        250390881,
+        359250,
+        248085560,
+        235097675,
+        259076167,
+        748926,
+        235254726,
+        17145831,
+        259370819,
+        226283501,
+        16504570,
+        2307113,
+        248986327
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        240288892,
+        259370819,
+        49208337,
+        235358754,
+        259076167,
+        96824,
+        232290704,
+        250150926,
+        259129748,
+        16839927,
+        235254726,
+        5421142
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        96824,
+        16839927,
+        49208337,
+        240288892,
+        5421142,
+        250150926,
+        259076167,
+        235254726,
+        259370819,
+        226283450,
+        218974505,
+        253157444,
+        5600230,
+        235358754,
+        245334804,
+        243907938,
+        250390881,
+        259129748,
+        40413181,
+        207916220
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.402743800077587
+  },
+  "reason_example": {
+    "query_id": "litsearch_248",
+    "query": "Could you suggest research that trains language models specifically on mental health-related social media data and the model is helpful for identifying mental health issues?",
+    "top_results": [
+      {
+        "corpusid": 96824,
+        "score": 0.9798268675804138,
+        "reason": "bm25=0.950; dense=1.000; sub_bm25=0.949; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16839927,
+        "score": 0.8986785411834717,
+        "reason": "bm25=0.975; dense=0.847; sub_bm25=0.998; sub_dense=0.986"
+      },
+      {
+        "corpusid": 49208337,
+        "score": 0.8798992037773132,
+        "reason": "bm25=0.885; dense=0.877; sub_bm25=0.856; sub_dense=0.976"
+      },
+      {
+        "corpusid": 240288892,
+        "score": 0.8751958012580872,
+        "reason": "bm25=1.000; dense=0.792; sub_bm25=0.908; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5421142,
+        "score": 0.8700838088989258,
+        "reason": "bm25=0.927; dense=0.832; sub_bm25=0.921; sub_dense=0.898"
+      }
+    ]
+  }
+}

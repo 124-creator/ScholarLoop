@@ -1,0 +1,44 @@
+{
+  "litsearch_readme": {
+    "url": "https://raw.githubusercontent.com/princeton-nlp/LitSearch/main/README.md",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\litsearch_readme.txt.json",
+    "content_type": null
+  },
+  "litsearch_license": {
+    "url": "https://raw.githubusercontent.com/princeton-nlp/LitSearch/main/LICENSE",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\litsearch_license.txt.json",
+    "content_type": null
+  },
+  "semantic_scholar_api": {
+    "url": "https://www.semanticscholar.org/product/api",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\semantic_scholar_api.html.json",
+    "content_type": null
+  },
+  "semantic_scholar_graph_docs": {
+    "url": "https://api.semanticscholar.org/api-docs/graph",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\semantic_scholar_graph_docs.html.json",
+    "content_type": null
+  },
+  "crossref_rest_tips": {
+    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\crossref_rest_tips.html.json",
+    "content_type": null
+  },
+  "openalex_overview": {
+    "url": "https://developers.openalex.org/",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\openalex_overview.html.json",
+    "content_type": null
+  },
+  "arxiv_api_manual": {
+    "url": "https://info.arxiv.org/help/api/user-manual.html",
+    "status_code": 200,
+    "raw_path": "spike\\raw\\docs\\arxiv_api_manual.html.json",
+    "content_type": null
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_052",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_052",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_052",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_052",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1234,
+      "latency_s": 5.916923200013116
+    },
+    {
+      "query_id": "litsearch_052",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 375,
+      "latency_s": 2.366571200080216
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_052",
+    "gold": [
+      222208998
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "insertion-based decoding language model loss KL divergence",
+      "Kullback–Leibler divergence alternative to cross-entropy semantic parsing",
+      "insertion-based methods semantic parsing loss function"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16894495,
+        7952407,
+        10168327,
+        12252477,
+        2301676,
+        8170227,
+        5810612,
+        1298443,
+        18614158,
+        1550989,
+        8841728,
+        2375338,
+        233289404,
+        13412990,
+        243865412,
+        4342524,
+        51869685,
+        6133269,
+        17029751,
+        205499
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        4342524,
+        29664896,
+        262735527,
+        263892731,
+        1432668,
+        235436157,
+        53105624,
+        222208998,
+        264128429,
+        1550989,
+        1391765,
+        67856138,
+        3016281,
+        231693079,
+        257366185,
+        219635787,
+        6495498,
+        259370637,
+        236924584,
+        1030812
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7619470,
+        232185390,
+        33303205,
+        229923128,
+        14470787,
+        5467830,
+        7165973,
+        218537924,
+        225075957,
+        7001751,
+        57300442,
+        65474830,
+        237020,
+        5193894,
+        218869975,
+        2414880,
+        1138220,
+        19455894,
+        1253703,
+        263795022
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222208998,
+        14470787,
+        264128429,
+        1391765,
+        7165973
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1432668,
+        222208998,
+        7165973,
+        229923128,
+        14470787,
+        1391765,
+        219635787,
+        232185390,
+        119284742,
+        264128429,
+        220045424,
+        237020,
+        57300442,
+        65474830,
+        11706155,
+        216552854,
+        257219444,
+        51793151,
+        2414880,
+        13088830
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.55659419996664
+  },
+  "reason_example": {
+    "query_id": "litsearch_052",
+    "query": "I'm researching insertion-based decoding methods for semantic parsing and language modeling, and I'm looking for works that discuss alternatives to traditional loss functions such as cross-entropy, particularly those using Kullback–Leibler divergence in this context. Could you point me to some studies on this?",
+    "top_results": [
+      {
+        "corpusid": 1432668,
+        "score": 0.9050964117050171,
+        "reason": "bm25=0.987; dense=0.851; sub_bm25=0.910; sub_dense=0.951"
+      },
+      {
+        "corpusid": 222208998,
+        "score": 0.8951413631439209,
+        "reason": "bm25=0.958; dense=0.853; sub_bm25=1.000; sub_dense=0.941"
+      },
+      {
+        "corpusid": 7165973,
+        "score": 0.890935480594635,
+        "reason": "bm25=0.861; dense=0.911; sub_bm25=0.468; sub_dense=0.903"
+      },
+      {
+        "corpusid": 229923128,
+        "score": 0.8883982300758362,
+        "reason": "bm25=0.824; dense=0.932; sub_bm25=0.536; sub_dense=0.968"
+      },
+      {
+        "corpusid": 14470787,
+        "score": 0.8834468126296997,
+        "reason": "bm25=0.832; dense=0.918; sub_bm25=0.320; sub_dense=0.847"
+      }
+    ]
+  }
+}

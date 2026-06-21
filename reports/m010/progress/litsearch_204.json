@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_204",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_204",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_204",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_204",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1152,
+      "latency_s": 5.780869300011545
+    },
+    {
+      "query_id": "litsearch_204",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 262,
+      "latency_s": 2.0769937000004575
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_204",
+    "gold": [
+      236034497
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "datasets benchmark LLM conversational continuity multi-session",
+      "long multi-session conversations recall datasets LLM evaluation",
+      "benchmark long-term dialogue continuity LLM recall"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        666417,
+        8379583,
+        258841681,
+        243865137,
+        9933207,
+        53081421,
+        259833827,
+        5447909,
+        202718944,
+        200520,
+        18946220,
+        250390933,
+        35682134,
+        52182247,
+        227230318,
+        246702364,
+        6882058,
+        6764076,
+        14664472,
+        237352920
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819095,
+        258841681,
+        202767521,
+        215415968,
+        215827653,
+        260682249,
+        237352920,
+        9142609,
+        231786305,
+        56657857,
+        237431116,
+        236034497,
+        250391058,
+        53081209,
+        52932143,
+        235446453,
+        52846897,
+        247411350,
+        220045840,
+        252762087
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236034497,
+        247411350,
+        52846897,
+        253553371,
+        118674834,
+        237352920,
+        259287344,
+        229924005,
+        258841681,
+        202750154,
+        26671562,
+        235457943,
+        258463948,
+        258887837,
+        52010923,
+        44164810,
+        224818872,
+        201698178,
+        53081209,
+        245117859
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247411350,
+        236034497,
+        8379583,
+        52846897,
+        258841681,
+        215827653
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236034497,
+        258841681,
+        247411350,
+        202767521,
+        52846897,
+        237352920,
+        237431116,
+        53081209,
+        215827653,
+        222178414,
+        215415968,
+        52010923,
+        52307098,
+        8379583,
+        16537814,
+        118674834,
+        252819095,
+        243865575,
+        259287344,
+        259370708
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.058398600085638
+  },
+  "reason_example": {
+    "query_id": "litsearch_204",
+    "query": "Could you suggest datasets that can benchmark LLM performance in achieving conversational continuity and recall over long multi-session conversations?",
+    "top_results": [
+      {
+        "corpusid": 236034497,
+        "score": 0.9199572801589966,
+        "reason": "bm25=0.800; dense=1.000; sub_bm25=0.958; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258841681,
+        "score": 0.9076816439628601,
+        "reason": "bm25=0.996; dense=0.849; sub_bm25=1.000; sub_dense=0.971"
+      },
+      {
+        "corpusid": 247411350,
+        "score": 0.8996385335922241,
+        "reason": "bm25=0.787; dense=0.975; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202767521,
+        "score": 0.8746051788330078,
+        "reason": "bm25=0.977; dense=0.806; sub_bm25=0.906; sub_dense=0.958"
+      },
+      {
+        "corpusid": 52846897,
+        "score": 0.8647737503051758,
+        "reason": "bm25=0.788; dense=0.916; sub_bm25=0.672; sub_dense=0.979"
+      }
+    ]
+  }
+}

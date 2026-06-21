@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_025",
+  "query": "Can you suggest some literature that evaluates the ability of context-aware machine translation systems to handle discourse phenomena such as deixis and lexical cohesion?",
+  "criteria": [
+    "evaluation of context-aware machine translation discourse deixis",
+    "context-aware machine translation lexical cohesion evaluation",
+    "discourse phenomena evaluation context-aware neural machine translation"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_025",
+      "corpusid": 155089628,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            129
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            129
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            190
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            542,
+            777
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "English-Russian subtitles dataset",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            601,
+            634
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "demonstrate major gains over a context-agnostic baseline on our new benchmarks",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1008,
+            1086
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Firstly, standard metrics are not sensitive to improvements in consistency in document-level translations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            191,
+            297
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            45,
+            129
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1967,
+        "elapsed_s": 10.249831199995242,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_025_155089628.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_025",
+      "corpusid": 237513464,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "When Does Translation Require Context? A Data-driven, Multilingual Exploration",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            78
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we develop the Multilingual Discourse-Aware (MUDA) benchmark, a series of taggers that identify and evaluate model performance on discourse phenomena",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            353,
+            502
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "When Does Translation Require Context?",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            38
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "develop the Multilingual Discourse-Aware (MUDA) benchmark, a series of taggers",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            356,
+            434
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We release code and data for 14 language pairs",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            938,
+            984
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "common context-aware MT models make only marginal improvements over context-agnostic models",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            772,
+            863
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "not in a fully systematic way",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            307,
+            336
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "target a small set of discourse phenomena during evaluation",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            238,
+            297
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1537,
+        "elapsed_s": 7.550665899994783,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_025_237513464.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_025",
+      "corpusid": 6215504,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Towards a Literary Machine Translation: The Role of Referential Cohesion",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            72
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "This paper examines how referential cohesion is expressed in literary and non-literary texts and how this cohesion affects translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            114,
+            249
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "What is the role of textual features above the sentence level in advancing the machine translation of literature?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            113
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We first show in a corpus study on English that literary texts use more dense reference chains to express greater referential cohesion than news. We then compare the referential cohesion of machine versus human translations of Chinese literature and news.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            250,
+            505
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Chinese literature and news",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            477,
+            504
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "While human translators capture the greater referential cohesion of literature, Google translations perform less well at capturing literary cohesion.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            506,
+            655
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Human translation of literary texts is an extremely time-and money-intensive task, but one that is a crucial element of the global system of transcultural literary exchange.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1887,
+            2060
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Our results suggest that incorporating discourse features above the sentence level is an important direction for MT research if it is to be applied to literature.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            656,
+            818
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1859,
+        "elapsed_s": 12.180210700025782,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_025_6215504.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 155089628,
+      "title": "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion",
+      "cells": [
+        {
+          "criterion": "evaluation of context-aware machine translation discourse deixis",
+          "addresses": true,
+          "snippet": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            190
+          ]
+        },
+        {
+          "criterion": "context-aware machine translation lexical cohesion evaluation",
+          "addresses": true,
+          "snippet": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            190
+          ]
+        },
+        {
+          "criterion": "discourse phenomena evaluation context-aware neural machine translation",
+          "addresses": true,
+          "snippet": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            190
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 237513464,
+      "title": "When Does Translation Require Context? A Data-driven, Multilingual Exploration",
+      "cells": [
+        {
+          "criterion": "evaluation of context-aware machine translation discourse deixis",
+          "addresses": true,
+          "snippet": "Although proper handling of discourse significantly contributes to the quality of machine translation (MT), these improvements are not adequately measured in common translation quality metrics.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        },
+        {
+          "criterion": "context-aware machine translation lexical cohesion evaluation",
+          "addresses": true,
+          "snippet": "Although proper handling of discourse significantly contributes to the quality of machine translation (MT), these improvements are not adequately measured in common translation quality metrics.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        },
+        {
+          "criterion": "discourse phenomena evaluation context-aware neural machine translation",
+          "addresses": true,
+          "snippet": "Although proper handling of discourse significantly contributes to the quality of machine translation (MT), these improvements are not adequately measured in common translation quality metrics.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 6215504,
+      "title": "Towards a Literary Machine Translation: The Role of Referential Cohesion",
+      "cells": [
+        {
+          "criterion": "evaluation of context-aware machine translation discourse deixis",
+          "addresses": true,
+          "snippet": "What is the role of textual features above the sentence level in advancing the machine translation of literature?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            113
+          ]
+        },
+        {
+          "criterion": "context-aware machine translation lexical cohesion evaluation",
+          "addresses": true,
+          "snippet": "What is the role of textual features above the sentence level in advancing the machine translation of literature?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            113
+          ]
+        },
+        {
+          "criterion": "discourse phenomena evaluation context-aware neural machine translation",
+          "addresses": true,
+          "snippet": "What is the role of textual features above the sentence level in advancing the machine translation of literature?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            113
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      6215504,
+      155089628,
+      237513464
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

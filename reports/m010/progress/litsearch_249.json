@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_249",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_249",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_249",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_249",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1175,
+      "latency_s": 7.987219100003131
+    },
+    {
+      "query_id": "litsearch_249",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 291,
+      "latency_s": 2.4797868999885395
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_249",
+    "gold": [
+      215548904
+    ],
+    "pool_size": 234,
+    "decomposition": [
+      "interpreting bidirectional RNNs for named entity recognition",
+      "explainability of BiRNNs in NER tasks",
+      "how bidirectional RNNs perform named entity recognition"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        157061108,
+        2840902,
+        15270509,
+        11514373,
+        503960,
+        248780437,
+        14899593,
+        236179518,
+        90262493,
+        11249236,
+        6440056,
+        10489017,
+        32487632,
+        13951114,
+        386913,
+        235097529,
+        238582894,
+        14596587,
+        226283626,
+        258547323
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1767630,
+        13951114,
+        250390714,
+        195218673,
+        251953252,
+        10489017,
+        8640400,
+        196184924,
+        226307751,
+        215786035,
+        257767701,
+        5674153,
+        248780437,
+        253761964,
+        218630027,
+        32487632,
+        226246206,
+        235097307,
+        3178262,
+        234679391
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53080784,
+        196187320,
+        251692236,
+        251953252,
+        49587276,
+        6042994,
+        9037546,
+        248496538,
+        216867841,
+        46985924,
+        248525142,
+        195218673,
+        51868564,
+        241583190,
+        259370837,
+        1767630,
+        13951114,
+        250164102,
+        195766996,
+        5044692
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1767630
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1767630,
+        251953252,
+        13951114,
+        195218673,
+        53080784,
+        196187320,
+        251692236,
+        9037546,
+        248525142,
+        216867841,
+        10489017,
+        226307751,
+        259376704,
+        252600143,
+        248405978,
+        51868564,
+        46985924,
+        248496538,
+        202539539,
+        259370837
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.07315169996582
+  },
+  "reason_example": {
+    "query_id": "litsearch_249",
+    "query": "Could you suggest research that tries to interpret how bi-directional RNNs manage to carry out Named Entity Recognition (NER) tasks?",
+    "top_results": [
+      {
+        "corpusid": 1767630,
+        "score": 0.8966518044471741,
+        "reason": "bm25=1.000; dense=0.828; sub_bm25=0.577; sub_dense=0.775"
+      },
+      {
+        "corpusid": 251953252,
+        "score": 0.8672703504562378,
+        "reason": "bm25=0.787; dense=0.921; sub_bm25=0.639; sub_dense=0.946"
+      },
+      {
+        "corpusid": 13951114,
+        "score": 0.8305090665817261,
+        "reason": "bm25=0.842; dense=0.823; sub_bm25=0.606; sub_dense=0.813"
+      },
+      {
+        "corpusid": 195218673,
+        "score": 0.8247208595275879,
+        "reason": "bm25=0.791; dense=0.847; sub_bm25=0.683; sub_dense=0.794"
+      },
+      {
+        "corpusid": 53080784,
+        "score": 0.8179463148117065,
+        "reason": "bm25=0.545; dense=1.000; sub_bm25=0.797; sub_dense=0.931"
+      }
+    ]
+  }
+}

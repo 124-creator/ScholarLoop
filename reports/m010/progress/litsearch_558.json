@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_558",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_558",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_558",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_558",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1510,
+      "latency_s": 12.98299509997014
+    },
+    {
+      "query_id": "litsearch_558",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 680,
+      "latency_s": 8.331536300014704
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_558",
+    "gold": [
+      260378993
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "fully differentiable mixture of experts layer time complexity first",
+      "differentiable MoE no time complexity increase",
+      "first paper differentiable mixture of experts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18454652,
+        6723570,
+        11378094,
+        18489348,
+        219305462,
+        203688153,
+        2960672,
+        12405045,
+        16056702,
+        18364781,
+        15350399,
+        11612461,
+        29768804,
+        1591692,
+        219305991,
+        10681027,
+        225066797,
+        253420419,
+        16883813,
+        656434
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        11492613,
+        248227273,
+        232404824,
+        260499190,
+        246485648,
+        238531645,
+        259370684,
+        53474174,
+        237491600,
+        12462234,
+        21473141,
+        252682980,
+        251465237,
+        238856973,
+        247218249,
+        46983454,
+        29842525,
+        252815815,
+        221739041,
+        248239888
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11492613,
+        3509777,
+        263671565,
+        247218249,
+        261697072,
+        252668582,
+        204575696,
+        88514953,
+        256615681,
+        257913782,
+        260378993,
+        233209878,
+        203593355,
+        7242855,
+        219708742,
+        252847584,
+        233189631,
+        238419227,
+        238531645,
+        238419267
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        11492613,
+        247218249,
+        248227273
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11492613,
+        247218249,
+        252668582,
+        88514953,
+        263671565,
+        260378993,
+        261697072,
+        238531645,
+        12462234,
+        248227273,
+        251252927,
+        260499190,
+        21473141,
+        257913782,
+        248239888,
+        232404824,
+        247613106,
+        5000796,
+        233209878,
+        211132734
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 22.479248499963433
+  },
+  "reason_example": {
+    "query_id": "litsearch_558",
+    "query": "What paper showed first that one can build a fully differentiable mixture of experts layer with no increase in time complexity?",
+    "top_results": [
+      {
+        "corpusid": 11492613,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247218249,
+        "score": 0.7624104022979736,
+        "reason": "bm25=0.584; dense=0.881; sub_bm25=0.835; sub_dense=0.861"
+      },
+      {
+        "corpusid": 252668582,
+        "score": 0.7317439913749695,
+        "reason": "bm25=0.554; dense=0.850; sub_bm25=0.505; sub_dense=0.873"
+      },
+      {
+        "corpusid": 88514953,
+        "score": 0.7262528538703918,
+        "reason": "bm25=0.558; dense=0.839; sub_bm25=0.462; sub_dense=0.891"
+      },
+      {
+        "corpusid": 263671565,
+        "score": 0.7243647575378418,
+        "reason": "bm25=0.455; dense=0.904; sub_bm25=0.638; sub_dense=1.000"
+      }
+    ]
+  }
+}

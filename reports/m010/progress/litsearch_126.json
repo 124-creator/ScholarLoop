@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_126",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_126",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_126",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_126",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1324,
+      "latency_s": 8.068906700005755
+    },
+    {
+      "query_id": "litsearch_126",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 327,
+      "latency_s": 2.211565600009635
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_126",
+    "gold": [
+      232233194
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "over segmentation vocabulary low-resource languages",
+      "shared multilingual vocabulary challenges",
+      "multilingual vocabulary segmentation problems"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38406635,
+        62016582,
+        42825371,
+        8997127,
+        6359641,
+        8199270,
+        256461173,
+        258486963,
+        39109418,
+        259833798,
+        235482360,
+        10934911,
+        21720529,
+        6573652,
+        7421838,
+        256461162,
+        33579458,
+        8035278,
+        16553775,
+        235097207
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258378192,
+        239016040,
+        241583348,
+        250390430,
+        259376815,
+        256461134,
+        226284002,
+        3295641,
+        227905622,
+        256461337,
+        250390874,
+        227905460,
+        222177276,
+        222141864,
+        203586495,
+        258960266,
+        250391019,
+        259833798,
+        218487520,
+        236486138
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222327390,
+        252184818,
+        30837172,
+        37618366,
+        21720529,
+        250406875,
+        30379566,
+        21731848,
+        28768335,
+        61129329,
+        30143730,
+        14746785,
+        8953944,
+        34904860,
+        45870801,
+        1500888,
+        241583348,
+        14948973,
+        252364964,
+        18318907
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        239016040,
+        222327390,
+        241583348,
+        232233194
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222327390,
+        21720529,
+        241583348,
+        258378192,
+        239016040,
+        250391019,
+        252184818,
+        37618366,
+        222177276,
+        258187606,
+        258212810,
+        259833843,
+        229924220,
+        236486138,
+        250406875,
+        252873105,
+        218974096,
+        28768335,
+        247518745,
+        247155169
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.54048040008638
+  },
+  "reason_example": {
+    "query_id": "litsearch_126",
+    "query": "Could you recommend a study that explores the difficulties in creating shared multilingual vocabularies, especially focusing on the problem of over segmentation in low-resource languages?",
+    "top_results": [
+      {
+        "corpusid": 222327390,
+        "score": 0.9569345116615295,
+        "reason": "bm25=0.892; dense=1.000; sub_bm25=0.802; sub_dense=1.000"
+      },
+      {
+        "corpusid": 21720529,
+        "score": 0.9143444299697876,
+        "reason": "bm25=0.882; dense=0.936; sub_bm25=0.601; sub_dense=0.841"
+      },
+      {
+        "corpusid": 241583348,
+        "score": 0.9088616371154785,
+        "reason": "bm25=0.969; dense=0.869; sub_bm25=0.773; sub_dense=0.906"
+      },
+      {
+        "corpusid": 258378192,
+        "score": 0.8716345429420471,
+        "reason": "bm25=1.000; dense=0.786; sub_bm25=0.533; sub_dense=0.765"
+      },
+      {
+        "corpusid": 239016040,
+        "score": 0.8707945346832275,
+        "reason": "bm25=0.973; dense=0.803; sub_bm25=0.812; sub_dense=0.927"
+      }
+    ]
+  }
+}

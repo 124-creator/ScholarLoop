@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_000",
+  "query": "Are there any research papers on methods to compress large-scale language models using task-agnostic knowledge distillation techniques?",
+  "criteria": [
+    "large language model compression methods",
+    "knowledge distillation for language models",
+    "task-agnostic knowledge distillation"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_000",
+      "corpusid": 221995575,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Contrastive Distillation on Intermediate Representations for Language Model Compression",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            87
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "achieves superb performance on the GLUE benchmark, outperforming state-of-the-art compression methods.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            969,
+            1071
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Existing language model compression methods mostly use a simple L 2 loss to distill knowledge in the intermediate representations of a large BERT model to a smaller one.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            169
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "we propose Contrastive Distillation on Intermediate Representations (CODIR), a principled knowledge distillation framework where the student is trained to distill knowledge through intermediate layers of the teacher via a contrastive objective.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            434,
+            678
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "CoDIR can be readily applied to compress large-scale language models in both pretraining and finetuning stages, and achieves superb performance on the GLUE benchmark, outperforming state-of-the-art compression methods.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            853,
+            1071
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "outperforming state-of-the-art compression methods.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1020,
+            1071
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although widely used, this objective by design assumes that all the dimensions of hidden representations are independent, failing to capture important structural knowledge in the intermediate layers of the teacher network.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            170,
+            392
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "achieves superb performance on the GLUE benchmark, outperforming state-of-the-art compression methods.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            969,
+            1071
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1773,
+        "elapsed_s": 8.703955400036648,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_000_221995575.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_000",
+      "corpusid": 258212842,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            118
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Knowledge distillation (KD) is a wellknown method for compressing neural models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            80
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "works focusing on distilling knowledge from large multilingual neural machine translation (MNMT) models into smaller ones are practically nonexistent",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            90,
+            239
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "commonly used language-agnostic and language-aware KD approaches",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            487,
+            551
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Indic to English translation",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            421,
+            449
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "compressing MNMT models via KD is challenging, indicating immense scope for further research.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1025,
+            1118
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "suffer from performance drops of up to 3.5 BLEU",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            596,
+            643
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Knowledge distillation (KD) is a wellknown method for compressing neural models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            80
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1654,
+        "elapsed_s": 8.655789999989793,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_000_258212842.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_000",
+      "corpusid": 218502458,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "XtremeDistil: Multi-stage Distillation for Massive Multilingual Models",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            70
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Some recent works use knowledge distillation to compress these huge models into shallow ones.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            202,
+            295
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Some recent works use knowledge distillation to compress these huge models into shallow ones.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            202,
+            295
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Deep and large pre-trained language models are the state-of-the-art for various natural language processing tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            114
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "multilingual Named Entity Recognition (NER)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            357,
+            400
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "In particular, we study several distillation strategies and propose a stage-wise optimization scheme leveraging teacher internal representations, that is agnostic of teacher architecture, and show that it outperforms strategies employed in prior works.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            402,
+            654
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, the huge size of these models could be a deterrent to using them in practice.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            115,
+            201
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Some recent works use knowledge distillation to compress these huge models into shallow ones.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            202,
+            295
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1647,
+        "elapsed_s": 7.56326560000889,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_000_218502458.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 221995575,
+      "title": "Contrastive Distillation on Intermediate Representations for Language Model Compression",
+      "cells": [
+        {
+          "criterion": "large language model compression methods",
+          "addresses": true,
+          "snippet": "Existing language model compression methods mostly use a simple L 2 loss to distill knowledge in the intermediate representations of a large BERT model to a smaller one.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            169
+          ]
+        },
+        {
+          "criterion": "knowledge distillation for language models",
+          "addresses": true,
+          "snippet": "Existing language model compression methods mostly use a simple L 2 loss to distill knowledge in the intermediate representations of a large BERT model to a smaller one.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            169
+          ]
+        },
+        {
+          "criterion": "task-agnostic knowledge distillation",
+          "addresses": true,
+          "snippet": "Existing language model compression methods mostly use a simple L 2 loss to distill knowledge in the intermediate representations of a large BERT model to a smaller one.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            169
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 258212842,
+      "title": "An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models",
+      "cells": [
+        {
+          "criterion": "large language model compression methods",
+          "addresses": true,
+          "snippet": "Although existing literature mainly discusses bilingual-to-multilingual or bilingual-to-bilingual distillation, to the best of our knowledge, there is no work in end-to-end multilingual-tomultilingual knowledge distillation for compression in a setting with a mix of low, medium, and high resource languages.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            3541,
+            3849
+          ]
+        },
+        {
+          "criterion": "knowledge distillation for language models",
+          "addresses": true,
+          "snippet": "Knowledge distillation (KD) is a wellknown method for compressing neural models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            80
+          ]
+        },
+        {
+          "criterion": "task-agnostic knowledge distillation",
+          "addresses": true,
+          "snippet": "Knowledge distillation (KD) is a wellknown method for compressing neural models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 218502458,
+      "title": "XtremeDistil: Multi-stage Distillation for Massive Multilingual Models",
+      "cells": [
+        {
+          "criterion": "large language model compression methods",
+          "addresses": true,
+          "snippet": "We show that our approach leads to massive compression of teacher models like mBERT by upto 35x in terms of parameters and 51x in terms of latency for batch inference while retaining 95% of its F 1 -score for NER over 41 languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            825,
+            1056
+          ]
+        },
+        {
+          "criterion": "knowledge distillation for language models",
+          "addresses": true,
+          "snippet": "Some recent works use knowledge distillation to compress these huge models into shallow ones.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            202,
+            295
+          ]
+        },
+        {
+          "criterion": "task-agnostic knowledge distillation",
+          "addresses": true,
+          "snippet": "Some recent works use knowledge distillation to compress these huge models into shallow ones.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            202,
+            295
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      218502458,
+      221995575,
+      258212842
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

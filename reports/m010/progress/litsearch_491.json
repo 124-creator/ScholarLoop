@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_491",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_491",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_491",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_491",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 623,
+      "latency_s": 2.454568500048481
+    },
+    {
+      "query_id": "litsearch_491",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.2837891000090167
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_491",
+    "gold": [
+      258887719
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "survey datasets tasks asking clarification questions conversational systems",
+      "clarification question datasets conversational AI survey",
+      "tasks and datasets clarification questions in dialogue systems"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38964517,
+        29611640,
+        554151,
+        258887719,
+        229365770,
+        260063225,
+        6945479,
+        10837599,
+        11966916,
+        12405045,
+        21166550,
+        8275098,
+        1412569,
+        8954558,
+        18116989,
+        6124685,
+        18387614,
+        218688152,
+        2124551,
+        37409061
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258887719,
+        245131173,
+        219558484,
+        258947839,
+        202773799,
+        8275098,
+        202776057,
+        64865,
+        11808,
+        12164644,
+        44154413,
+        229923411,
+        248780180,
+        14741151,
+        8351652,
+        252918278,
+        102353371,
+        207852454,
+        251435827,
+        52055325
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258887719,
+        64865,
+        8351652,
+        15668825,
+        2677335,
+        12164644,
+        237492197,
+        196188898,
+        29152969,
+        11808,
+        202773799,
+        16812606,
+        52055325,
+        5079356,
+        229923411,
+        219558484,
+        38156326,
+        9192200,
+        227905310,
+        14510214
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258887719
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258887719,
+        64865,
+        8351652,
+        219558484,
+        245131173,
+        12164644,
+        15668825,
+        202773799,
+        11808,
+        2677335,
+        229923411,
+        52055325,
+        237492197,
+        9192200,
+        258947839,
+        14510214,
+        202776057,
+        44154413,
+        257920051,
+        8275098
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.652334499987774
+  },
+  "reason_example": {
+    "query_id": "litsearch_491",
+    "query": "Which paper surveyed the datasets and tasks of asking clarification questions in conversational systems??",
+    "top_results": [
+      {
+        "corpusid": 258887719,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 64865,
+        "score": 0.8716028928756714,
+        "reason": "bm25=0.727; dense=0.968; sub_bm25=1.000; sub_dense=0.938"
+      },
+      {
+        "corpusid": 8351652,
+        "score": 0.8269045352935791,
+        "reason": "bm25=0.637; dense=0.954; sub_bm25=0.824; sub_dense=0.907"
+      },
+      {
+        "corpusid": 219558484,
+        "score": 0.8028547763824463,
+        "reason": "bm25=0.795; dense=0.808; sub_bm25=0.973; sub_dense=0.765"
+      },
+      {
+        "corpusid": 245131173,
+        "score": 0.8011090159416199,
+        "reason": "bm25=0.829; dense=0.783; sub_bm25=0.933; sub_dense=0.837"
+      }
+    ]
+  }
+}

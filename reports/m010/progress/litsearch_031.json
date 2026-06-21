@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_031",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_031",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_031",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_031",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1279,
+      "latency_s": 9.512880600057542
+    },
+    {
+      "query_id": "litsearch_031",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 238,
+      "latency_s": 2.633574799983762
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_031",
+    "gold": [
+      222141483
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "\"large-scale multilingual Amazon customer review dataset\"",
+      "\"multilingual Amazon reviews\" dataset",
+      "Amazon review dataset multiple languages large"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2209224,
+        7657542,
+        32939852,
+        4956384,
+        15714062,
+        258999240,
+        7600496,
+        222141483,
+        464513,
+        17423946,
+        1235039,
+        86759692,
+        13926586,
+        8220493,
+        252967706,
+        182952400,
+        18318907,
+        5989172,
+        233365245,
+        216609519
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        15006295,
+        53079677,
+        222141483,
+        736857,
+        202783183,
+        208028810,
+        464513,
+        235421642,
+        21732476,
+        259370563,
+        53244179,
+        259075202,
+        251196750,
+        19481891,
+        201698298,
+        18487464,
+        254246982,
+        249204463,
+        232185667,
+        233289623
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222141483,
+        233231501,
+        209079290,
+        15980568,
+        244054905,
+        237497416,
+        52345788,
+        51878959,
+        736857,
+        53246280,
+        13861819,
+        15829121,
+        249204497,
+        1671104,
+        249204463,
+        53079677,
+        248572392,
+        5910267,
+        232185667,
+        13420142
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222141483
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222141483,
+        15006295,
+        53079677,
+        736857,
+        244054905,
+        233231501,
+        249204463,
+        209079290,
+        51878959,
+        52345788,
+        232185667,
+        15829121,
+        13420142,
+        53246280,
+        202783183,
+        464513,
+        237497416,
+        201633253,
+        211133169,
+        259075202
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.675606400007382
+  },
+  "reason_example": {
+    "query_id": "litsearch_031",
+    "query": "Could you point me toward some large-scale multilingual Amazon customer review data?",
+    "top_results": [
+      {
+        "corpusid": 222141483,
+        "score": 0.9660560488700867,
+        "reason": "bm25=0.915; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15006295,
+        "score": 0.8576655387878418,
+        "reason": "bm25=1.000; dense=0.763; sub_bm25=0.545; sub_dense=0.670"
+      },
+      {
+        "corpusid": 53079677,
+        "score": 0.8476157784461975,
+        "reason": "bm25=0.950; dense=0.779; sub_bm25=1.000; sub_dense=0.712"
+      },
+      {
+        "corpusid": 736857,
+        "score": 0.824270486831665,
+        "reason": "bm25=0.832; dense=0.819; sub_bm25=0.768; sub_dense=0.737"
+      },
+      {
+        "corpusid": 244054905,
+        "score": 0.7311875820159912,
+        "reason": "bm25=0.583; dense=0.830; sub_bm25=0.914; sub_dense=0.865"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_578",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_578",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_578",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_578",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1359,
+      "latency_s": 8.225811399985105
+    },
+    {
+      "query_id": "litsearch_578",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.5433388999663293
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_578",
+    "gold": [
+      258960101
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "unified framework black-box white-box detection AI-written text",
+      "first paper black-box white-box detection machine-generated text",
+      "explainable detection AI-generated text black-box white-box"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7213852,
+        18792136,
+        36562731,
+        608448,
+        176201,
+        11606160,
+        18065622,
+        32969140,
+        12527088,
+        2314725,
+        5137112,
+        257258192,
+        18390364,
+        748386,
+        921822,
+        11574043,
+        6077317,
+        6723570,
+        8517763,
+        259370877
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        49413369,
+        250390573,
+        238856959,
+        129945615,
+        208139568,
+        102353948,
+        250334344,
+        233423658,
+        256598148,
+        247763056,
+        251648935,
+        58004637,
+        252873240,
+        19340026,
+        248987713,
+        258960101,
+        49907212,
+        199668918,
+        8640756,
+        3458858
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259165572,
+        231821650,
+        201667918,
+        250390573,
+        173188413,
+        232404166,
+        214802514,
+        249461900,
+        235755550,
+        8605936,
+        248780370,
+        16605700,
+        218502350,
+        249431362,
+        11311225,
+        252089594,
+        248779953,
+        235417102,
+        1428364,
+        257985681
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259165572,
+        258960101,
+        250390573,
+        201667918,
+        19340026,
+        238856959,
+        250334344,
+        129945615,
+        233423658,
+        201677979,
+        49413369,
+        258463978
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390573,
+        259165572,
+        231821650,
+        49413369,
+        201667918,
+        19340026,
+        102353948,
+        201677979,
+        238856959,
+        129945615,
+        239616314,
+        235755550,
+        258960101,
+        249431362,
+        21698802,
+        233423658,
+        258463978,
+        257985681,
+        173188413,
+        214802514
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.157110700034536
+  },
+  "reason_example": {
+    "query_id": "litsearch_578",
+    "query": "Which paper first proposes a unified framework for black-box and white-box detection of AI-written text with explanations?",
+    "top_results": [
+      {
+        "corpusid": 250390573,
+        "score": 0.9171478152275085,
+        "reason": "bm25=0.974; dense=0.879; sub_bm25=0.751; sub_dense=0.844"
+      },
+      {
+        "corpusid": 259165572,
+        "score": 0.87148118019104,
+        "reason": "bm25=0.679; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231821650,
+        "score": 0.8556369543075562,
+        "reason": "bm25=0.654; dense=0.990; sub_bm25=0.576; sub_dense=1.000"
+      },
+      {
+        "corpusid": 49413369,
+        "score": 0.8419401049613953,
+        "reason": "bm25=1.000; dense=0.737; sub_bm25=0.981; sub_dense=0.882"
+      },
+      {
+        "corpusid": 201667918,
+        "score": 0.8275861740112305,
+        "reason": "bm25=0.733; dense=0.891; sub_bm25=0.510; sub_dense=0.777"
+      }
+    ]
+  }
+}

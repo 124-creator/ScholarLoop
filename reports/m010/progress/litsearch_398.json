@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_398",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_398",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_398",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_398",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1153,
+      "latency_s": 8.092992199934088
+    },
+    {
+      "query_id": "litsearch_398",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 367,
+      "latency_s": 4.10343850008212
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_398",
+    "gold": [
+      259370630
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "encoder-only masked language model story generation",
+      "masked language model long text generation",
+      "encoder-only model open-ended generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252907549,
+        234487239,
+        2820058,
+        17005865,
+        237700337,
+        219309121,
+        53583995,
+        67855893,
+        207468,
+        248780521,
+        11118417,
+        252847509,
+        252763297,
+        218487034,
+        11166654,
+        202577639,
+        49568810,
+        248780067,
+        5252952,
+        250390577
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        221739231,
+        259370630,
+        237700337,
+        253116664,
+        237502721,
+        216553183,
+        218487034,
+        235097206,
+        222378698,
+        248780067,
+        246702335,
+        153312318,
+        235358191,
+        238634690,
+        226237121,
+        237386541,
+        5080441,
+        249017555,
+        207468,
+        248779877
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370630,
+        199373864,
+        37203718,
+        260125086,
+        233204282,
+        11662279,
+        53017405,
+        245616879,
+        252917569,
+        251903643,
+        222178963,
+        59599706,
+        232046207,
+        215415939,
+        92986646,
+        5252952,
+        232097626,
+        21731209,
+        202734604,
+        52012630
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370630
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370630,
+        221739231,
+        237700337,
+        253116664,
+        222378698,
+        199373864,
+        232046207,
+        251903643,
+        233204282,
+        252781022,
+        238634690,
+        234763221,
+        248780067,
+        237502721,
+        5252952,
+        226237121,
+        249062554,
+        37203718,
+        202734604,
+        263609535
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.371111299959011
+  },
+  "reason_example": {
+    "query_id": "litsearch_398",
+    "query": "Is there any paper that explores using only an encoder-only masked language model for open-ended long text generation (such as story generation)?",
+    "top_results": [
+      {
+        "corpusid": 259370630,
+        "score": 0.9923852682113647,
+        "reason": "bm25=0.981; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221739231,
+        "score": 0.8431109189987183,
+        "reason": "bm25=1.000; dense=0.739; sub_bm25=0.837; sub_dense=0.737"
+      },
+      {
+        "corpusid": 237700337,
+        "score": 0.8311605453491211,
+        "reason": "bm25=0.864; dense=0.809; sub_bm25=0.799; sub_dense=0.812"
+      },
+      {
+        "corpusid": 253116664,
+        "score": 0.827984094619751,
+        "reason": "bm25=0.842; dense=0.818; sub_bm25=0.805; sub_dense=0.745"
+      },
+      {
+        "corpusid": 222378698,
+        "score": 0.7903352975845337,
+        "reason": "bm25=0.746; dense=0.820; sub_bm25=0.751; sub_dense=0.852"
+      }
+    ]
+  }
+}

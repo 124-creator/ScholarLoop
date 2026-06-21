@@ -1,0 +1,206 @@
+{
+  "schema_version": "m170.realtime_examples.v1",
+  "checked_at_utc": "2026-06-21T08:01:19.310736+00:00",
+  "status": "PASS",
+  "warm_cache": {
+    "status": "ok",
+    "cache_reused": false,
+    "elapsed_s": 24.39439339999808
+  },
+  "examples": [
+    {
+      "query": "large language model compression",
+      "status": "ok",
+      "enabled": true,
+      "count": 5,
+      "cost": {
+        "llm_calls": 1,
+        "tokens": 277,
+        "latency_s": 8.622044800024014
+      },
+      "cache": {
+        "runtime_reused": true,
+        "precheck_cached": false,
+        "decomposition_cached": true
+      },
+      "budget": {
+        "timeout_s": 180,
+        "elapsed_s": 8.622044800024014,
+        "exceeded": false,
+        "completed_results_not_discarded": true
+      },
+      "reason": null,
+      "exception": null,
+      "wall_s": 8.622827800019877,
+      "top_ids": [
+        262054258,
+        204009154,
+        227905681,
+        227231182,
+        235436167
+      ],
+      "rows": [
+        {
+          "rank": 1,
+          "corpusid": 262054258,
+          "score": 0.8984777331352234,
+          "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.323*0.15; sub_dense_v2=1.000*0.15; cross_encoder=1.000*0.20"
+        },
+        {
+          "rank": 2,
+          "corpusid": 204009154,
+          "score": 0.7426310181617737,
+          "reason": "bm25=0.709*0.10; dense_v2=0.867*0.40; sub_bm25=0.310*0.15; sub_dense_v2=0.891*0.15; cross_encoder=0.723*0.20"
+        },
+        {
+          "rank": 3,
+          "corpusid": 227905681,
+          "score": 0.7296528816223145,
+          "reason": "bm25=0.634*0.10; dense_v2=0.874*0.40; sub_bm25=0.289*0.15; sub_dense_v2=0.903*0.15; cross_encoder=0.689*0.20"
+        },
+        {
+          "rank": 4,
+          "corpusid": 227231182,
+          "score": 0.6844092011451721,
+          "reason": "bm25=0.989*0.10; dense_v2=0.781*0.40; sub_bm25=0.354*0.15; sub_dense_v2=0.838*0.15; cross_encoder=0.471*0.20"
+        },
+        {
+          "rank": 5,
+          "corpusid": 235436167,
+          "score": 0.6747778654098511,
+          "reason": "bm25=0.714*0.10; dense_v2=0.776*0.40; sub_bm25=0.248*0.15; sub_dense_v2=0.802*0.15; cross_encoder=0.677*0.20"
+        }
+      ]
+    },
+    {
+      "query": "graph neural network robustness under distribution shift",
+      "status": "ok",
+      "enabled": true,
+      "count": 5,
+      "cost": {
+        "llm_calls": 0,
+        "tokens": 486,
+        "latency_s": 7.311312900012126
+      },
+      "cache": {
+        "runtime_reused": true,
+        "precheck_cached": true,
+        "decomposition_cached": true
+      },
+      "budget": {
+        "timeout_s": 180,
+        "elapsed_s": 7.311312900012126,
+        "exceeded": false,
+        "completed_results_not_discarded": true
+      },
+      "reason": null,
+      "exception": null,
+      "wall_s": 7.317420999985188,
+      "top_ids": [
+        247292293,
+        262065523,
+        246634506,
+        254823652,
+        256615740
+      ],
+      "rows": [
+        {
+          "rank": 1,
+          "corpusid": 247292293,
+          "score": 0.8926345705986023,
+          "reason": "bm25=0.657*0.10; dense_v2=1.000*0.40; sub_bm25=0.720*0.15; sub_dense_v2=1.000*0.15; cross_encoder=0.844*0.20"
+        },
+        {
+          "rank": 2,
+          "corpusid": 262065523,
+          "score": 0.8736085891723633,
+          "reason": "bm25=0.899*0.10; dense_v2=0.911*0.40; sub_bm25=0.654*0.15; sub_dense_v2=0.809*0.15; cross_encoder=1.000*0.20"
+        },
+        {
+          "rank": 3,
+          "corpusid": 246634506,
+          "score": 0.8496131300926208,
+          "reason": "bm25=0.604*0.10; dense_v2=0.961*0.40; sub_bm25=0.652*0.15; sub_dense_v2=0.972*0.15; cross_encoder=0.806*0.20"
+        },
+        {
+          "rank": 4,
+          "corpusid": 254823652,
+          "score": 0.8027186393737793,
+          "reason": "bm25=1.000*0.10; dense_v2=0.864*0.40; sub_bm25=0.846*0.15; sub_dense_v2=0.675*0.15; cross_encoder=0.645*0.20"
+        },
+        {
+          "rank": 5,
+          "corpusid": 256615740,
+          "score": 0.7662002444267273,
+          "reason": "bm25=0.540*0.10; dense_v2=0.806*0.40; sub_bm25=0.742*0.15; sub_dense_v2=0.985*0.15; cross_encoder=0.654*0.20"
+        }
+      ]
+    },
+    {
+      "query": "retrieval augmented generation evaluation",
+      "status": "ok",
+      "enabled": true,
+      "count": 5,
+      "cost": {
+        "llm_calls": 0,
+        "tokens": 262,
+        "latency_s": 3.7770956000022124
+      },
+      "cache": {
+        "runtime_reused": true,
+        "precheck_cached": true,
+        "decomposition_cached": true
+      },
+      "budget": {
+        "timeout_s": 180,
+        "elapsed_s": 3.7770956000022124,
+        "exceeded": false,
+        "completed_results_not_discarded": true
+      },
+      "reason": null,
+      "exception": null,
+      "wall_s": 3.780685999983689,
+      "top_ids": [
+        250391000,
+        221802772,
+        264288947,
+        252735056,
+        252780775
+      ],
+      "rows": [
+        {
+          "rank": 1,
+          "corpusid": 250391000,
+          "score": 0.9654149413108826,
+          "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.832*0.15; sub_dense_v2=1.000*0.15; cross_encoder=0.953*0.20"
+        },
+        {
+          "rank": 2,
+          "corpusid": 221802772,
+          "score": 0.9129646420478821,
+          "reason": "bm25=0.926*0.10; dense_v2=0.980*0.40; sub_bm25=0.576*0.15; sub_dense_v2=0.947*0.15; cross_encoder=1.000*0.20"
+        },
+        {
+          "rank": 3,
+          "corpusid": 264288947,
+          "score": 0.8951046466827393,
+          "reason": "bm25=0.943*0.10; dense_v2=0.859*0.40; sub_bm25=0.906*0.15; sub_dense_v2=0.932*0.15; cross_encoder=0.907*0.20"
+        },
+        {
+          "rank": 4,
+          "corpusid": 252735056,
+          "score": 0.8752354979515076,
+          "reason": "bm25=0.652*0.10; dense_v2=0.862*0.40; sub_bm25=1.000*0.15; sub_dense_v2=0.871*0.15; cross_encoder=0.922*0.20"
+        },
+        {
+          "rank": 5,
+          "corpusid": 252780775,
+          "score": 0.8019776344299316,
+          "reason": "bm25=0.837*0.10; dense_v2=0.798*0.40; sub_bm25=0.645*0.15; sub_dense_v2=0.763*0.15; cross_encoder=0.939*0.20"
+        }
+      ]
+    }
+  ],
+  "minimum_rows_required": 5,
+  "timeout_s": 180
+}

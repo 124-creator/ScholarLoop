@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_377",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_377",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_377",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_377",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 653,
+      "latency_s": 3.0546453999122605
+    },
+    {
+      "query_id": "litsearch_377",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 431,
+      "latency_s": 4.69095209997613
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_377",
+    "gold": [
+      258988004
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "evolutionary algorithms neural machine translation metrics",
+      "genetic algorithm MT evaluation metric optimization",
+      "evolutionary optimization NMT quality metrics translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        169053,
+        5783671,
+        40418416,
+        18009801,
+        12735028,
+        8748191,
+        58740369,
+        8570505,
+        258890931,
+        5399186,
+        10432165,
+        45897261,
+        6609459,
+        62016582,
+        199501730,
+        10627917,
+        31466544,
+        4948322,
+        1405599,
+        235258270
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256460861,
+        198909640,
+        220049291,
+        258988004,
+        260449054,
+        14232084,
+        12617973,
+        16795042,
+        61670488,
+        8748191,
+        254877237,
+        202734604,
+        40418416,
+        1331504,
+        473993,
+        358521,
+        215761405,
+        226239351,
+        258890931,
+        245855691
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249204457,
+        13954961,
+        52088192,
+        51878325,
+        16195146,
+        67228497,
+        218502235,
+        6834924,
+        258890929,
+        258988004,
+        221097205,
+        18208128,
+        40418416,
+        2704506,
+        45770198,
+        258890931,
+        259138596,
+        26143700,
+        18597965,
+        237010900
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258988004
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258988004,
+        40418416,
+        13954961,
+        258890931,
+        237010900,
+        2704506,
+        8282666,
+        14232084,
+        215761405,
+        256460861,
+        226239351,
+        198909640,
+        1056363,
+        201690478,
+        18952981,
+        14364246,
+        260449054,
+        18208555,
+        6834924,
+        220049291
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.730633200029843
+  },
+  "reason_example": {
+    "query_id": "litsearch_377",
+    "query": "Is there a paper that uses evolutionary algorithms and neural MT metrics to produce translations?",
+    "top_results": [
+      {
+        "corpusid": 258988004,
+        "score": 0.9358049035072327,
+        "reason": "bm25=0.960; dense=0.920; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 40418416,
+        "score": 0.9079304933547974,
+        "reason": "bm25=0.900; dense=0.913; sub_bm25=0.494; sub_dense=0.839"
+      },
+      {
+        "corpusid": 13954961,
+        "score": 0.8958115577697754,
+        "reason": "bm25=0.777; dense=0.975; sub_bm25=0.585; sub_dense=0.718"
+      },
+      {
+        "corpusid": 258890931,
+        "score": 0.8921400308609009,
+        "reason": "bm25=0.878; dense=0.902; sub_bm25=0.423; sub_dense=0.620"
+      },
+      {
+        "corpusid": 237010900,
+        "score": 0.858151376247406,
+        "reason": "bm25=0.807; dense=0.892; sub_bm25=0.751; sub_dense=0.825"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_553",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_553",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_553",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_553",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 643,
+      "latency_s": 3.0822620999533683
+    },
+    {
+      "query_id": "litsearch_553",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 364,
+      "latency_s": 3.2525065999943763
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_553",
+    "gold": [
+      259075246
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "repository-level code completion retrieval position effect",
+      "code snippet ordering impact on completion performance",
+      "relative position of retrieved snippets in code completion"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        461396,
+        9526061,
+        33742593,
+        18285513,
+        19038173,
+        8425601,
+        10300270,
+        912359,
+        5853439,
+        8418674,
+        8517763,
+        14122119,
+        26889702,
+        38406635,
+        229365767,
+        236459992,
+        259075246,
+        53609310,
+        247839905,
+        5334746
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259075246,
+        256461171,
+        234487049,
+        221761146,
+        235719387,
+        8820379,
+        258332119,
+        234762936,
+        258378289,
+        248427102,
+        222133227,
+        52127792,
+        260063082,
+        252600018,
+        252283924,
+        259370615,
+        237572201,
+        260900008,
+        258960612,
+        6706547
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259075246,
+        235719387,
+        238408095,
+        235254798,
+        260886874,
+        259088657,
+        252734952,
+        256461202,
+        218630337,
+        6706547,
+        52286634,
+        8820379,
+        256461277,
+        102354583,
+        51874206,
+        52125417,
+        252819110,
+        237572201,
+        256461462,
+        235446427
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259075246
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259075246,
+        235719387,
+        8820379,
+        6706547,
+        259088657,
+        234762936,
+        260886874,
+        238408095,
+        237572201,
+        252734952,
+        258332119,
+        235446427,
+        258378289,
+        252819311,
+        246241126,
+        234487049,
+        52286634,
+        235254798,
+        51874206,
+        236477892
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.6498172000283375
+  },
+  "reason_example": {
+    "query_id": "litsearch_553",
+    "query": "What paper investigated the effect of the relative position (closer or further away) of the most pertinent retrieved code snippets on repository-level code completion performance?",
+    "top_results": [
+      {
+        "corpusid": 259075246,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235719387,
+        "score": 0.8222147226333618,
+        "reason": "bm25=0.797; dense=0.839; sub_bm25=0.751; sub_dense=0.925"
+      },
+      {
+        "corpusid": 8820379,
+        "score": 0.7684793472290039,
+        "reason": "bm25=0.788; dense=0.756; sub_bm25=0.712; sub_dense=0.862"
+      },
+      {
+        "corpusid": 6706547,
+        "score": 0.7536721229553223,
+        "reason": "bm25=0.746; dense=0.759; sub_bm25=0.897; sub_dense=0.860"
+      },
+      {
+        "corpusid": 259088657,
+        "score": 0.7460514307022095,
+        "reason": "bm25=0.706; dense=0.772; sub_bm25=0.888; sub_dense=0.867"
+      }
+    ]
+  }
+}

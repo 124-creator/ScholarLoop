@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_235",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_235",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_235",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_235",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1267,
+      "latency_s": 6.747283300035633
+    },
+    {
+      "query_id": "litsearch_235",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.2939430999103934
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_235",
+    "gold": [
+      259095910,
+      260063238
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "zero-shot question answering language model prompts knowledge graph",
+      "enhancing zero-shot QA with knowledge graph augmented prompts",
+      "integrating knowledge graph into prompt-based zero-shot QA"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248779924,
+        2136580,
+        253762073,
+        248811371,
+        246706128,
+        259144999,
+        8028944,
+        248512968,
+        1488057,
+        27956208,
+        235097251,
+        219531164,
+        249017494,
+        245289877,
+        253581551,
+        260438589,
+        248572452,
+        53633715,
+        226227269,
+        259095910
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259095910,
+        260063238,
+        237416760,
+        259833781,
+        236478383,
+        235097251,
+        260438589,
+        246706128,
+        248512968,
+        258378203,
+        8919638,
+        252222470,
+        237439660,
+        252668454,
+        259144999,
+        263830433,
+        246016124,
+        259370697,
+        245289877,
+        252992469
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259095910,
+        260063238,
+        235376920,
+        218470415,
+        259370647,
+        3444808,
+        215745286,
+        219531164,
+        237490328,
+        235097251,
+        248218489,
+        165163607,
+        259833781,
+        235254629,
+        225040142,
+        207982228,
+        259924559,
+        231704318,
+        237353087,
+        52009210
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259095910,
+        260063238,
+        235097251,
+        259833781,
+        3444808,
+        248572452,
+        215745286,
+        248779924
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259095910,
+        260063238,
+        235097251,
+        259833781,
+        3444808,
+        235376920,
+        259370647,
+        215745286,
+        237416760,
+        246706128,
+        218470415,
+        219531164,
+        236478383,
+        259924559,
+        235254629,
+        248572452,
+        248218489,
+        234470046,
+        52009210,
+        248512968
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 10.584494200069457
+  },
+  "reason_example": {
+    "query_id": "litsearch_235",
+    "query": "Could you suggest research that investigates enhancing zero-shot question answering with prompts from language models integrated with knowledge graph data?",
+    "top_results": [
+      {
+        "corpusid": 259095910,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 260063238,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235097251,
+        "score": 0.8618629574775696,
+        "reason": "bm25=0.943; dense=0.808; sub_bm25=0.930; sub_dense=0.803"
+      },
+      {
+        "corpusid": 259833781,
+        "score": 0.8580318093299866,
+        "reason": "bm25=0.953; dense=0.795; sub_bm25=0.773; sub_dense=0.833"
+      },
+      {
+        "corpusid": 3444808,
+        "score": 0.8316433429718018,
+        "reason": "bm25=0.788; dense=0.861; sub_bm25=0.682; sub_dense=0.888"
+      }
+    ]
+  }
+}

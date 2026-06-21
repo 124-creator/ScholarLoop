@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_437",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_437",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_437",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_437",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2706,
+      "latency_s": 20.271821100031957
+    },
+    {
+      "query_id": "litsearch_437",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1047,
+      "latency_s": 9.449051500065252
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_437",
+    "gold": [
+      258947572
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "first paper to feed pretrained weights to adapter parameter efficient finetuning",
+      "paper proposing weight adaptation adapter instead of activation adapter",
+      "parameter efficient finetuning weight matrix adapter first proposal"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        26889702,
+        14299491,
+        176201,
+        20822840,
+        1182312,
+        2753493,
+        21022858,
+        1871953,
+        53222920,
+        235359141,
+        6070154,
+        15244472,
+        130265,
+        178267,
+        6187812,
+        9958436,
+        1792751,
+        3705175,
+        16516994
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248506096,
+        235359141,
+        236486069,
+        253265357,
+        256846453,
+        258947572,
+        253762044,
+        235313889,
+        253107420,
+        235309789,
+        252907428,
+        259095584,
+        246867041,
+        257631760,
+        252780109,
+        259370727,
+        245218833,
+        218470133,
+        247958074,
+        221819379
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248506096,
+        236486069,
+        256826892,
+        235359141,
+        76666127,
+        211171892,
+        255440621,
+        211532533,
+        257631760,
+        216869396,
+        211171709,
+        248986389,
+        259360526,
+        258947572,
+        253510792,
+        259145131,
+        212415013,
+        240353697,
+        238583580,
+        264038819
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248506096,
+        258947572,
+        253265357,
+        235359141,
+        236486069,
+        235313889,
+        253762044,
+        256846453,
+        252780109,
+        257631760,
+        256826892,
+        253107420
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248506096,
+        235359141,
+        236486069,
+        256826892,
+        258947572,
+        257631760,
+        76666127,
+        235313889,
+        253762044,
+        255440621,
+        252780109,
+        253265357,
+        211171892,
+        221819379,
+        238583580,
+        253107420,
+        246867041,
+        252907428,
+        256460956,
+        248986389
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 31.18528159998823
+  },
+  "reason_example": {
+    "query_id": "litsearch_437",
+    "query": "Which paper about parameter-efficient finetuning first proposes to feed the pretrained weight instead of the activation to an adapter?",
+    "top_results": [
+      {
+        "corpusid": 248506096,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235359141,
+        "score": 0.9456452131271362,
+        "reason": "bm25=0.963; dense=0.934; sub_bm25=1.000; sub_dense=0.903"
+      },
+      {
+        "corpusid": 236486069,
+        "score": 0.9381794929504395,
+        "reason": "bm25=0.870; dense=0.983; sub_bm25=0.906; sub_dense=0.963"
+      },
+      {
+        "corpusid": 256826892,
+        "score": 0.8261095285415649,
+        "reason": "bm25=0.663; dense=0.935; sub_bm25=0.577; sub_dense=0.896"
+      },
+      {
+        "corpusid": 258947572,
+        "score": 0.8106704950332642,
+        "reason": "bm25=0.815; dense=0.808; sub_bm25=0.727; sub_dense=0.807"
+      }
+    ]
+  }
+}

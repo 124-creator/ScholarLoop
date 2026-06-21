@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_314",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_314",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_314",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_314",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1500,
+      "latency_s": 8.659774099942297
+    },
+    {
+      "query_id": "litsearch_314",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 250,
+      "latency_s": 2.0408345999894664
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_314",
+    "gold": [
+      235196099,
+      235417102
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "backdoor attacks NLP syntactic roles",
+      "backdoor attacks NLP semantic interpretations",
+      "syntactic semantic backdoor attacks natural language processing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14122119,
+        8220493,
+        13170584,
+        233029500,
+        186206301,
+        1144073,
+        7539145,
+        30488100,
+        199022672,
+        7600496,
+        6362566,
+        219307312,
+        248779950,
+        17174343,
+        6218136,
+        23804177,
+        32306529,
+        239212345,
+        304009,
+        4956384
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235196099,
+        264172240,
+        259165262,
+        304009,
+        236459933,
+        257636556,
+        259370834,
+        258960289,
+        235417102,
+        258947738,
+        13179018,
+        258352421,
+        238407985,
+        747801,
+        261100669,
+        247233685,
+        259165134,
+        240070408,
+        253098063,
+        258741304
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235196099,
+        235417102,
+        236459933,
+        238407985,
+        244117423,
+        258960289,
+        252819107,
+        222140954,
+        254044110,
+        239009771,
+        233230124,
+        247594854,
+        258888064,
+        259360453,
+        237365058,
+        248524755,
+        248780270,
+        257365443,
+        13387345,
+        258987503
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235196099,
+        235417102,
+        236459933,
+        238407985,
+        258947738,
+        264172240,
+        259165262
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235196099,
+        235417102,
+        236459933,
+        258960289,
+        238407985,
+        264172240,
+        244117423,
+        258947738,
+        259165134,
+        259165262,
+        261100669,
+        239009771,
+        258987503,
+        257636556,
+        257365443,
+        258888064,
+        222140954,
+        237365058,
+        13179018,
+        259370834
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 12.239948299946263
+  },
+  "reason_example": {
+    "query_id": "litsearch_314",
+    "query": "What research exists on leveraging syntactic roles and semantic interpretations for backdoor attacks on natural language processing systems?",
+    "top_results": [
+      {
+        "corpusid": 235196099,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235417102,
+        "score": 0.929010808467865,
+        "reason": "bm25=0.827; dense=0.997; sub_bm25=0.924; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236459933,
+        "score": 0.8877347707748413,
+        "reason": "bm25=0.884; dense=0.890; sub_bm25=0.848; sub_dense=0.951"
+      },
+      {
+        "corpusid": 258960289,
+        "score": 0.8387449383735657,
+        "reason": "bm25=0.833; dense=0.843; sub_bm25=0.978; sub_dense=0.853"
+      },
+      {
+        "corpusid": 238407985,
+        "score": 0.8339908719062805,
+        "reason": "bm25=0.787; dense=0.865; sub_bm25=1.000; sub_dense=0.881"
+      }
+    ]
+  }
+}

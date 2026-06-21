@@ -1,0 +1,34 @@
+started http://127.0.0.1:58865
+GET /healthz -> 200 {'ok': True, 'mode': 'offline', 'llm_calls_per_request': 0, 'realtime_enabled': False}
+GET /api/queries -> 200 count=30
+GET /api/queries/litsearch_000 -> 200
+GET /?qid=litsearch_000 -> 200, repeat -> 200
+GET /api/queries/litsearch_001 -> 200
+GET /api/queries/litsearch_002 -> 200
+GET /api/queries/litsearch_003 -> 200
+GET /api/queries/litsearch_004 -> 200
+GET /api/queries/litsearch_005 -> 200
+GET /api/queries/litsearch_006 -> 200
+GET /api/queries/litsearch_007 -> 200
+GET /api/queries/litsearch_008 -> 200
+GET /api/queries/litsearch_009 -> 200
+GET /api/queries/litsearch_010 -> 200
+GET /api/queries/litsearch_011 -> 200
+GET /api/queries/litsearch_012 -> 200
+GET /api/queries/litsearch_013 -> 200
+GET /api/queries/litsearch_014 -> 200
+GET /api/queries/litsearch_015 -> 200
+GET /api/queries/litsearch_016 -> 200
+GET /api/queries/litsearch_017 -> 200
+GET /api/queries/litsearch_018 -> 200
+GET /api/queries/litsearch_019 -> 200
+GET /api/queries/litsearch_020 -> 200
+GET /api/queries/litsearch_021 -> 200
+GET /api/queries/litsearch_022 -> 200
+GET /api/queries/litsearch_023 -> 200
+GET /api/queries/litsearch_024 -> 200
+GET /api/queries/litsearch_025 -> 200
+GET /api/queries/litsearch_026 -> 200
+GET /api/queries/litsearch_027 -> 200
+GET /api/queries/litsearch_028 -> 200
+GET /api/queries/litsearch_029 -> 200

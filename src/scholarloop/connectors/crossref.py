@@ -20,7 +20,7 @@ class CrossrefConnector:
 
     def _params(self, params: dict[str, Any]) -> dict[str, Any]:
         out = dict(params)
-        mailto = self.env.get("CROSSREF_MAILTO") or "15517837680@163.com"
+        mailto = self.env.get("CROSSREF_MAILTO") or "no-public-email@example.com"
         out["mailto"] = mailto
         return out
 

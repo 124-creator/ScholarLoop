@@ -1,0 +1,7 @@
+GET /api/search?q=large%20language%20model%20compression
+status=unavailable
+enabled=False
+verified_load_bearing=False
+results=0
+cost={"latency_s": 0.0, "llm_calls": 0, "tokens": 0}
+no fabricated recommendations when unavailable

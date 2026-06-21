@@ -1,0 +1,5 @@
+started http://127.0.0.1:52502
+GET /api/graph -> 200 nodes=25 edges=50 mode=verified_json_only
+GET /graph -> 200 bytes=21608 contains_svg=True
+GET /api/realtime disabled -> 200 status=unavailable enabled=False cost={'llm_calls': 0, 'tokens': 0, 'latency_s': 0.0}
+status=PASS

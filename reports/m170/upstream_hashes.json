@@ -1,0 +1,29 @@
+{
+  "schema_version": "m170.upstream_hashes.v1",
+  "checked_at_utc": "2026-06-21T08:03:11.525368+00:00",
+  "current_nonvolatile_hashes": {
+    "reports/m010": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+    "reports/m020": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+    "reports/m030": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+    "reports/m040": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+    "reports/m050": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+    "reports/m060": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+    "reports/m070": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+    "reports/m080": "45a469900e9b0a3bd3aa73b6076bf0fc44444abc5bb44cd76797bcb09521b143",
+    "reports/m090": "f2d58b135727b9ec2d67d5cc2c7f8a9cca1b57f87a87c0fd8182f40b5261ea39",
+    "reports/m110": "fb88f4875abad993d604801311807b8eb79b0eda3fb60812776801eda63ef12b",
+    "reports/m120": "e603f868b2b9816d360ed98515eac5c2c518498576b3f857de2eb0726cd98294",
+    "reports/m130": "a624c94022bd3cd9c0b12ec5723baec8bae7496e519df185db3c69b547edb76f",
+    "reports/m140": "79cad45848d4188977e74ace46580d452e0a4c82a2b514693673e303db78d4aa",
+    "reports/m150": "9f1a11a29048c31ead879ce414a3b1f0a852b356e23758752d94e6dd8c2fc78e",
+    "reports/m160": "eba3ecb022316590f2276677c77751f5afe9d267a5e5e7bddde86f356676867d",
+    "reports/m170": "c9af79556249498ee0f363e2f663eb0a712086eea246260c214a41042136aa1f",
+    "reports/m040/results.json": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "reports/m060/results.json": "bb309155780d9705be3efb71584f80811685fbf8202abd620e041f423db833e6"
+  },
+  "volatile_exclusions": [
+    "reports/m100 optional realtime raw/cache",
+    "reports/m170 current module reports"
+  ],
+  "note": "M170 realtime examples may write reports/m100 raw/cache by design; frozen/load-bearing files are checked separately."
+}

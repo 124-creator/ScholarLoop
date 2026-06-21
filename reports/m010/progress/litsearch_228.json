@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_228",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_228",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_228",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_228",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1202,
+      "latency_s": 5.9018901999806985
+    },
+    {
+      "query_id": "litsearch_228",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 228,
+      "latency_s": 1.722247900092043
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_228",
+    "gold": [
+      232092599
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "online community dataset hate speech machine learning",
+      "hate speech detection dataset online community ML",
+      "machine learning hate speech identification online community data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53289396,
+        483800,
+        21547774,
+        36054067,
+        218869965,
+        220444936,
+        250390721,
+        259274942,
+        7981308,
+        250144216,
+        250391103,
+        259376694,
+        6737751,
+        12735714,
+        249240225,
+        8400322,
+        252624548,
+        235829552,
+        250072506,
+        1966857
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250391103,
+        249240225,
+        218869965,
+        259376694,
+        256460907,
+        202542397,
+        227230687,
+        253384454,
+        250144216,
+        259274942,
+        196188987,
+        229923220,
+        21693197,
+        252995536,
+        252818980,
+        258378158,
+        257038791,
+        252847467,
+        250141241,
+        53540549
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226283547,
+        218973961,
+        259342497,
+        19182892,
+        258480291,
+        12477446,
+        215548382,
+        237945268,
+        257767695,
+        249240225,
+        226284001,
+        218869965,
+        258378158,
+        247596954,
+        226262396,
+        257639809,
+        256460907,
+        168170119,
+        250391030,
+        21689549
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        249240225,
+        250391103,
+        53289396,
+        202542397,
+        227230687,
+        259342497,
+        252441438,
+        218869965,
+        259376694,
+        256460907,
+        259274942,
+        250144216
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226283547,
+        249240225,
+        218869965,
+        256460907,
+        202542397,
+        259342497,
+        250391103,
+        258378158,
+        19182892,
+        215548382,
+        196188987,
+        252995536,
+        12477446,
+        252441438,
+        250390455,
+        252847467,
+        21693197,
+        257767695,
+        252624704,
+        21689549
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.696563299978152
+  },
+  "reason_example": {
+    "query_id": "litsearch_228",
+    "query": "Could you suggest research that includes an online community dataset used to examine machine learning models for hate speech identification?",
+    "top_results": [
+      {
+        "corpusid": 226283547,
+        "score": 0.9042695760726929,
+        "reason": "bm25=0.761; dense=1.000; sub_bm25=0.662; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249240225,
+        "score": 0.8968926668167114,
+        "reason": "bm25=1.000; dense=0.828; sub_bm25=0.887; sub_dense=0.929"
+      },
+      {
+        "corpusid": 218869965,
+        "score": 0.885455846786499,
+        "reason": "bm25=0.973; dense=0.827; sub_bm25=0.894; sub_dense=0.952"
+      },
+      {
+        "corpusid": 256460907,
+        "score": 0.864828884601593,
+        "reason": "bm25=0.951; dense=0.807; sub_bm25=0.978; sub_dense=0.950"
+      },
+      {
+        "corpusid": 202542397,
+        "score": 0.8536516427993774,
+        "reason": "bm25=0.939; dense=0.797; sub_bm25=0.976; sub_dense=0.865"
+      }
+    ]
+  }
+}

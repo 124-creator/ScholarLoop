@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_307",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_307",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_307",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_307",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1668,
+      "latency_s": 11.474392500007525
+    },
+    {
+      "query_id": "litsearch_307",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 2.811187700019218
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_307",
+    "gold": [
+      236478283
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "human annotations schema linking text-to-SQL upper bound",
+      "replacing schema linking with human annotation text-to-SQL",
+      "maximum potential benefit of schema linking text-to-SQL"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14478849,
+        235359132,
+        233029490,
+        2630663,
+        236478283,
+        10038324,
+        11200749,
+        15000982,
+        16657732,
+        21547774,
+        201670229,
+        6785866,
+        11801961,
+        39661249,
+        232417310,
+        252376611,
+        1447029,
+        2000271,
+        21022858,
+        33742593
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        222067029,
+        207863446,
+        226262231,
+        235293739,
+        233210172,
+        159041042,
+        253237772,
+        247450580,
+        155092736,
+        248227660,
+        226262240,
+        227231186,
+        34459899,
+        219963709,
+        226283779,
+        247447354,
+        6909641,
+        258987509,
+        218674345,
+        202540793
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207863446,
+        235097562,
+        226262240,
+        15423756,
+        16654232,
+        1877651,
+        9749196,
+        13110318,
+        11872063,
+        2578382,
+        202565697,
+        226262231,
+        11830260,
+        222067029,
+        33297030,
+        53246468,
+        236909376,
+        13472488,
+        235293739,
+        7328260
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        207863446,
+        226262231,
+        222067029,
+        226283779,
+        236478283
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        207863446,
+        222067029,
+        226262231,
+        235293739,
+        226262240,
+        247450580,
+        34459899,
+        226283779,
+        253237772,
+        159041042,
+        227231186,
+        247447354,
+        233210172,
+        245837977,
+        235097562,
+        11830260,
+        155092736,
+        29272352,
+        219963709,
+        13472488
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.12974770006258
+  },
+  "reason_example": {
+    "query_id": "litsearch_307",
+    "query": "What papers explore replacing schema linking with human annotations to study the maximum potential benefit of schema linking for text-to-SQL tasks?",
+    "top_results": [
+      {
+        "corpusid": 207863446,
+        "score": 0.990633487701416,
+        "reason": "bm25=0.977; dense=1.000; sub_bm25=1.000; sub_dense=0.938"
+      },
+      {
+        "corpusid": 222067029,
+        "score": 0.9790719747543335,
+        "reason": "bm25=1.000; dense=0.965; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226262231,
+        "score": 0.9638979434967041,
+        "reason": "bm25=0.957; dense=0.969; sub_bm25=0.993; sub_dense=0.957"
+      },
+      {
+        "corpusid": 235293739,
+        "score": 0.941474437713623,
+        "reason": "bm25=0.915; dense=0.959; sub_bm25=0.934; sub_dense=0.967"
+      },
+      {
+        "corpusid": 226262240,
+        "score": 0.9018031358718872,
+        "reason": "bm25=0.760; dense=0.996; sub_bm25=0.864; sub_dense=0.918"
+      }
+    ]
+  }
+}

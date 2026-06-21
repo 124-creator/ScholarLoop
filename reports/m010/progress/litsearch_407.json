@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_407",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_407",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_407",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_407",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 990,
+      "latency_s": 5.538050699979067
+    },
+    {
+      "query_id": "litsearch_407",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 550,
+      "latency_s": 5.394896999932826
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_407",
+    "gold": [
+      259370867
+    ],
+    "pool_size": 288,
+    "decomposition": [
+      "LLMs elliptical constructions thematic fit",
+      "large language models ellipsis resolution psycholinguistic test",
+      "thematic fit dataset evaluation of language models on ellipses"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8775324,
+        24663,
+        1106719,
+        8446444,
+        26889702,
+        6385589,
+        16269371,
+        7900033,
+        102354324,
+        16159457,
+        2851078,
+        1197999,
+        11469122,
+        245838261,
+        7416323,
+        17575823,
+        168170148,
+        15331846,
+        18454652,
+        52001093
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370867,
+        21718394,
+        257427208,
+        21691124,
+        3937266,
+        257258163,
+        4370285,
+        14923077,
+        9751651,
+        259064331,
+        252819023,
+        259129342,
+        260334759,
+        16271285,
+        7433546,
+        12763356,
+        263620583,
+        475202,
+        248512797,
+        9569092
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        28430229,
+        11947613,
+        14859431,
+        14162,
+        232021535,
+        259370867,
+        15735252,
+        125856450,
+        259370617,
+        7873494,
+        53576265,
+        236486298,
+        12247766,
+        9691480,
+        391804,
+        30670514,
+        44620072,
+        33107619,
+        11773079,
+        41776385
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370867
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370867,
+        21718394,
+        53576265,
+        14923077,
+        1855343,
+        257258163,
+        257258191,
+        14162,
+        248182537,
+        28430229,
+        16972088,
+        3937266,
+        1227643,
+        7636641,
+        12763356,
+        7982198,
+        259370703,
+        11701697,
+        257427208,
+        253397675
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.26314649998676
+  },
+  "reason_example": {
+    "query_id": "litsearch_407",
+    "query": "Is there any paper that tries to investigate LLMs’ capabilities in solving elliptical constructions by using a test-dataset based on the psycolinguistic notion of Thematic Fit?",
+    "top_results": [
+      {
+        "corpusid": 259370867,
+        "score": 0.958510160446167,
+        "reason": "bm25=1.000; dense=0.931; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 21718394,
+        "score": 0.8475680351257324,
+        "reason": "bm25=0.813; dense=0.871; sub_bm25=0.680; sub_dense=0.910"
+      },
+      {
+        "corpusid": 53576265,
+        "score": 0.807908296585083,
+        "reason": "bm25=0.667; dense=0.902; sub_bm25=0.635; sub_dense=0.868"
+      },
+      {
+        "corpusid": 14923077,
+        "score": 0.7877960205078125,
+        "reason": "bm25=0.747; dense=0.815; sub_bm25=0.995; sub_dense=0.731"
+      },
+      {
+        "corpusid": 1855343,
+        "score": 0.7770183086395264,
+        "reason": "bm25=0.640; dense=0.869; sub_bm25=0.653; sub_dense=0.754"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_099",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_099",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_099",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_099",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1827,
+      "latency_s": 12.29509439994581
+    },
+    {
+      "query_id": "litsearch_099",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 240,
+      "latency_s": 1.6296582999639213
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_099",
+    "gold": [
+      252815403
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "contrastive learning video-language models",
+      "video-language pre-training temporal localization",
+      "temporal action localization contrastive"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16248365,
+        248779924,
+        1525100,
+        226283830,
+        8028944,
+        10724165,
+        259370633,
+        263866951,
+        17953140,
+        155089817,
+        258558199,
+        256461173,
+        253420419,
+        253734458,
+        40100965,
+        235097529,
+        1157837,
+        3926837,
+        8517763,
+        14122119
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        238215257,
+        255186085,
+        248780557,
+        250144675,
+        259370883,
+        258967275,
+        249431866,
+        238634783,
+        252815403,
+        250390888,
+        257766959,
+        254974222,
+        247793003,
+        258378358,
+        235097643,
+        263608698,
+        12603385,
+        202763602,
+        253098734,
+        231933751
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252815403,
+        249431866,
+        250390516,
+        202763602,
+        253098606,
+        238215257,
+        235125628,
+        258352617,
+        235485398,
+        257637187,
+        237503423,
+        17727400,
+        259376497,
+        252818917,
+        53083305,
+        232240219,
+        256461068,
+        237330071,
+        263608698,
+        52197708
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        255186085,
+        252815403,
+        238215257,
+        259370883,
+        202763602,
+        250390516,
+        249431866,
+        235097643,
+        250144675,
+        248780557,
+        235485398,
+        250390888
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238215257,
+        252815403,
+        249431866,
+        255186085,
+        202763602,
+        250144675,
+        250390516,
+        263608698,
+        237503423,
+        248780557,
+        235485398,
+        235097643,
+        247793003,
+        254974222,
+        257766959,
+        258352617,
+        53083305,
+        232240219,
+        259376497,
+        238634783
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.593020900036208
+  },
+  "reason_example": {
+    "query_id": "litsearch_099",
+    "query": "Are there any papers on training video-language models with contrastive approahes and evaluation on temporal localization tasks?",
+    "top_results": [
+      {
+        "corpusid": 238215257,
+        "score": 0.9434326887130737,
+        "reason": "bm25=1.000; dense=0.906; sub_bm25=0.930; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252815403,
+        "score": 0.9154905080795288,
+        "reason": "bm25=0.789; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249431866,
+        "score": 0.9029046893119812,
+        "reason": "bm25=0.799; dense=0.973; sub_bm25=0.661; sub_dense=1.000"
+      },
+      {
+        "corpusid": 255186085,
+        "score": 0.8436498045921326,
+        "reason": "bm25=0.946; dense=0.776; sub_bm25=1.000; sub_dense=0.877"
+      },
+      {
+        "corpusid": 202763602,
+        "score": 0.8380757570266724,
+        "reason": "bm25=0.704; dense=0.927; sub_bm25=0.853; sub_dense=0.974"
+      }
+    ]
+  }
+}

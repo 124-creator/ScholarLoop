@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_266",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_266",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_266",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_266",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1678,
+      "latency_s": 9.858046400011517
+    },
+    {
+      "query_id": "litsearch_266",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 256,
+      "latency_s": 2.2282827999442816
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_266",
+    "gold": [
+      233189542
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "BERT long text efficiency improvement",
+      "early exiting BERT long document",
+      "self-distillation BERT long sequences"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236460081,
+        256739246,
+        1095471,
+        201670719,
+        218628585,
+        923956,
+        259370718,
+        260063224,
+        222133423,
+        17121205,
+        258463948,
+        222178257,
+        233429873,
+        3303573,
+        243865637,
+        10436913,
+        207853103,
+        252819092,
+        202787714,
+        226227385
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233189542,
+        236459809,
+        259370796,
+        259370582,
+        226283755,
+        259370718,
+        215238664,
+        247222685,
+        201670719,
+        222290473,
+        238856994,
+        236459913,
+        252734863,
+        256739246,
+        233189592,
+        258947441,
+        258486916,
+        241583522,
+        235248193,
+        257219356
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258865530,
+        235794868,
+        215238664,
+        219558527,
+        201645145,
+        233189542,
+        226284011,
+        244048238,
+        182952400,
+        235390766,
+        226283755,
+        235097557,
+        214802887,
+        261341855,
+        235658872,
+        201307832,
+        248779934,
+        221970445,
+        207847640,
+        202888986
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233189542,
+        236459809,
+        226283755,
+        235248193,
+        215238664,
+        201670719,
+        238856994,
+        256739246
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        233189542,
+        215238664,
+        226283755,
+        258865530,
+        236459809,
+        226284011,
+        259370718,
+        241583522,
+        235794868,
+        261341855,
+        201670719,
+        235390766,
+        259370582,
+        201645145,
+        244048238,
+        235097557,
+        235422673,
+        235248193,
+        248779934,
+        221970445
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.713481200044043
+  },
+  "reason_example": {
+    "query_id": "litsearch_266",
+    "query": "Have any research papers explored methods to improve BERT's efficiency on long-text tasks, such as early exiting or self-distillation strategies?",
+    "top_results": [
+      {
+        "corpusid": 233189542,
+        "score": 0.9595174789428711,
+        "reason": "bm25=1.000; dense=0.933; sub_bm25=0.996; sub_dense=0.932"
+      },
+      {
+        "corpusid": 215238664,
+        "score": 0.8184956908226013,
+        "reason": "bm25=0.614; dense=0.955; sub_bm25=0.866; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226283755,
+        "score": 0.7812235355377197,
+        "reason": "bm25=0.654; dense=0.866; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258865530,
+        "score": 0.7629724740982056,
+        "reason": "bm25=0.407; dense=1.000; sub_bm25=0.738; sub_dense=0.931"
+      },
+      {
+        "corpusid": 236459809,
+        "score": 0.7621477246284485,
+        "reason": "bm25=0.766; dense=0.760; sub_bm25=0.788; sub_dense=0.833"
+      }
+    ]
+  }
+}

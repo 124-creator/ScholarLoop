@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_155",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_155",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_155",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_155",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1117,
+      "latency_s": 6.1586209000088274
+    },
+    {
+      "query_id": "litsearch_155",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 302,
+      "latency_s": 2.4704148999881
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_155",
+    "gold": [
+      247519241
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "performance evaluation of BLOOM under 4-bit weight quantization",
+      "4-bit integer columnar weight-only quantization in language models",
+      "performance decline of quantized language models like BLOOM"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        245856027,
+        10513825,
+        53633715,
+        259833850,
+        231807280,
+        727900,
+        245838243,
+        251244847,
+        53246679,
+        52013613,
+        18158903,
+        220444942,
+        174799129,
+        259376465,
+        259833859,
+        235376920,
+        1144879,
+        201126736,
+        259370840,
+        243865349
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263152476,
+        263672060,
+        259370840,
+        253735201,
+        263333921,
+        256826766,
+        220445945,
+        238408308,
+        211146200,
+        211011309,
+        12130431,
+        231985703,
+        8257350,
+        3520830,
+        247411282,
+        246863709,
+        237940329,
+        210848001,
+        247446635,
+        219965949
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370840,
+        263333921,
+        8313873,
+        262825568,
+        257353790,
+        2108676,
+        16551831,
+        1244912,
+        248266434,
+        235377417,
+        220445820,
+        229923538,
+        6611042,
+        253383782,
+        259076379,
+        256461337,
+        252873220,
+        253708032,
+        261494452,
+        252715691
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263152476,
+        259370840,
+        220445945
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370840,
+        263333921,
+        263152476,
+        256826766,
+        257353790,
+        229923538,
+        8257350,
+        252715691,
+        220445820,
+        220445945,
+        8313873,
+        237940329,
+        259076379,
+        6611042,
+        259075884,
+        262825568,
+        3520830,
+        247411282,
+        211011309,
+        2108676
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.846731800003909
+  },
+  "reason_example": {
+    "query_id": "litsearch_155",
+    "query": "Could you recommend research that evaluates the performance decline in various language models, like BLOOM, under 4-bit integer columnar weight-only quantization?",
+    "top_results": [
+      {
+        "corpusid": 259370840,
+        "score": 0.9472517371177673,
+        "reason": "bm25=0.868; dense=1.000; sub_bm25=0.910; sub_dense=0.969"
+      },
+      {
+        "corpusid": 263333921,
+        "score": 0.8925542831420898,
+        "reason": "bm25=0.811; dense=0.947; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263152476,
+        "score": 0.8804012537002563,
+        "reason": "bm25=1.000; dense=0.801; sub_bm25=1.000; sub_dense=0.876"
+      },
+      {
+        "corpusid": 256826766,
+        "score": 0.7744781374931335,
+        "reason": "bm25=0.811; dense=0.750; sub_bm25=0.862; sub_dense=0.686"
+      },
+      {
+        "corpusid": 257353790,
+        "score": 0.7664769887924194,
+        "reason": "bm25=0.537; dense=0.919; sub_bm25=1.000; sub_dense=0.957"
+      }
+    ]
+  }
+}

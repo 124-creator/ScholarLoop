@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_429",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_429",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_429",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_429",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1296,
+      "latency_s": 7.107665300020017
+    },
+    {
+      "query_id": "litsearch_429",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.713294000015594
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_429",
+    "gold": [
+      258959081
+    ],
+    "pool_size": 202,
+    "decomposition": [
+      "multi-hop reasoning densifying commonsense knowledge graph",
+      "densification commonsense knowledge graph multi-hop reasoning",
+      "densifying knowledge graphs for multi-hop reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2000271,
+        10919045,
+        257038566,
+        243865348,
+        214802401,
+        220047976,
+        4380524,
+        221879187,
+        250390946,
+        234682053,
+        247593741,
+        1868739,
+        258378173,
+        258841646,
+        222134075,
+        43454804,
+        218487288,
+        221879025,
+        222133138,
+        237213618
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        221879025,
+        234682053,
+        218486837,
+        52290656,
+        222134075,
+        249461723,
+        247593741,
+        214802401,
+        259370811,
+        218487288,
+        258959081,
+        256460928,
+        220047862,
+        221879187,
+        252070626,
+        233240926,
+        250390946,
+        235436105,
+        226236740,
+        248366513
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        221879025,
+        247593741,
+        218486837,
+        222133165,
+        222134075,
+        236477378,
+        246015914,
+        2000271,
+        233189603,
+        221879187,
+        233231193,
+        218487288,
+        258378190,
+        237571432,
+        196206886,
+        202541359,
+        208245087,
+        248780238,
+        250390947,
+        258378173
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        221879025,
+        218487288,
+        221879187,
+        214802401,
+        234682053,
+        247593741,
+        222134075,
+        218486837,
+        258378173,
+        252070626,
+        249461723,
+        2000271
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        221879025,
+        218486837,
+        222134075,
+        247593741,
+        234682053,
+        218487288,
+        221879187,
+        222133165,
+        214802401,
+        249461723,
+        252070626,
+        233231193,
+        235436105,
+        233189603,
+        258378173,
+        246015914,
+        236477378,
+        237571432,
+        233240926,
+        247447167
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.648001900059171
+  },
+  "reason_example": {
+    "query_id": "litsearch_429",
+    "query": "What work attempts to explore multi-hop reasoning by densifying commonsense knowledge graphs?",
+    "top_results": [
+      {
+        "corpusid": 221879025,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218486837,
+        "score": 0.9565508365631104,
+        "reason": "bm25=0.941; dense=0.967; sub_bm25=0.994; sub_dense=0.968"
+      },
+      {
+        "corpusid": 222134075,
+        "score": 0.9015148282051086,
+        "reason": "bm25=0.837; dense=0.944; sub_bm25=0.919; sub_dense=0.955"
+      },
+      {
+        "corpusid": 247593741,
+        "score": 0.9006270170211792,
+        "reason": "bm25=0.801; dense=0.967; sub_bm25=0.674; sub_dense=0.950"
+      },
+      {
+        "corpusid": 234682053,
+        "score": 0.8785773515701294,
+        "reason": "bm25=0.983; dense=0.809; sub_bm25=0.801; sub_dense=0.833"
+      }
+    ]
+  }
+}

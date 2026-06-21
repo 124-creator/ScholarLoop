@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_103",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_103",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_103",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_103",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1412,
+      "latency_s": 9.456606599967927
+    },
+    {
+      "query_id": "litsearch_103",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 223,
+      "latency_s": 1.466162700089626
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_103",
+    "gold": [
+      247628083
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "sentiment analysis text-to-graph conversion",
+      "contextual embeddings sentiment analysis graph",
+      "graph neural networks sentiment analysis contextual embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5968290,
+        53080549,
+        52985435,
+        219401872,
+        252819260,
+        202541467,
+        17044433,
+        218628585,
+        15263034,
+        252624512,
+        247628083,
+        4077585,
+        251719165,
+        559683,
+        2258688,
+        237416431,
+        17117576,
+        14995132,
+        22615716,
+        257258166
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        17221740,
+        227905696,
+        53079855,
+        256827163,
+        5968290,
+        237416431,
+        202541467,
+        219401872,
+        43943649,
+        252819260,
+        44177914,
+        235097335,
+        251719165,
+        174804249,
+        203657420,
+        233365264,
+        256461412,
+        2258688,
+        174800145,
+        85528598
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        573345,
+        237416431,
+        218570990,
+        253117092,
+        9305981,
+        203626520,
+        44177914,
+        250390828,
+        250390617,
+        232021736,
+        16735788,
+        32533948,
+        227231833,
+        53080764,
+        248779922,
+        250163884,
+        256461257,
+        231698657,
+        52012617,
+        43943649
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        227905696,
+        252819260
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237416431,
+        44177914,
+        43943649,
+        5968290,
+        17221740,
+        250390828,
+        256827163,
+        573345,
+        202541467,
+        174800145,
+        253117092,
+        9305981,
+        3445212,
+        227905696,
+        52012617,
+        218570990,
+        235254574,
+        227231602,
+        248780143,
+        256461195
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.410317700006999
+  },
+  "reason_example": {
+    "query_id": "litsearch_103",
+    "query": "Are there any studies investigating sentiment analysis through text-to-graph conversion models that incorporate contextual embeddings?",
+    "top_results": [
+      {
+        "corpusid": 237416431,
+        "score": 0.9570921063423157,
+        "reason": "bm25=0.897; dense=0.997; sub_bm25=0.658; sub_dense=0.979"
+      },
+      {
+        "corpusid": 44177914,
+        "score": 0.9021589756011963,
+        "reason": "bm25=0.856; dense=0.933; sub_bm25=0.770; sub_dense=0.890"
+      },
+      {
+        "corpusid": 43943649,
+        "score": 0.8752485513687134,
+        "reason": "bm25=0.874; dense=0.876; sub_bm25=0.746; sub_dense=0.828"
+      },
+      {
+        "corpusid": 5968290,
+        "score": 0.8730005025863647,
+        "reason": "bm25=0.923; dense=0.840; sub_bm25=0.828; sub_dense=0.822"
+      },
+      {
+        "corpusid": 17221740,
+        "score": 0.866237223148346,
+        "reason": "bm25=1.000; dense=0.777; sub_bm25=1.000; sub_dense=0.813"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "m100.realtime_response.v1",
+  "mode": "realtime_optional",
+  "enabled": true,
+  "status": "ok",
+  "notice": "实时结果非 verified 承重；用于演示新查询能力，成本和延时需单独披露。",
+  "query": "large language model compression",
+  "decomposition": {
+    "subqueries": [
+      "large language model compression techniques",
+      "pruning quantization distillation for LLMs",
+      "efficient inference of large language models"
+    ],
+    "criteria": [
+      "focuses on model compression methods",
+      "addresses memory or speed improvements",
+      "evaluates on state-of-the-art LLMs"
+    ]
+  },
+  "results": [
+    {
+      "rank": 1,
+      "corpusid": 262054258,
+      "score": 0.8984777331352234,
+      "title": "Language Modeling Is Compression",
+      "abstract_preview": "It has long been established that predictive models can be transformed into lossless compressors and vice versa.Incidentally, in recent years, the machine learning community has focused on training increasingly large and powerful self-supervised (language) models.Since these large language models exhibit impressive pre",
+      "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.323*0.15; sub_dense_v2=1.000*0.15; cross_encoder=1.000*0.20",
+      "authors_year": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      },
+      "source_or_doi": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      }
+    },
+    {
+      "rank": 2,
+      "corpusid": 204009154,
+      "score": 0.7426310181617737,
+      "title": "Structured Pruning of Large Language Models",
+      "abstract_preview": "Large language models have recently achieved state of the art performance across a wide variety of natural language tasks. Meanwhile, the size of these models and their latency have significantly increased, which makes their usage costly, and raises an interesting question: do language models need to be large? We study",
+      "reason": "bm25=0.709*0.10; dense_v2=0.867*0.40; sub_bm25=0.310*0.15; sub_dense_v2=0.891*0.15; cross_encoder=0.723*0.20",
+      "authors_year": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      },
+      "source_or_doi": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      }
+    },
+    {
+      "rank": 3,
+      "corpusid": 227905681,
+      "score": 0.7296529412269592,
+      "title": "Compressing Pre-trained Language Models by Matrix Decomposition",
+      "abstract_preview": "Large pre-trained language models reach stateof-the-art results on many different NLP tasks when fine-tuned individually; They also come with a significant memory and computational requirements, calling for methods to reduce model sizes (green AI). We propose a twostage model-compression method to reduce a model's infe",
+      "reason": "bm25=0.634*0.10; dense_v2=0.874*0.40; sub_bm25=0.289*0.15; sub_dense_v2=0.903*0.15; cross_encoder=0.689*0.20",
+      "authors_year": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      },
+      "source_or_doi": {
+        "status": "需人工核验",
+        "resolution_hint": "realtime connector not run in M100 smoke"
+      }
+    }
+  ],
+  "cost": {
+    "llm_calls": 1,
+    "tokens": 240,
+    "latency_s": 33.900929199997336
+  },
+  "source": {
+    "corpus": "LitSearch corpus_clean",
+    "ranker": "A-v2-compatible realtime path"
+  }
+}

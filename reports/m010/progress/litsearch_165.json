@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_165",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_165",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_165",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_165",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1353,
+      "latency_s": 8.491356500075199
+    },
+    {
+      "query_id": "litsearch_165",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 342,
+      "latency_s": 2.957554000080563
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_165",
+    "gold": [
+      236477430
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "dual-phase method sentence paraphrasing",
+      "two-stage sentence paraphrasing",
+      "two-step paraphrase generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258685798,
+        6293901,
+        3926047,
+        7440991,
+        44706178,
+        233029483,
+        245838284,
+        252763299,
+        11510085,
+        6170866,
+        17173602,
+        8292781,
+        11801961,
+        15532760,
+        8213835,
+        16930771,
+        201126736,
+        2245732,
+        2423990,
+        2535099
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        12003953,
+        235212422,
+        258715255,
+        150567,
+        511847,
+        22834445,
+        15963412,
+        1329417,
+        196200182,
+        233199,
+        16744075,
+        230349190,
+        17899072,
+        771531,
+        248227853,
+        226283768,
+        7861345,
+        8790370,
+        259129582,
+        2393759
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16957322,
+        10828403,
+        17652653,
+        13050210,
+        243865288,
+        2608152,
+        45108329,
+        10616734,
+        6677061,
+        10899851,
+        2755801,
+        215717103,
+        16263338,
+        837398,
+        18600087,
+        7245263,
+        12083543,
+        208092413,
+        174799713,
+        53079743
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        15963412
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        12003953,
+        2608152,
+        16957322,
+        13050210,
+        10828403,
+        45108329,
+        15963412,
+        233199,
+        1329417,
+        511847,
+        254537485,
+        17899072,
+        6184300,
+        7245263,
+        12341085,
+        243865233,
+        201126736,
+        10351213,
+        235212422,
+        14266630
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.261720499955118
+  },
+  "reason_example": {
+    "query_id": "litsearch_165",
+    "query": "Could you recommend research that has introduced a dual-phase method for sentence paraphrasing?",
+    "top_results": [
+      {
+        "corpusid": 12003953,
+        "score": 0.9251143932342529,
+        "reason": "bm25=1.000; dense=0.875; sub_bm25=0.896; sub_dense=0.843"
+      },
+      {
+        "corpusid": 2608152,
+        "score": 0.8884706497192383,
+        "reason": "bm25=0.851; dense=0.913; sub_bm25=0.746; sub_dense=0.879"
+      },
+      {
+        "corpusid": 16957322,
+        "score": 0.8851091265678406,
+        "reason": "bm25=0.713; dense=1.000; sub_bm25=0.944; sub_dense=1.000"
+      },
+      {
+        "corpusid": 13050210,
+        "score": 0.8635965585708618,
+        "reason": "bm25=0.735; dense=0.950; sub_bm25=0.655; sub_dense=0.920"
+      },
+      {
+        "corpusid": 10828403,
+        "score": 0.8611960411071777,
+        "reason": "bm25=0.671; dense=0.988; sub_bm25=0.727; sub_dense=0.940"
+      }
+    ]
+  }
+}

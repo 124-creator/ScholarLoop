@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_336",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_336",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_336",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_336",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1287,
+      "latency_s": 8.978369299904443
+    },
+    {
+      "query_id": "litsearch_336",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 279,
+      "latency_s": 2.5563279000343755
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_336",
+    "gold": [
+      241033259
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "prompt database for in-context learning",
+      "in-context learning prompt examples collection",
+      "good prompts for language model in-context learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13400865,
+        3879624,
+        221761488,
+        36054067,
+        6953360,
+        15204692,
+        207926324,
+        250390640,
+        57916,
+        14069143,
+        30908728,
+        263802565,
+        764565,
+        5456318,
+        1182312,
+        9537649,
+        1705467,
+        419762,
+        10164113,
+        258547350
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252519660,
+        245144420,
+        236956577,
+        258378340,
+        233231453,
+        253107694,
+        252716013,
+        256415953,
+        248366286,
+        245218561,
+        253098851,
+        258967373,
+        258332119,
+        237416760,
+        261048677,
+        235652287,
+        263608162,
+        252683303,
+        252715485,
+        248986239
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        241033259,
+        253098851,
+        252716013,
+        246485605,
+        237439234,
+        257038347,
+        254854219,
+        245218561,
+        252519660,
+        237416760,
+        257038392,
+        258041372,
+        253265328,
+        23288651,
+        238744065,
+        235652287,
+        247447170,
+        143428758,
+        259833855,
+        256461139
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245218561
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253098851,
+        252519660,
+        252716013,
+        245218561,
+        237439234,
+        237416760,
+        241033259,
+        246485605,
+        256415953,
+        235652287,
+        257038347,
+        233231453,
+        258041372,
+        258332119,
+        236956577,
+        257038392,
+        238744065,
+        259833855,
+        253107694,
+        252715485
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.787487599998713
+  },
+  "reason_example": {
+    "query_id": "litsearch_336",
+    "query": "Where can I find a database of good prompts to use for prompting language models for in-context learning?",
+    "top_results": [
+      {
+        "corpusid": 253098851,
+        "score": 0.946084201335907,
+        "reason": "bm25=0.871; dense=0.996; sub_bm25=0.724; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252519660,
+        "score": 0.9099843502044678,
+        "reason": "bm25=1.000; dense=0.850; sub_bm25=0.851; sub_dense=0.845"
+      },
+      {
+        "corpusid": 252716013,
+        "score": 0.9055936336517334,
+        "reason": "bm25=0.894; dense=0.914; sub_bm25=0.686; sub_dense=0.849"
+      },
+      {
+        "corpusid": 245218561,
+        "score": 0.8634693622589111,
+        "reason": "bm25=0.874; dense=0.857; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237439234,
+        "score": 0.8548672199249268,
+        "reason": "bm25=0.816; dense=0.881; sub_bm25=0.864; sub_dense=0.940"
+      }
+    ]
+  }
+}

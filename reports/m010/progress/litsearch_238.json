@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_238",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_238",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_238",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_238",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2317,
+      "latency_s": 17.292900100001134
+    },
+    {
+      "query_id": "litsearch_238",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 330,
+      "latency_s": 2.346469799987972
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_238",
+    "gold": [
+      236478113
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "cross-attention token syntax program repair",
+      "cross-attention mechanism automated program repair",
+      "interplay token syntax data cross-attention repair"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        61214793,
+        219307792,
+        252819510,
+        1650314,
+        22103840,
+        31420008,
+        252819233,
+        479222,
+        10724165,
+        14909180,
+        8852106,
+        53629348,
+        9429534,
+        11047550,
+        10700106,
+        727900,
+        805412,
+        222310755,
+        33107619,
+        12545394
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        3532489,
+        102481167,
+        219307792,
+        53629348,
+        220047423,
+        1650314,
+        237941066,
+        260063222,
+        233864728,
+        18420219,
+        232185260,
+        202785231,
+        16229674,
+        259370831,
+        222310755,
+        10763159,
+        1677923,
+        237500542,
+        220045413,
+        13090697
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8153918,
+        12000598,
+        3532489,
+        102481167,
+        237941066,
+        7706905,
+        2472777,
+        222378309,
+        7691927,
+        18990362,
+        6105200,
+        427492,
+        5418052,
+        241473,
+        16583474,
+        216553060,
+        16946379,
+        10927924,
+        5198252,
+        249147353
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        102481167,
+        8153918,
+        3532489,
+        237941066
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        3532489,
+        102481167,
+        8153918,
+        237941066,
+        53629348,
+        6105200,
+        232185260,
+        220047423,
+        222378309,
+        7691927,
+        220045413,
+        427492,
+        1677923,
+        13090697,
+        12000598,
+        62267053,
+        233364968,
+        2472777,
+        8849284,
+        8584287
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.952542199986055
+  },
+  "reason_example": {
+    "query_id": "litsearch_238",
+    "query": "Could you suggest research that investigates how cross-attention mechanisms improve the interplay between token and syntax data within automated program repair systems?",
+    "top_results": [
+      {
+        "corpusid": 3532489,
+        "score": 0.9530452489852905,
+        "reason": "bm25=1.000; dense=0.922; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 102481167,
+        "score": 0.9362021684646606,
+        "reason": "bm25=0.980; dense=0.907; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 8153918,
+        "score": 0.8791801929473877,
+        "reason": "bm25=0.698; dense=1.000; sub_bm25=0.733; sub_dense=0.961"
+      },
+      {
+        "corpusid": 237941066,
+        "score": 0.8477910757064819,
+        "reason": "bm25=0.772; dense=0.899; sub_bm25=0.778; sub_dense=0.881"
+      },
+      {
+        "corpusid": 53629348,
+        "score": 0.8123427033424377,
+        "reason": "bm25=0.884; dense=0.764; sub_bm25=0.614; sub_dense=0.996"
+      }
+    ]
+  }
+}

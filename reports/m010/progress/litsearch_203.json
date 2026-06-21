@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_203",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_203",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_203",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_203",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 724,
+      "latency_s": 2.7929045000346377
+    },
+    {
+      "query_id": "litsearch_203",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 391,
+      "latency_s": 2.897393299965188
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_203",
+    "gold": [
+      229923949
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "spatially-aware attention mechanism multi-modal language model documents",
+      "document layout spatial information multi-modal transformer",
+      "spatial attention for document understanding in vision-language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2831294,
+        1519586,
+        2202801,
+        202789731,
+        127756,
+        38491634,
+        33656552,
+        220047809,
+        6881637,
+        5989400,
+        16753572,
+        2170948,
+        5970324,
+        8349712,
+        9319303,
+        52280542,
+        162171,
+        16113728,
+        2112415,
+        165163987
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        202774140,
+        250391093,
+        232240392,
+        226283452,
+        229923949,
+        248780056,
+        236477957,
+        211010532,
+        252818996,
+        53081627,
+        218486839,
+        3463636,
+        245124165,
+        6881637,
+        256461423,
+        253481411,
+        243864624,
+        264490454,
+        8630602,
+        252780328
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780056,
+        261124675,
+        226283468,
+        235097249,
+        229923949,
+        252818928,
+        257233111,
+        11391667,
+        254044324,
+        232185558,
+        1494369,
+        2060848,
+        1172944,
+        2817150,
+        254877536,
+        11387463,
+        12085916,
+        232380086,
+        245131261,
+        247434179
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        229923949,
+        248780056,
+        250391093,
+        202774140,
+        6881637,
+        235097249,
+        67856093,
+        254044324,
+        17451961,
+        12522650,
+        38491634,
+        53081342
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780056,
+        229923949,
+        202774140,
+        235097249,
+        250391093,
+        218486839,
+        226283468,
+        252818928,
+        254877536,
+        6881637,
+        243864624,
+        254044324,
+        254044707,
+        245124165,
+        247434179,
+        236477957,
+        53081627,
+        17451961,
+        15969603,
+        235717
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.158716300036758
+  },
+  "reason_example": {
+    "query_id": "litsearch_203",
+    "query": "Could you suggest an article that leverages the spatial information available in documents for multi-modal LMs by using a spatially-aware attention mechanism?",
+    "top_results": [
+      {
+        "corpusid": 248780056,
+        "score": 0.9616382122039795,
+        "reason": "bm25=0.904; dense=1.000; sub_bm25=0.885; sub_dense=1.000"
+      },
+      {
+        "corpusid": 229923949,
+        "score": 0.8934557437896729,
+        "reason": "bm25=0.907; dense=0.884; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202774140,
+        "score": 0.8740804195404053,
+        "reason": "bm25=1.000; dense=0.790; sub_bm25=0.998; sub_dense=0.647"
+      },
+      {
+        "corpusid": 235097249,
+        "score": 0.851282000541687,
+        "reason": "bm25=0.787; dense=0.894; sub_bm25=0.855; sub_dense=0.815"
+      },
+      {
+        "corpusid": 250391093,
+        "score": 0.8098737597465515,
+        "reason": "bm25=0.940; dense=0.723; sub_bm25=0.795; sub_dense=0.852"
+      }
+    ]
+  }
+}

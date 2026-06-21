@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_064",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_064",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_064",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_064",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 912,
+      "latency_s": 4.620665700058453
+    },
+    {
+      "query_id": "litsearch_064",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 346,
+      "latency_s": 2.6050621999893337
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_064",
+    "gold": [
+      203734629
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "sports news generation from event data approaches",
+      "Finnish language sports news generation models",
+      "models for generating sports reports from event data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        67877118,
+        17449548,
+        14198180,
+        22248025,
+        1905391,
+        61369188,
+        1449890,
+        256739251,
+        5167474,
+        14371568,
+        1428364,
+        14054366,
+        39094483,
+        2290666,
+        215927,
+        245297106,
+        3127682,
+        208031598,
+        30368763,
+        6023656
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        203734629,
+        226862555,
+        235097553,
+        9701937,
+        256461402,
+        14198180,
+        245144610,
+        17726062,
+        199001173,
+        253802651,
+        232222259,
+        14899565,
+        1801348,
+        218900504,
+        256460904,
+        218973950,
+        208002678,
+        258686286,
+        8894136,
+        256460863
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        203734629,
+        528679,
+        253802651,
+        226862555,
+        8319029,
+        225373692,
+        21726955,
+        28284574,
+        2054513,
+        14855303,
+        1144244,
+        258762750,
+        15980936,
+        909778,
+        218973950,
+        10754982,
+        16997286,
+        15380259,
+        6083900,
+        18667500
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        203734629,
+        528679,
+        226862555,
+        253802651
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        203734629,
+        226862555,
+        253802651,
+        528679,
+        8319029,
+        218973950,
+        14198180,
+        2054513,
+        10328681,
+        38234032,
+        1801348,
+        15380259,
+        245144610,
+        225373692,
+        13357099,
+        9200906,
+        4644465,
+        2290666,
+        14588039,
+        232021646
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.95003700000234
+  },
+  "reason_example": {
+    "query_id": "litsearch_064",
+    "query": "What are some approaches to generating sports news reports from event data and what models have been used for this task in Finnish language NLP?",
+    "top_results": [
+      {
+        "corpusid": 203734629,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226862555,
+        "score": 0.8585523366928101,
+        "reason": "bm25=0.915; dense=0.821; sub_bm25=1.000; sub_dense=0.949"
+      },
+      {
+        "corpusid": 253802651,
+        "score": 0.8258365988731384,
+        "reason": "bm25=0.813; dense=0.835; sub_bm25=0.756; sub_dense=0.863"
+      },
+      {
+        "corpusid": 528679,
+        "score": 0.7745847702026367,
+        "reason": "bm25=0.629; dense=0.872; sub_bm25=0.785; sub_dense=1.000"
+      },
+      {
+        "corpusid": 8319029,
+        "score": 0.7683525085449219,
+        "reason": "bm25=0.703; dense=0.812; sub_bm25=0.476; sub_dense=0.578"
+      }
+    ]
+  }
+}

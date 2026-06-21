@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_265",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_265",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_265",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_265",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1075,
+      "latency_s": 5.244873800082132
+    },
+    {
+      "query_id": "litsearch_265",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 289,
+      "latency_s": 2.441990799969062
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_265",
+    "gold": [
+      232258000
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "language models for fact-checking evidence bias propagation",
+      "bias in automated fact-checking using large language models",
+      "risks of using LLMs for fact verification evidence"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8752606,
+        219309121,
+        27016310,
+        199022672,
+        10513825,
+        16262130,
+        233189607,
+        2840902,
+        3906867,
+        16047614,
+        53633715,
+        764565,
+        11922294,
+        38405135,
+        250150803,
+        222090785,
+        12222565,
+        237558774,
+        2010731,
+        252531810
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        49320819,
+        226281376,
+        218974149,
+        248392317,
+        226262371,
+        233189607,
+        239009616,
+        207779874,
+        253107194,
+        259376644,
+        220665912,
+        235731930,
+        232233599,
+        256358455,
+        241583515,
+        252907607,
+        235457983,
+        248218561,
+        224802782,
+        258378174
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        49320819,
+        235097501,
+        218974006,
+        247619066,
+        234742074,
+        253107194,
+        29298828,
+        218974149,
+        11770023,
+        248780234,
+        243865641,
+        244464088,
+        236460084,
+        85556928,
+        218971825,
+        236460200,
+        202787823,
+        258765237,
+        249953983,
+        258547076
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233189607,
+        248218561,
+        253107194,
+        234742074
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        49320819,
+        218974149,
+        253107194,
+        234742074,
+        218974006,
+        249953983,
+        235457983,
+        247619066,
+        226281376,
+        235097501,
+        241583515,
+        248218561,
+        239009616,
+        29298828,
+        224802782,
+        252907607,
+        85556928,
+        53505803,
+        210936545,
+        236477851
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.777521799900569
+  },
+  "reason_example": {
+    "query_id": "litsearch_265",
+    "query": "Have any research papers examined whether using language models for providing evidence in fact-checking systems risks propagating biases?",
+    "top_results": [
+      {
+        "corpusid": 49320819,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.867; sub_dense=0.993"
+      },
+      {
+        "corpusid": 218974149,
+        "score": 0.9419687390327454,
+        "reason": "bm25=0.979; dense=0.917; sub_bm25=0.946; sub_dense=0.991"
+      },
+      {
+        "corpusid": 253107194,
+        "score": 0.919883131980896,
+        "reason": "bm25=0.906; dense=0.929; sub_bm25=1.000; sub_dense=0.950"
+      },
+      {
+        "corpusid": 234742074,
+        "score": 0.8624287843704224,
+        "reason": "bm25=0.756; dense=0.934; sub_bm25=0.846; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218974006,
+        "score": 0.8453700542449951,
+        "reason": "bm25=0.682; dense=0.954; sub_bm25=0.669; sub_dense=0.955"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_392",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_392",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_392",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_392",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1238,
+      "latency_s": 10.338032600004226
+    },
+    {
+      "query_id": "litsearch_392",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 263,
+      "latency_s": 2.900632300064899
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_392",
+    "gold": [
+      259370579
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "\"unsupervised evaluation\" meaning representation similarity",
+      "\"embedding similarity\" without annotated data",
+      "\"semantic representation\" evaluation unsupervised"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        168170148,
+        12803768,
+        252624581,
+        12178716,
+        5667590,
+        1779105,
+        1085680,
+        2717337,
+        778011,
+        5344828,
+        13057309,
+        18074518,
+        4883968,
+        252624633,
+        245218561,
+        52125788,
+        12823405,
+        26889702,
+        12252477,
+        8057832
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5667590,
+        236486174,
+        195064492,
+        5344828,
+        23699712,
+        6130134,
+        129945615,
+        256461043,
+        168170148,
+        256711,
+        1044640,
+        14922319,
+        12691423,
+        237431517,
+        693326,
+        3518190,
+        18567394,
+        249538295,
+        11275066,
+        14326528
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        15908805,
+        256461011,
+        209202558,
+        7392978,
+        29002987,
+        7604967,
+        16759164,
+        12979104,
+        37304690,
+        10300270,
+        18720573,
+        10221354,
+        11978534,
+        49231593,
+        18804068,
+        5713900,
+        244119137,
+        6354503,
+        102353817,
+        17121205
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1085680,
+        259370579,
+        6227444,
+        10221354
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        195064492,
+        15908805,
+        6130134,
+        237431517,
+        259370579,
+        23699712,
+        14922319,
+        6585180,
+        5344828,
+        693326,
+        7604967,
+        2954176,
+        16056348,
+        102353817,
+        5216936,
+        247779215,
+        256461011,
+        249018149,
+        16188540,
+        10221354
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.117274199961685
+  },
+  "reason_example": {
+    "query_id": "litsearch_392",
+    "query": "Is there any paper that attempts to evaluate the similarity of meaning representations without using annotated data?",
+    "top_results": [
+      {
+        "corpusid": 195064492,
+        "score": 0.9026702642440796,
+        "reason": "bm25=0.955; dense=0.868; sub_bm25=0.480; sub_dense=0.890"
+      },
+      {
+        "corpusid": 15908805,
+        "score": 0.9009279012680054,
+        "reason": "bm25=0.752; dense=1.000; sub_bm25=0.779; sub_dense=0.844"
+      },
+      {
+        "corpusid": 6130134,
+        "score": 0.8981969356536865,
+        "reason": "bm25=0.888; dense=0.905; sub_bm25=0.337; sub_dense=0.763"
+      },
+      {
+        "corpusid": 237431517,
+        "score": 0.8526445627212524,
+        "reason": "bm25=0.851; dense=0.854; sub_bm25=0.804; sub_dense=0.893"
+      },
+      {
+        "corpusid": 259370579,
+        "score": 0.8453707695007324,
+        "reason": "bm25=0.754; dense=0.906; sub_bm25=0.891; sub_dense=0.814"
+      }
+    ]
+  }
+}

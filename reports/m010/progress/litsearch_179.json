@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_179",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_179",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_179",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_179",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1953,
+      "latency_s": 15.72893570002634
+    },
+    {
+      "query_id": "litsearch_179",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.4623104999773204
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_179",
+    "gold": [
+      236486171
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "RoBERTa Bi-LSTM CRF event extraction",
+      "enhanced RoBERTa with Bi-LSTM and CRF for event extraction",
+      "event extraction RoBERTa BiLSTM CRF"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53081551,
+        258685798,
+        5688042,
+        9800912,
+        249204419,
+        18792136,
+        33507482,
+        18738421,
+        236459967,
+        14425690,
+        189928589,
+        14431795,
+        195064079,
+        17881228,
+        238638466,
+        225062858,
+        168273,
+        233029501,
+        202718944,
+        1995601
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        203694270,
+        53081551,
+        201646626,
+        220445762,
+        227905100,
+        257767701,
+        225062639,
+        250391031,
+        21720110,
+        237940254,
+        51918743,
+        11647190,
+        15692066,
+        258378245,
+        15768663,
+        5688042,
+        202718944,
+        218595233,
+        234469712,
+        247613006
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        243865639,
+        15897667,
+        11815325,
+        14175558,
+        174800674,
+        6452487,
+        202718810,
+        247626326,
+        32821791,
+        59599681,
+        236486280,
+        51871927,
+        35796099,
+        202565622,
+        226283750,
+        234358675,
+        189928589,
+        253510953,
+        7807216,
+        222306079
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        225062666,
+        202718944,
+        35796099,
+        243865639,
+        51918743,
+        189928589,
+        237940254,
+        253499316,
+        18911648,
+        256808439,
+        5688042,
+        53081551
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        243865639,
+        174800674,
+        234358675,
+        202718810,
+        35796099,
+        6452487,
+        53081551,
+        247626326,
+        32821791,
+        237940254,
+        256808439,
+        10743051,
+        2114002,
+        18911648,
+        202718944,
+        189928589,
+        51871927,
+        225062666,
+        235458429,
+        227905100
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 19.562033299938776
+  },
+  "reason_example": {
+    "query_id": "litsearch_179",
+    "query": "Could you recommend research that proposed enhancing the RoBERTa model for event extraction by adding a Bi-LSTM and a CRF layer?",
+    "top_results": [
+      {
+        "corpusid": 243865639,
+        "score": 0.9495311975479126,
+        "reason": "bm25=0.874; dense=1.000; sub_bm25=0.676; sub_dense=1.000"
+      },
+      {
+        "corpusid": 174800674,
+        "score": 0.8985726833343506,
+        "reason": "bm25=0.855; dense=0.927; sub_bm25=0.759; sub_dense=0.930"
+      },
+      {
+        "corpusid": 234358675,
+        "score": 0.8839524984359741,
+        "reason": "bm25=0.885; dense=0.883; sub_bm25=0.679; sub_dense=0.941"
+      },
+      {
+        "corpusid": 202718810,
+        "score": 0.8715212941169739,
+        "reason": "bm25=0.789; dense=0.927; sub_bm25=0.499; sub_dense=0.926"
+      },
+      {
+        "corpusid": 35796099,
+        "score": 0.8693004250526428,
+        "reason": "bm25=0.819; dense=0.903; sub_bm25=0.618; sub_dense=0.992"
+      }
+    ]
+  }
+}

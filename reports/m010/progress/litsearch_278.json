@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_278",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_278",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_278",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_278",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1341,
+      "latency_s": 7.378679399960674
+    },
+    {
+      "query_id": "litsearch_278",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 314,
+      "latency_s": 3.0082997999852523
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_278",
+    "gold": [
+      230433941
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "learned embeddings input to every transformer layer",
+      "prefix tuning per layer",
+      "deep prompt tuning multi-layer embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        240288605,
+        252683822,
+        211259041,
+        53023292,
+        4394853,
+        33871285,
+        219124482,
+        252280753,
+        15956543,
+        2856626,
+        186206883,
+        1188956,
+        40100965,
+        245838320,
+        13984488,
+        4975368,
+        18207473,
+        252818961,
+        239049989,
+        247922327
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247315653,
+        240288605,
+        15956543,
+        256900985,
+        248084930,
+        252819363,
+        264172710,
+        252992469,
+        211259041,
+        259833809,
+        258987746,
+        233231453,
+        247446604,
+        246062387,
+        248779986,
+        256827488,
+        252780166,
+        252907221,
+        236956577,
+        252624538
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        225067567,
+        258840844,
+        229923720,
+        207853045,
+        253098472,
+        226281941,
+        159041867,
+        259833855,
+        236460291,
+        253510792,
+        235097270,
+        243728757,
+        189999553,
+        234341857,
+        250072977,
+        208117506,
+        251929336,
+        222290948,
+        236459909,
+        252089779
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        239049989
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        225067567,
+        258840844,
+        248779986,
+        259833855,
+        248084930,
+        253510792,
+        211259041,
+        233181647,
+        229923720,
+        207853045,
+        258865689,
+        233296808,
+        256827488,
+        235097270,
+        248780177,
+        239016231,
+        256461052,
+        174799399,
+        257365136,
+        243728757
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.153326999978162
+  },
+  "reason_example": {
+    "query_id": "litsearch_278",
+    "query": "I know about prompt tuning, but have any works tried learning embeddings that are inputted to every transformer layer in a language model?",
+    "top_results": [
+      {
+        "corpusid": 225067567,
+        "score": 0.91379714012146,
+        "reason": "bm25=0.784; dense=1.000; sub_bm25=0.813; sub_dense=0.984"
+      },
+      {
+        "corpusid": 258840844,
+        "score": 0.8950729370117188,
+        "reason": "bm25=0.808; dense=0.953; sub_bm25=1.000; sub_dense=0.879"
+      },
+      {
+        "corpusid": 248779986,
+        "score": 0.8355145454406738,
+        "reason": "bm25=0.850; dense=0.826; sub_bm25=0.694; sub_dense=0.916"
+      },
+      {
+        "corpusid": 259833855,
+        "score": 0.8349858522415161,
+        "reason": "bm25=0.751; dense=0.891; sub_bm25=0.682; sub_dense=0.895"
+      },
+      {
+        "corpusid": 248084930,
+        "score": 0.8301451206207275,
+        "reason": "bm25=0.903; dense=0.782; sub_bm25=0.736; sub_dense=0.967"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_070",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_070",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_070",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_070",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1000,
+      "latency_s": 5.955359400017187
+    },
+    {
+      "query_id": "litsearch_070",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 294,
+      "latency_s": 2.4230753999436274
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_070",
+    "gold": [
+      201646309
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "sentence embedding cosine similarity for grounding annotated data to knowledge base",
+      "clustering algorithms for matching annotated data to knowledge base",
+      "machine learning tools for knowledge base grounding and annotation matching"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6349991,
+        1294762,
+        17286939,
+        53246717,
+        18608887,
+        9069951,
+        466246,
+        21723364,
+        35474240,
+        6738867,
+        5125030,
+        28804091,
+        53079155,
+        49664709,
+        9834819,
+        748386,
+        460493,
+        1703535,
+        9535111,
+        248227350
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        6738867,
+        53319542,
+        248693662,
+        235458218,
+        35474240,
+        6349991,
+        28804091,
+        219531699,
+        261431361,
+        207993700,
+        49664709,
+        251437373,
+        6557769,
+        8589950,
+        35427434,
+        158046969,
+        7318039,
+        174800868,
+        5125030,
+        252819122
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207993700,
+        5950869,
+        5155989,
+        6244039,
+        237353134,
+        5962263,
+        779551,
+        259075428,
+        2127100,
+        14975460,
+        11274338,
+        9834233,
+        9069951,
+        15386287,
+        233209850,
+        35427434,
+        18278335,
+        5127952,
+        16769334,
+        2813717
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        219531699,
+        235458218,
+        49664709,
+        207993700
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        207993700,
+        219531699,
+        35427434,
+        237353134,
+        252819122,
+        158046969,
+        7861345,
+        235458218,
+        28804091,
+        49664709,
+        248693662,
+        6244039,
+        29154146,
+        6557769,
+        466246,
+        250390798,
+        16185361,
+        53981714,
+        3166574,
+        13114958
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.833479000022635
+  },
+  "reason_example": {
+    "query_id": "litsearch_070",
+    "query": "What are some techniques or tools used in machine learning for matching and grounding annotated data to an existing knowledge base, particularly using sentence embedding-based cosine similarity or clustering algorithms?",
+    "top_results": [
+      {
+        "corpusid": 207993700,
+        "score": 0.9515583515167236,
+        "reason": "bm25=0.879; dense=1.000; sub_bm25=0.684; sub_dense=0.970"
+      },
+      {
+        "corpusid": 219531699,
+        "score": 0.9084168672561646,
+        "reason": "bm25=0.901; dense=0.913; sub_bm25=0.679; sub_dense=0.867"
+      },
+      {
+        "corpusid": 35427434,
+        "score": 0.894253134727478,
+        "reason": "bm25=0.855; dense=0.920; sub_bm25=0.836; sub_dense=0.942"
+      },
+      {
+        "corpusid": 237353134,
+        "score": 0.8834028244018555,
+        "reason": "bm25=0.764; dense=0.963; sub_bm25=0.840; sub_dense=0.858"
+      },
+      {
+        "corpusid": 252819122,
+        "score": 0.8804649114608765,
+        "reason": "bm25=0.842; dense=0.906; sub_bm25=0.817; sub_dense=0.772"
+      }
+    ]
+  }
+}

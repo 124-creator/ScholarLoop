@@ -1,0 +1,59 @@
+{
+  "schema_version": "m020.verification.v1",
+  "status": "PASS",
+  "config": {
+    "limit": 30,
+    "top_n": 3,
+    "dev_queries": 30,
+    "demo_examples": [
+      "litsearch_000 as AI research demo",
+      "litsearch_001",
+      "litsearch_002"
+    ]
+  },
+  "fabrication_rate": 0.0,
+  "supported_field_total": 673,
+  "supported_field_failures": 0,
+  "disputed_grounded_total": 46,
+  "disputed_grounding_failures": 0,
+  "matrix_fabrication_rate": 0.0,
+  "matrix_supported_total": 270,
+  "matrix_supported_failures": 0,
+  "official_missing_field_compliance_rate": 1.0,
+  "official_missing_ok": 180,
+  "official_missing_total": 180,
+  "field_completeness_ok": true,
+  "status_counts": {
+    "已有证据支持": 673,
+    "证据不足": 1,
+    "存在争议": 46,
+    "需人工核验": 180
+  },
+  "reproducible": true,
+  "run1_hash": "6edc5500d85210da90d62f1c1c3a8223d031cb1d93fa2ca20f0660a819ccfd43",
+  "run2_hash": "6edc5500d85210da90d62f1c1c3a8223d031cb1d93fa2ca20f0660a819ccfd43",
+  "upstream_m010_unchanged": true,
+  "upstream_m010_sha256": "fb6b6899c012bf5f53ece72937e317b2dcb3404a9305d281757ad156208dcaa9",
+  "efficiency": {
+    "total_wall_s": 1194.448883599951,
+    "first_run_query_seconds_sum": 1164.0735187001992,
+    "p50_query_s": 36.45961394999176,
+    "p95_query_s": 65.75581664497729,
+    "total_tokens": 145796,
+    "api_calls": 90,
+    "api_calls_per_query": 3.0
+  },
+  "secret_scan": {
+    "scanned": [
+      "src",
+      "tests",
+      "reports\\m020",
+      "docs"
+    ],
+    "excluded": [
+      "secrets"
+    ],
+    "secret_like_hits": 0,
+    "hit_files": []
+  }
+}

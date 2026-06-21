@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_362",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_362",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_362",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_362",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1105,
+      "latency_s": 6.713401099899784
+    },
+    {
+      "query_id": "litsearch_362",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 343,
+      "latency_s": 3.3589179000118747
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_362",
+    "gold": [
+      258557119
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "Chinese hate speech insulting lexicon construction dataset",
+      "building Chinese hate speech dataset constructing insulting lexicon",
+      "Chinese hate speech resource lexicon building"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        233029483,
+        221139740,
+        16916599,
+        15218055,
+        44197490,
+        218869965,
+        5885266,
+        18247716,
+        1312573,
+        12735028,
+        248780237,
+        9703466,
+        13980475,
+        214802624,
+        15438691,
+        885120,
+        1763584,
+        16126320,
+        8995667,
+        3048321
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        218869965,
+        252818980,
+        51881821,
+        252995536,
+        247596954,
+        250141241,
+        196188987,
+        249336306,
+        248780237,
+        253384454,
+        256461338,
+        252441438,
+        21693197,
+        202542397,
+        236486132,
+        256460907,
+        201691562,
+        252847467,
+        227230687,
+        259342497
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226283547,
+        252847467,
+        258557119,
+        246016271,
+        258480291,
+        252619979,
+        253018845,
+        225062782,
+        248780068,
+        1721388,
+        226262396,
+        196188987,
+        21689549,
+        247596954,
+        218973961,
+        259376713,
+        252624704,
+        201669180,
+        259376729,
+        250391103
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233029483
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226283547,
+        252847467,
+        218869965,
+        196188987,
+        247596954,
+        252818980,
+        253384454,
+        256460907,
+        12477446,
+        236486132,
+        259342497,
+        253018845,
+        250391103,
+        1721388,
+        51881821,
+        21689549,
+        252624704,
+        201691562,
+        248496782,
+        218973764
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.862160800024867
+  },
+  "reason_example": {
+    "query_id": "litsearch_362",
+    "query": "Is there a Chinese hate speech paper that constructs an insulting lexicon while building the dataset?",
+    "top_results": [
+      {
+        "corpusid": 226283547,
+        "score": 0.9196957349777222,
+        "reason": "bm25=0.799; dense=1.000; sub_bm25=0.735; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252847467,
+        "score": 0.9194186925888062,
+        "reason": "bm25=0.819; dense=0.986; sub_bm25=0.968; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218869965,
+        "score": 0.9116233587265015,
+        "reason": "bm25=1.000; dense=0.853; sub_bm25=0.867; sub_dense=0.881"
+      },
+      {
+        "corpusid": 196188987,
+        "score": 0.9024287462234497,
+        "reason": "bm25=0.874; dense=0.921; sub_bm25=0.785; sub_dense=0.911"
+      },
+      {
+        "corpusid": 247596954,
+        "score": 0.9012224674224854,
+        "reason": "bm25=0.877; dense=0.917; sub_bm25=0.912; sub_dense=0.899"
+      }
+    ]
+  }
+}

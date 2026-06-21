@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_369",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_369",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_369",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_369",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1776,
+      "latency_s": 13.336625900003128
+    },
+    {
+      "query_id": "litsearch_369",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 324,
+      "latency_s": 3.285221299971454
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_369",
+    "gold": [
+      258832427
+    ],
+    "pool_size": 289,
+    "decomposition": [
+      "curse of multilinguality similar languages",
+      "multilingual training performance similar language families",
+      "negative transfer closely related languages multilingual models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38406635,
+        5097820,
+        259370838,
+        18792136,
+        219305462,
+        6556276,
+        12405045,
+        17643319,
+        18414132,
+        17934328,
+        18247716,
+        8150087,
+        2069120,
+        8185806,
+        11801961,
+        12227075,
+        16165854,
+        2322831,
+        19020387,
+        15253725
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        218470125,
+        250390978,
+        455602,
+        253080650,
+        28581104,
+        252967706,
+        252815840,
+        659379,
+        252847523,
+        248721770,
+        8048647,
+        226262235,
+        258833648,
+        23412271,
+        16165854,
+        235211772,
+        9944370,
+        1877672,
+        12951305,
+        16158985
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258947231,
+        1500888,
+        15293210,
+        258187606,
+        195064031,
+        8028944,
+        7319865,
+        42653685,
+        215828350,
+        27942273,
+        253420301,
+        249062609,
+        21690815,
+        249240376,
+        253762088,
+        258486933,
+        30837172,
+        226289571,
+        11614881,
+        253098534
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250390978,
+        252815840,
+        235211772,
+        228375878,
+        15253725
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252815840,
+        235211772,
+        250390978,
+        15293210,
+        252184818,
+        7319865,
+        258947231,
+        37618366,
+        248721770,
+        21732778,
+        42441609,
+        1470353,
+        30837172,
+        226289571,
+        14192287,
+        9092992,
+        218470125,
+        16158985,
+        258187606,
+        240158939
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.613351100008003
+  },
+  "reason_example": {
+    "query_id": "litsearch_369",
+    "query": "Is there a paper exploring the curse of multilinguality for similar languages?",
+    "top_results": [
+      {
+        "corpusid": 252815840,
+        "score": 0.8759528398513794,
+        "reason": "bm25=0.935; dense=0.837; sub_bm25=0.739; sub_dense=0.830"
+      },
+      {
+        "corpusid": 235211772,
+        "score": 0.8654376268386841,
+        "reason": "bm25=0.869; dense=0.863; sub_bm25=0.461; sub_dense=0.844"
+      },
+      {
+        "corpusid": 250390978,
+        "score": 0.865216851234436,
+        "reason": "bm25=0.982; dense=0.787; sub_bm25=0.806; sub_dense=0.771"
+      },
+      {
+        "corpusid": 15293210,
+        "score": 0.8611865043640137,
+        "reason": "bm25=0.691; dense=0.975; sub_bm25=0.904; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252184818,
+        "score": 0.8577516078948975,
+        "reason": "bm25=0.819; dense=0.883; sub_bm25=0.458; sub_dense=0.815"
+      }
+    ]
+  }
+}

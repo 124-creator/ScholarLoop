@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_260",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_260",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_260",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_260",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1293,
+      "latency_s": 7.861019800067879
+    },
+    {
+      "query_id": "litsearch_260",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 243,
+      "latency_s": 2.0125064000021666
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_260",
+    "gold": [
+      237571370
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "crowdsourcing dialogue data conversational information retrieval",
+      "crowdworker generated dialogues for IR system improvement",
+      "collecting conversational data via crowdworkers for retrieval"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12712634,
+        66999088,
+        252873036,
+        1094063,
+        245616858,
+        994729,
+        16056628,
+        263605735,
+        5775806,
+        24277319,
+        258947011,
+        227231158,
+        252819443,
+        14113765,
+        15956726,
+        97902,
+        5977811,
+        219307312,
+        28688924,
+        26671562
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5856661,
+        219690993,
+        1094063,
+        256460881,
+        17810027,
+        259376780,
+        52055325,
+        252819443,
+        252819140,
+        404542,
+        17665161,
+        35274681,
+        245218563,
+        52281610,
+        28688924,
+        220445879,
+        258822815,
+        68167178,
+        259370822,
+        218487043
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259289128,
+        21698749,
+        245906443,
+        212717688,
+        251067143,
+        2074746,
+        44096230,
+        202565569,
+        226262425,
+        257013,
+        256627323,
+        52897360,
+        5669317,
+        6029654,
+        235458160,
+        5834356,
+        17773441,
+        257920051,
+        2716607,
+        11978095
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        212717688,
+        21698749
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        21698749,
+        5856661,
+        212717688,
+        219690993,
+        218487043,
+        259376780,
+        17810027,
+        52055325,
+        174798391,
+        259370822,
+        9222529,
+        220445879,
+        256231532,
+        235458160,
+        247411224,
+        219401758,
+        259289128,
+        256460881,
+        8470323,
+        226262425
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.44583970005624
+  },
+  "reason_example": {
+    "query_id": "litsearch_260",
+    "query": "Have any research efforts been made to gather dialogue data via crowdworkers to enhance conversational information retrieval systems?",
+    "top_results": [
+      {
+        "corpusid": 21698749,
+        "score": 0.8998888731002808,
+        "reason": "bm25=0.795; dense=0.970; sub_bm25=0.896; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5856661,
+        "score": 0.8858230113983154,
+        "reason": "bm25=1.000; dense=0.810; sub_bm25=0.368; sub_dense=0.788"
+      },
+      {
+        "corpusid": 212717688,
+        "score": 0.8658332824707031,
+        "reason": "bm25=0.730; dense=0.957; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 219690993,
+        "score": 0.8400282859802246,
+        "reason": "bm25=0.954; dense=0.764; sub_bm25=1.000; sub_dense=0.859"
+      },
+      {
+        "corpusid": 218487043,
+        "score": 0.829614520072937,
+        "reason": "bm25=0.856; dense=0.812; sub_bm25=1.000; sub_dense=0.826"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_567",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_567",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_567",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_567",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 924,
+      "latency_s": 3.471398300025612
+    },
+    {
+      "query_id": "litsearch_567",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 230,
+      "latency_s": 2.3909927000058815
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_567",
+    "gold": [
+      257687205
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "certified robustness malware detection paper",
+      "certified robustness for malware detection machine learning",
+      "first paper certified robustness malware classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10052258,
+        6559235,
+        863623,
+        8368494,
+        8954558,
+        16213991,
+        2245732,
+        14142944,
+        12854977,
+        21696519,
+        12744446,
+        51623696,
+        14101228,
+        2346316,
+        2136464,
+        201741290,
+        26299595,
+        15292611,
+        236460246,
+        3241321
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257687205,
+        236318431,
+        226964694,
+        252211791,
+        219124328,
+        235489989,
+        204806122,
+        209439434,
+        238744365,
+        243865430,
+        234341137,
+        4735139,
+        252780995,
+        174799919,
+        245144567,
+        44154745,
+        252668296,
+        231933962,
+        250607914,
+        7816596
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        257687205,
+        226964694,
+        801438,
+        35742668,
+        209439434,
+        56657912,
+        53047456,
+        214107001,
+        236318431,
+        3488815,
+        264172240,
+        204806122,
+        4735139,
+        249240324,
+        52169956,
+        252780995,
+        231846909,
+        210064343,
+        52962648,
+        44154745
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        257687205
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257687205,
+        226964694,
+        236318431,
+        209439434,
+        204806122,
+        4735139,
+        252780995,
+        249240324,
+        44154745,
+        219124328,
+        174799919,
+        231846909,
+        252211791,
+        53047456,
+        7816596,
+        210064343,
+        220128149,
+        56657912,
+        214107001,
+        801438
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.7591300999047235
+  },
+  "reason_example": {
+    "query_id": "litsearch_567",
+    "query": "Which machine learning paper proposed certified robustness in the malware detection domain?",
+    "top_results": [
+      {
+        "corpusid": 257687205,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226964694,
+        "score": 0.7667059302330017,
+        "reason": "bm25=0.559; dense=0.905; sub_bm25=0.628; sub_dense=0.834"
+      },
+      {
+        "corpusid": 236318431,
+        "score": 0.732181191444397,
+        "reason": "bm25=0.561; dense=0.846; sub_bm25=0.629; sub_dense=0.806"
+      },
+      {
+        "corpusid": 209439434,
+        "score": 0.7313453555107117,
+        "reason": "bm25=0.506; dense=0.882; sub_bm25=0.629; sub_dense=0.816"
+      },
+      {
+        "corpusid": 204806122,
+        "score": 0.7046138048171997,
+        "reason": "bm25=0.508; dense=0.836; sub_bm25=0.544; sub_dense=0.854"
+      }
+    ]
+  }
+}

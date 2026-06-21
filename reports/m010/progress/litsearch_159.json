@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_159",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_159",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_159",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_159",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1361,
+      "latency_s": 8.898399199941196
+    },
+    {
+      "query_id": "litsearch_159",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 331,
+      "latency_s": 3.1243346999399364
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_159",
+    "gold": [
+      233210199
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "continuous prompt optimization vs discrete prompt relational reasoning",
+      "optimized continuous prompts discrete prompts comparison relational tasks",
+      "soft prompt tuning vs hard prompt relational tasks performance"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        256808498,
+        8256717,
+        12385862,
+        17063555,
+        248780177,
+        51918763,
+        7691927,
+        14842425,
+        13907064,
+        253098066,
+        57573766,
+        236460148,
+        21728175,
+        6215504,
+        49667446,
+        12229972,
+        199553035,
+        233715067,
+        2474505,
+        16771067
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        245144420,
+        257038392,
+        263608162,
+        233231453,
+        235652287,
+        238856973,
+        252519660,
+        248780177,
+        248085161,
+        248506201,
+        263830433,
+        258332119,
+        256461095,
+        248405974,
+        256390383,
+        246485605,
+        250390802,
+        254125751,
+        253116574,
+        16648355
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245144420,
+        7628184,
+        252716013,
+        9450979,
+        258887719,
+        254877569,
+        2907990,
+        16412467,
+        254854219,
+        9446239,
+        258332119,
+        6446861,
+        11808,
+        208906,
+        8256930,
+        14333577,
+        9776071,
+        237416760,
+        258041372,
+        246485605
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245144420,
+        248780177,
+        233231453,
+        257038392,
+        252716013,
+        235652287,
+        263608162,
+        256390383,
+        258332119,
+        252519660,
+        9446239,
+        14842425
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245144420,
+        257038392,
+        258332119,
+        252716013,
+        263608162,
+        246485605,
+        252519660,
+        237416760,
+        235652287,
+        237532411,
+        233231453,
+        248780177,
+        9446239,
+        256390383,
+        248986239,
+        248405974,
+        14994862,
+        237452236,
+        7628184,
+        264426355
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.671423300052993
+  },
+  "reason_example": {
+    "query_id": "litsearch_159",
+    "query": "Could you recommend research that examines how optimized continuous prompts perform against discrete prompts in relational tasks?",
+    "top_results": [
+      {
+        "corpusid": 245144420,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257038392,
+        "score": 0.7822428345680237,
+        "reason": "bm25=0.876; dense=0.720; sub_bm25=0.816; sub_dense=0.816"
+      },
+      {
+        "corpusid": 258332119,
+        "score": 0.7633249759674072,
+        "reason": "bm25=0.717; dense=0.794; sub_bm25=0.634; sub_dense=0.893"
+      },
+      {
+        "corpusid": 252716013,
+        "score": 0.754656195640564,
+        "reason": "bm25=0.658; dense=0.819; sub_bm25=0.585; sub_dense=0.903"
+      },
+      {
+        "corpusid": 263608162,
+        "score": 0.7544846534729004,
+        "reason": "bm25=0.875; dense=0.674; sub_bm25=0.950; sub_dense=0.760"
+      }
+    ]
+  }
+}

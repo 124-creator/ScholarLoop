@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_078",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_078",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_078",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_078",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1143,
+      "latency_s": 8.394910700037144
+    },
+    {
+      "query_id": "litsearch_078",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 354,
+      "latency_s": 3.3029587999917567
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_078",
+    "gold": [
+      5999791
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "unsupervised word sense disambiguation using contextual embeddings",
+      "word sense induction from pre-trained embeddings",
+      "sense-aware embeddings without lexical resources"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51882829,
+        2007184,
+        1988431,
+        235794903,
+        5379533,
+        6578852,
+        218719116,
+        15283562,
+        52886585,
+        252367414,
+        19754679,
+        18614158,
+        15700645,
+        236460042,
+        447725,
+        6843057,
+        15589763,
+        1689635,
+        11255089,
+        10109787
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        51882829,
+        8085311,
+        14628558,
+        226262325,
+        2007184,
+        11828778,
+        174799386,
+        252411707,
+        218719116,
+        235794903,
+        10109787,
+        529114,
+        18428685,
+        252819113,
+        5491644,
+        21732673,
+        16055446,
+        5959218,
+        1960126,
+        196210782
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53624727,
+        238354392,
+        15283562,
+        245838306,
+        258463935,
+        28343036,
+        225068786,
+        2935674,
+        17671782,
+        6979466,
+        16520818,
+        6108278,
+        15006012,
+        18428685,
+        14095165,
+        15251438,
+        729163,
+        236459876,
+        231709294,
+        6852298
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        18428685,
+        8085311,
+        15283562,
+        6578852,
+        14389684,
+        18614158,
+        51882829,
+        226262325,
+        2007184,
+        235794903
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        18428685,
+        226262325,
+        15283562,
+        53624727,
+        2007184,
+        14499083,
+        182952883,
+        238354392,
+        14628558,
+        256739261,
+        21698919,
+        9285053,
+        252819113,
+        245838306,
+        6852298,
+        51882829,
+        8085311,
+        6578852,
+        212725472,
+        16055446
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.596890600048937
+  },
+  "reason_example": {
+    "query_id": "litsearch_078",
+    "query": "What research should I explore to understand methods for matching word senses in contexts using embeddings without relying on external lexical resources?",
+    "top_results": [
+      {
+        "corpusid": 18428685,
+        "score": 0.9093745946884155,
+        "reason": "bm25=0.888; dense=0.924; sub_bm25=0.749; sub_dense=0.992"
+      },
+      {
+        "corpusid": 226262325,
+        "score": 0.9028228521347046,
+        "reason": "bm25=0.930; dense=0.885; sub_bm25=0.959; sub_dense=0.905"
+      },
+      {
+        "corpusid": 15283562,
+        "score": 0.897746205329895,
+        "reason": "bm25=0.758; dense=0.991; sub_bm25=0.550; sub_dense=0.734"
+      },
+      {
+        "corpusid": 53624727,
+        "score": 0.8812423348426819,
+        "reason": "bm25=0.703; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2007184,
+        "score": 0.8599594235420227,
+        "reason": "bm25=0.927; dense=0.815; sub_bm25=0.668; sub_dense=0.760"
+      }
+    ]
+  }
+}

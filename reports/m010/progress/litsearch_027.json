@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_027",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_027",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_027",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_027",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1632,
+      "latency_s": 11.487507099984214
+    },
+    {
+      "query_id": "litsearch_027",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 249,
+      "latency_s": 2.2827249999390915
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_027",
+    "gold": [
+      14515265
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "native language prediction eye movements reading English",
+      "eye tracking L1 identification reading English",
+      "cross-linguistic eye movement patterns reading English"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        45438237,
+        3701555,
+        219305462,
+        3673957,
+        14515265,
+        1641699,
+        233210761,
+        5024893,
+        244464091,
+        335234,
+        8110552,
+        15967673,
+        5399186,
+        259370526,
+        1256365,
+        6941747,
+        15291488,
+        52141368,
+        1891955,
+        15751424
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        5024893,
+        14515265,
+        253762030,
+        3921598,
+        11034406,
+        259370526,
+        15967673,
+        247451263,
+        233241164,
+        3673957,
+        16202639,
+        233210761,
+        1931564,
+        3701555,
+        256461262,
+        1641699,
+        252968372,
+        18846560,
+        668597,
+        12547301
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14515265,
+        5024893,
+        259370526,
+        247451263,
+        14923525,
+        18846560,
+        253762030,
+        15967673,
+        199379593,
+        18004973,
+        252816092,
+        2304701,
+        248426875,
+        215761283,
+        11034406,
+        668597,
+        1771612,
+        248780502,
+        198165578,
+        7290938
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        14515265,
+        259370526,
+        5024893,
+        15967673,
+        1641699
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14515265,
+        5024893,
+        259370526,
+        253762030,
+        247451263,
+        15967673,
+        11034406,
+        18846560,
+        3921598,
+        233210761,
+        668597,
+        199379593,
+        252816092,
+        233241164,
+        248426875,
+        252968372,
+        16202639,
+        7290938,
+        14923525,
+        198165578
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.742130400030874
+  },
+  "reason_example": {
+    "query_id": "litsearch_027",
+    "query": "Could you direct me towards a study that explores the potential to predict a reader's native language based on their eye movement patterns while reading English texts?",
+    "top_results": [
+      {
+        "corpusid": 14515265,
+        "score": 0.9888597130775452,
+        "reason": "bm25=0.972; dense=1.000; sub_bm25=0.882; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5024893,
+        "score": 0.9538644552230835,
+        "reason": "bm25=1.000; dense=0.923; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370526,
+        "score": 0.9065321087837219,
+        "reason": "bm25=0.887; dense=0.919; sub_bm25=0.960; sub_dense=0.960"
+      },
+      {
+        "corpusid": 253762030,
+        "score": 0.8729138374328613,
+        "reason": "bm25=0.954; dense=0.819; sub_bm25=1.000; sub_dense=0.893"
+      },
+      {
+        "corpusid": 247451263,
+        "score": 0.8497804403305054,
+        "reason": "bm25=0.869; dense=0.837; sub_bm25=0.816; sub_dense=0.824"
+      }
+    ]
+  }
+}

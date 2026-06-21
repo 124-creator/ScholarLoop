@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_485",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_485",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_485",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_485",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 996,
+      "latency_s": 5.876092699938454
+    },
+    {
+      "query_id": "litsearch_485",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 297,
+      "latency_s": 2.76384470006451
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_485",
+    "gold": [
+      258947664
+    ],
+    "pool_size": 243,
+    "decomposition": [
+      "rewriting defense adversarial attacks text classification",
+      "adversarial text classification defense rewriting",
+      "text paraphrasing adversarial defense classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51878811,
+        20695016,
+        236460091,
+        222142150,
+        18051270,
+        250390489,
+        231662388,
+        5093281,
+        7586460,
+        8700588,
+        36965648,
+        232417310,
+        1520356,
+        15007330,
+        262253991,
+        1024327,
+        173648,
+        51882191,
+        202712891,
+        252818910
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        202712891,
+        259370879,
+        258461559,
+        202537221,
+        258947664,
+        243865122,
+        252211791,
+        248476236,
+        237353665,
+        222142150,
+        248780406,
+        257353585,
+        252383591,
+        243865419,
+        231662388,
+        249538400,
+        237592862,
+        53483414,
+        237485150,
+        248780479
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248512935,
+        237353665,
+        258947664,
+        237592862,
+        258987503,
+        199668918,
+        248779966,
+        247594854,
+        231662388,
+        258888064,
+        247223086,
+        202537221,
+        256615829,
+        232307049,
+        259370879,
+        237453239,
+        249538400,
+        21698802,
+        222291230,
+        201677979
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258947664
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258947664,
+        237353665,
+        237592862,
+        259370879,
+        202537221,
+        248512935,
+        231662388,
+        258461559,
+        202712891,
+        258987503,
+        248779966,
+        249538400,
+        252383591,
+        248476236,
+        237453239,
+        256615829,
+        232307049,
+        258888064,
+        218470167,
+        248780406
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.516833000001498
+  },
+  "reason_example": {
+    "query_id": "litsearch_485",
+    "query": "Which paper proposes to use rewriting based approaches to defending against adversarial attacks in text classification?",
+    "top_results": [
+      {
+        "corpusid": 258947664,
+        "score": 0.9308576583862305,
+        "reason": "bm25=0.871; dense=0.971; sub_bm25=1.000; sub_dense=0.978"
+      },
+      {
+        "corpusid": 237353665,
+        "score": 0.9208757281303406,
+        "reason": "bm25=0.834; dense=0.979; sub_bm25=0.963; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237592862,
+        "score": 0.8894217014312744,
+        "reason": "bm25=0.780; dense=0.962; sub_bm25=0.619; sub_dense=0.967"
+      },
+      {
+        "corpusid": 259370879,
+        "score": 0.8887063264846802,
+        "reason": "bm25=0.922; dense=0.866; sub_bm25=0.831; sub_dense=0.891"
+      },
+      {
+        "corpusid": 202537221,
+        "score": 0.8875857591629028,
+        "reason": "bm25=0.899; dense=0.880; sub_bm25=0.759; sub_dense=0.885"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_565",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_565",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_565",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_565",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1121,
+      "latency_s": 7.109905200079083
+    },
+    {
+      "query_id": "litsearch_565",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 411,
+      "latency_s": 3.3311664999928325
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_565",
+    "gold": [
+      263829348
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "foundation model time series financial text multimodal",
+      "first paper time series model combining financial data and text",
+      "foundation model for financial time series and text data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18454652,
+        248779964,
+        16059892,
+        256460902,
+        202749914,
+        2791941,
+        5601748,
+        5882669,
+        14288014,
+        15515404,
+        36562731,
+        252624572,
+        12806852,
+        243865327,
+        252386188,
+        252918792,
+        92986646,
+        220045827,
+        18065622,
+        14438152
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865327,
+        221508448,
+        10505260,
+        236777112,
+        15190468,
+        793863,
+        18454652,
+        211126472,
+        235293778,
+        256868547,
+        56657849,
+        15551089,
+        231632580,
+        252715491,
+        19184155,
+        256274710,
+        263609067,
+        238582772,
+        208248131,
+        108300573
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        18454652,
+        204790835,
+        19184155,
+        10828054,
+        9128711,
+        16053058,
+        252624742,
+        11285074,
+        227230285,
+        45927246,
+        26523873,
+        248780230,
+        45510796,
+        258685646,
+        17355519,
+        252624719,
+        51990022,
+        46582372,
+        241583372,
+        245315324
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        8349531,
+        11285074,
+        16334036,
+        19184155,
+        256274710,
+        18454652,
+        243865327,
+        7255290,
+        10859982,
+        15515404,
+        6290664,
+        253117068
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        18454652,
+        19184155,
+        8349531,
+        10859982,
+        11285074,
+        7255290,
+        16334036,
+        15190468,
+        1299396,
+        241583372,
+        256274710,
+        253117068,
+        793863,
+        248780230,
+        26523873,
+        10781020,
+        53082593,
+        6290664,
+        600412,
+        250163965
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.645130000077188
+  },
+  "reason_example": {
+    "query_id": "litsearch_565",
+    "query": "Which foundation model paper first proposed a time series model with proposed financial time series and text data?",
+    "top_results": [
+      {
+        "corpusid": 18454652,
+        "score": 0.9727197289466858,
+        "reason": "bm25=0.932; dense=1.000; sub_bm25=0.909; sub_dense=0.985"
+      },
+      {
+        "corpusid": 19184155,
+        "score": 0.9501117467880249,
+        "reason": "bm25=0.898; dense=0.985; sub_bm25=0.855; sub_dense=0.887"
+      },
+      {
+        "corpusid": 8349531,
+        "score": 0.841193437576294,
+        "reason": "bm25=0.834; dense=0.846; sub_bm25=0.716; sub_dense=0.775"
+      },
+      {
+        "corpusid": 10859982,
+        "score": 0.8215548992156982,
+        "reason": "bm25=0.875; dense=0.786; sub_bm25=0.829; sub_dense=0.760"
+      },
+      {
+        "corpusid": 11285074,
+        "score": 0.8210175037384033,
+        "reason": "bm25=0.685; dense=0.912; sub_bm25=0.667; sub_dense=0.729"
+      }
+    ]
+  }
+}

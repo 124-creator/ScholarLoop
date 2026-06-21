@@ -1,0 +1,23 @@
+{
+  "gap_prediction_vs_random": {
+    "candidate_fill_rate": 0.108,
+    "baseline_fill_rate": 0.022,
+    "candidate_filled": 54,
+    "baseline_filled": 11,
+    "paired_delta": 0.086,
+    "bootstrap": {
+      "resamples": 10000,
+      "ci95": [
+        0.056,
+        0.116
+      ],
+      "passed": true
+    },
+    "permutation": {
+      "resamples": 10000,
+      "p_one_sided": 9.999000099990002e-05,
+      "passed": true
+    },
+    "passed": true
+  }
+}

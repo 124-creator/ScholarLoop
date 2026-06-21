@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_167",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_167",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_167",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_167",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1251,
+      "latency_s": 8.196298299939372
+    },
+    {
+      "query_id": "litsearch_167",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 258,
+      "latency_s": 2.130899100098759
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_167",
+    "gold": [
+      233296711
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "Text-to-image synthesis metric semantic congruence",
+      "evaluation metric text-image alignment",
+      "semantic consistency metric text-to-image generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        249204419,
+        6362566,
+        8463304,
+        1405599,
+        6949487,
+        21712878,
+        181698,
+        202537622,
+        7213852,
+        232092534,
+        254823129,
+        27019807,
+        5452017,
+        6199029,
+        1447029,
+        685960,
+        2456270,
+        16930771,
+        959483,
+        15662979
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        202537622,
+        264172720,
+        228063930,
+        251252882,
+        252818985,
+        247450642,
+        254877536,
+        239049842,
+        232092534,
+        259376577,
+        222177407,
+        225094285,
+        9807832,
+        247447287,
+        252847523,
+        252596087,
+        6949487,
+        9142609,
+        253018728,
+        232275342
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253762014,
+        259089101,
+        252781022,
+        21732258,
+        3458362,
+        248779866,
+        201682696,
+        1447029,
+        259370678,
+        6949487,
+        53598310,
+        256460961,
+        256462239,
+        225094285,
+        235097275,
+        259376584,
+        227217634,
+        220046446,
+        10297558,
+        216869168
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        202537622,
+        235097275,
+        259089101,
+        253762014
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253762014,
+        259089101,
+        202537622,
+        252781022,
+        225094285,
+        251252882,
+        6949487,
+        3458362,
+        21732258,
+        235097275,
+        252596087,
+        259376577,
+        9807832,
+        259376584,
+        53598310,
+        15240627,
+        10297558,
+        11018317,
+        222177407,
+        259341735
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.051069500041194
+  },
+  "reason_example": {
+    "query_id": "litsearch_167",
+    "query": "Could you recommend research that introduces a metric for assessing Text-to-Image synthesis, emphasizing the semantic congruence between the text and the produced image rather than solely the visual quality?",
+    "top_results": [
+      {
+        "corpusid": 253762014,
+        "score": 0.9192601442337036,
+        "reason": "bm25=0.798; dense=1.000; sub_bm25=0.745; sub_dense=0.981"
+      },
+      {
+        "corpusid": 259089101,
+        "score": 0.8392588496208191,
+        "reason": "bm25=0.782; dense=0.878; sub_bm25=0.715; sub_dense=0.935"
+      },
+      {
+        "corpusid": 202537622,
+        "score": 0.809035062789917,
+        "reason": "bm25=1.000; dense=0.682; sub_bm25=1.000; sub_dense=0.945"
+      },
+      {
+        "corpusid": 252781022,
+        "score": 0.8071920871734619,
+        "reason": "bm25=0.810; dense=0.805; sub_bm25=0.637; sub_dense=0.920"
+      },
+      {
+        "corpusid": 225094285,
+        "score": 0.7861042618751526,
+        "reason": "bm25=0.907; dense=0.705; sub_bm25=0.858; sub_dense=0.866"
+      }
+    ]
+  }
+}

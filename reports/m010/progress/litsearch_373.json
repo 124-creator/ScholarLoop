@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_373",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_373",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_373",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_373",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1051,
+      "latency_s": 6.622843199991621
+    },
+    {
+      "query_id": "litsearch_373",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 3.069005100056529
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_373",
+    "gold": [
+      259093058
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "language model error distribution unfamiliar entities vs familiar",
+      "evaluation discrepancy language models familiar unfamiliar entities",
+      "language model performance difference unfamiliar entities not apparent familiar only"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252907549,
+        44144456,
+        6609459,
+        31003489,
+        43699284,
+        5399186,
+        245838323,
+        8841728,
+        10119880,
+        8277151,
+        9382563,
+        215543098,
+        2234445,
+        173990423,
+        682772,
+        15057133,
+        6016956,
+        10517911,
+        86987,
+        14562474
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258480179,
+        259093058,
+        67855552,
+        14466257,
+        11255157,
+        253224265,
+        17507793,
+        252819346,
+        52986570,
+        244117259,
+        248780570,
+        216869183,
+        252847523,
+        2092677,
+        252367988,
+        10239453,
+        252433054,
+        16131749,
+        16805751,
+        236460062
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        13848633,
+        259093058,
+        249892255,
+        222377812,
+        3919731,
+        5544829,
+        258947231,
+        233189652,
+        8044506,
+        263609662,
+        33616749,
+        248780559,
+        41345636,
+        17262840,
+        11829220,
+        235265909,
+        5235291,
+        226226964,
+        252780005,
+        184488346
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259093058,
+        14466257,
+        258480179
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259093058,
+        222377812,
+        13848633,
+        253224265,
+        252819451,
+        16550718,
+        248780125,
+        258480179,
+        235258245,
+        8044506,
+        11808093,
+        10173905,
+        16131749,
+        226283660,
+        233219935,
+        234741913,
+        5544829,
+        245769658,
+        235097491,
+        233189652
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.040725199971348
+  },
+  "reason_example": {
+    "query_id": "litsearch_373",
+    "query": "Is there a paper that shows that language models' error distribution is different for unfamiliar entities that is not apparent when models are evaluated on familiar entities alone?",
+    "top_results": [
+      {
+        "corpusid": 259093058,
+        "score": 0.9858613610267639,
+        "reason": "bm25=0.984; dense=0.987; sub_bm25=0.719; sub_dense=0.970"
+      },
+      {
+        "corpusid": 222377812,
+        "score": 0.8866157531738281,
+        "reason": "bm25=0.776; dense=0.960; sub_bm25=0.279; sub_dense=1.000"
+      },
+      {
+        "corpusid": 13848633,
+        "score": 0.8636801242828369,
+        "reason": "bm25=0.659; dense=1.000; sub_bm25=0.217; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253224265,
+        "score": 0.8506548404693604,
+        "reason": "bm25=0.932; dense=0.797; sub_bm25=0.242; sub_dense=0.851"
+      },
+      {
+        "corpusid": 252819451,
+        "score": 0.8417002558708191,
+        "reason": "bm25=0.795; dense=0.873; sub_bm25=0.211; sub_dense=0.873"
+      }
+    ]
+  }
+}

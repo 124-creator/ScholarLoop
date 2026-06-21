@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_143",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_143",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_143",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_143",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1336,
+      "latency_s": 8.881538899964653
+    },
+    {
+      "query_id": "litsearch_143",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 235,
+      "latency_s": 2.1340818000026047
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_143",
+    "gold": [
+      236477489
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "knowledge representation learning graph attention network",
+      "global context graph attention network",
+      "improving knowledge graph embedding with attention"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        237365390,
+        30908728,
+        30400936,
+        259370667,
+        259274843,
+        9800912,
+        237605519,
+        248863268,
+        102354395,
+        955518,
+        256461262,
+        2410236,
+        219305462,
+        222142503,
+        220046230,
+        13488062,
+        16657732,
+        788122,
+        236478333,
+        1888490
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259274843,
+        259370667,
+        247613006,
+        17801454,
+        150371939,
+        256461262,
+        1987772,
+        222142503,
+        236478333,
+        235254358,
+        237366372,
+        232092291,
+        248780326,
+        202750112,
+        233289974,
+        232013402,
+        257254877,
+        259370784,
+        245117586,
+        208527419
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        208527419,
+        259370784,
+        250390906,
+        202750112,
+        3292002,
+        220831033,
+        263831485,
+        5213431,
+        5097360,
+        243865168,
+        216641978,
+        225062808,
+        14047545,
+        220046230,
+        222090412,
+        257258166,
+        196206886,
+        235254358,
+        44145776,
+        6157828
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370667,
+        44113572,
+        208527419,
+        202750112,
+        248863268,
+        259274843,
+        222142503,
+        256461262,
+        220046230,
+        232092291,
+        257404839,
+        233289974
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        208527419,
+        259370667,
+        259370784,
+        202750112,
+        259274843,
+        235254358,
+        232013402,
+        257404839,
+        222090412,
+        257254877,
+        220046230,
+        196206886,
+        222142503,
+        3361768,
+        239016943,
+        250390906,
+        233289974,
+        243865168,
+        232092291,
+        44113572
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.20080260001123
+  },
+  "reason_example": {
+    "query_id": "litsearch_143",
+    "query": "Could you recommend a study that investigates the improvement of knowledge representation learning by incorporating global context into graph attention networks?",
+    "top_results": [
+      {
+        "corpusid": 208527419,
+        "score": 0.8991565704345703,
+        "reason": "bm25=0.748; dense=1.000; sub_bm25=0.727; sub_dense=0.941"
+      },
+      {
+        "corpusid": 259370667,
+        "score": 0.8530724048614502,
+        "reason": "bm25=0.925; dense=0.805; sub_bm25=0.963; sub_dense=0.910"
+      },
+      {
+        "corpusid": 259370784,
+        "score": 0.8485339879989624,
+        "reason": "bm25=0.751; dense=0.913; sub_bm25=0.969; sub_dense=0.972"
+      },
+      {
+        "corpusid": 202750112,
+        "score": 0.8413630723953247,
+        "reason": "bm25=0.770; dense=0.889; sub_bm25=0.763; sub_dense=0.970"
+      },
+      {
+        "corpusid": 259274843,
+        "score": 0.8404474258422852,
+        "reason": "bm25=1.000; dense=0.734; sub_bm25=0.882; sub_dense=0.779"
+      }
+    ]
+  }
+}

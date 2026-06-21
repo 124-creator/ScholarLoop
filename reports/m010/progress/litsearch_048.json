@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_048",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_048",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_048",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_048",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1444,
+      "latency_s": 8.317013600026257
+    },
+    {
+      "query_id": "litsearch_048",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.4185925000347197
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_048",
+    "gold": [
+      19206893
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "partition content positional embedding self-attention constituency parsing",
+      "label attention layer embedding partition parsing",
+      "self-attention positional content embedding improvement parsing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        782943,
+        37225340,
+        15297336,
+        218487098,
+        8150087,
+        235390794,
+        1298443,
+        16265681,
+        17585795,
+        2633377,
+        885120,
+        219308414,
+        10080250,
+        10639238,
+        10675194,
+        12252477,
+        6969482,
+        19206893,
+        252967761,
+        2202801
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        19206893,
+        207852415,
+        218487098,
+        258463946,
+        235390794,
+        6961760,
+        226262328,
+        173990523,
+        15280949,
+        235614244,
+        252967761,
+        227230576,
+        222378720,
+        51880415,
+        231698657,
+        243865251,
+        222290427,
+        220249871,
+        108381061,
+        214802539
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        57189558,
+        19206893,
+        5040602,
+        235422434,
+        235313683,
+        222378720,
+        252819507,
+        218487098,
+        224724349,
+        258463946,
+        257258172,
+        248780496,
+        29764642,
+        29159988,
+        51876536,
+        227247936,
+        14124677,
+        52010243,
+        202539858,
+        15407650
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        19206893,
+        51876536,
+        57189558,
+        258463946,
+        222378720,
+        218487098,
+        235390794,
+        15280949,
+        226262328,
+        6961760,
+        2265207,
+        243865251
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        19206893,
+        218487098,
+        258463946,
+        222378720,
+        57189558,
+        224724349,
+        227247936,
+        257258172,
+        6961760,
+        51876536,
+        15407650,
+        257639810,
+        235390794,
+        5040602,
+        235313683,
+        195776257,
+        15280949,
+        252819507,
+        220249871,
+        202539858
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.098180699977092
+  },
+  "reason_example": {
+    "query_id": "litsearch_048",
+    "query": "I'm looking for a paper that discusses improvements in constituency parsing performance by applying a partition strategy for content embedding and positional embedding within self-attention and label attention layers.",
+    "top_results": [
+      {
+        "corpusid": 19206893,
+        "score": 0.9756195545196533,
+        "reason": "bm25=1.000; dense=0.959; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218487098,
+        "score": 0.9058511257171631,
+        "reason": "bm25=0.949; dense=0.877; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258463946,
+        "score": 0.901835560798645,
+        "reason": "bm25=0.944; dense=0.874; sub_bm25=0.868; sub_dense=0.918"
+      },
+      {
+        "corpusid": 222378720,
+        "score": 0.8713613748550415,
+        "reason": "bm25=0.832; dense=0.898; sub_bm25=0.655; sub_dense=0.903"
+      },
+      {
+        "corpusid": 57189558,
+        "score": 0.8587450981140137,
+        "reason": "bm25=0.647; dense=1.000; sub_bm25=0.732; sub_dense=0.970"
+      }
+    ]
+  }
+}

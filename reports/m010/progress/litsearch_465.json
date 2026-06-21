@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_465",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_465",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_465",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_465",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 867,
+      "latency_s": 3.694829900050536
+    },
+    {
+      "query_id": "litsearch_465",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 250,
+      "latency_s": 2.3907422999618575
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_465",
+    "gold": [
+      254685574
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "attention weights guided simultaneous inference speech translation",
+      "first paper attention weights simultaneous speech translation",
+      "attention-based simultaneous speech translation model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21022858,
+        41981492,
+        554151,
+        12744446,
+        7136961,
+        22408096,
+        37527673,
+        1874608,
+        21547774,
+        8749531,
+        3198684,
+        176201,
+        218688152,
+        258486963,
+        31967198,
+        32782433,
+        53245511,
+        11574043,
+        57916,
+        6559235
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254685574,
+        218869826,
+        243865395,
+        220060300,
+        250390666,
+        259376512,
+        186206508,
+        235694169,
+        220919861,
+        250390902,
+        52190658,
+        237491600,
+        13993178,
+        259376576,
+        235097367,
+        18091538,
+        259376487,
+        256461137,
+        250391008,
+        203591628
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254685574,
+        235254522,
+        250390666,
+        221819182,
+        235293674,
+        11740526,
+        1964946,
+        47005349,
+        243865251,
+        18091538,
+        11964950,
+        248780426,
+        12700615,
+        215754220,
+        626513,
+        11538280,
+        244464104,
+        2764924,
+        11830050,
+        3389791
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254685574
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254685574,
+        250390666,
+        235254522,
+        18091538,
+        243865395,
+        243865251,
+        237491600,
+        235694169,
+        218869826,
+        248780426,
+        247518800,
+        52190658,
+        186206508,
+        220060300,
+        226245979,
+        203591628,
+        224818109,
+        236486106,
+        259376576,
+        235097367
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.026966899982654
+  },
+  "reason_example": {
+    "query_id": "litsearch_465",
+    "query": "Which paper first use the attention weights to guide the simultaneous inference of speech translation models?",
+    "top_results": [
+      {
+        "corpusid": 254685574,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250390666,
+        "score": 0.9275914430618286,
+        "reason": "bm25=0.842; dense=0.985; sub_bm25=0.881; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235254522,
+        "score": 0.885094404220581,
+        "reason": "bm25=0.726; dense=0.991; sub_bm25=0.652; sub_dense=0.991"
+      },
+      {
+        "corpusid": 18091538,
+        "score": 0.8593320846557617,
+        "reason": "bm25=0.771; dense=0.918; sub_bm25=0.820; sub_dense=0.942"
+      },
+      {
+        "corpusid": 243865395,
+        "score": 0.856857180595398,
+        "reason": "bm25=0.863; dense=0.853; sub_bm25=1.000; sub_dense=0.969"
+      }
+    ]
+  }
+}

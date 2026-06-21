@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_141",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_141",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_141",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_141",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1139,
+      "latency_s": 7.388584800064564
+    },
+    {
+      "query_id": "litsearch_141",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 265,
+      "latency_s": 2.471819999977015
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_141",
+    "gold": [
+      236460018
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "text generation from tabular data with numerical reasoning",
+      "table-to-text generation using column headings and cell values",
+      "neural approaches for summarizing tables with arithmetic reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        233864627,
+        3913562,
+        3177185,
+        253802644,
+        7356547,
+        227151534,
+        15200787,
+        218614095,
+        247613006,
+        13318712,
+        253761979,
+        10687323,
+        247476180,
+        202771304,
+        219309475,
+        231821642,
+        254854495,
+        236460018,
+        13987500,
+        202677200
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233864627,
+        253761979,
+        202537766,
+        233189556,
+        247187588,
+        236460018,
+        234741852,
+        252918278,
+        247613006,
+        258959201,
+        215548225,
+        252819191,
+        3535069,
+        243865663,
+        3098164,
+        248571764,
+        252355548,
+        249062802,
+        53081360,
+        236772808
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236460018,
+        9025428,
+        16315892,
+        12887137,
+        202537766,
+        263609556,
+        1432114,
+        36627602,
+        12238390,
+        196180216,
+        3177185,
+        3223962,
+        9637775,
+        12968935,
+        53223761,
+        1467105,
+        236477566,
+        9598874,
+        202718912,
+        18542663
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236460018,
+        202537766,
+        248571764,
+        174797747
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236460018,
+        233864627,
+        202537766,
+        253761979,
+        234741852,
+        236772808,
+        3177185,
+        16315892,
+        196180216,
+        247187588,
+        53223761,
+        249062802,
+        248571764,
+        174797747,
+        1467105,
+        17769145,
+        36627602,
+        202718912,
+        263609556,
+        260063223
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.554592000087723
+  },
+  "reason_example": {
+    "query_id": "litsearch_141",
+    "query": "Could you recommend a study that investigates text generation from tabular data, considering elements such as titles, column headings, and cell content, while also integrating numerical reasoning?",
+    "top_results": [
+      {
+        "corpusid": 236460018,
+        "score": 0.892770528793335,
+        "reason": "bm25=0.732; dense=1.000; sub_bm25=0.873; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233864627,
+        "score": 0.8570488691329956,
+        "reason": "bm25=1.000; dense=0.762; sub_bm25=0.777; sub_dense=0.803"
+      },
+      {
+        "corpusid": 202537766,
+        "score": 0.8297722339630127,
+        "reason": "bm25=0.768; dense=0.871; sub_bm25=1.000; sub_dense=0.900"
+      },
+      {
+        "corpusid": 253761979,
+        "score": 0.7626016736030579,
+        "reason": "bm25=0.860; dense=0.697; sub_bm25=1.000; sub_dense=0.976"
+      },
+      {
+        "corpusid": 234741852,
+        "score": 0.7452991008758545,
+        "reason": "bm25=0.709; dense=0.769; sub_bm25=0.762; sub_dense=0.861"
+      }
+    ]
+  }
+}

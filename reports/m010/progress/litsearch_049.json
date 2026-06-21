@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_049",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_049",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_049",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_049",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1330,
+      "latency_s": 8.23983259999659
+    },
+    {
+      "query_id": "litsearch_049",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 332,
+      "latency_s": 2.635414799908176
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_049",
+    "gold": [
+      174800300
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "crowdsourcing annotation strategy maximize document coverage",
+      "trade-off full annotation vs document coverage Amazon Mechanical Turk",
+      "innovative data annotation approaches minimizing annotation per document"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8395279,
+        11372220,
+        235358847,
+        8821211,
+        13050077,
+        8959989,
+        7174676,
+        16135208,
+        1705467,
+        2251088,
+        12165998,
+        12732672,
+        38540414,
+        246473113,
+        1586274,
+        928867,
+        17338596,
+        260440841,
+        3053521,
+        10724165
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        11372220,
+        7084091,
+        8395279,
+        1051130,
+        3119193,
+        18458924,
+        3300937,
+        3053521,
+        5367841,
+        2313089,
+        17831015,
+        202677204,
+        2000527,
+        51990022,
+        12569557,
+        31764,
+        237581115,
+        9855019,
+        226262286,
+        15859165
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259164347,
+        238634705,
+        9714936,
+        6424570,
+        7084091,
+        245297106,
+        15275430,
+        1942783,
+        12569557,
+        16210778,
+        10435668,
+        38540414,
+        13896924,
+        15399557,
+        11994461,
+        15656809,
+        10322344,
+        14291861,
+        10668091,
+        1286350
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        3300937,
+        6892548,
+        259164347
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        7084091,
+        8395279,
+        3119193,
+        259164347,
+        11372220,
+        12569557,
+        3300937,
+        17831015,
+        16210778,
+        38540414,
+        1051130,
+        7929649,
+        1286350,
+        6892548,
+        18458924,
+        3954835,
+        15544275,
+        208007823,
+        9714936,
+        31764
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.006192700006068
+  },
+  "reason_example": {
+    "query_id": "litsearch_049",
+    "query": "I'm looking for innovative approaches to data annotation on platforms like Amazon Mechanical Turk that focus on maximizing document coverage. Is there any research discussing strategies that balance the trade-off between full annotation and broader document coverage?",
+    "top_results": [
+      {
+        "corpusid": 7084091,
+        "score": 0.9473428726196289,
+        "reason": "bm25=0.994; dense=0.916; sub_bm25=1.000; sub_dense=0.945"
+      },
+      {
+        "corpusid": 8395279,
+        "score": 0.9015984535217285,
+        "reason": "bm25=0.972; dense=0.855; sub_bm25=0.769; sub_dense=0.876"
+      },
+      {
+        "corpusid": 3119193,
+        "score": 0.8776794672012329,
+        "reason": "bm25=0.907; dense=0.858; sub_bm25=0.687; sub_dense=0.877"
+      },
+      {
+        "corpusid": 259164347,
+        "score": 0.870875358581543,
+        "reason": "bm25=0.677; dense=1.000; sub_bm25=0.544; sub_dense=1.000"
+      },
+      {
+        "corpusid": 11372220,
+        "score": 0.8689127564430237,
+        "reason": "bm25=1.000; dense=0.782; sub_bm25=0.931; sub_dense=0.875"
+      }
+    ]
+  }
+}

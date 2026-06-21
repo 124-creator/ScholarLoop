@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_026",
+  "query": "Can you suggest some recent datasets that have been used for studying stance detection in tweets, particularly those targeting specific individuals and events since 2020?",
+  "criteria": [
+    "stance detection tweet datasets individuals events 2020",
+    "Twitter stance detection dataset 2020 2021 2022 2023",
+    "recent stance detection datasets tweets specific person event"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_026",
+      "corpusid": 256461358,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "MAWQIF: A Multi-label Arabic Dataset for Target-specific Stance Detection",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            73
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "MAWQIF, the first Arabic dataset for target-specific stance detection, composed of 4,121 tweets annotated with stance, sentiment, and sarcasm polarities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            577,
+            730
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Stance detection determines the viewpoint expressed in a text toward a target.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            143,
+            221
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide a detailed description of the dataset, present an analysis of the produced annotation, and evaluate four BERT-based models on it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            897,
+            1037
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "composed of 4,121 tweets annotated with stance, sentiment, and sarcasm polarities",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            648,
+            729
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Our best model achieves a macro-F 1 of 78.89%, which shows that there is ample room for improvement on this challenging task.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1038,
+            1163
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although some efforts have recently been made to develop stance detection datasets in other languages, no similar efforts seem to have considered the Arabic language.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            384,
+            550
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "first Arabic dataset for target-specific stance detection",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            589,
+            646
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2025,
+        "elapsed_s": 10.979198499931954,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_026_256461358.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_026",
+      "corpusid": 233189521,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Few Topical Tweets are Enough for Effective User Stance Detection",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            67
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "improve user-level stance detection by representing tweets using contextualized embeddings, which capture latent meanings of words in context",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            544,
+            685
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "on eight controversial topics",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            801,
+            830
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This approach achieves 95.6% accuracy and 93.1% macro F-measure.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1098,
+            1162
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "perform poorly or fail completely for less vocal users, who may have authored only a few tweets about a target",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            327,
+            437
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1768,
+        "elapsed_s": 8.876659099943936,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_026_233189521.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_026",
+      "corpusid": 236477909,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "P-Stance: A Large Dataset for Stance Detection in Political Domain",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            66
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "a large stance detection dataset in the political domain, which contains 21,574 labeled tweets.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            333,
+            428
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Stance detection determines whether the author of a text is in favor of, against or neutral to a specific target and provides valuable insights into important events such as presidential election.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            196
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide a detailed description of the newly created dataset and develop deep learning models on it. Our best model achieves a macro-average F1-score of 80.53%, which we improve further by using semi-supervised learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            429,
+            651
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "P-STANCE, a large stance detection dataset in the political domain, which contains 21,574 labeled tweets.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            323,
+            428
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Our best model achieves a macro-average F1-score of 80.53%, which we improve further by using semi-supervised learning. Moreover, our P-STANCE dataset can facilitate research in the fields of cross-domain stance detection such as cross-target stance detection where a classifier is adapted from a different but related target.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            532,
+            858
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, progress on stance detection has been hampered by the absence of large annotated datasets.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            197,
+            296
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "21,574 labeled tweets",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            406,
+            427
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1661,
+        "elapsed_s": 8.112993599963374,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_026_236477909.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 256461358,
+      "title": "MAWQIF: A Multi-label Arabic Dataset for Target-specific Stance Detection",
+      "cells": [
+        {
+          "criterion": "stance detection tweet datasets individuals events 2020",
+          "addresses": true,
+          "snippet": "Social media platforms are becoming inherent parts of people's daily life to express opinions and stances toward topics of varying polarities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        },
+        {
+          "criterion": "Twitter stance detection dataset 2020 2021 2022 2023",
+          "addresses": true,
+          "snippet": "Social media platforms are becoming inherent parts of people's daily life to express opinions and stances toward topics of varying polarities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        },
+        {
+          "criterion": "recent stance detection datasets tweets specific person event",
+          "addresses": true,
+          "snippet": "Social media platforms are becoming inherent parts of people's daily life to express opinions and stances toward topics of varying polarities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 233189521,
+      "title": "A Few Topical Tweets are Enough for Effective User Stance Detection",
+      "cells": [
+        {
+          "criterion": "stance detection tweet datasets individuals events 2020",
+          "addresses": true,
+          "snippet": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ]
+        },
+        {
+          "criterion": "Twitter stance detection dataset 2020 2021 2022 2023",
+          "addresses": true,
+          "snippet": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ]
+        },
+        {
+          "criterion": "recent stance detection datasets tweets specific person event",
+          "addresses": true,
+          "snippet": "User stance detection entails ascertaining the position of a user towards a target, such as an entity, topic, or claim.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            119
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 236477909,
+      "title": "P-Stance: A Large Dataset for Stance Detection in Political Domain",
+      "cells": [
+        {
+          "criterion": "stance detection tweet datasets individuals events 2020",
+          "addresses": true,
+          "snippet": "Stance detection determines whether the author of a text is in favor of, against or neutral to a specific target and provides valuable insights into important events such as presidential election.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            196
+          ]
+        },
+        {
+          "criterion": "Twitter stance detection dataset 2020 2021 2022 2023",
+          "addresses": true,
+          "snippet": "Stance detection determines whether the author of a text is in favor of, against or neutral to a specific target and provides valuable insights into important events such as presidential election.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            196
+          ]
+        },
+        {
+          "criterion": "recent stance detection datasets tweets specific person event",
+          "addresses": true,
+          "snippet": "Stance detection determines whether the author of a text is in favor of, against or neutral to a specific target and provides valuable insights into important events such as presidential election.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            196
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      233189521,
+      236477909,
+      256461358
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_367",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_367",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_367",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_367",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 723,
+      "latency_s": 3.1507776000071317
+    },
+    {
+      "query_id": "litsearch_367",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 327,
+      "latency_s": 3.33189080003649
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_367",
+    "gold": [
+      252816010
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "method to measure information gain in model-generated rationales",
+      "evaluating novelty of rationales beyond context",
+      "quantifying additional information in rationales"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29974541,
+        6271137,
+        186206883,
+        3266287,
+        218595134,
+        23583643,
+        12405045,
+        17899072,
+        17409270,
+        14562474,
+        16497823,
+        1412569,
+        15539503,
+        61101472,
+        11386125,
+        248048310,
+        14421213,
+        18419162,
+        220768717,
+        258463930
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252816010,
+        3266287,
+        15902780,
+        16497823,
+        236459988,
+        13368442,
+        258547050,
+        18802320,
+        258461058,
+        1231604,
+        258999206,
+        11386125,
+        248048310,
+        262064592,
+        5040602,
+        220045406,
+        1503389,
+        17714865,
+        14604480,
+        4986726
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222290670,
+        252816010,
+        238856913,
+        1524104,
+        225068329,
+        1360818,
+        247476155,
+        256461135,
+        6271137,
+        237452461,
+        248496871,
+        10608814,
+        233254411,
+        253107897,
+        3913472,
+        264038804,
+        17640147,
+        10062671,
+        222209056,
+        258960382
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252816010,
+        238856913,
+        222290670,
+        258999206
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252816010,
+        238856913,
+        222290670,
+        1360818,
+        237452461,
+        258960382,
+        256461135,
+        247476155,
+        248377045,
+        256358895,
+        256460989,
+        233254411,
+        236459988,
+        253265114,
+        248496871,
+        218487373,
+        258461058,
+        12374623,
+        10062671,
+        7766722
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.642834599944763
+  },
+  "reason_example": {
+    "query_id": "litsearch_367",
+    "query": "Is there a method that measures the information provided in a (model generated) rationale beyond what the original context provided?",
+    "top_results": [
+      {
+        "corpusid": 252816010,
+        "score": 0.9695137739181519,
+        "reason": "bm25=1.000; dense=0.949; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 238856913,
+        "score": 0.8645851612091064,
+        "reason": "bm25=0.763; dense=0.932; sub_bm25=0.660; sub_dense=0.986"
+      },
+      {
+        "corpusid": 222290670,
+        "score": 0.7992544174194336,
+        "reason": "bm25=0.498; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1360818,
+        "score": 0.7475997805595398,
+        "reason": "bm25=0.627; dense=0.828; sub_bm25=0.520; sub_dense=0.734"
+      },
+      {
+        "corpusid": 237452461,
+        "score": 0.7454892992973328,
+        "reason": "bm25=0.676; dense=0.792; sub_bm25=0.514; sub_dense=0.715"
+      }
+    ]
+  }
+}

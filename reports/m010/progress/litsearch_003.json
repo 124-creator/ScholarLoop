@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_003",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_003",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_003",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_003",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1457,
+      "latency_s": 9.030180000001565
+    },
+    {
+      "query_id": "litsearch_003",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 323,
+      "latency_s": 2.7739502999465913
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_003",
+    "gold": [
+      10961392,
+      12160022
+    ],
+    "pool_size": 232,
+    "decomposition": [
+      "morphological analyzer multiple Arabic dialects",
+      "cross-dialectal Arabic morphological analysis tool",
+      "multi-dialect Arabic morphology system"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        4121989,
+        34504645,
+        7859600,
+        11319902,
+        472215,
+        262349699,
+        219301226,
+        219301011,
+        16203230,
+        5249075,
+        19020387,
+        13392034,
+        15247441,
+        18987788,
+        259370852,
+        4091059,
+        9922498,
+        41918111,
+        5994778,
+        21717882
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        7859600,
+        472215,
+        262349699,
+        11319902,
+        9792162,
+        259370852,
+        9225732,
+        16203230,
+        21707555,
+        4091059,
+        3113770,
+        398778,
+        21717882,
+        45539635,
+        7791608,
+        256460892,
+        8624623,
+        252968357,
+        236486074,
+        9653643
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        4121989,
+        5797224,
+        10934368,
+        7859600,
+        9225732,
+        9035655,
+        11319902,
+        472215,
+        262349699,
+        15618774,
+        53473481,
+        250390677,
+        9792162,
+        10887722,
+        398778,
+        2010202,
+        21717882,
+        21714084,
+        43183943,
+        39409501
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        11319902,
+        9225732,
+        398778,
+        7859600
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        7859600,
+        11319902,
+        472215,
+        262349699,
+        9225732,
+        9792162,
+        4121989,
+        5797224,
+        4091059,
+        398778,
+        9035655,
+        53473481,
+        21717882,
+        15618774,
+        21714084,
+        1889321,
+        2010202,
+        3113770,
+        256460892,
+        61877172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.84347079996951
+  },
+  "reason_example": {
+    "query_id": "litsearch_003",
+    "query": "Are there any tools or studies that have focused on building a morphological analyzer specifically for handling multiple Arabic dialects?",
+    "top_results": [
+      {
+        "corpusid": 7859600,
+        "score": 0.970460057258606,
+        "reason": "bm25=1.000; dense=0.951; sub_bm25=0.925; sub_dense=0.964"
+      },
+      {
+        "corpusid": 11319902,
+        "score": 0.9499751329421997,
+        "reason": "bm25=0.970; dense=0.937; sub_bm25=0.952; sub_dense=0.973"
+      },
+      {
+        "corpusid": 472215,
+        "score": 0.9436531066894531,
+        "reason": "bm25=0.975; dense=0.923; sub_bm25=1.000; sub_dense=0.964"
+      },
+      {
+        "corpusid": 262349699,
+        "score": 0.9436531066894531,
+        "reason": "bm25=0.975; dense=0.923; sub_bm25=1.000; sub_dense=0.964"
+      },
+      {
+        "corpusid": 9225732,
+        "score": 0.9120019674301147,
+        "reason": "bm25=0.855; dense=0.950; sub_bm25=0.926; sub_dense=1.000"
+      }
+    ]
+  }
+}

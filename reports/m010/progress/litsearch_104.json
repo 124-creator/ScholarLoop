@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_104",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_104",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_104",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_104",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 955,
+      "latency_s": 4.934183200006373
+    },
+    {
+      "query_id": "litsearch_104",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.205249599996023
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_104",
+    "gold": [
+      247748640
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "external commonsense knowledge conversational emotional support",
+      "commonsense knowledge integration dialogue systems empathy",
+      "affective commonsense reasoning conversational agents"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        37453604,
+        218613702,
+        52281610,
+        236460257,
+        241583288,
+        18573065,
+        174800714,
+        3893109,
+        2741054,
+        182952931,
+        235097498,
+        235490277,
+        237365380,
+        211205183,
+        14659218,
+        239016123,
+        9065531,
+        256627247,
+        259376635,
+        2994838
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52281610,
+        235490277,
+        237365380,
+        239016123,
+        258887523,
+        202234053,
+        258378355,
+        233365028,
+        215745286,
+        249151907,
+        239016601,
+        208029457,
+        202558451,
+        219401758,
+        237532313,
+        226964491,
+        251464999,
+        221879025,
+        230437551,
+        235097498
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202734183,
+        247748640,
+        235294326,
+        258378215,
+        46458006,
+        258740721,
+        251643380,
+        195069365,
+        6785724,
+        259342568,
+        253628217,
+        128296356,
+        258378136,
+        252624717,
+        248780037,
+        251403526,
+        252819095,
+        260063212,
+        248392343,
+        6275358
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258740721,
+        249151907,
+        52281610,
+        258378355,
+        202734183,
+        239016123,
+        235490277,
+        237365380,
+        235097498,
+        251403526,
+        252819095,
+        233365028
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202734183,
+        258378215,
+        258740721,
+        247748640,
+        52281610,
+        239016123,
+        128296356,
+        252819095,
+        233365028,
+        251464999,
+        248780037,
+        251403526,
+        235592830,
+        235294326,
+        256460928,
+        53081209,
+        258378136,
+        6785724,
+        53222782,
+        215745286
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.239057500031777
+  },
+  "reason_example": {
+    "query_id": "litsearch_104",
+    "query": "Are there any studies on incorporating external commonsense knowledge into conversational models to enhance emotional support?",
+    "top_results": [
+      {
+        "corpusid": 202734183,
+        "score": 0.8698025345802307,
+        "reason": "bm25=0.675; dense=1.000; sub_bm25=0.809; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258378215,
+        "score": 0.8055817484855652,
+        "reason": "bm25=0.632; dense=0.921; sub_bm25=0.759; sub_dense=0.913"
+      },
+      {
+        "corpusid": 258740721,
+        "score": 0.7946916818618774,
+        "reason": "bm25=0.639; dense=0.899; sub_bm25=0.830; sub_dense=0.875"
+      },
+      {
+        "corpusid": 247748640,
+        "score": 0.7847474813461304,
+        "reason": "bm25=0.537; dense=0.950; sub_bm25=0.655; sub_dense=0.843"
+      },
+      {
+        "corpusid": 52281610,
+        "score": 0.7746407985687256,
+        "reason": "bm25=1.000; dense=0.624; sub_bm25=0.939; sub_dense=0.626"
+      }
+    ]
+  }
+}

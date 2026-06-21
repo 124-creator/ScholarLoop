@@ -1,0 +1,655 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_002",
+  "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+  "criteria": [
+    "post-hoc hallucination detection token-level neural generation",
+    "sentence-level hallucination detection post-hoc neural generation",
+    "post-hoc techniques hallucination detection token sentence level"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_002.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_002",
+      "corpusid": 226254579,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            72
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Chunting Zhou, Graham Neubig, Jiatao Gu, Mona Diab, Paco Guzman, Luke Zettlemoyer, et al. (2020)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3095962368",
+            "fetched_at": "2026-06-20T00:15:42Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\1a7b746723648d5d9dd848dd.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2011.02593; Source: arXiv (Cornell University); OA: green; Citations: 19",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3095962368",
+            "fetched_at": "2026-06-20T00:15:42Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\1a7b746723648d5d9dd848dd.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Neural sequence models can generate highly fluent sentences, but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            182
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we propose a task to predict whether each token in the output sequence is hallucinated (not contained in the input)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            368,
+            483
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "a method for learning to detect hallucinations using pretrained language models fine tuned on synthetic data that includes automatically inserted hallucinations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            568,
+            728
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Experiments on machine translation (MT) and abstractive summarization demonstrate that our proposed approach consistently outperforms strong baselines on all benchmark datasets.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            729,
+            906
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "our proposed approach consistently outperforms strong baselines on all benchmark datasets.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            816,
+            906
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Neural sequence models can generate highly fluent sentences, but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            182
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "predict whether each token in the output sequence is hallucinated",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            389,
+            454
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1815,
+        "elapsed_s": 9.040670900023542,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_002_226254579.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3095962368",
+        "title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+        "authors": [
+          "Chunting Zhou",
+          "Graham Neubig",
+          "Jiatao Gu",
+          "Mona Diab",
+          "Paco Guzman",
+          "Luke Zettlemoyer",
+          "Marjan Ghazvininejad"
+        ],
+        "year": 2020,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2011.02593",
+        "oa_status": "green",
+        "citation_count": 19,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:15:42Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\1a7b746723648d5d9dd848dd.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+          "candidate_title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_002",
+      "corpusid": 233296648,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            92
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Tianyu Liu, Yizhe Zhang, Chris Brockett, Yi Mao, Zhifang Sui, Weizhu Chen, et al. (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3155332104",
+            "fetched_at": "2026-06-20T00:15:44Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a7fc3de462268e7b3366e6d6.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.acl-long.464; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 60",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3155332104",
+            "fetched_at": "2026-06-20T00:15:44Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a7fc3de462268e7b3366e6d6.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "sentence-or documentlevel detection may fail to provide the finegrained signals that would prevent fallacious content in real time",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            426,
+            556
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we propose a novel token-level, reference-free hallucination detection task",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            602,
+            677
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "To create this dataset, we first perturb a large number of text segments extracted from English language Wikipedia, and then verify these with crowd-sourced annotations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            764,
+            933
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "HADES (HAllucination DEtection dataSet)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            720,
+            759
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We conduct comprehensive data analyses and create multiple baseline models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1029,
+            1104
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However ground-truth references may not be readily available for many free-form text generation applications, and sentence-or documentlevel detection may fail to provide the finegrained signals that would prevent fallacious content in real time.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            312,
+            557
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Token-level Reference-free Hallucination Detection",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            2,
+            52
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1910,
+        "elapsed_s": 9.542285699979402,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_002_233296648.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3155332104",
+        "title": "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+        "authors": [
+          "Tianyu Liu",
+          "Yizhe Zhang",
+          "Chris Brockett",
+          "Yi Mao",
+          "Zhifang Sui",
+          "Weizhu Chen",
+          "Bill Dolan"
+        ],
+        "year": 2022,
+        "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "doi": "10.18653/v1/2022.acl-long.464",
+        "oa_status": "hybrid",
+        "citation_count": 60,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:15:44Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\a7fc3de462268e7b3366e6d6.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+          "candidate_title": "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_002",
+      "corpusid": 256000114,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Understanding and Detecting Hallucinations in Neural Machine Translation via Model Introspection",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            96
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Weijia Xu, Sweta Agrawal, Eleftheria Briakou, Marianna J. Martindale, Marine Carpuat (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4317668889",
+            "fetched_at": "2026-06-20T00:15:46Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\e7d173428f09c711ca798978.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2301.07779; Source: arXiv (Cornell University); OA: green; Citations: 6",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4317668889",
+            "fetched_at": "2026-06-20T00:15:46Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\e7d173428f09c711ca798978.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "design a lightweight hallucination detector which outperforms both model-free baselines and strong classifiers based on quality estimation or large pre-trained models on manually annotated English-Chinese and German-English translation test beds.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            589,
+            835
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "identify internal model symptoms of hallucinations by analyzing the relative token contributions to the generation in contrastive hallucinated vs. non-hallucinated outputs generated via source perturbations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            280,
+            487
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "analyzing the relative token contributions to the generation in contrastive hallucinated vs. non-hallucinated outputs generated via source perturbations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            334,
+            486
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "manually annotated English-Chinese and German-English translation test beds",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            759,
+            834
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "these symptoms are reliable indicators of natural hallucinations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            506,
+            570
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "In this work, we first identify internal model symptoms of hallucinations by analyzing the relative token contributions to the generation in contrastive hallucinated vs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            257,
+            426
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "analyzing the relative token contributions to the generation",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            334,
+            394
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1896,
+        "elapsed_s": 11.677829399937764,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_002_256000114.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4317668889",
+        "title": "Understanding and Detecting Hallucinations in Neural Machine Translation via Model Introspection",
+        "authors": [
+          "Weijia Xu",
+          "Sweta Agrawal",
+          "Eleftheria Briakou",
+          "Marianna J. Martindale",
+          "Marine Carpuat"
+        ],
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2301.07779",
+        "oa_status": "green",
+        "citation_count": 6,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:15:46Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\e7d173428f09c711ca798978.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Understanding and Detecting Hallucinations in Neural Machine Translation via Model Introspection",
+          "candidate_title": "Understanding and Detecting Hallucinations in Neural Machine Translation via Model Introspection",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 226254579,
+      "title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+      "cells": [
+        {
+          "criterion": "post-hoc hallucination detection token-level neural generation",
+          "addresses": true,
+          "snippet": "Neural sequence models can generate highly fluent sentences, but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            182
+          ]
+        },
+        {
+          "criterion": "sentence-level hallucination detection post-hoc neural generation",
+          "addresses": true,
+          "snippet": "Neural sequence models can generate highly fluent sentences, but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            182
+          ]
+        },
+        {
+          "criterion": "post-hoc techniques hallucination detection token sentence level",
+          "addresses": true,
+          "snippet": "Neural sequence models can generate highly fluent sentences, but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            182
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 233296648,
+      "title": "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+      "cells": [
+        {
+          "criterion": "post-hoc hallucination detection token-level neural generation",
+          "addresses": true,
+          "snippet": "Existing work usually attempts to detect these hallucinations based on a corresponding oracle reference at a sentence or document level.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            175,
+            311
+          ]
+        },
+        {
+          "criterion": "sentence-level hallucination detection post-hoc neural generation",
+          "addresses": true,
+          "snippet": "Existing work usually attempts to detect these hallucinations based on a corresponding oracle reference at a sentence or document level.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            175,
+            311
+          ]
+        },
+        {
+          "criterion": "post-hoc techniques hallucination detection token sentence level",
+          "addresses": true,
+          "snippet": "Existing work usually attempts to detect these hallucinations based on a corresponding oracle reference at a sentence or document level.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            175,
+            311
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 256000114,
+      "title": "Understanding and Detecting Hallucinations in Neural Machine Translation via Model Introspection",
+      "cells": [
+        {
+          "criterion": "post-hoc hallucination detection token-level neural generation",
+          "addresses": true,
+          "snippet": "Neural sequence generation models are known to ''hallucinate'', by producing outputs that are unrelated to the source text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            123
+          ]
+        },
+        {
+          "criterion": "sentence-level hallucination detection post-hoc neural generation",
+          "addresses": true,
+          "snippet": "Neural sequence generation models are known to ''hallucinate'', by producing outputs that are unrelated to the source text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            123
+          ]
+        },
+        {
+          "criterion": "post-hoc techniques hallucination detection token sentence level",
+          "addresses": true,
+          "snippet": "These hallucinations are potentially harmful, yet it remains unclear in what conditions they arise and how to mitigate their impact.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            124,
+            256
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      226254579,
+      233296648,
+      256000114
+    ],
+    "edges": [
+      {
+        "source": 233296648,
+        "target": 226254579
+      },
+      {
+        "source": 256000114,
+        "target": 226254579
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

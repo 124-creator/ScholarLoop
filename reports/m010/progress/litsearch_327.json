@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_327",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_327",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_327",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_327",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1230,
+      "latency_s": 8.942501900019124
+    },
+    {
+      "query_id": "litsearch_327",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 248,
+      "latency_s": 2.5119822000851855
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_327",
+    "gold": [
+      230433941
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "prefix tuning parameter efficient fine-tuning language models",
+      "prefix tokens vs adapter fine-tuning",
+      "prefix-tuning natural language processing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8517763,
+        10513825,
+        3906011,
+        219305462,
+        248780390,
+        258685798,
+        57916,
+        237558720,
+        17153466,
+        258832448,
+        237416585,
+        5153623,
+        11510085,
+        248780142,
+        258676495,
+        1860368,
+        250390969,
+        258865689,
+        2186931,
+        31880211
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258865689,
+        258832448,
+        247594436,
+        230433941,
+        252780166,
+        261697072,
+        255440621,
+        248986389,
+        259095584,
+        231672601,
+        254125751,
+        259370834,
+        253447199,
+        253116759,
+        248006494,
+        256460903,
+        257631760,
+        259370753,
+        252819282,
+        258960642
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264038847,
+        258865689,
+        258832448,
+        235097613,
+        253762049,
+        230433941,
+        248069436,
+        252873220,
+        253116759,
+        216868277,
+        259188071,
+        237291795,
+        247594436,
+        222140632,
+        215416175,
+        259370769,
+        222378309,
+        284225,
+        248780519,
+        264812826
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        230433941,
+        258865689,
+        247594436,
+        258832448,
+        253116759,
+        252780166,
+        256460956,
+        248986389,
+        231672601
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258865689,
+        258832448,
+        230433941,
+        247594436,
+        253116759,
+        253762049,
+        264038847,
+        235097613,
+        256460956,
+        253447199,
+        248069436,
+        264812826,
+        252780109,
+        216868277,
+        253510925,
+        259370769,
+        252819282,
+        222140632,
+        284225,
+        7406488
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.481488199904561
+  },
+  "reason_example": {
+    "query_id": "litsearch_327",
+    "query": "What research is available on the concept of using prefix tokens as a parameter-efficient method for fine-tuning language models?",
+    "top_results": [
+      {
+        "corpusid": 258865689,
+        "score": 0.9636163711547852,
+        "reason": "bm25=1.000; dense=0.939; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258832448,
+        "score": 0.9547446370124817,
+        "reason": "bm25=0.981; dense=0.938; sub_bm25=0.933; sub_dense=0.994"
+      },
+      {
+        "corpusid": 230433941,
+        "score": 0.8837132453918457,
+        "reason": "bm25=0.834; dense=0.917; sub_bm25=1.000; sub_dense=0.918"
+      },
+      {
+        "corpusid": 247594436,
+        "score": 0.86277174949646,
+        "reason": "bm25=0.886; dense=0.847; sub_bm25=0.877; sub_dense=0.845"
+      },
+      {
+        "corpusid": 253116759,
+        "score": 0.8223507404327393,
+        "reason": "bm25=0.743; dense=0.875; sub_bm25=1.000; sub_dense=0.966"
+      }
+    ]
+  }
+}

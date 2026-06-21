@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_277",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_277",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_277",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_277",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1081,
+      "latency_s": 5.648856900050305
+    },
+    {
+      "query_id": "litsearch_277",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 270,
+      "latency_s": 2.2027273001149297
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_277",
+    "gold": [
+      231815627
+    ],
+    "pool_size": 218,
+    "decomposition": [
+      "hard negative mining techniques for dense retrieval models",
+      "improving open-domain question answering with hard negative sampling",
+      "dense retriever training using hard negatives"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14012397,
+        3861770,
+        41981492,
+        232307006,
+        231815627,
+        5772336,
+        64865,
+        997579,
+        215737187,
+        220445369,
+        237347134,
+        11617396,
+        12744446,
+        201792120,
+        249926985,
+        1933154,
+        1614922,
+        1743238,
+        196184953,
+        236459960
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        231815627,
+        249926985,
+        252816088,
+        232307006,
+        215737187,
+        229363636,
+        236459960,
+        237592852,
+        218470043,
+        221802772,
+        251224409,
+        220445369,
+        256615676,
+        256416344,
+        247447562,
+        239993003,
+        250390910,
+        12243703,
+        236957234,
+        64865
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        173990818,
+        232307006,
+        14012397,
+        215737187,
+        231815627,
+        201792120,
+        230437698,
+        235097577,
+        258615193,
+        221970302,
+        221802772,
+        237592852,
+        11617396,
+        252816088,
+        7009053,
+        229363636,
+        13764176,
+        259299543,
+        248218489,
+        236459960
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231815627,
+        215737187,
+        229363636,
+        236459960,
+        252816088,
+        218470043,
+        249926985,
+        221802772,
+        237592852,
+        232307006,
+        220445369,
+        11617396
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        231815627,
+        232307006,
+        215737187,
+        252816088,
+        249926985,
+        229363636,
+        237592852,
+        221802772,
+        236459960,
+        218470043,
+        173990818,
+        221970302,
+        230437698,
+        235097577,
+        248218489,
+        251224409,
+        7009053,
+        52913933,
+        247447562,
+        11617396
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.00219000002835
+  },
+  "reason_example": {
+    "query_id": "litsearch_277",
+    "query": "How can dense retrieval models for open-domain question answering be improved, specifically through the use of hard negative mining techniques?",
+    "top_results": [
+      {
+        "corpusid": 231815627,
+        "score": 0.9722068309783936,
+        "reason": "bm25=1.000; dense=0.954; sub_bm25=0.942; sub_dense=0.873"
+      },
+      {
+        "corpusid": 232307006,
+        "score": 0.9592018127441406,
+        "reason": "bm25=0.899; dense=1.000; sub_bm25=1.000; sub_dense=0.869"
+      },
+      {
+        "corpusid": 215737187,
+        "score": 0.9423137903213501,
+        "reason": "bm25=0.884; dense=0.981; sub_bm25=0.645; sub_dense=0.755"
+      },
+      {
+        "corpusid": 252816088,
+        "score": 0.924315333366394,
+        "reason": "bm25=0.918; dense=0.929; sub_bm25=0.614; sub_dense=0.768"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.9095690846443176,
+        "reason": "bm25=0.984; dense=0.860; sub_bm25=0.872; sub_dense=0.803"
+      }
+    ]
+  }
+}

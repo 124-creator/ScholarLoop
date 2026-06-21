@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_466",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_466",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_466",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_466",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1649,
+      "latency_s": 11.181992500089109
+    },
+    {
+      "query_id": "litsearch_466",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 334,
+      "latency_s": 3.2218339999672025
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_466",
+    "gold": [
+      259138479
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "coherence modeling structural information first paper",
+      "earliest use of syntax for coherence modeling",
+      "survey coherence modeling structural features"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14971130,
+        29085815,
+        28780865,
+        1743238,
+        203688153,
+        280387,
+        10767426,
+        51879110,
+        2794700,
+        8376198,
+        12161321,
+        235097249,
+        129969,
+        1441185,
+        1745590,
+        10168327,
+        16800883,
+        26524807,
+        18390364,
+        252365155
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259138479,
+        5963564,
+        3042304,
+        248887364,
+        220047809,
+        17014226,
+        14859321,
+        5752261,
+        235422212,
+        9482302,
+        17554731,
+        1851389,
+        11609990,
+        245124148,
+        52302229,
+        7856844,
+        10254261,
+        24129906,
+        252917728,
+        7243708
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        12636832,
+        11609990,
+        1851389,
+        2439516,
+        15750809,
+        8896392,
+        35563289,
+        259138479,
+        21946555,
+        51918763,
+        28430229,
+        15530516,
+        7942186,
+        27026305,
+        10250746,
+        44105851,
+        269695,
+        14395504,
+        6399480,
+        13335215
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1442452,
+        11609990,
+        1851389,
+        259138479,
+        5752261,
+        14859321,
+        17554731,
+        7243708,
+        9482302,
+        218974543,
+        857232,
+        3042304
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259138479,
+        11609990,
+        1851389,
+        12636832,
+        35563289,
+        14859321,
+        8896392,
+        10250746,
+        51918763,
+        5752261,
+        15530516,
+        9482302,
+        15750809,
+        429356,
+        5963564,
+        27026305,
+        7942186,
+        14395504,
+        6399480,
+        2439516
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.155976200010628
+  },
+  "reason_example": {
+    "query_id": "litsearch_466",
+    "query": "Which paper first used structural information for coherence modeling?",
+    "top_results": [
+      {
+        "corpusid": 259138479,
+        "score": 0.9437278509140015,
+        "reason": "bm25=1.000; dense=0.906; sub_bm25=1.000; sub_dense=0.958"
+      },
+      {
+        "corpusid": 11609990,
+        "score": 0.8708581924438477,
+        "reason": "bm25=0.707; dense=0.980; sub_bm25=0.870; sub_dense=0.959"
+      },
+      {
+        "corpusid": 1851389,
+        "score": 0.867274284362793,
+        "reason": "bm25=0.714; dense=0.969; sub_bm25=0.753; sub_dense=1.000"
+      },
+      {
+        "corpusid": 12636832,
+        "score": 0.8211088180541992,
+        "reason": "bm25=0.553; dense=1.000; sub_bm25=0.712; sub_dense=0.976"
+      },
+      {
+        "corpusid": 35563289,
+        "score": 0.7790169715881348,
+        "reason": "bm25=0.581; dense=0.911; sub_bm25=0.907; sub_dense=0.927"
+      }
+    ]
+  }
+}

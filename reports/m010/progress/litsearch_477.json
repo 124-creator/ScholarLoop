@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_477",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_477",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_477",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_477",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1282,
+      "latency_s": 6.799241099972278
+    },
+    {
+      "query_id": "litsearch_477",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 294,
+      "latency_s": 2.4052130999043584
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_477",
+    "gold": [
+      258832820
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "easy to implement OOD detection method language models",
+      "high performance out-of-distribution detection for language models",
+      "practical OOD detection with pre-trained language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51623575,
+        2874582,
+        9294347,
+        233307237,
+        5539038,
+        2338256,
+        53244635,
+        248779924,
+        742720,
+        752448,
+        2753493,
+        18036516,
+        18443059,
+        2314725,
+        231642815,
+        53097966,
+        7030749,
+        8177091,
+        9834819,
+        13952172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258832820,
+        250391017,
+        252992607,
+        259370753,
+        252668614,
+        237503353,
+        237354142,
+        257427126,
+        253446922,
+        259833441,
+        257102434,
+        252917773,
+        235658721,
+        263333942,
+        20140417,
+        256615740,
+        235097449,
+        233296689,
+        233033895,
+        227231312
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370753,
+        14910889,
+        258832820,
+        252819155,
+        117656,
+        7701908,
+        14579508,
+        258378228,
+        17213132,
+        251436784,
+        13980326,
+        5369521,
+        14953119,
+        216033883,
+        13936107,
+        14304228,
+        237503353,
+        257219604,
+        1538763,
+        244149111
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258832820,
+        259370753,
+        233296689,
+        250391017,
+        237354142,
+        237503353,
+        252668614,
+        202749994
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370753,
+        258832820,
+        237503353,
+        237354142,
+        252668614,
+        257427126,
+        259833441,
+        233296689,
+        227231312,
+        252819155,
+        1538763,
+        256615740,
+        202749994,
+        117656,
+        252819358,
+        263333942,
+        244149111,
+        14579508,
+        7701908,
+        17213132
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.52937749994453
+  },
+  "reason_example": {
+    "query_id": "litsearch_477",
+    "query": "Which paper presents an easy to implement and high performing method for OOD detection with language models?",
+    "top_results": [
+      {
+        "corpusid": 259370753,
+        "score": 0.9804286956787109,
+        "reason": "bm25=0.951; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258832820,
+        "score": 0.9634766578674316,
+        "reason": "bm25=1.000; dense=0.939; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237503353,
+        "score": 0.8621996641159058,
+        "reason": "bm25=0.929; dense=0.818; sub_bm25=0.831; sub_dense=0.955"
+      },
+      {
+        "corpusid": 237354142,
+        "score": 0.840760350227356,
+        "reason": "bm25=0.927; dense=0.783; sub_bm25=0.870; sub_dense=0.858"
+      },
+      {
+        "corpusid": 252668614,
+        "score": 0.8302898406982422,
+        "reason": "bm25=0.931; dense=0.763; sub_bm25=0.877; sub_dense=0.930"
+      }
+    ]
+  }
+}

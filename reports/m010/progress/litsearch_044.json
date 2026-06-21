@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_044",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_044",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_044",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_044",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1073,
+      "latency_s": 5.247174800024368
+    },
+    {
+      "query_id": "litsearch_044",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 229,
+      "latency_s": 1.5386207000119612
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_044",
+    "gold": [
+      7473831
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "Wikipedia sentence simplification dataset large",
+      "sentence simplification Wikipedia corpus",
+      "large scale Wikipedia simplification research"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        209057798,
+        252819242,
+        2769726,
+        937493,
+        252357293,
+        67855928,
+        52985435,
+        8396538,
+        52157368,
+        126584,
+        249364288,
+        251710301,
+        14584530,
+        21547774,
+        259833884,
+        196170479,
+        202895301,
+        5815755,
+        233199,
+        1471171
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        9128245,
+        218470237,
+        8416074,
+        225094666,
+        238583063,
+        21713133,
+        52034301,
+        12968935,
+        211132734,
+        6181951,
+        14704022,
+        259370682,
+        15636533,
+        202895301,
+        231718715,
+        32202776,
+        21729663,
+        11018317,
+        53083054,
+        233189607
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        209536754,
+        21713133,
+        17817489,
+        236478176,
+        21693508,
+        235097405,
+        12836470,
+        219306882,
+        218470237,
+        241583342,
+        8416074,
+        238583063,
+        38911405,
+        53080846,
+        13901352,
+        256461266,
+        259370682,
+        15636533,
+        256461435,
+        243891435
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        9128245,
+        218470237,
+        238583063,
+        259370682,
+        21713133,
+        15636533,
+        8416074,
+        16906323,
+        6530881,
+        67855928,
+        251710301,
+        209057798
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        218470237,
+        21713133,
+        8416074,
+        9128245,
+        238583063,
+        17817489,
+        236478176,
+        259370682,
+        15636533,
+        256461266,
+        21685311,
+        12836470,
+        243891435,
+        256461435,
+        53080846,
+        198118232,
+        209536754,
+        21693508,
+        38911405,
+        4896510
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.590321999974549
+  },
+  "reason_example": {
+    "query_id": "litsearch_044",
+    "query": "I'm exploring research that utilizes large datasets for the task of sentence simplification. Are there any prominent datasets sourced from Wikipedia that I could look into?",
+    "top_results": [
+      {
+        "corpusid": 218470237,
+        "score": 0.9414330720901489,
+        "reason": "bm25=0.984; dense=0.913; sub_bm25=0.647; sub_dense=0.760"
+      },
+      {
+        "corpusid": 21713133,
+        "score": 0.9412064552307129,
+        "reason": "bm25=0.888; dense=0.977; sub_bm25=0.612; sub_dense=0.803"
+      },
+      {
+        "corpusid": 8416074,
+        "score": 0.9375011324882507,
+        "reason": "bm25=0.976; dense=0.912; sub_bm25=0.671; sub_dense=0.851"
+      },
+      {
+        "corpusid": 9128245,
+        "score": 0.9316903352737427,
+        "reason": "bm25=1.000; dense=0.886; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 238583063,
+        "score": 0.9162235260009766,
+        "reason": "bm25=0.928; dense=0.908; sub_bm25=1.000; sub_dense=0.887"
+      }
+    ]
+  }
+}

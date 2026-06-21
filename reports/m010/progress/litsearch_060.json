@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_060",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_060",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_060",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_060",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 566,
+      "latency_s": 1.348170599900186
+    },
+    {
+      "query_id": "litsearch_060",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 263,
+      "latency_s": 2.062049899948761
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_060",
+    "gold": [
+      222378161
+    ],
+    "pool_size": 286,
+    "decomposition": [
+      "prediction entropy text generation copy vs novel",
+      "entropy and copying behavior in language models",
+      "relationship between model uncertainty and textual novelty"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17558767,
+        7952407,
+        186206301,
+        7127171,
+        6891645,
+        5908935,
+        6218032,
+        1298443,
+        18207473,
+        5162676,
+        6433117,
+        17974121,
+        8349712,
+        18414132,
+        32306529,
+        15672460,
+        215715163,
+        232379973,
+        1182312,
+        20138082
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        222378161,
+        7952407,
+        243865409,
+        243865375,
+        240288786,
+        237020,
+        231985619,
+        7742606,
+        218487494,
+        204770918,
+        351,
+        233029484,
+        53645235,
+        8229552,
+        3890388,
+        256461448,
+        3918715,
+        239768767,
+        13573624,
+        202542534
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233365289,
+        215754413,
+        8170227,
+        247839276,
+        842881,
+        244345615,
+        222310253,
+        196184953,
+        235265909,
+        11280500,
+        219302901,
+        17536397,
+        7922149,
+        30817944,
+        1111735,
+        466754,
+        248780036,
+        202734604,
+        18871276,
+        260125086
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222378161
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222378161,
+        235265909,
+        247839276,
+        30817944,
+        244345615,
+        237020,
+        222310253,
+        252918666,
+        466754,
+        259370827,
+        215754413,
+        201687076,
+        233365289,
+        252819410,
+        153312318,
+        248780036,
+        2414880,
+        21686891,
+        3992766,
+        259203582
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.986337100039236
+  },
+  "reason_example": {
+    "query_id": "litsearch_060",
+    "query": "In the context of natural language processing, I am looking for research that explores the relationship between a model's prediction entropy and its tendencies to copy existing text versus generating novel content. Can you recommend a paper?",
+    "top_results": [
+      {
+        "corpusid": 222378161,
+        "score": 0.9140298366546631,
+        "reason": "bm25=1.000; dense=0.857; sub_bm25=1.000; sub_dense=0.775"
+      },
+      {
+        "corpusid": 235265909,
+        "score": 0.8563883304595947,
+        "reason": "bm25=0.774; dense=0.911; sub_bm25=0.396; sub_dense=0.893"
+      },
+      {
+        "corpusid": 247839276,
+        "score": 0.834388792514801,
+        "reason": "bm25=0.610; dense=0.984; sub_bm25=0.747; sub_dense=0.930"
+      },
+      {
+        "corpusid": 30817944,
+        "score": 0.8268396854400635,
+        "reason": "bm25=0.730; dense=0.891; sub_bm25=0.407; sub_dense=0.836"
+      },
+      {
+        "corpusid": 244345615,
+        "score": 0.8238909244537354,
+        "reason": "bm25=0.622; dense=0.958; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

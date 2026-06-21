@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_516",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_516",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_516",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_516",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 893,
+      "latency_s": 3.1439835999626666
+    },
+    {
+      "query_id": "litsearch_516",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 324,
+      "latency_s": 2.778393500018865
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_516",
+    "gold": [
+      264426013
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "Local SGD synchronization period decaying learning rate",
+      "optimal synchronization interval Local SGD test accuracy",
+      "setting communication period Local SGD distributed training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15876808,
+        201686118,
+        258463915,
+        863623,
+        2666871,
+        10905562,
+        6559235,
+        15705011,
+        50645,
+        32959350,
+        264426013,
+        9351345,
+        18446213,
+        7416323,
+        37602879,
+        18202204,
+        2137366,
+        3241321,
+        16516994,
+        233029494
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264426013,
+        220831336,
+        235613427,
+        231718715,
+        235359192,
+        43964415,
+        259203153,
+        13807351,
+        198147763,
+        231719359,
+        3516266,
+        2658566,
+        238743865,
+        220404588,
+        219687094,
+        38796293,
+        256846667,
+        53327717,
+        238582721,
+        257050233
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264426013,
+        3516266,
+        52941842,
+        43964415,
+        182952765,
+        203591459,
+        235359192,
+        253107515,
+        108296106,
+        239998500,
+        264172260,
+        1770217,
+        244130255,
+        204734206,
+        254877249,
+        57373762,
+        260316137,
+        238743865,
+        202734152,
+        56895471
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        43964415,
+        264426013,
+        220831336,
+        235613427,
+        259203153,
+        3516266,
+        239998500,
+        231719359,
+        204734206,
+        235359192,
+        38796293,
+        1770217
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264426013,
+        3516266,
+        43964415,
+        235359192,
+        220831336,
+        235613427,
+        231719359,
+        182952765,
+        239998500,
+        238743865,
+        1770217,
+        204734206,
+        259203153,
+        257050233,
+        57373762,
+        38796293,
+        231718715,
+        52941842,
+        247613032,
+        244130255
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.324798700050451
+  },
+  "reason_example": {
+    "query_id": "litsearch_516",
+    "query": "I'm using Local SGD with a decaying learning rate for distributed training. Which paper offers guidance on setting the synchronization period in Local SGD to optimize test accuracy?",
+    "top_results": [
+      {
+        "corpusid": 264426013,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 3516266,
+        "score": 0.80701744556427,
+        "reason": "bm25=0.734; dense=0.856; sub_bm25=0.611; sub_dense=0.919"
+      },
+      {
+        "corpusid": 43964415,
+        "score": 0.8029813170433044,
+        "reason": "bm25=0.798; dense=0.806; sub_bm25=0.875; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235359192,
+        "score": 0.7915158271789551,
+        "reason": "bm25=0.846; dense=0.755; sub_bm25=0.804; sub_dense=0.994"
+      },
+      {
+        "corpusid": 220831336,
+        "score": 0.7624810934066772,
+        "reason": "bm25=0.936; dense=0.647; sub_bm25=1.000; sub_dense=0.893"
+      }
+    ]
+  }
+}

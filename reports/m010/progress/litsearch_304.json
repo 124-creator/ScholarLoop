@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_304",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_304",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_304",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_304",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1593,
+      "latency_s": 10.791024899925105
+    },
+    {
+      "query_id": "litsearch_304",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 3.296449000015855
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_304",
+    "gold": [
+      235303644
+    ],
+    "pool_size": 234,
+    "decomposition": [
+      "deep learning semantic parser knowledge base question answering",
+      "tree-structured query representation semantic parsing",
+      "train neural semantic parser knowledge base QA"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        24957784,
+        2136580,
+        235482370,
+        46953263,
+        15937393,
+        5033484,
+        2131938,
+        5772336,
+        243865362,
+        14506194,
+        243865348,
+        210045205,
+        5815755,
+        11806574,
+        16015588,
+        51974493,
+        18354676,
+        186206486,
+        186232078,
+        235482414
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258461017,
+        235097346,
+        236459854,
+        53249440,
+        236459903,
+        259370544,
+        250390946,
+        236486248,
+        235303644,
+        12401528,
+        233025411,
+        248505942,
+        2131938,
+        253447215,
+        51974493,
+        228172,
+        14865896,
+        174800228,
+        210045205,
+        243865362
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        52054725,
+        18309765,
+        16088818,
+        13905064,
+        1608877,
+        51974493,
+        236486248,
+        2423360,
+        2623009,
+        237372057,
+        22155691,
+        235303644,
+        237491955,
+        9226412,
+        15324422,
+        236477930,
+        12401528,
+        53017700,
+        1675452,
+        214802901
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        16088818,
+        18309765,
+        12401528,
+        236486248,
+        51974493,
+        235303644,
+        237372057,
+        243865362,
+        258461017,
+        13905064,
+        2131938,
+        53249440
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        18309765,
+        16088818,
+        236486248,
+        51974493,
+        13905064,
+        235303644,
+        237372057,
+        12401528,
+        236459854,
+        9226412,
+        52054725,
+        237491955,
+        1675452,
+        253447215,
+        228172,
+        1336493,
+        258461017,
+        5633240,
+        1756650,
+        2131938
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.867664200020954
+  },
+  "reason_example": {
+    "query_id": "litsearch_304",
+    "query": "What literature is available on training semantic parsers with deep learning for knowledge base question answering systems, especially those employing tree-structured representations of queries?",
+    "top_results": [
+      {
+        "corpusid": 18309765,
+        "score": 0.8942050337791443,
+        "reason": "bm25=0.793; dense=0.962; sub_bm25=1.000; sub_dense=0.976"
+      },
+      {
+        "corpusid": 16088818,
+        "score": 0.8865585327148438,
+        "reason": "bm25=0.791; dense=0.950; sub_bm25=0.456; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236486248,
+        "score": 0.8840144872665405,
+        "reason": "bm25=0.858; dense=0.901; sub_bm25=0.541; sub_dense=0.924"
+      },
+      {
+        "corpusid": 51974493,
+        "score": 0.8796024322509766,
+        "reason": "bm25=0.837; dense=0.908; sub_bm25=0.884; sub_dense=0.997"
+      },
+      {
+        "corpusid": 13905064,
+        "score": 0.8743692636489868,
+        "reason": "bm25=0.779; dense=0.938; sub_bm25=0.974; sub_dense=1.000"
+      }
+    ]
+  }
+}

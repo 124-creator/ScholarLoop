@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_286",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_286",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_286",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_286",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1418,
+      "latency_s": 9.07956290000584
+    },
+    {
+      "query_id": "litsearch_286",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 244,
+      "latency_s": 2.258886900031939
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_286",
+    "gold": [
+      235623770
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "question answering dataset complex tables airline industry",
+      "domain-specific table QA dataset aviation",
+      "intricate table reasoning dataset sector-specific"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235623770,
+        235482370,
+        5399186,
+        221139740,
+        16700753,
+        884211,
+        29974541,
+        15185389,
+        304009,
+        237605028,
+        6155698,
+        18969591,
+        1705467,
+        16628150,
+        222066993,
+        47020074,
+        962094,
+        2770995,
+        7440991,
+        8829812
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        235623770,
+        233296734,
+        231709298,
+        9027681,
+        201698399,
+        222341292,
+        52012840,
+        233219849,
+        15860798,
+        52012400,
+        8382317,
+        248505942,
+        196174735,
+        14715684,
+        208108034,
+        232478685,
+        208548442,
+        202773799,
+        253510248,
+        252624778
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235623770,
+        253083183,
+        258833465,
+        232478685,
+        52012400,
+        215785913,
+        18494516,
+        248505942,
+        52009210,
+        231709697,
+        231709298,
+        207847581,
+        248970443,
+        11721856,
+        248780482,
+        236459854,
+        1428529,
+        238744031,
+        8382317,
+        53246468
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235623770,
+        248970443,
+        232478685,
+        9027681,
+        52012400,
+        201698399,
+        15860798
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235623770,
+        231709298,
+        52012400,
+        232478685,
+        248505942,
+        233296734,
+        215785913,
+        8382317,
+        52009210,
+        253083183,
+        248970443,
+        9027681,
+        258833465,
+        201698399,
+        237091377,
+        16534280,
+        238744031,
+        236459854,
+        21695200,
+        1373518
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.917907299939543
+  },
+  "reason_example": {
+    "query_id": "litsearch_286",
+    "query": "Is there a specialized question answering dataset that concentrates on intricate tables within certain sectors, like the airline industry?",
+    "top_results": [
+      {
+        "corpusid": 235623770,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231709298,
+        "score": 0.726049542427063,
+        "reason": "bm25=0.745; dense=0.713; sub_bm25=0.671; sub_dense=0.717"
+      },
+      {
+        "corpusid": 52012400,
+        "score": 0.7237828373908997,
+        "reason": "bm25=0.699; dense=0.740; sub_bm25=0.536; sub_dense=0.804"
+      },
+      {
+        "corpusid": 232478685,
+        "score": 0.7191722393035889,
+        "reason": "bm25=0.686; dense=0.741; sub_bm25=0.846; sub_dense=0.799"
+      },
+      {
+        "corpusid": 248505942,
+        "score": 0.7107168436050415,
+        "reason": "bm25=0.695; dense=0.721; sub_bm25=0.546; sub_dense=0.822"
+      }
+    ]
+  }
+}

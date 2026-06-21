@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_375",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_375",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_375",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_375",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1858,
+      "latency_s": 14.482277299975976
+    },
+    {
+      "query_id": "litsearch_375",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 327,
+      "latency_s": 3.183398799970746
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_375",
+    "gold": [
+      259370854
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "Explainable AI language model morality representation",
+      "XAI neural network moral reasoning interpretability",
+      "interpretability large language model ethics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219305462,
+        11754739,
+        17577978,
+        5153623,
+        26889702,
+        241583700,
+        45897261,
+        13100783,
+        10627917,
+        10749859,
+        241583483,
+        991531,
+        252367427,
+        1913374,
+        186206883,
+        1058903,
+        13992502,
+        157513,
+        3923764,
+        8621713
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390668,
+        259089156,
+        220968818,
+        186206281,
+        248852447,
+        248779944,
+        256461147,
+        259370854,
+        252089594,
+        254877405,
+        257767745,
+        509764,
+        215768124,
+        218502350,
+        3623373,
+        233394000,
+        8688235,
+        232233376,
+        144306,
+        248780048
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        220968818,
+        250390668,
+        235727489,
+        259075607,
+        259370854,
+        258947011,
+        235313409,
+        249461900,
+        218502350,
+        252411574,
+        14201569,
+        189927972,
+        186206281,
+        235352924,
+        232404166,
+        201630114,
+        233864979,
+        248266409,
+        252089594,
+        235293811
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370854,
+        250390668,
+        220968818,
+        227230438,
+        256461147,
+        248852447,
+        186206281,
+        250390573,
+        259089156,
+        241583700,
+        218502350,
+        252089594
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390668,
+        220968818,
+        186206281,
+        259370854,
+        218502350,
+        252089594,
+        248852447,
+        235727489,
+        256461147,
+        259075607,
+        254877405,
+        235313409,
+        232233376,
+        249461900,
+        231821650,
+        235352924,
+        248780048,
+        259376468,
+        233394000,
+        189927972
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.83560819993727
+  },
+  "reason_example": {
+    "query_id": "litsearch_375",
+    "query": "Is there a paper that uses Explainable AI techniques to investigate how language models represent the expression of morality?",
+    "top_results": [
+      {
+        "corpusid": 250390668,
+        "score": 0.9992141723632812,
+        "reason": "bm25=1.000; dense=0.999; sub_bm25=0.813; sub_dense=0.930"
+      },
+      {
+        "corpusid": 220968818,
+        "score": 0.992486834526062,
+        "reason": "bm25=0.981; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 186206281,
+        "score": 0.8632185459136963,
+        "reason": "bm25=0.938; dense=0.813; sub_bm25=0.786; sub_dense=0.763"
+      },
+      {
+        "corpusid": 259370854,
+        "score": 0.8589973449707031,
+        "reason": "bm25=0.853; dense=0.863; sub_bm25=0.872; sub_dense=0.759"
+      },
+      {
+        "corpusid": 218502350,
+        "score": 0.8263052701950073,
+        "reason": "bm25=0.808; dense=0.839; sub_bm25=0.471; sub_dense=0.795"
+      }
+    ]
+  }
+}

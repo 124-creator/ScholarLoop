@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_386",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_386",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_386",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_386",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1999,
+      "latency_s": 14.77912910003215
+    },
+    {
+      "query_id": "litsearch_386",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 378,
+      "latency_s": 3.497967300005257
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_386",
+    "gold": [
+      259370790
+    ],
+    "pool_size": 239,
+    "decomposition": [
+      "multimodal emotion recognition real speakers",
+      "real-world speakers emotion recognition multimodal",
+      "multimodal emotion recognition natural speech"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        226283672,
+        51999969,
+        12311990,
+        1179515,
+        29255757,
+        7546993,
+        244896303,
+        220250648,
+        126584,
+        31658984,
+        44173315,
+        8059942,
+        260063173,
+        259063921,
+        260063234,
+        51881697,
+        252780166,
+        201688160,
+        248780163,
+        6864948
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52932143,
+        244896303,
+        259370790,
+        18709925,
+        51868869,
+        236459819,
+        259370646,
+        226283672,
+        234762888,
+        248524998,
+        252819343,
+        248962000,
+        1287449,
+        27680373,
+        252460147,
+        251403526,
+        220250648,
+        11776642,
+        8571120,
+        21692048
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        21432871,
+        7038785,
+        21692048,
+        244896303,
+        8571120,
+        260063227,
+        44551203,
+        6240593,
+        541020,
+        7983049,
+        16269552,
+        259370790,
+        15582309,
+        220047267,
+        3146372,
+        17993065,
+        18709925,
+        252442659,
+        248780564,
+        7503547
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52932143,
+        51868869,
+        259370790,
+        244896303,
+        248524998,
+        21692048,
+        18709925,
+        236459819,
+        220250648,
+        260063227,
+        226283672,
+        248780163
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        244896303,
+        259370790,
+        52932143,
+        18709925,
+        21692048,
+        8571120,
+        51868869,
+        259370646,
+        260063227,
+        234762888,
+        236459819,
+        252624748,
+        248524998,
+        251403526,
+        44551203,
+        248780564,
+        53081209,
+        220047267,
+        1287449,
+        220250648
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 19.137350999983028
+  },
+  "reason_example": {
+    "query_id": "litsearch_386",
+    "query": "Is there any paper exploring real speakers and thus performing multimodal emotion recognition task?",
+    "top_results": [
+      {
+        "corpusid": 244896303,
+        "score": 0.9706788063049316,
+        "reason": "bm25=0.956; dense=0.980; sub_bm25=0.821; sub_dense=0.964"
+      },
+      {
+        "corpusid": 259370790,
+        "score": 0.8918824195861816,
+        "reason": "bm25=0.860; dense=0.913; sub_bm25=0.999; sub_dense=0.942"
+      },
+      {
+        "corpusid": 52932143,
+        "score": 0.8810039758682251,
+        "reason": "bm25=1.000; dense=0.802; sub_bm25=1.000; sub_dense=0.867"
+      },
+      {
+        "corpusid": 18709925,
+        "score": 0.8712616562843323,
+        "reason": "bm25=0.823; dense=0.903; sub_bm25=0.684; sub_dense=0.839"
+      },
+      {
+        "corpusid": 21692048,
+        "score": 0.8668204545974731,
+        "reason": "bm25=0.676; dense=0.994; sub_bm25=0.886; sub_dense=1.000"
+      }
+    ]
+  }
+}

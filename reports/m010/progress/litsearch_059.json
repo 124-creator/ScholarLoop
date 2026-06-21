@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_059",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_059",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_059",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_059",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1186,
+      "latency_s": 5.837454399908893
+    },
+    {
+      "query_id": "litsearch_059",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 287,
+      "latency_s": 1.9939792999066412
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_059",
+    "gold": [
+      216144650
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "specifications for encoder decoder layers in neural machine translation",
+      "attention heads hyperparameters machine translation",
+      "neural machine translation hyperparameter settings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51878325,
+        9351555,
+        7417943,
+        51868421,
+        68153520,
+        227044274,
+        229365645,
+        52044834,
+        51880415,
+        64529519,
+        9683221,
+        45492851,
+        51734726,
+        171820989,
+        969555,
+        9768369,
+        2909838,
+        7138945,
+        2175391,
+        7964862
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        51880415,
+        229365664,
+        203591628,
+        211204667,
+        202592085,
+        248780505,
+        220968978,
+        245855868,
+        9768369,
+        235097270,
+        162183964,
+        196181767,
+        226262233,
+        52984984,
+        49195318,
+        64529519,
+        201698087,
+        52044834,
+        5590763,
+        969555
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        51880415,
+        215827207,
+        253080830,
+        174798258,
+        235254522,
+        201670412,
+        203591628,
+        39840476,
+        13495961,
+        2201909,
+        237010911,
+        247363307,
+        250390666,
+        202660972,
+        47010809,
+        207916021,
+        3957741,
+        8140780,
+        219176848,
+        52100117
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        51880415,
+        202592085,
+        2724633,
+        64529519,
+        227044274,
+        9683221,
+        203591628,
+        52044834,
+        174798258,
+        9768369,
+        7417943,
+        229365645
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        51880415,
+        203591628,
+        235254522,
+        174798258,
+        229365664,
+        248780505,
+        201670412,
+        211204667,
+        162183964,
+        52044834,
+        195750470,
+        64529519,
+        202592085,
+        13495961,
+        12700615,
+        9768369,
+        237010911,
+        215827207,
+        2724633,
+        196181767
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.982919099973515
+  },
+  "reason_example": {
+    "query_id": "litsearch_059",
+    "query": "In the context of machine translation, can you point me towards literature discussing the specifications for setting up encoder/decoder layers, attention heads, and other hyperparameters for a neural network model?",
+    "top_results": [
+      {
+        "corpusid": 51880415,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.761; sub_dense=0.852"
+      },
+      {
+        "corpusid": 203591628,
+        "score": 0.9277696013450623,
+        "reason": "bm25=0.882; dense=0.958; sub_bm25=0.825; sub_dense=0.939"
+      },
+      {
+        "corpusid": 235254522,
+        "score": 0.8936617374420166,
+        "reason": "bm25=0.790; dense=0.963; sub_bm25=0.926; sub_dense=0.894"
+      },
+      {
+        "corpusid": 174798258,
+        "score": 0.887845516204834,
+        "reason": "bm25=0.770; dense=0.966; sub_bm25=0.702; sub_dense=0.845"
+      },
+      {
+        "corpusid": 229365664,
+        "score": 0.8848026990890503,
+        "reason": "bm25=0.929; dense=0.855; sub_bm25=0.722; sub_dense=0.811"
+      }
+    ]
+  }
+}

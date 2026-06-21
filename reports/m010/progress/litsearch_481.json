@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_481",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_481",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_481",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_481",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 979,
+      "latency_s": 5.438188900006935
+    },
+    {
+      "query_id": "litsearch_481",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.680123300058767
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_481",
+    "gold": [
+      258461036
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "dictionary-based Bayesian inference image text matching",
+      "Bayesian dictionary learning image text retrieval",
+      "novel Bayesian approach image text matching"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8129553,
+        233204526,
+        238638466,
+        7030749,
+        6462360,
+        1447072,
+        2920957,
+        3006421,
+        8284678,
+        14515512,
+        18324181,
+        2473732,
+        12405045,
+        14833216,
+        59528267,
+        12046894,
+        6242473,
+        16627872,
+        16638947,
+        2233498
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236478064,
+        258461036,
+        8216700,
+        257496457,
+        257219541,
+        233324442,
+        225094565,
+        52013527,
+        221112371,
+        258762869,
+        245334722,
+        256808439,
+        44091519,
+        56657855,
+        18324297,
+        11020320,
+        259841016,
+        15269863,
+        259376676,
+        10082291
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2830333,
+        6427940,
+        14600913,
+        5633602,
+        8048647,
+        8571409,
+        13005535,
+        8718435,
+        34990046,
+        220665357,
+        241583243,
+        236478064,
+        51882191,
+        629460,
+        1598382,
+        4318692,
+        16980737,
+        9733566,
+        29358,
+        12948924
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258461036,
+        236478064,
+        259376692,
+        259376584,
+        9359079,
+        8216700
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236478064,
+        258461036,
+        8216700,
+        14600913,
+        6427940,
+        34990046,
+        29358,
+        7318039,
+        259376692,
+        3215805,
+        8942894,
+        12547672,
+        259376584,
+        10529925,
+        17635624,
+        196175184,
+        247996596,
+        6949487,
+        8048647,
+        17107031
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.105898799956776
+  },
+  "reason_example": {
+    "query_id": "litsearch_481",
+    "query": "Which paper proposed dictionary-based Bayesian inference to improve the performance of image text matching model?",
+    "top_results": [
+      {
+        "corpusid": 236478064,
+        "score": 0.9481972455978394,
+        "reason": "bm25=1.000; dense=0.914; sub_bm25=1.000; sub_dense=0.964"
+      },
+      {
+        "corpusid": 258461036,
+        "score": 0.8760740756988525,
+        "reason": "bm25=0.897; dense=0.862; sub_bm25=1.000; sub_dense=0.947"
+      },
+      {
+        "corpusid": 8216700,
+        "score": 0.8523241877555847,
+        "reason": "bm25=0.858; dense=0.849; sub_bm25=0.827; sub_dense=0.892"
+      },
+      {
+        "corpusid": 14600913,
+        "score": 0.8218612670898438,
+        "reason": "bm25=0.585; dense=0.980; sub_bm25=0.510; sub_dense=0.989"
+      },
+      {
+        "corpusid": 6427940,
+        "score": 0.8040772080421448,
+        "reason": "bm25=0.521; dense=0.992; sub_bm25=0.423; sub_dense=0.990"
+      }
+    ]
+  }
+}

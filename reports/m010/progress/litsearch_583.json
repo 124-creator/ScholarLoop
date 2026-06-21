@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_583",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_583",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_583",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_583",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1060,
+      "latency_s": 6.333620599936694
+    },
+    {
+      "query_id": "litsearch_583",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 364,
+      "latency_s": 3.3204575000563636
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_583",
+    "gold": [
+      261696697
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "fine-tune LLMs chain-of-thought program-of-thought math reasoning",
+      "first paper fine-tuning LLMs chain-of-thought program-of-thought",
+      "chain-of-thought program-of-thought fine-tuning LLMs math reasoning first"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10496324,
+        18043676,
+        176201,
+        752448,
+        2000271,
+        252819412,
+        2874582,
+        18155929,
+        848100,
+        3505302,
+        424889,
+        10740890,
+        17576639,
+        14616585,
+        252819291,
+        178267,
+        19012550,
+        252819269,
+        5221546,
+        189259
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263671510,
+        258558102,
+        252683303,
+        258887837,
+        254877499,
+        258480165,
+        261696697,
+        260350986,
+        254877569,
+        254877399,
+        260334759,
+        258841145,
+        252762275,
+        248887351,
+        263831492,
+        257427208,
+        262084051,
+        264555202,
+        260900008,
+        252735112
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        257427208,
+        261696697,
+        45927246,
+        5206053,
+        118920300,
+        848100,
+        10777248,
+        2845210,
+        44620072,
+        262084051,
+        254823156,
+        12278968,
+        43069989,
+        170201386,
+        254877569,
+        252693237,
+        41074112,
+        2040861,
+        252735112,
+        259376503
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        261696697,
+        263671510,
+        257427208,
+        262084051,
+        254877569,
+        254877399,
+        258558102,
+        252683303,
+        252735112,
+        263831492,
+        848100,
+        3851819
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        261696697,
+        257427208,
+        254877569,
+        262084051,
+        848100,
+        258558102,
+        252735112,
+        252683303,
+        252693237,
+        3851819,
+        259089125,
+        254823156,
+        263671510,
+        254877399,
+        252693055,
+        260350986,
+        259376503,
+        10777248,
+        1690927,
+        248986239
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.02878219995182
+  },
+  "reason_example": {
+    "query_id": "litsearch_583",
+    "query": "Which paper first tried to fine-tune LLMs with chain-of-thoughts and program-of-thoughts for math reasoning?",
+    "top_results": [
+      {
+        "corpusid": 261696697,
+        "score": 0.9505290985107422,
+        "reason": "bm25=0.892; dense=0.990; sub_bm25=1.000; sub_dense=0.946"
+      },
+      {
+        "corpusid": 257427208,
+        "score": 0.9177535772323608,
+        "reason": "bm25=0.794; dense=1.000; sub_bm25=0.756; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254877569,
+        "score": 0.873054563999176,
+        "reason": "bm25=0.856; dense=0.884; sub_bm25=0.900; sub_dense=0.965"
+      },
+      {
+        "corpusid": 262084051,
+        "score": 0.8492046594619751,
+        "reason": "bm25=0.782; dense=0.894; sub_bm25=0.543; sub_dense=0.885"
+      },
+      {
+        "corpusid": 848100,
+        "score": 0.8488947153091431,
+        "reason": "bm25=0.739; dense=0.922; sub_bm25=0.439; sub_dense=0.746"
+      }
+    ]
+  }
+}

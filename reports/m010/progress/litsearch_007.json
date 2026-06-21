@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_007",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_007",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_007",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_007",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1891,
+      "latency_s": 11.709296899964102
+    },
+    {
+      "query_id": "litsearch_007",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 332,
+      "latency_s": 2.2524357999209315
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_007",
+    "gold": [
+      247593812
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "question answering clickbait mitigation",
+      "passage retrieval clickbait detection",
+      "neural passage retrieval clickbait headlines"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12243703,
+        4946715,
+        7898468,
+        259376811,
+        7038187,
+        59528267,
+        9751558,
+        47020074,
+        259376567,
+        12305296,
+        18835527,
+        5837605,
+        6462360,
+        7099509,
+        7277453,
+        5327082,
+        226283900,
+        9846946,
+        34124005,
+        16717495
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247593812,
+        259376811,
+        16717495,
+        259376567,
+        8001994,
+        12243703,
+        15108674,
+        236459960,
+        239993003,
+        249926985,
+        59528267,
+        251402038,
+        231815627,
+        252624737,
+        1612932,
+        7898468,
+        247447562,
+        259376844,
+        27322753,
+        37963091
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251402038,
+        247593812,
+        259376471,
+        259376736,
+        259376639,
+        259376872,
+        259376889,
+        52013710,
+        27322753,
+        259376844,
+        259376841,
+        259376916,
+        259376900,
+        259376811,
+        259376685,
+        259376895,
+        259376514,
+        874565,
+        259376688,
+        16467405
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247593812,
+        259376844,
+        259376567,
+        251402038,
+        259376811,
+        27322753,
+        12243703,
+        16717495,
+        59528267,
+        7898468,
+        8001994,
+        14669758
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247593812,
+        251402038,
+        259376471,
+        259376811,
+        27322753,
+        259376844,
+        259376889,
+        259376872,
+        259376567,
+        259376736,
+        259376900,
+        8001994,
+        259376841,
+        259376639,
+        16717495,
+        259376916,
+        12243703,
+        259376685,
+        259376732,
+        52013710
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.628001400036737
+  },
+  "reason_example": {
+    "query_id": "litsearch_007",
+    "query": "Can you direct me to studies that explore techniques like question answering and passage retrieval for mitigating the effects of clickbait headlines?",
+    "top_results": [
+      {
+        "corpusid": 247593812,
+        "score": 0.9898810386657715,
+        "reason": "bm25=1.000; dense=0.983; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 251402038,
+        "score": 0.8959070444107056,
+        "reason": "bm25=0.740; dense=1.000; sub_bm25=0.945; sub_dense=0.943"
+      },
+      {
+        "corpusid": 259376471,
+        "score": 0.8199708461761475,
+        "reason": "bm25=0.637; dense=0.942; sub_bm25=0.981; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259376811,
+        "score": 0.8197925686836243,
+        "reason": "bm25=0.841; dense=0.806; sub_bm25=0.922; sub_dense=0.952"
+      },
+      {
+        "corpusid": 27322753,
+        "score": 0.7993041276931763,
+        "reason": "bm25=0.723; dense=0.850; sub_bm25=0.862; sub_dense=0.869"
+      }
+    ]
+  }
+}

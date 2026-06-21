@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_562",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_562",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_562",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_562",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 672,
+      "latency_s": 2.3755302999634296
+    },
+    {
+      "query_id": "litsearch_562",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 315,
+      "latency_s": 2.974990400020033
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_562",
+    "gold": [
+      258887582
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "learning latent regular cell complex from data",
+      "neural network regular cell complex model",
+      "latent cell complex representation learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2409730,
+        235244974,
+        252624581,
+        7440991,
+        10919045,
+        220045477,
+        2716607,
+        12913009,
+        14183953,
+        17460998,
+        7966473,
+        258887582,
+        977575,
+        243865348,
+        2491133,
+        12795660,
+        208547755,
+        219708206,
+        10325407,
+        220364453
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258887582,
+        218516935,
+        220364453,
+        6715185,
+        2162648,
+        262738077,
+        1850410,
+        263874273,
+        249089172,
+        627938,
+        13995862,
+        253098345,
+        12713052,
+        236459866,
+        60441438,
+        6790148,
+        29738441,
+        254408974,
+        247582113,
+        254069728
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258887582,
+        247476432,
+        234742529,
+        252762466,
+        231627780,
+        246430471,
+        247475958,
+        13995862,
+        203591409,
+        210473577,
+        58004595,
+        256231349,
+        4986998,
+        246485884,
+        257365071,
+        199022672,
+        257353697,
+        196181580,
+        220364453,
+        244709251
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258887582
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258887582,
+        247476432,
+        13995862,
+        234742529,
+        220364453,
+        252762466,
+        203591409,
+        256231349,
+        29738441,
+        210473577,
+        249089172,
+        233864627,
+        58004595,
+        263874273,
+        246430471,
+        231627780,
+        17732741,
+        247475958,
+        254069728,
+        218516935
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.494331699912436
+  },
+  "reason_example": {
+    "query_id": "litsearch_562",
+    "query": "What work proposes a model to learn a latent regular cell complex from data?",
+    "top_results": [
+      {
+        "corpusid": 258887582,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247476432,
+        "score": 0.7401549816131592,
+        "reason": "bm25=0.518; dense=0.888; sub_bm25=0.357; sub_dense=0.748"
+      },
+      {
+        "corpusid": 13995862,
+        "score": 0.70792156457901,
+        "reason": "bm25=0.612; dense=0.772; sub_bm25=0.501; sub_dense=0.827"
+      },
+      {
+        "corpusid": 234742529,
+        "score": 0.6902711987495422,
+        "reason": "bm25=0.527; dense=0.799; sub_bm25=0.357; sub_dense=0.777"
+      },
+      {
+        "corpusid": 220364453,
+        "score": 0.6884743571281433,
+        "reason": "bm25=0.655; dense=0.711; sub_bm25=0.437; sub_dense=0.769"
+      }
+    ]
+  }
+}

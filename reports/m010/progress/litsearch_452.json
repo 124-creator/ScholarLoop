@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_452",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_452",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_452",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_452",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 764,
+      "latency_s": 3.040519299916923
+    },
+    {
+      "query_id": "litsearch_452",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.3870571999577805
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_452",
+    "gold": [
+      258588286
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "cross-lingual in-context learning first paper",
+      "cross-lingual in-context learning with alignment",
+      "alignment to improve cross-lingual in-context learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11846872,
+        2136464,
+        52237660,
+        11829630,
+        261431370,
+        17916462,
+        1249522,
+        19653906,
+        429289,
+        3198684,
+        9288110,
+        21719940,
+        236459802,
+        6300342,
+        7412007,
+        6395440,
+        13412990,
+        1412569,
+        13416473,
+        209476324
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258588286,
+        247939339,
+        256461240,
+        253107409,
+        233209782,
+        49213156,
+        256598350,
+        252090145,
+        248405623,
+        51871351,
+        52094910,
+        211010913,
+        53110354,
+        259833843,
+        251395456,
+        204801691,
+        252780232,
+        11829630,
+        13416473,
+        9288110
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        204008396,
+        258588286,
+        252763363,
+        250390978,
+        11829630,
+        14183678,
+        257921399,
+        202539655,
+        237485576,
+        253762088,
+        216080450,
+        218625432,
+        13986668,
+        254853961,
+        9040336,
+        32923127,
+        236460008,
+        229923154,
+        248572465,
+        221172961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258588286
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258588286,
+        204008396,
+        252763363,
+        11829630,
+        253762088,
+        202539655,
+        233209782,
+        52094910,
+        253107409,
+        237502881,
+        258947231,
+        199022396,
+        233324361,
+        248780442,
+        216080450,
+        257921399,
+        209082217,
+        5357629,
+        232185390,
+        2138123
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.676564700086601
+  },
+  "reason_example": {
+    "query_id": "litsearch_452",
+    "query": "Which paper first explored In-context learning in a cross lingual setup and made use of alignment to better it's performance?",
+    "top_results": [
+      {
+        "corpusid": 258588286,
+        "score": 0.9677720069885254,
+        "reason": "bm25=1.000; dense=0.946; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 204008396,
+        "score": 0.8772521018981934,
+        "reason": "bm25=0.693; dense=1.000; sub_bm25=0.687; sub_dense=0.993"
+      },
+      {
+        "corpusid": 252763363,
+        "score": 0.8308045864105225,
+        "reason": "bm25=0.699; dense=0.918; sub_bm25=0.893; sub_dense=0.956"
+      },
+      {
+        "corpusid": 11829630,
+        "score": 0.829053521156311,
+        "reason": "bm25=0.711; dense=0.908; sub_bm25=0.831; sub_dense=0.913"
+      },
+      {
+        "corpusid": 253762088,
+        "score": 0.7996953725814819,
+        "reason": "bm25=0.705; dense=0.863; sub_bm25=0.924; sub_dense=0.927"
+      }
+    ]
+  }
+}

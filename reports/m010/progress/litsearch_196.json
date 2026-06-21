@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_196",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_196",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_196",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_196",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 993,
+      "latency_s": 4.29245000006631
+    },
+    {
+      "query_id": "litsearch_196",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 241,
+      "latency_s": 1.8416284000268206
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_196",
+    "gold": [
+      231815627
+    ],
+    "pool_size": 205,
+    "decomposition": [
+      "improved training methods dense passage retrieval",
+      "dense passage retrieval training open-domain QA",
+      "training techniques dense retriever question answering"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14012397,
+        235482414,
+        5775806,
+        247447562,
+        201792120,
+        20167120,
+        233029494,
+        14669758,
+        237347134,
+        256827818,
+        249926985,
+        64865,
+        231815627,
+        230437698,
+        235482370,
+        248085035,
+        5772336,
+        248779936,
+        258486853,
+        5654020
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247447562,
+        249926985,
+        231815627,
+        215737187,
+        250390910,
+        237347134,
+        236459960,
+        232307006,
+        252816088,
+        239993003,
+        233296511,
+        237592852,
+        218470043,
+        14669758,
+        252780775,
+        248218489,
+        231704318,
+        225040672,
+        7515107,
+        247188127
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        215737187,
+        14669758,
+        231815627,
+        248218489,
+        236459960,
+        247447562,
+        247188127,
+        258486853,
+        247518940,
+        237592852,
+        8001994,
+        250390910,
+        52913933,
+        221970302,
+        232307006,
+        249926985,
+        231704318,
+        252780775,
+        85449634,
+        230437698
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231815627,
+        247447562,
+        249926985,
+        236459960,
+        215737187,
+        250390910,
+        14669758,
+        237347134,
+        232307006,
+        237592852,
+        258486853,
+        252780775
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        215737187,
+        231815627,
+        247447562,
+        249926985,
+        236459960,
+        14669758,
+        250390910,
+        248218489,
+        232307006,
+        237592852,
+        247188127,
+        258486853,
+        237347134,
+        252780775,
+        252816088,
+        231704318,
+        7515107,
+        218470043,
+        8001994,
+        221802772
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.426283700042404
+  },
+  "reason_example": {
+    "query_id": "litsearch_196",
+    "query": "Could you suggest a study that explores improved training methods for dense passage retrieval within open-domain question answering systems?",
+    "top_results": [
+      {
+        "corpusid": 215737187,
+        "score": 0.9715098142623901,
+        "reason": "bm25=0.929; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231815627,
+        "score": 0.9515209197998047,
+        "reason": "bm25=0.947; dense=0.954; sub_bm25=0.986; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247447562,
+        "score": 0.9467920064926147,
+        "reason": "bm25=1.000; dense=0.911; sub_bm25=0.918; sub_dense=0.896"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.9041774272918701,
+        "reason": "bm25=0.968; dense=0.862; sub_bm25=0.906; sub_dense=0.906"
+      },
+      {
+        "corpusid": 236459960,
+        "score": 0.8739506006240845,
+        "reason": "bm25=0.817; dense=0.912; sub_bm25=0.783; sub_dense=0.892"
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_018",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_018",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_018",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_018",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1147,
+      "latency_s": 7.487644599983469
+    },
+    {
+      "query_id": "litsearch_018",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 291,
+      "latency_s": 2.3806135000195354
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_018",
+    "gold": [
+      5403702,
+      1774259,
+      2476229,
+      52115592
+    ],
+    "pool_size": 243,
+    "decomposition": [
+      "dependency-based relation extraction models",
+      "dependency parsing for non-local syntactic relations in relation extraction",
+      "capturing long-distance dependencies in relation extraction using dependency parsing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5282346,
+        14270923,
+        6825083,
+        2489047,
+        2301676,
+        5707769,
+        1858099,
+        51871733,
+        7780173,
+        184487889,
+        15876467,
+        11692705,
+        1972713,
+        1849782,
+        235899264,
+        13346904,
+        979997,
+        51878774,
+        14359949,
+        252763314
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5282346,
+        184487889,
+        244152390,
+        18857766,
+        220047189,
+        7627541,
+        233189627,
+        2940623,
+        236460104,
+        17393193,
+        14270923,
+        11692705,
+        248780298,
+        45301241,
+        49544037,
+        231719393,
+        251903055,
+        5707769,
+        18369761,
+        252818910
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9729940,
+        1387162,
+        25169775,
+        235313469,
+        13205080,
+        14028389,
+        44155628,
+        5282346,
+        190001673,
+        3102322,
+        508653,
+        7238127,
+        18373718,
+        236460104,
+        236478166,
+        28253803,
+        208164181,
+        18979967,
+        2010873,
+        3179848
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        18857766,
+        5282346,
+        9729940,
+        6825083,
+        184487889
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5282346,
+        25169775,
+        13205080,
+        236460104,
+        9729940,
+        190001673,
+        184487889,
+        236478166,
+        7238127,
+        45301241,
+        7627541,
+        18857766,
+        14028389,
+        251903055,
+        49544037,
+        220047189,
+        231719393,
+        18979967,
+        3102322,
+        248780393
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.4063715999946
+  },
+  "reason_example": {
+    "query_id": "litsearch_018",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "top_results": [
+      {
+        "corpusid": 5282346,
+        "score": 0.9466660022735596,
+        "reason": "bm25=1.000; dense=0.911; sub_bm25=0.788; sub_dense=0.876"
+      },
+      {
+        "corpusid": 25169775,
+        "score": 0.9148260354995728,
+        "reason": "bm25=0.808; dense=0.986; sub_bm25=0.806; sub_dense=0.929"
+      },
+      {
+        "corpusid": 13205080,
+        "score": 0.8823915719985962,
+        "reason": "bm25=0.817; dense=0.926; sub_bm25=0.937; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236460104,
+        "score": 0.8751282691955566,
+        "reason": "bm25=0.856; dense=0.888; sub_bm25=0.897; sub_dense=0.847"
+      },
+      {
+        "corpusid": 9729940,
+        "score": 0.8685367107391357,
+        "reason": "bm25=0.671; dense=1.000; sub_bm25=0.957; sub_dense=1.000"
+      }
+    ]
+  }
+}

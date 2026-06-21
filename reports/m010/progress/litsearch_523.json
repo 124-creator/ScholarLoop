@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_523",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_523",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_523",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_523",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1338,
+      "latency_s": 7.348780100001022
+    },
+    {
+      "query_id": "litsearch_523",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 334,
+      "latency_s": 2.602676600101404
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_523",
+    "gold": [
+      263831485
+    ],
+    "pool_size": 238,
+    "decomposition": [
+      "inductive knowledge graph reasoning without retraining",
+      "zero-shot relation prediction in knowledge graphs",
+      "foundation model for knowledge graphs no entity embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6972449,
+        263831485,
+        14646431,
+        752623,
+        207870282,
+        252819346,
+        218610721,
+        222124934,
+        256697545,
+        215746894,
+        15115888,
+        222134075,
+        9365010,
+        17153466,
+        1447072,
+        1868739,
+        202712637,
+        248780002,
+        173990725,
+        253018966
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        263831485,
+        6972449,
+        52009210,
+        207870282,
+        248780039,
+        825504,
+        14045170,
+        173990725,
+        202888772,
+        121303947,
+        258833259,
+        218610721,
+        236477422,
+        247594339,
+        248780238,
+        246652474,
+        248084939,
+        233240926,
+        209439505,
+        213085920
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261341583,
+        222290755,
+        140116781,
+        53080968,
+        19187663,
+        14047545,
+        53080423,
+        208527419,
+        253098905,
+        218487188,
+        173990725,
+        196206886,
+        263831485,
+        207847719,
+        221090697,
+        259370667,
+        222133991,
+        212675605,
+        221950006,
+        233209850
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263831485,
+        218610721,
+        52110037,
+        207870282,
+        222134075,
+        202750112,
+        6972449,
+        173990725,
+        222124934,
+        825504,
+        248780039,
+        248780002
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263831485,
+        173990725,
+        140116781,
+        825504,
+        207870282,
+        196206886,
+        208527419,
+        259370784,
+        220048080,
+        221950006,
+        235606453,
+        222124934,
+        248780238,
+        221090697,
+        220042223,
+        52110037,
+        53080968,
+        202750112,
+        52986570,
+        238419359
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.753007799969055
+  },
+  "reason_example": {
+    "query_id": "litsearch_523",
+    "query": "Is there a single GNN model that can inductively generalize to any knowledge graph?;What is the method to generalize knowledge graph reasoning to graphs with new entities and relations?;Is there a foundation model for knowledge graphs that does not learn embeddings for each node and relation type?",
+    "top_results": [
+      {
+        "corpusid": 263831485,
+        "score": 0.9407371282577515,
+        "reason": "bm25=1.000; dense=0.901; sub_bm25=1.000; sub_dense=0.909"
+      },
+      {
+        "corpusid": 173990725,
+        "score": 0.8298455476760864,
+        "reason": "bm25=0.718; dense=0.905; sub_bm25=0.584; sub_dense=0.848"
+      },
+      {
+        "corpusid": 140116781,
+        "score": 0.8239143490791321,
+        "reason": "bm25=0.625; dense=0.957; sub_bm25=0.848; sub_dense=0.911"
+      },
+      {
+        "corpusid": 825504,
+        "score": 0.7961413860321045,
+        "reason": "bm25=0.733; dense=0.838; sub_bm25=0.865; sub_dense=0.834"
+      },
+      {
+        "corpusid": 207870282,
+        "score": 0.7952762246131897,
+        "reason": "bm25=0.778; dense=0.807; sub_bm25=0.753; sub_dense=0.834"
+      }
+    ]
+  }
+}

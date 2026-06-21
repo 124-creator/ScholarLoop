@@ -1,0 +1,1574 @@
+{
+  "files": 30,
+  "total_cards": 90,
+  "resolved_cards": 82,
+  "resolved_fields": 164,
+  "manual_fields_preserved": 16,
+  "field_resolution_rate": 0.9111111111111111,
+  "fabricated_count": 0,
+  "zero_fabrication": true,
+  "checks": [
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 221995575,
+      "field": "authors_year",
+      "expected": "Siqi Sun, Zhe Gan, Yu Cheng, Yuwei Fang, Shuohang Wang, Jingjing Liu (2020)",
+      "actual": "Siqi Sun, Zhe Gan, Yu Cheng, Yuwei Fang, Shuohang Wang, Jingjing Liu (2020)",
+      "external_id": "https://openalex.org/W3090789082"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 221995575,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2009.14167; Source: arXiv (Cornell University); OA: green; Citations: 5",
+      "actual": "DOI: 10.48550/arxiv.2009.14167; Source: arXiv (Cornell University); OA: green; Citations: 5",
+      "external_id": "https://openalex.org/W3090789082"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 258212842,
+      "field": "authors_year",
+      "expected": "Varun Gumma, Raj Dabre, Pratyush Kumar (2023)",
+      "actual": "Varun Gumma, Raj Dabre, Pratyush Kumar (2023)",
+      "external_id": "https://openalex.org/W4366554634"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 258212842,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2304.09388; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "actual": "DOI: 10.48550/arxiv.2304.09388; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "external_id": "https://openalex.org/W4366554634"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 218502458,
+      "field": "authors_year",
+      "expected": "Subhabrata Mukherjee, Ahmed Hassan Awadallah (2020)",
+      "actual": "Subhabrata Mukherjee, Ahmed Hassan Awadallah (2020)",
+      "external_id": "https://openalex.org/W3022128899"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_000.json",
+      "corpusid": 218502458,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2020.acl-main.202; Source: https://doi.org/10.18653/v1/2020.acl-main.202; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2020.acl-main.202; Source: https://doi.org/10.18653/v1/2020.acl-main.202; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W3022128899"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_001.json",
+      "corpusid": 227231792,
+      "field": "authors_year",
+      "expected": "Saméh Kchaou, Rahma Boujelbane, Lamia Hadrich Belguith (2020)",
+      "actual": "Saméh Kchaou, Rahma Boujelbane, Lamia Hadrich Belguith (2020)",
+      "external_id": "https://openalex.org/W3120055548"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_001.json",
+      "corpusid": 227231792,
+      "field": "source_or_doi",
+      "expected": "Source: https://www.aclweb.org/anthology/2020.wanlp-1.18/; OA: closed; Citations: 2",
+      "actual": "Source: https://www.aclweb.org/anthology/2020.wanlp-1.18/; OA: closed; Citations: 2",
+      "external_id": "https://openalex.org/W3120055548"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 226254579,
+      "field": "authors_year",
+      "expected": "Chunting Zhou, Graham Neubig, Jiatao Gu, Mona Diab, Paco Guzman, Luke Zettlemoyer, et al. (2020)",
+      "actual": "Chunting Zhou, Graham Neubig, Jiatao Gu, Mona Diab, Paco Guzman, Luke Zettlemoyer, et al. (2020)",
+      "external_id": "https://openalex.org/W3095962368"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 226254579,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2011.02593; Source: arXiv (Cornell University); OA: green; Citations: 19",
+      "actual": "DOI: 10.48550/arxiv.2011.02593; Source: arXiv (Cornell University); OA: green; Citations: 19",
+      "external_id": "https://openalex.org/W3095962368"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 233296648,
+      "field": "authors_year",
+      "expected": "Tianyu Liu, Yizhe Zhang, Chris Brockett, Yi Mao, Zhifang Sui, Weizhu Chen, et al. (2022)",
+      "actual": "Tianyu Liu, Yizhe Zhang, Chris Brockett, Yi Mao, Zhifang Sui, Weizhu Chen, et al. (2022)",
+      "external_id": "https://openalex.org/W3155332104"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 233296648,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.acl-long.464; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 60",
+      "actual": "DOI: 10.18653/v1/2022.acl-long.464; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 60",
+      "external_id": "https://openalex.org/W3155332104"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 256000114,
+      "field": "authors_year",
+      "expected": "Weijia Xu, Sweta Agrawal, Eleftheria Briakou, Marianna J. Martindale, Marine Carpuat (2023)",
+      "actual": "Weijia Xu, Sweta Agrawal, Eleftheria Briakou, Marianna J. Martindale, Marine Carpuat (2023)",
+      "external_id": "https://openalex.org/W4317668889"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_002.json",
+      "corpusid": 256000114,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2301.07779; Source: arXiv (Cornell University); OA: green; Citations: 6",
+      "actual": "DOI: 10.48550/arxiv.2301.07779; Source: arXiv (Cornell University); OA: green; Citations: 6",
+      "external_id": "https://openalex.org/W4317668889"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_003.json",
+      "corpusid": 7859600,
+      "field": "authors_year",
+      "expected": "Ramy Eskander, Nizar Habash, Owen Rambow, Arfath Pasha (2016)",
+      "actual": "Ramy Eskander, Nizar Habash, Owen Rambow, Arfath Pasha (2016)",
+      "external_id": "https://openalex.org/W2577201715"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_003.json",
+      "corpusid": 7859600,
+      "field": "source_or_doi",
+      "expected": "Source: International Conference on Computational Linguistics; OA: closed; Citations: 16",
+      "actual": "Source: International Conference on Computational Linguistics; OA: closed; Citations: 16",
+      "external_id": "https://openalex.org/W2577201715"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_003.json",
+      "corpusid": 472215,
+      "field": "authors_year",
+      "expected": "Nizar Habash, Ramy Eskander, Abdelati Hawwari (2012)",
+      "actual": "Nizar Habash, Ramy Eskander, Abdelati Hawwari (2012)",
+      "external_id": "https://openalex.org/W131663347"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_003.json",
+      "corpusid": 472215,
+      "field": "source_or_doi",
+      "expected": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.299.6538; OA: closed; Citations: 122",
+      "actual": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.299.6538; OA: closed; Citations: 122",
+      "external_id": "https://openalex.org/W131663347"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 250551977,
+      "field": "authors_year",
+      "expected": "Zhengping Jiang, Anqi Liu, Benjamin Van Durme (2022)",
+      "actual": "Zhengping Jiang, Anqi Liu, Benjamin Van Durme (2022)",
+      "external_id": "https://openalex.org/W4385572767"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 250551977,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.emnlp-main.170; Source: https://doi.org/10.18653/v1/2022.emnlp-main.170; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2022.emnlp-main.170; Source: https://doi.org/10.18653/v1/2022.emnlp-main.170; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W4385572767"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 247594202,
+      "field": "authors_year",
+      "expected": "Shehzaad Dhuliawala, Leonard Adolphs, Raj Das, Mrinmaya Sachan (2022)",
+      "actual": "Shehzaad Dhuliawala, Leonard Adolphs, Raj Das, Mrinmaya Sachan (2022)",
+      "external_id": "https://openalex.org/W4285309972"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 247594202,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.findings-acl.133; Source: Findings of the Association for Computational Linguistics: ACL 2022; OA: hybrid; Citations: 6",
+      "actual": "DOI: 10.18653/v1/2022.findings-acl.133; Source: Findings of the Association for Computational Linguistics: ACL 2022; OA: hybrid; Citations: 6",
+      "external_id": "https://openalex.org/W4285309972"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 252918666,
+      "field": "authors_year",
+      "expected": "Clara Meister, Tiago Pimentel, Gian Wiher, Ryan Cotterell (2022)",
+      "actual": "Clara Meister, Tiago Pimentel, Gian Wiher, Ryan Cotterell (2022)",
+      "external_id": "https://openalex.org/W4226204153"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_004.json",
+      "corpusid": 252918666,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.3929/ethz-b-000597055; Source: arXiv (Cornell University); OA: green; Citations: 17",
+      "actual": "DOI: 10.3929/ethz-b-000597055; Source: arXiv (Cornell University); OA: green; Citations: 17",
+      "external_id": "https://openalex.org/W4226204153"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 12585424,
+      "field": "authors_year",
+      "expected": "Thien Huu Nguyen, Ralph Grishman (2015)",
+      "actual": "Thien Huu Nguyen, Ralph Grishman (2015)",
+      "external_id": "https://openalex.org/W2251622960"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 12585424,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.3115/v1/w15-1506; Source: https://doi.org/10.3115/v1/w15-1506; OA: gold; Citations: 512",
+      "actual": "DOI: 10.3115/v1/w15-1506; Source: https://doi.org/10.3115/v1/w15-1506; OA: gold; Citations: 512",
+      "external_id": "https://openalex.org/W2251622960"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 16389974,
+      "field": "authors_year",
+      "expected": "Xiaotian Jiang, Quan Wang, Peng Li, Bin Wang (2016)",
+      "actual": "Xiaotian Jiang, Quan Wang, Peng Li, Bin Wang (2016)",
+      "external_id": "https://openalex.org/W2577666659"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 16389974,
+      "field": "source_or_doi",
+      "expected": "Source: International Conference on Computational Linguistics; OA: closed; Citations: 95",
+      "actual": "Source: International Conference on Computational Linguistics; OA: closed; Citations: 95",
+      "external_id": "https://openalex.org/W2577666659"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 17297069,
+      "field": "authors_year",
+      "expected": "Ngoc Thang Vu, Heike Adel, Pankaj Gupta, Hinrich Schütze (2016)",
+      "actual": "Ngoc Thang Vu, Heike Adel, Pankaj Gupta, Hinrich Schütze (2016)",
+      "external_id": "https://openalex.org/W2407769879"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_005.json",
+      "corpusid": 17297069,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/n16-1065; Source: https://doi.org/10.18653/v1/n16-1065; OA: gold; Citations: 31",
+      "actual": "DOI: 10.18653/v1/n16-1065; Source: https://doi.org/10.18653/v1/n16-1065; OA: gold; Citations: 31",
+      "external_id": "https://openalex.org/W2407769879"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 211258744,
+      "field": "authors_year",
+      "expected": "Yixuan Tang, Hwee Tou Ng, Anthony K. H. Tung (2020)",
+      "actual": "Yixuan Tang, Hwee Tou Ng, Anthony K. H. Tung (2020)",
+      "external_id": "https://openalex.org/W3008690242"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 211258744,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2002.09919; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "actual": "DOI: 10.48550/arxiv.2002.09919; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "external_id": "https://openalex.org/W3008690242"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 252780709,
+      "field": "authors_year",
+      "expected": "Zhengbao Jiang, Jun Araki, Haibo Ding, Graham Neubig (2022)",
+      "actual": "Zhengbao Jiang, Jun Araki, Haibo Ding, Graham Neubig (2022)",
+      "external_id": "https://openalex.org/W4304701418"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 252780709,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2210.04234; Source: arXiv (Cornell University); OA: green; Citations: 4",
+      "actual": "DOI: 10.48550/arxiv.2210.04234; Source: arXiv (Cornell University); OA: green; Citations: 4",
+      "external_id": "https://openalex.org/W4304701418"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 174801764,
+      "field": "authors_year",
+      "expected": "Sewon Min, Eric Wallace, Sameer Singh, Matt Gardner, Hannaneh Hajishirzi, Luke Zettlemoyer (2019)",
+      "actual": "Sewon Min, Eric Wallace, Sameer Singh, Matt Gardner, Hannaneh Hajishirzi, Luke Zettlemoyer (2019)",
+      "external_id": "https://openalex.org/W2948578352"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_006.json",
+      "corpusid": 174801764,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.1906.02900; Source: arXiv (Cornell University); OA: green; Citations: 17",
+      "actual": "DOI: 10.48550/arxiv.1906.02900; Source: arXiv (Cornell University); OA: green; Citations: 17",
+      "external_id": "https://openalex.org/W2948578352"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 247593812,
+      "field": "authors_year",
+      "expected": "Matthias Hagen, Maik Fröbe, Artur Jurk, Martin Potthast (2022)",
+      "actual": "Matthias Hagen, Maik Fröbe, Artur Jurk, Martin Potthast (2022)",
+      "external_id": "https://openalex.org/W4221143362"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 247593812,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2203.10282; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "actual": "DOI: 10.48550/arxiv.2203.10282; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "external_id": "https://openalex.org/W4221143362"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 251402038,
+      "field": "authors_year",
+      "expected": "Benjamin Hättasch, Carsten Binnig (2022)",
+      "actual": "Benjamin Hättasch, Carsten Binnig (2022)",
+      "external_id": "https://openalex.org/W7160238419"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 251402038,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/3xjthqhgxf2v; Source: https://doi.org/10.63317/3xjthqhgxf2v; OA: gold; Citations: 0",
+      "actual": "DOI: 10.63317/3xjthqhgxf2v; Source: https://doi.org/10.63317/3xjthqhgxf2v; OA: gold; Citations: 0",
+      "external_id": "https://openalex.org/W7160238419"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 259376471,
+      "field": "authors_year",
+      "expected": "Vineet Saravanan, Steven Lloyd Wilson (2023)",
+      "actual": "Vineet Saravanan, Steven Lloyd Wilson (2023)",
+      "external_id": "https://openalex.org/W4385570020"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_007.json",
+      "corpusid": 259376471,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.semeval-1.225; Source: http://dx.doi.org/10.18653/v1/2023.semeval-1.225; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2023.semeval-1.225; Source: http://dx.doi.org/10.18653/v1/2023.semeval-1.225; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W4385570020"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_008.json",
+      "corpusid": 252846088,
+      "field": "authors_year",
+      "expected": "Ishan Jindal, Alexandre Rademaker, Nguyen Khoi Tran, Huaiyu Zhu, Hiroshi Kanayama, Marina Danilevsky, et al. (2022)",
+      "actual": "Ishan Jindal, Alexandre Rademaker, Nguyen Khoi Tran, Huaiyu Zhu, Hiroshi Kanayama, Marina Danilevsky, et al. (2022)",
+      "external_id": "https://openalex.org/W4306179294"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_008.json",
+      "corpusid": 252846088,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2210.06408; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "actual": "DOI: 10.48550/arxiv.2210.06408; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "external_id": "https://openalex.org/W4306179294"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_008.json",
+      "corpusid": 2331493,
+      "field": "authors_year",
+      "expected": "Chi-kiu Lo, Dekai Wu (2010)",
+      "actual": "Chi-kiu Lo, Dekai Wu (2010)",
+      "external_id": "https://openalex.org/W1559176553"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_008.json",
+      "corpusid": 2331493,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/2yzeaktk7a4u; Source: https://doi.org/10.63317/2yzeaktk7a4u; OA: gold; Citations: 12",
+      "actual": "DOI: 10.63317/2yzeaktk7a4u; Source: https://doi.org/10.63317/2yzeaktk7a4u; OA: gold; Citations: 12",
+      "external_id": "https://openalex.org/W1559176553"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 259833800,
+      "field": "authors_year",
+      "expected": "Vivi Năstase, Paola Merlo (2023)",
+      "actual": "Vivi Năstase, Paola Merlo (2023)",
+      "external_id": "https://openalex.org/W4385570517"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 259833800,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.repl4nlp-1.3; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.3; OA: gold; Citations: 1",
+      "actual": "DOI: 10.18653/v1/2023.repl4nlp-1.3; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.3; OA: gold; Citations: 1",
+      "external_id": "https://openalex.org/W4385570517"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 256105273,
+      "field": "authors_year",
+      "expected": "Rohan Pandey (2023)",
+      "actual": "Rohan Pandey (2023)",
+      "external_id": "https://openalex.org/W4317940169"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 256105273,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2301.08998; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "actual": "DOI: 10.48550/arxiv.2301.08998; Source: arXiv (Cornell University); OA: green; Citations: 0",
+      "external_id": "https://openalex.org/W4317940169"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 24461982,
+      "field": "authors_year",
+      "expected": "Alexis Conneau, Germán Kruszewski, Guillaume Lample, Loïc Barrault, Marco Baroni (2018)",
+      "actual": "Alexis Conneau, Germán Kruszewski, Guillaume Lample, Loïc Barrault, Marco Baroni (2018)",
+      "external_id": "https://openalex.org/W4292353911"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_009.json",
+      "corpusid": 24461982,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.1805.01070; Source: arXiv (Cornell University); OA: green; Citations: 7",
+      "actual": "DOI: 10.48550/arxiv.1805.01070; Source: arXiv (Cornell University); OA: green; Citations: 7",
+      "external_id": "https://openalex.org/W4292353911"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_010.json",
+      "corpusid": 53579036,
+      "field": "authors_year",
+      "expected": "JT Wolohan, Misato Hiraga, Atreyee Mukherjee, Zeeshan Ali Sayyed, Matthew Millard (2018)",
+      "actual": "JT Wolohan, Misato Hiraga, Atreyee Mukherjee, Zeeshan Ali Sayyed, Matthew Millard (2018)",
+      "external_id": "https://openalex.org/W2940818588"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_010.json",
+      "corpusid": 53579036,
+      "field": "source_or_doi",
+      "expected": "Source: https://www.aclweb.org/anthology/W18-4102; OA: closed; Citations: 64",
+      "actual": "Source: https://www.aclweb.org/anthology/W18-4102; OA: closed; Citations: 64",
+      "external_id": "https://openalex.org/W2940818588"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_010.json",
+      "corpusid": 605706,
+      "field": "authors_year",
+      "expected": "Andrew Yates, Arman Cohan, Nazli Goharian (2017)",
+      "actual": "Andrew Yates, Arman Cohan, Nazli Goharian (2017)",
+      "external_id": "https://openalex.org/W2753465613"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_010.json",
+      "corpusid": 605706,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/d17-1322; Source: https://doi.org/10.18653/v1/d17-1322; OA: gold; Citations: 19",
+      "actual": "DOI: 10.18653/v1/d17-1322; Source: https://doi.org/10.18653/v1/d17-1322; OA: gold; Citations: 19",
+      "external_id": "https://openalex.org/W2753465613"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 196180216,
+      "field": "authors_year",
+      "expected": "Hayate Iso, Yui Uehara, Tatsuya Ishigaki, Hiroshi Noji, Eiji Aramaki, Ichiro Kobayashi, et al. (2019)",
+      "actual": "Hayate Iso, Yui Uehara, Tatsuya Ishigaki, Hiroshi Noji, Eiji Aramaki, Ichiro Kobayashi, et al. (2019)",
+      "external_id": "https://openalex.org/W2953259607"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 196180216,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/p19-1202; Source: https://doi.org/10.18653/v1/p19-1202; OA: gold; Citations: 35",
+      "actual": "DOI: 10.18653/v1/p19-1202; Source: https://doi.org/10.18653/v1/p19-1202; OA: gold; Citations: 35",
+      "external_id": "https://openalex.org/W2953259607"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 253098066,
+      "field": "authors_year",
+      "expected": "Daniel Deutsch, Rotem Dror, Dan Roth (2022)",
+      "actual": "Daniel Deutsch, Rotem Dror, Dan Roth (2022)",
+      "external_id": "https://openalex.org/W4307311550"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 253098066,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2210.12563; Source: arXiv (Cornell University); OA: green; Citations: 1",
+      "actual": "DOI: 10.48550/arxiv.2210.12563; Source: arXiv (Cornell University); OA: green; Citations: 1",
+      "external_id": "https://openalex.org/W4307311550"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 252917728,
+      "field": "authors_year",
+      "expected": "Yuntian Deng, Volodymyr Kuleshov, Alexander M. Rush (2022)",
+      "actual": "Yuntian Deng, Volodymyr Kuleshov, Alexander M. Rush (2022)",
+      "external_id": "https://openalex.org/W4385573857"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_011.json",
+      "corpusid": 252917728,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.emnlp-main.815; Source: http://dx.doi.org/10.18653/v1/2022.emnlp-main.815; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2022.emnlp-main.815; Source: http://dx.doi.org/10.18653/v1/2022.emnlp-main.815; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W4385573857"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 237491889,
+      "field": "authors_year",
+      "expected": "Seonghyeon Ye, Jiseon Kim, Alice Oh (2021)",
+      "actual": "Seonghyeon Ye, Jiseon Kim, Alice Oh (2021)",
+      "external_id": "https://openalex.org/W3200655919"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 237491889,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.emnlp-main.138; Source: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing; OA: hybrid; Citations: 16",
+      "actual": "DOI: 10.18653/v1/2021.emnlp-main.138; Source: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing; OA: hybrid; Citations: 16",
+      "external_id": "https://openalex.org/W3200655919"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 258486921,
+      "field": "authors_year",
+      "expected": "Annie K. Lamar, Z. Ece Kaya (2023)",
+      "actual": "Annie K. Lamar, Z. Ece Kaya (2023)",
+      "external_id": "https://openalex.org/W4386566342"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 258486921,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.loresmt-1.8; Source: https://doi.org/10.18653/v1/2023.loresmt-1.8; OA: gold; Citations: 7",
+      "actual": "DOI: 10.18653/v1/2023.loresmt-1.8; Source: https://doi.org/10.18653/v1/2023.loresmt-1.8; OA: gold; Citations: 7",
+      "external_id": "https://openalex.org/W4386566342"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 248779925,
+      "field": "authors_year",
+      "expected": "Itsuki Okimura, Machel Reid, Makoto Kawano, Yutaka Matsuo (2022)",
+      "actual": "Itsuki Okimura, Machel Reid, Makoto Kawano, Yutaka Matsuo (2022)",
+      "external_id": "https://openalex.org/W4285285618"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_012.json",
+      "corpusid": 248779925,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.insights-1.12; Source: https://doi.org/10.18653/v1/2022.insights-1.12; OA: gold; Citations: 14",
+      "actual": "DOI: 10.18653/v1/2022.insights-1.12; Source: https://doi.org/10.18653/v1/2022.insights-1.12; OA: gold; Citations: 14",
+      "external_id": "https://openalex.org/W4285285618"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 248496439,
+      "field": "authors_year",
+      "expected": "Kun Zhou, Beichen Zhang, Xin Zhao, Ji-Rong Wen (2022)",
+      "actual": "Kun Zhou, Beichen Zhang, Xin Zhao, Ji-Rong Wen (2022)",
+      "external_id": "https://openalex.org/W4225385501"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 248496439,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.acl-long.423; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 101",
+      "actual": "DOI: 10.18653/v1/2022.acl-long.423; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 101",
+      "external_id": "https://openalex.org/W4225385501"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 222272463,
+      "field": "authors_year",
+      "expected": "Joshua Robinson, Ching-Yao Chuang, Suvrit Sra, Stefanie Jegelka (2020)",
+      "actual": "Joshua Robinson, Ching-Yao Chuang, Suvrit Sra, Stefanie Jegelka (2020)",
+      "external_id": "https://openalex.org/W3091940082"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 222272463,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2010.04592; Source: arXiv (Cornell University); OA: green; Citations: 37",
+      "actual": "DOI: 10.48550/arxiv.2010.04592; Source: arXiv (Cornell University); OA: green; Citations: 37",
+      "external_id": "https://openalex.org/W3091940082"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 246411155,
+      "field": "authors_year",
+      "expected": "Qiyu Wu, Chongyang Tao, Tao Shen, Can Xu, Xiubo Geng, Daxin Jiang (2022)",
+      "actual": "Qiyu Wu, Chongyang Tao, Tao Shen, Can Xu, Xiubo Geng, Daxin Jiang (2022)",
+      "external_id": "https://openalex.org/W4225671776"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_013.json",
+      "corpusid": 246411155,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2201.12093; Source: arXiv (Cornell University); OA: green; Citations: 1",
+      "actual": "DOI: 10.48550/arxiv.2201.12093; Source: arXiv (Cornell University); OA: green; Citations: 1",
+      "external_id": "https://openalex.org/W4225671776"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 250390607,
+      "field": "authors_year",
+      "expected": "Carla Perez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+      "actual": "Carla Perez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+      "external_id": "https://openalex.org/W4287889344"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 250390607,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.semeval-1.38; Source: Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022); OA: hybrid; Citations: 44",
+      "actual": "DOI: 10.18653/v1/2022.semeval-1.38; Source: Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022); OA: hybrid; Citations: 44",
+      "external_id": "https://openalex.org/W4287889344"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 226976077,
+      "field": "authors_year",
+      "expected": "Carla Pérez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2020)",
+      "actual": "Carla Pérez-Almendros, Luis Espinosa-Anke, Steven Schockaert (2020)",
+      "external_id": "https://openalex.org/W3104616942"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 226976077,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2011.08320; Source: arXiv (Cornell University); OA: green; Citations: 3",
+      "actual": "DOI: 10.48550/arxiv.2011.08320; Source: arXiv (Cornell University); OA: green; Citations: 3",
+      "external_id": "https://openalex.org/W3104616942"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 250141213,
+      "field": "authors_year",
+      "expected": "Carla Perez Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+      "actual": "Carla Perez Almendros, Luis Espinosa-Anke, Steven Schockaert (2022)",
+      "external_id": "https://openalex.org/W7160295793"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_014.json",
+      "corpusid": 250141213,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/28828gdna3y2; Source: https://doi.org/10.63317/28828gdna3y2; OA: gold; Citations: 0",
+      "actual": "DOI: 10.63317/28828gdna3y2; Source: https://doi.org/10.63317/28828gdna3y2; OA: gold; Citations: 0",
+      "external_id": "https://openalex.org/W7160295793"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 257920051,
+      "field": "authors_year",
+      "expected": "Zeqiu Wu, Ryu Parish, Hao Cheng, Sewon Min, Prithviraj Ammanabrolu, Mari Ostendorf, et al. (2022)",
+      "actual": "Zeqiu Wu, Ryu Parish, Hao Cheng, Sewon Min, Prithviraj Ammanabrolu, Mari Ostendorf, et al. (2022)",
+      "external_id": "https://openalex.org/W4283834614"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 257920051,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2207.00746; Source: arXiv (Cornell University); OA: green; Citations: 6",
+      "actual": "DOI: 10.48550/arxiv.2207.00746; Source: arXiv (Cornell University); OA: green; Citations: 6",
+      "external_id": "https://openalex.org/W4283834614"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 218487043,
+      "field": "authors_year",
+      "expected": "Jon Ander Campos, Arantxa Otegi, Aitor Soroa, Jan Deriu, Mark Cieliebak, Eneko Agirre (2020)",
+      "actual": "Jon Ander Campos, Arantxa Otegi, Aitor Soroa, Jan Deriu, Mark Cieliebak, Eneko Agirre (2020)",
+      "external_id": "https://openalex.org/W3023614204"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 218487043,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2020.acl-main.652; Source: https://doi.org/10.18653/v1/2020.acl-main.652; OA: gold; Citations: 2",
+      "actual": "DOI: 10.18653/v1/2020.acl-main.652; Source: https://doi.org/10.18653/v1/2020.acl-main.652; OA: gold; Citations: 2",
+      "external_id": "https://openalex.org/W3023614204"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 253098861,
+      "field": "authors_year",
+      "expected": "Gangwoo Kim, Sungdong Kim, Kang Min Yoo, Jaewoo Kang (2022)",
+      "actual": "Gangwoo Kim, Sungdong Kim, Kang Min Yoo, Jaewoo Kang (2022)",
+      "external_id": "https://openalex.org/W4307307234"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_015.json",
+      "corpusid": 253098861,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2205.12609; Source: arXiv (Cornell University); OA: green; Citations: 3",
+      "actual": "DOI: 10.48550/arxiv.2205.12609; Source: arXiv (Cornell University); OA: green; Citations: 3",
+      "external_id": "https://openalex.org/W4307307234"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_016.json",
+      "corpusid": 216914087,
+      "field": "authors_year",
+      "expected": "Giuseppe Russo, Nora Hollenstein, Claudiu Musat, Ce Zhang (2020)",
+      "actual": "Giuseppe Russo, Nora Hollenstein, Claudiu Musat, Ce Zhang (2020)",
+      "external_id": "https://openalex.org/W3021481089"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_016.json",
+      "corpusid": 216914087,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.3929/ethz-b-000464810; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "actual": "DOI: 10.3929/ethz-b-000464810; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "external_id": "https://openalex.org/W3021481089"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_016.json",
+      "corpusid": 1505336,
+      "field": "authors_year",
+      "expected": "Charles J. Fillmore, Collin F. Baker, H. Sato (2002)",
+      "actual": "Charles J. Fillmore, Collin F. Baker, H. Sato (2002)",
+      "external_id": "https://openalex.org/W1580356017"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_016.json",
+      "corpusid": 1505336,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/42tfhpzywopx; Source: https://doi.org/10.63317/42tfhpzywopx; OA: gold; Citations: 81",
+      "actual": "DOI: 10.63317/42tfhpzywopx; Source: https://doi.org/10.63317/42tfhpzywopx; OA: gold; Citations: 81",
+      "external_id": "https://openalex.org/W1580356017"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 17034927,
+      "field": "authors_year",
+      "expected": "Yang Liu, Kang Liu, Liheng Xu, Jun Zhao (2014)",
+      "actual": "Yang Liu, Kang Liu, Liheng Xu, Jun Zhao (2014)",
+      "external_id": "https://openalex.org/W2251315883"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 17034927,
+      "field": "source_or_doi",
+      "expected": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.656.4673; OA: closed; Citations: 47",
+      "actual": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.656.4673; OA: closed; Citations: 47",
+      "external_id": "https://openalex.org/W2251315883"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 231879840,
+      "field": "authors_year",
+      "expected": "Markus Eberts, Adrian Ulges (2021)",
+      "actual": "Markus Eberts, Adrian Ulges (2021)",
+      "external_id": "https://openalex.org/W3127672556"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 231879840,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.eacl-main.319; Source: https://doi.org/10.18653/v1/2021.eacl-main.319; OA: gold; Citations: 1",
+      "actual": "DOI: 10.18653/v1/2021.eacl-main.319; Source: https://doi.org/10.18653/v1/2021.eacl-main.319; OA: gold; Citations: 1",
+      "external_id": "https://openalex.org/W3127672556"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 236477597,
+      "field": "authors_year",
+      "expected": "Zhenyu Zhang, Bowen Yu, Xiaobo Shu, Mengge Xue, Tingwen Liu, Li Guo (2021)",
+      "actual": "Zhenyu Zhang, Bowen Yu, Xiaobo Shu, Mengge Xue, Tingwen Liu, Li Guo (2021)",
+      "external_id": "https://openalex.org/W3173682066"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_017.json",
+      "corpusid": 236477597,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.findings-acl.8; Source: https://doi.org/10.18653/v1/2021.findings-acl.8; OA: gold; Citations: 5",
+      "actual": "DOI: 10.18653/v1/2021.findings-acl.8; Source: https://doi.org/10.18653/v1/2021.findings-acl.8; OA: gold; Citations: 5",
+      "external_id": "https://openalex.org/W3173682066"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 5282346,
+      "field": "authors_year",
+      "expected": "Min Zhang, Jie Zhang, Jian Su, Guodong Zhou (2006)",
+      "actual": "Min Zhang, Jie Zhang, Jian Su, Guodong Zhou (2006)",
+      "external_id": "https://openalex.org/W2152269015"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 5282346,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.3115/1220175.1220279; Source: https://doi.org/10.3115/1220175.1220279; OA: gold; Citations: 243",
+      "actual": "DOI: 10.3115/1220175.1220279; Source: https://doi.org/10.3115/1220175.1220279; OA: gold; Citations: 243",
+      "external_id": "https://openalex.org/W2152269015"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 25169775,
+      "field": "authors_year",
+      "expected": "Kathrin Eichler, Feiyu Xu, Hans Uszkoreit, Leonhard Hennig, Sebastian Krause (2016)",
+      "actual": "Kathrin Eichler, Feiyu Xu, Hans Uszkoreit, Leonhard Hennig, Sebastian Krause (2016)",
+      "external_id": "https://openalex.org/W2578439443"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 25169775,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/4mu6z5o3dt3n; Source: https://doi.org/10.63317/4mu6z5o3dt3n; OA: closed; Citations: 2",
+      "actual": "DOI: 10.63317/4mu6z5o3dt3n; Source: https://doi.org/10.63317/4mu6z5o3dt3n; OA: closed; Citations: 2",
+      "external_id": "https://openalex.org/W2578439443"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 13205080,
+      "field": "authors_year",
+      "expected": "Hongzhi Xu, Changjian Hu, Guoyang Shen (2009)",
+      "actual": "Hongzhi Xu, Changjian Hu, Guoyang Shen (2009)",
+      "external_id": "https://openalex.org/W956805140"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_018.json",
+      "corpusid": 13205080,
+      "field": "source_or_doi",
+      "expected": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.957.8753; OA: green; Citations: 6",
+      "actual": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.957.8753; OA: green; Citations: 6",
+      "external_id": "https://openalex.org/W956805140"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_019.json",
+      "corpusid": 248780466,
+      "field": "authors_year",
+      "expected": "C. A. Johnson (2022)",
+      "actual": "C. A. Johnson (2022)",
+      "external_id": "https://openalex.org/W4285226496"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_019.json",
+      "corpusid": 248780466,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.repl4nlp-1.17; Source: https://doi.org/10.18653/v1/2022.repl4nlp-1.17; OA: gold; Citations: 2",
+      "actual": "DOI: 10.18653/v1/2022.repl4nlp-1.17; Source: https://doi.org/10.18653/v1/2022.repl4nlp-1.17; OA: gold; Citations: 2",
+      "external_id": "https://openalex.org/W4285226496"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_019.json",
+      "corpusid": 192530110,
+      "field": "authors_year",
+      "expected": "Elizabeth Clark, Aslı Çelikyılmaz, Noah A. Smith (2019)",
+      "actual": "Elizabeth Clark, Aslı Çelikyılmaz, Noah A. Smith (2019)",
+      "external_id": "https://openalex.org/W2947771965"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_019.json",
+      "corpusid": 192530110,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/p19-1264; Source: https://doi.org/10.18653/v1/p19-1264; OA: gold; Citations: 143",
+      "actual": "DOI: 10.18653/v1/p19-1264; Source: https://doi.org/10.18653/v1/p19-1264; OA: gold; Citations: 143",
+      "external_id": "https://openalex.org/W2947771965"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 6959594,
+      "field": "authors_year",
+      "expected": "Marie Candito, Pascal Amsili, Lucie Barque, Farah Benamara, Gaël de Chalendar, Marianne Djemaa, et al. (2014)",
+      "actual": "Marie Candito, Pascal Amsili, Lucie Barque, Farah Benamara, Gaël de Chalendar, Marianne Djemaa, et al. (2014)",
+      "external_id": "https://openalex.org/W101138681"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 6959594,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/2b9njb53tzvv; Source: https://doi.org/10.63317/2b9njb53tzvv; OA: gold; Citations: 39",
+      "actual": "DOI: 10.63317/2b9njb53tzvv; Source: https://doi.org/10.63317/2b9njb53tzvv; OA: gold; Citations: 39",
+      "external_id": "https://openalex.org/W101138681"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 30530226,
+      "field": "authors_year",
+      "expected": "Laure Vieu, Philippe Müller, Marie Candito, Marianne Djemaa (2016)",
+      "actual": "Laure Vieu, Philippe Müller, Marie Candito, Marianne Djemaa (2016)",
+      "external_id": "https://openalex.org/W2577260496"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 30530226,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/4bddq2o7ouhf; Source: https://doi.org/10.63317/4bddq2o7ouhf; OA: gold; Citations: 6",
+      "actual": "DOI: 10.63317/4bddq2o7ouhf; Source: https://doi.org/10.63317/4bddq2o7ouhf; OA: gold; Citations: 6",
+      "external_id": "https://openalex.org/W2577260496"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 983587,
+      "field": "authors_year",
+      "expected": "Marianne Djemaa, Marie Candito, Philippe Müller, Laure Vieu (2016)",
+      "actual": "Marianne Djemaa, Marie Candito, Philippe Müller, Laure Vieu (2016)",
+      "external_id": "https://openalex.org/W2571959413"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_020.json",
+      "corpusid": 983587,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/35a894vi8hcr; Source: https://doi.org/10.63317/35a894vi8hcr; OA: gold; Citations: 7",
+      "actual": "DOI: 10.63317/35a894vi8hcr; Source: https://doi.org/10.63317/35a894vi8hcr; OA: gold; Citations: 7",
+      "external_id": "https://openalex.org/W2571959413"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 211205183,
+      "field": "authors_year",
+      "expected": "Adam P. Roberts, Colin Raffel, Noam Shazeer (2020)",
+      "actual": "Adam P. Roberts, Colin Raffel, Noam Shazeer (2020)",
+      "external_id": "https://openalex.org/W3008686018"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 211205183,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2020.emnlp-main.437; Source: https://doi.org/10.18653/v1/2020.emnlp-main.437; OA: gold; Citations: 46",
+      "actual": "DOI: 10.18653/v1/2020.emnlp-main.437; Source: https://doi.org/10.18653/v1/2020.emnlp-main.437; OA: gold; Citations: 46",
+      "external_id": "https://openalex.org/W3008686018"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 12164644,
+      "field": "authors_year",
+      "expected": "Sudha Rao (2017)",
+      "actual": "Sudha Rao (2017)",
+      "external_id": "https://openalex.org/W2740992004"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 12164644,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/p17-3006; Source: https://doi.org/10.18653/v1/p17-3006; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/p17-3006; Source: https://doi.org/10.18653/v1/p17-3006; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W2740992004"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 249926985,
+      "field": "authors_year",
+      "expected": "Devendra Singh Sachan, Lewis, Mike, Dani Yogatama, Luke Zettlemoyer, Joëlle Pineau, Manzil Zaheer (2022)",
+      "actual": "Devendra Singh Sachan, Lewis, Mike, Dani Yogatama, Luke Zettlemoyer, Joëlle Pineau, Manzil Zaheer (2022)",
+      "external_id": "https://openalex.org/W4283388898"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_021.json",
+      "corpusid": 249926985,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.2206.10658; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "actual": "DOI: 10.48550/arxiv.2206.10658; Source: arXiv (Cornell University); OA: green; Citations: 2",
+      "external_id": "https://openalex.org/W4283388898"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 7397938,
+      "field": "authors_year",
+      "expected": "Saif M. Mohammad (2018)",
+      "actual": "Saif M. Mohammad (2018)",
+      "external_id": "https://openalex.org/W2611755161"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 7397938,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.63317/58igjzkfg9k5; Source: https://doi.org/10.63317/58igjzkfg9k5; OA: gold; Citations: 27",
+      "actual": "DOI: 10.63317/58igjzkfg9k5; Source: https://doi.org/10.63317/58igjzkfg9k5; OA: gold; Citations: 27",
+      "external_id": "https://openalex.org/W2611755161"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 5203085,
+      "field": "authors_year",
+      "expected": "Marina Sokolova, Victoria Bobicev (2009)",
+      "actual": "Marina Sokolova, Victoria Bobicev (2009)",
+      "external_id": "https://openalex.org/W2250988804"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 5203085,
+      "field": "source_or_doi",
+      "expected": "Source: Recent Advances in Natural Language Processing; OA: closed; Citations: 16",
+      "actual": "Source: Recent Advances in Natural Language Processing; OA: closed; Citations: 16",
+      "external_id": "https://openalex.org/W2250988804"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 233364964,
+      "field": "authors_year",
+      "expected": "Sotiris Lamprinidis, Federico Bianchi, Daniel Hardt, Dirk Hovy (2021)",
+      "actual": "Sotiris Lamprinidis, Federico Bianchi, Daniel Hardt, Dirk Hovy (2021)",
+      "external_id": "https://openalex.org/W3153519660"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_022.json",
+      "corpusid": 233364964,
+      "field": "source_or_doi",
+      "expected": "Source: CBS Research Portal (Copenhagen Business School); OA: green; Citations: 20",
+      "actual": "Source: CBS Research Portal (Copenhagen Business School); OA: green; Citations: 20",
+      "external_id": "https://openalex.org/W3153519660"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 236477930,
+      "field": "authors_year",
+      "expected": "Artur Baranowski, Nico Hochgeschwender (2021)",
+      "actual": "Artur Baranowski, Nico Hochgeschwender (2021)",
+      "external_id": "https://openalex.org/W3173510624"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 236477930,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.findings-acl.108; Source: https://doi.org/10.18653/v1/2021.findings-acl.108; OA: gold; Citations: 6",
+      "actual": "DOI: 10.18653/v1/2021.findings-acl.108; Source: https://doi.org/10.18653/v1/2021.findings-acl.108; OA: gold; Citations: 6",
+      "external_id": "https://openalex.org/W3173510624"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 226262340,
+      "field": "authors_year",
+      "expected": "Jiaqi Guo, Qian Liu, Jian–Guang Lou, Zhenwen Li, Xueqing Liu, Tao Xie, et al. (2020)",
+      "actual": "Jiaqi Guo, Qian Liu, Jian–Guang Lou, Zhenwen Li, Xueqing Liu, Tao Xie, et al. (2020)",
+      "external_id": "https://openalex.org/W3106356412"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 226262340,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2020.emnlp-main.118; Source: https://doi.org/10.18653/v1/2020.emnlp-main.118; OA: gold; Citations: 24",
+      "actual": "DOI: 10.18653/v1/2020.emnlp-main.118; Source: https://doi.org/10.18653/v1/2020.emnlp-main.118; OA: gold; Citations: 24",
+      "external_id": "https://openalex.org/W3106356412"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 15412473,
+      "field": "authors_year",
+      "expected": "Li Dong, Mirella Lapata (2016)",
+      "actual": "Li Dong, Mirella Lapata (2016)",
+      "external_id": "https://openalex.org/W2224454470"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_023.json",
+      "corpusid": 15412473,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.1601.01280; Source: arXiv (Cornell University); OA: green; Citations: 120",
+      "actual": "DOI: 10.48550/arxiv.1601.01280; Source: arXiv (Cornell University); OA: green; Citations: 120",
+      "external_id": "https://openalex.org/W2224454470"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 248779986,
+      "field": "authors_year",
+      "expected": "Yuan Yao, Bowen Dong, Ao Zhang, Zhengyan Zhang, Ruobing Xie, Zhiyuan Liu, et al. (2022)",
+      "actual": "Yuan Yao, Bowen Dong, Ao Zhang, Zhengyan Zhang, Ruobing Xie, Zhiyuan Liu, et al. (2022)",
+      "external_id": "https://openalex.org/W4281479158"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 248779986,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.findings-acl.273; Source: Findings of the Association for Computational Linguistics: ACL 2022; OA: hybrid; Citations: 37",
+      "actual": "DOI: 10.18653/v1/2022.findings-acl.273; Source: Findings of the Association for Computational Linguistics: ACL 2022; OA: hybrid; Citations: 37",
+      "external_id": "https://openalex.org/W4281479158"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 259833809,
+      "field": "authors_year",
+      "expected": "Wenbo Zhao, Arpit Gupta, Tagyoung Chung, Jing Huang (2023)",
+      "actual": "Wenbo Zhao, Arpit Gupta, Tagyoung Chung, Jing Huang (2023)",
+      "external_id": "https://openalex.org/W4385571683"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 259833809,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.repl4nlp-1.10; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.10; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2023.repl4nlp-1.10; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.10; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W4385571683"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 253761978,
+      "field": "authors_year",
+      "expected": "Sicheng Yang, Dandan Song (2022)",
+      "actual": "Sicheng Yang, Dandan Song (2022)",
+      "external_id": "https://openalex.org/W4404784020"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_024.json",
+      "corpusid": 253761978,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.aacl-main.78; Source: https://doi.org/10.18653/v1/2022.aacl-main.78; OA: gold; Citations: 5",
+      "actual": "DOI: 10.18653/v1/2022.aacl-main.78; Source: https://doi.org/10.18653/v1/2022.aacl-main.78; OA: gold; Citations: 5",
+      "external_id": "https://openalex.org/W4404784020"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 155089628,
+      "field": "authors_year",
+      "expected": "Elena Voita, Rico Sennrich, Ivan Titov (2019)",
+      "actual": "Elena Voita, Rico Sennrich, Ivan Titov (2019)",
+      "external_id": "https://openalex.org/W2945719503"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 155089628,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/p19-1116; Source: https://doi.org/10.18653/v1/p19-1116; OA: gold; Citations: 17",
+      "actual": "DOI: 10.18653/v1/p19-1116; Source: https://doi.org/10.18653/v1/p19-1116; OA: gold; Citations: 17",
+      "external_id": "https://openalex.org/W2945719503"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 237513464,
+      "field": "authors_year",
+      "expected": "Patrick Fernandes, Kayo Yin, Emmy Liu, André F. T. Martins, Graham Neubig (2023)",
+      "actual": "Patrick Fernandes, Kayo Yin, Emmy Liu, André F. T. Martins, Graham Neubig (2023)",
+      "external_id": "https://openalex.org/W4385565605"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 237513464,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.acl-long.36; Source: https://doi.org/10.18653/v1/2023.acl-long.36; OA: gold; Citations: 10",
+      "actual": "DOI: 10.18653/v1/2023.acl-long.36; Source: https://doi.org/10.18653/v1/2023.acl-long.36; OA: gold; Citations: 10",
+      "external_id": "https://openalex.org/W4385565605"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 6215504,
+      "field": "authors_year",
+      "expected": "Rob Voigt, Dan Jurafsky (2012)",
+      "actual": "Rob Voigt, Dan Jurafsky (2012)",
+      "external_id": "https://openalex.org/W2251187191"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_025.json",
+      "corpusid": 6215504,
+      "field": "source_or_doi",
+      "expected": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.9936; OA: closed; Citations: 55",
+      "actual": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.9936; OA: closed; Citations: 55",
+      "external_id": "https://openalex.org/W2251187191"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 256461358,
+      "field": "authors_year",
+      "expected": "Nora Alturayeif, Hamzah Luqman, Moataz Ahmed (2022)",
+      "actual": "Nora Alturayeif, Hamzah Luqman, Moataz Ahmed (2022)",
+      "external_id": "https://openalex.org/W4385567046"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 256461358,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2022.wanlp-1.16; Source: https://doi.org/10.18653/v1/2022.wanlp-1.16; OA: gold; Citations: 20",
+      "actual": "DOI: 10.18653/v1/2022.wanlp-1.16; Source: https://doi.org/10.18653/v1/2022.wanlp-1.16; OA: gold; Citations: 20",
+      "external_id": "https://openalex.org/W4385567046"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 233189521,
+      "field": "authors_year",
+      "expected": "Younes Samih, Kareem Darwish (2021)",
+      "actual": "Younes Samih, Kareem Darwish (2021)",
+      "external_id": "https://openalex.org/W3154545600"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 233189521,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.eacl-main.227; Source: https://doi.org/10.18653/v1/2021.eacl-main.227; OA: gold; Citations: 30",
+      "actual": "DOI: 10.18653/v1/2021.eacl-main.227; Source: https://doi.org/10.18653/v1/2021.eacl-main.227; OA: gold; Citations: 30",
+      "external_id": "https://openalex.org/W3154545600"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 236477909,
+      "field": "authors_year",
+      "expected": "Yingjie Li, Tiberiu Sosea, Aditya Sawant, Ajith Jayaraman Nair, Diana Inkpen, Cornelia Caragea (2021)",
+      "actual": "Yingjie Li, Tiberiu Sosea, Aditya Sawant, Ajith Jayaraman Nair, Diana Inkpen, Cornelia Caragea (2021)",
+      "external_id": "https://openalex.org/W3173838631"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_026.json",
+      "corpusid": 236477909,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.findings-acl.208; Source: https://doi.org/10.18653/v1/2021.findings-acl.208; OA: gold; Citations: 84",
+      "actual": "DOI: 10.18653/v1/2021.findings-acl.208; Source: https://doi.org/10.18653/v1/2021.findings-acl.208; OA: gold; Citations: 84",
+      "external_id": "https://openalex.org/W3173838631"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 14515265,
+      "field": "authors_year",
+      "expected": "Yevgeni Berzak, Chie Nakamura, Suzanne Flynn, Boris Katz (2017)",
+      "actual": "Yevgeni Berzak, Chie Nakamura, Suzanne Flynn, Boris Katz (2017)",
+      "external_id": "https://openalex.org/W2609504523"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 14515265,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/p17-1050; Source: https://doi.org/10.18653/v1/p17-1050; OA: gold; Citations: 1",
+      "actual": "DOI: 10.18653/v1/p17-1050; Source: https://doi.org/10.18653/v1/p17-1050; OA: gold; Citations: 1",
+      "external_id": "https://openalex.org/W2609504523"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 5024893,
+      "field": "authors_year",
+      "expected": "Yevgeni Berzak, Boris Katz, Roger Lévy (2018)",
+      "actual": "Yevgeni Berzak, Boris Katz, Roger Lévy (2018)",
+      "external_id": "https://openalex.org/W2798281106"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 5024893,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/n18-1180; Source: https://doi.org/10.18653/v1/n18-1180; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/n18-1180; Source: https://doi.org/10.18653/v1/n18-1180; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W2798281106"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 259370526,
+      "field": "authors_year",
+      "expected": "Lina Skerath, Paulina Toborek, Anita Zielińska, Maria Barrett, Rob van der Goot (2023)",
+      "actual": "Lina Skerath, Paulina Toborek, Anita Zielińska, Maria Barrett, Rob van der Goot (2023)",
+      "external_id": "https://openalex.org/W4385570188"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_027.json",
+      "corpusid": 259370526,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2023.acl-srw.26; Source: https://doi.org/10.18653/v1/2023.acl-srw.26; OA: gold; Citations: 2",
+      "actual": "DOI: 10.18653/v1/2023.acl-srw.26; Source: https://doi.org/10.18653/v1/2023.acl-srw.26; OA: gold; Citations: 2",
+      "external_id": "https://openalex.org/W4385570188"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_028.json",
+      "corpusid": 202773799,
+      "field": "authors_year",
+      "expected": "Jingjing Xu, Yuechen Wang, Duyu Tang, Nan Duan, Pengcheng Yang, Qi Zeng, et al. (2019)",
+      "actual": "Jingjing Xu, Yuechen Wang, Duyu Tang, Nan Duan, Pengcheng Yang, Qi Zeng, et al. (2019)",
+      "external_id": "https://openalex.org/W2971169991"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_028.json",
+      "corpusid": 202773799,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/d19-1172; Source: https://doi.org/10.18653/v1/d19-1172; OA: gold; Citations: 49",
+      "actual": "DOI: 10.18653/v1/d19-1172; Source: https://doi.org/10.18653/v1/d19-1172; OA: gold; Citations: 49",
+      "external_id": "https://openalex.org/W2971169991"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_028.json",
+      "corpusid": 236486314,
+      "field": "authors_year",
+      "expected": "Michael Roth, Talita Anthonio (2021)",
+      "actual": "Michael Roth, Talita Anthonio (2021)",
+      "external_id": "https://openalex.org/W3185038183"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_028.json",
+      "corpusid": 236486314,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/2021.unimplicit-1.4; Source: https://doi.org/10.18653/v1/2021.unimplicit-1.4; OA: gold; Citations: 4",
+      "actual": "DOI: 10.18653/v1/2021.unimplicit-1.4; Source: https://doi.org/10.18653/v1/2021.unimplicit-1.4; OA: gold; Citations: 4",
+      "external_id": "https://openalex.org/W3185038183"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 10318045,
+      "field": "authors_year",
+      "expected": "Anthony Fader, Stephen Soderland, Oren Etzioni (2011)",
+      "actual": "Anthony Fader, Stephen Soderland, Oren Etzioni (2011)",
+      "external_id": "https://openalex.org/W2167187514"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 10318045,
+      "field": "source_or_doi",
+      "expected": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.220.8889; OA: closed; Citations: 1152",
+      "actual": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.220.8889; OA: closed; Citations: 1152",
+      "external_id": "https://openalex.org/W2167187514"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 49215220,
+      "field": "authors_year",
+      "expected": "Christina Niklaus, Matthias Cetto, André Freitas, Siegfried Handschuh (2018)",
+      "actual": "Christina Niklaus, Matthias Cetto, André Freitas, Siegfried Handschuh (2018)",
+      "external_id": "https://openalex.org/W2808121837"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 49215220,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.48550/arxiv.1806.05599; Source: Research Explorer (The University of Manchester); OA: green; Citations: 9",
+      "actual": "DOI: 10.48550/arxiv.1806.05599; Source: Research Explorer (The University of Manchester); OA: green; Citations: 9",
+      "external_id": "https://openalex.org/W2808121837"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 52811129,
+      "field": "authors_year",
+      "expected": "William Léchelle, Fabrizio Gotti, Phillippe Langlais (2019)",
+      "actual": "William Léchelle, Fabrizio Gotti, Phillippe Langlais (2019)",
+      "external_id": "https://openalex.org/W2890045624"
+    },
+    {
+      "ok": true,
+      "path": "reports\\m050\\enriched\\litsearch_029.json",
+      "corpusid": 52811129,
+      "field": "source_or_doi",
+      "expected": "DOI: 10.18653/v1/w19-4002; Source: https://doi.org/10.18653/v1/w19-4002; OA: gold; Citations: 2",
+      "actual": "DOI: 10.18653/v1/w19-4002; Source: https://doi.org/10.18653/v1/w19-4002; OA: gold; Citations: 2",
+      "external_id": "https://openalex.org/W2890045624"
+    }
+  ],
+  "cache_replay": {
+    "enriched_hashes": {
+      "litsearch_000.json": "3cc84c9e93f3fe35493d4c5fed7c1aaa03095597357ac57390a7a3ae15c22fb8",
+      "litsearch_001.json": "07ee1efe3895f22f4436f0847f1e2c5c128b31b46c9781986319d70ca369532b",
+      "litsearch_002.json": "bbe91648cc6fe1e7a723721133ae82ee4f255ff2052e974340d395a7e4272b2c",
+      "litsearch_003.json": "ba4b28a100bda9487d1b2c5c9eab1da5925cb6154ea9cf3e4ff4b72cd73538ea",
+      "litsearch_004.json": "40a3ea7abddfa701269b851a53f8da21463e2cf7db42c03452c474c0c0cab7d1",
+      "litsearch_005.json": "2346bb55535826b64889674ced84901dd34196715379c8a6c4978411dfe9f2db",
+      "litsearch_006.json": "e719979e88a9da49a1bf09fb9737996d86d8aea181beef251695a63affea75c3",
+      "litsearch_007.json": "54b814044c0d296915ec90d3dc8dc42bded04c63594025d1924e566b1c487008",
+      "litsearch_008.json": "ab7c0561c1c557fe87ad551afd138f9dca696a25336eddb4e985af65da2b546d",
+      "litsearch_009.json": "981209561ada17b6207466f68e35520fb0719c44f72533c82c3e1477ab7dac63",
+      "litsearch_010.json": "26e45f30669bb012216397c0805116d46c5e871082436257324815a27b86b8e2",
+      "litsearch_011.json": "6e12bc50ca61ffc8aefd0abd550a8cbdb27491e872425927d92de6b2b1455afd",
+      "litsearch_012.json": "bce40da3f1cb7938307467afc449ff1cc8e02377d476a64451006df23551a9ff",
+      "litsearch_013.json": "46babac2f0ca986e5f460f3e59bbbc89f9bd6ee750db961e336a6524a3bf6221",
+      "litsearch_014.json": "61b11a409ef1813dd3f4a520260d05fadcbaa99c75ef28dee9237e290299b154",
+      "litsearch_015.json": "6d7f244ea3621c9403f5788d2751faa1cfa4d25faa5ba9aa0ebbfa711b6888fa",
+      "litsearch_016.json": "7bc8528e911421fc709dc998c6931578987230499c0fefbb6ccc3228aa7baac2",
+      "litsearch_017.json": "f5292befa55bb72dd6993f2aca1302d8681464e5ad5cf950647960a1e45b825f",
+      "litsearch_018.json": "293b556eab1fcb283b58c6ade314cf12ea152ff605ca5c0564da02fbe69d3905",
+      "litsearch_019.json": "156a2b490f2095802dd98d9e0f76bdd3f0c0986d1448be9be43f3384b506bacf",
+      "litsearch_020.json": "5d3de7e24c2df80990be68404cc0582c90bb05c6b116410d5c59b63fe0e17ddf",
+      "litsearch_021.json": "c866c03d92aa246db203850ef22af48e916c3afe828dddbe137c36c527cc0311",
+      "litsearch_022.json": "ddff19cf254bb0f871e8050898287fbe7783be523277424dd4416207dca63abc",
+      "litsearch_023.json": "b7c53d6dd1f195ef403ba712940afbebacc14d7009cac9235be96a0b806b1b30",
+      "litsearch_024.json": "f571b0bebc93e3b5053d273c0e545c7e248707fd63d570fe7888a5cf8e1f7848",
+      "litsearch_025.json": "ecec1edda1cc15f81c0a337a2eecfe0e0f101cdc410657419897146c67868fc9",
+      "litsearch_026.json": "383637e4066644caf3594dce6499420d87a566d75726c947ce7dd756944f656f",
+      "litsearch_027.json": "ffce170b98bb429cdc031fe9cc40931f6a56e2c4a2190586374cca3d2ec74bbb",
+      "litsearch_028.json": "38cf20c4ff7d4d7b8ba6561e6cee320cd8014695d9a7cb970578989a3a23ae96",
+      "litsearch_029.json": "7d318c2ed37a93c524cf965628ffc68870280e2c556241c4fca1102bfd2dd859"
+    },
+    "offline_replay_hashes": {
+      "litsearch_000.json": "3cc84c9e93f3fe35493d4c5fed7c1aaa03095597357ac57390a7a3ae15c22fb8",
+      "litsearch_001.json": "07ee1efe3895f22f4436f0847f1e2c5c128b31b46c9781986319d70ca369532b",
+      "litsearch_002.json": "bbe91648cc6fe1e7a723721133ae82ee4f255ff2052e974340d395a7e4272b2c",
+      "litsearch_003.json": "ba4b28a100bda9487d1b2c5c9eab1da5925cb6154ea9cf3e4ff4b72cd73538ea",
+      "litsearch_004.json": "40a3ea7abddfa701269b851a53f8da21463e2cf7db42c03452c474c0c0cab7d1",
+      "litsearch_005.json": "2346bb55535826b64889674ced84901dd34196715379c8a6c4978411dfe9f2db",
+      "litsearch_006.json": "e719979e88a9da49a1bf09fb9737996d86d8aea181beef251695a63affea75c3",
+      "litsearch_007.json": "54b814044c0d296915ec90d3dc8dc42bded04c63594025d1924e566b1c487008",
+      "litsearch_008.json": "ab7c0561c1c557fe87ad551afd138f9dca696a25336eddb4e985af65da2b546d",
+      "litsearch_009.json": "981209561ada17b6207466f68e35520fb0719c44f72533c82c3e1477ab7dac63",
+      "litsearch_010.json": "26e45f30669bb012216397c0805116d46c5e871082436257324815a27b86b8e2",
+      "litsearch_011.json": "6e12bc50ca61ffc8aefd0abd550a8cbdb27491e872425927d92de6b2b1455afd",
+      "litsearch_012.json": "bce40da3f1cb7938307467afc449ff1cc8e02377d476a64451006df23551a9ff",
+      "litsearch_013.json": "46babac2f0ca986e5f460f3e59bbbc89f9bd6ee750db961e336a6524a3bf6221",
+      "litsearch_014.json": "61b11a409ef1813dd3f4a520260d05fadcbaa99c75ef28dee9237e290299b154",
+      "litsearch_015.json": "6d7f244ea3621c9403f5788d2751faa1cfa4d25faa5ba9aa0ebbfa711b6888fa",
+      "litsearch_016.json": "7bc8528e911421fc709dc998c6931578987230499c0fefbb6ccc3228aa7baac2",
+      "litsearch_017.json": "f5292befa55bb72dd6993f2aca1302d8681464e5ad5cf950647960a1e45b825f",
+      "litsearch_018.json": "293b556eab1fcb283b58c6ade314cf12ea152ff605ca5c0564da02fbe69d3905",
+      "litsearch_019.json": "156a2b490f2095802dd98d9e0f76bdd3f0c0986d1448be9be43f3384b506bacf",
+      "litsearch_020.json": "5d3de7e24c2df80990be68404cc0582c90bb05c6b116410d5c59b63fe0e17ddf",
+      "litsearch_021.json": "c866c03d92aa246db203850ef22af48e916c3afe828dddbe137c36c527cc0311",
+      "litsearch_022.json": "ddff19cf254bb0f871e8050898287fbe7783be523277424dd4416207dca63abc",
+      "litsearch_023.json": "b7c53d6dd1f195ef403ba712940afbebacc14d7009cac9235be96a0b806b1b30",
+      "litsearch_024.json": "f571b0bebc93e3b5053d273c0e545c7e248707fd63d570fe7888a5cf8e1f7848",
+      "litsearch_025.json": "ecec1edda1cc15f81c0a337a2eecfe0e0f101cdc410657419897146c67868fc9",
+      "litsearch_026.json": "383637e4066644caf3594dce6499420d87a566d75726c947ce7dd756944f656f",
+      "litsearch_027.json": "ffce170b98bb429cdc031fe9cc40931f6a56e2c4a2190586374cca3d2ec74bbb",
+      "litsearch_028.json": "38cf20c4ff7d4d7b8ba6561e6cee320cd8014695d9a7cb970578989a3a23ae96",
+      "litsearch_029.json": "7d318c2ed37a93c524cf965628ffc68870280e2c556241c4fca1102bfd2dd859"
+    },
+    "offline_replay_equals_enriched": true
+  },
+  "crossref_smoke": {
+    "status": "ok",
+    "doi": "10.18653/v1/2020.acl-main.202",
+    "source": "crossref",
+    "external_id": "https://doi.org/10.18653/v1/2020.acl-main.202",
+    "title": "XtremeDistil: Multi-stage Distillation for Massive Multilingual Models",
+    "cache_path": "reports\\m050\\cache\\crossref\\7a1d57955c00c6fc853783d8.json",
+    "prior_failures": [
+      {
+        "doi": "10.48550/arxiv.2009.14167",
+        "error": "RuntimeError"
+      },
+      {
+        "doi": "10.48550/arxiv.2304.09388",
+        "error": "RuntimeError"
+      }
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_131",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_131",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_131",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_131",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1047,
+      "latency_s": 6.367928999941796
+    },
+    {
+      "query_id": "litsearch_131",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 287,
+      "latency_s": 2.139195599942468
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_131",
+    "gold": [
+      252519660
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "meta-learning for prompt optimization",
+      "prompt engineering with meta-learning strategies",
+      "generative models prompt tuning meta-learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        233029494,
+        13488062,
+        208058457,
+        17076519,
+        10749859,
+        15204692,
+        259370686,
+        764565,
+        3926047,
+        5249485,
+        5456318,
+        7213852,
+        7440991,
+        252367427,
+        2245732,
+        48356329,
+        8265456,
+        8339153,
+        5327082,
+        13292908
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259833896,
+        252819327,
+        252907346,
+        219792972,
+        248780307,
+        256900985,
+        3484654,
+        259144804,
+        259370671,
+        263830433,
+        67856088,
+        259376577,
+        243865402,
+        3529936,
+        202767523,
+        257039031,
+        261494433,
+        250391032,
+        258887528,
+        258960366
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237416760,
+        252519660,
+        203951494,
+        237091328,
+        241033259,
+        264172710,
+        259108351,
+        253265328,
+        252716013,
+        59413789,
+        237250417,
+        264426355,
+        246485605,
+        256900985,
+        219708602,
+        248780567,
+        254044710,
+        237485423,
+        247619066,
+        258041372
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256900985
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        219792972,
+        256900985,
+        252907346,
+        3484654,
+        241033259,
+        252519660,
+        237416760,
+        203951494,
+        252819327,
+        235652287,
+        259833896,
+        256460948,
+        263830433,
+        264172710,
+        257039031,
+        252716013,
+        247619066,
+        253080893,
+        3529936,
+        254044710
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.661794499959797
+  },
+  "reason_example": {
+    "query_id": "litsearch_131",
+    "query": "Could you recommend a study that investigates enhancing prompt engineering techniques for generative models using meta-learning strategies?",
+    "top_results": [
+      {
+        "corpusid": 219792972,
+        "score": 0.8975319266319275,
+        "reason": "bm25=0.966; dense=0.852; sub_bm25=0.663; sub_dense=0.919"
+      },
+      {
+        "corpusid": 256900985,
+        "score": 0.8963361978530884,
+        "reason": "bm25=0.924; dense=0.878; sub_bm25=1.000; sub_dense=0.986"
+      },
+      {
+        "corpusid": 252907346,
+        "score": 0.8831331729888916,
+        "reason": "bm25=0.979; dense=0.819; sub_bm25=0.686; sub_dense=0.706"
+      },
+      {
+        "corpusid": 3484654,
+        "score": 0.8735413551330566,
+        "reason": "bm25=0.916; dense=0.845; sub_bm25=0.747; sub_dense=0.884"
+      },
+      {
+        "corpusid": 241033259,
+        "score": 0.8703810572624207,
+        "reason": "bm25=0.772; dense=0.936; sub_bm25=0.733; sub_dense=0.959"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_255",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_255",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_255",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_255",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1480,
+      "latency_s": 10.784923600032926
+    },
+    {
+      "query_id": "litsearch_255",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 299,
+      "latency_s": 2.1927911000093445
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_255",
+    "gold": [
+      238634750
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "multi-model individual annotator preference learning",
+      "ensemble majority vote preference aggregation",
+      "uncertainty measure in preference ensemble"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6456225,
+        10242096,
+        233365118,
+        965246,
+        196193006,
+        222272299,
+        16760497,
+        52113643,
+        258887874,
+        218688152,
+        1266013,
+        16238434,
+        263608332,
+        10322344,
+        227231219,
+        472478,
+        2913402,
+        22909596,
+        30167514,
+        1483975
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        238634750,
+        257279836,
+        2446250,
+        16443614,
+        965246,
+        1483975,
+        264289064,
+        15365406,
+        245704549,
+        150847,
+        251622295,
+        219792740,
+        252624715,
+        30044040,
+        13316244,
+        257038005,
+        253265391,
+        227230886,
+        215514040,
+        15263034
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        238634750,
+        259376575,
+        2310312,
+        965246,
+        259376655,
+        49534653,
+        235790530,
+        11994461,
+        15275430,
+        3239119,
+        259376534,
+        7271014,
+        5380171,
+        11843300,
+        5383504,
+        257771836,
+        235613568,
+        247939929,
+        213905197,
+        2032205
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238634750,
+        2446250,
+        16760497,
+        257279836,
+        263608332
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238634750,
+        965246,
+        2446250,
+        219792740,
+        11994461,
+        235790530,
+        259376534,
+        259376655,
+        213905197,
+        16443614,
+        252624715,
+        257771836,
+        253265391,
+        13316244,
+        257279836,
+        15275430,
+        2711807,
+        3954835,
+        252846467,
+        219308116
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.917758199968375
+  },
+  "reason_example": {
+    "query_id": "litsearch_255",
+    "query": "Has there been any research that uses multiple models to learn the preferences of individual annotators, and then ensembles these models to obtain majority-vote preference scores while also having an uncertainty measure?",
+    "top_results": [
+      {
+        "corpusid": 238634750,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.847; sub_dense=0.868"
+      },
+      {
+        "corpusid": 965246,
+        "score": 0.908653974533081,
+        "reason": "bm25=0.881; dense=0.927; sub_bm25=0.560; sub_dense=0.921"
+      },
+      {
+        "corpusid": 2446250,
+        "score": 0.8734753131866455,
+        "reason": "bm25=0.932; dense=0.835; sub_bm25=0.808; sub_dense=0.897"
+      },
+      {
+        "corpusid": 219792740,
+        "score": 0.8268479108810425,
+        "reason": "bm25=0.828; dense=0.826; sub_bm25=1.000; sub_dense=0.901"
+      },
+      {
+        "corpusid": 11994461,
+        "score": 0.8204641342163086,
+        "reason": "bm25=0.707; dense=0.896; sub_bm25=0.415; sub_dense=0.949"
+      }
+    ]
+  }
+}

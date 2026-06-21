@@ -1,0 +1,9 @@
+GET /healthz -> 200 llm_calls=0
+GET /studio?lang=zh -> 200 bytes=63453
+GET /studio?lang=en -> 200 bytes=63670
+GET /api/graph_stable -> 200 nodes=25 edges=50 client_force=False
+GET /api/search -> 200 status=unavailable results=0
+GET /pro -> 200 bytes=21445
+GET / -> 200 bytes=20199
+checks={"dark_mode": true, "en_marker": true, "graph_stable": true, "health_zero_llm": true, "http_200": true, "lang_links": true, "pro_existing": true, "reduced_motion": true, "search_honest": true, "span_contract": true, "zh_marker": true}
+status=PASS

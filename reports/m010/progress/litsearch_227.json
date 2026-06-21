@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_227",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_227",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_227",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_227",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 631,
+      "latency_s": 2.2111043999902904
+    },
+    {
+      "query_id": "litsearch_227",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 346,
+      "latency_s": 2.2559766999911517
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_227",
+    "gold": [
+      243865395
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "RNN-T with cross-attention",
+      "Improving RNN-T for simultaneous translation",
+      "Cross-attention mechanism in speech translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51878325,
+        11909076,
+        51868421,
+        68153520,
+        51871240,
+        229365783,
+        16273365,
+        7883094,
+        15730543,
+        554151,
+        192546007,
+        203688568,
+        249204460,
+        17096669,
+        12744446,
+        33548672,
+        239722734,
+        102350771,
+        1261731,
+        7658188
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        51880415,
+        102350771,
+        199552244,
+        150252449,
+        182952931,
+        16273365,
+        262217283,
+        52984984,
+        192546007,
+        218973757,
+        17464854,
+        3509328,
+        203591628,
+        243865395,
+        5590763,
+        14013684,
+        13905238,
+        17046550,
+        237500542,
+        47020799
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        243865395,
+        235694169,
+        250390666,
+        236478345,
+        237500542,
+        19164342,
+        102350771,
+        47005349,
+        220045357,
+        203591628,
+        13705623,
+        236477646,
+        243865251,
+        202592085,
+        9768369,
+        53180670,
+        222378280,
+        186206508,
+        51875779,
+        2496355
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865395,
+        203591628
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        243865395,
+        102350771,
+        235694169,
+        51880415,
+        203591628,
+        237500542,
+        250390666,
+        236478345,
+        202592085,
+        182952931,
+        229365664,
+        243865251,
+        13705623,
+        186206508,
+        241583247,
+        47005349,
+        19164342,
+        220045357,
+        150252449,
+        3514091
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.542690499918535
+  },
+  "reason_example": {
+    "query_id": "litsearch_227",
+    "query": "Could you suggest research that explores the improvement of Recurrent Neural Network Transducers (RNN-T) through the integration of cross-attention mechanisms for use in simultaneous translation?",
+    "top_results": [
+      {
+        "corpusid": 243865395,
+        "score": 0.9444026947021484,
+        "reason": "bm25=0.861; dense=1.000; sub_bm25=1.000; sub_dense=0.901"
+      },
+      {
+        "corpusid": 102350771,
+        "score": 0.900191605091095,
+        "reason": "bm25=0.973; dense=0.851; sub_bm25=0.442; sub_dense=0.894"
+      },
+      {
+        "corpusid": 235694169,
+        "score": 0.8895193934440613,
+        "reason": "bm25=0.837; dense=0.924; sub_bm25=1.000; sub_dense=0.911"
+      },
+      {
+        "corpusid": 51880415,
+        "score": 0.8618313074111938,
+        "reason": "bm25=1.000; dense=0.770; sub_bm25=0.622; sub_dense=0.914"
+      },
+      {
+        "corpusid": 203591628,
+        "score": 0.8530385494232178,
+        "reason": "bm25=0.862; dense=0.847; sub_bm25=0.654; sub_dense=0.910"
+      }
+    ]
+  }
+}

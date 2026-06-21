@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_359",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_359",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_359",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_359",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1269,
+      "latency_s": 8.159526900039054
+    },
+    {
+      "query_id": "litsearch_359",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.885746299987659
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_359",
+    "gold": [
+      258546862
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "methods to quantify human explanation helpfulness for language model finetuning",
+      "measuring impact of human explanations on language model inference performance",
+      "faithful and explicit metrics for explanation influence in language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3906011,
+        218688152,
+        3923764,
+        30908728,
+        32306529,
+        219301105,
+        235293834,
+        15769193,
+        19840120,
+        27787263,
+        219300512,
+        35309391,
+        51875400,
+        219305462,
+        2251088,
+        11200749,
+        21547774,
+        199022531,
+        2438164,
+        70019618
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258546862,
+        264306078,
+        258967227,
+        229371403,
+        258832540,
+        256461135,
+        174803111,
+        53223311,
+        223957008,
+        17500705,
+        3623373,
+        264306063,
+        259376527,
+        250390587,
+        233364968,
+        15251225,
+        202783183,
+        208006294,
+        34032948,
+        222133873
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222209056,
+        258546862,
+        229371403,
+        258832540,
+        258960511,
+        247187928,
+        235606327,
+        253510134,
+        247011700,
+        234797436,
+        257378358,
+        249017524,
+        255340449,
+        256461135,
+        254591475,
+        235669650,
+        237532313,
+        258378340,
+        259165083,
+        248496871
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258546862,
+        258832540,
+        256461135,
+        258960511,
+        229371403
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258546862,
+        229371403,
+        222209056,
+        258832540,
+        256461135,
+        235606327,
+        249017524,
+        247011700,
+        253510134,
+        247187928,
+        258960511,
+        258967227,
+        235669650,
+        234797436,
+        174803111,
+        218502350,
+        259165083,
+        254926490,
+        248496871,
+        257378358
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.847758899908513
+  },
+  "reason_example": {
+    "query_id": "litsearch_359",
+    "query": "How to faithfully and explicitly measure the helpfulness of human explanations to language models during finetuning and inference?",
+    "top_results": [
+      {
+        "corpusid": 258546862,
+        "score": 0.9870333671569824,
+        "reason": "bm25=1.000; dense=0.978; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 229371403,
+        "score": 0.9107697010040283,
+        "reason": "bm25=0.880; dense=0.931; sub_bm25=0.967; sub_dense=0.986"
+      },
+      {
+        "corpusid": 222209056,
+        "score": 0.889311671257019,
+        "reason": "bm25=0.723; dense=1.000; sub_bm25=0.783; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258832540,
+        "score": 0.8747879266738892,
+        "reason": "bm25=0.824; dense=0.909; sub_bm25=0.894; sub_dense=0.889"
+      },
+      {
+        "corpusid": 256461135,
+        "score": 0.8284292817115784,
+        "reason": "bm25=0.808; dense=0.842; sub_bm25=0.883; sub_dense=0.848"
+      }
+    ]
+  }
+}

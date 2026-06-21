@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Iterable
 
 import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
 DEFAULT_DENSE_V2_MODEL = "BAAI/bge-small-en-v1.5"
@@ -54,13 +55,19 @@ class DenseV2Retriever:
         self.device = device
         self.local_files_only = local_files_only
         self.encode_chunk_size = encode_chunk_size
-        from sentence_transformers import SentenceTransformer  # optional heavy dependency
         self.model = SentenceTransformer(model_name, device=device, local_files_only=local_files_only)
         self.model_version = self._model_version()
         self.embeddings = self._load_or_encode_docs()
 
     def _model_version(self) -> str:
-        dim = getattr(self.model, "get_sentence_embedding_dimension", self.model.get_embedding_dimension)()
+        getter = getattr(self.model, "get_sentence_embedding_dimension", None)
+        if getter is None:
+            getter = getattr(self.model, "get_embedding_dimension", None)
+        if getter is None:
+            raise AttributeError(
+                "SentenceTransformer model exposes neither get_sentence_embedding_dimension nor get_embedding_dimension"
+            )
+        dim = getter()
         mods = getattr(self.model, "_modules", {})
         return f"{self.model_name}; dim={dim}; modules={list(mods.keys())}; device={self.device}"
 
@@ -163,4 +170,3 @@ class DenseV2Retriever:
             "offline_capable_after_cache": True,
             "estimated_download_under_2gb": True,
         }
-

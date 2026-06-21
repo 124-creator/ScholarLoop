@@ -1,0 +1,25 @@
+﻿{
+  "passed": true,
+  "files": 30,
+  "resolved_fields": 164,
+  "manual_fields_preserved": 16,
+  "fabricated_count": 0,
+  "crossref_smoke": {
+    "status": "ok",
+    "doi": "10.18653/v1/2020.acl-main.202",
+    "source": "crossref",
+    "external_id": "https://doi.org/10.18653/v1/2020.acl-main.202",
+    "title": "XtremeDistil: Multi-stage Distillation for Massive Multilingual Models",
+    "cache_path": "reports\\m050\\cache\\crossref\\7a1d57955c00c6fc853783d8.json",
+    "prior_failures": [
+      {
+        "doi": "10.48550/arxiv.2009.14167",
+        "error": "RuntimeError"
+      },
+      {
+        "doi": "10.48550/arxiv.2304.09388",
+        "error": "RuntimeError"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_148",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_148",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_148",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_148",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1273,
+      "latency_s": 9.060212299926206
+    },
+    {
+      "query_id": "litsearch_148",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 259,
+      "latency_s": 2.195091100060381
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_148",
+    "gold": [
+      235720578
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "knowledge distillation information retrieval in-batch negatives",
+      "knowledge distillation retrieval in-batch negative sampling",
+      "knowledge distillation IR in-batch negatives training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12712634,
+        17454561,
+        233029494,
+        2375338,
+        15185389,
+        748386,
+        235720578,
+        16773647,
+        59848390,
+        261341902,
+        3992521,
+        1106719,
+        1291519,
+        222310755,
+        203593298,
+        49668568,
+        258463915,
+        6073991,
+        16783997,
+        14282973
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        235720578,
+        235097555,
+        247244896,
+        11743245,
+        247613006,
+        218502458,
+        8451212,
+        233219842,
+        258378211,
+        29740950,
+        6216639,
+        258762869,
+        14071324,
+        11895984,
+        67425046,
+        235212428,
+        209439505,
+        259370551,
+        16030483,
+        10976937
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8125776,
+        526753,
+        258378211,
+        27732417,
+        12712634,
+        259370700,
+        233029494,
+        235720578,
+        250390701,
+        14071324,
+        227231666,
+        248562596,
+        256461166,
+        232021663,
+        59848390,
+        186232078,
+        235258277,
+        16826424,
+        11895984,
+        67425046
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235720578
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235720578,
+        258378211,
+        14071324,
+        250390701,
+        11895984,
+        67425046,
+        256461166,
+        218502458,
+        8451212,
+        235258277,
+        227231666,
+        259370700,
+        8125776,
+        259370551,
+        235212428,
+        237250417,
+        6216639,
+        248779934,
+        15185389,
+        237605176
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.65945640008431
+  },
+  "reason_example": {
+    "query_id": "litsearch_148",
+    "query": "Could you recommend research papers that explore applying knowledge distillation to information retrieval, specifically those that concentrate on methods using in-batch negatives",
+    "top_results": [
+      {
+        "corpusid": 235720578,
+        "score": 0.9643001556396484,
+        "reason": "bm25=1.000; dense=0.941; sub_bm25=1.000; sub_dense=0.915"
+      },
+      {
+        "corpusid": 258378211,
+        "score": 0.8392900824546814,
+        "reason": "bm25=0.673; dense=0.950; sub_bm25=0.799; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14071324,
+        "score": 0.8237584829330444,
+        "reason": "bm25=0.656; dense=0.936; sub_bm25=0.820; sub_dense=0.853"
+      },
+      {
+        "corpusid": 250390701,
+        "score": 0.8144667148590088,
+        "reason": "bm25=0.626; dense=0.940; sub_bm25=0.624; sub_dense=0.864"
+      },
+      {
+        "corpusid": 11895984,
+        "score": 0.803546130657196,
+        "reason": "bm25=0.656; dense=0.902; sub_bm25=0.405; sub_dense=0.669"
+      }
+    ]
+  }
+}

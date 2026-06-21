@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_199",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_199",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_199",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_199",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2141,
+      "latency_s": 15.120193199953064
+    },
+    {
+      "query_id": "litsearch_199",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 328,
+      "latency_s": 2.4077683999203146
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_199",
+    "gold": [
+      216562425
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "human-in-the-loop adversarial examples conversational agents",
+      "adversarial attacks text classifiers human intervention",
+      "improving classifier robustness adversarial examples conversational agents"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16657732,
+        6723570,
+        232307049,
+        236478377,
+        17476559,
+        235212591,
+        235482360,
+        37409061,
+        249605593,
+        29611640,
+        8035278,
+        15751424,
+        75817,
+        8596576,
+        192546007,
+        201677979,
+        1447029,
+        18969604,
+        17620646,
+        222133259
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237453239,
+        232307049,
+        248524755,
+        4420783,
+        201677979,
+        1257772,
+        222133259,
+        17707860,
+        221739314,
+        263880262,
+        216641956,
+        236478377,
+        133468229,
+        204806122,
+        5076191,
+        252460317,
+        195820512,
+        231662388,
+        3313632,
+        219981806
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258888064,
+        248780270,
+        237453239,
+        133468229,
+        258546855,
+        222133259,
+        6096814,
+        222291230,
+        248524755,
+        222341385,
+        237353665,
+        248779966,
+        52197662,
+        236477723,
+        52169385,
+        259370879,
+        102353948,
+        21697740,
+        164019,
+        233423658
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780270,
+        237453239,
+        133468229,
+        248524755,
+        232307049,
+        222133259,
+        236478377,
+        201677979,
+        263880262,
+        5076191,
+        192546007,
+        249605593
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237453239,
+        133468229,
+        248524755,
+        222133259,
+        248780270,
+        258888064,
+        201677979,
+        232307049,
+        221739314,
+        5076191,
+        52197662,
+        258546855,
+        264406064,
+        1257772,
+        102353948,
+        247594854,
+        248779966,
+        231662388,
+        233423658,
+        52169956
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 19.448675199993886
+  },
+  "reason_example": {
+    "query_id": "litsearch_199",
+    "query": "Could you suggest a study that investigates the incorporation of human intervention in generating adversarial examples to attack conversational agents, with the aim of improving classifier efficacy",
+    "top_results": [
+      {
+        "corpusid": 237453239,
+        "score": 0.9815400838851929,
+        "reason": "bm25=1.000; dense=0.969; sub_bm25=0.823; sub_dense=0.939"
+      },
+      {
+        "corpusid": 133468229,
+        "score": 0.914008378982544,
+        "reason": "bm25=0.840; dense=0.963; sub_bm25=0.804; sub_dense=0.993"
+      },
+      {
+        "corpusid": 248524755,
+        "score": 0.9117457866668701,
+        "reason": "bm25=0.903; dense=0.918; sub_bm25=0.886; sub_dense=0.914"
+      },
+      {
+        "corpusid": 222133259,
+        "score": 0.9115984439849854,
+        "reason": "bm25=0.863; dense=0.944; sub_bm25=0.774; sub_dense=0.914"
+      },
+      {
+        "corpusid": 248780270,
+        "score": 0.90793776512146,
+        "reason": "bm25=0.787; dense=0.989; sub_bm25=0.784; sub_dense=0.860"
+      }
+    ]
+  }
+}

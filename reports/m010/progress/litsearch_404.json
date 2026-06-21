@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_404",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_404",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_404",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_404",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1580,
+      "latency_s": 13.193180100061
+    },
+    {
+      "query_id": "litsearch_404",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 411,
+      "latency_s": 4.2269878999795765
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_404",
+    "gold": [
+      258547050
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "comprehensive evaluation criteria generated conversation",
+      "evaluation metrics dialogue generation",
+      "framework for assessing synthetic dialogue quality"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1405599,
+        5453178,
+        17409270,
+        24663,
+        34175343,
+        1182312,
+        5399186,
+        52896891,
+        12811441,
+        10170445,
+        238251646,
+        15244472,
+        45897261,
+        6609459,
+        10740890,
+        126584,
+        5199824,
+        18597583,
+        11754739,
+        17558767
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        381368,
+        34175343,
+        237492016,
+        252780973,
+        248366285,
+        247472363,
+        256627323,
+        219308399,
+        250163951,
+        251765463,
+        13553973,
+        2149328,
+        7666863,
+        173990530,
+        246015366,
+        244896303,
+        2732621,
+        17060111,
+        21715688,
+        9446239
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247411224,
+        16826307,
+        55317194,
+        390045,
+        260063121,
+        233864494,
+        219573466,
+        218470058,
+        14008641,
+        173990530,
+        583638,
+        6618252,
+        249605593,
+        52010923,
+        233210701,
+        5834356,
+        9558943,
+        12783537,
+        235358130,
+        52011783
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        173990530,
+        233864494,
+        251765463,
+        10740890,
+        55317194,
+        9446239,
+        381368,
+        248366285,
+        38267620,
+        13553973,
+        256627323,
+        235359080
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        173990530,
+        390045,
+        233864494,
+        381368,
+        256627323,
+        248366285,
+        55317194,
+        9446239,
+        235359080,
+        249605593,
+        52010923,
+        38267620,
+        233210701,
+        237099289,
+        252847513,
+        247411224,
+        237492016,
+        6618252,
+        258887719,
+        16826307
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 18.166426500072703
+  },
+  "reason_example": {
+    "query_id": "litsearch_404",
+    "query": "Is there any paper that proposes a set of criteria to comprehensively evaluate generated conversations?",
+    "top_results": [
+      {
+        "corpusid": 173990530,
+        "score": 0.923501193523407,
+        "reason": "bm25=0.882; dense=0.951; sub_bm25=0.775; sub_dense=0.929"
+      },
+      {
+        "corpusid": 390045,
+        "score": 0.9031564593315125,
+        "reason": "bm25=0.783; dense=0.983; sub_bm25=0.402; sub_dense=0.722"
+      },
+      {
+        "corpusid": 233864494,
+        "score": 0.9031487703323364,
+        "reason": "bm25=0.805; dense=0.969; sub_bm25=1.000; sub_dense=0.949"
+      },
+      {
+        "corpusid": 381368,
+        "score": 0.8983025550842285,
+        "reason": "bm25=1.000; dense=0.831; sub_bm25=0.463; sub_dense=0.683"
+      },
+      {
+        "corpusid": 256627323,
+        "score": 0.8743237257003784,
+        "reason": "bm25=0.911; dense=0.850; sub_bm25=0.839; sub_dense=0.886"
+      }
+    ]
+  }
+}

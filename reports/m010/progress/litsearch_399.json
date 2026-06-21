@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_399",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_399",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_399",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_399",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1357,
+      "latency_s": 9.982814299990423
+    },
+    {
+      "query_id": "litsearch_399",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 378,
+      "latency_s": 3.4673172999173403
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_399",
+    "gold": [
+      259165134
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "backdoor attacks language models multiple tasks",
+      "backdoor attacks on language models beyond classification",
+      "backdoor attacks in language models for various NLP tasks"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1936997,
+        226283660,
+        5449971,
+        17914161,
+        245634500,
+        196180835,
+        8621713,
+        247158434,
+        15057133,
+        11612461,
+        248572047,
+        1424598,
+        2114002,
+        233365004,
+        253420419,
+        13278463,
+        230799344,
+        248780547,
+        5355618,
+        15910283
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        238407985,
+        259370834,
+        246210276,
+        258947738,
+        257984946,
+        240070408,
+        257636556,
+        258960289,
+        239009771,
+        236459933,
+        208139512,
+        259165134,
+        235417102,
+        213987212,
+        261100669,
+        258741304,
+        202537221,
+        226283660,
+        235196099,
+        258378140
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235196099,
+        264172240,
+        235417102,
+        237365058,
+        258960289,
+        236459933,
+        238407985,
+        261100669,
+        239009771,
+        244117423,
+        258947738,
+        259165134,
+        257984946,
+        222140954,
+        233230124,
+        264935143,
+        259370834,
+        246210276,
+        258960612,
+        247594854
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238407985,
+        244117423,
+        258960289,
+        259370834,
+        259165134,
+        235417102,
+        236459933,
+        235196099,
+        257984946,
+        222140954,
+        258947738,
+        246210276
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238407985,
+        235417102,
+        235196099,
+        264172240,
+        258960289,
+        236459933,
+        258947738,
+        239009771,
+        261100669,
+        259370834,
+        257984946,
+        259165134,
+        246210276,
+        244117423,
+        237365058,
+        249018095,
+        222140954,
+        259165262,
+        240070408,
+        256627643
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.572698600008152
+  },
+  "reason_example": {
+    "query_id": "litsearch_399",
+    "query": "Is there any paper that investigates backdoor attacks across various types of tasks, not limited to classification, in language models?",
+    "top_results": [
+      {
+        "corpusid": 238407985,
+        "score": 0.9425820112228394,
+        "reason": "bm25=1.000; dense=0.904; sub_bm25=1.000; sub_dense=0.963"
+      },
+      {
+        "corpusid": 235417102,
+        "score": 0.914599597454071,
+        "reason": "bm25=0.794; dense=0.995; sub_bm25=0.883; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235196099,
+        "score": 0.9093095660209656,
+        "reason": "bm25=0.773; dense=1.000; sub_bm25=0.987; sub_dense=0.996"
+      },
+      {
+        "corpusid": 264172240,
+        "score": 0.8930935859680176,
+        "reason": "bm25=0.733; dense=1.000; sub_bm25=0.902; sub_dense=0.893"
+      },
+      {
+        "corpusid": 258960289,
+        "score": 0.8908514976501465,
+        "reason": "bm25=0.829; dense=0.932; sub_bm25=1.000; sub_dense=0.960"
+      }
+    ]
+  }
+}

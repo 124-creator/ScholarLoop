@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_426",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_426",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_426",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_426",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1769,
+      "latency_s": 11.211414800025523
+    },
+    {
+      "query_id": "litsearch_426",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 302,
+      "latency_s": 2.5791142000816762
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_426",
+    "gold": [
+      254685611
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "large language models text summarization performance human evaluation reference-based",
+      "reference-free human evaluation text summarization large language models",
+      "LLM summarization evaluation metrics human judgment reference-based vs reference-free"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        250390709,
+        14323173,
+        260063225,
+        218688152,
+        3906011,
+        252091116,
+        259370633,
+        263866951,
+        211258800,
+        5995406,
+        7542363,
+        18446213,
+        52012695,
+        8897742,
+        15983238,
+        294054,
+        253398055,
+        15674753,
+        3765717,
+        3923764
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253098066,
+        250390709,
+        201703063,
+        235659000,
+        256739259,
+        250390992,
+        254877384,
+        256461279,
+        233296711,
+        243865590,
+        258833028,
+        20290316,
+        253107373,
+        256231270,
+        17452735,
+        174797774,
+        222208687,
+        12090675,
+        211258800,
+        248300077
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390709,
+        253098066,
+        248300077,
+        211258800,
+        14664231,
+        8717781,
+        17452735,
+        5312836,
+        201703063,
+        10436913,
+        11325092,
+        1791846,
+        39230437,
+        2861585,
+        1212906,
+        254685611,
+        16681511,
+        9898640,
+        237532546,
+        16495042
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250390709,
+        211258800,
+        253098066,
+        248300077,
+        1791846,
+        256461279,
+        201703063,
+        8897742,
+        8717781,
+        16232037,
+        258765282,
+        258833028
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390709,
+        253098066,
+        201703063,
+        248300077,
+        211258800,
+        17452735,
+        235659000,
+        256739259,
+        256461279,
+        222134049,
+        16232037,
+        174797774,
+        258765282,
+        258486857,
+        218538095,
+        8717781,
+        14046755,
+        254877384,
+        258833028,
+        248525217
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.134685900062323
+  },
+  "reason_example": {
+    "query_id": "litsearch_426",
+    "query": "What is the performance of large language models in text summarization under reference-based and reference-free human evaluations?",
+    "top_results": [
+      {
+        "corpusid": 250390709,
+        "score": 0.9971222877502441,
+        "reason": "bm25=0.993; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253098066,
+        "score": 0.9621504545211792,
+        "reason": "bm25=1.000; dense=0.937; sub_bm25=0.813; sub_dense=0.961"
+      },
+      {
+        "corpusid": 201703063,
+        "score": 0.925628125667572,
+        "reason": "bm25=0.978; dense=0.891; sub_bm25=0.834; sub_dense=0.917"
+      },
+      {
+        "corpusid": 248300077,
+        "score": 0.8801193237304688,
+        "reason": "bm25=0.802; dense=0.932; sub_bm25=1.000; sub_dense=0.968"
+      },
+      {
+        "corpusid": 211258800,
+        "score": 0.8773474097251892,
+        "reason": "bm25=0.803; dense=0.927; sub_bm25=0.550; sub_dense=0.978"
+      }
+    ]
+  }
+}

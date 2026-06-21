@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_549",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_549",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_549",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_549",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 807,
+      "latency_s": 4.607814599992707
+    },
+    {
+      "query_id": "litsearch_549",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 421,
+      "latency_s": 4.242494100006297
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_549",
+    "gold": [
+      259375870
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "decoder-only transformer reversing output sample efficiency arithmetic capability",
+      "reverse training sequence arithmetic transformer performance",
+      "first proposal reversing output improve arithmetic decoder-only"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5971866,
+        12405045,
+        248218650,
+        47020074,
+        8800791,
+        259376723,
+        219416,
+        17409270,
+        13949438,
+        243865639,
+        3664028,
+        15297336,
+        236457320,
+        256697545,
+        199404131,
+        271002,
+        196208300,
+        202565859,
+        250390876,
+        10048823
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234487247,
+        225067567,
+        259370787,
+        248780505,
+        216144667,
+        252735195,
+        201670412,
+        67855893,
+        253019001,
+        238856828,
+        196181767,
+        3180697,
+        259375870,
+        244714783,
+        236460340,
+        222176890,
+        202592085,
+        7031949,
+        264406064,
+        225039786
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232035936,
+        218502632,
+        209315300,
+        235377417,
+        247518591,
+        235313996,
+        248965487,
+        227905005,
+        245616861,
+        235294249,
+        219708219,
+        245385814,
+        264406180,
+        204824061,
+        253735201,
+        241583483,
+        246904988,
+        247582435,
+        222134166,
+        248218650
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        218502632,
+        235377417,
+        209315300,
+        232035936,
+        247518591,
+        235313996,
+        234487247,
+        216144667,
+        253735201,
+        235097270,
+        211204667,
+        204824061,
+        227905005,
+        248965487,
+        245385814,
+        245616861,
+        264439160,
+        248218650,
+        219708219,
+        264406180
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.18248149997089
+  },
+  "reason_example": {
+    "query_id": "litsearch_549",
+    "query": "What paper first proposes that simply reversing the output can significantly enhance the sample efficiency and the performance of the arithmetic capability of a decoder-only Transformer model?",
+    "top_results": [
+      {
+        "corpusid": 218502632,
+        "score": 0.9493759870529175,
+        "reason": "bm25=0.874; dense=1.000; sub_bm25=0.564; sub_dense=0.987"
+      },
+      {
+        "corpusid": 235377417,
+        "score": 0.9339244365692139,
+        "reason": "bm25=0.886; dense=0.966; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 209315300,
+        "score": 0.9339178800582886,
+        "reason": "bm25=0.856; dense=0.986; sub_bm25=0.619; sub_dense=1.000"
+      },
+      {
+        "corpusid": 232035936,
+        "score": 0.9104506969451904,
+        "reason": "bm25=0.776; dense=1.000; sub_bm25=0.534; sub_dense=0.925"
+      },
+      {
+        "corpusid": 247518591,
+        "score": 0.9037978649139404,
+        "reason": "bm25=0.837; dense=0.948; sub_bm25=0.712; sub_dense=0.851"
+      }
+    ]
+  }
+}

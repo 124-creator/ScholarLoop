@@ -1,0 +1,6 @@
+﻿query_id,system,P@10,R@20,F1,hallucinated_or_out_of_pool,total_tokens,latency_s
+litsearch_000,keyword,0.0,0.0,0.0,0,0,0.0
+litsearch_000,bm25,0.0,0.0,0.0,0,0,0.0
+litsearch_000,neural_embedding,0.0,0.0,0.0,0,0,0.0
+litsearch_000,single_llm,0.0,0.0,0.0,0,1858,12.444303500000387
+litsearch_000,scholarloop_a,0.0,0.0,0.0,0,259,1.9025511000072584

@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_504",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_504",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_504",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_504",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1449,
+      "latency_s": 8.181042499956675
+    },
+    {
+      "query_id": "litsearch_504",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 302,
+      "latency_s": 2.4846299999626353
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_504",
+    "gold": [
+      254853929
+    ],
+    "pool_size": 287,
+    "decomposition": [
+      "KBQA with large language models without fine-tuning",
+      "zero-shot KBQA using LLMs",
+      "LLM-based knowledge base question answering few-shot"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12178716,
+        245855909,
+        8570656,
+        252819412,
+        9497515,
+        10919045,
+        60718875,
+        244305814,
+        211205183,
+        10678570,
+        259376810,
+        176201,
+        235458576,
+        252332306,
+        2063652,
+        258765297,
+        16753572,
+        227905197,
+        178267,
+        260063190
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259095910,
+        260063238,
+        262054014,
+        259075843,
+        262825568,
+        235658872,
+        233296655,
+        260887189,
+        264306063,
+        264172174,
+        259252475,
+        207847598,
+        260063190,
+        259212162,
+        260334759,
+        259144804,
+        259370671,
+        250390946,
+        252070588,
+        237513452
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14478849,
+        2949460,
+        239020526,
+        53764089,
+        8284594,
+        11826614,
+        9956630,
+        3046638,
+        6614930,
+        259252475,
+        9969417,
+        5429505,
+        245856036,
+        53366105,
+        779651,
+        263333921,
+        205965,
+        201739018,
+        201105575,
+        187583
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259095910,
+        260063238
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259252475,
+        262825568,
+        260887189,
+        253098700,
+        258461017,
+        237562927,
+        263610128,
+        259164815,
+        263333921,
+        14478849,
+        259095910,
+        260063238,
+        260334759,
+        245856036,
+        260682249,
+        259376810,
+        9956630,
+        259164398,
+        259212162,
+        7452987
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.572407300001942
+  },
+  "reason_example": {
+    "query_id": "litsearch_504",
+    "query": "what's the first paper that manages to handle KBQA using LLMs without fine-tuning?",
+    "top_results": [
+      {
+        "corpusid": 259252475,
+        "score": 0.8943647146224976,
+        "reason": "bm25=0.936; dense=0.867; sub_bm25=0.855; sub_dense=1.000"
+      },
+      {
+        "corpusid": 262825568,
+        "score": 0.8015487194061279,
+        "reason": "bm25=0.989; dense=0.677; sub_bm25=0.823; sub_dense=0.840"
+      },
+      {
+        "corpusid": 260887189,
+        "score": 0.7886496782302856,
+        "reason": "bm25=0.946; dense=0.684; sub_bm25=0.557; sub_dense=0.750"
+      },
+      {
+        "corpusid": 253098700,
+        "score": 0.7819498777389526,
+        "reason": "bm25=0.788; dense=0.778; sub_bm25=0.569; sub_dense=0.824"
+      },
+      {
+        "corpusid": 258461017,
+        "score": 0.7636271119117737,
+        "reason": "bm25=0.868; dense=0.694; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

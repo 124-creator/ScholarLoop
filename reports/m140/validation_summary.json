@@ -1,0 +1,70 @@
+{
+  "schema_version": "m140.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T03:12:05.231901+00:00",
+  "status": "implemented_not_verified",
+  "plan_status": "implemented",
+  "i18n_coverage": {
+    "report": "reports/m140/i18n_coverage.json",
+    "status": "PASS",
+    "verified_values_not_translated": true
+  },
+  "a11y_check": {
+    "report": "reports/m140/a11y_check.json",
+    "status": "PASS"
+  },
+  "graph_determinism": {
+    "report": "reports/m140/graph_determinism.json",
+    "status": "PASS",
+    "coordinates_byte_equal": true,
+    "svg_byte_equal": true,
+    "invalid_edge_count": 0,
+    "nan_coordinate_count": 0,
+    "client_force_simulation": false
+  },
+  "studio_fidelity": {
+    "report": "reports/m140/studio_fidelity.json",
+    "status": "PASS",
+    "mismatch_count": 0,
+    "baseline_mismatch_count": 0,
+    "span_mismatch_count": 0
+  },
+  "realtime_search": {
+    "report": "reports/m140/search_smoke.txt",
+    "honest_empty_fallback": true,
+    "verified_load_bearing": false
+  },
+  "smoke": {
+    "report": "reports/m140/smoke.txt",
+    "status": "PASS"
+  },
+  "m080_replay": {
+    "report": "reports/m140/m080_verify_replay/fidelity_audit.json",
+    "status": "PASS",
+    "integration_runnable": true,
+    "faithful_zero_fabrication": true,
+    "fabrication": 0,
+    "out_of_pool": 0
+  },
+  "m120_replay": {
+    "span_report": "reports/m140/m120_span_fidelity.json",
+    "span_status": "PASS",
+    "span_mismatch_count": 0,
+    "trail_report": "reports/m140/m120_trail_fidelity.json",
+    "trail_status": "PASS",
+    "trail_fabrication": 0,
+    "trail_missing_source_count": 0
+  },
+  "secret_scan": {
+    "report": "reports/m140/secret_scan.json",
+    "passed": true
+  },
+  "pytest": {
+    "report": "reports/m140/pytest.txt",
+    "status": "PASS",
+    "summary": "61 passed in 71.93s"
+  },
+  "upstream_hashes": {
+    "report": "reports/m140/upstream_hashes.json"
+  },
+  "ready_for_initial_review": true
+}

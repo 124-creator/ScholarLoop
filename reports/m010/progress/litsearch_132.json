@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_132",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_132",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_132",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_132",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1209,
+      "latency_s": 7.993481499957852
+    },
+    {
+      "query_id": "litsearch_132",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 293,
+      "latency_s": 2.6133587000658736
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_132",
+    "gold": [
+      235097520
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "inverse document frequency token alignment speech processing",
+      "IDF alignment speech recognition",
+      "term weighting alignment speech"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        45770971,
+        885120,
+        1519586,
+        235482360,
+        5989400,
+        7440991,
+        15751424,
+        253628225,
+        11562868,
+        5331373,
+        201680290,
+        32526624,
+        21689976,
+        7560145,
+        13488062,
+        43421388,
+        44492154,
+        15649011,
+        2730567,
+        8083387
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        19041200,
+        225047406,
+        2815737,
+        231741096,
+        8425601,
+        239890025,
+        40989130,
+        221173041,
+        184483192,
+        244154084,
+        6278519,
+        6528623,
+        184483815,
+        5638176,
+        44492154,
+        53223919,
+        469886,
+        13113450,
+        52142476,
+        210722162
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        19041200,
+        8287419,
+        40521282,
+        8964961,
+        13572131,
+        2330650,
+        26814444,
+        17206181,
+        251465437,
+        227231766,
+        15389917,
+        15289726,
+        15325850,
+        8692961,
+        1032897,
+        7541406,
+        30508045,
+        8063811,
+        2135678,
+        10738516
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        6528623,
+        40521282,
+        19041200,
+        225047406,
+        2815737,
+        221173041,
+        231741096,
+        44492154,
+        8425601,
+        885120,
+        5638176,
+        184483815
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        19041200,
+        8425601,
+        6528623,
+        227231766,
+        2165573,
+        62776101,
+        2330650,
+        231741096,
+        40521282,
+        2815737,
+        258756324,
+        252624627,
+        12253282,
+        221173041,
+        8287419,
+        15289726,
+        252819432,
+        8692961,
+        17206181,
+        225047406
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.718698100070469
+  },
+  "reason_example": {
+    "query_id": "litsearch_132",
+    "query": "Could you recommend a study that investigates enhancing token alignment in speech processing by employing inverse document frequency (idf)?",
+    "top_results": [
+      {
+        "corpusid": 19041200,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.984; sub_dense=0.735"
+      },
+      {
+        "corpusid": 8425601,
+        "score": 0.848029613494873,
+        "reason": "bm25=0.810; dense=0.874; sub_bm25=0.642; sub_dense=0.722"
+      },
+      {
+        "corpusid": 6528623,
+        "score": 0.8093883991241455,
+        "reason": "bm25=0.713; dense=0.874; sub_bm25=0.633; sub_dense=0.788"
+      },
+      {
+        "corpusid": 227231766,
+        "score": 0.7977334260940552,
+        "reason": "bm25=0.585; dense=0.939; sub_bm25=0.568; sub_dense=0.759"
+      },
+      {
+        "corpusid": 2165573,
+        "score": 0.7938364148139954,
+        "reason": "bm25=0.634; dense=0.900; sub_bm25=0.742; sub_dense=0.795"
+      }
+    ]
+  }
+}

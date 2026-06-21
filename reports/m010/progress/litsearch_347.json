@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_347",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_347",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_347",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_347",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1983,
+      "latency_s": 16.72777309990488
+    },
+    {
+      "query_id": "litsearch_347",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 3.2083998000016436
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_347",
+    "gold": [
+      233230124
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "reducing training epochs limits backdoor attack",
+      "early stopping backdoor attack accuracy trade-off",
+      "fewer epochs backdoor defense accuracy decrease"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        44129718,
+        201686118,
+        676609,
+        16916599,
+        48360047,
+        49189287,
+        67855688,
+        8807447,
+        43278,
+        57375742,
+        231933962,
+        21725048,
+        239020521,
+        196171124,
+        222349276,
+        15639975,
+        248780063,
+        131767086,
+        235266005,
+        8564222
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370834,
+        235196099,
+        252846609,
+        231627799,
+        256274566,
+        256275098,
+        259313791,
+        258741304,
+        257636556,
+        257984946,
+        239009771,
+        253098063,
+        264172240,
+        235417313,
+        238407985,
+        258947738,
+        236459933,
+        246210276,
+        246431258,
+        222291680
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        231627799,
+        264172240,
+        237416749,
+        239009771,
+        222091019,
+        252846609,
+        258865597,
+        259165262,
+        237365058,
+        6706414,
+        246210276,
+        261100669,
+        233025308,
+        240070408,
+        246652381,
+        252780995,
+        258352421,
+        29778779,
+        21946795,
+        9059612
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253098063,
+        231627799,
+        258947738,
+        259370834,
+        257636556,
+        252846609,
+        235196099,
+        239009771,
+        256274566,
+        210064343,
+        67855688,
+        256275098
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        231627799,
+        259370834,
+        252846609,
+        264172240,
+        239009771,
+        259165262,
+        258865597,
+        235196099,
+        246210276,
+        257984946,
+        256274566,
+        256275098,
+        259313791,
+        261100669,
+        246652381,
+        258352421,
+        258947738,
+        240070408,
+        253098063,
+        237416749
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.203054000041448
+  },
+  "reason_example": {
+    "query_id": "litsearch_347",
+    "query": "Which work shows that reducing the number of training epochs effectively limits the impact of backdoor attack, but the method decreases the prediction accuracy?",
+    "top_results": [
+      {
+        "corpusid": 231627799,
+        "score": 0.9241318702697754,
+        "reason": "bm25=0.810; dense=1.000; sub_bm25=0.752; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370834,
+        "score": 0.9190618991851807,
+        "reason": "bm25=1.000; dense=0.865; sub_bm25=0.938; sub_dense=0.886"
+      },
+      {
+        "corpusid": 252846609,
+        "score": 0.9039503335952759,
+        "reason": "bm25=0.832; dense=0.952; sub_bm25=1.000; sub_dense=0.965"
+      },
+      {
+        "corpusid": 264172240,
+        "score": 0.896644115447998,
+        "reason": "bm25=0.752; dense=0.993; sub_bm25=0.942; sub_dense=1.000"
+      },
+      {
+        "corpusid": 239009771,
+        "score": 0.8964496850967407,
+        "reason": "bm25=0.763; dense=0.985; sub_bm25=0.931; sub_dense=0.980"
+      }
+    ]
+  }
+}

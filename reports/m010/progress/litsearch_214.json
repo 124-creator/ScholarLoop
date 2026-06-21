@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_214",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_214",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_214",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_214",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1522,
+      "latency_s": 8.792144799954258
+    },
+    {
+      "query_id": "litsearch_214",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 2.0107600000919774
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_214",
+    "gold": [
+      233296494
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "effect of order of in-context examples on in-context learning performance",
+      "impact of example arrangement on few-shot learning in language models",
+      "influence of presentation order of demonstrations on LLM in-context learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        30908728,
+        10513825,
+        3923764,
+        32679052,
+        2776389,
+        15769193,
+        186206301,
+        53081680,
+        219305462,
+        4954256,
+        3073489,
+        6089322,
+        1412569,
+        15213255,
+        15751424,
+        6583976,
+        248780137,
+        258486963,
+        51918763,
+        8349712
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258558112,
+        254853961,
+        260203032,
+        15402420,
+        261959395,
+        53081680,
+        52139969,
+        252847475,
+        416535,
+        29344567,
+        235254629,
+        9583401,
+        6495498,
+        259064260,
+        241035330,
+        5429216,
+        256461043,
+        4954256,
+        209501080,
+        253420743
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261959395,
+        259064260,
+        248427215,
+        67332552,
+        259262608,
+        236486298,
+        253420743,
+        237513919,
+        241035330,
+        258833064,
+        257921399,
+        254853961,
+        252819059,
+        258547350,
+        259833782,
+        6776293,
+        1494871,
+        174798289,
+        238583726,
+        258558112
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253420743,
+        258558112,
+        253553137,
+        258967265,
+        241035330,
+        259064260,
+        254853961,
+        260203032,
+        258715048,
+        248427215,
+        261959395,
+        4954256
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        261959395,
+        259064260,
+        254853961,
+        248427215,
+        258558112,
+        253420743,
+        241035330,
+        67332552,
+        259262608,
+        257921399,
+        237513919,
+        258967265,
+        258833064,
+        259370786,
+        258715048,
+        236486298,
+        6776293,
+        260203032,
+        238583726,
+        174798289
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.14690970000811
+  },
+  "reason_example": {
+    "query_id": "litsearch_214",
+    "query": "Could you suggest research that examines how the order of in-context examples influences the efficacy of in-context learning in language models?",
+    "top_results": [
+      {
+        "corpusid": 261959395,
+        "score": 0.9752849340438843,
+        "reason": "bm25=0.938; dense=1.000; sub_bm25=0.907; sub_dense=0.956"
+      },
+      {
+        "corpusid": 259064260,
+        "score": 0.9587984085083008,
+        "reason": "bm25=0.907; dense=0.994; sub_bm25=0.818; sub_dense=0.930"
+      },
+      {
+        "corpusid": 254853961,
+        "score": 0.9361210465431213,
+        "reason": "bm25=0.974; dense=0.911; sub_bm25=0.889; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248427215,
+        "score": 0.9262436032295227,
+        "reason": "bm25=0.852; dense=0.975; sub_bm25=1.000; sub_dense=0.988"
+      },
+      {
+        "corpusid": 258558112,
+        "score": 0.9225165843963623,
+        "reason": "bm25=1.000; dense=0.871; sub_bm25=0.956; sub_dense=0.840"
+      }
+    ]
+  }
+}

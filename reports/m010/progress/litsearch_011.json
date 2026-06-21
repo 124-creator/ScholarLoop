@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_011",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_011",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_011",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_011",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1406,
+      "latency_s": 8.563344599911943
+    },
+    {
+      "query_id": "litsearch_011",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 284,
+      "latency_s": 1.8838285999372602
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_011",
+    "gold": [
+      252873117
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "evaluation methods for text generation models T5 FLAN-T5",
+      "summary-level evaluation metrics for T5",
+      "turn-level evaluation of FLAN-T5 performance"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252819043,
+        250089342,
+        14719746,
+        243865349,
+        236460248,
+        237763,
+        258999402,
+        237091103,
+        256461050,
+        252624738,
+        235248280,
+        233181926,
+        21721649,
+        12252477,
+        252819363,
+        259370824,
+        53083307,
+        237635095,
+        259833853,
+        36548020
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252780443,
+        259376465,
+        259833895,
+        247519241,
+        259833853,
+        255570200,
+        248834551,
+        247451025,
+        258463954,
+        259342096,
+        220647035,
+        258480179,
+        230437660,
+        1030812,
+        259376505,
+        258685435,
+        235436269,
+        259376587,
+        248780112,
+        225067229
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249062554,
+        254877323,
+        252917728,
+        14774554,
+        253098066,
+        236486131,
+        225039774,
+        248300077,
+        208541377,
+        196180216,
+        235097206,
+        5213689,
+        9025428,
+        9598874,
+        247939526,
+        202541563,
+        52962051,
+        14185702,
+        199373864,
+        261507859
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258685435,
+        259370824,
+        236460248,
+        259833895,
+        259833853,
+        248810772,
+        260063224,
+        237091328,
+        237091103,
+        196180216,
+        250089342,
+        252819043
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        196180216,
+        253098066,
+        252917728,
+        258685435,
+        249062554,
+        259376505,
+        259833895,
+        254877323,
+        252873117,
+        259287175,
+        222341644,
+        235097206,
+        202541563,
+        237091328,
+        248810772,
+        5771683,
+        23892230,
+        225039774,
+        14774554,
+        9771696
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.559767300030217
+  },
+  "reason_example": {
+    "query_id": "litsearch_011",
+    "query": "Can you point me to studies discussing methods for evaluating text generation models on various dimensions? I'm particularly interested in models like T5 and FLAN-T5, and how to assess their performance on summary-level and turn-level tasks.",
+    "top_results": [
+      {
+        "corpusid": 196180216,
+        "score": 0.8586180806159973,
+        "reason": "bm25=0.769; dense=0.918; sub_bm25=0.767; sub_dense=0.889"
+      },
+      {
+        "corpusid": 253098066,
+        "score": 0.8475748896598816,
+        "reason": "bm25=0.704; dense=0.943; sub_bm25=0.498; sub_dense=0.958"
+      },
+      {
+        "corpusid": 252917728,
+        "score": 0.8438913822174072,
+        "reason": "bm25=0.665; dense=0.963; sub_bm25=0.281; sub_dense=0.810"
+      },
+      {
+        "corpusid": 258685435,
+        "score": 0.8426116108894348,
+        "reason": "bm25=0.871; dense=0.824; sub_bm25=0.804; sub_dense=0.921"
+      },
+      {
+        "corpusid": 249062554,
+        "score": 0.8408033847808838,
+        "reason": "bm25=0.602; dense=1.000; sub_bm25=0.356; sub_dense=0.917"
+      }
+    ]
+  }
+}

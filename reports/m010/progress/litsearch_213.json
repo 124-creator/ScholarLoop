@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_213",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_213",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_213",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_213",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1013,
+      "latency_s": 4.89507660001982
+    },
+    {
+      "query_id": "litsearch_213",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 326,
+      "latency_s": 2.3676981000462547
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_213",
+    "gold": [
+      236034497
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "information exchange strangers first encounter",
+      "types of information shared initial interactions",
+      "self-disclosure in first meetings strangers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763288,
+        33548672,
+        252763330,
+        9526061,
+        8290654,
+        1455080,
+        33742593,
+        218684951,
+        18285513,
+        19038173,
+        1036169,
+        1287121,
+        6215504,
+        51918763,
+        2536406,
+        2025320,
+        5692875,
+        912359,
+        1403704,
+        8884060
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252624612,
+        5692875,
+        43557332,
+        256460969,
+        241583570,
+        1729543,
+        196176738,
+        14430523,
+        253802656,
+        11410104,
+        237507023,
+        242763941,
+        225103201,
+        13430360,
+        225067238,
+        8290654,
+        247656607,
+        1771612,
+        7861345,
+        27314264
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256460969,
+        390045,
+        14430523,
+        21719026,
+        19653448,
+        5834356,
+        5980888,
+        208906,
+        51918770,
+        16234639,
+        1814938,
+        53081887,
+        252212894,
+        14708992,
+        11988382,
+        1406305,
+        24044885,
+        16139584,
+        43557332,
+        233210701
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2891555,
+        252624612,
+        256460969,
+        14430523,
+        11410104,
+        5692875
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256460969,
+        14430523,
+        5692875,
+        43557332,
+        21719026,
+        252624612,
+        390045,
+        2891555,
+        233210701,
+        19653448,
+        16234639,
+        1406305,
+        7767472,
+        11410104,
+        60736592,
+        5980888,
+        394987,
+        252212894,
+        5834356,
+        241583570
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.812357699964195
+  },
+  "reason_example": {
+    "query_id": "litsearch_213",
+    "query": "Could you suggest research that examines how strangers exchange information during discussions, specifically concentrating on the kinds of information typically shared during first encounters?",
+    "top_results": [
+      {
+        "corpusid": 256460969,
+        "score": 0.925466775894165,
+        "reason": "bm25=0.814; dense=1.000; sub_bm25=0.692; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14430523,
+        "score": 0.8628594875335693,
+        "reason": "bm25=0.773; dense=0.923; sub_bm25=0.716; sub_dense=0.979"
+      },
+      {
+        "corpusid": 5692875,
+        "score": 0.8430569767951965,
+        "reason": "bm25=0.892; dense=0.810; sub_bm25=0.889; sub_dense=0.857"
+      },
+      {
+        "corpusid": 43557332,
+        "score": 0.8140801191329956,
+        "reason": "bm25=0.814; dense=0.814; sub_bm25=1.000; sub_dense=0.826"
+      },
+      {
+        "corpusid": 21719026,
+        "score": 0.7601557374000549,
+        "reason": "bm25=0.556; dense=0.896; sub_bm25=0.354; sub_dense=0.858"
+      }
+    ]
+  }
+}

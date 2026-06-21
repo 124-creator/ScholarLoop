@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_353",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_353",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_353",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_353",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1377,
+      "latency_s": 9.108626500004902
+    },
+    {
+      "query_id": "litsearch_353",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 312,
+      "latency_s": 3.291478200000711
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_353",
+    "gold": [
+      258546861
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "dense retriever mixture of experts query routing",
+      "mixture of experts dense retrieval different query types",
+      "sparse mixture of experts retriever query specialization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7795635,
+        561671,
+        271688,
+        5344828,
+        237491600,
+        10961392,
+        17259174,
+        11492613,
+        15057133,
+        250390613,
+        253238033,
+        4944928,
+        9431465,
+        44090743,
+        7574659,
+        223717,
+        7346260,
+        1131623,
+        13956104,
+        47010809
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        11492613,
+        248239888,
+        252816088,
+        252693264,
+        261697072,
+        237491600,
+        248562640,
+        263874273,
+        254877227,
+        247218249,
+        238531645,
+        247594620,
+        31600041,
+        221739041,
+        223953532,
+        250390613,
+        252519173,
+        245218563,
+        263608332,
+        252668582
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16954677,
+        182703540,
+        3189641,
+        223953532,
+        11492613,
+        257901155,
+        162552,
+        252519173,
+        248239888,
+        7471769,
+        5981194,
+        259370534,
+        211126567,
+        1726053,
+        24277319,
+        261697072,
+        226227269,
+        12401528,
+        59886834,
+        220871216
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11492613,
+        16954677,
+        182703540,
+        248239888,
+        223953532,
+        261697072,
+        252693264,
+        252519173,
+        252816088,
+        3189641,
+        247218249,
+        259370534,
+        263608332,
+        162552,
+        238531645,
+        7471769,
+        237592852,
+        211126567,
+        247958465,
+        19034908
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.752341200015508
+  },
+  "reason_example": {
+    "query_id": "litsearch_353",
+    "query": "Are there any papers that build dense retrievers with mixture-of-experts architecture where each expert is responsible for different types of queries?",
+    "top_results": [
+      {
+        "corpusid": 11492613,
+        "score": 0.8853596448898315,
+        "reason": "bm25=1.000; dense=0.809; sub_bm25=0.894; sub_dense=0.913"
+      },
+      {
+        "corpusid": 16954677,
+        "score": 0.8694741725921631,
+        "reason": "bm25=0.674; dense=1.000; sub_bm25=0.494; sub_dense=0.960"
+      },
+      {
+        "corpusid": 182703540,
+        "score": 0.8662047386169434,
+        "reason": "bm25=0.722; dense=0.962; sub_bm25=0.559; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248239888,
+        "score": 0.8336418867111206,
+        "reason": "bm25=0.945; dense=0.760; sub_bm25=0.879; sub_dense=0.796"
+      },
+      {
+        "corpusid": 223953532,
+        "score": 0.8299517035484314,
+        "reason": "bm25=0.790; dense=0.857; sub_bm25=0.772; sub_dense=0.892"
+      }
+    ]
+  }
+}

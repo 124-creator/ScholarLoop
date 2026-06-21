@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_293",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_293",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_293",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_293",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 958,
+      "latency_s": 5.338968600030057
+    },
+    {
+      "query_id": "litsearch_293",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 281,
+      "latency_s": 2.2667424000101164
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_293",
+    "gold": [
+      259129912
+    ],
+    "pool_size": 288,
+    "decomposition": [
+      "multi-bit watermark text corruption resilience",
+      "watermark protect keywords syntax modification",
+      "embedding data watermark text modification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        217451634,
+        6197592,
+        16471447,
+        36920300,
+        774,
+        8133580,
+        18098005,
+        21685616,
+        10070439,
+        12783059,
+        261341775,
+        13644682,
+        561671,
+        2076339,
+        196200182,
+        244119782,
+        6368337,
+        245838261,
+        53019653,
+        34415374
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259129912,
+        233306976,
+        46919506,
+        196200182,
+        260063191,
+        259095643,
+        7021843,
+        19187663,
+        466973,
+        48524235,
+        257766852,
+        261342127,
+        261353703,
+        247411282,
+        1144150,
+        56657912,
+        9403299,
+        59916558,
+        202783651,
+        42329141
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259308864,
+        259129912,
+        259095643,
+        258741304,
+        8328889,
+        218502143,
+        7126279,
+        250479403,
+        13746426,
+        19009822,
+        7691927,
+        216868816,
+        53647535,
+        16096,
+        12252477,
+        260063191,
+        253802650,
+        258765226,
+        222378309,
+        2297007
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259129912,
+        259095643,
+        259308864
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259129912,
+        259095643,
+        259308864,
+        260063191,
+        258741304,
+        8328889,
+        216868816,
+        12252477,
+        221836078,
+        241583288,
+        257766852,
+        233209807,
+        233365339,
+        13746426,
+        56657912,
+        235097296,
+        256461131,
+        258765226,
+        7126279,
+        218502143
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.780315199983306
+  },
+  "reason_example": {
+    "query_id": "litsearch_293",
+    "query": "Is there research that investigates embedding multi-bit data into watermarks to improve resilience to text corruption, particularly aimed at safeguarding keywords and syntactic elements from modification?",
+    "top_results": [
+      {
+        "corpusid": 259129912,
+        "score": 0.9995259046554565,
+        "reason": "bm25=1.000; dense=0.999; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259095643,
+        "score": 0.8778325319290161,
+        "reason": "bm25=0.723; dense=0.981; sub_bm25=0.601; sub_dense=0.939"
+      },
+      {
+        "corpusid": 259308864,
+        "score": 0.823417067527771,
+        "reason": "bm25=0.559; dense=1.000; sub_bm25=0.917; sub_dense=1.000"
+      },
+      {
+        "corpusid": 260063191,
+        "score": 0.7192479968070984,
+        "reason": "bm25=0.734; dense=0.709; sub_bm25=0.429; sub_dense=0.814"
+      },
+      {
+        "corpusid": 258741304,
+        "score": 0.7017288208007812,
+        "reason": "bm25=0.539; dense=0.810; sub_bm25=1.000; sub_dense=0.855"
+      }
+    ]
+  }
+}

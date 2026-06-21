@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_409",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_409",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_409",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_409",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1151,
+      "latency_s": 7.909717099973932
+    },
+    {
+      "query_id": "litsearch_409",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 249,
+      "latency_s": 2.709150700015016
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_409",
+    "gold": [
+      259370644
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "prompt tuning multi-answer question answering",
+      "prompt tuning multiple answer QA",
+      "prompt tuning extractive QA multi-answer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29974541,
+        8912414,
+        5891297,
+        8358691,
+        949874,
+        492235,
+        232307483,
+        5173189,
+        252907549,
+        15050870,
+        218487043,
+        15057133,
+        3618568,
+        126584,
+        42994580,
+        2186931,
+        203610361,
+        196196445,
+        32965084,
+        232135081
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819457,
+        17215370,
+        53080062,
+        218487043,
+        226236740,
+        248572452,
+        949874,
+        252365096,
+        244896105,
+        221749191,
+        259370811,
+        252780166,
+        1363726,
+        202583429,
+        8912414,
+        232135081,
+        259376696,
+        248084930,
+        254125751,
+        52186951
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        227905310,
+        252716013,
+        252439170,
+        15108674,
+        259370749,
+        252819457,
+        428945,
+        14194446,
+        9446239,
+        56304590,
+        13898293,
+        1933154,
+        244896105,
+        6149114,
+        226283875,
+        17144339,
+        236486104,
+        16602092,
+        259833855,
+        248069196
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248572452,
+        252780166
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252819457,
+        244896105,
+        248572452,
+        218487043,
+        232135081,
+        8912414,
+        222177785,
+        252716013,
+        252780166,
+        15108674,
+        227905310,
+        248780177,
+        8829812,
+        248779986,
+        52186951,
+        252365096,
+        257365136,
+        1837942,
+        259833855,
+        252846223
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.40728270006366
+  },
+  "reason_example": {
+    "query_id": "litsearch_409",
+    "query": "Is there any paper that uses prompt tuning in multi-answer QA?",
+    "top_results": [
+      {
+        "corpusid": 252819457,
+        "score": 0.9326525926589966,
+        "reason": "bm25=1.000; dense=0.888; sub_bm25=1.000; sub_dense=0.920"
+      },
+      {
+        "corpusid": 244896105,
+        "score": 0.8524976968765259,
+        "reason": "bm25=0.859; dense=0.848; sub_bm25=0.860; sub_dense=0.904"
+      },
+      {
+        "corpusid": 248572452,
+        "score": 0.8459150791168213,
+        "reason": "bm25=0.887; dense=0.818; sub_bm25=1.000; sub_dense=0.832"
+      },
+      {
+        "corpusid": 218487043,
+        "score": 0.8310496211051941,
+        "reason": "bm25=0.903; dense=0.783; sub_bm25=0.774; sub_dense=0.832"
+      },
+      {
+        "corpusid": 232135081,
+        "score": 0.8168290853500366,
+        "reason": "bm25=0.815; dense=0.818; sub_bm25=0.785; sub_dense=0.917"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_479",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_479",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_479",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_479",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1699,
+      "latency_s": 11.258067999966443
+    },
+    {
+      "query_id": "litsearch_479",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 367,
+      "latency_s": 2.5835851000156254
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_479",
+    "gold": [
+      259076194
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "learning-based data augmentation compositional generalization language models",
+      "data augmentation compositional generalization NLP",
+      "improving compositional generalization with data augmentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        208058457,
+        235097675,
+        11966677,
+        15204692,
+        61870887,
+        48356329,
+        7619470,
+        237416585,
+        6559235,
+        30908728,
+        51997874,
+        219301439,
+        248780437,
+        5456318,
+        43690250,
+        2245732,
+        241583630,
+        61325961,
+        3264822,
+        5981377
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        245131376,
+        261214454,
+        222208634,
+        259076194,
+        235490646,
+        209439843,
+        258960278,
+        221836078,
+        222291650,
+        248506194,
+        235367710,
+        258309620,
+        259370746,
+        235829155,
+        226283493,
+        224726548,
+        249017865,
+        252819362,
+        226262205,
+        248779925
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        128000127,
+        252819362,
+        258960666,
+        226262205,
+        258378297,
+        245131376,
+        218665411,
+        248779925,
+        222208634,
+        227231247,
+        259002938,
+        259076194,
+        241583288,
+        235422524,
+        251465374,
+        203836888,
+        254043511,
+        2205238,
+        216553149,
+        248003131
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222208634,
+        245131376,
+        261214454
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245131376,
+        222208634,
+        259076194,
+        252819362,
+        226262205,
+        128000127,
+        248779925,
+        235490646,
+        209439843,
+        261214454,
+        224726548,
+        222291650,
+        226283493,
+        203836888,
+        221836078,
+        235422524,
+        220059592,
+        235367710,
+        259370677,
+        241583630
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.781317800050601
+  },
+  "reason_example": {
+    "query_id": "litsearch_479",
+    "query": "Which paper proposed a learning-based data augmentation method for improving compositional generalization of language models?",
+    "top_results": [
+      {
+        "corpusid": 245131376,
+        "score": 0.9620819091796875,
+        "reason": "bm25=1.000; dense=0.937; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222208634,
+        "score": 0.9002470970153809,
+        "reason": "bm25=0.857; dense=0.929; sub_bm25=0.957; sub_dense=0.959"
+      },
+      {
+        "corpusid": 259076194,
+        "score": 0.8768967390060425,
+        "reason": "bm25=0.857; dense=0.890; sub_bm25=0.982; sub_dense=0.928"
+      },
+      {
+        "corpusid": 252819362,
+        "score": 0.8651934862136841,
+        "reason": "bm25=0.690; dense=0.982; sub_bm25=0.662; sub_dense=0.891"
+      },
+      {
+        "corpusid": 226262205,
+        "score": 0.8436365127563477,
+        "reason": "bm25=0.687; dense=0.948; sub_bm25=0.846; sub_dense=0.976"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_499",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_499",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_499",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_499",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1087,
+      "latency_s": 5.683962899958715
+    },
+    {
+      "query_id": "litsearch_499",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 2.5449177999980748
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_499",
+    "gold": [
+      259165546
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "OctoBERT visual grounding language acquisition",
+      "vision-language model efficient language acquisition visual grounding",
+      "visual grounding facilitates language acquisition model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5498664,
+        233296628,
+        259165546,
+        256662319,
+        309476,
+        2260284,
+        17675456,
+        438559,
+        12755666,
+        6310788,
+        243865254,
+        208263819,
+        7038187,
+        9761304,
+        46937613,
+        53081131,
+        67788344,
+        5584560,
+        16059892,
+        203611841
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        233296628,
+        259165546,
+        173990592,
+        7715455,
+        243865254,
+        208263819,
+        252118392,
+        218610661,
+        249018141,
+        237452717,
+        257637187,
+        1247193,
+        102353142,
+        438559,
+        250299115,
+        53083752,
+        247447209,
+        237329472,
+        236478107,
+        256662319
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237329472,
+        259165546,
+        218610661,
+        174798289,
+        252818913,
+        259064260,
+        237251782,
+        11631121,
+        174801519,
+        173990592,
+        248780513,
+        256461068,
+        14098234,
+        9583401,
+        36102155,
+        202542455,
+        16651000,
+        222141138,
+        252815535,
+        222208687
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259165546,
+        7715455,
+        53083752,
+        237329472,
+        218610661,
+        243865254,
+        309476,
+        438559,
+        237452717,
+        173990592,
+        208263819,
+        233296628
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259165546,
+        237329472,
+        233296628,
+        218610661,
+        173990592,
+        7715455,
+        252818913,
+        102353142,
+        237251782,
+        243865254,
+        248780513,
+        252118392,
+        202542455,
+        53083752,
+        248780056,
+        259064260,
+        174798289,
+        237452717,
+        259075352,
+        208263819
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.154117800062522
+  },
+  "reason_example": {
+    "query_id": "litsearch_499",
+    "query": "Which vision-language model can demonstrate that visual grounding could facilitate efficient language acquisition? (OctoBERT)",
+    "top_results": [
+      {
+        "corpusid": 259165546,
+        "score": 0.9884690642356873,
+        "reason": "bm25=0.981; dense=0.993; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237329472,
+        "score": 0.8826147317886353,
+        "reason": "bm25=0.707; dense=1.000; sub_bm25=0.918; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233296628,
+        "score": 0.8769984245300293,
+        "reason": "bm25=1.000; dense=0.795; sub_bm25=0.973; sub_dense=0.785"
+      },
+      {
+        "corpusid": 218610661,
+        "score": 0.8465273380279541,
+        "reason": "bm25=0.788; dense=0.886; sub_bm25=0.834; sub_dense=0.886"
+      },
+      {
+        "corpusid": 173990592,
+        "score": 0.8371893167495728,
+        "reason": "bm25=0.838; dense=0.837; sub_bm25=0.971; sub_dense=0.881"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "n_papers": 14,
+  "n_resolved_unique": 12,
+  "abstract_rate": 0.9285714285714286,
+  "method_rate": 0.9285714285714286,
+  "data_rate": 0.7857142857142857,
+  "conclusion_rate": 0.9285714285714286,
+  "semantic_scholar_success": 13,
+  "crossref_success": 13,
+  "crossref_doi_success": 4,
+  "openalex_success": 13,
+  "report_path": "spike\\x3-数据来源核验.md"
+}

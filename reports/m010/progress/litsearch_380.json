@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_380",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_380",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_380",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_380",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 718,
+      "latency_s": 4.1189321000128984
+    },
+    {
+      "query_id": "litsearch_380",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 438,
+      "latency_s": 4.385141900042072
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_380",
+    "gold": [
+      259075344
+    ],
+    "pool_size": 287,
+    "decomposition": [
+      "human evolutionary knowledge guiding language model scientific idea generation",
+      "evolutionary knowledge prompting language models for scientific discovery",
+      "human evolution inspired language model for generating scientific hypotheses"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219305462,
+        41607,
+        253398055,
+        2924682,
+        6856969,
+        5153623,
+        10166824,
+        12405045,
+        1936997,
+        6723570,
+        26889702,
+        13984488,
+        243865349,
+        973609,
+        2672522,
+        1182312,
+        75817,
+        17765082,
+        5810198,
+        45897261
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5186579,
+        252070518,
+        253447029,
+        237485093,
+        226237099,
+        3927803,
+        174800773,
+        260887250,
+        15574471,
+        258378276,
+        102354588,
+        424534,
+        203905467,
+        248780467,
+        251493075,
+        252847523,
+        245502524,
+        6188690,
+        41607,
+        225094666
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        15769193,
+        15694898,
+        15574471,
+        32807064,
+        33107619,
+        826153,
+        14434991,
+        117665674,
+        7802977,
+        52012037,
+        3923764,
+        2845210,
+        15595465,
+        219306908,
+        12278968,
+        43069989,
+        23943173,
+        8842519,
+        259833850,
+        259370534
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        15694898,
+        15574471,
+        5186579,
+        32807064,
+        253447029
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        15574471,
+        2845210,
+        15694898,
+        23943173,
+        32807064,
+        14434991,
+        117665674,
+        21686891,
+        18339925,
+        2859241,
+        33107619,
+        5186579,
+        14368467,
+        159040684,
+        52012037,
+        8797227,
+        231698386,
+        27993144,
+        239009871,
+        6188690
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.775094000040554
+  },
+  "reason_example": {
+    "query_id": "litsearch_380",
+    "query": "Is there a paper that utilizes the characteristics of human evolutionary knowledge to guide language models in generating scientific ideas?",
+    "top_results": [
+      {
+        "corpusid": 15574471,
+        "score": 0.9556244611740112,
+        "reason": "bm25=0.948; dense=0.961; sub_bm25=0.856; sub_dense=0.989"
+      },
+      {
+        "corpusid": 2845210,
+        "score": 0.8948922157287598,
+        "reason": "bm25=0.873; dense=0.909; sub_bm25=0.976; sub_dense=0.993"
+      },
+      {
+        "corpusid": 15694898,
+        "score": 0.8939182162284851,
+        "reason": "bm25=0.762; dense=0.982; sub_bm25=0.908; sub_dense=1.000"
+      },
+      {
+        "corpusid": 23943173,
+        "score": 0.8774533271789551,
+        "reason": "bm25=0.856; dense=0.892; sub_bm25=0.741; sub_dense=0.882"
+      },
+      {
+        "corpusid": 32807064,
+        "score": 0.8519788980484009,
+        "reason": "bm25=0.706; dense=0.949; sub_bm25=0.618; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_557",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_557",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_557",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_557",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1409,
+      "latency_s": 10.303174900007434
+    },
+    {
+      "query_id": "litsearch_557",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 266,
+      "latency_s": 2.7212349000619724
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_557",
+    "gold": [
+      260164542
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "paper breaking down programming problems predicting objects",
+      "predicting objects solution programming problem decomposition",
+      "object-oriented problem decomposition predicting objects paper"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        221139740,
+        7440991,
+        239020521,
+        245855864,
+        5678991,
+        6588730,
+        5199824,
+        4887222,
+        14269639,
+        3179694,
+        5236680,
+        3189641,
+        7277453,
+        16269371,
+        16290367,
+        12376803,
+        885120,
+        12405045,
+        13009101,
+        16131749
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252715459,
+        39843437,
+        244798691,
+        67856205,
+        57145,
+        235416586,
+        58774356,
+        30354691,
+        7245263,
+        222290919,
+        16290367,
+        2906360,
+        219310041,
+        18802320,
+        17676483,
+        52086172,
+        52119752,
+        27993144,
+        5655307,
+        3029263
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2906360,
+        848100,
+        42199174,
+        259376503,
+        251197051,
+        6706547,
+        28109960,
+        249268333,
+        173188048,
+        3926047,
+        30485384,
+        257154234,
+        2228719,
+        235731777,
+        248780510,
+        258557812,
+        258999456,
+        37453604,
+        256827203,
+        49667227
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2906360,
+        67856205,
+        12376803
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        2906360,
+        67856205,
+        251197051,
+        6706547,
+        256827203,
+        49667227,
+        258999456,
+        249268333,
+        30485384,
+        46919506,
+        30354691,
+        259376503,
+        235416586,
+        18774150,
+        247475845,
+        221340643,
+        253115042,
+        244798691,
+        252668917,
+        235731777
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.065595999942161
+  },
+  "reason_example": {
+    "query_id": "litsearch_557",
+    "query": "What paper proposes breaking down programming problems by predicting the objects that a solution would create?",
+    "top_results": [
+      {
+        "corpusid": 2906360,
+        "score": 0.952501654624939,
+        "reason": "bm25=0.881; dense=1.000; sub_bm25=0.673; sub_dense=1.000"
+      },
+      {
+        "corpusid": 67856205,
+        "score": 0.8542894721031189,
+        "reason": "bm25=0.952; dense=0.789; sub_bm25=0.910; sub_dense=0.969"
+      },
+      {
+        "corpusid": 251197051,
+        "score": 0.8286657333374023,
+        "reason": "bm25=0.789; dense=0.855; sub_bm25=0.726; sub_dense=0.809"
+      },
+      {
+        "corpusid": 6706547,
+        "score": 0.8248634338378906,
+        "reason": "bm25=0.780; dense=0.855; sub_bm25=0.781; sub_dense=0.888"
+      },
+      {
+        "corpusid": 256827203,
+        "score": 0.8101800680160522,
+        "reason": "bm25=0.832; dense=0.795; sub_bm25=0.737; sub_dense=0.931"
+      }
+    ]
+  }
+}

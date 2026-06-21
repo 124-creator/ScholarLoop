@@ -1,0 +1,8 @@
+GET /api/search?q=retrieval%20augmented%20generation%20evaluation
+status=unavailable
+enabled=False
+verified_load_bearing=False
+deterministic=False
+results=0
+cost={"latency_s": 0.0, "llm_calls": 0, "tokens": 0}
+no fabricated recommendations when unavailable

@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_352",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_352",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_352",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_352",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1244,
+      "latency_s": 9.265172399929725
+    },
+    {
+      "query_id": "litsearch_352",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 3.183170499978587
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_352",
+    "gold": [
+      258967312
+    ],
+    "pool_size": 243,
+    "decomposition": [
+      "large-scale open-source text simplification dataset long passages",
+      "text simplification corpus long documents",
+      "open-source text simplification dataset multiple sentences"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        33978616,
+        14288014,
+        237700337,
+        249364288,
+        201792120,
+        3618568,
+        208512795,
+        16680775,
+        256461105,
+        559683,
+        248779964,
+        235097289,
+        18919004,
+        252819191,
+        3551784,
+        249916600,
+        237604955,
+        1808500,
+        218581419,
+        189761035
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235097289,
+        256461105,
+        16680775,
+        249926985,
+        1808500,
+        15636533,
+        259370682,
+        238634690,
+        237700337,
+        220871216,
+        256461266,
+        238583601,
+        202749877,
+        220364230,
+        201666897,
+        2177849,
+        202583429,
+        44134226,
+        235303723,
+        13420142
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7962289,
+        241583342,
+        12836470,
+        21713133,
+        259370682,
+        256461059,
+        52010555,
+        209536754,
+        236478176,
+        258378147,
+        38911405,
+        258967869,
+        10103892,
+        8416074,
+        18228350,
+        9609078,
+        14332689,
+        219306882,
+        13901352,
+        6791168
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370682,
+        256461105
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370682,
+        256461105,
+        15636533,
+        16680775,
+        241583342,
+        10103892,
+        8416074,
+        21713133,
+        258967869,
+        248779989,
+        6791168,
+        18228350,
+        252620070,
+        256461266,
+        2177849,
+        52010555,
+        59413867,
+        11423547,
+        258378147,
+        33850544
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.395823600003496
+  },
+  "reason_example": {
+    "query_id": "litsearch_352",
+    "query": "Are there any large-scale and open-source text simplification datasets dealing with long passages?",
+    "top_results": [
+      {
+        "corpusid": 259370682,
+        "score": 0.8908964395523071,
+        "reason": "bm25=0.814; dense=0.942; sub_bm25=0.952; sub_dense=0.915"
+      },
+      {
+        "corpusid": 256461105,
+        "score": 0.8420227766036987,
+        "reason": "bm25=0.958; dense=0.765; sub_bm25=0.989; sub_dense=0.755"
+      },
+      {
+        "corpusid": 15636533,
+        "score": 0.8379462957382202,
+        "reason": "bm25=0.817; dense=0.852; sub_bm25=0.977; sub_dense=0.846"
+      },
+      {
+        "corpusid": 16680775,
+        "score": 0.836884617805481,
+        "reason": "bm25=0.902; dense=0.793; sub_bm25=0.879; sub_dense=0.837"
+      },
+      {
+        "corpusid": 241583342,
+        "score": 0.8236843347549438,
+        "reason": "bm25=0.582; dense=0.985; sub_bm25=0.778; sub_dense=0.912"
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_572",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_572",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_572",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_572",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1026,
+      "latency_s": 4.720119599951431
+    },
+    {
+      "query_id": "litsearch_572",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 230,
+      "latency_s": 2.2313012999948114
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_572",
+    "gold": [
+      259342096
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "scalability instruction-tuning Mixture of Experts",
+      "scaling instruction tuning MoE models",
+      "instruction tuning scaling laws MoE"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        11200749,
+        218688152,
+        4306044,
+        21022858,
+        53639109,
+        1871953,
+        53222920,
+        201711379,
+        11383050,
+        6809934,
+        233364897,
+        237263305,
+        1899589,
+        3265280,
+        2038851,
+        2338256,
+        6855748,
+        233365108,
+        252819412
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        261697072,
+        259342096,
+        257353502,
+        259370688,
+        258765272,
+        11492613,
+        248266490,
+        252918165,
+        219531578,
+        237491600,
+        259108831,
+        8702526,
+        247518570,
+        248239888,
+        259108266,
+        247593852,
+        258378176,
+        259370786,
+        252383739,
+        214803082
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259342096,
+        261697072,
+        247518570,
+        247594470,
+        247446857,
+        252846121,
+        231709269,
+        247218249,
+        259108266,
+        18417896,
+        259833855,
+        11492613,
+        258833648,
+        20915835,
+        264306063,
+        257405483,
+        246867041,
+        263834884,
+        7873494,
+        264490642
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259342096,
+        261697072
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259342096,
+        261697072,
+        247518570,
+        11492613,
+        259108266,
+        257353502,
+        247218249,
+        264306063,
+        248266490,
+        258833648,
+        247594470,
+        263834884,
+        258378176,
+        252846121,
+        258765272,
+        261696697,
+        259833855,
+        259370786,
+        18417896,
+        238857301
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.855912900064141
+  },
+  "reason_example": {
+    "query_id": "litsearch_572",
+    "query": "Which paper examined the scalability of instruction-tuning with respect to Mixture of Expert models?",
+    "top_results": [
+      {
+        "corpusid": 259342096,
+        "score": 0.9996976852416992,
+        "reason": "bm25=0.999; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261697072,
+        "score": 0.9530564546585083,
+        "reason": "bm25=1.000; dense=0.922; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247518570,
+        "score": 0.8410910367965698,
+        "reason": "bm25=0.826; dense=0.851; sub_bm25=0.449; sub_dense=0.807"
+      },
+      {
+        "corpusid": 11492613,
+        "score": 0.8068075776100159,
+        "reason": "bm25=0.897; dense=0.747; sub_bm25=0.729; sub_dense=0.773"
+      },
+      {
+        "corpusid": 259108266,
+        "score": 0.7819763422012329,
+        "reason": "bm25=0.816; dense=0.760; sub_bm25=0.467; sub_dense=0.785"
+      }
+    ]
+  }
+}

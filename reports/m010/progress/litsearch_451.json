@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_451",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_451",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_451",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_451",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1090,
+      "latency_s": 6.173918299959041
+    },
+    {
+      "query_id": "litsearch_451",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 331,
+      "latency_s": 2.9532397999428213
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_451",
+    "gold": [
+      258480238
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "first knowledge base human social roles attributes",
+      "structured knowledge base social roles interconnections",
+      "early knowledge base social roles attributes construction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51881529,
+        4380524,
+        18829318,
+        748386,
+        10482640,
+        6349991,
+        19401538,
+        2136580,
+        20695016,
+        150383654,
+        7500844,
+        21695474,
+        19653906,
+        1099233,
+        12201255,
+        15260546,
+        16191440,
+        7440991,
+        7586460,
+        9201029
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1058073,
+        18829318,
+        14258704,
+        237940425,
+        6213129,
+        8783027,
+        236477504,
+        6349991,
+        6847778,
+        18927627,
+        258947336,
+        348944,
+        225103376,
+        5132275,
+        399261,
+        1099233,
+        14999613,
+        16066334,
+        258947064,
+        44169755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16936293,
+        3876179,
+        34363067,
+        4380524,
+        3011504,
+        14258704,
+        248780391,
+        37453604,
+        252762171,
+        15616277,
+        1300761,
+        15248731,
+        6580561,
+        251478998,
+        70033909,
+        9453593,
+        14941328,
+        14828867,
+        1108572,
+        17696193
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        14258704,
+        1058073,
+        258947336,
+        3011504,
+        9201029,
+        18829318,
+        16066334,
+        252763319,
+        20199772,
+        51881529,
+        4380524,
+        6349991
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14258704,
+        1058073,
+        3876179,
+        1108572,
+        3011504,
+        252762171,
+        248780391,
+        258947336,
+        46919999,
+        235293883,
+        218973881,
+        18829318,
+        34363067,
+        16066334,
+        7985321,
+        252763319,
+        5132275,
+        15248731,
+        186241870,
+        9201029
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.102935999981128
+  },
+  "reason_example": {
+    "query_id": "litsearch_451",
+    "query": "Which paper first constructed a structured knowledge base to interconnect different human social roles and attributes?",
+    "top_results": [
+      {
+        "corpusid": 14258704,
+        "score": 0.8982232809066772,
+        "reason": "bm25=0.881; dense=0.910; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1058073,
+        "score": 0.8920221328735352,
+        "reason": "bm25=1.000; dense=0.820; sub_bm25=1.000; sub_dense=0.809"
+      },
+      {
+        "corpusid": 3876179,
+        "score": 0.7895911335945129,
+        "reason": "bm25=0.476; dense=0.999; sub_bm25=0.239; sub_dense=0.852"
+      },
+      {
+        "corpusid": 1108572,
+        "score": 0.7782807350158691,
+        "reason": "bm25=0.679; dense=0.844; sub_bm25=0.569; sub_dense=0.787"
+      },
+      {
+        "corpusid": 3011504,
+        "score": 0.7778069972991943,
+        "reason": "bm25=0.569; dense=0.917; sub_bm25=0.531; sub_dense=0.970"
+      }
+    ]
+  }
+}

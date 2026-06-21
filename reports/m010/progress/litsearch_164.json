@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_164",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_164",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_164",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_164",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1019,
+      "latency_s": 6.2767064999789
+    },
+    {
+      "query_id": "litsearch_164",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 322,
+      "latency_s": 2.844095699954778
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_164",
+    "gold": [
+      247223093
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "excess and insufficient translations in machine translation evaluation",
+      "label discrepancies in machine translation evaluation for omitted content",
+      "resolving omissions in machine translation quality assessment"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2730567,
+        61207035,
+        12385862,
+        33548672,
+        186206301,
+        6698479,
+        51878325,
+        239020549,
+        9351555,
+        10837599,
+        39013984,
+        6456225,
+        45492851,
+        51734726,
+        60513490,
+        171820989,
+        32782433,
+        61214793,
+        62527047,
+        1266013
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1002552,
+        8469267,
+        227034354,
+        246706188,
+        232222259,
+        1898727,
+        11473553,
+        14935233,
+        16228715,
+        233307331,
+        252624713,
+        237010903,
+        249240504,
+        17703770,
+        11851605,
+        53082631,
+        261342127,
+        261353703,
+        6188348,
+        260449054
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        10432165,
+        8524905,
+        67228497,
+        12881655,
+        14121360,
+        201690478,
+        7117383,
+        11223001,
+        14586836,
+        5964257,
+        14059767,
+        996545,
+        244116884,
+        235670210,
+        220049291,
+        7130985,
+        233210507,
+        14739879,
+        15966179,
+        26255400
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        246706188,
+        28410457,
+        10432165,
+        7241322,
+        890333,
+        7647892,
+        1898727
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        227034354,
+        10432165,
+        16228715,
+        8524905,
+        220049291,
+        14706128,
+        14121360,
+        11473553,
+        251436788,
+        11223001,
+        15966179,
+        28739432,
+        237010900,
+        260063177,
+        258890931,
+        21684901,
+        7647892,
+        263885694,
+        67228497,
+        249204477
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.080178000032902
+  },
+  "reason_example": {
+    "query_id": "litsearch_164",
+    "query": "Could you recommend research that explores identifying excess and insufficient translations in evaluating machine translation, especially regarding resolving label discrepancies in cases of omitted content?",
+    "top_results": [
+      {
+        "corpusid": 227034354,
+        "score": 0.9143636226654053,
+        "reason": "bm25=0.934; dense=0.902; sub_bm25=1.000; sub_dense=0.903"
+      },
+      {
+        "corpusid": 10432165,
+        "score": 0.8954999446868896,
+        "reason": "bm25=0.739; dense=1.000; sub_bm25=1.000; sub_dense=0.924"
+      },
+      {
+        "corpusid": 16228715,
+        "score": 0.8784440755844116,
+        "reason": "bm25=0.882; dense=0.876; sub_bm25=0.943; sub_dense=0.851"
+      },
+      {
+        "corpusid": 8524905,
+        "score": 0.8778761029243469,
+        "reason": "bm25=0.732; dense=0.975; sub_bm25=0.873; sub_dense=0.962"
+      },
+      {
+        "corpusid": 220049291,
+        "score": 0.8676286935806274,
+        "reason": "bm25=0.781; dense=0.926; sub_bm25=0.900; sub_dense=0.928"
+      }
+    ]
+  }
+}

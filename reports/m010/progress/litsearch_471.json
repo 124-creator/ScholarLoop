@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_471",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_471",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_471",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_471",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 770,
+      "latency_s": 3.316672299988568
+    },
+    {
+      "query_id": "litsearch_471",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 280,
+      "latency_s": 2.139371700002812
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_471",
+    "gold": [
+      259370653
+    ],
+    "pool_size": 232,
+    "decomposition": [
+      "R-GCN document-level joint entity relation extraction",
+      "Relational Graph Convolutional Network document-level joint extraction",
+      "introducing R-GCN to document-level joint entity and relation extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236486172,
+        204790835,
+        225062645,
+        225062666,
+        14175558,
+        250390460,
+        1157837,
+        34456947,
+        221836081,
+        229331968,
+        252763346,
+        17695271,
+        5587642,
+        252090194,
+        8713824,
+        235313469,
+        955518,
+        2831294,
+        6070154,
+        237397713
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        225062645,
+        250390460,
+        231879840,
+        234762987,
+        236459967,
+        221836081,
+        248512457,
+        196187587,
+        235742760,
+        237485215,
+        5993225,
+        252763317,
+        235485451,
+        14175558,
+        261342050,
+        261341569,
+        196211486,
+        259370653,
+        215746894,
+        2367456
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235313469,
+        248780111,
+        7558249,
+        236486172,
+        225067549,
+        253762080,
+        233365241,
+        196211486,
+        250390460,
+        24217865,
+        252819253,
+        189898081,
+        221836081,
+        18391662,
+        955518,
+        18123232,
+        231879840,
+        44948499,
+        2391734,
+        11128199
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        196211486
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        225062645,
+        250390460,
+        221836081,
+        231879840,
+        196211486,
+        196187587,
+        237485215,
+        7558249,
+        253762080,
+        248780111,
+        225067549,
+        235485451,
+        259370653,
+        5993225,
+        24217865,
+        252819253,
+        235313469,
+        53079443,
+        189898081,
+        248512457
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 6.48917449999135
+  },
+  "reason_example": {
+    "query_id": "litsearch_471",
+    "query": "Which paper introduces the R-GCN technique into document-level joint entity and relation extraction?",
+    "top_results": [
+      {
+        "corpusid": 225062645,
+        "score": 0.9421828985214233,
+        "reason": "bm25=1.000; dense=0.904; sub_bm25=0.874; sub_dense=0.924"
+      },
+      {
+        "corpusid": 250390460,
+        "score": 0.919542133808136,
+        "reason": "bm25=0.899; dense=0.933; sub_bm25=1.000; sub_dense=0.942"
+      },
+      {
+        "corpusid": 221836081,
+        "score": 0.8718796968460083,
+        "reason": "bm25=0.800; dense=0.920; sub_bm25=0.875; sub_dense=0.962"
+      },
+      {
+        "corpusid": 231879840,
+        "score": 0.8715043067932129,
+        "reason": "bm25=0.816; dense=0.909; sub_bm25=0.944; sub_dense=0.992"
+      },
+      {
+        "corpusid": 196211486,
+        "score": 0.8624224662780762,
+        "reason": "bm25=0.755; dense=0.934; sub_bm25=0.839; sub_dense=0.980"
+      }
+    ]
+  }
+}

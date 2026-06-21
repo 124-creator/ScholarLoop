@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_193",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_193",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_193",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_193",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1616,
+      "latency_s": 11.337884099921212
+    },
+    {
+      "query_id": "litsearch_193",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 355,
+      "latency_s": 2.7423911000369117
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_193",
+    "gold": [
+      244799249
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "product quantization integer quantization token-level retrieval",
+      "hybrid quantization product quantization integer retrieval",
+      "merge product quantization integer quantization for token retrieval"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        233029494,
+        8455866,
+        11801961,
+        8191960,
+        18391127,
+        2294286,
+        3926047,
+        7213852,
+        7440991,
+        13382750,
+        19737695,
+        7874364,
+        258887561,
+        233029483,
+        252624485,
+        2746283,
+        2723528,
+        13488062,
+        27433387,
+        43421388
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370840,
+        219965949,
+        237940329,
+        243865146,
+        256808498,
+        17299045,
+        7067017,
+        237421315,
+        256459705,
+        247593909,
+        231985703,
+        252918639,
+        239993003,
+        53502621,
+        68111200,
+        220445945,
+        3323727,
+        231662438,
+        263152476,
+        252993084
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11515590,
+        10312772,
+        263333921,
+        259076379,
+        247741658,
+        33742593,
+        3892356,
+        247593909,
+        263310678,
+        243865146,
+        237421315,
+        256461070,
+        6611042,
+        259370840,
+        239993003,
+        237940329,
+        3523429,
+        2108676,
+        229923538,
+        19616577
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865146,
+        237421315,
+        229923538,
+        231985703,
+        259370840,
+        247593909,
+        237940329,
+        219965949,
+        239993003,
+        256808498,
+        11515590,
+        7067017
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11515590,
+        259370840,
+        243865146,
+        237940329,
+        247593909,
+        237421315,
+        219965949,
+        239993003,
+        17299045,
+        231985703,
+        229923538,
+        7067017,
+        263333921,
+        247741658,
+        259076379,
+        6611042,
+        221738932,
+        246705922,
+        256808498,
+        220445945
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.23219849995803
+  },
+  "reason_example": {
+    "query_id": "litsearch_193",
+    "query": "Could you suggest a study that explores a compression method that merges product quantization with integer quantization for token-level retrieval?",
+    "top_results": [
+      {
+        "corpusid": 11515590,
+        "score": 0.9163308143615723,
+        "reason": "bm25=0.791; dense=1.000; sub_bm25=0.518; sub_dense=0.895"
+      },
+      {
+        "corpusid": 259370840,
+        "score": 0.895145058631897,
+        "reason": "bm25=1.000; dense=0.825; sub_bm25=0.996; sub_dense=0.883"
+      },
+      {
+        "corpusid": 243865146,
+        "score": 0.866884171962738,
+        "reason": "bm25=0.918; dense=0.833; sub_bm25=1.000; sub_dense=0.999"
+      },
+      {
+        "corpusid": 237940329,
+        "score": 0.8620305061340332,
+        "reason": "bm25=0.930; dense=0.817; sub_bm25=0.874; sub_dense=0.914"
+      },
+      {
+        "corpusid": 247593909,
+        "score": 0.8486646413803101,
+        "reason": "bm25=0.865; dense=0.838; sub_bm25=0.665; sub_dense=0.834"
+      }
+    ]
+  }
+}

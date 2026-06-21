@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_330",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_330",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_330",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_330",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1144,
+      "latency_s": 7.754913800046779
+    },
+    {
+      "query_id": "litsearch_330",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 2.7062073999550194
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_330",
+    "gold": [
+      231951460
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "factual accuracy entity level abstractive summarization",
+      "entity-level factuality in abstractive text summarization",
+      "maintaining entity correctness in abstractive summary generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5213689,
+        33548672,
+        247594674,
+        9208282,
+        231951460,
+        252118507,
+        1891955,
+        259833796,
+        233029488,
+        908030,
+        10982377,
+        252763288,
+        252763330,
+        12595119,
+        17246627,
+        2249571,
+        16689684,
+        8997127,
+        21166550,
+        263609556
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        231951460,
+        252118507,
+        244909449,
+        235097573,
+        253499045,
+        258866156,
+        233204406,
+        222142312,
+        235683557,
+        52011473,
+        259833796,
+        243865625,
+        253080850,
+        252596098,
+        236477889,
+        253098133,
+        207794190,
+        256460965,
+        243865299,
+        248810934
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        231951460,
+        237558754,
+        254877713,
+        249062579,
+        253499045,
+        252118507,
+        243865625,
+        258999861,
+        202537639,
+        221970707,
+        226283913,
+        220047754,
+        258866156,
+        218487034,
+        249268802,
+        253238030,
+        259833772,
+        222142312,
+        258309129,
+        253761434
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231951460,
+        252118507,
+        233204406,
+        243865625,
+        258866156,
+        253499045,
+        244909449,
+        222142312,
+        235097573,
+        259833796,
+        253080850,
+        4943174
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        231951460,
+        252118507,
+        253499045,
+        258866156,
+        222142312,
+        243865625,
+        233204406,
+        254877713,
+        235683557,
+        235097573,
+        256460965,
+        237558754,
+        202537639,
+        253080850,
+        220047754,
+        244909449,
+        259093058,
+        204976362,
+        258765282,
+        233189560
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.420857300050557
+  },
+  "reason_example": {
+    "query_id": "litsearch_330",
+    "query": "What sources offer research on maintaining factual accuracy at the entity level in abstractive summary generation?",
+    "top_results": [
+      {
+        "corpusid": 231951460,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.993; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252118507,
+        "score": 0.8580405712127686,
+        "reason": "bm25=0.877; dense=0.845; sub_bm25=1.000; sub_dense=0.878"
+      },
+      {
+        "corpusid": 253499045,
+        "score": 0.7894326448440552,
+        "reason": "bm25=0.697; dense=0.851; sub_bm25=0.696; sub_dense=0.931"
+      },
+      {
+        "corpusid": 258866156,
+        "score": 0.7755643129348755,
+        "reason": "bm25=0.695; dense=0.829; sub_bm25=0.847; sub_dense=0.864"
+      },
+      {
+        "corpusid": 222142312,
+        "score": 0.7571874856948853,
+        "reason": "bm25=0.670; dense=0.815; sub_bm25=0.746; sub_dense=0.852"
+      }
+    ]
+  }
+}

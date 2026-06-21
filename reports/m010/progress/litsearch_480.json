@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_480",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_480",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_480",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_480",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 818,
+      "latency_s": 4.124000300071202
+    },
+    {
+      "query_id": "litsearch_480",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 639,
+      "latency_s": 5.651351099950261
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_480",
+    "gold": [
+      258832652
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "decompose logit update attention block inputs context influence prediction",
+      "logit decomposition attention layer analysis transformer",
+      "context influence prediction by decomposing attention block logit updates"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        26889702,
+        38960825,
+        15213255,
+        21022858,
+        53222920,
+        1767631,
+        249151907,
+        1153579,
+        10068460,
+        11846872,
+        647479,
+        12562747,
+        19653906,
+        3265280,
+        52097135,
+        14588312,
+        14962753,
+        16970491,
+        238638466
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        201698358,
+        5087912,
+        258179794,
+        58014184,
+        220047423,
+        3514091,
+        258762682,
+        225062758,
+        202734248,
+        51965872,
+        226262240,
+        259108359,
+        256826892,
+        221376974,
+        196186961,
+        13574093,
+        52009139,
+        202592085,
+        231847376,
+        13092053
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222291117,
+        67855860,
+        254926669,
+        220047423,
+        237513393,
+        182953113,
+        763569,
+        218487351,
+        248562491,
+        1935605,
+        102352287,
+        226227385,
+        248780077,
+        248085499,
+        248779953,
+        256461013,
+        254853961,
+        250179906,
+        253498917,
+        6539004
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236477936,
+        256461137,
+        222291117,
+        234338017,
+        248834267,
+        64529519,
+        220047423,
+        202734248,
+        13382281,
+        1144632,
+        58014184,
+        5087912
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222291117,
+        220047423,
+        237513393,
+        236477936,
+        218487351,
+        248780077,
+        67855860,
+        254926669,
+        1144632,
+        64529519,
+        763569,
+        1935605,
+        234338017,
+        226227385,
+        256461137,
+        254853961,
+        256389522,
+        248779953,
+        5087912,
+        247315171
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.958342100027949
+  },
+  "reason_example": {
+    "query_id": "litsearch_480",
+    "query": "Which paper proposed decomposing the logit update of each of the attention blocks’ inputs to analyze how the context influences the prediction?",
+    "top_results": [
+      {
+        "corpusid": 222291117,
+        "score": 0.9236027002334595,
+        "reason": "bm25=0.809; dense=1.000; sub_bm25=0.404; sub_dense=0.992"
+      },
+      {
+        "corpusid": 220047423,
+        "score": 0.923088550567627,
+        "reason": "bm25=0.989; dense=0.879; sub_bm25=0.529; sub_dense=0.884"
+      },
+      {
+        "corpusid": 237513393,
+        "score": 0.8473773002624512,
+        "reason": "bm25=0.801; dense=0.878; sub_bm25=1.000; sub_dense=0.932"
+      },
+      {
+        "corpusid": 236477936,
+        "score": 0.8318021893501282,
+        "reason": "bm25=0.930; dense=0.766; sub_bm25=0.508; sub_dense=0.747"
+      },
+      {
+        "corpusid": 218487351,
+        "score": 0.8314056396484375,
+        "reason": "bm25=0.783; dense=0.863; sub_bm25=0.807; sub_dense=1.000"
+      }
+    ]
+  }
+}

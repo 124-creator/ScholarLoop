@@ -1,0 +1,29 @@
+{
+  "present": {
+    "LLM_BASE_URL": true,
+    "LLM_API_KEY": true,
+    "LLM_MODEL": true
+  },
+  "valid": true,
+  "model": "deepseek-v4-flash",
+  "base_url_present": true,
+  "elapsed_s": 1.30177229992114,
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 8,
+    "total_tokens": 30,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 20,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 8
+  },
+  "content_preview": "OK"
+}

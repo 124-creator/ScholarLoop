@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_201",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_201",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_201",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_201",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 905,
+      "latency_s": 4.523564300034195
+    },
+    {
+      "query_id": "litsearch_201",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 291,
+      "latency_s": 2.340916799963452
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_201",
+    "gold": [
+      222310837
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "comparison BERT transformer text ranking performance",
+      "survey pretrained transformers ranking tasks",
+      "benchmark BERT variants text ranking"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5899668,
+        1080758,
+        8997127,
+        16584852,
+        3829016,
+        52206745,
+        6415383,
+        247957977,
+        3765717,
+        5213689,
+        220319558,
+        8035278,
+        259376593,
+        235097207,
+        241583199,
+        258547350,
+        259833782,
+        15717555,
+        461396,
+        17153466
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        222310837,
+        258378347,
+        51880415,
+        231709283,
+        14661582,
+        3829016,
+        212725651,
+        201645145,
+        241583527,
+        252624613,
+        12951305,
+        240148987,
+        247957977,
+        248780164,
+        13431799,
+        250390895,
+        233231507,
+        235097553,
+        222206204,
+        234482105
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222310837,
+        259376845,
+        240148987,
+        232035936,
+        225062299,
+        218629975,
+        236460291,
+        207916021,
+        222291680,
+        247957977,
+        235313996,
+        253370751,
+        241583370,
+        226281941,
+        252118628,
+        212725651,
+        246867127,
+        159041867,
+        225067971,
+        222205492
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222310837,
+        212725651,
+        240148987
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222310837,
+        240148987,
+        247957977,
+        212725651,
+        218629975,
+        241583370,
+        222291680,
+        258378347,
+        232035936,
+        236460291,
+        235313996,
+        241583527,
+        201304248,
+        233189566,
+        253370751,
+        225067971,
+        207916021,
+        233231507,
+        252780109,
+        201645145
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.522606000071391
+  },
+  "reason_example": {
+    "query_id": "litsearch_201",
+    "query": "Could you suggest a thorough comparative analysis or review of the performance of different pretrained transformer architectures, such as BERT, in text ranking applications?",
+    "top_results": [
+      {
+        "corpusid": 222310837,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.996"
+      },
+      {
+        "corpusid": 240148987,
+        "score": 0.9033814668655396,
+        "reason": "bm25=0.789; dense=0.979; sub_bm25=0.875; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247957977,
+        "score": 0.865212082862854,
+        "reason": "bm25=0.787; dense=0.918; sub_bm25=0.591; sub_dense=0.828"
+      },
+      {
+        "corpusid": 212725651,
+        "score": 0.8571149110794067,
+        "reason": "bm25=0.836; dense=0.871; sub_bm25=0.760; sub_dense=0.883"
+      },
+      {
+        "corpusid": 218629975,
+        "score": 0.8324007391929626,
+        "reason": "bm25=0.630; dense=0.967; sub_bm25=0.654; sub_dense=0.890"
+      }
+    ]
+  }
+}

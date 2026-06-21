@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_095",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_095",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_095",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.6666666666666666,
+      "F1": 0.1739130434782609,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_095",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 0.6666666666666666,
+      "F1": 0.30769230769230765,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1390,
+      "latency_s": 8.211640699999407
+    },
+    {
+      "query_id": "litsearch_095",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 0.6666666666666666,
+      "F1": 0.30769230769230765,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 275,
+      "latency_s": 2.114677599980496
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_095",
+    "gold": [
+      235294159,
+      241583548,
+      239885913
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "transformer language models for argument generation",
+      "generating conclusions in argumentative text using transformers",
+      "evaluating novelty and validity of generated argumentative text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3923764,
+        30908728,
+        218688152,
+        236460248,
+        5981377,
+        15769193,
+        2438164,
+        61325961,
+        10168327,
+        21022858,
+        703192,
+        2038851,
+        26697342,
+        14734250,
+        219307312,
+        1405599,
+        2649124,
+        235097623,
+        38974582,
+        13952172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819170,
+        235294159,
+        253100679,
+        4889141,
+        909276,
+        235717,
+        62716071,
+        259370531,
+        253511217,
+        5771683,
+        252818955,
+        15809561,
+        11405677,
+        17452735,
+        250390962,
+        2524855,
+        227216975,
+        258888064,
+        2149328,
+        14423856
+      ],
+      "P@10": 0.1,
+      "R@20": 0.3333333333333333,
+      "F1": 0.15384615384615383
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252819170,
+        248069254,
+        204807333,
+        219721325,
+        235294159,
+        258756907,
+        14599021,
+        14440175,
+        29195329,
+        253384612,
+        7814182,
+        6080002,
+        239885913,
+        17393033,
+        252367427,
+        10334488,
+        16134775,
+        14968002,
+        222310410,
+        16389853
+      ],
+      "P@10": 0.1,
+      "R@20": 0.6666666666666666,
+      "F1": 0.1739130434782609
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235294159,
+        239885913,
+        252819170,
+        252367427
+      ],
+      "P@10": 0.2,
+      "R@20": 0.6666666666666666,
+      "F1": 0.30769230769230765
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252819170,
+        235294159,
+        248069254,
+        204807333,
+        219721325,
+        239885913,
+        14440175,
+        6080002,
+        252367427,
+        202541012,
+        4637320,
+        62716071,
+        15809561,
+        251438426,
+        258756907,
+        2524855,
+        253384612,
+        248572222,
+        14599021,
+        225062549
+      ],
+      "P@10": 0.2,
+      "R@20": 0.6666666666666666,
+      "F1": 0.30769230769230765
+    },
+    "elapsed_s": 12.312009899993427
+  },
+  "reason_example": {
+    "query_id": "litsearch_095",
+    "query": "Which papers should I refer to for learning about the application of transformer language models to the generation of argumentative text conclusions, including the assessment of their novelty and validity?",
+    "top_results": [
+      {
+        "corpusid": 252819170,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.975"
+      },
+      {
+        "corpusid": 235294159,
+        "score": 0.9107065200805664,
+        "reason": "bm25=0.870; dense=0.938; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248069254,
+        "score": 0.8435750007629395,
+        "reason": "bm25=0.684; dense=0.950; sub_bm25=0.769; sub_dense=1.000"
+      },
+      {
+        "corpusid": 204807333,
+        "score": 0.8285177946090698,
+        "reason": "bm25=0.662; dense=0.939; sub_bm25=0.611; sub_dense=0.957"
+      },
+      {
+        "corpusid": 219721325,
+        "score": 0.8200063109397888,
+        "reason": "bm25=0.641; dense=0.939; sub_bm25=0.741; sub_dense=0.849"
+      }
+    ]
+  }
+}

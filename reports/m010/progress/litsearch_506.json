@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_506",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_506",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_506",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_506",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1226,
+      "latency_s": 6.517129899933934
+    },
+    {
+      "query_id": "litsearch_506",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 239,
+      "latency_s": 2.141051899990998
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_506",
+    "gold": [
+      258041281
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "token reduction methods early in vision transformers",
+      "initial token pruning vision transformer",
+      "reduce visual tokens from start ViT"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51985896,
+        16453936,
+        5213689,
+        58367559,
+        15217163,
+        10689140,
+        15915751,
+        14456332,
+        9709745,
+        11684721,
+        1949172,
+        18973071,
+        2131413,
+        16711873,
+        235436185,
+        1583135,
+        2260284,
+        7511544,
+        17675456,
+        60441316
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235436185,
+        263134283,
+        247618909,
+        258959382,
+        256827775,
+        173990592,
+        237329472,
+        263889455,
+        263609410,
+        235359074,
+        261682321,
+        250299115,
+        227745459,
+        264306111,
+        232417692,
+        238531695,
+        264147054,
+        246863402,
+        31672859,
+        252222320
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        255440465,
+        244908227,
+        235436185,
+        256827775,
+        263889455,
+        263134283,
+        258959382,
+        248887665,
+        244478155,
+        264147054,
+        261682321,
+        258426737,
+        235359074,
+        264306111,
+        247084450,
+        263334567,
+        247475977,
+        247411040,
+        247618909,
+        252907639
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258959382,
+        261682321,
+        263889455
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235436185,
+        263134283,
+        256827775,
+        263889455,
+        244908227,
+        258959382,
+        247618909,
+        261682321,
+        235359074,
+        264147054,
+        264306111,
+        258426737,
+        263334567,
+        173990592,
+        248887665,
+        249953817,
+        247084450,
+        237329472,
+        258426317,
+        235367813
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.479910699999891
+  },
+  "reason_example": {
+    "query_id": "litsearch_506",
+    "query": "Can we reduce visual tokens in vision transformers right from the beginning?",
+    "top_results": [
+      {
+        "corpusid": 235436185,
+        "score": 0.9620004892349243,
+        "reason": "bm25=1.000; dense=0.937; sub_bm25=0.691; sub_dense=0.926"
+      },
+      {
+        "corpusid": 263134283,
+        "score": 0.9246272444725037,
+        "reason": "bm25=0.965; dense=0.897; sub_bm25=0.845; sub_dense=0.882"
+      },
+      {
+        "corpusid": 256827775,
+        "score": 0.8859350681304932,
+        "reason": "bm25=0.811; dense=0.936; sub_bm25=0.656; sub_dense=0.933"
+      },
+      {
+        "corpusid": 263889455,
+        "score": 0.8681726455688477,
+        "reason": "bm25=0.778; dense=0.928; sub_bm25=0.529; sub_dense=1.000"
+      },
+      {
+        "corpusid": 244908227,
+        "score": 0.8668631315231323,
+        "reason": "bm25=0.698; dense=0.980; sub_bm25=0.959; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_311",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_311",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_311",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_311",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2081,
+      "latency_s": 15.256246600067243
+    },
+    {
+      "query_id": "litsearch_311",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.8051304999971762
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_311",
+    "gold": [
+      230433941,
+      238857301
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "adapter-based tuning vs full fine-tuning limited data comparison",
+      "efficacy of adapter tuning in low-resource settings",
+      "comparative study of fine-tuning methods with small datasets"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        679264,
+        3891288,
+        15954468,
+        186206301,
+        234741946,
+        201624189,
+        3259278,
+        229365774,
+        235358847,
+        10108216,
+        13209139,
+        248779964,
+        184483463,
+        248069254,
+        9985828,
+        248780499,
+        132169,
+        715201,
+        2260284,
+        6749590
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235313889,
+        259833855,
+        258947572,
+        235359141,
+        259095584,
+        248780142,
+        248069254,
+        253265357,
+        258557131,
+        235658872,
+        230433941,
+        253447199,
+        264812826,
+        247011290,
+        253116759,
+        258426317,
+        238856900,
+        264802494,
+        202660912,
+        220525782
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247594470,
+        255440621,
+        8380490,
+        226238894,
+        259145131,
+        235359141,
+        259833814,
+        617740,
+        232035936,
+        18332402,
+        259376778,
+        227217601,
+        246867041,
+        248780177,
+        235328547,
+        211532533,
+        9946972,
+        259833855,
+        259342087,
+        259370884
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235359141,
+        258947572,
+        259833855,
+        235313889,
+        248780142,
+        236486069,
+        259095584
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235359141,
+        259833855,
+        255440621,
+        235313889,
+        247594470,
+        259833814,
+        259095584,
+        259145131,
+        264812826,
+        236486069,
+        264306063,
+        247011290,
+        211532533,
+        248780142,
+        219558527,
+        253447199,
+        258947572,
+        248780177,
+        246867041,
+        238856900
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 20.406302999937907
+  },
+  "reason_example": {
+    "query_id": "litsearch_311",
+    "query": "What research exists comparing adapter-based tuning and full fine-tuning efficacy in limited data contexts?",
+    "top_results": [
+      {
+        "corpusid": 235359141,
+        "score": 0.9258407354354858,
+        "reason": "bm25=0.931; dense=0.922; sub_bm25=1.000; sub_dense=0.941"
+      },
+      {
+        "corpusid": 259833855,
+        "score": 0.8724231719970703,
+        "reason": "bm25=0.981; dense=0.800; sub_bm25=0.984; sub_dense=0.781"
+      },
+      {
+        "corpusid": 255440621,
+        "score": 0.8581990003585815,
+        "reason": "bm25=0.699; dense=0.964; sub_bm25=0.659; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235313889,
+        "score": 0.8447573781013489,
+        "reason": "bm25=1.000; dense=0.741; sub_bm25=1.000; sub_dense=0.841"
+      },
+      {
+        "corpusid": 247594470,
+        "score": 0.8434884548187256,
+        "reason": "bm25=0.609; dense=1.000; sub_bm25=0.573; sub_dense=1.000"
+      }
+    ]
+  }
+}

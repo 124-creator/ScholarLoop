@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_509",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_509",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_509",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_509",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1256,
+      "latency_s": 6.126430099946447
+    },
+    {
+      "query_id": "litsearch_509",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 256,
+      "latency_s": 2.409482999937609
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_509",
+    "gold": [
+      263152829
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "LLM information hiding detection",
+      "stealthy instructions LLM concealment",
+      "identifying concealed information in language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        41159378,
+        58302,
+        2896894,
+        1305434,
+        45438237,
+        8774560,
+        21758,
+        17255410,
+        237513875,
+        1071914,
+        8748191,
+        2389283,
+        14892573,
+        235358263,
+        173990423,
+        233029475,
+        46482966,
+        5086980,
+        28109960,
+        12479653
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        17220360,
+        15719016,
+        6495498,
+        8774560,
+        256390197,
+        221097928,
+        247741267,
+        39146063,
+        235097633,
+        12646830,
+        30943329,
+        173990423,
+        1944690,
+        20290316,
+        235358263,
+        263152829,
+        258463982,
+        17965611,
+        3908274,
+        60736592
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247315260,
+        253244515,
+        264555202,
+        18978174,
+        6271137,
+        249538440,
+        208325499,
+        252624507,
+        221655222,
+        263152829,
+        250243645,
+        238419564,
+        263311025,
+        222125320,
+        263310823,
+        28297509,
+        19667393,
+        264038749,
+        17606825,
+        248512871
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263152829,
+        249538440,
+        231942635
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263152829,
+        18978174,
+        249538440,
+        264555202,
+        263311025,
+        247315260,
+        252624507,
+        52010158,
+        263834989,
+        222125320,
+        231942635,
+        253244515,
+        248780476,
+        218486757,
+        13386528,
+        221655222,
+        250243645,
+        208325499,
+        28297509,
+        240288910
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.559070799965411
+  },
+  "reason_example": {
+    "query_id": "litsearch_509",
+    "query": "Are there any papers that study whether you can identify if a LLM has been instructed to hide some information?",
+    "top_results": [
+      {
+        "corpusid": 263152829,
+        "score": 0.8372006416320801,
+        "reason": "bm25=0.798; dense=0.864; sub_bm25=1.000; sub_dense=0.775"
+      },
+      {
+        "corpusid": 18978174,
+        "score": 0.8226187229156494,
+        "reason": "bm25=0.691; dense=0.910; sub_bm25=0.629; sub_dense=0.820"
+      },
+      {
+        "corpusid": 249538440,
+        "score": 0.7679535746574402,
+        "reason": "bm25=0.594; dense=0.884; sub_bm25=0.512; sub_dense=0.975"
+      },
+      {
+        "corpusid": 264555202,
+        "score": 0.7648417353630066,
+        "reason": "bm25=0.467; dense=0.964; sub_bm25=0.697; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263311025,
+        "score": 0.758525013923645,
+        "reason": "bm25=0.645; dense=0.834; sub_bm25=0.616; sub_dense=0.906"
+      }
+    ]
+  }
+}

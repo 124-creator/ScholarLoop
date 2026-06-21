@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_185",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_185",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_185",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_185",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 909,
+      "latency_s": 4.286295700003393
+    },
+    {
+      "query_id": "litsearch_185",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 318,
+      "latency_s": 2.457219099975191
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_185",
+    "gold": [
+      231632658
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "optimal demonstration selection few-shot in-context learning",
+      "demonstration selection strategies in-context learning",
+      "effect of demonstration order and composition in few-shot learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        221761488,
+        259370522,
+        248722157,
+        39654639,
+        251979431,
+        237700510,
+        19035533,
+        17063555,
+        234103448,
+        260421343,
+        1363323,
+        4643315,
+        16771067,
+        239016858,
+        259164846,
+        33871285,
+        196179812,
+        7883094,
+        1412569,
+        232222259
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        251979431,
+        259064260,
+        246996668,
+        239016858,
+        258461017,
+        229923710,
+        258762309,
+        258437068,
+        252819397,
+        248722157,
+        252819270,
+        252819380,
+        247613006,
+        232222259,
+        252089424,
+        237091103,
+        254591242,
+        235652287,
+        248085700,
+        254877590
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        182952687,
+        236087352,
+        258547350,
+        259833782,
+        254198961,
+        5037032,
+        248506039,
+        251979431,
+        259370567,
+        240070335,
+        252992947,
+        244773230,
+        259977321,
+        247155069,
+        259064260,
+        229923710,
+        68071305,
+        67877096,
+        222315198,
+        254591242
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247155069,
+        239016858,
+        251979431,
+        259370567,
+        258547350,
+        229923710,
+        258762309,
+        259064260,
+        248722157,
+        258461017,
+        236087352
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        251979431,
+        259064260,
+        236087352,
+        229923710,
+        182952687,
+        259370567,
+        247155069,
+        252992947,
+        254198961,
+        254591242,
+        248506039,
+        259977321,
+        239016858,
+        244773230,
+        258547350,
+        259833782,
+        240070335,
+        5037032,
+        259370780,
+        258557751
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.915796400047839
+  },
+  "reason_example": {
+    "query_id": "litsearch_185",
+    "query": "Could you recommend studies which explore how to optimally select demonstrations for few-shot in-context learning?",
+    "top_results": [
+      {
+        "corpusid": 251979431,
+        "score": 0.942533016204834,
+        "reason": "bm25=1.000; dense=0.904; sub_bm25=0.955; sub_dense=0.972"
+      },
+      {
+        "corpusid": 259064260,
+        "score": 0.8587877750396729,
+        "reason": "bm25=0.842; dense=0.870; sub_bm25=0.637; sub_dense=0.856"
+      },
+      {
+        "corpusid": 236087352,
+        "score": 0.8357048034667969,
+        "reason": "bm25=0.623; dense=0.978; sub_bm25=0.736; sub_dense=0.947"
+      },
+      {
+        "corpusid": 229923710,
+        "score": 0.8352302312850952,
+        "reason": "bm25=0.799; dense=0.860; sub_bm25=0.789; sub_dense=0.975"
+      },
+      {
+        "corpusid": 182952687,
+        "score": 0.8228055238723755,
+        "reason": "bm25=0.557; dense=1.000; sub_bm25=0.765; sub_dense=0.934"
+      }
+    ]
+  }
+}

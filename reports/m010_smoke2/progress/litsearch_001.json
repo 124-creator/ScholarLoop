@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_001",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_001",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_001",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_001",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 4595,
+      "latency_s": 33.33846719993744
+    },
+    {
+      "query_id": "litsearch_001",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 280,
+      "latency_s": 2.391270999913104
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_001",
+    "gold": [
+      227231792
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "Tunisian Arabic dialect translation resources",
+      "manually translated comments native speakers Tunisian Arabic",
+      "data augmentation stop word segmentation Tunisian Arabic"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8057832,
+        12160022,
+        18184246,
+        252432736,
+        8333055,
+        388111,
+        252819180,
+        13996830,
+        204823809,
+        249980208,
+        15773620,
+        260063173,
+        916523,
+        3247663,
+        6497918,
+        47462067,
+        216011074,
+        219308406,
+        2115850,
+        16591834
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252432736,
+        6825507,
+        233365022,
+        16825250,
+        12160022,
+        9517956,
+        227231792,
+        238583454,
+        15225095,
+        252873073,
+        256461096,
+        1644594,
+        8964961,
+        5797224,
+        249980208,
+        256739275,
+        10961392,
+        37366821,
+        32734599,
+        254293626
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        227231792,
+        1644594,
+        21695693,
+        6825507,
+        9726397,
+        252432736,
+        15225095,
+        15618774,
+        5797224,
+        14722064,
+        253761435,
+        1889321,
+        214612326,
+        1999849,
+        89899,
+        29263038,
+        16563009,
+        34411614,
+        10934368,
+        21717882
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        227231792,
+        15225095,
+        1644594,
+        252432736,
+        9517956,
+        6825507,
+        5797224,
+        233365022,
+        16825250,
+        245616856
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252432736,
+        6825507,
+        227231792,
+        1644594,
+        15225095,
+        16825250,
+        15618774,
+        5797224,
+        233365022,
+        21695693,
+        9726397,
+        9653643,
+        1999849,
+        10934368,
+        14722064,
+        214612326,
+        16563009,
+        546842,
+        38555749,
+        9517956
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 1.6533503000391647
+  },
+  "reason_example": {
+    "query_id": "litsearch_001",
+    "query": "Are there any resources available for translating Tunisian Arabic dialect that contain both manually translated comments by native speakers and additional data augmented through methods like segmentation at stop words level?",
+    "top_results": [
+      {
+        "corpusid": 252432736,
+        "score": 0.9658217430114746,
+        "reason": "bm25=1.000; dense=0.943; sub_bm25=0.838; sub_dense=0.953"
+      },
+      {
+        "corpusid": 6825507,
+        "score": 0.944731593132019,
+        "reason": "bm25=0.924; dense=0.958; sub_bm25=0.924; sub_dense=0.888"
+      },
+      {
+        "corpusid": 227231792,
+        "score": 0.8860279321670532,
+        "reason": "bm25=0.715; dense=1.000; sub_bm25=1.000; sub_dense=0.992"
+      },
+      {
+        "corpusid": 1644594,
+        "score": 0.86612868309021,
+        "reason": "bm25=0.693; dense=0.982; sub_bm25=0.766; sub_dense=0.952"
+      },
+      {
+        "corpusid": 15225095,
+        "score": 0.8441590666770935,
+        "reason": "bm25=0.697; dense=0.942; sub_bm25=0.855; sub_dense=0.927"
+      }
+    ]
+  }
+}

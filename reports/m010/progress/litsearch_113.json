@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_113",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_113",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_113",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_113",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1125,
+      "latency_s": 7.517865400062874
+    },
+    {
+      "query_id": "litsearch_113",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 300,
+      "latency_s": 2.699870799900964
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_113",
+    "gold": [
+      244954670,
+      256461055
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "bi-encoder text matching knowledge distillation",
+      "knowledge distillation for bi-encoder retrieval",
+      "improving bi-encoder performance with distillation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21022858,
+        9181672,
+        16020183,
+        33742593,
+        1871953,
+        16133344,
+        4948322,
+        2709318,
+        20695016,
+        37453604,
+        38964517,
+        461396,
+        233029490,
+        9988418,
+        2143884,
+        6934412,
+        60718875,
+        14883041,
+        13189192,
+        9925138
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237940779,
+        252763290,
+        235720578,
+        14490268,
+        245219186,
+        236460308,
+        247130572,
+        244954670,
+        256461055,
+        259370760,
+        221995575,
+        256105245,
+        257913267,
+        252734863,
+        258960671,
+        236460152,
+        250390482,
+        252693220,
+        6040286,
+        250390701
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        244954670,
+        256461055,
+        247130572,
+        258960671,
+        19032380,
+        27732417,
+        6521487,
+        235258277,
+        253265138,
+        526753,
+        259203703,
+        250390956,
+        6216639,
+        1876437,
+        248779987,
+        235212428,
+        259370839,
+        1099968,
+        237605176,
+        35892073
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237940779,
+        235720578,
+        244954670,
+        256461055
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        244954670,
+        256461055,
+        247130572,
+        258960671,
+        237940779,
+        235720578,
+        235258277,
+        250390956,
+        250390701,
+        27732417,
+        259203703,
+        253265138,
+        243865137,
+        221995575,
+        244464083,
+        237605176,
+        256460859,
+        235212428,
+        248779987,
+        237381852
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 12.006403799983673
+  },
+  "reason_example": {
+    "query_id": "litsearch_113",
+    "query": "Could you direct me to studies investigating the enhancement of bi-encoder text matching performance through the application of knowledge distillation methods?",
+    "top_results": [
+      {
+        "corpusid": 244954670,
+        "score": 0.9408228397369385,
+        "reason": "bm25=0.852; dense=1.000; sub_bm25=0.637; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256461055,
+        "score": 0.9408228397369385,
+        "reason": "bm25=0.852; dense=1.000; sub_bm25=0.637; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247130572,
+        "score": 0.9025174379348755,
+        "reason": "bm25=0.862; dense=0.930; sub_bm25=0.810; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258960671,
+        "score": 0.8680222034454346,
+        "reason": "bm25=0.813; dense=0.905; sub_bm25=0.667; sub_dense=0.924"
+      },
+      {
+        "corpusid": 237940779,
+        "score": 0.829581618309021,
+        "reason": "bm25=1.000; dense=0.716; sub_bm25=1.000; sub_dense=0.763"
+      }
+    ]
+  }
+}

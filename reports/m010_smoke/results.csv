@@ -1,0 +1,16 @@
+﻿query_id,system,P@10,R@20,F1,hallucinated_or_out_of_pool,total_tokens,latency_s
+litsearch_000,keyword,0.0,0.0,0.0,0,0,0.0
+litsearch_000,bm25,0.0,0.0,0.0,0,0,0.0
+litsearch_000,neural_embedding,0.0,0.0,0.0,0,0,0.0
+litsearch_000,single_llm,0.0,0.0,0.0,0,5207,23.989966099965386
+litsearch_000,scholarloop_a,0.0,0.0,0.0,0,334,2.880989299970679
+litsearch_001,keyword,0.0,0.0,0.0,0,0,0.0
+litsearch_001,bm25,0.1,1.0,0.18181818181818182,0,0,0.0
+litsearch_001,neural_embedding,0.1,1.0,0.18181818181818182,0,0,0.0
+litsearch_001,single_llm,0.1,1.0,0.18181818181818182,0,4771,23.59065200004261
+litsearch_001,scholarloop_a,0.1,1.0,0.18181818181818182,0,239,1.8794394000433385
+litsearch_002,keyword,0.0,0.0,0.0,0,0,0.0
+litsearch_002,bm25,0.1,0.5,0.16666666666666669,0,0,0.0
+litsearch_002,neural_embedding,0.1,0.5,0.16666666666666669,0,0,0.0
+litsearch_002,single_llm,0.1,0.5,0.16666666666666669,0,4602,19.679045199998654
+litsearch_002,scholarloop_a,0.1,0.5,0.16666666666666669,0,360,3.0289074999745935

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_122",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_122",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_122",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_122",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 968,
+      "latency_s": 6.366630499949679
+    },
+    {
+      "query_id": "litsearch_122",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 223,
+      "latency_s": 2.0481370999477804
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_122",
+    "gold": [
+      238198752
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "variational autoencoder knowledge graph standardization",
+      "variational autoencoder open knowledge graph embedding",
+      "VAE for knowledge graph normalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        4380524,
+        20695016,
+        7440991,
+        16657732,
+        45438237,
+        238198752,
+        5399186,
+        5453178,
+        14869687,
+        247613006,
+        9376798,
+        203688153,
+        62016582,
+        253018966,
+        233210701,
+        5146856,
+        16715295,
+        43454804,
+        64489950,
+        1428271
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        238198752,
+        247613006,
+        52086172,
+        258947486,
+        3524184,
+        221970864,
+        232222259,
+        189762527,
+        235313434,
+        256461195,
+        245124024,
+        7861345,
+        233210701,
+        236924433,
+        233289631,
+        88517649,
+        220060872,
+        248779863,
+        250390611,
+        236460348
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        238198752,
+        53223679,
+        253098905,
+        218610721,
+        236459932,
+        256461195,
+        19187663,
+        225067186,
+        208527419,
+        227231162,
+        261341583,
+        218487188,
+        4669223,
+        212675605,
+        222290755,
+        238857304,
+        189762527,
+        253117079,
+        221090697,
+        252284039
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238198752
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238198752,
+        53223679,
+        256461195,
+        189762527,
+        253098905,
+        235313434,
+        4669223,
+        218610721,
+        3524184,
+        238857304,
+        247594360,
+        202541359,
+        52086172,
+        247613006,
+        140116781,
+        253117079,
+        14170854,
+        258947486,
+        208527419,
+        209439505
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 3.1558255999116227
+  },
+  "reason_example": {
+    "query_id": "litsearch_122",
+    "query": "Could you recommend a study that explores employing variational autoencoders to standardize open knowledge graphs?",
+    "top_results": [
+      {
+        "corpusid": 238198752,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.906; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53223679,
+        "score": 0.772756814956665,
+        "reason": "bm25=0.500; dense=0.955; sub_bm25=0.705; sub_dense=0.955"
+      },
+      {
+        "corpusid": 256461195,
+        "score": 0.7616578340530396,
+        "reason": "bm25=0.635; dense=0.846; sub_bm25=0.491; sub_dense=0.976"
+      },
+      {
+        "corpusid": 189762527,
+        "score": 0.752551257610321,
+        "reason": "bm25=0.655; dense=0.817; sub_bm25=0.664; sub_dense=0.913"
+      },
+      {
+        "corpusid": 253098905,
+        "score": 0.7506951093673706,
+        "reason": "bm25=0.485; dense=0.928; sub_bm25=0.790; sub_dense=0.978"
+      }
+    ]
+  }
+}

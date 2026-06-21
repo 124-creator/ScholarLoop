@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_215",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_215",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_215",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_215",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1337,
+      "latency_s": 6.188782399985939
+    },
+    {
+      "query_id": "litsearch_215",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 372,
+      "latency_s": 2.9674147000769153
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_215",
+    "gold": [
+      237490383
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "language model performance Nigerian Pidgin English",
+      "NLP evaluation creole languages English-based",
+      "cross-lingual transfer English Nigerian Pidgin LLM"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        40110441,
+        27016310,
+        253762079,
+        250390644,
+        39188305,
+        2038851,
+        216868816,
+        235294015,
+        252818913,
+        151042048,
+        51918763,
+        237352964,
+        13848633,
+        52195444,
+        241583524,
+        251498131,
+        258461441,
+        243865354,
+        5544829,
+        235258262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237490383,
+        259376815,
+        259376717,
+        252461144,
+        252819057,
+        246063436,
+        249240376,
+        254200096,
+        51918763,
+        221856691,
+        151042048,
+        7283177,
+        258378322,
+        5429216,
+        252847545,
+        258762157,
+        15179129,
+        235294015,
+        53614845,
+        251402831
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237490383,
+        249240376,
+        7283177,
+        252819057,
+        8028944,
+        258947231,
+        248780125,
+        2163744,
+        259376717,
+        18008015,
+        29607353,
+        252386198,
+        21702338,
+        12815850,
+        8517763,
+        16180857,
+        46256762,
+        174383,
+        247748611,
+        6170996
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237490383,
+        259376717,
+        259376815,
+        252819057,
+        248780125,
+        249240376,
+        246063436,
+        258461441,
+        252461144,
+        7283177,
+        13848633,
+        39188305
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237490383,
+        249240376,
+        252819057,
+        7283177,
+        259376717,
+        259376815,
+        248780125,
+        258947231,
+        252461144,
+        2163744,
+        12815850,
+        246063436,
+        13848633,
+        5429216,
+        258461441,
+        29607353,
+        248392249,
+        232233062,
+        247476207,
+        174383
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.727945299935527
+  },
+  "reason_example": {
+    "query_id": "litsearch_215",
+    "query": "Could you suggest research that examines how well language models work with creole languages, particularly in relation to their effectiveness with Nigerian Pidgin, given its close linguistic relationship with English?",
+    "top_results": [
+      {
+        "corpusid": 237490383,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.960; sub_dense=0.990"
+      },
+      {
+        "corpusid": 249240376,
+        "score": 0.8194950222969055,
+        "reason": "bm25=0.675; dense=0.916; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252819057,
+        "score": 0.7785083055496216,
+        "reason": "bm25=0.699; dense=0.831; sub_bm25=0.691; sub_dense=1.000"
+      },
+      {
+        "corpusid": 7283177,
+        "score": 0.7518665790557861,
+        "reason": "bm25=0.613; dense=0.845; sub_bm25=0.767; sub_dense=0.819"
+      },
+      {
+        "corpusid": 259376717,
+        "score": 0.7472293376922607,
+        "reason": "bm25=0.782; dense=0.724; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

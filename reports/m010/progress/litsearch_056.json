@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_056",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_056",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_056",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_056",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1189,
+      "latency_s": 5.697237999993376
+    },
+    {
+      "query_id": "litsearch_056",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 359,
+      "latency_s": 2.3206728000659496
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_056",
+    "gold": [
+      16308735,
+      92327
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "keystroke ratio mouse action ratio computer-assisted translation user effort",
+      "keystroke ratio translation effort CAT tools",
+      "mouse action ratio translation engagement"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8429165,
+        201641505,
+        48342881,
+        51876951,
+        6896901,
+        20498321,
+        40251206,
+        6602296,
+        12096827,
+        8898217,
+        248721896,
+        6118582,
+        393084,
+        195767436,
+        11238798,
+        15990927,
+        3145485,
+        3199424,
+        40957875,
+        42910362
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        63931917,
+        8429165,
+        21731448,
+        237010903,
+        21666821,
+        248780350,
+        40689384,
+        102354918,
+        15116729,
+        43651179,
+        13106272,
+        261494439,
+        249394837,
+        10497905,
+        6465096,
+        252186410,
+        246430598,
+        14958717,
+        7172742,
+        393084
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9792578,
+        10362508,
+        252186410,
+        7429398,
+        15433719,
+        261494439,
+        21731448,
+        14958717,
+        10497905,
+        38573874,
+        14952934,
+        15132118,
+        26348515,
+        13106272,
+        15638860,
+        1869713,
+        2304701,
+        53235678,
+        215514618,
+        202619400
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237010903,
+        10497905,
+        15638860,
+        2937876,
+        13106272,
+        8429165,
+        63931917,
+        21731448,
+        261494439,
+        201641505,
+        11035270,
+        48342881
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        21731448,
+        252186410,
+        261494439,
+        10362508,
+        10497905,
+        14958717,
+        13106272,
+        15638860,
+        63931917,
+        7429398,
+        2937876,
+        15433719,
+        11035270,
+        45913214,
+        15132118,
+        5562790,
+        38573874,
+        16125805,
+        198229768,
+        10772305
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.650363499997184
+  },
+  "reason_example": {
+    "query_id": "litsearch_056",
+    "query": "In researching metrics for human-interaction with computer-assisted translation tools, which studies have analyzed parameters such as the keystroke ratio and mouse action ratio to quantify user effort or engagement?",
+    "top_results": [
+      {
+        "corpusid": 21731448,
+        "score": 0.9498481154441833,
+        "reason": "bm25=0.970; dense=0.937; sub_bm25=0.991; sub_dense=0.868"
+      },
+      {
+        "corpusid": 252186410,
+        "score": 0.9143275022506714,
+        "reason": "bm25=0.837; dense=0.966; sub_bm25=0.857; sub_dense=0.790"
+      },
+      {
+        "corpusid": 261494439,
+        "score": 0.9118587374687195,
+        "reason": "bm25=0.850; dense=0.953; sub_bm25=0.476; sub_dense=0.698"
+      },
+      {
+        "corpusid": 10362508,
+        "score": 0.8983767628669739,
+        "reason": "bm25=0.779; dense=0.978; sub_bm25=1.000; sub_dense=0.960"
+      },
+      {
+        "corpusid": 10497905,
+        "score": 0.8946784734725952,
+        "reason": "bm25=0.838; dense=0.933; sub_bm25=0.930; sub_dense=0.788"
+      }
+    ]
+  }
+}

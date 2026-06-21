@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_236",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_236",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_236",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_236",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1098,
+      "latency_s": 6.500405400060117
+    },
+    {
+      "query_id": "litsearch_236",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 341,
+      "latency_s": 2.394393300055526
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_236",
+    "gold": [
+      225067563
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "weakly-supervised document categorization embedding similarity",
+      "keyword expansion embedding similarity document classification",
+      "expanding label sets using embeddings weak supervision"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        232021957,
+        486306,
+        2025320,
+        202771243,
+        1519586,
+        2114002,
+        18343028,
+        218971966,
+        226227269,
+        233033383,
+        6201412,
+        18961325,
+        46885888,
+        52488,
+        250150524,
+        13092480,
+        252847468,
+        12853243,
+        9072431,
+        256461329
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        124334,
+        16767871,
+        52488,
+        238407828,
+        954470,
+        254564126,
+        6201412,
+        1257809,
+        258959063,
+        252118392,
+        18860048,
+        51877084,
+        18343028,
+        256461461,
+        12222596,
+        13092480,
+        5907841,
+        74975,
+        251537841,
+        221703727
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254564126,
+        17963947,
+        5459550,
+        16118445,
+        16169799,
+        232320780,
+        18028927,
+        10642784,
+        8528959,
+        7981682,
+        3527244,
+        225047767,
+        74975,
+        15825858,
+        7281230,
+        19381707,
+        11317625,
+        13675551,
+        12222596,
+        5674717
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254564126,
+        232021957,
+        18343028,
+        52488,
+        13092480,
+        8347342,
+        60568551,
+        51877084,
+        6201412,
+        124334,
+        1257809,
+        16767871
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254564126,
+        124334,
+        238407828,
+        12222596,
+        74975,
+        18343028,
+        6201412,
+        1257809,
+        13092480,
+        8347342,
+        60568551,
+        52488,
+        232021957,
+        2128404,
+        231741096,
+        15448388,
+        7089400,
+        7102885,
+        221703727,
+        5674717
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.741145399981178
+  },
+  "reason_example": {
+    "query_id": "litsearch_236",
+    "query": "Could you suggest research that investigates expanding keyword collections through embedding similarity in weakly-supervised document categorization?",
+    "top_results": [
+      {
+        "corpusid": 254564126,
+        "score": 0.9710915088653564,
+        "reason": "bm25=0.928; dense=1.000; sub_bm25=0.564; sub_dense=0.816"
+      },
+      {
+        "corpusid": 124334,
+        "score": 0.8977223634719849,
+        "reason": "bm25=1.000; dense=0.830; sub_bm25=0.487; sub_dense=0.699"
+      },
+      {
+        "corpusid": 238407828,
+        "score": 0.8945209980010986,
+        "reason": "bm25=0.938; dense=0.865; sub_bm25=0.671; sub_dense=0.699"
+      },
+      {
+        "corpusid": 12222596,
+        "score": 0.889366865158081,
+        "reason": "bm25=0.872; dense=0.901; sub_bm25=0.816; sub_dense=0.818"
+      },
+      {
+        "corpusid": 74975,
+        "score": 0.8880337476730347,
+        "reason": "bm25=0.854; dense=0.911; sub_bm25=0.630; sub_dense=0.896"
+      }
+    ]
+  }
+}

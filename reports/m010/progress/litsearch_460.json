@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_460",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_460",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_460",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_460",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2038,
+      "latency_s": 13.91768489999231
+    },
+    {
+      "query_id": "litsearch_460",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 579,
+      "latency_s": 5.737083500018343
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_460",
+    "gold": [
+      258557131
+    ],
+    "pool_size": 239,
+    "decomposition": [
+      "first paper update only some original weights self-attention parameter-efficient fine-tuning",
+      "partial fine-tuning self-attention weights original parameter-efficient",
+      "selective weight update self-attention PEFT first proposal"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248780244,
+        53081403,
+        202771940,
+        219177032,
+        253157981,
+        13981343,
+        253265357,
+        258865689,
+        196181767,
+        236477807,
+        246867418,
+        237571775,
+        195584234,
+        207916021,
+        235794868,
+        252780109,
+        254125751,
+        11846872,
+        252624581,
+        212415013
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        255440621,
+        258865689,
+        219177032,
+        252780109,
+        254125751,
+        259370834,
+        218487151,
+        235309789,
+        258108073,
+        253265357,
+        257631760,
+        253018859,
+        235313889,
+        258960642,
+        235794868,
+        247582435,
+        258832448,
+        261697072,
+        53081403,
+        240353697
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207852415,
+        252780109,
+        102351629,
+        256697068,
+        253265357,
+        229923069,
+        252781097,
+        222140635,
+        258557131,
+        218487454,
+        51880415,
+        207853045,
+        162183964,
+        235422257,
+        248780244,
+        248780177,
+        201670412,
+        264812826,
+        218487151,
+        243865251
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258557131,
+        253018859
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252780109,
+        207852415,
+        253265357,
+        218487151,
+        254125751,
+        255440621,
+        258557131,
+        248780244,
+        258865689,
+        252781097,
+        253018859,
+        202771940,
+        102351629,
+        53081403,
+        218487351,
+        235422257,
+        240353697,
+        261697072,
+        257631760,
+        218487454
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 20.895262000034563
+  },
+  "reason_example": {
+    "query_id": "litsearch_460",
+    "query": "Which paper first proposed to only update some original weights of self-attention layers in parameter-efficient fine-tuning?",
+    "top_results": [
+      {
+        "corpusid": 252780109,
+        "score": 0.9526443481445312,
+        "reason": "bm25=0.947; dense=0.956; sub_bm25=0.904; sub_dense=1.000"
+      },
+      {
+        "corpusid": 207852415,
+        "score": 0.9045453071594238,
+        "reason": "bm25=0.761; dense=1.000; sub_bm25=0.820; sub_dense=0.814"
+      },
+      {
+        "corpusid": 253265357,
+        "score": 0.8861407041549683,
+        "reason": "bm25=0.840; dense=0.917; sub_bm25=0.830; sub_dense=0.890"
+      },
+      {
+        "corpusid": 218487151,
+        "score": 0.8729907274246216,
+        "reason": "bm25=0.893; dense=0.860; sub_bm25=0.690; sub_dense=0.854"
+      },
+      {
+        "corpusid": 254125751,
+        "score": 0.866360068321228,
+        "reason": "bm25=0.934; dense=0.821; sub_bm25=1.000; sub_dense=0.863"
+      }
+    ]
+  }
+}

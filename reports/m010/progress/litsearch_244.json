@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_244",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_244",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_244",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_244",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1221,
+      "latency_s": 7.024012199952267
+    },
+    {
+      "query_id": "litsearch_244",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 289,
+      "latency_s": 2.1237613999983296
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_244",
+    "gold": [
+      222290679
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "query expansion using past dialogues conversational search",
+      "dialogue history for query expansion in conversational information retrieval",
+      "historical query context expansion conversational search"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21166550,
+        38964517,
+        37409061,
+        29611640,
+        554151,
+        467514,
+        10523951,
+        12744446,
+        3189641,
+        7658188,
+        8292781,
+        2069120,
+        10202122,
+        41981492,
+        18969604,
+        1420479,
+        3205160,
+        8060911,
+        16290098,
+        198357469
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        18927627,
+        2520446,
+        8563379,
+        51873979,
+        252819477,
+        6838667,
+        5562790,
+        241583499,
+        10965782,
+        253761982,
+        245218563,
+        8222729,
+        237366244,
+        233296511,
+        15387289,
+        256460881,
+        14439308,
+        256461043,
+        241583094,
+        31317546
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        716983,
+        21695225,
+        258887946,
+        252847541,
+        2074746,
+        44297035,
+        245131173,
+        14708992,
+        15849128,
+        245218563,
+        3094494,
+        19711128,
+        256460881,
+        258887719,
+        12779706,
+        18302853,
+        235358904,
+        897869,
+        208134583,
+        9977462
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245218563,
+        256460881,
+        37409061,
+        21695225
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258887946,
+        21695225,
+        245218563,
+        256460881,
+        2520446,
+        716983,
+        15849128,
+        3068831,
+        3094494,
+        18927627,
+        258887719,
+        233296511,
+        15387289,
+        12779706,
+        245131173,
+        14195928,
+        5562790,
+        2074746,
+        237490882,
+        236034557
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.659839099971578
+  },
+  "reason_example": {
+    "query_id": "litsearch_244",
+    "query": "Could you suggest research that investigates the use of past dialogues for enhancing query expansion in conversational search systems?",
+    "top_results": [
+      {
+        "corpusid": 258887946,
+        "score": 0.8815304040908813,
+        "reason": "bm25=0.859; dense=0.896; sub_bm25=0.998; sub_dense=1.000"
+      },
+      {
+        "corpusid": 21695225,
+        "score": 0.8769229650497437,
+        "reason": "bm25=0.820; dense=0.915; sub_bm25=0.596; sub_dense=0.917"
+      },
+      {
+        "corpusid": 245218563,
+        "score": 0.8645947575569153,
+        "reason": "bm25=0.910; dense=0.834; sub_bm25=0.879; sub_dense=0.953"
+      },
+      {
+        "corpusid": 256460881,
+        "score": 0.8560094833374023,
+        "reason": "bm25=0.897; dense=0.828; sub_bm25=0.798; sub_dense=0.923"
+      },
+      {
+        "corpusid": 2520446,
+        "score": 0.8357893824577332,
+        "reason": "bm25=0.965; dense=0.750; sub_bm25=0.834; sub_dense=0.828"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_324",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_324",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_324",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_324",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1159,
+      "latency_s": 8.029882799950428
+    },
+    {
+      "query_id": "litsearch_324",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 368,
+      "latency_s": 3.7026225000154227
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_324",
+    "gold": [
+      248693452
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "intermediate layer intervention pretrained language model text generation",
+      "editing intermediate layers of pretrained models to alter output",
+      "impact of layer-wise intervention on language model outputs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16584852,
+        3920851,
+        33548672,
+        33742593,
+        237329472,
+        12223284,
+        236460248,
+        58513664,
+        2251088,
+        258486963,
+        235097568,
+        259376488,
+        10513825,
+        15218055,
+        243865349,
+        256739251,
+        3923764,
+        5213689,
+        18854833,
+        30908728
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237329472,
+        250425903,
+        258865530,
+        221995575,
+        237513393,
+        235377172,
+        257206086,
+        226283611,
+        7100134,
+        248506096,
+        225062143,
+        248780505,
+        24544277,
+        237433614,
+        251622350,
+        247613500,
+        256461052,
+        248218517,
+        248177981,
+        2146847
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253762079,
+        247619066,
+        259075538,
+        226283990,
+        249017999,
+        222140842,
+        216869396,
+        247594723,
+        258947231,
+        236486069,
+        258486910,
+        252780005,
+        244345615,
+        21629710,
+        247656607,
+        259262608,
+        237940850,
+        227231309,
+        233241202,
+        182952400
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237513393,
+        247657229,
+        216869396,
+        247839905,
+        226283990,
+        250425903,
+        236924433,
+        249017999,
+        235097568,
+        237329472,
+        258686286,
+        237433614
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        216869396,
+        249017999,
+        247619066,
+        226283990,
+        222140842,
+        259075538,
+        233241202,
+        250425903,
+        221995575,
+        233296437,
+        252780005,
+        237433614,
+        237513393,
+        236924433,
+        247657229,
+        260063082,
+        237329472,
+        182952400,
+        237491813,
+        224703411
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.0726452000672
+  },
+  "reason_example": {
+    "query_id": "litsearch_324",
+    "query": "What research has been conducted on the impact of intervening at intermediate layers in pretrained language models to alter the resulting text?",
+    "top_results": [
+      {
+        "corpusid": 216869396,
+        "score": 0.8848391175270081,
+        "reason": "bm25=0.866; dense=0.897; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249017999,
+        "score": 0.8762843608856201,
+        "reason": "bm25=0.832; dense=0.906; sub_bm25=0.668; sub_dense=0.890"
+      },
+      {
+        "corpusid": 247619066,
+        "score": 0.8556243181228638,
+        "reason": "bm25=0.735; dense=0.936; sub_bm25=0.660; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226283990,
+        "score": 0.8553107380867004,
+        "reason": "bm25=0.775; dense=0.909; sub_bm25=0.665; sub_dense=0.894"
+      },
+      {
+        "corpusid": 222140842,
+        "score": 0.8313732147216797,
+        "reason": "bm25=0.728; dense=0.900; sub_bm25=0.672; sub_dense=0.842"
+      }
+    ]
+  }
+}

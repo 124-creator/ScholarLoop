@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_294",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_294",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_294",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_294",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1289,
+      "latency_s": 8.165894800098613
+    },
+    {
+      "query_id": "litsearch_294",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 226,
+      "latency_s": 2.0501493000192568
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_294",
+    "gold": [
+      236460056
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "BERT text classification label hierarchy GNN",
+      "graph neural network label hierarchy text classification BERT",
+      "hierarchical text classification BERT GNN"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18199386,
+        234469858,
+        252763297,
+        2186931,
+        16566127,
+        246702364,
+        1405599,
+        237635095,
+        248779918,
+        253762046,
+        4948322,
+        17788557,
+        8227445,
+        232076145,
+        19122719,
+        22457893,
+        15378527,
+        17575285,
+        259376490,
+        250391054
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        220044881,
+        248524999,
+        236459950,
+        243865566,
+        234469858,
+        9365010,
+        222133909,
+        258378217,
+        236460056,
+        246702364,
+        240354628,
+        53082972,
+        250390546,
+        258947235,
+        253761964,
+        259376490,
+        4732544,
+        231985619,
+        231592352,
+        241583607
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222291430,
+        236477943,
+        248524999,
+        234469858,
+        233024695,
+        202635721,
+        248780571,
+        174799346,
+        222124957,
+        252818962,
+        226283847,
+        222377578,
+        250390698,
+        259370718,
+        253762046,
+        218719869,
+        222134013,
+        241583486,
+        249018088,
+        226284008
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        234469858
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248524999,
+        234469858,
+        236477943,
+        222291430,
+        259370718,
+        253761964,
+        241583607,
+        220044881,
+        243865566,
+        219532066,
+        246702364,
+        250390546,
+        248266745,
+        236459950,
+        253762046,
+        259376533,
+        222133909,
+        240354628,
+        233024695,
+        252544759
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.903125600074418
+  },
+  "reason_example": {
+    "query_id": "litsearch_294",
+    "query": "Is there work on text classification that explores using BERT for the text and using GNN for the label hierarchy?",
+    "top_results": [
+      {
+        "corpusid": 248524999,
+        "score": 0.9265165328979492,
+        "reason": "bm25=0.975; dense=0.894; sub_bm25=1.000; sub_dense=0.932"
+      },
+      {
+        "corpusid": 234469858,
+        "score": 0.9014056921005249,
+        "reason": "bm25=0.927; dense=0.884; sub_bm25=0.751; sub_dense=0.942"
+      },
+      {
+        "corpusid": 236477943,
+        "score": 0.8398982882499695,
+        "reason": "bm25=0.682; dense=0.945; sub_bm25=0.679; sub_dense=0.902"
+      },
+      {
+        "corpusid": 222291430,
+        "score": 0.8266480565071106,
+        "reason": "bm25=0.567; dense=1.000; sub_bm25=0.584; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370718,
+        "score": 0.817388653755188,
+        "reason": "bm25=0.814; dense=0.820; sub_bm25=0.593; sub_dense=0.826"
+      }
+    ]
+  }
+}

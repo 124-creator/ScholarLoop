@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_173",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_173",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_173",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_173",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1662,
+      "latency_s": 12.51062620000448
+    },
+    {
+      "query_id": "litsearch_173",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 322,
+      "latency_s": 2.8406114000827074
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_173",
+    "gold": [
+      230433941
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "parameter-efficient fine-tuning methods for generative language models",
+      "reducing computational cost of fine-tuning large language models",
+      "efficient adaptation of pretrained generative models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8517763,
+        221097249,
+        259833814,
+        249204538,
+        248779948,
+        249394890,
+        259376540,
+        243865349,
+        44706178,
+        215415943,
+        231672601,
+        261494455,
+        252819282,
+        23025063,
+        259833896,
+        6163471,
+        258865689,
+        259833855,
+        7521647,
+        218613661
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258865689,
+        252819282,
+        248986389,
+        263672060,
+        259095584,
+        258832448,
+        261697072,
+        215415943,
+        256460956,
+        233189542,
+        258947572,
+        216914731,
+        231672601,
+        238857301,
+        235359141,
+        259833814,
+        237500542,
+        259203337,
+        257631760,
+        259833855
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        215415943,
+        256460956,
+        253107420,
+        248986389,
+        259833855,
+        252873220,
+        257039031,
+        253397955,
+        248779986,
+        252846121,
+        235458576,
+        248780177,
+        118685920,
+        230433941,
+        252780080,
+        259370858,
+        264172710,
+        233296808,
+        238857301,
+        246867041
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        215415943,
+        258865689,
+        259833855,
+        248986389,
+        256460956,
+        258832448,
+        261697072,
+        231672601,
+        216914731,
+        252819282,
+        259095584,
+        259833814
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        215415943,
+        256460956,
+        248986389,
+        259833855,
+        238857301,
+        235359141,
+        252819282,
+        216914731,
+        252780080,
+        252846121,
+        258865689,
+        248779986,
+        259095584,
+        258212842,
+        261697072,
+        230433941,
+        259376505,
+        240353697,
+        258947572,
+        249062610
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.71378560003359
+  },
+  "reason_example": {
+    "query_id": "litsearch_173",
+    "query": "Could you recommend research that investigates methods for fine-tuning generative language models with a focus on parameter efficiency to reduce computational demands?",
+    "top_results": [
+      {
+        "corpusid": 215415943,
+        "score": 0.945993959903717,
+        "reason": "bm25=0.865; dense=1.000; sub_bm25=0.922; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256460956,
+        "score": 0.9108213782310486,
+        "reason": "bm25=0.855; dense=0.948; sub_bm25=0.864; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248986389,
+        "score": 0.8956050872802734,
+        "reason": "bm25=0.950; dense=0.859; sub_bm25=0.951; sub_dense=0.879"
+      },
+      {
+        "corpusid": 259833855,
+        "score": 0.839959979057312,
+        "reason": "bm25=0.829; dense=0.847; sub_bm25=0.790; sub_dense=0.856"
+      },
+      {
+        "corpusid": 238857301,
+        "score": 0.8132028579711914,
+        "reason": "bm25=0.836; dense=0.798; sub_bm25=0.807; sub_dense=0.800"
+      }
+    ]
+  }
+}

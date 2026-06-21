@@ -1,0 +1,9 @@
+{
+  "schema_version": "m120.upstream_hashes.v1",
+  "checked_at_utc": "2026-06-21T01:07:55.747226+00:00",
+  "note": "M120 allowed changes are new interactive/source_text files, app route additions, tests/test_m120_*.py, reports/m120/**, retrospective, and plan status. Prior hashes are used where available; reports/m090/reports/m110 and M080 render/verify are checked within this validation window.",
+  "checks_count": 3752,
+  "changed_count": 0,
+  "changed": [],
+  "passed": true
+}

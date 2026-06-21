@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_273",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_273",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_273",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_273",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1304,
+      "latency_s": 8.218601200031117
+    },
+    {
+      "query_id": "litsearch_273",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 233,
+      "latency_s": 1.9570950000779703
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_273",
+    "gold": [
+      247411350
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "memory management AI conversational agents",
+      "contextual retention long-term dialogue",
+      "sustained conversation memory systems"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11966916,
+        260063225,
+        218688152,
+        38964517,
+        27242794,
+        29611640,
+        20056888,
+        68167178,
+        15373688,
+        6271137,
+        7116755,
+        7018509,
+        220445475,
+        6602375,
+        10837599,
+        21166550,
+        17409270,
+        201641505,
+        1412569,
+        3906011
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        7151201,
+        259370765,
+        68167178,
+        227231608,
+        7136332,
+        252186443,
+        9522832,
+        38208051,
+        262064592,
+        252682958,
+        219573466,
+        52942195,
+        246285807,
+        239998631,
+        252624457,
+        235352857,
+        259064088,
+        38714375,
+        261076496,
+        250390755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247411350,
+        5739852,
+        236034497,
+        16015588,
+        218613702,
+        202750154,
+        261341914,
+        247446604,
+        263609480,
+        229924005,
+        5068596,
+        252383330,
+        52957274,
+        174799129,
+        253553371,
+        226283835,
+        256390383,
+        1916665,
+        25434922,
+        174798410
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        68167178,
+        260063225,
+        15539503,
+        246285807,
+        8577881,
+        262064592,
+        225062460,
+        252383330,
+        220445475,
+        260063121,
+        7136332,
+        3178759
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247411350,
+        68167178,
+        262064592,
+        16015588,
+        263609480,
+        58006691,
+        261341914,
+        260063121,
+        3178759,
+        219302622,
+        236034497,
+        259370765,
+        239024453,
+        2129889,
+        247748635,
+        52957274,
+        252383330,
+        237304301,
+        201698178,
+        174799129
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.818402600008994
+  },
+  "reason_example": {
+    "query_id": "litsearch_273",
+    "query": "Have any studies explored the creation of memory management systems in AI to improve sustained conversational capabilities and tackle the challenge of contextual retention over extended periods?",
+    "top_results": [
+      {
+        "corpusid": 247411350,
+        "score": 0.9167799949645996,
+        "reason": "bm25=0.792; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 68167178,
+        "score": 0.8877871036529541,
+        "reason": "bm25=0.987; dense=0.822; sub_bm25=1.000; sub_dense=0.970"
+      },
+      {
+        "corpusid": 262064592,
+        "score": 0.8763511180877686,
+        "reason": "bm25=0.955; dense=0.824; sub_bm25=0.526; sub_dense=0.848"
+      },
+      {
+        "corpusid": 16015588,
+        "score": 0.8595705032348633,
+        "reason": "bm25=0.728; dense=0.947; sub_bm25=0.692; sub_dense=0.962"
+      },
+      {
+        "corpusid": 263609480,
+        "score": 0.8558984398841858,
+        "reason": "bm25=0.802; dense=0.892; sub_bm25=0.594; sub_dense=0.822"
+      }
+    ]
+  }
+}

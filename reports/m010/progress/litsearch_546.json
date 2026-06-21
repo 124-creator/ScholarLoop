@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_546",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_546",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_546",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_546",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 949,
+      "latency_s": 5.787481399951503
+    },
+    {
+      "query_id": "litsearch_546",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 307,
+      "latency_s": 3.3283818000927567
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_546",
+    "gold": [
+      261076339
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "first paper NeRF frequency modeling human skeleton",
+      "NeRF human pose frequency encoding first",
+      "early NeRF human skeleton frequency input"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        9497515,
+        8590250,
+        248780155,
+        8318391,
+        17002440,
+        3920851,
+        5510770,
+        202763087,
+        5221546,
+        18846560,
+        14852917,
+        2630663,
+        19007542,
+        176201,
+        33675514,
+        36038067,
+        17492455,
+        8596576,
+        18454652
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249674757,
+        252532222,
+        258059971,
+        2908106,
+        256416230,
+        26198218,
+        261076339,
+        252547679,
+        252819277,
+        253761972,
+        237941123,
+        257255328,
+        257427479,
+        256846362,
+        248780155,
+        17002440,
+        264590171,
+        67856413,
+        248721740,
+        258378205
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250179938,
+        250179916,
+        20915835,
+        257258174,
+        42835302,
+        37094099,
+        232232790,
+        261076339,
+        6113477,
+        220835652,
+        38854531,
+        2186770,
+        257985683,
+        6900848,
+        264038823,
+        2095583,
+        37209268,
+        261245530,
+        13891021,
+        250179927
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        249674757,
+        261076339,
+        258059971,
+        261245530
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        261076339,
+        261245530,
+        14293074,
+        256416230,
+        257427479,
+        258059971,
+        27719343,
+        20699886,
+        252846670,
+        249674757,
+        257496643,
+        38854531,
+        250179938,
+        235743242,
+        6367774,
+        30820840,
+        250179916,
+        232232790,
+        52013613,
+        37094099
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.197113999980502
+  },
+  "reason_example": {
+    "query_id": "litsearch_546",
+    "query": "What paper first associate the modeling frequency with input human skeletons under the NeRF framework?",
+    "top_results": [
+      {
+        "corpusid": 261076339,
+        "score": 0.9154728055000305,
+        "reason": "bm25=0.893; dense=0.930; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261245530,
+        "score": 0.8656032085418701,
+        "reason": "bm25=0.799; dense=0.910; sub_bm25=0.684; sub_dense=0.935"
+      },
+      {
+        "corpusid": 14293074,
+        "score": 0.8248962163925171,
+        "reason": "bm25=0.784; dense=0.852; sub_bm25=0.440; sub_dense=0.868"
+      },
+      {
+        "corpusid": 256416230,
+        "score": 0.7954270839691162,
+        "reason": "bm25=0.898; dense=0.727; sub_bm25=0.503; sub_dense=0.795"
+      },
+      {
+        "corpusid": 257427479,
+        "score": 0.7924111485481262,
+        "reason": "bm25=0.830; dense=0.767; sub_bm25=0.466; sub_dense=0.674"
+      }
+    ]
+  }
+}

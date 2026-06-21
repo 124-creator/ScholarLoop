@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_381",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_381",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_381",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_381",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 704,
+      "latency_s": 2.929598900023848
+    },
+    {
+      "query_id": "litsearch_381",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 309,
+      "latency_s": 2.897209999966435
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_381",
+    "gold": [
+      258557751
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "demonstration retriever integration LLM feedback",
+      "improving demonstration selection with LLM feedback",
+      "retriever for in-context learning with feedback from LLM"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        58367559,
+        12968637,
+        252693264,
+        16657732,
+        11303720,
+        2527431,
+        12735028,
+        45438237,
+        7416907,
+        7293586,
+        58740369,
+        16383573,
+        11603334,
+        15155417,
+        52054725,
+        222349276,
+        17152633,
+        328042,
+        5399186,
+        6543362
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252693264,
+        258557751,
+        253107865,
+        246679865,
+        260887189,
+        44062452,
+        235097517,
+        252819028,
+        254853913,
+        226239174,
+        259144804,
+        259370671,
+        258765270,
+        264426355,
+        226226526,
+        259370797,
+        252365360,
+        9578469,
+        263609704,
+        6573501
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263834884,
+        263610128,
+        260682249,
+        10857255,
+        264172710,
+        18332402,
+        151916474,
+        254877569,
+        264426355,
+        1552274,
+        61998209,
+        257756989,
+        247613500,
+        251979431,
+        248405661,
+        253097695,
+        249062718,
+        16412467,
+        252186413,
+        256461394
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258557751,
+        263610128,
+        264426355
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263610128,
+        260682249,
+        263834884,
+        258557751,
+        264426355,
+        259144804,
+        259370671,
+        254877569,
+        264172710,
+        226239174,
+        257756989,
+        248405661,
+        253097695,
+        252693264,
+        151916474,
+        16700575,
+        259376566,
+        246679865,
+        252992947,
+        2843919
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.93051530001685
+  },
+  "reason_example": {
+    "query_id": "litsearch_381",
+    "query": "Is there a study that shows how to help the demonstration retriever better integrate feedback from LLMs?",
+    "top_results": [
+      {
+        "corpusid": 263610128,
+        "score": 0.8788025379180908,
+        "reason": "bm25=0.732; dense=0.977; sub_bm25=0.306; sub_dense=0.983"
+      },
+      {
+        "corpusid": 260682249,
+        "score": 0.8572542667388916,
+        "reason": "bm25=0.717; dense=0.951; sub_bm25=0.652; sub_dense=0.996"
+      },
+      {
+        "corpusid": 263834884,
+        "score": 0.8510059714317322,
+        "reason": "bm25=0.628; dense=1.000; sub_bm25=0.720; sub_dense=0.945"
+      },
+      {
+        "corpusid": 258557751,
+        "score": 0.8372330069541931,
+        "reason": "bm25=0.876; dense=0.811; sub_bm25=1.000; sub_dense=0.900"
+      },
+      {
+        "corpusid": 264426355,
+        "score": 0.8287497758865356,
+        "reason": "bm25=0.757; dense=0.877; sub_bm25=1.000; sub_dense=0.837"
+      }
+    ]
+  }
+}

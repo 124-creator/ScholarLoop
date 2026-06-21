@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_299",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_299",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_299",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_299",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1421,
+      "latency_s": 7.291736699989997
+    },
+    {
+      "query_id": "litsearch_299",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 269,
+      "latency_s": 2.3528628000058234
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_299",
+    "gold": [
+      233189632
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "suicidal ideation prediction feature extraction",
+      "machine learning suicide risk assessment novel features",
+      "recent advances suicide prediction feature engineering"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17454561,
+        8320612,
+        233029488,
+        6179858,
+        12706259,
+        55488801,
+        5213689,
+        6838822,
+        248780197,
+        3100072,
+        6049121,
+        3884897,
+        8130930,
+        10513825,
+        5702359,
+        189762388,
+        6747751,
+        5891609,
+        7511544,
+        29785361
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        51879885,
+        19028966,
+        250391031,
+        14320316,
+        7677825,
+        8320612,
+        252847496,
+        233189632,
+        53246384,
+        16936514,
+        218977371,
+        33164500,
+        259376499,
+        253523033,
+        26570934,
+        235258267,
+        256461018,
+        233289423,
+        250390541,
+        8092381
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        51879885,
+        12173422,
+        7439066,
+        38155999,
+        199556932,
+        234094328,
+        235358754,
+        235097216,
+        248780215,
+        7749438,
+        252819268,
+        250390894,
+        19028966,
+        46967432,
+        250390685,
+        14064997,
+        233189632,
+        259376531,
+        198168048,
+        198939259
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        51879885,
+        218977371,
+        19028966,
+        14064997,
+        252847496,
+        250391031,
+        46967432,
+        250390541,
+        259376531
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        51879885,
+        19028966,
+        233189632,
+        252847496,
+        46967432,
+        218977371,
+        14064997,
+        53246384,
+        258378273,
+        250391031,
+        259376531,
+        234094328,
+        256461018,
+        779673,
+        250390554,
+        235358754,
+        13460184,
+        240288892,
+        248780215,
+        7439066
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.775439399993047
+  },
+  "reason_example": {
+    "query_id": "litsearch_299",
+    "query": "What are the latest advancements in predicting suicidal tendencies using innovative feature extraction methods?",
+    "top_results": [
+      {
+        "corpusid": 51879885,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 19028966,
+        "score": 0.7960408926010132,
+        "reason": "bm25=0.780; dense=0.807; sub_bm25=0.538; sub_dense=0.806"
+      },
+      {
+        "corpusid": 233189632,
+        "score": 0.7309000492095947,
+        "reason": "bm25=0.630; dense=0.798; sub_bm25=0.775; sub_dense=0.856"
+      },
+      {
+        "corpusid": 252847496,
+        "score": 0.723334789276123,
+        "reason": "bm25=0.638; dense=0.780; sub_bm25=0.896; sub_dense=0.797"
+      },
+      {
+        "corpusid": 46967432,
+        "score": 0.7025091648101807,
+        "reason": "bm25=0.548; dense=0.805; sub_bm25=0.460; sub_dense=0.792"
+      }
+    ]
+  }
+}

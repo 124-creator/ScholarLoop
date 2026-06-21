@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_476",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_476",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_476",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_476",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1048,
+      "latency_s": 5.487317999941297
+    },
+    {
+      "query_id": "litsearch_476",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 400,
+      "latency_s": 2.889603600022383
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_476",
+    "gold": [
+      254823170
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "source-translation contribution hallucination detection translation model",
+      "measuring translation model own hallucinations detection",
+      "using source contribution detect hallucinations machine translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12339022,
+        8297210,
+        249204420,
+        6252612,
+        6896901,
+        7102265,
+        1829043,
+        10707097,
+        4427293,
+        2837436,
+        386957,
+        15346148,
+        2794700,
+        10511712,
+        197254,
+        7849235,
+        17192110,
+        16169799,
+        2872444,
+        44176717
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254823170,
+        256000114,
+        233231373,
+        226254579,
+        53249630,
+        8516266,
+        107544550,
+        16922546,
+        252186398,
+        14519034,
+        7102265,
+        11057896,
+        613587,
+        251464085,
+        253098198,
+        9885664,
+        204837859,
+        14165286,
+        201687076,
+        254853721
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256000114,
+        251468136,
+        233231373,
+        254823170,
+        254853721,
+        34362120,
+        222290728,
+        250390457,
+        218538004,
+        247476018,
+        248227301,
+        244909449,
+        253097869,
+        226254579,
+        11280500,
+        219302901,
+        233296487,
+        2443486,
+        237329050,
+        258890931
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254823170,
+        256000114,
+        233231373,
+        251468136,
+        254853721,
+        218538004,
+        222290728,
+        233210507,
+        249204420,
+        6252612,
+        9885664,
+        626513
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254823170,
+        256000114,
+        233231373,
+        251468136,
+        254853721,
+        222290728,
+        247476018,
+        218538004,
+        226254579,
+        253097869,
+        244909449,
+        233296487,
+        237329050,
+        248227301,
+        9885664,
+        201690478,
+        8800791,
+        201687076,
+        6668838,
+        247223093
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.56755139993038
+  },
+  "reason_example": {
+    "query_id": "litsearch_476",
+    "query": "Which paper measured how well the source-translation contribution by the translation model can be used to detect its own hallucinations?",
+    "top_results": [
+      {
+        "corpusid": 254823170,
+        "score": 0.9849328994750977,
+        "reason": "bm25=1.000; dense=0.975; sub_bm25=1.000; sub_dense=0.919"
+      },
+      {
+        "corpusid": 256000114,
+        "score": 0.9092559814453125,
+        "reason": "bm25=0.773; dense=1.000; sub_bm25=0.888; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233231373,
+        "score": 0.893075704574585,
+        "reason": "bm25=0.759; dense=0.982; sub_bm25=0.900; sub_dense=0.955"
+      },
+      {
+        "corpusid": 251468136,
+        "score": 0.8332347273826599,
+        "reason": "bm25=0.596; dense=0.991; sub_bm25=1.000; sub_dense=0.981"
+      },
+      {
+        "corpusid": 254853721,
+        "score": 0.769665002822876,
+        "reason": "bm25=0.631; dense=0.862; sub_bm25=1.000; sub_dense=0.968"
+      }
+    ]
+  }
+}

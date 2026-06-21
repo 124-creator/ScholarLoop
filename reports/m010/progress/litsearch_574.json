@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_574",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_574",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_574",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_574",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1782,
+      "latency_s": 13.946210599970073
+    },
+    {
+      "query_id": "litsearch_574",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 414,
+      "latency_s": 3.729359499993734
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_574",
+    "gold": [
+      264288929
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "first paper online occupancy estimation sqrt(T) bound adversarial linear MDP",
+      "original work occupancy estimation technique linear MDP adversarial regret",
+      "pioneering result sqrt(T) regret adversarial linear MDP occupancy"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        208910151,
+        39654639,
+        249209875,
+        8749531,
+        17063555,
+        1662386,
+        13111652,
+        4643315,
+        210023826,
+        18362887,
+        14263284,
+        27220842,
+        1399447,
+        13603693,
+        253628225,
+        2831294,
+        186206486,
+        196179812,
+        236965836,
+        13040693
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264288929,
+        254853899,
+        249209875,
+        256697567,
+        258686472,
+        252780137,
+        257632202,
+        59316477,
+        256389660,
+        208910151,
+        249191541,
+        224703455,
+        238583483,
+        235458224,
+        2138649,
+        252668746,
+        44117930,
+        238419077,
+        251719318,
+        233740346
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258686472,
+        264288929,
+        239016143,
+        249209875,
+        59316477,
+        239049480,
+        252668746,
+        257632202,
+        254854614,
+        238419077,
+        210023826,
+        244714571,
+        210116632,
+        252683860,
+        212874725,
+        253157500,
+        257079136,
+        249375375,
+        263605760,
+        252780137
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264288929,
+        258686472,
+        252780137
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264288929,
+        258686472,
+        249209875,
+        257632202,
+        59316477,
+        252780137,
+        256697567,
+        252668746,
+        239016143,
+        239049480,
+        256389660,
+        238419077,
+        208910151,
+        254853899,
+        252683860,
+        238583483,
+        263605760,
+        233740346,
+        247476396,
+        249097598
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.953000299981795
+  },
+  "reason_example": {
+    "query_id": "litsearch_574",
+    "query": "Which paper first derived online occupany estimation technique to get sqrt(T) bound for reinforcement learning in adversarial linear MDP?",
+    "top_results": [
+      {
+        "corpusid": 264288929,
+        "score": 0.9979004859924316,
+        "reason": "bm25=1.000; dense=0.997; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258686472,
+        "score": 0.9519214630126953,
+        "reason": "bm25=0.880; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249209875,
+        "score": 0.9248789548873901,
+        "reason": "bm25=0.975; dense=0.891; sub_bm25=0.756; sub_dense=0.846"
+      },
+      {
+        "corpusid": 257632202,
+        "score": 0.8683483600616455,
+        "reason": "bm25=0.876; dense=0.863; sub_bm25=0.598; sub_dense=0.806"
+      },
+      {
+        "corpusid": 59316477,
+        "score": 0.8681634664535522,
+        "reason": "bm25=0.846; dense=0.883; sub_bm25=0.695; sub_dense=0.867"
+      }
+    ]
+  }
+}

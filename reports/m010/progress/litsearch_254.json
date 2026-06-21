@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_254",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_254",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_254",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_254",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1684,
+      "latency_s": 13.600785900023766
+    },
+    {
+      "query_id": "litsearch_254",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 259,
+      "latency_s": 2.5755032000597566
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_254",
+    "gold": [
+      258971765
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "zero-shot extraction persona characteristics dialogue",
+      "zero-shot personality trait extraction conversation",
+      "unsupervised persona profiling conversational data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29611640,
+        962094,
+        233029488,
+        252090194,
+        11576664,
+        5257325,
+        16657732,
+        3923764,
+        7551252,
+        15817159,
+        30908728,
+        43108487,
+        263862157,
+        11801961,
+        10627100,
+        229365770,
+        18116989,
+        495884,
+        5872794,
+        9526061
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258971765,
+        222178920,
+        259370647,
+        252847493,
+        216562921,
+        237605115,
+        247939339,
+        258378309,
+        257767732,
+        259370742,
+        237416535,
+        257767742,
+        236477650,
+        248721928,
+        230799344,
+        21732055,
+        248779988,
+        21706240,
+        1489994,
+        235694718
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258971765,
+        251718707,
+        215745354,
+        237416535,
+        215786161,
+        252819278,
+        222178920,
+        165163819,
+        258959116,
+        218613714,
+        258378327,
+        257767732,
+        235417177,
+        52167799,
+        2955580,
+        247411224,
+        248299824,
+        259064132,
+        247613284,
+        237532563
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258971765,
+        237416535,
+        222178920,
+        252847493,
+        216562921,
+        257767732,
+        165163819,
+        259370647,
+        248779988,
+        235694718,
+        29611640,
+        21732055
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258971765,
+        222178920,
+        237416535,
+        257767732,
+        258378309,
+        165163819,
+        252847493,
+        252819278,
+        216562921,
+        258959116,
+        237532563,
+        259370742,
+        259370647,
+        251718707,
+        222176214,
+        259164710,
+        215745354,
+        227231099,
+        257767742,
+        215786161
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.24444730009418
+  },
+  "reason_example": {
+    "query_id": "litsearch_254",
+    "query": "Has any study explored the zero-shot extraction of persona characteristics within conversational dialogues?",
+    "top_results": [
+      {
+        "corpusid": 258971765,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222178920,
+        "score": 0.8530421853065491,
+        "reason": "bm25=0.887; dense=0.831; sub_bm25=0.624; sub_dense=0.835"
+      },
+      {
+        "corpusid": 237416535,
+        "score": 0.809792697429657,
+        "reason": "bm25=0.751; dense=0.849; sub_bm25=0.934; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257767732,
+        "score": 0.8055151700973511,
+        "reason": "bm25=0.786; dense=0.818; sub_bm25=0.938; sub_dense=0.990"
+      },
+      {
+        "corpusid": 258378309,
+        "score": 0.7719135284423828,
+        "reason": "bm25=0.788; dense=0.761; sub_bm25=0.991; sub_dense=0.928"
+      }
+    ]
+  }
+}

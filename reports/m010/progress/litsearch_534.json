@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_534",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_534",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_534",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_534",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 724,
+      "latency_s": 2.8641465000109747
+    },
+    {
+      "query_id": "litsearch_534",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 362,
+      "latency_s": 3.3346127999247983
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_534",
+    "gold": [
+      263829780
+    ],
+    "pool_size": 286,
+    "decomposition": [
+      "improving MLE auto-regressive language model optimal transport",
+      "optimal transport training autoregressive LM",
+      "MLE improvement language modeling optimal transport"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17409270,
+        3923764,
+        30908728,
+        17765082,
+        45897261,
+        27787263,
+        26889702,
+        219305462,
+        6940596,
+        15218055,
+        25036575,
+        18324181,
+        11200749,
+        15000982,
+        18414132,
+        33379735,
+        2375338,
+        17449548,
+        11533588,
+        231642812
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263829780,
+        58028789,
+        222310161,
+        252819090,
+        246240676,
+        263830446,
+        248780228,
+        248405978,
+        256460984,
+        250390564,
+        237353397,
+        257757426,
+        8628775,
+        257663689,
+        259095560,
+        253080440,
+        246411466,
+        239016251,
+        263829506,
+        52013527
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222310161,
+        235097243,
+        263829780,
+        249892255,
+        202781656,
+        253762079,
+        3480671,
+        7145772,
+        233365297,
+        259064345,
+        256461134,
+        234741913,
+        218628872,
+        257219444,
+        235377446,
+        237490383,
+        52012577,
+        5665802,
+        248986389,
+        229923128
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263829780,
+        222310161,
+        58028789,
+        252819090
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263829780,
+        222310161,
+        58028789,
+        202781656,
+        248405978,
+        235377446,
+        88522390,
+        252819090,
+        259064345,
+        235097243,
+        234741913,
+        224470441,
+        257219444,
+        252183546,
+        222341819,
+        246411466,
+        252668615,
+        218869975,
+        215814124,
+        228376209
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.285440200008452
+  },
+  "reason_example": {
+    "query_id": "litsearch_534",
+    "query": "Is there any paper trying to improve MLE for auto-regressive language modeling through the lens of optimal transport?",
+    "top_results": [
+      {
+        "corpusid": 263829780,
+        "score": 0.9660336971282959,
+        "reason": "bm25=1.000; dense=0.943; sub_bm25=0.959; sub_dense=0.958"
+      },
+      {
+        "corpusid": 222310161,
+        "score": 0.9478719234466553,
+        "reason": "bm25=0.870; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 58028789,
+        "score": 0.8369340300559998,
+        "reason": "bm25=0.909; dense=0.789; sub_bm25=1.000; sub_dense=0.800"
+      },
+      {
+        "corpusid": 202781656,
+        "score": 0.8202590942382812,
+        "reason": "bm25=0.660; dense=0.927; sub_bm25=0.613; sub_dense=0.901"
+      },
+      {
+        "corpusid": 248405978,
+        "score": 0.8091369867324829,
+        "reason": "bm25=0.794; dense=0.819; sub_bm25=0.784; sub_dense=0.785"
+      }
+    ]
+  }
+}

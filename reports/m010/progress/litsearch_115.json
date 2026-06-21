@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_115",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_115",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_115",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_115",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 670,
+      "latency_s": 2.746302100014873
+    },
+    {
+      "query_id": "litsearch_115",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 322,
+      "latency_s": 3.353756499942392
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_115",
+    "gold": [
+      259129912
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "recent advances natural language watermarking quality",
+      "algorithmic methods text watermarking quality improvement",
+      "high-quality natural language watermarking algorithm"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2718695,
+        14038010,
+        19472917,
+        258685798,
+        14372141,
+        685960,
+        7591554,
+        15204692,
+        258765228,
+        5977811,
+        256460907,
+        727900,
+        764565,
+        7440991,
+        20776159,
+        23804177,
+        39488271,
+        230349190,
+        249204538,
+        2432354
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259129912,
+        7126279,
+        233219418,
+        259308864,
+        247627890,
+        230349190,
+        1308307,
+        8790370,
+        259376667,
+        220403393,
+        8140780,
+        685960,
+        66129,
+        11379303,
+        49215805,
+        252819100,
+        259095643,
+        256231532,
+        244095143,
+        6495498
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259308864,
+        259095643,
+        259129912,
+        7126279,
+        4898223,
+        56880638,
+        258741304,
+        9320853,
+        12278968,
+        43069989,
+        11054881,
+        256461360,
+        9941829,
+        16946379,
+        37122890,
+        1888343,
+        6347030,
+        250089342,
+        232232827,
+        219306908
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259308864,
+        259129912,
+        7126279
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259308864,
+        259129912,
+        7126279,
+        259095643,
+        685960,
+        244095143,
+        250089342,
+        49215805,
+        21686891,
+        258741304,
+        259376667,
+        253420419,
+        248524755,
+        258378189,
+        216552897,
+        4758185,
+        257767409,
+        47215776,
+        9941829,
+        4898223
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.217700900044292
+  },
+  "reason_example": {
+    "query_id": "litsearch_115",
+    "query": "Could you recommend a contemporary research paper that has advanced natural language watermarking quality through algorithmic methods?",
+    "top_results": [
+      {
+        "corpusid": 259308864,
+        "score": 0.9360471963882446,
+        "reason": "bm25=0.840; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259129912,
+        "score": 0.9299840927124023,
+        "reason": "bm25=1.000; dense=0.883; sub_bm25=1.000; sub_dense=0.941"
+      },
+      {
+        "corpusid": 7126279,
+        "score": 0.8609657883644104,
+        "reason": "bm25=0.887; dense=0.843; sub_bm25=0.968; sub_dense=0.871"
+      },
+      {
+        "corpusid": 259095643,
+        "score": 0.8579393625259399,
+        "reason": "bm25=0.741; dense=0.936; sub_bm25=0.813; sub_dense=0.919"
+      },
+      {
+        "corpusid": 685960,
+        "score": 0.7405637502670288,
+        "reason": "bm25=0.760; dense=0.728; sub_bm25=0.478; sub_dense=0.533"
+      }
+    ]
+  }
+}

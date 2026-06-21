@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_456",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_456",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_456",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_456",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1609,
+      "latency_s": 11.218801699928008
+    },
+    {
+      "query_id": "litsearch_456",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 282,
+      "latency_s": 2.3987703999737278
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_456",
+    "gold": [
+      259370800
+    ],
+    "pool_size": 246,
+    "decomposition": [
+      "cross-domain language model generates labeled data for target domain",
+      "first cross-domain language model automatically labeled data unlabeled target",
+      "self-training cross-domain language model generating pseudo-labels"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236478306,
+        7602284,
+        7612427,
+        17974537,
+        1572825,
+        8910754,
+        201666897,
+        5050185,
+        2468769,
+        5601748,
+        280387,
+        2175391,
+        222176203,
+        3874843,
+        3013625,
+        35494,
+        3266239,
+        5560971,
+        6455765,
+        52094979
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236478306,
+        250390503,
+        259370800,
+        14473519,
+        237490346,
+        17856659,
+        236478071,
+        2428137,
+        46962152,
+        52157228,
+        52239522,
+        17974537,
+        51879969,
+        8910754,
+        51940055,
+        201666897,
+        15652752,
+        1331504,
+        46890017,
+        18958973
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        17974537,
+        3036015,
+        15102686,
+        14971130,
+        7362580,
+        8170227,
+        238531718,
+        219176513,
+        52239522,
+        251692236,
+        252819022,
+        11406047,
+        10585502,
+        216867841,
+        1585821,
+        16852232,
+        9489563,
+        2638760,
+        246062387,
+        9288110
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370800,
+        250390503,
+        236478306,
+        17974537
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        17974537,
+        259370800,
+        52239522,
+        236478071,
+        10585502,
+        3036015,
+        250390503,
+        219176513,
+        15102686,
+        1585821,
+        17856659,
+        18958973,
+        222176203,
+        1331504,
+        14684165,
+        7362580,
+        246062387,
+        236478306,
+        14000702,
+        235352500
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.88609190005809
+  },
+  "reason_example": {
+    "query_id": "litsearch_456",
+    "query": "Which paper first proposed a cross-domain language model to automatically generate much labeled data for a unlabeled target domain?",
+    "top_results": [
+      {
+        "corpusid": 17974537,
+        "score": 0.9144455194473267,
+        "reason": "bm25=0.786; dense=1.000; sub_bm25=0.846; sub_dense=0.966"
+      },
+      {
+        "corpusid": 259370800,
+        "score": 0.8744736313819885,
+        "reason": "bm25=0.972; dense=0.809; sub_bm25=0.963; sub_dense=0.917"
+      },
+      {
+        "corpusid": 52239522,
+        "score": 0.864773690700531,
+        "reason": "bm25=0.801; dense=0.908; sub_bm25=0.932; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236478071,
+        "score": 0.8140866756439209,
+        "reason": "bm25=0.814; dense=0.814; sub_bm25=1.000; sub_dense=0.779"
+      },
+      {
+        "corpusid": 10585502,
+        "score": 0.8125947713851929,
+        "reason": "bm25=0.694; dense=0.891; sub_bm25=0.679; sub_dense=0.907"
+      }
+    ]
+  }
+}

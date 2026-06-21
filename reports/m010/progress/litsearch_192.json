@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_192",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_192",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_192",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_192",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 762,
+      "latency_s": 3.520895600086078
+    },
+    {
+      "query_id": "litsearch_192",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 278,
+      "latency_s": 2.2392421000404283
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_192",
+    "gold": [
+      247315559
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "pre-training code representation learning multiple modalities",
+      "cohesive pre-training method for multi-modal code understanding",
+      "code representation learning across different code modalities pre-training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13488062,
+        233029494,
+        11801961,
+        237365390,
+        208058457,
+        237717628,
+        250390721,
+        13382750,
+        222272463,
+        237513421,
+        15204692,
+        252118863,
+        261342032,
+        8589745,
+        52830097,
+        10357166,
+        259064260,
+        755490,
+        3926047,
+        5456318
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235390890,
+        235125628,
+        222272463,
+        247315559,
+        252118863,
+        259187807,
+        213896662,
+        257255438,
+        221761146,
+        258967524,
+        258480094,
+        232222259,
+        248780244,
+        13382750,
+        227217847,
+        248525011,
+        246276212,
+        252819166,
+        7861345,
+        216641845
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252993162,
+        234762936,
+        236478008,
+        247315559,
+        220425360,
+        221761146,
+        256461462,
+        253097844,
+        202776931,
+        232307359,
+        235097318,
+        259164815,
+        260063082,
+        247595386,
+        256461030,
+        215828318,
+        252600018,
+        211171605,
+        21730695,
+        247222710
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247315559,
+        221761146,
+        236478008
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247315559,
+        221761146,
+        236478008,
+        235390890,
+        252993162,
+        220425360,
+        235125628,
+        253097844,
+        237386541,
+        258378289,
+        202776931,
+        211171605,
+        21730695,
+        247595386,
+        250920542,
+        234762936,
+        252118863,
+        257255438,
+        235097318,
+        259341641
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.330618700012565
+  },
+  "reason_example": {
+    "query_id": "litsearch_192",
+    "query": "Could you suggest a study that explores a cohesive pre-training method for code representation learning across different modalities?",
+    "top_results": [
+      {
+        "corpusid": 247315559,
+        "score": 0.8802492022514343,
+        "reason": "bm25=0.835; dense=0.910; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221761146,
+        "score": 0.8574503660202026,
+        "reason": "bm25=0.786; dense=0.905; sub_bm25=0.894; sub_dense=0.917"
+      },
+      {
+        "corpusid": 236478008,
+        "score": 0.8376958966255188,
+        "reason": "bm25=0.687; dense=0.938; sub_bm25=0.800; sub_dense=0.942"
+      },
+      {
+        "corpusid": 235390890,
+        "score": 0.8052546977996826,
+        "reason": "bm25=1.000; dense=0.675; sub_bm25=1.000; sub_dense=0.813"
+      },
+      {
+        "corpusid": 252993162,
+        "score": 0.7978370189666748,
+        "reason": "bm25=0.495; dense=1.000; sub_bm25=0.848; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_121",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_121",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_121",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_121",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 755,
+      "latency_s": 3.2594502000138164
+    },
+    {
+      "query_id": "litsearch_121",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 240,
+      "latency_s": 2.107530999928713
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_121",
+    "gold": [
+      225040574
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "pre-trained multilingual text-to-text transformer summarization",
+      "multilingual transformer text summarization study",
+      "text-to-text model multilingual summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        232307242,
+        225040574,
+        20695016,
+        233296501,
+        7440991,
+        253762046,
+        251465374,
+        237558778,
+        226226686,
+        238744469,
+        247476136,
+        225067214,
+        235097623,
+        252183546,
+        62016582,
+        253762032,
+        248780491,
+        263609535,
+        1428271,
+        258714901
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        225040574,
+        237558778,
+        233296501,
+        238744469,
+        225067214,
+        237453315,
+        258714901,
+        220048587,
+        238407728,
+        203690445,
+        221865540,
+        238856828,
+        237581068,
+        257280424,
+        232240219,
+        235436348,
+        218763259,
+        237157879,
+        251465374,
+        252624572
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16694744,
+        2114287,
+        258714901,
+        243865371,
+        1968934,
+        11577980,
+        237605519,
+        2861585,
+        7421651,
+        2700066,
+        222378280,
+        8717781,
+        2404854,
+        225067214,
+        6908311,
+        252819242,
+        235658519,
+        17228952,
+        252763332,
+        233296501
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        225040574,
+        233296501,
+        258714901,
+        248780491
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258714901,
+        233296501,
+        225067214,
+        225040574,
+        237453315,
+        238744469,
+        237605519,
+        202541012,
+        221865540,
+        10151424,
+        252624572,
+        252819242,
+        8717781,
+        247594288,
+        248780491,
+        237558778,
+        7421651,
+        238407728,
+        10436913,
+        253762032
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.8423246999736875
+  },
+  "reason_example": {
+    "query_id": "litsearch_121",
+    "query": "Could you recommend a study that explores a pre-trained multilingual text-to-text transformer applicable to text summarization tasks?",
+    "top_results": [
+      {
+        "corpusid": 258714901,
+        "score": 0.935737133026123,
+        "reason": "bm25=0.863; dense=0.984; sub_bm25=0.930; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233296501,
+        "score": 0.925621509552002,
+        "reason": "bm25=0.933; dense=0.921; sub_bm25=1.000; sub_dense=0.975"
+      },
+      {
+        "corpusid": 225067214,
+        "score": 0.9152247905731201,
+        "reason": "bm25=0.897; dense=0.928; sub_bm25=0.857; sub_dense=0.957"
+      },
+      {
+        "corpusid": 225040574,
+        "score": 0.9039565324783325,
+        "reason": "bm25=1.000; dense=0.840; sub_bm25=1.000; sub_dense=0.894"
+      },
+      {
+        "corpusid": 237453315,
+        "score": 0.8884545564651489,
+        "reason": "bm25=0.891; dense=0.886; sub_bm25=0.886; sub_dense=0.909"
+      }
+    ]
+  }
+}

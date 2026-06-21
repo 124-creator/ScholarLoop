@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_081",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_081",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_081",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_081",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 879,
+      "latency_s": 3.6467564000049606
+    },
+    {
+      "query_id": "litsearch_081",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 403,
+      "latency_s": 2.901434800005518
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_081",
+    "gold": [
+      250390720
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "automated assessment clarifications instructional text grading plausible implausible neutral",
+      "ranking clarifications instructional text scale",
+      "automating clarification evaluation instructional text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14021168,
+        36800561,
+        240288762,
+        9432914,
+        53083307,
+        2404854,
+        196184953,
+        18051891,
+        5899668,
+        2258688,
+        3891855,
+        250391029,
+        6692912,
+        18199386,
+        2216180,
+        108306725,
+        17153466,
+        18682524,
+        2324333,
+        173648
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390720,
+        250390711,
+        250390579,
+        250390895,
+        250390880,
+        250391094,
+        250391029,
+        247922401,
+        14322691,
+        240288762,
+        233295981,
+        14231310,
+        2677335,
+        202776057,
+        18051891,
+        32625840,
+        6692912,
+        248524712,
+        53210080,
+        17977664
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390720,
+        250390711,
+        236486314,
+        263877849,
+        19237342,
+        17041746,
+        1203356,
+        250391029,
+        17441657,
+        220059860,
+        360483,
+        17653423,
+        204746887,
+        153316595,
+        14017594,
+        28126691,
+        5894019,
+        8761461,
+        46937518,
+        250390880
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250390720,
+        250390880,
+        250390711,
+        250391029,
+        250390579,
+        250391094,
+        250390895
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390720,
+        250390711,
+        250391029,
+        250390880,
+        250391094,
+        250390579,
+        250390895,
+        236486314,
+        263877849,
+        19237342,
+        153316595,
+        360483,
+        2677335,
+        17653423,
+        14231310,
+        1203356,
+        247922401,
+        233295981,
+        204746887,
+        10894148
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.219716400024481
+  },
+  "reason_example": {
+    "query_id": "litsearch_081",
+    "query": "Where can I find a detailed discussion on automating the assessment of clarifications in instructional text, including tasks for grading these clarifications as plausible, implausible, or neutral and ranking them on a scale?",
+    "top_results": [
+      {
+        "corpusid": 250390720,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.984"
+      },
+      {
+        "corpusid": 250390711,
+        "score": 0.9683712720870972,
+        "reason": "bm25=0.976; dense=0.963; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250391029,
+        "score": 0.8142189979553223,
+        "reason": "bm25=0.865; dense=0.781; sub_bm25=1.000; sub_dense=0.840"
+      },
+      {
+        "corpusid": 250390880,
+        "score": 0.813269853591919,
+        "reason": "bm25=0.922; dense=0.741; sub_bm25=0.909; sub_dense=0.797"
+      },
+      {
+        "corpusid": 250391094,
+        "score": 0.8104192614555359,
+        "reason": "bm25=0.919; dense=0.738; sub_bm25=0.622; sub_dense=0.742"
+      }
+    ]
+  }
+}

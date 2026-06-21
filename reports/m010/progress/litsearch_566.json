@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_566",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_566",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_566",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_566",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1089,
+      "latency_s": 7.512405900051817
+    },
+    {
+      "query_id": "litsearch_566",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 302,
+      "latency_s": 2.8006489999825135
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_566",
+    "gold": [
+      260683028
+    ],
+    "pool_size": 291,
+    "decomposition": [
+      "distribution shift RLHF early paper",
+      "first paper addressing distribution shift in RLHF",
+      "reinforcement learning from human feedback distribution shift solution"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        575121,
+        6124685,
+        20056888,
+        248779967,
+        19653906,
+        26889702,
+        1153579,
+        17576639,
+        690965,
+        53141522,
+        10261342,
+        6602375,
+        9115773,
+        10837599,
+        11966916,
+        14399727,
+        61121299,
+        11795965,
+        16285911
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253734944,
+        238634102,
+        254823652,
+        257663514,
+        67855552,
+        253018859,
+        16030483,
+        238744324,
+        39978124,
+        225039786,
+        250390846,
+        68220930,
+        247447665,
+        220045125,
+        5998527,
+        252819466,
+        254275077,
+        259262427,
+        235593227,
+        10482640
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        54618348,
+        14475949,
+        45927246,
+        6565416,
+        6070154,
+        4005560,
+        53366105,
+        8035278,
+        6367774,
+        12278968,
+        43069989,
+        52800448,
+        219306908,
+        252683122,
+        7844613,
+        238198747,
+        209441978,
+        424534,
+        237503353,
+        20454843
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237503353,
+        254823652
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237503353,
+        52800448,
+        254823652,
+        252683122,
+        226221794,
+        253734944,
+        20016320,
+        2162648,
+        27782996,
+        258967881,
+        7844613,
+        6565416,
+        54618348,
+        220045743,
+        17263523,
+        424534,
+        3266457,
+        1570550,
+        16195146,
+        256461202
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.24469500000123
+  },
+  "reason_example": {
+    "query_id": "litsearch_566",
+    "query": "Which is one of the first papers to highlight and resolve the distribution shift in RLHF?",
+    "top_results": [
+      {
+        "corpusid": 237503353,
+        "score": 0.8698752522468567,
+        "reason": "bm25=0.900; dense=0.850; sub_bm25=0.934; sub_dense=0.832"
+      },
+      {
+        "corpusid": 52800448,
+        "score": 0.8688541054725647,
+        "reason": "bm25=0.862; dense=0.874; sub_bm25=0.307; sub_dense=0.805"
+      },
+      {
+        "corpusid": 254823652,
+        "score": 0.8647264242172241,
+        "reason": "bm25=0.968; dense=0.796; sub_bm25=0.915; sub_dense=0.899"
+      },
+      {
+        "corpusid": 252683122,
+        "score": 0.8443783521652222,
+        "reason": "bm25=0.816; dense=0.864; sub_bm25=0.599; sub_dense=0.901"
+      },
+      {
+        "corpusid": 226221794,
+        "score": 0.832352876663208,
+        "reason": "bm25=0.814; dense=0.844; sub_bm25=0.625; sub_dense=0.786"
+      }
+    ]
+  }
+}

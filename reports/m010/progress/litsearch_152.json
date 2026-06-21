@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_152",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_152",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_152",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_152",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1107,
+      "latency_s": 6.2898067000787705
+    },
+    {
+      "query_id": "litsearch_152",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 282,
+      "latency_s": 2.264470199937932
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_152",
+    "gold": [
+      249062918
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "coreference resolution few-shot learning large language models",
+      "GPT-3 coreference resolution evaluation",
+      "few-shot coreference resolution LLM performance"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        254877171,
+        245218525,
+        258960366,
+        247450508,
+        6089322,
+        256846551,
+        259108774,
+        14091969,
+        257255456,
+        258437068,
+        252907575,
+        259376551,
+        256461088,
+        247656607,
+        253510134,
+        241035330,
+        259287175,
+        218763259,
+        259075843,
+        258352617
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258960366,
+        254877171,
+        258437068,
+        252907575,
+        252819397,
+        261048677,
+        247155069,
+        253760901,
+        245218525,
+        248427215,
+        221703107,
+        241035330,
+        252595921,
+        247958012,
+        253420743,
+        253510134,
+        248780307,
+        259064132,
+        7614920,
+        237485423
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        535939,
+        253760901,
+        237571584,
+        6385589,
+        241583458,
+        53037336,
+        241583386,
+        1085524,
+        248780307,
+        252283924,
+        9112814,
+        15807944,
+        16108951,
+        825928,
+        256900964,
+        233296405,
+        857321,
+        724217,
+        6897473,
+        221819133
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780307,
+        248427215,
+        253420743,
+        241035330,
+        254877171,
+        258960366,
+        253760901,
+        221703107,
+        245218525,
+        258437068,
+        7614920,
+        252907575
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253760901,
+        221703107,
+        248780307,
+        7614920,
+        241583386,
+        535939,
+        254877171,
+        248427215,
+        237571584,
+        6385589,
+        258041141,
+        53037336,
+        8179642,
+        258437068,
+        256900964,
+        18834600,
+        233296405,
+        258960366,
+        252873184,
+        18904161
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.829578700009733
+  },
+  "reason_example": {
+    "query_id": "litsearch_152",
+    "query": "Could you recommend research that assesses how well large language models, such as GPT-3, perform at coreference resolution when tested in a few-shot learning context?",
+    "top_results": [
+      {
+        "corpusid": 253760901,
+        "score": 0.9246939420700073,
+        "reason": "bm25=0.834; dense=0.985; sub_bm25=1.000; sub_dense=0.931"
+      },
+      {
+        "corpusid": 221703107,
+        "score": 0.8564761877059937,
+        "reason": "bm25=0.820; dense=0.881; sub_bm25=0.633; sub_dense=0.781"
+      },
+      {
+        "corpusid": 248780307,
+        "score": 0.85355544090271,
+        "reason": "bm25=0.766; dense=0.912; sub_bm25=1.000; sub_dense=0.828"
+      },
+      {
+        "corpusid": 7614920,
+        "score": 0.8390751481056213,
+        "reason": "bm25=0.759; dense=0.892; sub_bm25=0.846; sub_dense=0.872"
+      },
+      {
+        "corpusid": 241583386,
+        "score": 0.8251076936721802,
+        "reason": "bm25=0.671; dense=0.928; sub_bm25=0.982; sub_dense=0.888"
+      }
+    ]
+  }
+}

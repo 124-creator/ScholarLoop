@@ -1,0 +1,19 @@
+{
+  "schema_version": "m160.demo_replay.v1",
+  "checked_at_utc": "2026-06-21T06:43:14.415175+00:00",
+  "status": "PASS",
+  "m080_verify_replay": {
+    "status": "PASS",
+    "path": "reports/m160/m080_verify_replay/fidelity_audit.json"
+  },
+  "m120_span_fidelity": {
+    "status": "PASS",
+    "mismatch_count": 0,
+    "path": "reports/m160/m120_span_fidelity.json"
+  },
+  "m120_trail_fidelity": {
+    "status": "PASS",
+    "fabrication": 0,
+    "path": "reports/m160/m120_trail_fidelity.json"
+  }
+}

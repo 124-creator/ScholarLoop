@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_333",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_333",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_333",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_333",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1178,
+      "latency_s": 8.136982299969532
+    },
+    {
+      "query_id": "litsearch_333",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 3.147699399967678
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_333",
+    "gold": [
+      258179794
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "context-aware emotion detection in dialogue using pretrained language models",
+      "incorporating dialogue context in emotion recognition with transformers",
+      "pretrained language models for contextual emotion analysis in conversations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        253762079,
+        42149039,
+        253762073,
+        8752606,
+        6583976,
+        10168327,
+        199022672,
+        235097525,
+        235097398,
+        1494871,
+        2840902,
+        14069143,
+        14497671,
+        14527730,
+        38405135,
+        261341576,
+        225067232,
+        219916949,
+        259376759,
+        235446334
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248496938,
+        49312075,
+        260063198,
+        51870186,
+        235485037,
+        235097394,
+        14497671,
+        248779958,
+        5743458,
+        51876056,
+        259129582,
+        258887837,
+        259164710,
+        220768717,
+        243865630,
+        226226469,
+        256461433,
+        250627596,
+        3526062,
+        235097525
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        184483154,
+        237304301,
+        184483331,
+        258179794,
+        227230279,
+        3526062,
+        184482936,
+        51870186,
+        258378253,
+        237572357,
+        7712278,
+        202734183,
+        15892562,
+        182953036,
+        248496938,
+        235293774,
+        32080089,
+        258378136,
+        212725917,
+        16915508
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258378136,
+        202734183,
+        258179794,
+        182953036,
+        51876056
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248496938,
+        51870186,
+        258179794,
+        184483331,
+        3526062,
+        202734183,
+        51876056,
+        49312075,
+        260063198,
+        235485037,
+        258378136,
+        182953036,
+        237304301,
+        14497671,
+        252819172,
+        32080089,
+        258887837,
+        259129582,
+        184483154,
+        184482936
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.505707200034522
+  },
+  "reason_example": {
+    "query_id": "litsearch_333",
+    "query": "What techniques exist for incorporating context in detecting emotions within dialogues by leveraging pre-trained language models?",
+    "top_results": [
+      {
+        "corpusid": 248496938,
+        "score": 0.9195339679718018,
+        "reason": "bm25=1.000; dense=0.866; sub_bm25=0.849; sub_dense=0.912"
+      },
+      {
+        "corpusid": 51870186,
+        "score": 0.905131459236145,
+        "reason": "bm25=0.947; dense=0.877; sub_bm25=0.707; sub_dense=0.912"
+      },
+      {
+        "corpusid": 258179794,
+        "score": 0.8872600793838501,
+        "reason": "bm25=0.856; dense=0.908; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 184483331,
+        "score": 0.8870395421981812,
+        "reason": "bm25=0.817; dense=0.934; sub_bm25=0.818; sub_dense=0.967"
+      },
+      {
+        "corpusid": 3526062,
+        "score": 0.8842384815216064,
+        "reason": "bm25=0.873; dense=0.892; sub_bm25=0.854; sub_dense=0.939"
+      }
+    ]
+  }
+}

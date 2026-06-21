@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_593",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_593",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_593",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_593",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 763,
+      "latency_s": 2.9844721000408754
+    },
+    {
+      "query_id": "litsearch_593",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 345,
+      "latency_s": 2.8725407000165433
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_593",
+    "gold": [
+      263334587
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "latent diffusion model offline reinforcement learning sequential modeling",
+      "first application latent diffusion offline RL sequence",
+      "latent diffusion model for offline RL sequential decision making"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2536406,
+        10267911,
+        263334587,
+        18454652,
+        1686444,
+        15007330,
+        15287917,
+        8590250,
+        9784084,
+        4643315,
+        10371885,
+        7826531,
+        250390578,
+        9670244,
+        235097249,
+        6855748,
+        18872979,
+        14689950,
+        5268753,
+        6179947
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        261706069,
+        254044710,
+        263334587,
+        259937490,
+        247411310,
+        222142238,
+        249152222,
+        263609164,
+        224703455,
+        247058767,
+        235376887,
+        251554821,
+        225039786,
+        203610243,
+        239024500,
+        256697328,
+        220042361,
+        247839131,
+        12451537,
+        222291028
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263334587,
+        251554821,
+        256389689,
+        10419594,
+        245334837,
+        252781188,
+        261706069,
+        254853899,
+        247447665,
+        257079136,
+        248986748,
+        252873449,
+        252682980,
+        247476396,
+        209319223,
+        259212224,
+        258823066,
+        239016143,
+        249209875,
+        258865692
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263334587
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263334587,
+        261706069,
+        251554821,
+        256389689,
+        254044710,
+        247411310,
+        245334837,
+        252781188,
+        225039786,
+        239024500,
+        257079136,
+        252682980,
+        259212224,
+        252873449,
+        258823066,
+        247476396,
+        249209875,
+        222142238,
+        263829270,
+        247447665
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.054025299963541
+  },
+  "reason_example": {
+    "query_id": "litsearch_593",
+    "query": "Which paper uses the latent diffusion model for the first time to solve offline reinforcement learning problems based on the sequential modeling framework?",
+    "top_results": [
+      {
+        "corpusid": 263334587,
+        "score": 0.9720883369445801,
+        "reason": "bm25=0.930; dense=1.000; sub_bm25=1.000; sub_dense=0.937"
+      },
+      {
+        "corpusid": 261706069,
+        "score": 0.9361213445663452,
+        "reason": "bm25=1.000; dense=0.894; sub_bm25=1.000; sub_dense=0.952"
+      },
+      {
+        "corpusid": 251554821,
+        "score": 0.9121754169464111,
+        "reason": "bm25=0.813; dense=0.978; sub_bm25=0.732; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256389689,
+        "score": 0.8607774376869202,
+        "reason": "bm25=0.712; dense=0.960; sub_bm25=0.439; sub_dense=0.990"
+      },
+      {
+        "corpusid": 254044710,
+        "score": 0.8487967252731323,
+        "reason": "bm25=0.956; dense=0.777; sub_bm25=1.000; sub_dense=0.922"
+      }
+    ]
+  }
+}

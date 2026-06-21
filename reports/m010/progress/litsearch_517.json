@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_517",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_517",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_517",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_517",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 707,
+      "latency_s": 2.541740100015886
+    },
+    {
+      "query_id": "litsearch_517",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 321,
+      "latency_s": 2.1982444999739528
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_517",
+    "gold": [
+      257766959
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "video diffusion model instruction decomposition",
+      "temporal sub-instruction video generation",
+      "decompose video instructions into steps time"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        4328886,
+        15057133,
+        1161892,
+        6609459,
+        17173602,
+        53234523,
+        11754739,
+        7795635,
+        21691319,
+        29974541,
+        12111397,
+        8621713,
+        6764076,
+        8644215,
+        52985435,
+        230799344,
+        856669,
+        42994580,
+        129969,
+        51879110
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233004538,
+        247594023,
+        218684494,
+        257766959,
+        257663639,
+        264172935,
+        9280734,
+        264820183,
+        56657805,
+        214803082,
+        257232381,
+        258765272,
+        252407628,
+        263908842,
+        249431866,
+        16625292,
+        36952284,
+        252715594,
+        5580745,
+        233306884
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        257663639,
+        256231177,
+        258048805,
+        257279944,
+        247011732,
+        254044147,
+        252815987,
+        264820183,
+        258557287,
+        256846836,
+        59889003,
+        259376551,
+        256662277,
+        252668838,
+        252544798,
+        246863713,
+        256358823,
+        254096040,
+        246823323,
+        222140788
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264172935,
+        9280734,
+        218684494,
+        257766959,
+        247594023,
+        263908842,
+        237532411,
+        233004538,
+        257663639,
+        264820183,
+        256846836,
+        249204445
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257663639,
+        257766959,
+        264820183,
+        256231177,
+        218684494,
+        211082893,
+        252715594,
+        233004538,
+        247594023,
+        2170948,
+        257255036,
+        264172935,
+        254044147,
+        256846836,
+        258832670,
+        252815987,
+        258557287,
+        263908842,
+        249204445,
+        261582259
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.6543307999381796
+  },
+  "reason_example": {
+    "query_id": "litsearch_517",
+    "query": "In video diffusion models, is there any paper that tried decomposing video instruction into sub instructions of different time?",
+    "top_results": [
+      {
+        "corpusid": 257663639,
+        "score": 0.9625572562217712,
+        "reason": "bm25=0.906; dense=1.000; sub_bm25=0.829; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257766959,
+        "score": 0.8235204219818115,
+        "reason": "bm25=0.920; dense=0.759; sub_bm25=1.000; sub_dense=0.756"
+      },
+      {
+        "corpusid": 264820183,
+        "score": 0.8229831457138062,
+        "reason": "bm25=0.820; dense=0.825; sub_bm25=0.850; sub_dense=0.881"
+      },
+      {
+        "corpusid": 256231177,
+        "score": 0.8109196424484253,
+        "reason": "bm25=0.731; dense=0.864; sub_bm25=0.548; sub_dense=0.694"
+      },
+      {
+        "corpusid": 218684494,
+        "score": 0.7741886377334595,
+        "reason": "bm25=0.995; dense=0.627; sub_bm25=1.000; sub_dense=0.882"
+      }
+    ]
+  }
+}

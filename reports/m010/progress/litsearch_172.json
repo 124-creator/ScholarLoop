@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_172",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_172",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_172",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_172",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 968,
+      "latency_s": 5.528264699969441
+    },
+    {
+      "query_id": "litsearch_172",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 2.8254423000616953
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_172",
+    "gold": [
+      238856828
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "unified speech text representation encoder decoder",
+      "joint multimodal fusion speech text encoder decoder model",
+      "spoken language processing shared representation space encoder decoder"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7213852,
+        186206301,
+        238856828,
+        10168327,
+        17466705,
+        186206487,
+        199022672,
+        250390721,
+        6362566,
+        259376627,
+        5162676,
+        18022579,
+        232307242,
+        10079196,
+        7591554,
+        7658188,
+        36562731,
+        10513825,
+        32526624,
+        45770971
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        238856828,
+        248525011,
+        252847558,
+        247315559,
+        259376627,
+        251224058,
+        5802722,
+        256615676,
+        233189570,
+        236460116,
+        258546692,
+        203642169,
+        252847550,
+        5242162,
+        235694264,
+        246904994,
+        3138536,
+        252762414,
+        220045417,
+        227217847
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252762414,
+        245124569,
+        221690197,
+        248525011,
+        259145131,
+        238856828,
+        259833873,
+        252819408,
+        1515524,
+        12709333,
+        201660404,
+        18008015,
+        1226632,
+        252091126,
+        251903069,
+        10758863,
+        1261731,
+        52302229,
+        220445879,
+        15760330
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238856828,
+        252762414,
+        248525011,
+        235265704
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238856828,
+        248525011,
+        252762414,
+        1515524,
+        259833873,
+        245124569,
+        235265704,
+        259376627,
+        235097520,
+        252847550,
+        201660404,
+        12709333,
+        248119033,
+        252819408,
+        234093787,
+        10758863,
+        1984316,
+        248780182,
+        259145131,
+        5802722
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.516493900096975
+  },
+  "reason_example": {
+    "query_id": "litsearch_172",
+    "query": "Could you recommend research that investigates merging speech and text modalities in a unified representation space for processing spoken language through encoder-decoder models?",
+    "top_results": [
+      {
+        "corpusid": 238856828,
+        "score": 0.9764955043792725,
+        "reason": "bm25=1.000; dense=0.961; sub_bm25=1.000; sub_dense=0.908"
+      },
+      {
+        "corpusid": 248525011,
+        "score": 0.8621393442153931,
+        "reason": "bm25=0.699; dense=0.971; sub_bm25=0.574; sub_dense=0.870"
+      },
+      {
+        "corpusid": 252762414,
+        "score": 0.8305001258850098,
+        "reason": "bm25=0.576; dense=1.000; sub_bm25=0.906; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1515524,
+        "score": 0.7858702540397644,
+        "reason": "bm25=0.540; dense=0.950; sub_bm25=0.313; sub_dense=0.732"
+      },
+      {
+        "corpusid": 259833873,
+        "score": 0.7773980498313904,
+        "reason": "bm25=0.507; dense=0.958; sub_bm25=0.538; sub_dense=1.000"
+      }
+    ]
+  }
+}

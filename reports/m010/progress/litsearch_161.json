@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_161",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_161",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_161",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_161",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1432,
+      "latency_s": 9.981326500070281
+    },
+    {
+      "query_id": "litsearch_161",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 353,
+      "latency_s": 2.837775000021793
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_161",
+    "gold": [
+      236478307
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "pre-trained language models inferential commonsense knowledge sparse context challenges",
+      "limitations of language models learning commonsense inference with limited context",
+      "difficulty of pre-trained models in reasoning under sparse textual context"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        249017494,
+        196178233,
+        253762079,
+        253398055,
+        9830179,
+        30908728,
+        211205183,
+        261341576,
+        258378136,
+        226283808,
+        237950911,
+        241583340,
+        260063225,
+        51877436,
+        221655783,
+        238857158,
+        248780154,
+        7658188,
+        249018027,
+        251594643
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        189762527,
+        258588125,
+        222291183,
+        236478307,
+        221879025,
+        202541043,
+        233289738,
+        202734183,
+        6856950,
+        247613006,
+        250163863,
+        248780037,
+        245218685,
+        13488809,
+        226964491,
+        254854264,
+        236460291,
+        248780154,
+        247446896,
+        264802494
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245218685,
+        253244266,
+        249017494,
+        215745286,
+        248780037,
+        3906011,
+        235592830,
+        245502043,
+        202541043,
+        259262608,
+        238857304,
+        216641845,
+        253398055,
+        218470125,
+        218595822,
+        241035330,
+        252780328,
+        256461139,
+        237490328,
+        235421949
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245218685,
+        236478307,
+        202541043,
+        258588125,
+        196178233,
+        248780037,
+        215745286,
+        211205183,
+        249017494,
+        222291183,
+        189762527,
+        256461139
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245218685,
+        189762527,
+        202541043,
+        248780037,
+        253244266,
+        215745286,
+        258588125,
+        236478307,
+        238857304,
+        233289738,
+        216641845,
+        249017494,
+        226964491,
+        208029457,
+        222291183,
+        247702013,
+        256461139,
+        245502043,
+        259203213,
+        247446896
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.410292500047944
+  },
+  "reason_example": {
+    "query_id": "litsearch_161",
+    "query": "Could you recommend research that examines the challenges faced by pre-trained language models in learning inferential commonsense knowledge when the context is sparse?",
+    "top_results": [
+      {
+        "corpusid": 245218685,
+        "score": 0.9366281032562256,
+        "reason": "bm25=0.842; dense=1.000; sub_bm25=0.898; sub_dense=1.000"
+      },
+      {
+        "corpusid": 189762527,
+        "score": 0.8691717386245728,
+        "reason": "bm25=1.000; dense=0.782; sub_bm25=0.998; sub_dense=0.930"
+      },
+      {
+        "corpusid": 202541043,
+        "score": 0.8688170909881592,
+        "reason": "bm25=0.914; dense=0.839; sub_bm25=0.883; sub_dense=0.967"
+      },
+      {
+        "corpusid": 248780037,
+        "score": 0.86109459400177,
+        "reason": "bm25=0.846; dense=0.871; sub_bm25=1.000; sub_dense=0.938"
+      },
+      {
+        "corpusid": 253244266,
+        "score": 0.8591890931129456,
+        "reason": "bm25=0.760; dense=0.926; sub_bm25=0.888; sub_dense=0.988"
+      }
+    ]
+  }
+}

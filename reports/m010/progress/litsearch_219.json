@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_219",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_219",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_219",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_219",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1898,
+      "latency_s": 11.900673300027847
+    },
+    {
+      "query_id": "litsearch_219",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 241,
+      "latency_s": 1.810654699918814
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_219",
+    "gold": [
+      218901061
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "neural networks distinguishing causation from correlation",
+      "causal inference challenges in deep learning",
+      "correlation vs causation in neural network models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51985896,
+        3411040,
+        13488809,
+        53079679,
+        12811441,
+        19472917,
+        16355213,
+        14068874,
+        11631121,
+        218977371,
+        6538702,
+        17210142,
+        5212627,
+        8256717,
+        16906323,
+        233740082,
+        12164644,
+        21547774,
+        28841202,
+        18136430
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1052307,
+        18966879,
+        231632580,
+        192546007,
+        246863418,
+        2152252,
+        230349190,
+        53079679,
+        257258187,
+        248780096,
+        211133181,
+        776271,
+        251436788,
+        48356442,
+        51918763,
+        8256717,
+        259370695,
+        235446920,
+        1296374,
+        227230505
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        228705808,
+        218973757,
+        256461249,
+        793863,
+        218901061,
+        219636236,
+        44167055,
+        248780309,
+        254823387,
+        233254411,
+        59553561,
+        252683534,
+        232404166,
+        248085064,
+        251648657,
+        11237614,
+        12937092,
+        247741267,
+        32654687,
+        243864628
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259129342,
+        218973757,
+        218901061,
+        228705808,
+        51985896,
+        259370860,
+        12164644,
+        192546007,
+        259370695,
+        53079679,
+        202661057,
+        59553561
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        218973757,
+        228705808,
+        218901061,
+        18966879,
+        17716605,
+        259129342,
+        59553561,
+        259370860,
+        32654687,
+        232404166,
+        254823387,
+        248780309,
+        258564290,
+        12164644,
+        235417023,
+        202787823,
+        51985896,
+        226278028,
+        225103201,
+        53749372
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.539087599958293
+  },
+  "reason_example": {
+    "query_id": "litsearch_219",
+    "query": "Could you suggest research that examines the challenges faced by neural networks in discerning causation from correlation?",
+    "top_results": [
+      {
+        "corpusid": 218973757,
+        "score": 0.8786276578903198,
+        "reason": "bm25=0.707; dense=0.993; sub_bm25=0.648; sub_dense=0.900"
+      },
+      {
+        "corpusid": 228705808,
+        "score": 0.8775346279144287,
+        "reason": "bm25=0.694; dense=1.000; sub_bm25=0.554; sub_dense=0.958"
+      },
+      {
+        "corpusid": 218901061,
+        "score": 0.866313099861145,
+        "reason": "bm25=0.748; dense=0.945; sub_bm25=0.707; sub_dense=0.941"
+      },
+      {
+        "corpusid": 18966879,
+        "score": 0.8451344966888428,
+        "reason": "bm25=0.942; dense=0.781; sub_bm25=0.984; sub_dense=0.824"
+      },
+      {
+        "corpusid": 17716605,
+        "score": 0.831845760345459,
+        "reason": "bm25=0.810; dense=0.846; sub_bm25=1.000; sub_dense=0.874"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_441",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_441",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_441",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_441",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1153,
+      "latency_s": 6.522588400053792
+    },
+    {
+      "query_id": "litsearch_441",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 324,
+      "latency_s": 2.4943536000791937
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_441",
+    "gold": [
+      258685538
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "interactive semantic parsing error correction model simulated human feedback",
+      "semantic parsing with simulated user feedback error correction",
+      "training semantic parser with simulated human corrections"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        232379973,
+        1788449,
+        13979944,
+        19401538,
+        218516925,
+        13612096,
+        12735714,
+        258685538,
+        16548363,
+        220046520,
+        252367603,
+        9716222,
+        2778076,
+        2445873,
+        184483031,
+        251385388,
+        12767487,
+        37880495,
+        14333426,
+        1392255
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258685538,
+        218516925,
+        235593379,
+        261494539,
+        232379973,
+        220046520,
+        159041465,
+        6694311,
+        11746938,
+        13612096,
+        13679932,
+        27418157,
+        10101311,
+        13682824,
+        249848230,
+        29723323,
+        215824512,
+        250390510,
+        503103,
+        51874610
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258685538,
+        232379973,
+        218516925,
+        12767487,
+        659322,
+        1622363,
+        15722076,
+        17502918,
+        220046520,
+        13612096,
+        53080762,
+        46940766,
+        219872615,
+        239016860,
+        235593379,
+        11372220,
+        9963298,
+        222290919,
+        11054881,
+        219303057
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258685538,
+        218516925,
+        232379973
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258685538,
+        218516925,
+        232379973,
+        235593379,
+        12767487,
+        220046520,
+        13612096,
+        15722076,
+        659322,
+        239016860,
+        261494539,
+        1622363,
+        503103,
+        46940766,
+        53080762,
+        6694311,
+        13679932,
+        249848230,
+        258987509,
+        222290919
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.078464600024745
+  },
+  "reason_example": {
+    "query_id": "litsearch_441",
+    "query": "Which paper enables interactive semantic parsing by training an error correction model with simulated human feedback instead of human annotations?",
+    "top_results": [
+      {
+        "corpusid": 258685538,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218516925,
+        "score": 0.8114838004112244,
+        "reason": "bm25=0.745; dense=0.856; sub_bm25=0.734; sub_dense=0.974"
+      },
+      {
+        "corpusid": 232379973,
+        "score": 0.7749146223068237,
+        "reason": "bm25=0.569; dense=0.912; sub_bm25=0.604; sub_dense=0.950"
+      },
+      {
+        "corpusid": 235593379,
+        "score": 0.7175136804580688,
+        "reason": "bm25=0.658; dense=0.757; sub_bm25=0.652; sub_dense=0.799"
+      },
+      {
+        "corpusid": 12767487,
+        "score": 0.6993660926818848,
+        "reason": "bm25=0.466; dense=0.855; sub_bm25=0.529; sub_dense=0.897"
+      }
+    ]
+  }
+}

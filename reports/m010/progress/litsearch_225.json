@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_225",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_225",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_225",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_225",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1058,
+      "latency_s": 5.2317496000323445
+    },
+    {
+      "query_id": "litsearch_225",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 325,
+      "latency_s": 2.205335699953139
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_225",
+    "gold": [
+      229680000
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "drawbacks of dense retrieval systems",
+      "scalability issues dense retrieval large index",
+      "limitations of dense passage retrieval"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1871953,
+        8220493,
+        14334573,
+        38964517,
+        8292781,
+        8852106,
+        2608991,
+        53010,
+        2143884,
+        2769726,
+        14122119,
+        8893507,
+        202785232,
+        219303693,
+        14282973,
+        1002552,
+        10982377,
+        14520599,
+        33548672,
+        38743106
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249191630,
+        249926985,
+        254877181,
+        231779510,
+        229680000,
+        256460881,
+        237592852,
+        247450700,
+        247447562,
+        252519173,
+        237213465,
+        245131402,
+        248562640,
+        233219392,
+        6161073,
+        6216639,
+        239993003,
+        9072431,
+        251710555,
+        225040672
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        229680000,
+        254877046,
+        247450700,
+        6216639,
+        24277319,
+        250122248,
+        5618937,
+        59848390,
+        7610287,
+        17555240,
+        20798625,
+        11895984,
+        67425046,
+        256460859,
+        645948,
+        9874681,
+        46052710,
+        16113728,
+        252819035,
+        259370750
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        229680000,
+        247450700,
+        249926985,
+        252519173,
+        237213465,
+        247447562,
+        256460881,
+        8893507,
+        249191630,
+        231779510,
+        225040672,
+        17423946
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        229680000,
+        247450700,
+        6216639,
+        249191630,
+        254877181,
+        237592852,
+        237213465,
+        259370750,
+        239993003,
+        253237545,
+        252519173,
+        248562640,
+        256460881,
+        258887561,
+        249926985,
+        14200823,
+        234338073,
+        11895984,
+        67425046,
+        225094208
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.283801899990067
+  },
+  "reason_example": {
+    "query_id": "litsearch_225",
+    "query": "Could you suggest research that explores the drawbacks of dense retrieval systems especially with large-scale indices?",
+    "top_results": [
+      {
+        "corpusid": 229680000,
+        "score": 0.9200873374938965,
+        "reason": "bm25=0.800; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247450700,
+        "score": 0.8377776741981506,
+        "reason": "bm25=0.789; dense=0.871; sub_bm25=0.964; sub_dense=0.970"
+      },
+      {
+        "corpusid": 6216639,
+        "score": 0.8281189203262329,
+        "reason": "bm25=0.768; dense=0.868; sub_bm25=0.642; sub_dense=0.822"
+      },
+      {
+        "corpusid": 249191630,
+        "score": 0.8040247559547424,
+        "reason": "bm25=1.000; dense=0.673; sub_bm25=0.913; sub_dense=0.750"
+      },
+      {
+        "corpusid": 254877181,
+        "score": 0.7729088664054871,
+        "reason": "bm25=0.839; dense=0.729; sub_bm25=0.805; sub_dense=0.868"
+      }
+    ]
+  }
+}

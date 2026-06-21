@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_018",
+  "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+  "criteria": [
+    "dependency-based relation extraction models",
+    "dependency parsing for non-local syntactic relations in relation extraction",
+    "capturing long-distance dependencies in relation extraction using dependency parsing"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_018",
+      "corpusid": 5282346,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Composite Kernel to Extract Relations between Entities with both Flat and Structured Features",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            95
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "significantly outperforms previous two dependency tree kernels for relation extraction",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            729,
+            815
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "This paper proposes a novel composite kernel for relation extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "The composite kernel consists of two individual kernels: an entity kernel that allows for entity-related features and a convolution parse tree kernel that models syntactic information of relation examples.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            70,
+            275
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Evaluation on the ACE corpus",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            627,
+            655
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "our method outperforms the previous best-reported methods and significantly outperforms previous two dependency tree kernels for relation extraction",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            667,
+            815
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "It also shows without the need for extensive feature engineering the composite kernel can not only capture most of the flat features used in the previous work but also exploit the useful syntactic structure features effectively.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            3746,
+            3974
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "significantly outperforms previous two dependency tree kernels for relation extraction",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            729,
+            815
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1929,
+        "elapsed_s": 13.272391999955289,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_018_5282346.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_018",
+      "corpusid": 25169775,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "TEG-REP: A Corpus of Textual Entailment Graphs based on Relation Extraction Patterns",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Dependency parse trees have become a popular source for discovering extraction patterns",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            109,
+            196
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "which encode the grammatical relations among the phrases that jointly express relation instances",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            198,
+            294
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We propose a new approach to structuring extraction patterns by utilizing entailment graphs",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            646,
+            737
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "present a novel resource of gold-standard entailment graphs based on a set of patterns automatically acquired using distant supervision",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            802,
+            937
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "present statistics of the resource as well as an analysis of inference types underlying the entailment decisions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1001,
+            1113
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Among these patterns, some are semantically equivalent, but differ in their morphological, lexical-semantic or syntactic form.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            461,
+            587
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Dependency parse trees have become a popular source for discovering extraction patterns",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            109,
+            196
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1724,
+        "elapsed_s": 9.838582299998961,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_018_25169775.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_018",
+      "corpusid": 13205080,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Discovery of Dependency Tree Patterns for Relation Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            61
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "In this paper, we try to solve the problem of relation extraction by discovering dependency tree patterns (a pattern is an embedded sub dependency tree indicating a relation instance).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            82,
+            266
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Relation extraction is to identify the relations between pairs of named entities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            81
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Our approach is to find an optimal rule (pattern) set automatically based on the proposed dependency tree pattern mining algorithm.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            267,
+            398
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "The experimental results show that the extracted patterns can achieve a high precision and a reasonable recall rate when used as rules to extract relation instances.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            399,
+            564
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "The experimental results show that the extracted patterns can achieve a high precision and a reasonable recall rate when used as rules to extract relation instances.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            399,
+            564
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Agichtein (2000) proposed Snowball which improved DIPRE by introducing the notion of match degree, where only sentences, whose match degrees are higher than a pre-defined threshold, are used to generate new rules.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            3499,
+            3712
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "discovering dependency tree patterns (a pattern is an embedded sub dependency tree indicating a relation instance)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            151,
+            265
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1875,
+        "elapsed_s": 11.555478799971752,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_018_13205080.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 5282346,
+      "title": "A Composite Kernel to Extract Relations between Entities with both Flat and Structured Features",
+      "cells": [
+        {
+          "criterion": "dependency-based relation extraction models",
+          "addresses": true,
+          "snippet": "This paper proposes a novel composite kernel for relation extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        },
+        {
+          "criterion": "dependency parsing for non-local syntactic relations in relation extraction",
+          "addresses": true,
+          "snippet": "This paper proposes a novel composite kernel for relation extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        },
+        {
+          "criterion": "capturing long-distance dependencies in relation extraction using dependency parsing",
+          "addresses": true,
+          "snippet": "This paper proposes a novel composite kernel for relation extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 25169775,
+      "title": "TEG-REP: A Corpus of Textual Entailment Graphs based on Relation Extraction Patterns",
+      "cells": [
+        {
+          "criterion": "dependency-based relation extraction models",
+          "addresses": true,
+          "snippet": "The task of relation extraction is to recognize and extract relations between entities or concepts in texts.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            108
+          ]
+        },
+        {
+          "criterion": "dependency parsing for non-local syntactic relations in relation extraction",
+          "addresses": true,
+          "snippet": "The task of relation extraction is to recognize and extract relations between entities or concepts in texts.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            108
+          ]
+        },
+        {
+          "criterion": "capturing long-distance dependencies in relation extraction using dependency parsing",
+          "addresses": true,
+          "snippet": "The task of relation extraction is to recognize and extract relations between entities or concepts in texts.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 13205080,
+      "title": "Discovery of Dependency Tree Patterns for Relation Extraction",
+      "cells": [
+        {
+          "criterion": "dependency-based relation extraction models",
+          "addresses": true,
+          "snippet": "Relation extraction is to identify the relations between pairs of named entities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            81
+          ]
+        },
+        {
+          "criterion": "dependency parsing for non-local syntactic relations in relation extraction",
+          "addresses": true,
+          "snippet": "Relation extraction is to identify the relations between pairs of named entities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            81
+          ]
+        },
+        {
+          "criterion": "capturing long-distance dependencies in relation extraction using dependency parsing",
+          "addresses": true,
+          "snippet": "Relation extraction is to identify the relations between pairs of named entities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            81
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      5282346,
+      13205080,
+      25169775
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

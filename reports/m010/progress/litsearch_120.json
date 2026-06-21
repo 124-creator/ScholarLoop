@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_120",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_120",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_120",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_120",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 802,
+      "latency_s": 4.119853600044735
+    },
+    {
+      "query_id": "litsearch_120",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 380,
+      "latency_s": 3.2534378999844193
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_120",
+    "gold": [
+      237492043
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "few-shot relation extraction global local attributes external descriptions",
+      "few-shot relation extraction challenges integrating global and local features",
+      "relation extraction few-shot learning with external knowledge and global-local information"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        202757082,
+        3179848,
+        17894632,
+        6825083,
+        215746894,
+        955518,
+        11858650,
+        2338256,
+        222306079,
+        250761,
+        44073134,
+        6456225,
+        13927379,
+        42297913,
+        233029459,
+        33364495,
+        234757238,
+        16711873,
+        224705337,
+        16127702
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865653,
+        17894632,
+        44073134,
+        225067490,
+        209175941,
+        235352728,
+        252763303,
+        250761,
+        221836081,
+        226222116,
+        222306079,
+        236477583,
+        53080736,
+        202789603,
+        235248430,
+        237442211,
+        259138660,
+        252918771,
+        248779988,
+        87648
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258437068,
+        243865653,
+        202789603,
+        237492043,
+        53080736,
+        259370581,
+        189928148,
+        237442211,
+        256460971,
+        248779988,
+        226222116,
+        259108325,
+        235352728,
+        247619108,
+        237452237,
+        252819418,
+        53607073,
+        252763303,
+        202785034,
+        226221994
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865653,
+        237492043,
+        259370581,
+        53080736,
+        202789603,
+        237452237,
+        248779988,
+        225067490,
+        44073134,
+        3179848,
+        17894632,
+        222306079
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        243865653,
+        202789603,
+        53080736,
+        258437068,
+        237492043,
+        259370581,
+        235352728,
+        237442211,
+        226222116,
+        248779988,
+        252763303,
+        189928148,
+        259138660,
+        237452237,
+        87648,
+        227231801,
+        237100869,
+        256460971,
+        252070677,
+        252819418
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.435199600062333
+  },
+  "reason_example": {
+    "query_id": "litsearch_120",
+    "query": "Could you recommend a study that examines the intricacies of few-shot relation extraction challenges and introduces an approach integrating both global and local attributes alongside external descriptions of relations?",
+    "top_results": [
+      {
+        "corpusid": 243865653,
+        "score": 0.9978972673416138,
+        "reason": "bm25=1.000; dense=0.996; sub_bm25=0.930; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202789603,
+        "score": 0.9539685249328613,
+        "reason": "bm25=0.899; dense=0.990; sub_bm25=0.796; sub_dense=0.956"
+      },
+      {
+        "corpusid": 53080736,
+        "score": 0.9259411692619324,
+        "reason": "bm25=0.902; dense=0.942; sub_bm25=0.760; sub_dense=0.981"
+      },
+      {
+        "corpusid": 258437068,
+        "score": 0.9079065322875977,
+        "reason": "bm25=0.770; dense=1.000; sub_bm25=0.960; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237492043,
+        "score": 0.8914834260940552,
+        "reason": "bm25=0.804; dense=0.950; sub_bm25=0.782; sub_dense=0.994"
+      }
+    ]
+  }
+}

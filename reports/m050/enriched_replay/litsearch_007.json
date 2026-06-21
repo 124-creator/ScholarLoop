@@ -1,0 +1,640 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_007",
+  "query": "Can you direct me to studies that explore techniques like question answering and passage retrieval for mitigating the effects of clickbait headlines?",
+  "criteria": [
+    "question answering clickbait mitigation",
+    "passage retrieval clickbait detection",
+    "neural passage retrieval clickbait headlines"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_007.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_007",
+      "corpusid": 247593812,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            63
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Matthias Hagen, Maik Fröbe, Artur Jurk, Martin Potthast (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4221143362",
+            "fetched_at": "2026-06-20T00:17:21Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\405e67f957a376d58b4704b6.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2203.10282; Source: arXiv (Cornell University); OA: green; Citations: 0",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4221143362",
+            "fetched_at": "2026-06-20T00:17:21Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\405e67f957a376d58b4704b6.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We introduce and study the task of clickbait spoiling: generating a short text that satisfies the curiosity induced by a clickbait post.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We introduce and study the task of clickbait spoiling",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            53
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Our contributions are approaches to classify the type of spoiler needed (i.e., a phrase or a passage), and to generate appropriate spoilers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            262,
+            402
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "a new corpus of 5,000 manually spoiled clickbait poststhe Webis Clickbait Spoiling Corpus 2022",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            450,
+            544
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "the question answering model DeBERTa-large outperforms all others in generating spoilers for both types.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            618,
+            722
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Our contributions are approaches to classify the type of spoiler needed (i.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            262,
+            337
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            63
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1499,
+        "elapsed_s": 6.641682600020431,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_007_247593812.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4221143362",
+        "title": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+        "authors": [
+          "Matthias Hagen",
+          "Maik Fröbe",
+          "Artur Jurk",
+          "Martin Potthast"
+        ],
+        "year": 2022,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2203.10282",
+        "oa_status": "green",
+        "citation_count": 0,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:21Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\405e67f957a376d58b4704b6.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+          "candidate_title": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_007",
+      "corpusid": 251402038,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Know Better -A Clickbait Resolving Challenge",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            44
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Benjamin Hättasch, Carsten Binnig (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W7160238419",
+            "fetched_at": "2026-06-20T00:17:23Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\b7ec471e4ded4b28be47a6f2.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/3xjthqhgxf2v; Source: https://doi.org/10.63317/3xjthqhgxf2v; OA: gold; Citations: 0",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W7160238419",
+            "fetched_at": "2026-06-20T00:17:23Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\b7ec471e4ded4b28be47a6f2.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "why clickbait can probably not be defeated with clickbait detection alone",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            484,
+            557
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We therefore propose to construct approaches that can automatically extract the relevant information from such an article, which we call clickbait resolving.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            259,
+            416
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We analyze the performance of some basic approaches on this task and show that models fine-tuned on our data can outperform general question answering models",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            727,
+            884
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "we present a new corpus of clickbait articles annotated by university students",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            15,
+            93
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "this task, although similar to question answering and some automatic summarization approaches, needs to be tackled with specialized models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            587,
+            726
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "why clickbait can probably not be defeated with clickbait detection alone",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            484,
+            557
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "although similar to question answering and some automatic summarization approaches, needs to be tackled with specialized models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            598,
+            726
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2186,
+        "elapsed_s": 12.22344269999303,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_007_251402038.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W7160238419",
+        "title": "Know Better – A Clickbait Resolving Challenge",
+        "authors": [
+          "Benjamin Hättasch",
+          "Carsten Binnig"
+        ],
+        "year": 2022,
+        "venue": "https://doi.org/10.63317/3xjthqhgxf2v",
+        "doi": "10.63317/3xjthqhgxf2v",
+        "oa_status": "gold",
+        "citation_count": 0,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:23Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\b7ec471e4ded4b28be47a6f2.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Know Better -A Clickbait Resolving Challenge",
+          "candidate_title": "Know Better – A Clickbait Resolving Challenge",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_007",
+      "corpusid": 259376471,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Mr-wallace at SemEval-2023 Task 5: Novel Clickbait Spoiling Algorithm Using Natural Language Processing",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            103
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Vineet Saravanan, Steven Lloyd Wilson (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570020",
+            "fetched_at": "2026-06-20T00:17:25Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\0a8d484dc2082337f2b6bcf1.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2023.semeval-1.225; Source: http://dx.doi.org/10.18653/v1/2023.semeval-1.225; OA: gold; Citations: 4",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570020",
+            "fetched_at": "2026-06-20T00:17:25Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\0a8d484dc2082337f2b6bcf1.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "With the use of natural language processing models, we can save users time and reduce the need to follow clickbait links.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            127,
+            248
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Task 5 at SemEval-2023 focused on precisely this problem and was broken into two steps: identifying the clickbait spoiler type and then identifying the clickbait itself.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            249,
+            418
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Our approach involves the use of fine-tuned text classification and question-answering models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            419,
+            513
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Task 5 at SemEval-2023",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            249,
+            271
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Efforts toward solving this task may have an impact by helping to save users' time and quickly give an insight into the answer of what the clickbait/article is about.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            694,
+            860
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The question-answering model exactly spoiled clickbait generated around 42.5% of the time.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            603,
+            693
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Clickbait creates a nuisance in the online experience by creating a lure towards poor content in order to generate ad revenue.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            126
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1668,
+        "elapsed_s": 8.52269430004526,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_007_259376471.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4385570020",
+        "title": "Mr-wallace at SemEval-2023 Task 5: Novel Clickbait Spoiling Algorithm Using Natural Language Processing",
+        "authors": [
+          "Vineet Saravanan",
+          "Steven Lloyd Wilson"
+        ],
+        "year": 2023,
+        "venue": "http://dx.doi.org/10.18653/v1/2023.semeval-1.225",
+        "doi": "10.18653/v1/2023.semeval-1.225",
+        "oa_status": "gold",
+        "citation_count": 4,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:25Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\0a8d484dc2082337f2b6bcf1.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Mr-wallace at SemEval-2023 Task 5: Novel Clickbait Spoiling Algorithm Using Natural Language Processing",
+          "candidate_title": "Mr-wallace at SemEval-2023 Task 5: Novel Clickbait Spoiling Algorithm Using Natural Language Processing",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 247593812,
+      "title": "Clickbait Spoiling via Question Answering and Passage Retrieval",
+      "cells": [
+        {
+          "criterion": "question answering clickbait mitigation",
+          "addresses": true,
+          "snippet": "We introduce and study the task of clickbait spoiling: generating a short text that satisfies the curiosity induced by a clickbait post.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "passage retrieval clickbait detection",
+          "addresses": true,
+          "snippet": "We introduce and study the task of clickbait spoiling: generating a short text that satisfies the curiosity induced by a clickbait post.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "neural passage retrieval clickbait headlines",
+          "addresses": true,
+          "snippet": "We introduce and study the task of clickbait spoiling: generating a short text that satisfies the curiosity induced by a clickbait post.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 251402038,
+      "title": "Know Better -A Clickbait Resolving Challenge",
+      "cells": [
+        {
+          "criterion": "question answering clickbait mitigation",
+          "addresses": true,
+          "snippet": "In this paper, we present a new corpus of clickbait articles annotated by university students along with a corresponding shared task: clickbait articles use a headline or teaser that hides information from the reader to make them curious to open the article.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            258
+          ]
+        },
+        {
+          "criterion": "passage retrieval clickbait detection",
+          "addresses": true,
+          "snippet": "In this paper, we present a new corpus of clickbait articles annotated by university students along with a corresponding shared task: clickbait articles use a headline or teaser that hides information from the reader to make them curious to open the article.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            258
+          ]
+        },
+        {
+          "criterion": "neural passage retrieval clickbait headlines",
+          "addresses": true,
+          "snippet": "In this paper, we present a new corpus of clickbait articles annotated by university students along with a corresponding shared task: clickbait articles use a headline or teaser that hides information from the reader to make them curious to open the article.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            258
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 259376471,
+      "title": "Mr-wallace at SemEval-2023 Task 5: Novel Clickbait Spoiling Algorithm Using Natural Language Processing",
+      "cells": [
+        {
+          "criterion": "question answering clickbait mitigation",
+          "addresses": true,
+          "snippet": "Clickbait creates a nuisance in the online experience by creating a lure towards poor content in order to generate ad revenue.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            126
+          ]
+        },
+        {
+          "criterion": "passage retrieval clickbait detection",
+          "addresses": true,
+          "snippet": "Clickbait creates a nuisance in the online experience by creating a lure towards poor content in order to generate ad revenue.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            126
+          ]
+        },
+        {
+          "criterion": "neural passage retrieval clickbait headlines",
+          "addresses": true,
+          "snippet": "Clickbait creates a nuisance in the online experience by creating a lure towards poor content in order to generate ad revenue.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            126
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      247593812,
+      251402038,
+      259376471
+    ],
+    "edges": [
+      {
+        "source": 259376471,
+        "target": 247593812
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

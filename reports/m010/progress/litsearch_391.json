@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_391",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_391",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_391",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_391",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1361,
+      "latency_s": 9.482847999897785
+    },
+    {
+      "query_id": "litsearch_391",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 294,
+      "latency_s": 2.7367028000298887
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_391",
+    "gold": [
+      254877039
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "symbolic distillation black-box language model counterfactual data",
+      "counterfactual data generation large language model out-of-distribution",
+      "symbolic knowledge distillation generalist LLM OOD generalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        234487239,
+        250390573,
+        17585795,
+        1966857,
+        18508139,
+        259833814,
+        249204538,
+        129969,
+        241583386,
+        258765228,
+        258765294,
+        34415374,
+        252091141,
+        225067490,
+        633992,
+        8841728,
+        235732200,
+        221097249,
+        260866107,
+        256461446
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248987713,
+        58004637,
+        249191952,
+        252383591,
+        254877039,
+        259370836,
+        238856959,
+        49907212,
+        229365694,
+        260063117,
+        19340026,
+        248366439,
+        222291772,
+        258999153,
+        241583386,
+        49672236,
+        257219883,
+        253080689,
+        250390573,
+        6776293
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877039,
+        250089342,
+        238857304,
+        250390702,
+        258947371,
+        245385766,
+        235266322,
+        29703312,
+        258461058,
+        235408115,
+        245319266,
+        220830688,
+        257280401,
+        254854264,
+        235732204,
+        235247884,
+        218901061,
+        231775891,
+        26697342,
+        203591519
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254877039,
+        238857304,
+        256461446,
+        253080689,
+        257219883,
+        215745290,
+        248987713,
+        250390573
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877039,
+        238857304,
+        218901061,
+        250089342,
+        258947371,
+        254854264,
+        222291772,
+        257219883,
+        258461058,
+        253080689,
+        222133021,
+        256461446,
+        235408115,
+        245319266,
+        215745290,
+        245385766,
+        250390702,
+        234681155,
+        235266322,
+        235247884
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.537282699951902
+  },
+  "reason_example": {
+    "query_id": "litsearch_391",
+    "query": "Is there any paper that applies symbolic distillation on black-box generalist language models to harvest high-quality counterfactual data for out-of-distribution generalization?",
+    "top_results": [
+      {
+        "corpusid": 254877039,
+        "score": 0.9521571397781372,
+        "reason": "bm25=0.880; dense=1.000; sub_bm25=0.807; sub_dense=0.957"
+      },
+      {
+        "corpusid": 238857304,
+        "score": 0.8696784973144531,
+        "reason": "bm25=0.750; dense=0.949; sub_bm25=0.764; sub_dense=0.902"
+      },
+      {
+        "corpusid": 218901061,
+        "score": 0.8433763384819031,
+        "reason": "bm25=0.802; dense=0.871; sub_bm25=0.726; sub_dense=0.849"
+      },
+      {
+        "corpusid": 250089342,
+        "score": 0.8412915468215942,
+        "reason": "bm25=0.658; dense=0.964; sub_bm25=0.707; sub_dense=0.951"
+      },
+      {
+        "corpusid": 258947371,
+        "score": 0.8362281322479248,
+        "reason": "bm25=0.700; dense=0.927; sub_bm25=0.561; sub_dense=0.988"
+      }
+    ]
+  }
+}

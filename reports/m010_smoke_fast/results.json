@@ -1,0 +1,281 @@
+{
+  "status": "BLOCKED",
+  "query_count": 1,
+  "completed_query_count": 1,
+  "processed_new_queries": 1,
+  "protocol": {
+    "top_k": 100,
+    "single_llm_prompt_k": 12,
+    "shared_candidate_pool": "keyword/BM25/neural top-k union; all systems scored or constrained on same pool",
+    "neural_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "neural_model_version": "sentence-transformers/all-MiniLM-L6-v2; dim=384; modules=['0', '1', '2']",
+    "neural_is_lsa": false,
+    "temperature": 0,
+    "seed": 42
+  },
+  "precheck": {
+    "present": {
+      "LLM_BASE_URL": true,
+      "LLM_API_KEY": true,
+      "LLM_MODEL": true
+    },
+    "valid": true,
+    "model": "deepseek-v4-flash",
+    "base_url_present": true,
+    "elapsed_s": 2.0800849000224844,
+    "usage": {
+      "completion_tokens": 24,
+      "prompt_tokens": 8,
+      "total_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 22,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 8
+    },
+    "content_preview": "OK"
+  },
+  "aggregate": [
+    {
+      "system": "keyword",
+      "queries": 1,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "bm25",
+      "queries": 1,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "neural_embedding",
+      "queries": 1,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "single_llm",
+      "queries": 1,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1858,
+      "total_latency_s": 12.444303500000387
+    },
+    {
+      "system": "scholarloop_a",
+      "queries": 1,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 259,
+      "total_latency_s": 1.9025511000072584
+    }
+  ],
+  "per_query": [
+    {
+      "query_id": "litsearch_000",
+      "gold": [
+        202719327
+      ],
+      "pool_size": 235,
+      "decomposition": [
+        "knowledge distillation for large language model compression",
+        "task-agnostic knowledge distillation methods",
+        "compressing large-scale language models with distillation"
+      ],
+      "keyword": {
+        "ranked_top20": [
+          219309121,
+          259833850,
+          248227350,
+          8176549,
+          250390577,
+          27016310,
+          5836395,
+          256461189,
+          16611324,
+          22421874,
+          260063173,
+          102483587,
+          238857158,
+          256460960,
+          221995575,
+          173990423,
+          16589571,
+          259833854,
+          226283737,
+          235166616
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "bm25": {
+        "ranked_top20": [
+          221995575,
+          259137871,
+          256900817,
+          215238664,
+          218502458,
+          257038997,
+          201670719,
+          222290473,
+          248227350,
+          226226888,
+          233024733,
+          239015981,
+          234482764,
+          3960960,
+          235294276,
+          258212842,
+          253080510,
+          2331610,
+          240070849,
+          258960671
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "neural_embedding": {
+        "ranked_top20": [
+          258212842,
+          256461337,
+          237563200,
+          227247952,
+          257219883,
+          235258277,
+          221995575,
+          218502458,
+          221702970,
+          248780060,
+          201670719,
+          257038997,
+          258833648,
+          259370700,
+          226226888,
+          227905681,
+          256461264,
+          239015981,
+          247741658,
+          256598338
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "single_llm": {
+        "ranked_top20": [
+          257038997,
+          215238664,
+          259137871,
+          226226888,
+          256900817,
+          218502458,
+          248227350,
+          221995575,
+          201670719,
+          239015981,
+          258212842,
+          258461336
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "scholarloop_a": {
+        "ranked_top20": [
+          221995575,
+          258212842,
+          218502458,
+          257038997,
+          201670719,
+          256461337,
+          226226888,
+          239015981,
+          235258277,
+          227247952,
+          259137871,
+          237563200,
+          256900817,
+          258461336,
+          257219883,
+          235294276,
+          256461264,
+          221702970,
+          248780060,
+          215238664
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "elapsed_s": 16.278673499939032
+    }
+  ],
+  "hallucinated_or_out_of_pool": 0,
+  "efficiency": {
+    "total_wall_s": 55.59806119999848,
+    "p50_query_s": 16.278673499939032,
+    "p95_query_s": 16.278673499939032,
+    "total_tokens": 2117,
+    "avg_tokens_per_query": 2117.0,
+    "api_calls_per_query": 2.0
+  },
+  "reason_examples": [
+    {
+      "query_id": "litsearch_000",
+      "query": "Are there any research papers on methods to compress large-scale language models using task-agnostic knowledge distillation techniques?",
+      "top_results": [
+        {
+          "corpusid": 221995575,
+          "score": 0.9561260938644409,
+          "reason": "bm25=1.000; dense=0.927; sub_bm25=1.000; sub_dense=0.980"
+        },
+        {
+          "corpusid": 258212842,
+          "score": 0.9127461314201355,
+          "reason": "bm25=0.782; dense=1.000; sub_bm25=1.000; sub_dense=0.980"
+        },
+        {
+          "corpusid": 218502458,
+          "score": 0.9025059938430786,
+          "reason": "bm25=0.888; dense=0.912; sub_bm25=0.831; sub_dense=0.921"
+        },
+        {
+          "corpusid": 257038997,
+          "score": 0.8886370658874512,
+          "reason": "bm25=0.886; dense=0.891; sub_bm25=1.000; sub_dense=0.940"
+        },
+        {
+          "corpusid": 201670719,
+          "score": 0.8866072297096252,
+          "reason": "bm25=0.878; dense=0.893; sub_bm25=0.946; sub_dense=0.938"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_494",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_494",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_494",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_494",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1898,
+      "latency_s": 12.417973499977961
+    },
+    {
+      "query_id": "litsearch_494",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 442,
+      "latency_s": 3.242774400045164
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_494",
+    "gold": [
+      259370577
+    ],
+    "pool_size": 230,
+    "decomposition": [
+      "first paper combining spoken and sign language datasets with gloss annotations for sign language translation",
+      "earliest work using gloss annotations from spoken and sign language datasets to enhance sign language translation",
+      "original proposal of fusing spoken language and sign language data with glosses for sign language translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252819233,
+        10839983,
+        21022858,
+        11200749,
+        261494462,
+        2738564,
+        6141627,
+        259376627,
+        49560309,
+        70019618,
+        249204515,
+        16858278,
+        28436978,
+        201698198,
+        31001239,
+        24553,
+        8617003,
+        30167514,
+        10740890,
+        15591640
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258832883,
+        258960455,
+        252873427,
+        252624661,
+        258461359,
+        259370577,
+        252624711,
+        250120905,
+        247594214,
+        21718900,
+        257767715,
+        254994143,
+        2516961,
+        40336617,
+        201688160,
+        248780208,
+        252125909,
+        234742622,
+        42491242,
+        252186429
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249204515,
+        254994143,
+        252624750,
+        1836838,
+        14476916,
+        14038457,
+        252624525,
+        258832883,
+        252624422,
+        226283947,
+        5368679,
+        150252,
+        259370577,
+        247594214,
+        16505930,
+        2025320,
+        259002929,
+        250150813,
+        21725973,
+        252624707
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2516961,
+        258960455,
+        252873427,
+        259370577,
+        252819233,
+        14717392,
+        247594214,
+        252624661,
+        258832883,
+        201688160,
+        252125909,
+        252624711
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258832883,
+        254994143,
+        259370577,
+        252624750,
+        14038457,
+        247594214,
+        252624711,
+        258960455,
+        1836838,
+        252624661,
+        252624525,
+        252125909,
+        252186429,
+        257767715,
+        201688160,
+        2241526,
+        2516961,
+        234742622,
+        250120905,
+        252819233
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.673005299991928
+  },
+  "reason_example": {
+    "query_id": "litsearch_494",
+    "query": "Which paper was the first to propose combining human spoken language and sign language datasets with gloss annotations to enhance the performance of sign language translation?",
+    "top_results": [
+      {
+        "corpusid": 258832883,
+        "score": 0.9709408283233643,
+        "reason": "bm25=1.000; dense=0.952; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254994143,
+        "score": 0.9349473714828491,
+        "reason": "bm25=0.850; dense=0.992; sub_bm25=0.798; sub_dense=0.942"
+      },
+      {
+        "corpusid": 259370577,
+        "score": 0.9221974611282349,
+        "reason": "bm25=0.919; dense=0.924; sub_bm25=0.884; sub_dense=0.959"
+      },
+      {
+        "corpusid": 252624750,
+        "score": 0.9015834331512451,
+        "reason": "bm25=0.790; dense=0.976; sub_bm25=0.846; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14038457,
+        "score": 0.8920789957046509,
+        "reason": "bm25=0.801; dense=0.953; sub_bm25=0.796; sub_dense=0.893"
+      }
+    ]
+  }
+}

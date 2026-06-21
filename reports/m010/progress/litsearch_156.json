@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_156",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_156",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_156",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_156",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1708,
+      "latency_s": 14.94376330007799
+    },
+    {
+      "query_id": "litsearch_156",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 357,
+      "latency_s": 3.2313201000215486
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_156",
+    "gold": [
+      238634705,
+      244117167
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "annotator demographics influence offensive content annotation",
+      "gender ethnicity political bias in content moderation judgments",
+      "subjective factors in hate speech annotation reliability"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9500088,
+        2993665,
+        132169,
+        29710525,
+        258947064,
+        14385706,
+        11553450,
+        51918763,
+        5439968,
+        254877694,
+        220060895,
+        233189537,
+        16027104,
+        259376622,
+        250150827,
+        3150465,
+        259095770,
+        219300133,
+        9468905,
+        1215762
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258947064,
+        2993665,
+        14385706,
+        10116260,
+        219300133,
+        233189537,
+        254877694,
+        250391013,
+        222177827,
+        259095770,
+        257834100,
+        244117167,
+        212718244,
+        131773759,
+        174799670,
+        16027104,
+        252624733,
+        15431371,
+        13723880,
+        236477504
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        244117167,
+        258486901,
+        247250765,
+        252619979,
+        259370823,
+        258486956,
+        184482940,
+        250390517,
+        250164208,
+        247596779,
+        67856299,
+        235097616,
+        220047592,
+        259092939,
+        250391102,
+        244063779,
+        244055107,
+        220060209,
+        235254726,
+        228076504
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "single_llm": {
+      "ranked_top20": [
+        244117167,
+        250144216,
+        233189537,
+        258947064,
+        219300133,
+        254877694,
+        13723880,
+        2211211,
+        14385706,
+        250150827,
+        2993665,
+        259095770
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        244117167,
+        247250765,
+        13723880,
+        258947064,
+        219300133,
+        233189537,
+        259202631,
+        220060209,
+        252284025,
+        258486956,
+        2993665,
+        14385706,
+        258486901,
+        250144216,
+        248780094,
+        211259366,
+        236459875,
+        233365325,
+        259370823,
+        237347097
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 20.583841099985875
+  },
+  "reason_example": {
+    "query_id": "litsearch_156",
+    "query": "Could you recommend research that examines how an annotator's individual attributes, like their gender, ethnicity, and political views, influence their judgment of content deemed offensive?",
+    "top_results": [
+      {
+        "corpusid": 244117167,
+        "score": 0.8762943744659424,
+        "reason": "bm25=0.691; dense=1.000; sub_bm25=0.695; sub_dense=0.995"
+      },
+      {
+        "corpusid": 247250765,
+        "score": 0.7404019832611084,
+        "reason": "bm25=0.592; dense=0.840; sub_bm25=0.682; sub_dense=0.867"
+      },
+      {
+        "corpusid": 13723880,
+        "score": 0.7400575876235962,
+        "reason": "bm25=0.651; dense=0.799; sub_bm25=0.656; sub_dense=0.761"
+      },
+      {
+        "corpusid": 258947064,
+        "score": 0.7380648255348206,
+        "reason": "bm25=1.000; dense=0.563; sub_bm25=0.770; sub_dense=0.698"
+      },
+      {
+        "corpusid": 219300133,
+        "score": 0.7244311571121216,
+        "reason": "bm25=0.820; dense=0.660; sub_bm25=0.879; sub_dense=0.782"
+      }
+    ]
+  }
+}

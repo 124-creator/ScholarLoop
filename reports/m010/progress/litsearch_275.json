@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_275",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_275",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_275",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_275",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 670,
+      "latency_s": 1.9647745999973267
+    },
+    {
+      "query_id": "litsearch_275",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 356,
+      "latency_s": 2.594576200004667
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_275",
+    "gold": [
+      248780527
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "toxic sentence pairs non-toxic paraphrases dataset",
+      "text detoxification dataset toxic paraphrases",
+      "toxic non-toxic parallel sentences corpus"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1841979,
+        3926047,
+        5989400,
+        6362566,
+        7213852,
+        7440991,
+        10261581,
+        10677619,
+        12527088,
+        14907272,
+        119309472,
+        202888665,
+        3926164,
+        15714062,
+        245838284,
+        252624485,
+        1306874,
+        253628211,
+        2783247,
+        221761488
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780527,
+        221878771,
+        252993152,
+        236460261,
+        222271929,
+        202895301,
+        257219472,
+        236459777,
+        236460193,
+        244117167,
+        250390569,
+        247519233,
+        232168787,
+        248779948,
+        249394890,
+        236460230,
+        259370623,
+        248780259,
+        222177236,
+        248884476
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780527,
+        233307032,
+        53083405,
+        236460300,
+        236459793,
+        233024836,
+        236460146,
+        259376713,
+        258765251,
+        236460354,
+        236460193,
+        236486094,
+        236460230,
+        21732517,
+        6959206,
+        231662233,
+        222177236,
+        232335638,
+        1028939,
+        16443669
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780527
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780527,
+        221878771,
+        233307032,
+        236460193,
+        236459793,
+        236460230,
+        222271929,
+        236460261,
+        252993152,
+        222177236,
+        236460354,
+        202895301,
+        248884476,
+        250390569,
+        236460300,
+        248780259,
+        236460028,
+        233024836,
+        231741340,
+        236460146
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.451324899913743
+  },
+  "reason_example": {
+    "query_id": "litsearch_275",
+    "query": "How can I locate a dataset containing toxic sentence pairs alongside their non-toxic paraphrased counterparts for studying text detoxification?",
+    "top_results": [
+      {
+        "corpusid": 248780527,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221878771,
+        "score": 0.7647836208343506,
+        "reason": "bm25=0.871; dense=0.694; sub_bm25=1.000; sub_dense=0.822"
+      },
+      {
+        "corpusid": 233307032,
+        "score": 0.7635828256607056,
+        "reason": "bm25=0.642; dense=0.845; sub_bm25=0.892; sub_dense=0.987"
+      },
+      {
+        "corpusid": 236460193,
+        "score": 0.7503981590270996,
+        "reason": "bm25=0.719; dense=0.771; sub_bm25=0.879; sub_dense=0.878"
+      },
+      {
+        "corpusid": 236459793,
+        "score": 0.7397710680961609,
+        "reason": "bm25=0.669; dense=0.787; sub_bm25=0.624; sub_dense=0.895"
+      }
+    ]
+  }
+}

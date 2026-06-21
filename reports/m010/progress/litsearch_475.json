@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_475",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_475",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_475",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_475",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1737,
+      "latency_s": 11.317656700033695
+    },
+    {
+      "query_id": "litsearch_475",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 317,
+      "latency_s": 2.5248474000254646
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_475",
+    "gold": [
+      254096489
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "paper using real user questions from curious users",
+      "ensuring questions are from genuine curious users paper",
+      "authentic user questions specific topic paper"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        227230571,
+        52010793,
+        21706647,
+        17281269,
+        9885054,
+        7372386,
+        8358691,
+        705693,
+        252383666,
+        1002058,
+        5991920,
+        14357966,
+        53168791,
+        8320096,
+        1906653,
+        49745599,
+        3329936,
+        11383050,
+        364111,
+        7477090
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        7372386,
+        15813829,
+        2699865,
+        6522046,
+        9629530,
+        203935,
+        52828932,
+        207847382,
+        226283901,
+        10341744,
+        18151048,
+        247839322,
+        196181811,
+        52824771,
+        2751063,
+        19427057,
+        207847581,
+        1437,
+        17937618,
+        5491670
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        234093776,
+        53081756,
+        45927246,
+        251041146,
+        16605198,
+        214802635,
+        14066738,
+        5199803,
+        258378353,
+        6863195,
+        239009692,
+        6895264,
+        6539004,
+        17429736,
+        11143679,
+        235731930,
+        14448039,
+        16879847,
+        247594674,
+        15932656
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        207847382,
+        15813829,
+        234093776,
+        7372386,
+        2699865,
+        11143679,
+        21706647,
+        9786134,
+        5692875,
+        17965611,
+        17429736,
+        38898903
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234093776,
+        17429736,
+        258378353,
+        251041146,
+        235422207,
+        10665510,
+        14448039,
+        207847382,
+        235731930,
+        38898903,
+        11143679,
+        6863195,
+        52186951,
+        53081756,
+        52140076,
+        257921458,
+        7372386,
+        9786134,
+        239009692,
+        1140117
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.208482300047763
+  },
+  "reason_example": {
+    "query_id": "litsearch_475",
+    "query": "Which paper makes sure that the questions used in the paper are all from real users that are genuinely curious about a specific topic or concept?",
+    "top_results": [
+      {
+        "corpusid": 234093776,
+        "score": 0.9487313628196716,
+        "reason": "bm25=0.872; dense=1.000; sub_bm25=0.592; sub_dense=0.843"
+      },
+      {
+        "corpusid": 17429736,
+        "score": 0.8835664987564087,
+        "reason": "bm25=0.871; dense=0.892; sub_bm25=0.483; sub_dense=0.661"
+      },
+      {
+        "corpusid": 258378353,
+        "score": 0.8792080879211426,
+        "reason": "bm25=0.813; dense=0.923; sub_bm25=0.878; sub_dense=0.787"
+      },
+      {
+        "corpusid": 251041146,
+        "score": 0.8759040832519531,
+        "reason": "bm25=0.757; dense=0.955; sub_bm25=0.535; sub_dense=0.935"
+      },
+      {
+        "corpusid": 235422207,
+        "score": 0.8620129823684692,
+        "reason": "bm25=0.853; dense=0.868; sub_bm25=0.867; sub_dense=0.682"
+      }
+    ]
+  }
+}

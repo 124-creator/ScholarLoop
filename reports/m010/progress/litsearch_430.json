@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_430",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_430",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_430",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_430",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1319,
+      "latency_s": 8.560667300014757
+    },
+    {
+      "query_id": "litsearch_430",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 281,
+      "latency_s": 2.3004989000037313
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_430",
+    "gold": [
+      259370833
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "shuffled-group-whitening sentence representation learning",
+      "first proposal shuffled-group-whitening",
+      "shuffled group whitening sentence embedding"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        30908728,
+        3071581,
+        12795660,
+        21022858,
+        211132680,
+        53222920,
+        8938695,
+        9627703,
+        3897601,
+        30167514,
+        37453604,
+        252624581,
+        1222366,
+        259342087,
+        199661599,
+        863623,
+        10262447,
+        4986998,
+        8150087,
+        9497515
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370833,
+        252907540,
+        202542690,
+        247451267,
+        237563325,
+        9627703,
+        235097321,
+        258947377,
+        12451537,
+        10262447,
+        5440903,
+        256460938,
+        226283524,
+        247222973,
+        220045947,
+        3071581,
+        9615470,
+        7936880,
+        257767722,
+        17357800
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370833,
+        235097321,
+        12794468,
+        13488062,
+        53081680,
+        59336240,
+        235313879,
+        65137767,
+        240288762,
+        219306908,
+        231709407,
+        44620072,
+        218613661,
+        14704022,
+        232021982,
+        49742817,
+        2186770,
+        199553035,
+        201764856,
+        15769193
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252907540,
+        259370833,
+        247451267,
+        235097321,
+        237563325
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370833,
+        235097321,
+        237563325,
+        202542690,
+        252907540,
+        12794468,
+        17357800,
+        240288762,
+        220045947,
+        226283524,
+        215786180,
+        65137767,
+        14704022,
+        59336240,
+        235313879,
+        248496439,
+        2280543,
+        9615470,
+        42095291,
+        248299679
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.695183300063945
+  },
+  "reason_example": {
+    "query_id": "litsearch_430",
+    "query": "Which article first proposed shuffled-group-whitening to solve the problem of sentence representation learning?",
+    "top_results": [
+      {
+        "corpusid": 259370833,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235097321,
+        "score": 0.7887152433395386,
+        "reason": "bm25=0.665; dense=0.871; sub_bm25=0.546; sub_dense=0.950"
+      },
+      {
+        "corpusid": 237563325,
+        "score": 0.7492623329162598,
+        "reason": "bm25=0.686; dense=0.792; sub_bm25=0.484; sub_dense=0.812"
+      },
+      {
+        "corpusid": 202542690,
+        "score": 0.726184606552124,
+        "reason": "bm25=0.708; dense=0.738; sub_bm25=0.347; sub_dense=0.703"
+      },
+      {
+        "corpusid": 252907540,
+        "score": 0.7218030095100403,
+        "reason": "bm25=0.741; dense=0.709; sub_bm25=0.593; sub_dense=0.809"
+      }
+    ]
+  }
+}

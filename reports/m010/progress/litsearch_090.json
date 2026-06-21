@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_090",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_090",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_090",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_090",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1007,
+      "latency_s": 5.372722600004636
+    },
+    {
+      "query_id": "litsearch_090",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 248,
+      "latency_s": 1.9406765999738127
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_090",
+    "gold": [
+      226282456
+    ],
+    "pool_size": 233,
+    "decomposition": [
+      "automatic evaluation metrics summarization disagreement",
+      "metrics correlation summarization evaluation",
+      "inconsistency between ROUGE BLEU METEOR summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        47179013,
+        1890505,
+        2700066,
+        14907272,
+        254306,
+        202583464,
+        8396538,
+        236460081,
+        226283784,
+        263711403,
+        218973898,
+        38267620,
+        9186277,
+        248780151,
+        196201415,
+        38926436,
+        39506406,
+        8988368,
+        236478152,
+        226282456
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226282456,
+        196201415,
+        258841548,
+        256461279,
+        17452735,
+        236460081,
+        1890505,
+        9186277,
+        237605201,
+        237507028,
+        244954786,
+        226262184,
+        258685435,
+        235097584,
+        248475947,
+        254877237,
+        52010923,
+        247794006,
+        2700066,
+        250390561
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226282456,
+        5312836,
+        196201415,
+        17452735,
+        12435114,
+        12238390,
+        14473583,
+        9898640,
+        13276714,
+        11325092,
+        42119295,
+        258841548,
+        256461279,
+        16681511,
+        9008917,
+        38926436,
+        10436913,
+        256711,
+        8651371,
+        16147701
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226282456,
+        196201415,
+        256461279,
+        258841548,
+        17452735
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226282456,
+        196201415,
+        17452735,
+        258841548,
+        256461279,
+        12435114,
+        5312836,
+        12238390,
+        1890505,
+        236460081,
+        38926436,
+        8651371,
+        2700066,
+        1553433,
+        10866815,
+        11325092,
+        14473583,
+        258685435,
+        9898640,
+        233219059
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.266442500054836
+  },
+  "reason_example": {
+    "query_id": "litsearch_090",
+    "query": "Where can I find research about automatic evaluation metrics in summarization tasks disagree with each other?",
+    "top_results": [
+      {
+        "corpusid": 226282456,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.788; sub_dense=1.000"
+      },
+      {
+        "corpusid": 196201415,
+        "score": 0.9656471014022827,
+        "reason": "bm25=0.955; dense=0.973; sub_bm25=0.891; sub_dense=0.981"
+      },
+      {
+        "corpusid": 17452735,
+        "score": 0.893157958984375,
+        "reason": "bm25=0.775; dense=0.972; sub_bm25=0.971; sub_dense=0.960"
+      },
+      {
+        "corpusid": 258841548,
+        "score": 0.8707973957061768,
+        "reason": "bm25=0.840; dense=0.892; sub_bm25=0.766; sub_dense=0.882"
+      },
+      {
+        "corpusid": 256461279,
+        "score": 0.8635055422782898,
+        "reason": "bm25=0.822; dense=0.891; sub_bm25=1.000; sub_dense=0.934"
+      }
+    ]
+  }
+}

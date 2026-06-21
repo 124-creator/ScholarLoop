@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_290",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_290",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_290",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_290",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 994,
+      "latency_s": 5.1332155000418425
+    },
+    {
+      "query_id": "litsearch_290",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 407,
+      "latency_s": 2.972924800007604
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_290",
+    "gold": [
+      248512463
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "multilingual pre-trained models shared neural units morphosyntactic features",
+      "multilingual BERT encoding morphosyntax across languages same neurons",
+      "cross-lingual representation overlap morphosyntactic features multilingual models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        253398055,
+        259261891,
+        218538329,
+        238215490,
+        255894238,
+        253761975,
+        237700337,
+        250141241,
+        233240686,
+        258486963,
+        202660912,
+        256461029,
+        259376483,
+        231979145,
+        250390726,
+        196170603,
+        232076061,
+        220794027,
+        220047270,
+        9917468
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        231719085,
+        248512463,
+        255894238,
+        234168853,
+        250141241,
+        253397675,
+        196170603,
+        220047270,
+        253098534,
+        256461029,
+        53021429,
+        259833843,
+        229153786,
+        248118603,
+        214742998,
+        203586495,
+        237593117,
+        248426882,
+        237352964,
+        258378149
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248512463,
+        53601909,
+        214727705,
+        198183907,
+        249062609,
+        253762079,
+        4892899,
+        255894238,
+        233481097,
+        249017999,
+        7615841,
+        258947231,
+        252847490,
+        252439131,
+        248887569,
+        236478193,
+        28929215,
+        248780559,
+        237491776,
+        237513421
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248512463,
+        249062609,
+        253116568,
+        255894238,
+        231719085
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248512463,
+        255894238,
+        231719085,
+        249062609,
+        234168853,
+        214727705,
+        259833843,
+        256461029,
+        237593117,
+        248887569,
+        196170603,
+        253098534,
+        248118603,
+        25325277,
+        248240015,
+        232076061,
+        256461134,
+        237492063,
+        258841288,
+        258947231
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.264480600017123
+  },
+  "reason_example": {
+    "query_id": "litsearch_290",
+    "query": "Is there research examining if multilingual pre-trained models utilize identical sets of neural units to encode morphosyntactic features in various languages?",
+    "top_results": [
+      {
+        "corpusid": 248512463,
+        "score": 0.956733226776123,
+        "reason": "bm25=0.892; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 255894238,
+        "score": 0.8417888879776001,
+        "reason": "bm25=0.841; dense=0.842; sub_bm25=0.811; sub_dense=0.861"
+      },
+      {
+        "corpusid": 231719085,
+        "score": 0.7973725199699402,
+        "reason": "bm25=1.000; dense=0.662; sub_bm25=0.618; sub_dense=0.799"
+      },
+      {
+        "corpusid": 249062609,
+        "score": 0.7711055874824524,
+        "reason": "bm25=0.620; dense=0.872; sub_bm25=0.874; sub_dense=0.946"
+      },
+      {
+        "corpusid": 234168853,
+        "score": 0.7599021196365356,
+        "reason": "bm25=0.770; dense=0.753; sub_bm25=0.576; sub_dense=0.905"
+      }
+    ]
+  }
+}

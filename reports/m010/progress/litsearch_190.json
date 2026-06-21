@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_190",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_190",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_190",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_190",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 822,
+      "latency_s": 2.6697373000206426
+    },
+    {
+      "query_id": "litsearch_190",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 270,
+      "latency_s": 2.0554677000036463
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_190",
+    "gold": [
+      222310837
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "evaluation of cross-encoder BERT rankers",
+      "cross-encoder BERT ranker study",
+      "cross-encoder BERT ranking model evaluation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        233029465,
+        15751424,
+        259064260,
+        235482360,
+        258765247,
+        247158700,
+        223953566,
+        244100079,
+        259376611,
+        3084076,
+        10687323,
+        13488062,
+        16657732,
+        43421388,
+        59523799,
+        233029494,
+        261431370,
+        7853831,
+        53079679
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247862902,
+        235212057,
+        252780502,
+        231582969,
+        250164308,
+        220045413,
+        223953566,
+        173188167,
+        233880587,
+        216867421,
+        247958074,
+        235720578,
+        220045953,
+        237940779,
+        258765247,
+        244100079,
+        6401055,
+        230349190,
+        259376611,
+        231718746
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        234487226,
+        220347683,
+        245838227,
+        250390956,
+        226284008,
+        252816084,
+        237502635,
+        202635721,
+        226283755,
+        238583197,
+        218486873,
+        236477943,
+        240148987,
+        233029471,
+        247958074,
+        216562574,
+        201307832,
+        222310837,
+        247922557,
+        202541545
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247862902,
+        247958074,
+        235212057
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247862902,
+        235212057,
+        247958074,
+        220347683,
+        223953566,
+        234487226,
+        250390956,
+        231718746,
+        202541545,
+        250164308,
+        220045413,
+        231582969,
+        235720578,
+        216562574,
+        212725651,
+        219179830,
+        201645145,
+        237302466,
+        204901567,
+        174798142
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 5.751480499980971
+  },
+  "reason_example": {
+    "query_id": "litsearch_190",
+    "query": "Could you suggest a study that evaluates cross-encoder BERT rankers?",
+    "top_results": [
+      {
+        "corpusid": 247862902,
+        "score": 0.8997392654418945,
+        "reason": "bm25=1.000; dense=0.833; sub_bm25=1.000; sub_dense=0.898"
+      },
+      {
+        "corpusid": 235212057,
+        "score": 0.8948118686676025,
+        "reason": "bm25=0.917; dense=0.880; sub_bm25=0.936; sub_dense=0.877"
+      },
+      {
+        "corpusid": 247958074,
+        "score": 0.8534702062606812,
+        "reason": "bm25=0.779; dense=0.903; sub_bm25=0.986; sub_dense=0.931"
+      },
+      {
+        "corpusid": 220347683,
+        "score": 0.8302966356277466,
+        "reason": "bm25=0.577; dense=0.999; sub_bm25=0.791; sub_dense=1.000"
+      },
+      {
+        "corpusid": 223953566,
+        "score": 0.8247670531272888,
+        "reason": "bm25=0.803; dense=0.839; sub_bm25=0.631; sub_dense=0.861"
+      }
+    ]
+  }
+}

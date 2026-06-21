@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_508",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_508",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_508",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_508",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1137,
+      "latency_s": 4.981758099980652
+    },
+    {
+      "query_id": "litsearch_508",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 368,
+      "latency_s": 2.579778900020756
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_508",
+    "gold": [
+      264172845
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "equivariant convolutional neural networks non-compact Lie groups",
+      "equivariant CNNs non-abelian Lie groups",
+      "convolutional networks equivariant to Lie groups beyond compact"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7060599,
+        238419267,
+        52894354,
+        49416020,
+        16359184,
+        8020289,
+        264172845,
+        34359113,
+        14520599,
+        235376799,
+        14531101,
+        9163756,
+        10691002,
+        159824,
+        20936249,
+        3913537,
+        2055861,
+        53116042,
+        17555617,
+        21692618
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        264172845,
+        231942702,
+        252734944,
+        202889315,
+        249538418,
+        8020289,
+        238407870,
+        238419267,
+        7060599,
+        222125298,
+        235485093,
+        223957176,
+        49416020,
+        211132734,
+        249712412,
+        257255267,
+        247958146,
+        218487073,
+        204785044,
+        238419638
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264172845,
+        202889315,
+        252565121,
+        203837750,
+        238856856,
+        249538418,
+        257255267,
+        235485093,
+        212657453,
+        16359184,
+        222125298,
+        199442113,
+        222140724,
+        204785044,
+        211068821,
+        225040612,
+        56895597,
+        252762187,
+        21731691,
+        231942702
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        202889315,
+        264172845
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264172845,
+        202889315,
+        249538418,
+        231942702,
+        257255267,
+        235485093,
+        252565121,
+        203837750,
+        252734944,
+        222125298,
+        238407870,
+        204785044,
+        238856856,
+        21731691,
+        211068821,
+        212657453,
+        8020289,
+        222140724,
+        238419638,
+        56895597
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.661845800001174
+  },
+  "reason_example": {
+    "query_id": "litsearch_508",
+    "query": "Are there any papers that construct convolutional networks which are equivariant with respect to non-compact/non-abelian Lie groups?",
+    "top_results": [
+      {
+        "corpusid": 264172845,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202889315,
+        "score": 0.7794227600097656,
+        "reason": "bm25=0.599; dense=0.900; sub_bm25=0.843; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249538418,
+        "score": 0.6859042644500732,
+        "reason": "bm25=0.562; dense=0.768; sub_bm25=0.615; sub_dense=0.802"
+      },
+      {
+        "corpusid": 231942702,
+        "score": 0.6529616117477417,
+        "reason": "bm25=0.637; dense=0.663; sub_bm25=0.726; sub_dense=0.809"
+      },
+      {
+        "corpusid": 257255267,
+        "score": 0.6482768058776855,
+        "reason": "bm25=0.470; dense=0.767; sub_bm25=0.426; sub_dense=0.848"
+      }
+    ]
+  }
+}

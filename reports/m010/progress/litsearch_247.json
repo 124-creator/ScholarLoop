@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_247",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_247",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_247",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_247",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 913,
+      "latency_s": 4.870417400030419
+    },
+    {
+      "query_id": "litsearch_247",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 398,
+      "latency_s": 3.8958613999420777
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_247",
+    "gold": [
+      255894238
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "multilingual language models subject-verb agreement plural singular",
+      "cross-lingual number agreement in multilingual BERT",
+      "probing multilingual transformers for verb number agreement"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53601909,
+        53633715,
+        250390644,
+        260063212,
+        2525588,
+        255894238,
+        238215773,
+        259002939,
+        2441691,
+        9830179,
+        236460124,
+        6695616,
+        227231158,
+        230349190,
+        231740666,
+        34547425,
+        226283660,
+        248780465,
+        6359641,
+        10570679
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        6990658,
+        237513713,
+        245838462,
+        227231219,
+        255894238,
+        253116568,
+        5035109,
+        1177283,
+        248780465,
+        226262367,
+        250144747,
+        235417439,
+        11851605,
+        236460124,
+        230349190,
+        259145073,
+        250390493,
+        6695616,
+        231740666,
+        204901567
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53601909,
+        16038645,
+        236460124,
+        256460923,
+        18318907,
+        1500888,
+        37618366,
+        234357842,
+        232021656,
+        9830179,
+        222327390,
+        1310912,
+        259833843,
+        255894238,
+        258947231,
+        240288451,
+        6279080,
+        9179604,
+        15218055,
+        218763189
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        255894238,
+        253116568,
+        53601909,
+        236460124
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        255894238,
+        53601909,
+        236460124,
+        16038645,
+        6990658,
+        253116568,
+        245838462,
+        260063212,
+        248266361,
+        13425858,
+        6695616,
+        252815840,
+        227231219,
+        222327390,
+        254535794,
+        237513713,
+        235829552,
+        252547725,
+        259833843,
+        237581501
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.745187900029123
+  },
+  "reason_example": {
+    "query_id": "litsearch_247",
+    "query": "Could you suggest research that shows multilingual language models can understand plural/singular verb agreement across multiple languages?",
+    "top_results": [
+      {
+        "corpusid": 255894238,
+        "score": 0.8854215741157532,
+        "reason": "bm25=0.926; dense=0.858; sub_bm25=1.000; sub_dense=0.888"
+      },
+      {
+        "corpusid": 53601909,
+        "score": 0.8853194117546082,
+        "reason": "bm25=0.713; dense=1.000; sub_bm25=0.271; sub_dense=0.861"
+      },
+      {
+        "corpusid": 236460124,
+        "score": 0.8775750398635864,
+        "reason": "bm25=0.767; dense=0.951; sub_bm25=0.622; sub_dense=0.953"
+      },
+      {
+        "corpusid": 16038645,
+        "score": 0.8633297681808472,
+        "reason": "bm25=0.686; dense=0.982; sub_bm25=0.691; sub_dense=0.982"
+      },
+      {
+        "corpusid": 6990658,
+        "score": 0.8568551540374756,
+        "reason": "bm25=1.000; dense=0.761; sub_bm25=0.685; sub_dense=0.775"
+      }
+    ]
+  }
+}

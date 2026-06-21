@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_202",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_202",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_202",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_202",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1345,
+      "latency_s": 8.448440900072455
+    },
+    {
+      "query_id": "litsearch_202",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 446,
+      "latency_s": 4.267865399946459
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_202",
+    "gold": [
+      220364230
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "table-to-text generation dataset triple format",
+      "subject relation object dataset for text generation from tables",
+      "triplet structured data for neural table-to-text models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236460248,
+        2535099,
+        221835708,
+        9025428,
+        250391050,
+        256461103,
+        236477566,
+        53083307,
+        258999402,
+        259370573,
+        20695016,
+        233029490,
+        196203256,
+        1841979,
+        3926047,
+        5989400,
+        6362566,
+        7213852,
+        7440991,
+        8907639
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236477566,
+        236460018,
+        259370573,
+        216641852,
+        196189186,
+        255440553,
+        247518984,
+        227231240,
+        202718912,
+        226262232,
+        232478685,
+        249062588,
+        259370689,
+        257232734,
+        251741425,
+        233189556,
+        232233485,
+        5082131,
+        259370808,
+        227216980
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236477566,
+        216641852,
+        196189186,
+        216914911,
+        255440553,
+        259370573,
+        220364230,
+        211020900,
+        247793148,
+        236460018,
+        207926107,
+        257232734,
+        218487237,
+        251741425,
+        52965066,
+        227231240,
+        227216980,
+        202537766,
+        230770247,
+        23892230
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        196189186,
+        259370573,
+        227231240,
+        236477566,
+        255440553,
+        202718912,
+        216641852,
+        227216980,
+        236460248,
+        207926107,
+        236460018,
+        258999402
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236477566,
+        236460018,
+        259370573,
+        216641852,
+        196189186,
+        255440553,
+        227231240,
+        257232734,
+        251741425,
+        202718912,
+        216914911,
+        249062588,
+        207926107,
+        218487237,
+        227216980,
+        220364230,
+        211020900,
+        5082131,
+        232478685,
+        202537766
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.947714900015853
+  },
+  "reason_example": {
+    "query_id": "litsearch_202",
+    "query": "Could you suggest a triplet-formatted structured dataset suitable for training table-to-text generation models?",
+    "top_results": [
+      {
+        "corpusid": 236477566,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.945; sub_dense=0.977"
+      },
+      {
+        "corpusid": 236460018,
+        "score": 0.9246132373809814,
+        "reason": "bm25=0.968; dense=0.896; sub_bm25=0.963; sub_dense=0.923"
+      },
+      {
+        "corpusid": 259370573,
+        "score": 0.9224370121955872,
+        "reason": "bm25=0.933; dense=0.915; sub_bm25=0.848; sub_dense=0.966"
+      },
+      {
+        "corpusid": 216641852,
+        "score": 0.9219181537628174,
+        "reason": "bm25=0.901; dense=0.936; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 196189186,
+        "score": 0.9094254970550537,
+        "reason": "bm25=0.890; dense=0.923; sub_bm25=0.848; sub_dense=0.924"
+      }
+    ]
+  }
+}

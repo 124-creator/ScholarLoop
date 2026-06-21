@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_439",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_439",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_439",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_439",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 711,
+      "latency_s": 2.227343500009738
+    },
+    {
+      "query_id": "litsearch_439",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 248,
+      "latency_s": 1.8732160000363365
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_439",
+    "gold": [
+      258557362
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "comprehensive survey of code large language models",
+      "survey paper on code LLMs",
+      "review of code large language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219305462,
+        5153623,
+        12405045,
+        3923764,
+        30908728,
+        237365388,
+        258685798,
+        8446828,
+        1021605,
+        5498664,
+        260063225,
+        18792136,
+        7600496,
+        18414132,
+        12795660,
+        3913472,
+        6622478,
+        18201337,
+        3266239,
+        57916
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259164815,
+        258557362,
+        258557186,
+        253761967,
+        260900008,
+        262825568,
+        263831492,
+        263671510,
+        258741304,
+        263333921,
+        258378243,
+        264306288,
+        247362946,
+        259203115,
+        264172668,
+        236478008,
+        218973959,
+        260886874,
+        259308864,
+        259075246
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259164815,
+        258832427,
+        252600018,
+        260886874,
+        260334759,
+        235097593,
+        227231077,
+        35179908,
+        253116642,
+        236460241,
+        247475896,
+        259261891,
+        233481097,
+        41279543,
+        2914868,
+        258558199,
+        261341825,
+        15037378,
+        257102633,
+        15949005
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258557362
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259164815,
+        258557362,
+        260886874,
+        258557186,
+        258832427,
+        253761967,
+        252600018,
+        253116642,
+        236460241,
+        263831492,
+        263671510,
+        247362946,
+        260334759,
+        235097593,
+        227231077,
+        247475896,
+        41279543,
+        250920542,
+        261341825,
+        260900008
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 4.988136400002986
+  },
+  "reason_example": {
+    "query_id": "litsearch_439",
+    "query": "Which paper did a comprehensive survey of the code large language model (code LLMs)?",
+    "top_results": [
+      {
+        "corpusid": 259164815,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.995; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258557362,
+        "score": 0.7842613458633423,
+        "reason": "bm25=0.923; dense=0.692; sub_bm25=1.000; sub_dense=0.950"
+      },
+      {
+        "corpusid": 260886874,
+        "score": 0.7765569686889648,
+        "reason": "bm25=0.737; dense=0.803; sub_bm25=0.765; sub_dense=0.946"
+      },
+      {
+        "corpusid": 258557186,
+        "score": 0.7748762369155884,
+        "reason": "bm25=0.883; dense=0.703; sub_bm25=1.000; sub_dense=0.826"
+      },
+      {
+        "corpusid": 258832427,
+        "score": 0.7701656818389893,
+        "reason": "bm25=0.666; dense=0.840; sub_bm25=0.607; sub_dense=0.940"
+      }
+    ]
+  }
+}

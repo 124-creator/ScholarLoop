@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_111",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_111",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_111",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_111",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1391,
+      "latency_s": 9.980924699921161
+    },
+    {
+      "query_id": "litsearch_111",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 304,
+      "latency_s": 2.5912545999744907
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_111",
+    "gold": [
+      235097235
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "multi-source clinical text processing recurrent neural network",
+      "recurrent modules multiple input sources clinical NLP",
+      "combining recurrent modules for heterogeneous clinical data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        203595196,
+        11759176,
+        13979944,
+        26662618,
+        85152,
+        18954792,
+        15925479,
+        21699194,
+        15794465,
+        22918090,
+        10894690,
+        43021375,
+        1163931,
+        17864082,
+        16722822,
+        1835722,
+        11019380,
+        15662979,
+        41141313,
+        10432165
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        10894690,
+        199379780,
+        2180625,
+        16377948,
+        218974246,
+        254018070,
+        29866769,
+        195063973,
+        43021375,
+        4231470,
+        1548968,
+        259833858,
+        11623440,
+        253098164,
+        12061673,
+        227230600,
+        5471567,
+        7861345,
+        339805,
+        157062439
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259833796,
+        13590110,
+        43878178,
+        2326624,
+        38650676,
+        203965,
+        53081360,
+        259833839,
+        258331772,
+        30917371,
+        5754213,
+        257427641,
+        102352181,
+        186206301,
+        2456270,
+        222141017,
+        235097629,
+        219294160,
+        252367864,
+        12746295
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252370477,
+        259833796,
+        29866769,
+        218974285,
+        259095457,
+        199379780,
+        5754213,
+        12028263,
+        2180625,
+        16377948,
+        1544522,
+        253098164
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833796,
+        252370477,
+        53081360,
+        259095457,
+        5754213,
+        258378257,
+        52121895,
+        218974285,
+        203965,
+        12686568,
+        8675882,
+        16087821,
+        199379780,
+        259376772,
+        1328,
+        259376725,
+        12028263,
+        256461291,
+        16030483,
+        189060
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.497864899924025
+  },
+  "reason_example": {
+    "query_id": "litsearch_111",
+    "query": "Can you suggest research that deals with the multiple input sources in clinical text processing by combining several recurrent modules which are each responsible for a single source of information?",
+    "top_results": [
+      {
+        "corpusid": 259833796,
+        "score": 0.9559749364852905,
+        "reason": "bm25=0.890; dense=1.000; sub_bm25=0.600; sub_dense=0.897"
+      },
+      {
+        "corpusid": 252370477,
+        "score": 0.8883191347122192,
+        "reason": "bm25=0.904; dense=0.878; sub_bm25=0.717; sub_dense=0.916"
+      },
+      {
+        "corpusid": 53081360,
+        "score": 0.8836930990219116,
+        "reason": "bm25=0.779; dense=0.953; sub_bm25=0.530; sub_dense=0.959"
+      },
+      {
+        "corpusid": 259095457,
+        "score": 0.882951021194458,
+        "reason": "bm25=0.846; dense=0.908; sub_bm25=0.659; sub_dense=0.844"
+      },
+      {
+        "corpusid": 5754213,
+        "score": 0.8825011849403381,
+        "reason": "bm25=0.802; dense=0.936; sub_bm25=0.444; sub_dense=0.846"
+      }
+    ]
+  }
+}

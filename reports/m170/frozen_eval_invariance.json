@@ -1,0 +1,16 @@
+{
+  "schema_version": "m170.frozen_eval_invariance.v1",
+  "checked_at_utc": "2026-06-21T08:01:19.330111+00:00",
+  "status": "PASS",
+  "reports/m040/results.json": {
+    "sha256": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "expected": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "same": true
+  },
+  "reports/m060/results.json": {
+    "sha256": "bb309155780d9705be3efb71584f80811685fbf8202abd620e041f423db833e6",
+    "expected": "bb309155780d9705be3efb71584f80811685fbf8202abd620e041f423db833e6",
+    "same": true
+  },
+  "note": "M170 changes only realtime demo path and browser display; frozen evaluation files remain byte-identical."
+}

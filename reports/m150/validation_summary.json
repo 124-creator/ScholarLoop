@@ -1,0 +1,63 @@
+{
+  "schema_version": "m150.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T05:58:24.446779+00:00",
+  "status": "implemented_not_verified",
+  "plan_status": "implemented",
+  "checks": {
+    "plan_status_implemented": true,
+    "realtime_ok": true,
+    "frozen_eval_invariance_pass": true,
+    "demo_replay_pass": true,
+    "smoke_pass": true,
+    "pytest_pass": true,
+    "secret_scan_pass": true,
+    "m040_sha_unchanged": true
+  },
+  "realtime_run": {
+    "report": "reports/m150/realtime_run.json",
+    "status": "ok",
+    "result_count": 3,
+    "cost": {
+      "llm_calls": 1,
+      "tokens": 240,
+      "latency_s": 33.900929199997336
+    },
+    "verified_load_bearing": false
+  },
+  "frozen_eval_invariance": {
+    "report": "reports/m150/frozen_eval_invariance.json",
+    "status": "PASS",
+    "unchanged": true,
+    "m040_sha256": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "m040_a_v2_f1": 0.1311870490590176,
+    "m060_resolvable_a_v2_f1": 0.19720789003669367
+  },
+  "demo_replay": {
+    "report": "reports/m150/demo_replay.json",
+    "status": "PASS"
+  },
+  "smoke": {
+    "report": "reports/m150/smoke.txt",
+    "status": "PASS"
+  },
+  "pytest": {
+    "report": "reports/m150/pytest.txt",
+    "status": "PASS",
+    "summary": "66 passed in 67.39s (0:01:07)"
+  },
+  "secret_scan": {
+    "report": "reports/m150/secret_scan.json",
+    "passed": true
+  },
+  "upstream_hashes": {
+    "report": "reports/m150/upstream_hashes.json",
+    "load_bearing_unchanged": {
+      "reports/m040/results.json": true,
+      "m040_m060_frozen_eval_invariance": true,
+      "m080_m140_demo_replay": true
+    }
+  },
+  "ready_for_initial_review": true,
+  "not_verified_by_codex": true,
+  "plan_status_line": "- 状态：implemented（2026-06-21 Codex 执行完成；实时路径已端到端返回结果，冻结评测 sha/F1/dim/缓存键/逐查询排序保持不变；待总指挥初查，Codex 不自宣 verified）"
+}

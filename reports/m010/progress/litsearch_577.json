@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_577",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_577",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_577",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_577",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 889,
+      "latency_s": 4.546332999947481
+    },
+    {
+      "query_id": "litsearch_577",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 3.101099199964665
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_577",
+    "gold": [
+      263610128
+    ],
+    "pool_size": 287,
+    "decomposition": [
+      "knowledge preferences LLM context parametric memory conflict first paper",
+      "LLM context vs parametric knowledge conflict study original research",
+      "first investigation LLM knowledge preference contextual information parametric memory"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5381395,
+        748386,
+        14324763,
+        9163485,
+        2287804,
+        1412569,
+        29406790,
+        6124685,
+        13894161,
+        234487216,
+        248182548,
+        260421342,
+        260426220,
+        2499521,
+        8011103,
+        8748191,
+        14474392,
+        14146457,
+        16723397,
+        44470886
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263610128,
+        264172668,
+        3579956,
+        16261162,
+        253238033,
+        259095910,
+        260063238,
+        259129342,
+        16015588,
+        253762077,
+        258741298,
+        7604036,
+        3265566,
+        261341914,
+        505,
+        264306078,
+        219308116,
+        3892563,
+        260887189,
+        264289064
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263610128,
+        6271137,
+        3919987,
+        5739852,
+        16936293,
+        9220203,
+        259370557,
+        14162,
+        1502797,
+        716928,
+        46686293,
+        15616277,
+        11237614,
+        6187812,
+        254877603,
+        10595802,
+        253238033,
+        5395686,
+        60745336,
+        18705392
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263610128
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263610128,
+        264172668,
+        253238033,
+        6271137,
+        14162,
+        716928,
+        46686293,
+        254877603,
+        243865648,
+        9220203,
+        219302622,
+        259370557,
+        262677056,
+        5395686,
+        15616277,
+        17752071,
+        6187812,
+        232146784,
+        234258405,
+        238251651
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.393569899955764
+  },
+  "reason_example": {
+    "query_id": "litsearch_577",
+    "query": "Which paper first investigates the knowledge preferences of LLMs when there are conflicts between the context and the parametric memory?",
+    "top_results": [
+      {
+        "corpusid": 263610128,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264172668,
+        "score": 0.6865521669387817,
+        "reason": "bm25=0.698; dense=0.679; sub_bm25=0.757; sub_dense=0.816"
+      },
+      {
+        "corpusid": 253238033,
+        "score": 0.6728835105895996,
+        "reason": "bm25=0.613; dense=0.713; sub_bm25=0.973; sub_dense=0.915"
+      },
+      {
+        "corpusid": 6271137,
+        "score": 0.6698179244995117,
+        "reason": "bm25=0.362; dense=0.875; sub_bm25=0.300; sub_dense=0.858"
+      },
+      {
+        "corpusid": 14162,
+        "score": 0.6462774276733398,
+        "reason": "bm25=0.476; dense=0.760; sub_bm25=0.355; sub_dense=0.747"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_356",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_356",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_356",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_356",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1115,
+      "latency_s": 7.962255399907008
+    },
+    {
+      "query_id": "litsearch_356",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 351,
+      "latency_s": 3.693982799886726
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_356",
+    "gold": [
+      258947837
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "circumvent single truth target training generative language model",
+      "training language models without single ground truth",
+      "distributional targets for language model training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        27016310,
+        2491133,
+        259833850,
+        14386564,
+        13400865,
+        259370562,
+        3265794,
+        9952653,
+        18903447,
+        920235,
+        2175391,
+        2266741,
+        6723570,
+        7440991,
+        7691601,
+        8832939,
+        16248365,
+        16771067,
+        633992,
+        252763346
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248177721,
+        208617304,
+        254044710,
+        256460908,
+        240288835,
+        3912478,
+        225039774,
+        245124024,
+        227230690,
+        3073252,
+        264487385,
+        237940634,
+        259063887,
+        126169759,
+        238419702,
+        247084198,
+        237364241,
+        227247851,
+        15173435,
+        232269775
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        203610580,
+        258887816,
+        247084198,
+        203610243,
+        260063190,
+        249674893,
+        235458643,
+        229371222,
+        235732204,
+        207853191,
+        207930099,
+        216641734,
+        5189365,
+        238353898,
+        241583598,
+        239615946,
+        9885298,
+        260063017,
+        221761373,
+        235358191
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        203610243,
+        254877484,
+        225039774,
+        227230690,
+        241583598,
+        248177721,
+        254044710,
+        230437698,
+        203610580,
+        247084198,
+        245124024,
+        250390934
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247084198,
+        203610580,
+        203610243,
+        225039774,
+        227230690,
+        260063190,
+        254044710,
+        238353898,
+        229371222,
+        257039031,
+        5189365,
+        241583598,
+        247940075,
+        227247851,
+        237363408,
+        245124024,
+        254877484,
+        249674893,
+        263152829,
+        264487385
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.973131699953228
+  },
+  "reason_example": {
+    "query_id": "litsearch_356",
+    "query": "Give me a paper proposing to circumvent a single-truth target in training generative language models.",
+    "top_results": [
+      {
+        "corpusid": 247084198,
+        "score": 0.9182183742523193,
+        "reason": "bm25=0.850; dense=0.964; sub_bm25=0.685; sub_dense=0.972"
+      },
+      {
+        "corpusid": 203610580,
+        "score": 0.8795673847198486,
+        "reason": "bm25=0.699; dense=1.000; sub_bm25=0.669; sub_dense=1.000"
+      },
+      {
+        "corpusid": 203610243,
+        "score": 0.8690758943557739,
+        "reason": "bm25=0.768; dense=0.937; sub_bm25=0.693; sub_dense=0.974"
+      },
+      {
+        "corpusid": 225039774,
+        "score": 0.8688870072364807,
+        "reason": "bm25=0.911; dense=0.841; sub_bm25=0.730; sub_dense=0.832"
+      },
+      {
+        "corpusid": 227230690,
+        "score": 0.861304521560669,
+        "reason": "bm25=0.901; dense=0.835; sub_bm25=0.793; sub_dense=0.974"
+      }
+    ]
+  }
+}

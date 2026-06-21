@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_405",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_405",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_405",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_405",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1233,
+      "latency_s": 7.553757700021379
+    },
+    {
+      "query_id": "litsearch_405",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 374,
+      "latency_s": 3.8045324999839067
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_405",
+    "gold": [
+      259370588
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "annotation problems cross-lingual summarization translation summarization pipeline",
+      "decomposing cross-lingual summarization into translation and summarization annotation issues",
+      "cross-lingual summarization annotation errors due to pipeline approach"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7898468,
+        14572323,
+        29974541,
+        202712637,
+        41589365,
+        3113377,
+        14580989,
+        17409270,
+        29255757,
+        4065698,
+        6124685,
+        33178012,
+        11166654,
+        15057133,
+        1243758,
+        8446444,
+        18443059,
+        236459894,
+        7396295,
+        32832705
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258714901,
+        220045424,
+        222378280,
+        258947845,
+        251395456,
+        261342129,
+        203610372,
+        196180279,
+        220249727,
+        11116896,
+        220045357,
+        253098967,
+        241583774,
+        202541473,
+        259370588,
+        252819402,
+        1331504,
+        256826762,
+        12951305,
+        237492025
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370588,
+        243865371,
+        14664231,
+        220045424,
+        222378280,
+        258947845,
+        1968934,
+        13666009,
+        2700066,
+        251395456,
+        222177239,
+        202541473,
+        241583774,
+        258714901,
+        14239468,
+        11577980,
+        196180279,
+        6908311,
+        220045357,
+        203610372
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        220045357,
+        220045424,
+        222378280,
+        251395456,
+        258947845,
+        203610372,
+        258714901,
+        11116896,
+        196180279,
+        252819402
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        220045424,
+        258714901,
+        222378280,
+        258947845,
+        251395456,
+        259370588,
+        203610372,
+        196180279,
+        220045357,
+        202541473,
+        241583774,
+        11116896,
+        220249727,
+        252819402,
+        253098967,
+        222177239,
+        13666009,
+        261342129,
+        12951305,
+        2700066
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.658187999972142
+  },
+  "reason_example": {
+    "query_id": "litsearch_405",
+    "query": "Is there any paper that reveals annotation problems in cross-lingual summarization caused by decomposing the task into translation and summarization?",
+    "top_results": [
+      {
+        "corpusid": 220045424,
+        "score": 0.9696098566055298,
+        "reason": "bm25=0.984; dense=0.960; sub_bm25=1.000; sub_dense=0.962"
+      },
+      {
+        "corpusid": 258714901,
+        "score": 0.9545286893844604,
+        "reason": "bm25=1.000; dense=0.924; sub_bm25=0.853; sub_dense=0.924"
+      },
+      {
+        "corpusid": 222378280,
+        "score": 0.938507616519928,
+        "reason": "bm25=0.910; dense=0.958; sub_bm25=1.000; sub_dense=0.941"
+      },
+      {
+        "corpusid": 258947845,
+        "score": 0.9354090690612793,
+        "reason": "bm25=0.909; dense=0.953; sub_bm25=0.860; sub_dense=0.975"
+      },
+      {
+        "corpusid": 251395456,
+        "score": 0.9260885715484619,
+        "reason": "bm25=0.906; dense=0.939; sub_bm25=0.957; sub_dense=0.941"
+      }
+    ]
+  }
+}

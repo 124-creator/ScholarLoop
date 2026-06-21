@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_022",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_022",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_022",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_022",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1189,
+      "latency_s": 6.772325599915348
+    },
+    {
+      "query_id": "litsearch_022",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 364,
+      "latency_s": 2.5020429000724107
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_022",
+    "gold": [
+      233364964
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "multilingual emotion dataset Facebook posts anger anticipation fear joy sadness",
+      "Facebook post emotion classification dataset multiple languages",
+      "cross-lingual emotion recognition Facebook posts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53234404,
+        5203085,
+        233296664,
+        42979957,
+        16882050,
+        233364964,
+        9731144,
+        7486154,
+        7397938,
+        247596989,
+        53601909,
+        17646396,
+        202122454,
+        10595802,
+        253761966,
+        16711873,
+        245616871,
+        247940018,
+        51985973,
+        14747865
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        7397938,
+        5203085,
+        1400935,
+        233296664,
+        253761966,
+        247596989,
+        42979957,
+        17965261,
+        16882050,
+        233364964,
+        7486154,
+        259108896,
+        6430837,
+        26309941,
+        247084082,
+        252624779,
+        44069799,
+        233365029,
+        90258162,
+        17646396
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        260063212,
+        233364964,
+        160257,
+        454175,
+        248780521,
+        253734458,
+        248779963,
+        11621215,
+        52012769,
+        7397938,
+        248780421,
+        44530157,
+        17207782,
+        14140173,
+        34132816,
+        5203085,
+        16882050,
+        12697862,
+        378229,
+        233365029
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        53234404,
+        233364964,
+        5203085
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        7397938,
+        5203085,
+        233364964,
+        16882050,
+        233365029,
+        1400935,
+        247596989,
+        6430837,
+        233296664,
+        44069799,
+        17965261,
+        18425749,
+        219303144,
+        14497671,
+        259108896,
+        21707078,
+        215754852,
+        246863624,
+        11621215,
+        2815593
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.051289399969392
+  },
+  "reason_example": {
+    "query_id": "litsearch_022",
+    "query": "Can you suggest literature on a dataset that categorizes various emotions like anger, anticipation, fear, joy, and sadness in Facebook posts across multiple languages?",
+    "top_results": [
+      {
+        "corpusid": 7397938,
+        "score": 0.968926191329956,
+        "reason": "bm25=1.000; dense=0.948; sub_bm25=0.976; sub_dense=0.887"
+      },
+      {
+        "corpusid": 5203085,
+        "score": 0.9241600632667542,
+        "reason": "bm25=0.912; dense=0.932; sub_bm25=1.000; sub_dense=0.840"
+      },
+      {
+        "corpusid": 233364964,
+        "score": 0.9127402305603027,
+        "reason": "bm25=0.785; dense=0.998; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16882050,
+        "score": 0.8748993873596191,
+        "reason": "bm25=0.790; dense=0.932; sub_bm25=0.796; sub_dense=0.810"
+      },
+      {
+        "corpusid": 233365029,
+        "score": 0.8482696413993835,
+        "reason": "bm25=0.728; dense=0.929; sub_bm25=0.791; sub_dense=0.908"
+      }
+    ]
+  }
+}

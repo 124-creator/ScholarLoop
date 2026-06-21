@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_251",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_251",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_251",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_251",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1906,
+      "latency_s": 16.161218099994585
+    },
+    {
+      "query_id": "litsearch_251",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 288,
+      "latency_s": 2.415370599948801
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_251",
+    "gold": [
+      252819095
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "emotion classification group conversations",
+      "group dialogue emotion recognition",
+      "multi-party emotion detection"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3892528,
+        252763312,
+        252763283,
+        5380171,
+        5524852,
+        220060209,
+        230349190,
+        1436604,
+        236486294,
+        12631751,
+        21695278,
+        253734458,
+        233365252,
+        44108303,
+        260063198,
+        235294015,
+        201704,
+        912359,
+        1363323,
+        2439516
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248496938,
+        233365252,
+        248496255,
+        227231587,
+        184483331,
+        237572357,
+        15071198,
+        252460147,
+        248182549,
+        16882050,
+        260063198,
+        230349190,
+        3526062,
+        19036345,
+        236460169,
+        18194351,
+        5886952,
+        14715715,
+        208857380,
+        8931573
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        51881697,
+        4941467,
+        6240593,
+        258378181,
+        248780095,
+        184483331,
+        248496255,
+        248780184,
+        260063189,
+        9900805,
+        16145029,
+        51877709,
+        8969708,
+        46458006,
+        260063179,
+        9168133,
+        248780283,
+        248496938,
+        18709925,
+        3526062
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        51881697,
+        53081209,
+        182953036,
+        184483331,
+        248496938,
+        233365252,
+        248496255,
+        260063198,
+        15071198,
+        16882050,
+        227231587,
+        7503547
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248496938,
+        248496255,
+        184483331,
+        51881697,
+        227231587,
+        233365252,
+        3526062,
+        15071198,
+        16882050,
+        6240593,
+        256828147,
+        4941467,
+        260063198,
+        182953036,
+        260063227,
+        252819172,
+        237572357,
+        14715715,
+        53081209,
+        260063189
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 20.497386900009587
+  },
+  "reason_example": {
+    "query_id": "litsearch_251",
+    "query": "Could you suggest studies focused on emotion-classification within group dialogues?",
+    "top_results": [
+      {
+        "corpusid": 248496938,
+        "score": 0.9160130023956299,
+        "reason": "bm25=1.000; dense=0.860; sub_bm25=0.884; sub_dense=0.831"
+      },
+      {
+        "corpusid": 248496255,
+        "score": 0.9080384969711304,
+        "reason": "bm25=0.908; dense=0.908; sub_bm25=1.000; sub_dense=0.916"
+      },
+      {
+        "corpusid": 184483331,
+        "score": 0.8948825597763062,
+        "reason": "bm25=0.869; dense=0.912; sub_bm25=0.670; sub_dense=0.885"
+      },
+      {
+        "corpusid": 51881697,
+        "score": 0.8719769716262817,
+        "reason": "bm25=0.680; dense=1.000; sub_bm25=0.811; sub_dense=1.000"
+      },
+      {
+        "corpusid": 227231587,
+        "score": 0.8474893569946289,
+        "reason": "bm25=0.888; dense=0.820; sub_bm25=0.745; sub_dense=0.837"
+      }
+    ]
+  }
+}

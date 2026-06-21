@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_537",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_537",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_537",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_537",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1233,
+      "latency_s": 8.736945700016804
+    },
+    {
+      "query_id": "litsearch_537",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 388,
+      "latency_s": 3.478618900058791
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_537",
+    "gold": [
+      264490587
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "advantages of coupling neural SDEs and neural CDEs for treatment effect estimation",
+      "neural SDE CDE treatment effect estimation baseline comparison",
+      "neural controlled differential equations treatment effect estimation advantages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8517763,
+        13980475,
+        52158272,
+        202537321,
+        2709318,
+        51868421,
+        68153520,
+        945800,
+        9114021,
+        3913537,
+        8035278,
+        11000512,
+        15050524,
+        18461652,
+        29206719,
+        51869051,
+        51872107,
+        51878325,
+        17633700,
+        12345746
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264490587,
+        264306022,
+        252683719,
+        235743242,
+        18775155,
+        252872909,
+        5073886,
+        232232790,
+        251710541,
+        226283780,
+        15095390,
+        3000562,
+        245838306,
+        53245511,
+        232233355,
+        53079566,
+        51873800,
+        255546240,
+        6979244,
+        44121619
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264490587,
+        232232790,
+        249240332,
+        252872909,
+        253098232,
+        251643400,
+        237491813,
+        211259315,
+        233219700,
+        256459906,
+        46932612,
+        8140780,
+        220525352,
+        235606439,
+        195767175,
+        249192258,
+        252846418,
+        259373058,
+        238583011,
+        227905489
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264490587
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264490587,
+        232232790,
+        252872909,
+        235743242,
+        251643400,
+        264306022,
+        211259315,
+        238583011,
+        8140780,
+        195767175,
+        233219700,
+        252683719,
+        247315206,
+        252110963,
+        263609006,
+        258212748,
+        259841489,
+        252819280,
+        211076166,
+        252578532
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.456400999915786
+  },
+  "reason_example": {
+    "query_id": "litsearch_537",
+    "query": "What are the key advantages of coupling neural SDEs with neural CDEs for treatment effect estimation over existing baselines?",
+    "top_results": [
+      {
+        "corpusid": 264490587,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 232232790,
+        "score": 0.8438637256622314,
+        "reason": "bm25=0.702; dense=0.939; sub_bm25=0.750; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252872909,
+        "score": 0.7855655550956726,
+        "reason": "bm25=0.736; dense=0.819; sub_bm25=0.779; sub_dense=0.858"
+      },
+      {
+        "corpusid": 235743242,
+        "score": 0.7270945906639099,
+        "reason": "bm25=0.754; dense=0.709; sub_bm25=0.806; sub_dense=0.703"
+      },
+      {
+        "corpusid": 251643400,
+        "score": 0.7044692039489746,
+        "reason": "bm25=0.574; dense=0.792; sub_bm25=0.605; sub_dense=0.819"
+      }
+    ]
+  }
+}

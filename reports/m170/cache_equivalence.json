@@ -1,0 +1,204 @@
+{
+  "schema_version": "m170.cache_equivalence.v1",
+  "checked_at_utc": "2026-06-21T08:00:34.335805+00:00",
+  "status": "PASS",
+  "query": "large language model compression",
+  "comparison_keys": [
+    "rank",
+    "corpusid",
+    "score",
+    "reason"
+  ],
+  "uncached_vs_cached_first_equal": true,
+  "cached_first_vs_second_equal": true,
+  "uncached": {
+    "status": "ok",
+    "enabled": true,
+    "count": 5,
+    "cost": {
+      "llm_calls": 1,
+      "tokens": 271,
+      "latency_s": 30.830056300008437
+    },
+    "cache": {
+      "runtime_reused": false,
+      "precheck_cached": false,
+      "decomposition_cached": true
+    },
+    "budget": {
+      "timeout_s": 180,
+      "elapsed_s": 30.830056300008437,
+      "exceeded": false,
+      "completed_results_not_discarded": true
+    },
+    "reason": null,
+    "exception": null,
+    "wall_s": 31.758723799983272,
+    "top_ids": [
+      262054258,
+      204009154,
+      227905681,
+      227231182,
+      235436167
+    ],
+    "rows": [
+      {
+        "rank": 1,
+        "corpusid": 262054258,
+        "score": 0.8984777331352234,
+        "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.323*0.15; sub_dense_v2=1.000*0.15; cross_encoder=1.000*0.20"
+      },
+      {
+        "rank": 2,
+        "corpusid": 204009154,
+        "score": 0.7426310181617737,
+        "reason": "bm25=0.709*0.10; dense_v2=0.867*0.40; sub_bm25=0.310*0.15; sub_dense_v2=0.891*0.15; cross_encoder=0.723*0.20"
+      },
+      {
+        "rank": 3,
+        "corpusid": 227905681,
+        "score": 0.7296528816223145,
+        "reason": "bm25=0.634*0.10; dense_v2=0.874*0.40; sub_bm25=0.289*0.15; sub_dense_v2=0.903*0.15; cross_encoder=0.689*0.20"
+      },
+      {
+        "rank": 4,
+        "corpusid": 227231182,
+        "score": 0.6844092011451721,
+        "reason": "bm25=0.989*0.10; dense_v2=0.781*0.40; sub_bm25=0.354*0.15; sub_dense_v2=0.838*0.15; cross_encoder=0.471*0.20"
+      },
+      {
+        "rank": 5,
+        "corpusid": 235436167,
+        "score": 0.6747778654098511,
+        "reason": "bm25=0.714*0.10; dense_v2=0.776*0.40; sub_bm25=0.248*0.15; sub_dense_v2=0.802*0.15; cross_encoder=0.677*0.20"
+      }
+    ]
+  },
+  "cached_first": {
+    "status": "ok",
+    "enabled": true,
+    "count": 5,
+    "cost": {
+      "llm_calls": 1,
+      "tokens": 274,
+      "latency_s": 27.528420399990864
+    },
+    "cache": {
+      "runtime_reused": false,
+      "precheck_cached": false,
+      "decomposition_cached": true
+    },
+    "budget": {
+      "timeout_s": 180,
+      "elapsed_s": 27.528420399990864,
+      "exceeded": false,
+      "completed_results_not_discarded": true
+    },
+    "reason": null,
+    "exception": null,
+    "wall_s": 27.528498900006525,
+    "top_ids": [
+      262054258,
+      204009154,
+      227905681,
+      227231182,
+      235436167
+    ],
+    "rows": [
+      {
+        "rank": 1,
+        "corpusid": 262054258,
+        "score": 0.8984777331352234,
+        "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.323*0.15; sub_dense_v2=1.000*0.15; cross_encoder=1.000*0.20"
+      },
+      {
+        "rank": 2,
+        "corpusid": 204009154,
+        "score": 0.7426310181617737,
+        "reason": "bm25=0.709*0.10; dense_v2=0.867*0.40; sub_bm25=0.310*0.15; sub_dense_v2=0.891*0.15; cross_encoder=0.723*0.20"
+      },
+      {
+        "rank": 3,
+        "corpusid": 227905681,
+        "score": 0.7296528816223145,
+        "reason": "bm25=0.634*0.10; dense_v2=0.874*0.40; sub_bm25=0.289*0.15; sub_dense_v2=0.903*0.15; cross_encoder=0.689*0.20"
+      },
+      {
+        "rank": 4,
+        "corpusid": 227231182,
+        "score": 0.6844092011451721,
+        "reason": "bm25=0.989*0.10; dense_v2=0.781*0.40; sub_bm25=0.354*0.15; sub_dense_v2=0.838*0.15; cross_encoder=0.471*0.20"
+      },
+      {
+        "rank": 5,
+        "corpusid": 235436167,
+        "score": 0.6747778654098511,
+        "reason": "bm25=0.714*0.10; dense_v2=0.776*0.40; sub_bm25=0.248*0.15; sub_dense_v2=0.802*0.15; cross_encoder=0.677*0.20"
+      }
+    ]
+  },
+  "cached_second": {
+    "status": "ok",
+    "enabled": true,
+    "count": 5,
+    "cost": {
+      "llm_calls": 0,
+      "tokens": 274,
+      "latency_s": 2.5344057000183966
+    },
+    "cache": {
+      "runtime_reused": true,
+      "precheck_cached": true,
+      "decomposition_cached": true
+    },
+    "budget": {
+      "timeout_s": 180,
+      "elapsed_s": 2.5344057000183966,
+      "exceeded": false,
+      "completed_results_not_discarded": true
+    },
+    "reason": null,
+    "exception": null,
+    "wall_s": 2.5382142000016756,
+    "top_ids": [
+      262054258,
+      204009154,
+      227905681,
+      227231182,
+      235436167
+    ],
+    "rows": [
+      {
+        "rank": 1,
+        "corpusid": 262054258,
+        "score": 0.8984777331352234,
+        "reason": "bm25=1.000*0.10; dense_v2=1.000*0.40; sub_bm25=0.323*0.15; sub_dense_v2=1.000*0.15; cross_encoder=1.000*0.20"
+      },
+      {
+        "rank": 2,
+        "corpusid": 204009154,
+        "score": 0.7426310181617737,
+        "reason": "bm25=0.709*0.10; dense_v2=0.867*0.40; sub_bm25=0.310*0.15; sub_dense_v2=0.891*0.15; cross_encoder=0.723*0.20"
+      },
+      {
+        "rank": 3,
+        "corpusid": 227905681,
+        "score": 0.7296528816223145,
+        "reason": "bm25=0.634*0.10; dense_v2=0.874*0.40; sub_bm25=0.289*0.15; sub_dense_v2=0.903*0.15; cross_encoder=0.689*0.20"
+      },
+      {
+        "rank": 4,
+        "corpusid": 227231182,
+        "score": 0.6844092011451721,
+        "reason": "bm25=0.989*0.10; dense_v2=0.781*0.40; sub_bm25=0.354*0.15; sub_dense_v2=0.838*0.15; cross_encoder=0.471*0.20"
+      },
+      {
+        "rank": 5,
+        "corpusid": 235436167,
+        "score": 0.6747778654098511,
+        "reason": "bm25=0.714*0.10; dense_v2=0.776*0.40; sub_bm25=0.248*0.15; sub_dense_v2=0.802*0.15; cross_encoder=0.677*0.20"
+      }
+    ]
+  },
+  "policy": "Runtime cache reuses corpus/BM25/dense/cross objects only; retrieval weights and rank logic are unchanged."
+}

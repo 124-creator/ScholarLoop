@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_206",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_206",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_206",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_206",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 917,
+      "latency_s": 4.066385300015099
+    },
+    {
+      "query_id": "litsearch_206",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 363,
+      "latency_s": 2.9417612000834197
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_206",
+    "gold": [
+      247223093
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "machine translation error detection additions omissions",
+      "detecting omitted words in machine translation",
+      "identifying added content in neural machine translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2730567,
+        61207035,
+        12385862,
+        33548672,
+        51878325,
+        39013984,
+        10595802,
+        45492851,
+        171820989,
+        61214793,
+        62527047,
+        51871240,
+        236486294,
+        33616749,
+        1659667,
+        2705641,
+        6698479,
+        8718951,
+        43183618,
+        59336710
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        211102033,
+        16861067,
+        709,
+        261494427,
+        17352509,
+        996545,
+        18256594,
+        202630445,
+        220047833,
+        235258251,
+        9565034,
+        232222259,
+        5638176,
+        249204477,
+        251980402,
+        230349190,
+        250390493,
+        233305601,
+        5235291,
+        7591666
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14059767,
+        996545,
+        7194191,
+        12881655,
+        249204477,
+        1609095,
+        251980402,
+        14121360,
+        12009874,
+        8332776,
+        10839983,
+        17043745,
+        26853803,
+        17541809,
+        226283771,
+        757808,
+        33616749,
+        12746854,
+        256460861,
+        219305247
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        996545,
+        709,
+        211102033,
+        249204477,
+        16861067,
+        17043745,
+        10839983,
+        14121360,
+        251980402,
+        33616749,
+        17352509,
+        9565034
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        996545,
+        249204477,
+        251980402,
+        709,
+        16861067,
+        10839983,
+        211102033,
+        14121360,
+        17043745,
+        1609095,
+        5235291,
+        226283771,
+        219305247,
+        261494427,
+        17352509,
+        12881655,
+        14743719,
+        233305601,
+        8332776,
+        8524905
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.41350180003792
+  },
+  "reason_example": {
+    "query_id": "litsearch_206",
+    "query": "Could you suggest research on detecting common errors like additions and omissions in machine translation?",
+    "top_results": [
+      {
+        "corpusid": 996545,
+        "score": 0.931827962398529,
+        "reason": "bm25=0.831; dense=0.999; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249204477,
+        "score": 0.8716329336166382,
+        "reason": "bm25=0.750; dense=0.953; sub_bm25=0.719; sub_dense=0.882"
+      },
+      {
+        "corpusid": 251980402,
+        "score": 0.8583481907844543,
+        "reason": "bm25=0.742; dense=0.936; sub_bm25=0.628; sub_dense=0.881"
+      },
+      {
+        "corpusid": 709,
+        "score": 0.8402045965194702,
+        "reason": "bm25=0.876; dense=0.817; sub_bm25=0.938; sub_dense=0.853"
+      },
+      {
+        "corpusid": 16861067,
+        "score": 0.8388900756835938,
+        "reason": "bm25=0.893; dense=0.803; sub_bm25=0.894; sub_dense=0.799"
+      }
+    ]
+  }
+}

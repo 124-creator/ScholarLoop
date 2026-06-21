@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_464",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_464",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_464",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_464",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 616,
+      "latency_s": 2.8387999000260606
+    },
+    {
+      "query_id": "litsearch_464",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 342,
+      "latency_s": 3.2180471000028774
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_464",
+    "gold": [
+      258832833
+    ],
+    "pool_size": 292,
+    "decomposition": [
+      "efficiency robustness multi-exit language models",
+      "multi-exit model efficiency robustness first",
+      "multi-exit language model robustness efficiency"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3923764,
+        30908728,
+        219305462,
+        5153623,
+        17727830,
+        7102676,
+        3897601,
+        53633715,
+        260063225,
+        8517763,
+        9497515,
+        14122119,
+        32306529,
+        2438164,
+        243865349,
+        1021605,
+        2776389,
+        5498664,
+        11637792,
+        12744446
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258832833,
+        259076105,
+        235248193,
+        259370796,
+        236459809,
+        222142219,
+        259370582,
+        248006399,
+        211259427,
+        215785895,
+        53502621,
+        68111200,
+        253097839,
+        247222685,
+        252846637,
+        253098627,
+        254877265,
+        3805612,
+        263620587,
+        244478674
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249892255,
+        237490383,
+        18059389,
+        254877576,
+        3104512,
+        13848633,
+        6855748,
+        2186770,
+        253762079,
+        233481097,
+        237502635,
+        252815840,
+        219306908,
+        18008015,
+        6692745,
+        8360657,
+        62934027,
+        17214004,
+        2809637,
+        52013613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258832833
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258832833,
+        249892255,
+        236459809,
+        237490383,
+        259370796,
+        237346776,
+        3034534,
+        259370582,
+        238856994,
+        8360657,
+        254877576,
+        252819451,
+        6855748,
+        18059389,
+        215745290,
+        247594019,
+        249063003,
+        248006399,
+        13848633,
+        8557302
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.959238799987361
+  },
+  "reason_example": {
+    "query_id": "litsearch_464",
+    "query": "Which paper first studied the efficiency robustness of multi-exit language models?",
+    "top_results": [
+      {
+        "corpusid": 258832833,
+        "score": 0.8848322033882141,
+        "reason": "bm25=1.000; dense=0.808; sub_bm25=1.000; sub_dense=0.892"
+      },
+      {
+        "corpusid": 249892255,
+        "score": 0.796317458152771,
+        "reason": "bm25=0.491; dense=1.000; sub_bm25=0.340; sub_dense=0.989"
+      },
+      {
+        "corpusid": 236459809,
+        "score": 0.7427136301994324,
+        "reason": "bm25=0.692; dense=0.777; sub_bm25=0.558; sub_dense=0.749"
+      },
+      {
+        "corpusid": 237490383,
+        "score": 0.7212725281715393,
+        "reason": "bm25=0.318; dense=0.990; sub_bm25=0.105; sub_dense=0.962"
+      },
+      {
+        "corpusid": 259370796,
+        "score": 0.7152242660522461,
+        "reason": "bm25=0.693; dense=0.730; sub_bm25=0.627; sub_dense=0.828"
+      }
+    ]
+  }
+}

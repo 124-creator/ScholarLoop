@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_457",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_457",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_457",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_457",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1796,
+      "latency_s": 13.247798399999738
+    },
+    {
+      "query_id": "litsearch_457",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 3.7559630000032485
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_457",
+    "gold": [
+      259370562
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "first proposed extracting target and stance from sentences",
+      "target stance pair extraction original paper",
+      "seminal work on stance target extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53244635,
+        2620499,
+        8011103,
+        13254330,
+        7859072,
+        44470886,
+        38322808,
+        9248783,
+        13534980,
+        51950856,
+        11383050,
+        256460902,
+        9689315,
+        14616585,
+        2606461,
+        14466257,
+        6187812,
+        17067853,
+        49656757,
+        15734349
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        260063146,
+        236478122,
+        37022833,
+        258987847,
+        248780001,
+        10432955,
+        202789731,
+        13508558,
+        236477909,
+        6981622,
+        256461358,
+        220048371,
+        52009139,
+        259370856,
+        202787157,
+        1628865,
+        248069378,
+        1013580,
+        53573590,
+        233189521
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53650616,
+        248780401,
+        7546721,
+        286464,
+        259075369,
+        37022833,
+        258987847,
+        3837310,
+        233029482,
+        202787157,
+        239009692,
+        29437162,
+        21726677,
+        9945376,
+        13892938,
+        236478122,
+        9105581,
+        196199072,
+        201763323,
+        259370562
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236478122,
+        16031155,
+        37022833,
+        21726677,
+        248780001,
+        259370856,
+        202787157,
+        258987847,
+        10432955,
+        9945376,
+        9105581,
+        17384688
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        37022833,
+        258987847,
+        236478122,
+        202787157,
+        259075369,
+        248780401,
+        53650616,
+        3837310,
+        52009139,
+        21726677,
+        9945376,
+        10432955,
+        9105581,
+        248069378,
+        260063146,
+        259370856,
+        239009692,
+        256461358,
+        258888434,
+        237421091
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.9329481999157
+  },
+  "reason_example": {
+    "query_id": "litsearch_457",
+    "query": "Which paper first proposed extracting the pair of target and stance from sentences?",
+    "top_results": [
+      {
+        "corpusid": 37022833,
+        "score": 0.944502592086792,
+        "reason": "bm25=0.932; dense=0.953; sub_bm25=0.864; sub_dense=0.923"
+      },
+      {
+        "corpusid": 258987847,
+        "score": 0.9329895973205566,
+        "reason": "bm25=0.919; dense=0.942; sub_bm25=0.891; sub_dense=1.000"
+      },
+      {
+        "corpusid": 236478122,
+        "score": 0.9322015047073364,
+        "reason": "bm25=1.000; dense=0.887; sub_bm25=0.939; sub_dense=0.849"
+      },
+      {
+        "corpusid": 202787157,
+        "score": 0.9062504768371582,
+        "reason": "bm25=0.874; dense=0.928; sub_bm25=0.799; sub_dense=0.886"
+      },
+      {
+        "corpusid": 259075369,
+        "score": 0.8935490846633911,
+        "reason": "bm25=0.801; dense=0.955; sub_bm25=0.720; sub_dense=0.914"
+      }
+    ]
+  }
+}

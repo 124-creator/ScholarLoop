@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_285",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_285",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_285",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_285",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1108,
+      "latency_s": 6.103982700034976
+    },
+    {
+      "query_id": "litsearch_285",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 222,
+      "latency_s": 1.9549567999783903
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_285",
+    "gold": [
+      233004708
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "customer service conversation dataset forecasting customer intentions",
+      "agent protocol limitations customer service dataset",
+      "intent prediction dataset customer service conversations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        221139740,
+        15144279,
+        33978990,
+        1339735,
+        40394099,
+        7337994,
+        259376597,
+        5934502,
+        252357293,
+        14653557,
+        994729,
+        15218055,
+        37225340,
+        201680599,
+        8292781,
+        6120423,
+        10526796,
+        33103125,
+        251402248,
+        251466333
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        15370134,
+        4859466,
+        29729255,
+        174800569,
+        8527815,
+        252819172,
+        259144804,
+        259370671,
+        255125577,
+        17958293,
+        184488087,
+        202766921,
+        252548357,
+        233289623,
+        256461034,
+        251466333,
+        237353191,
+        254246982,
+        21732476,
+        249204450
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        174800836,
+        1369046,
+        35682134,
+        259144804,
+        259370671,
+        252624773,
+        256461034,
+        218862891,
+        252819172,
+        6651164,
+        252548357,
+        5834356,
+        222140918,
+        1905391,
+        61369188,
+        233004708,
+        44161874,
+        260063121,
+        259289128,
+        1741724
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        15370134,
+        256461034,
+        4859466,
+        252819172,
+        174800836,
+        174800569,
+        8527815,
+        259144804,
+        259370671,
+        255125577,
+        29729255,
+        251466333
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        174800836,
+        259144804,
+        259370671,
+        4859466,
+        252819172,
+        256461034,
+        15370134,
+        252548357,
+        222140918,
+        218862891,
+        1369046,
+        174800569,
+        140073972,
+        255125577,
+        6651164,
+        8527815,
+        1905391,
+        61369188,
+        1741724,
+        241583527
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.21209759998601
+  },
+  "reason_example": {
+    "query_id": "litsearch_285",
+    "query": "Is there a research paper that has developed a customer service conversation dataset aimed at forecasting customer intentions, taking into account the limitations imposed by agent protocols?",
+    "top_results": [
+      {
+        "corpusid": 174800836,
+        "score": 0.9192708134651184,
+        "reason": "bm25=0.798; dense=1.000; sub_bm25=0.888; sub_dense=0.981"
+      },
+      {
+        "corpusid": 259144804,
+        "score": 0.8874392509460449,
+        "reason": "bm25=0.869; dense=0.900; sub_bm25=0.823; sub_dense=0.886"
+      },
+      {
+        "corpusid": 259370671,
+        "score": 0.8874392509460449,
+        "reason": "bm25=0.869; dense=0.900; sub_bm25=0.823; sub_dense=0.886"
+      },
+      {
+        "corpusid": 4859466,
+        "score": 0.8798320293426514,
+        "reason": "bm25=0.963; dense=0.824; sub_bm25=1.000; sub_dense=0.869"
+      },
+      {
+        "corpusid": 252819172,
+        "score": 0.8592220544815063,
+        "reason": "bm25=0.870; dense=0.852; sub_bm25=1.000; sub_dense=0.930"
+      }
+    ]
+  }
+}

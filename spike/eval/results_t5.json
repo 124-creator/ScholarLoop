@@ -1,0 +1,438 @@
+{
+  "conclusion": "no-go",
+  "sample_size_per_arm": 3,
+  "sample_query_ids": [
+    "litsearch_096",
+    "litsearch_018",
+    "litsearch_023"
+  ],
+  "stats": {
+    "single": {
+      "P@10": {
+        "mean": 0.03333333333333333,
+        "std": 0.04714045207910317
+      },
+      "R@20": {
+        "mean": 0.06666666666666667,
+        "std": 0.09428090415820634
+      },
+      "F1": {
+        "mean": 0.044444444444444446,
+        "std": 0.0628539361054709
+      },
+      "tokens_mean": 4459.333333333333,
+      "latency_s_mean": 16.912173666680854,
+      "hallucinated_or_out_of_pool": 0
+    },
+    "multi": {
+      "P@10": {
+        "mean": 0.06666666666666667,
+        "std": 0.09428090415820634
+      },
+      "R@20": {
+        "mean": 0.13333333333333333,
+        "std": 0.18856180831641267
+      },
+      "F1": {
+        "mean": 0.08888888888888889,
+        "std": 0.1257078722109418
+      },
+      "tokens_mean": 285.0,
+      "latency_s_mean": 2.296541400020942,
+      "hallucinated_or_out_of_pool": 0
+    },
+    "multi_quality": {
+      "P@10": {
+        "mean": 0.03333333333333333,
+        "std": 0.04714045207910317
+      },
+      "R@20": {
+        "mean": 0.13333333333333333,
+        "std": 0.18856180831641267
+      },
+      "F1": {
+        "mean": 0.053333333333333344,
+        "std": 0.07542472332656508
+      },
+      "tokens_mean": 285.0,
+      "latency_s_mean": 2.296541400020942,
+      "hallucinated_or_out_of_pool": 0
+    }
+  },
+  "samples": {
+    "single": [
+      {
+        "sample": 1,
+        "query_id": "litsearch_096",
+        "P@10": 0.1,
+        "R@20": 0.2,
+        "F1": 0.13333333333333333,
+        "tokens": 4006,
+        "latency_s": 11.386800599982962,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_single_run1\\litsearch_096_single.json"
+      },
+      {
+        "sample": 2,
+        "query_id": "litsearch_018",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 4701,
+        "latency_s": 20.07785140001215,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_single_run1\\litsearch_018_single.json"
+      },
+      {
+        "sample": 3,
+        "query_id": "litsearch_023",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 4671,
+        "latency_s": 19.271869000047445,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_single_run1\\litsearch_023_single.json"
+      }
+    ],
+    "multi": [
+      {
+        "sample": 1,
+        "query_id": "litsearch_096",
+        "P@10": 0.2,
+        "R@20": 0.4,
+        "F1": 0.26666666666666666,
+        "tokens": 257,
+        "latency_s": 1.9325817000353709,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_096_amin_decompose.json"
+      },
+      {
+        "sample": 2,
+        "query_id": "litsearch_018",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 315,
+        "latency_s": 2.4829128000419587,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_018_amin_decompose.json"
+      },
+      {
+        "sample": 3,
+        "query_id": "litsearch_023",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 283,
+        "latency_s": 2.4741296999854967,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_023_amin_decompose.json"
+      }
+    ],
+    "multi_quality": [
+      {
+        "sample": 1,
+        "query_id": "litsearch_096",
+        "P@10": 0.1,
+        "R@20": 0.4,
+        "F1": 0.16000000000000003,
+        "tokens": 257,
+        "latency_s": 1.9325817000353709,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_096_amin_decompose.json"
+      },
+      {
+        "sample": 2,
+        "query_id": "litsearch_018",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 315,
+        "latency_s": 2.4829128000419587,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_018_amin_decompose.json"
+      },
+      {
+        "sample": 3,
+        "query_id": "litsearch_023",
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0,
+        "tokens": 283,
+        "latency_s": 2.4741296999854967,
+        "hallucinated_or_out_of_pool": 0,
+        "raw_path": "spike\\raw\\llm\\t5_multi_run1\\litsearch_023_amin_decompose.json"
+      }
+    ]
+  },
+  "quality_details": [
+    {
+      "sample": 1,
+      "query_id": "litsearch_096",
+      "checked": 20,
+      "verified": 6,
+      "quality_by_id": {
+        "218487034": {
+          "verified": false,
+          "doi": null
+        },
+        "256460965": {
+          "verified": true,
+          "doi": "10.18653/v1/2022.emnlp-main.478"
+        },
+        "244909449": {
+          "verified": true,
+          "doi": "10.18653/v1/2022.acl-long.236"
+        },
+        "259501636": {
+          "verified": false,
+          "doi": null
+        },
+        "258309129": {
+          "verified": false,
+          "doi": null
+        },
+        "233189560": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.eacl-main.34"
+        },
+        "233296487": {
+          "verified": false,
+          "doi": null
+        },
+        "222142312": {
+          "verified": true,
+          "doi": "10.18653/v1/2020.emnlp-main.749"
+        },
+        "233407441": {
+          "verified": false,
+          "doi": null
+        },
+        "253370346": {
+          "verified": false,
+          "doi": "10.48550/arXiv.2211.02580"
+        },
+        "10866815": {
+          "verified": false,
+          "doi": null
+        },
+        "253510465": {
+          "verified": false,
+          "doi": null
+        },
+        "253098133": {
+          "verified": false,
+          "doi": null
+        },
+        "236460081": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.acl-long.537"
+        },
+        "1026180": {
+          "verified": true,
+          "doi": "10.18653/v1/P16-3015"
+        },
+        "249062579": {
+          "verified": false,
+          "doi": "10.48550/arXiv.2205.12854"
+        },
+        "195069392": {
+          "verified": false,
+          "doi": null
+        },
+        "258866156": {
+          "verified": false,
+          "doi": "10.48550/arXiv.2305.14981"
+        },
+        "253238030": {
+          "verified": false,
+          "doi": "10.48550/arXiv.2210.17378"
+        },
+        "253097869": {
+          "verified": false,
+          "doi": null
+        }
+      }
+    },
+    {
+      "sample": 2,
+      "query_id": "litsearch_018",
+      "checked": 20,
+      "verified": 6,
+      "quality_by_id": {
+        "49544037": {
+          "verified": false,
+          "doi": null
+        },
+        "18857766": {
+          "verified": false,
+          "doi": null
+        },
+        "5282346": {
+          "verified": false,
+          "doi": null
+        },
+        "236460104": {
+          "verified": false,
+          "doi": null
+        },
+        "184487889": {
+          "verified": false,
+          "doi": null
+        },
+        "236478166": {
+          "verified": false,
+          "doi": null
+        },
+        "190001673": {
+          "verified": true,
+          "doi": "10.18653/v1/P19-1024"
+        },
+        "220047189": {
+          "verified": true,
+          "doi": "10.18653/v1/2020.acl-main.715"
+        },
+        "251903055": {
+          "verified": false,
+          "doi": null
+        },
+        "239024709": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.emnlp-main.218"
+        },
+        "231719393": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.eacl-main.117"
+        },
+        "252818910": {
+          "verified": false,
+          "doi": null
+        },
+        "17422725": {
+          "verified": false,
+          "doi": null
+        },
+        "13205080": {
+          "verified": false,
+          "doi": null
+        },
+        "17393193": {
+          "verified": true,
+          "doi": "10.63317/3w2jtpst82a6"
+        },
+        "233189627": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.eacl-main.55"
+        },
+        "6387329": {
+          "verified": false,
+          "doi": null
+        },
+        "25169775": {
+          "verified": false,
+          "doi": null
+        },
+        "14028389": {
+          "verified": false,
+          "doi": null
+        },
+        "195218574": {
+          "verified": false,
+          "doi": null
+        }
+      }
+    },
+    {
+      "sample": 3,
+      "query_id": "litsearch_023",
+      "checked": 20,
+      "verified": 6,
+      "quality_by_id": {
+        "226262340": {
+          "verified": false,
+          "doi": null
+        },
+        "6078902": {
+          "verified": false,
+          "doi": null
+        },
+        "236477930": {
+          "verified": true,
+          "doi": "10.18653/v1/2021.findings-acl.108"
+        },
+        "44167998": {
+          "verified": false,
+          "doi": null
+        },
+        "202233360": {
+          "verified": true,
+          "doi": "10.18653/v1/D19-1392"
+        },
+        "252763354": {
+          "verified": false,
+          "doi": null
+        },
+        "9271185": {
+          "verified": true,
+          "doi": "10.3115/1273073.1273107"
+        },
+        "15412473": {
+          "verified": true,
+          "doi": "10.18653/v1/P16-1004"
+        },
+        "208267359": {
+          "verified": false,
+          "doi": null
+        },
+        "235417352": {
+          "verified": false,
+          "doi": null
+        },
+        "283356": {
+          "verified": false,
+          "doi": null
+        },
+        "135465038": {
+          "verified": false,
+          "doi": null
+        },
+        "8110552": {
+          "verified": false,
+          "doi": null
+        },
+        "5085775": {
+          "verified": false,
+          "doi": null
+        },
+        "16170214": {
+          "verified": false,
+          "doi": null
+        },
+        "235097669": {
+          "verified": true,
+          "doi": "10.18653/V1/2021.NAACL-MAIN.30"
+        },
+        "5486621": {
+          "verified": false,
+          "doi": null
+        },
+        "61982581": {
+          "verified": false,
+          "doi": null
+        },
+        "226227399": {
+          "verified": false,
+          "doi": null
+        },
+        "6177202": {
+          "verified": true,
+          "doi": "10.18653/v1/W17-5545"
+        }
+      }
+    }
+  ],
+  "improvement_f1": 0.008888888888888898,
+  "improvement_recall": 0.06666666666666667,
+  "variance_ok": false
+}

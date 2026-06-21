@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_455",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_455",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_455",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_455",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1796,
+      "latency_s": 13.43905809998978
+    },
+    {
+      "query_id": "litsearch_455",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 705,
+      "latency_s": 7.419155000010505
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_455",
+    "gold": [
+      258967524
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "mask positions pre-train multi-modal document transformer",
+      "masked position modeling document understanding transformer",
+      "first propose position masking document pre-training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        223953446,
+        256460961,
+        256462239,
+        247762874,
+        235390794,
+        53628129,
+        5532093,
+        235485452,
+        259370808,
+        258823001,
+        259370515,
+        11645684,
+        248834106,
+        237101002,
+        174799390,
+        235097249,
+        252819291,
+        226283674,
+        243865599,
+        196181767
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        223953446,
+        258967524,
+        259370808,
+        247315559,
+        229923949,
+        251741236,
+        250391093,
+        256901258,
+        229924402,
+        248779960,
+        252818996,
+        238856828,
+        235166279,
+        249240598,
+        235097249,
+        254044707,
+        236478090,
+        256460961,
+        256462239,
+        220045417
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258967524,
+        229923949,
+        257255242,
+        236477993,
+        243728757,
+        264038763,
+        159041867,
+        251280143,
+        248780488,
+        250391093,
+        258840844,
+        221818887,
+        253397458,
+        222290948,
+        237491629,
+        237513393,
+        229923177,
+        237010905,
+        33362235,
+        232035936
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258967524,
+        229923949,
+        235166279,
+        257255242
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258967524,
+        229923949,
+        250391093,
+        257255242,
+        259370808,
+        236477993,
+        223953446,
+        256460961,
+        256462239,
+        237010905,
+        254044707,
+        252818928,
+        235166279,
+        233189602,
+        251280143,
+        251741236,
+        226262313,
+        243728757,
+        256901258,
+        235254048
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 21.914062199997716
+  },
+  "reason_example": {
+    "query_id": "litsearch_455",
+    "query": "Which paper first propose to mask positions to pre-train multi-modal document transformer？",
+    "top_results": [
+      {
+        "corpusid": 258967524,
+        "score": 0.9945601224899292,
+        "reason": "bm25=0.986; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 229923949,
+        "score": 0.9354227781295776,
+        "reason": "bm25=0.885; dense=0.969; sub_bm25=0.879; sub_dense=0.956"
+      },
+      {
+        "corpusid": 250391093,
+        "score": 0.7928489446640015,
+        "reason": "bm25=0.836; dense=0.764; sub_bm25=0.761; sub_dense=0.761"
+      },
+      {
+        "corpusid": 257255242,
+        "score": 0.785490095615387,
+        "reason": "bm25=0.722; dense=0.828; sub_bm25=0.748; sub_dense=0.942"
+      },
+      {
+        "corpusid": 259370808,
+        "score": 0.7648246884346008,
+        "reason": "bm25=0.972; dense=0.627; sub_bm25=0.842; sub_dense=0.654"
+      }
+    ]
+  }
+}

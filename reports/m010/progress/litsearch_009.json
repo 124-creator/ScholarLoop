@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_009",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_009",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_009",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_009",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1236,
+      "latency_s": 6.698766499990597
+    },
+    {
+      "query_id": "litsearch_009",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 213,
+      "latency_s": 1.5339700999902561
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_009",
+    "gold": [
+      201646309
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "transformer sentence embeddings",
+      "BERT sentence embeddings",
+      "sentence transformers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16715295,
+        14727849,
+        20695016,
+        196208300,
+        24663,
+        2500356,
+        7440991,
+        257258185,
+        1024327,
+        11469122,
+        6037404,
+        18534316,
+        256697545,
+        16269371,
+        17482666,
+        18679099,
+        751375,
+        2100529,
+        2166921,
+        11768792
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        17482666,
+        259833800,
+        256105273,
+        196208300,
+        6037404,
+        253397458,
+        3912478,
+        253762046,
+        11142668,
+        52070059,
+        237372511,
+        247613006,
+        243864610,
+        24461982,
+        237940329,
+        6526153,
+        259370637,
+        248780576,
+        247476288,
+        258840844
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780488,
+        208617785,
+        247582214,
+        259833800,
+        253255190,
+        235446334,
+        237730643,
+        236477993,
+        196192207,
+        24461982,
+        218486873,
+        222176890,
+        184486755,
+        229923768,
+        220047270,
+        248572222,
+        243728757,
+        222290948,
+        250163950,
+        237581501
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259833800,
+        24461982,
+        219530980,
+        256105273
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833800,
+        256105273,
+        24461982,
+        237372511,
+        248780488,
+        208617785,
+        258840844,
+        221995630,
+        229923768,
+        259376899,
+        253255190,
+        208100714,
+        253762046,
+        196208300,
+        52012412,
+        51874490,
+        235408467,
+        222291680,
+        235436167,
+        258378149
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.949908500071615
+  },
+  "reason_example": {
+    "query_id": "litsearch_009",
+    "query": "Can you point me to a paper that discussed transformer-based sentence embeddings?",
+    "top_results": [
+      {
+        "corpusid": 259833800,
+        "score": 0.909543514251709,
+        "reason": "bm25=0.906; dense=0.912; sub_bm25=0.848; sub_dense=0.890"
+      },
+      {
+        "corpusid": 256105273,
+        "score": 0.88262540102005,
+        "reason": "bm25=0.906; dense=0.867; sub_bm25=0.734; sub_dense=0.858"
+      },
+      {
+        "corpusid": 24461982,
+        "score": 0.875369668006897,
+        "reason": "bm25=0.859; dense=0.886; sub_bm25=0.644; sub_dense=0.887"
+      },
+      {
+        "corpusid": 237372511,
+        "score": 0.870074987411499,
+        "reason": "bm25=0.871; dense=0.869; sub_bm25=0.741; sub_dense=0.911"
+      },
+      {
+        "corpusid": 248780488,
+        "score": 0.863791823387146,
+        "reason": "bm25=0.659; dense=1.000; sub_bm25=0.720; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_119",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_119",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_119",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_119",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1114,
+      "latency_s": 6.108280700049363
+    },
+    {
+      "query_id": "litsearch_119",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 281,
+      "latency_s": 2.7102165000978857
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_119",
+    "gold": [
+      247748640
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "commonsense knowledge conversational agent emotion interpretation",
+      "external knowledge emotion-aware response generation dialogue systems",
+      "commonsense reasoning affective response formulation chatbots"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15048566,
+        13907064,
+        13092480,
+        233365289,
+        12968637,
+        211205183,
+        237558746,
+        224803222,
+        256627247,
+        16930771,
+        263609405,
+        224705337,
+        233204526,
+        259274843,
+        2971311,
+        52182247,
+        243865363,
+        248780221,
+        8820072,
+        41473084
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237558746,
+        247613006,
+        241583570,
+        52182247,
+        15963241,
+        235490277,
+        237365380,
+        13226696,
+        215827653,
+        202734183,
+        224803222,
+        220647035,
+        259370765,
+        17310628,
+        243865375,
+        235097498,
+        258378355,
+        202558451,
+        247547046,
+        258588125
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202734183,
+        247593809,
+        6785724,
+        252624717,
+        6275358,
+        195069365,
+        241583570,
+        247748640,
+        251643380,
+        12577380,
+        237099281,
+        259289128,
+        259370734,
+        252847485,
+        252519245,
+        237558703,
+        237194961,
+        128296356,
+        201124425,
+        6992160
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        202734183,
+        237558746,
+        247613006,
+        224803222,
+        249210059,
+        52182247,
+        2971311,
+        241583570,
+        248780221,
+        17310628,
+        15963241,
+        237532313
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202734183,
+        241583570,
+        15963241,
+        247593809,
+        237558746,
+        237099281,
+        252624717,
+        247613006,
+        6785724,
+        259370734,
+        237558703,
+        249210059,
+        252519245,
+        237532313,
+        52182247,
+        258378355,
+        2971311,
+        258179794,
+        11788643,
+        233210701
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.153177500003949
+  },
+  "reason_example": {
+    "query_id": "litsearch_119",
+    "query": "Could you recommend a study that examines how incorporating external commonsense knowledge into conversational agents can better interpret user emotions and refine their response formulation techniques?",
+    "top_results": [
+      {
+        "corpusid": 202734183,
+        "score": 0.9660285711288452,
+        "reason": "bm25=0.915; dense=1.000; sub_bm25=0.904; sub_dense=0.980"
+      },
+      {
+        "corpusid": 241583570,
+        "score": 0.9470911622047424,
+        "reason": "bm25=0.986; dense=0.921; sub_bm25=0.543; sub_dense=0.861"
+      },
+      {
+        "corpusid": 15963241,
+        "score": 0.8948301076889038,
+        "reason": "bm25=0.934; dense=0.868; sub_bm25=0.615; sub_dense=0.740"
+      },
+      {
+        "corpusid": 247593809,
+        "score": 0.8911837935447693,
+        "reason": "bm25=0.802; dense=0.950; sub_bm25=0.665; sub_dense=0.848"
+      },
+      {
+        "corpusid": 237558746,
+        "score": 0.8787568807601929,
+        "reason": "bm25=1.000; dense=0.798; sub_bm25=0.819; sub_dense=0.902"
+      }
+    ]
+  }
+}

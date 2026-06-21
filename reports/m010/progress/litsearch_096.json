@@ -1,0 +1,229 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_096",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.2,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_096",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 0.6,
+      "F1": 0.3,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_096",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_096",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1526,
+      "latency_s": 7.997843599994667
+    },
+    {
+      "query_id": "litsearch_096",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 249,
+      "latency_s": 1.5459433000069112
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_096",
+    "gold": [
+      218487034,
+      226254579,
+      196183567,
+      233407441,
+      204976362
+    ],
+    "pool_size": 248,
+    "decomposition": [
+      "factuality in abstractive summarization",
+      "detecting hallucinated content in abstractive summarization",
+      "hallucination detection in generated text summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        18324181,
+        8940645,
+        1080758,
+        1586259,
+        259501636,
+        235097207,
+        81603,
+        17190632,
+        52012819,
+        226283901,
+        250390539,
+        1405599,
+        6242473,
+        218487034,
+        6218032,
+        15037844,
+        236486103,
+        6047026,
+        11818253
+      ],
+      "P@10": 0.0,
+      "R@20": 0.2,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259501636,
+        218487034,
+        244909449,
+        258309129,
+        253097869,
+        226254579,
+        256460965,
+        249268802,
+        253370346,
+        233204406,
+        233296487,
+        249062579,
+        5771683,
+        233189560,
+        253098133,
+        251395456,
+        233407441,
+        241583467,
+        222142312,
+        253510465
+      ],
+      "P@10": 0.2,
+      "R@20": 0.6,
+      "F1": 0.3
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        231951460,
+        220047754,
+        218487034,
+        258486857,
+        244909449,
+        221970707,
+        226283913,
+        11944261,
+        247476018,
+        233296487,
+        9368557,
+        12968935,
+        233189560,
+        259501636,
+        248810934,
+        4943174,
+        201698380,
+        11680756,
+        248780499,
+        237558754
+      ],
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259501636,
+        218487034,
+        244909449,
+        231951460,
+        233296487,
+        253097869,
+        220047754,
+        249268802,
+        233189560,
+        4943174,
+        6218032,
+        81603
+      ],
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        218487034,
+        244909449,
+        259501636,
+        231951460,
+        258309129,
+        233296487,
+        220047754,
+        233189560,
+        258486857,
+        221970707,
+        226283913,
+        248810934,
+        253097869,
+        233204406,
+        4943174,
+        247476018,
+        249062579,
+        256460965,
+        11944261,
+        5771683
+      ],
+      "P@10": 0.1,
+      "R@20": 0.2,
+      "F1": 0.13333333333333333
+    },
+    "elapsed_s": 12.07616090006195
+  },
+  "reason_example": {
+    "query_id": "litsearch_096",
+    "query": "Which studies should I look into that have explored the task of factuality in abstractive summarization and proposed ways to detect hallucinated content in generated text?",
+    "top_results": [
+      {
+        "corpusid": 218487034,
+        "score": 0.9741573333740234,
+        "reason": "bm25=0.981; dense=0.969; sub_bm25=0.931; sub_dense=0.884"
+      },
+      {
+        "corpusid": 244909449,
+        "score": 0.9629582762718201,
+        "reason": "bm25=0.970; dense=0.958; sub_bm25=1.000; sub_dense=0.945"
+      },
+      {
+        "corpusid": 259501636,
+        "score": 0.9387620687484741,
+        "reason": "bm25=1.000; dense=0.898; sub_bm25=0.993; sub_dense=0.919"
+      },
+      {
+        "corpusid": 231951460,
+        "score": 0.8853268623352051,
+        "reason": "bm25=0.713; dense=1.000; sub_bm25=0.968; sub_dense=0.930"
+      },
+      {
+        "corpusid": 258309129,
+        "score": 0.8673030734062195,
+        "reason": "bm25=0.877; dense=0.861; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

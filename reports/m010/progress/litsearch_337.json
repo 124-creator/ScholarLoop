@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_337",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_337",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_337",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_337",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1484,
+      "latency_s": 11.71251979994122
+    },
+    {
+      "query_id": "litsearch_337",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 299,
+      "latency_s": 3.2165182000026107
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_337",
+    "gold": [
+      233296808
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "soft embeddings for knowledge extraction from pretrained models",
+      "efficient tuning with soft prompts from large language models",
+      "low-cost fine-tuning using soft embeddings in pre-trained models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259376880,
+        252991162,
+        240288605,
+        219177032,
+        14584530,
+        256461301,
+        256105128,
+        233231453,
+        1544363,
+        20822840,
+        237353134,
+        244464099,
+        3538865,
+        201666897,
+        233219869,
+        256461029,
+        258887674,
+        236486298,
+        227247952,
+        12091357
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        240288605,
+        233231453,
+        237452236,
+        248085161,
+        248405974,
+        264306063,
+        252780166,
+        254125751,
+        259370520,
+        252991162,
+        253523506,
+        252668454,
+        259833855,
+        225067567,
+        259095584,
+        252819437,
+        258959471,
+        248779922,
+        3538865,
+        253098972
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264306063,
+        259370551,
+        235248419,
+        258959471,
+        233209850,
+        53223679,
+        256461195,
+        248779862,
+        19187663,
+        256461264,
+        52986570,
+        233231453,
+        264172668,
+        227231666,
+        233189631,
+        250390702,
+        222290454,
+        211205183,
+        256105245,
+        225062119
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233231453,
+        254125751,
+        240288605,
+        231672601
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264306063,
+        259370551,
+        258959471,
+        233231453,
+        240288605,
+        235248419,
+        53223679,
+        225067567,
+        231672601,
+        252819437,
+        254125751,
+        256461195,
+        1544363,
+        264812826,
+        252991162,
+        237452236,
+        226283990,
+        248779862,
+        256461139,
+        211205183
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.483485600096174
+  },
+  "reason_example": {
+    "query_id": "litsearch_337",
+    "query": "Where can I read about the using soft embeddings to elicit knowledge from large pre-trained models, at small tuning cost?",
+    "top_results": [
+      {
+        "corpusid": 264306063,
+        "score": 0.9729561805725098,
+        "reason": "bm25=0.932; dense=1.000; sub_bm25=0.773; sub_dense=0.927"
+      },
+      {
+        "corpusid": 259370551,
+        "score": 0.9295176267623901,
+        "reason": "bm25=0.832; dense=0.994; sub_bm25=0.723; sub_dense=0.923"
+      },
+      {
+        "corpusid": 258959471,
+        "score": 0.9158251285552979,
+        "reason": "bm25=0.843; dense=0.965; sub_bm25=0.599; sub_dense=0.991"
+      },
+      {
+        "corpusid": 233231453,
+        "score": 0.9060853719711304,
+        "reason": "bm25=0.981; dense=0.856; sub_bm25=0.892; sub_dense=0.754"
+      },
+      {
+        "corpusid": 240288605,
+        "score": 0.8907656669616699,
+        "reason": "bm25=1.000; dense=0.818; sub_bm25=0.817; sub_dense=0.985"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_587",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_587",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_587",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_587",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 633,
+      "latency_s": 1.6955520999617875
+    },
+    {
+      "query_id": "litsearch_587",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 257,
+      "latency_s": 2.0016089999116957
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_587",
+    "gold": [
+      263909429
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "human motion generation spatial control joints dense sparse 3D points",
+      "joint location control human motion synthesis point cloud",
+      "3D point guided human pose sequence generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15160772,
+        3923764,
+        5213689,
+        11520324,
+        52811940,
+        6723570,
+        26479661,
+        9526061,
+        8292781,
+        12405045,
+        10375802,
+        6141627,
+        1412569,
+        386957,
+        7455198,
+        14577262,
+        233204282,
+        8318391,
+        14761787,
+        207847951
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263909429,
+        14094502,
+        252595883,
+        264306248,
+        246430569,
+        6057023,
+        254591805,
+        485828,
+        3029023,
+        52811940,
+        237010919,
+        258041281,
+        259108523,
+        252624589,
+        218973699,
+        16337874,
+        252624707,
+        232147505,
+        252780848,
+        263829555
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263909429,
+        252624589,
+        264436566,
+        246430569,
+        252595883,
+        6057023,
+        264306248,
+        252624707,
+        237010919,
+        256697500,
+        14715610,
+        3930198,
+        257254909,
+        252668412,
+        263605591,
+        8672271,
+        252815807,
+        244714829,
+        259108523,
+        259977321
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263909429
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263909429,
+        252595883,
+        246430569,
+        264306248,
+        252624589,
+        6057023,
+        237010919,
+        252624707,
+        14715610,
+        257254909,
+        259108523,
+        14094502,
+        252780848,
+        263829555,
+        1814938,
+        6874302,
+        18078460,
+        3029023,
+        7778807,
+        257279944
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 4.963830600026995
+  },
+  "reason_example": {
+    "query_id": "litsearch_587",
+    "query": "Which paper in human motion generation can control the spatial location of any joints of the human with either dense or sparse 3D points?",
+    "top_results": [
+      {
+        "corpusid": 263909429,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252595883,
+        "score": 0.7190994024276733,
+        "reason": "bm25=0.755; dense=0.695; sub_bm25=0.775; sub_dense=0.804"
+      },
+      {
+        "corpusid": 246430569,
+        "score": 0.7121392488479614,
+        "reason": "bm25=0.717; dense=0.709; sub_bm25=0.688; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264306248,
+        "score": 0.7011904716491699,
+        "reason": "bm25=0.755; dense=0.665; sub_bm25=0.606; sub_dense=0.770"
+      },
+      {
+        "corpusid": 252624589,
+        "score": 0.6899827718734741,
+        "reason": "bm25=0.636; dense=0.726; sub_bm25=0.505; sub_dense=0.722"
+      }
+    ]
+  }
+}

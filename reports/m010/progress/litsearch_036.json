@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_036",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_036",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_036",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_036",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1747,
+      "latency_s": 12.180661299964413
+    },
+    {
+      "query_id": "litsearch_036",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 319,
+      "latency_s": 2.1516858000541106
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_036",
+    "gold": [
+      221970454
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "novel data collection methods sarcasm detection Twitter",
+      "innovative data capture sarcasm detection social media",
+      "data acquisition techniques sarcasm detection tweets"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        52158272,
+        9764772,
+        42825371,
+        21166550,
+        46953263,
+        86866148,
+        52100268,
+        226283452,
+        8018043,
+        250390602,
+        42814089,
+        246634987,
+        208002678,
+        1540972,
+        338760,
+        53609310,
+        226262314,
+        220046222,
+        53137220,
+        19001656
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226283452,
+        196187316,
+        246634987,
+        52074232,
+        36100175,
+        220046222,
+        338760,
+        256461020,
+        208002678,
+        226262314,
+        207847660,
+        248780355,
+        8214692,
+        16527671,
+        258378158,
+        15204328,
+        52100268,
+        19001656,
+        256461358,
+        32413548
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207847660,
+        218595858,
+        221970454,
+        830744,
+        259370770,
+        35724462,
+        21723387,
+        4311707,
+        15244007,
+        36100175,
+        209420941,
+        15528926,
+        250390499,
+        1624226,
+        174799301,
+        52000720,
+        17257270,
+        250390447,
+        250390571,
+        1334001
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        207847660,
+        256461020,
+        246634987,
+        52074232,
+        338760,
+        226283452,
+        196187316,
+        36100175,
+        220046222,
+        52100268,
+        250390499
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        207847660,
+        36100175,
+        196187316,
+        226283452,
+        338760,
+        52074232,
+        250390499,
+        830744,
+        256461020,
+        218595858,
+        246634987,
+        220046222,
+        52100268,
+        15244007,
+        15528926,
+        174799301,
+        52000720,
+        21723387,
+        219177320,
+        19485843
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.785886500030756
+  },
+  "reason_example": {
+    "query_id": "litsearch_036",
+    "query": "Could you suggest studies that employ novel methods for capturing data, specifically in the context of sarcasm detection on social media platforms like Twitter?",
+    "top_results": [
+      {
+        "corpusid": 207847660,
+        "score": 0.9297342300415039,
+        "reason": "bm25=0.824; dense=1.000; sub_bm25=0.790; sub_dense=1.000"
+      },
+      {
+        "corpusid": 36100175,
+        "score": 0.9223124980926514,
+        "reason": "bm25=0.894; dense=0.941; sub_bm25=0.855; sub_dense=0.962"
+      },
+      {
+        "corpusid": 196187316,
+        "score": 0.9093842506408691,
+        "reason": "bm25=0.952; dense=0.881; sub_bm25=0.901; sub_dense=0.940"
+      },
+      {
+        "corpusid": 226283452,
+        "score": 0.8800598382949829,
+        "reason": "bm25=1.000; dense=0.800; sub_bm25=0.815; sub_dense=0.848"
+      },
+      {
+        "corpusid": 338760,
+        "score": 0.8719761371612549,
+        "reason": "bm25=0.867; dense=0.875; sub_bm25=0.866; sub_dense=0.945"
+      }
+    ]
+  }
+}

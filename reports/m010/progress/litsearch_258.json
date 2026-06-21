@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_258",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_258",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_258",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_258",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1557,
+      "latency_s": 9.586138500017114
+    },
+    {
+      "query_id": "litsearch_258",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 401,
+      "latency_s": 2.789096999913454
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_258",
+    "gold": [
+      252780822
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "background-shift problem named entity recognition knowledge distillation old model",
+      "identifying non-entity tokens old entity types NER knowledge distillation",
+      "addressing background shift in NER via distillation from previous model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14612854,
+        52280041,
+        44173285,
+        11406047,
+        1414264,
+        16485372,
+        14637336,
+        153751,
+        258865266,
+        14191017,
+        252370477,
+        15419664,
+        14690913,
+        248780336,
+        3262157,
+        214795630,
+        15595964,
+        237490315,
+        236477519,
+        15935660
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248779939,
+        252780822,
+        104292554,
+        52280041,
+        52233389,
+        248780336,
+        214795630,
+        252819341,
+        1538763,
+        10473638,
+        243865573,
+        247594812,
+        218862749,
+        237490315,
+        236459975,
+        320184,
+        236478172,
+        236477519,
+        250390538,
+        7243224
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11406047,
+        51868564,
+        52280041,
+        252847533,
+        258587849,
+        10776826,
+        14612854,
+        228084090,
+        17566758,
+        9742707,
+        215548904,
+        235258277,
+        45465818,
+        8770833,
+        210063658,
+        5741686,
+        226283888,
+        208547731,
+        251835729,
+        11249236
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780336,
+        248779939,
+        11406047,
+        14612854,
+        258865266,
+        237490315,
+        214795630,
+        52280041,
+        104292554,
+        44173285,
+        1414264,
+        3262157
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11406047,
+        248779939,
+        52280041,
+        252780822,
+        104292554,
+        252847533,
+        215548904,
+        14612854,
+        258587849,
+        235258277,
+        320184,
+        8469161,
+        52233389,
+        248780336,
+        8770833,
+        6042994,
+        228084090,
+        9742707,
+        226262212,
+        51868564
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.439093800028786
+  },
+  "reason_example": {
+    "query_id": "litsearch_258",
+    "query": "Have any papers tried to address the background-shift problem in named entity recognition by identifying non-entity type tokens belonging to old entity types through knowledge distillation from an old model?",
+    "top_results": [
+      {
+        "corpusid": 11406047,
+        "score": 0.8498269319534302,
+        "reason": "bm25=0.625; dense=1.000; sub_bm25=0.646; sub_dense=0.946"
+      },
+      {
+        "corpusid": 248779939,
+        "score": 0.8413553237915039,
+        "reason": "bm25=1.000; dense=0.736; sub_bm25=1.000; sub_dense=0.866"
+      },
+      {
+        "corpusid": 52280041,
+        "score": 0.7817810773849487,
+        "reason": "bm25=0.697; dense=0.838; sub_bm25=0.841; sub_dense=0.806"
+      },
+      {
+        "corpusid": 252780822,
+        "score": 0.7626034617424011,
+        "reason": "bm25=0.867; dense=0.693; sub_bm25=0.877; sub_dense=0.805"
+      },
+      {
+        "corpusid": 104292554,
+        "score": 0.7441762685775757,
+        "reason": "bm25=0.768; dense=0.728; sub_bm25=0.677; sub_dense=0.782"
+      }
+    ]
+  }
+}

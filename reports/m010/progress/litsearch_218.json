@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_218",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_218",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_218",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_218",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 960,
+      "latency_s": 5.106533500016667
+    },
+    {
+      "query_id": "litsearch_218",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 345,
+      "latency_s": 2.3996190999168903
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_218",
+    "gold": [
+      225066679
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "specialized architecture pre-trained language models text-to-SQL",
+      "enhance text-to-SQL with pre-trained language models",
+      "architecture modification PLM for text-to-SQL"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21022858,
+        250390647,
+        236460248,
+        38964517,
+        226283808,
+        10513825,
+        253762079,
+        238259474,
+        238857158,
+        237581068,
+        253398055,
+        3923764,
+        5213689,
+        30908728,
+        251594643,
+        211205183,
+        248780437,
+        15751424,
+        234681927,
+        235097219
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256461195,
+        248780459,
+        250390647,
+        251719280,
+        248780154,
+        226283757,
+        258715048,
+        247447354,
+        238744245,
+        232185425,
+        216641856,
+        247476217,
+        246702343,
+        236460291,
+        247450580,
+        235248419,
+        232240181,
+        259095948,
+        233241116,
+        209485573
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253762079,
+        236486069,
+        256105733,
+        236034533,
+        218674345,
+        211205183,
+        159041042,
+        218516935,
+        236477566,
+        232185425,
+        235248419,
+        202539551,
+        227231309,
+        236478283,
+        236460291,
+        247957977,
+        247475845,
+        23751854,
+        247450580,
+        201070518
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236477566,
+        248780459,
+        236460291
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256105733,
+        232185425,
+        236034533,
+        235248419,
+        258715048,
+        236460291,
+        247450580,
+        159041042,
+        227231309,
+        211205183,
+        218674345,
+        226283757,
+        248780459,
+        201070518,
+        247447354,
+        236477566,
+        237491444,
+        259095948,
+        234778324,
+        248780154
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.811929099960253
+  },
+  "reason_example": {
+    "query_id": "litsearch_218",
+    "query": "Could you suggest research that examines the application of specialized architecture in pre-trained language models to enhance text-to-SQL tasks?",
+    "top_results": [
+      {
+        "corpusid": 256105733,
+        "score": 0.9114621877670288,
+        "reason": "bm25=0.819; dense=0.973; sub_bm25=0.921; sub_dense=0.958"
+      },
+      {
+        "corpusid": 232185425,
+        "score": 0.8994263410568237,
+        "reason": "bm25=0.876; dense=0.915; sub_bm25=0.702; sub_dense=0.840"
+      },
+      {
+        "corpusid": 236034533,
+        "score": 0.8930404782295227,
+        "reason": "bm25=0.785; dense=0.965; sub_bm25=0.832; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235248419,
+        "score": 0.8880131244659424,
+        "reason": "bm25=0.852; dense=0.912; sub_bm25=0.745; sub_dense=0.823"
+      },
+      {
+        "corpusid": 258715048,
+        "score": 0.8846102952957153,
+        "reason": "bm25=0.905; dense=0.871; sub_bm25=0.950; sub_dense=0.838"
+      }
+    ]
+  }
+}

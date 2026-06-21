@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_575",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_575",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_575",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_575",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1960,
+      "latency_s": 15.048042400041595
+    },
+    {
+      "query_id": "litsearch_575",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 410,
+      "latency_s": 3.8793874999973923
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_575",
+    "gold": [
+      263620293
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "REINFORCE vs PPO reinforcement learning finetuning pretrained chemistry language models",
+      "comparison of policy gradient and actor-critic methods for molecular language model fine-tuning",
+      "RL finetuning of pretrained transformers or RNNs for chemistry tasks with REINFORCE better than PPO"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        232335496,
+        252819412,
+        15276369,
+        248779924,
+        247595225,
+        233365004,
+        18102135,
+        52158659,
+        51871267,
+        241583220,
+        247694105,
+        11343409,
+        258486862,
+        8752606,
+        215543098,
+        11280500,
+        219302901,
+        247476313,
+        1437003,
+        17732879
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14096841,
+        218720006,
+        220936168,
+        22163777,
+        28202810,
+        263909278,
+        259108495,
+        252693405,
+        88522409,
+        236134152,
+        257232713,
+        258331519,
+        257079136,
+        248863441,
+        221446298,
+        232335426,
+        252683376,
+        209444912,
+        247011606,
+        202121359
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        88522409,
+        3625614,
+        252683376,
+        202121359,
+        252693405,
+        257255456,
+        257079136,
+        199543783,
+        253237390,
+        204743943,
+        231847288,
+        46932612,
+        239049633,
+        213529244,
+        253553557,
+        257038005,
+        259108495,
+        49310753,
+        235613386,
+        14096841
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252693405,
+        14096841,
+        263909278,
+        22163777,
+        218720006,
+        257079136,
+        257232713,
+        259108495,
+        247011606,
+        252683376,
+        88522409
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14096841,
+        88522409,
+        220936168,
+        252693405,
+        22163777,
+        252683376,
+        257079136,
+        259108495,
+        202121359,
+        257232713,
+        28202810,
+        213529244,
+        239049633,
+        247011606,
+        253237390,
+        263909278,
+        248863441,
+        231847288,
+        236134152,
+        218720006
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 20.507928999955766
+  },
+  "reason_example": {
+    "query_id": "litsearch_575",
+    "query": "Which paper first found that REINFORCE works better than actor critic algorithms like PPO for RL finetuning of pretrained chemistry language models (Transformers and RNNs)?",
+    "top_results": [
+      {
+        "corpusid": 14096841,
+        "score": 0.9376471042633057,
+        "reason": "bm25=1.000; dense=0.896; sub_bm25=0.694; sub_dense=0.816"
+      },
+      {
+        "corpusid": 88522409,
+        "score": 0.929810643196106,
+        "reason": "bm25=0.825; dense=1.000; sub_bm25=0.948; sub_dense=0.899"
+      },
+      {
+        "corpusid": 220936168,
+        "score": 0.9110974073410034,
+        "reason": "bm25=0.958; dense=0.880; sub_bm25=0.983; sub_dense=0.786"
+      },
+      {
+        "corpusid": 252693405,
+        "score": 0.903761625289917,
+        "reason": "bm25=0.828; dense=0.954; sub_bm25=0.917; sub_dense=0.969"
+      },
+      {
+        "corpusid": 22163777,
+        "score": 0.8903956413269043,
+        "reason": "bm25=0.905; dense=0.881; sub_bm25=0.661; sub_dense=0.697"
+      }
+    ]
+  }
+}

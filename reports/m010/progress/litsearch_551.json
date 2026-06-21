@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_551",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_551",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_551",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_551",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 640,
+      "latency_s": 1.8536832999670878
+    },
+    {
+      "query_id": "litsearch_551",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 382,
+      "latency_s": 3.224784499965608
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_551",
+    "gold": [
+      264406064
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "adversarial prompts prompt-based learning LLMs",
+      "first paper adversarial prompt engineering fool LLMs",
+      "generating adversarial prompts to mislead LLMs in prompt-based learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12178716,
+        1420479,
+        32575724,
+        3179694,
+        11340898,
+        6517211,
+        248780307,
+        10749859,
+        9923087,
+        53222920,
+        15391473,
+        7964196,
+        18175352,
+        53079155,
+        237592862,
+        14598745,
+        203953161,
+        18359398,
+        1619100,
+        51882793
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264406064,
+        264935143,
+        264426355,
+        248780307,
+        257427208,
+        257038347,
+        248780043,
+        248405974,
+        237416760,
+        258947039,
+        259370512,
+        248084930,
+        253116574,
+        252716013,
+        264172710,
+        248366286,
+        238856973,
+        253098972,
+        248506201,
+        258887528
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237416760,
+        263830433,
+        264406064,
+        264935143,
+        52169956,
+        259342087,
+        260063124,
+        250113401,
+        258041372,
+        264172240,
+        258888064,
+        252716013,
+        15995898,
+        29778779,
+        247619066,
+        245144420,
+        6706414,
+        233231453,
+        233378598,
+        257038392
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264406064
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264406064,
+        264935143,
+        237416760,
+        263830433,
+        264426355,
+        252716013,
+        260063124,
+        264172710,
+        233231453,
+        257427208,
+        245144420,
+        259370512,
+        237592862,
+        257038347,
+        253116574,
+        261341778,
+        232307121,
+        241033259,
+        248405974,
+        248506201
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.467869499931112
+  },
+  "reason_example": {
+    "query_id": "litsearch_551",
+    "query": "What paper first used the technique of prompt engineering to generate adversarial prompts that can fool LLMs into making wrong predictions in prompt-based learning?",
+    "top_results": [
+      {
+        "corpusid": 264406064,
+        "score": 0.9691678285598755,
+        "reason": "bm25=1.000; dense=0.949; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264935143,
+        "score": 0.900327742099762,
+        "reason": "bm25=0.848; dense=0.935; sub_bm25=1.000; sub_dense=0.970"
+      },
+      {
+        "corpusid": 237416760,
+        "score": 0.8946988582611084,
+        "reason": "bm25=0.737; dense=1.000; sub_bm25=0.806; sub_dense=0.855"
+      },
+      {
+        "corpusid": 263830433,
+        "score": 0.8549827933311462,
+        "reason": "bm25=0.697; dense=0.960; sub_bm25=0.682; sub_dense=0.927"
+      },
+      {
+        "corpusid": 264426355,
+        "score": 0.8354729413986206,
+        "reason": "bm25=0.818; dense=0.847; sub_bm25=0.922; sub_dense=0.813"
+      }
+    ]
+  }
+}

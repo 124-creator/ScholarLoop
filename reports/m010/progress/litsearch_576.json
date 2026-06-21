@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_576",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_576",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_576",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_576",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1678,
+      "latency_s": 12.301807399955578
+    },
+    {
+      "query_id": "litsearch_576",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 532,
+      "latency_s": 5.855311500024982
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_576",
+    "gold": [
+      259108565
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "transformers in-context learning generalization memorization phenomenon",
+      "in-context learning transformers initially generalize then memorize",
+      "first paper in-context learning transformers memorization after generalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8681025,
+        2202801,
+        604334,
+        53601909,
+        454888,
+        10760594,
+        14910485,
+        1412569,
+        259375870,
+        243865256,
+        2739102,
+        1598703,
+        13907064,
+        256461135,
+        263620583,
+        16156540,
+        1047927,
+        8154293,
+        41589365,
+        220938
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263620583,
+        61153651,
+        264146611,
+        235254582,
+        221376381,
+        255749430,
+        235313510,
+        236460291,
+        12056615,
+        253107476,
+        246863735,
+        250243645,
+        254043800,
+        264439160,
+        263909278,
+        44111606,
+        220128067,
+        14064410,
+        253553137,
+        11916483
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263620583,
+        264146611,
+        251929336,
+        259108565,
+        254043800,
+        259375820,
+        252089779,
+        202541078,
+        257280093,
+        229923720,
+        236460291,
+        264439160,
+        259138847,
+        252762655,
+        215814515,
+        263909278,
+        264406180,
+        253510792,
+        218487351,
+        264147017
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254043800,
+        263620583,
+        264146611,
+        259375820,
+        61153651,
+        263909278,
+        259375870
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263620583,
+        264146611,
+        254043800,
+        259375820,
+        236460291,
+        259108565,
+        264439160,
+        255749430,
+        263909278,
+        252762655,
+        61153651,
+        235254582,
+        252089779,
+        251929336,
+        257280093,
+        221376381,
+        222140635,
+        264147017,
+        253510792,
+        253107476
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 19.971527199959382
+  },
+  "reason_example": {
+    "query_id": "litsearch_576",
+    "query": "Which paper first found that when transformers are trained to in-context learn function classes, they might exhibit generalization followed by memorization, in certain settings?",
+    "top_results": [
+      {
+        "corpusid": 263620583,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.953; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264146611,
+        "score": 0.877388596534729,
+        "reason": "bm25=0.786; dense=0.938; sub_bm25=1.000; sub_dense=0.998"
+      },
+      {
+        "corpusid": 254043800,
+        "score": 0.802704930305481,
+        "reason": "bm25=0.721; dense=0.857; sub_bm25=0.893; sub_dense=0.962"
+      },
+      {
+        "corpusid": 259375820,
+        "score": 0.7667391300201416,
+        "reason": "bm25=0.666; dense=0.834; sub_bm25=0.809; sub_dense=0.915"
+      },
+      {
+        "corpusid": 236460291,
+        "score": 0.7644344568252563,
+        "reason": "bm25=0.734; dense=0.785; sub_bm25=0.747; sub_dense=0.757"
+      }
+    ]
+  }
+}

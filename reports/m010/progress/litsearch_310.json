@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_310",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_310",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_310",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_310",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1044,
+      "latency_s": 5.709162299986929
+    },
+    {
+      "query_id": "litsearch_310",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 396,
+      "latency_s": 3.578973500058055
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_310",
+    "gold": [
+      245123965
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "quantitative methods for measuring neuron intervention effectiveness on model predictions",
+      "causal tracing or intervention analysis in neural networks",
+      "metrics for evaluating neuron ablation or activation changes"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18792136,
+        234342930,
+        221761488,
+        942378,
+        1618423,
+        226283836,
+        15700645,
+        19867257,
+        76656665,
+        19184155,
+        218517013,
+        38965242,
+        250390698,
+        15839225,
+        12861885,
+        258685798,
+        37225340,
+        6476749,
+        129886,
+        6293901
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235313409,
+        1618423,
+        234342930,
+        236772808,
+        238419587,
+        15839225,
+        18136471,
+        249240332,
+        16406099,
+        6937902,
+        48353672,
+        259075538,
+        76656665,
+        235247884,
+        15700645,
+        258947701,
+        218900504,
+        234681155,
+        17963947,
+        2660978
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        6113477,
+        232232790,
+        249240332,
+        249282716,
+        102352181,
+        20915835,
+        250179916,
+        51872107,
+        216562713,
+        264490587,
+        264832900,
+        218973757,
+        219604274,
+        208202099,
+        209501050,
+        252439090,
+        203965,
+        4551282,
+        52118297,
+        195767175
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        44167055,
+        249240332,
+        235247884,
+        234342930,
+        226283836,
+        235313409,
+        236772808,
+        1618423,
+        259075538,
+        15839225,
+        15700645,
+        16406099
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249240332,
+        102352181,
+        235313409,
+        249282716,
+        259075538,
+        235247884,
+        258947701,
+        44167055,
+        209501050,
+        250390972,
+        219636236,
+        236772808,
+        232232790,
+        202787714,
+        46974855,
+        29150573,
+        238419587,
+        15839225,
+        196211427,
+        241583423
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.289331400068477
+  },
+  "reason_example": {
+    "query_id": "litsearch_310",
+    "query": "What research articles should I consult to understand a method for quantitatively assessing how successful neuron interventions are at altering a model's predictions?",
+    "top_results": [
+      {
+        "corpusid": 249240332,
+        "score": 0.9125231504440308,
+        "reason": "bm25=0.917; dense=0.910; sub_bm25=0.854; sub_dense=1.000"
+      },
+      {
+        "corpusid": 102352181,
+        "score": 0.8675820827484131,
+        "reason": "bm25=0.837; dense=0.888; sub_bm25=0.504; sub_dense=0.682"
+      },
+      {
+        "corpusid": 235313409,
+        "score": 0.8568443655967712,
+        "reason": "bm25=1.000; dense=0.761; sub_bm25=0.417; sub_dense=0.723"
+      },
+      {
+        "corpusid": 249282716,
+        "score": 0.8447545766830444,
+        "reason": "bm25=0.775; dense=0.891; sub_bm25=0.634; sub_dense=0.913"
+      },
+      {
+        "corpusid": 259075538,
+        "score": 0.8335243463516235,
+        "reason": "bm25=0.901; dense=0.788; sub_bm25=0.329; sub_dense=0.671"
+      }
+    ]
+  }
+}

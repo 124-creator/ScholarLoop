@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_296",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_296",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_296",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_296",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1819,
+      "latency_s": 10.891307900077663
+    },
+    {
+      "query_id": "litsearch_296",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 2.0838845000835136
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_296",
+    "gold": [
+      233296808
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "scaling laws parameter-efficient prompt tuning",
+      "scaling laws for prompt tuning language models",
+      "parameter-efficient fine-tuning scaling laws"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8752606,
+        258676495,
+        199022672,
+        248299805,
+        2840902,
+        243865620,
+        32392814,
+        247447209,
+        236486069,
+        38405135,
+        231672601,
+        252780166,
+        5638681,
+        252819507,
+        258765269,
+        248780547,
+        258960434,
+        248780142,
+        254405065,
+        33871285
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249017865,
+        252780166,
+        259095584,
+        254125751,
+        256460903,
+        259833855,
+        256461030,
+        248986389,
+        255440621,
+        248405974,
+        264306063,
+        258959304,
+        237452236,
+        258832448,
+        249062610,
+        259360526,
+        248780177,
+        252683098,
+        258676495,
+        231672601
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259833855,
+        248780177,
+        246867041,
+        252780166,
+        247594470,
+        233296808,
+        248779986,
+        235458576,
+        264172710,
+        264306063,
+        256460956,
+        245144420,
+        254877112,
+        259833814,
+        9158272,
+        252439170,
+        248986389,
+        245769658,
+        239016577,
+        263834884
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233296808,
+        248780177,
+        252780166,
+        259833855,
+        248986389,
+        248405974,
+        249017865,
+        259095584,
+        258676495,
+        231672601,
+        248780547,
+        254125751
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833855,
+        252780166,
+        248780177,
+        249017865,
+        233296808,
+        248779986,
+        264306063,
+        248986389,
+        259095584,
+        256460956,
+        248405974,
+        254125751,
+        259360526,
+        246867041,
+        239016577,
+        258865689,
+        237452236,
+        235359141,
+        256461030,
+        255440621
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.584801000077277
+  },
+  "reason_example": {
+    "query_id": "litsearch_296",
+    "query": "What are some scholarly articles that explore scaling laws for parameter-efficient prompt tuning techniques for fine-tuning language models?",
+    "top_results": [
+      {
+        "corpusid": 259833855,
+        "score": 0.9657700061798096,
+        "reason": "bm25=0.914; dense=1.000; sub_bm25=0.821; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252780166,
+        "score": 0.9240301847457886,
+        "reason": "bm25=0.995; dense=0.877; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248780177,
+        "score": 0.914006233215332,
+        "reason": "bm25=0.801; dense=0.989; sub_bm25=0.775; sub_dense=0.981"
+      },
+      {
+        "corpusid": 249017865,
+        "score": 0.8319708108901978,
+        "reason": "bm25=1.000; dense=0.720; sub_bm25=1.000; sub_dense=0.760"
+      },
+      {
+        "corpusid": 233296808,
+        "score": 0.8248088359832764,
+        "reason": "bm25=0.775; dense=0.858; sub_bm25=0.723; sub_dense=0.923"
+      }
+    ]
+  }
+}

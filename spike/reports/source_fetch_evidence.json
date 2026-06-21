@@ -1,0 +1,360 @@
+{
+  "218487034": {
+    "corpusId": 218487034,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:218487034?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_218487034_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/dbeeca8466e0c177ec67c60d529899232415ca87",
+        "paperId": "dbeeca8466e0c177ec67c60d529899232415ca87",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_218487034_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/dbeeca8466e0c177ec67c60d529899232415ca87?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_dbeeca8466e0c177ec67c60d529899232415ca87_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/dbeeca8466e0c177ec67c60d529899232415ca87",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_dbeeca8466e0c177ec67c60d529899232415ca87_web_fallback.json"
+      }
+    ]
+  },
+  "226254579": {
+    "corpusId": 226254579,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:226254579?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_226254579_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/186c3507e3f0acf80bfe65ea19d408554f688665",
+        "paperId": "186c3507e3f0acf80bfe65ea19d408554f688665",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_226254579_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 200,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/186c3507e3f0acf80bfe65ea19d408554f688665?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_186c3507e3f0acf80bfe65ea19d408554f688665_graph.json"
+      }
+    ]
+  },
+  "196183567": {
+    "corpusId": 196183567,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 200,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:196183567?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_196183567_graph_direct.json"
+      }
+    ]
+  },
+  "233407441": {
+    "corpusId": 233407441,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:233407441?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_233407441_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/667bdd2a8dc997d40c106ff6761babebe4050762",
+        "paperId": "667bdd2a8dc997d40c106ff6761babebe4050762",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_233407441_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/667bdd2a8dc997d40c106ff6761babebe4050762?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_667bdd2a8dc997d40c106ff6761babebe4050762_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/667bdd2a8dc997d40c106ff6761babebe4050762",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_667bdd2a8dc997d40c106ff6761babebe4050762_web_fallback.json"
+      }
+    ]
+  },
+  "204976362": {
+    "corpusId": 204976362,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:204976362?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_204976362_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/0c5598424cc96d8fb500eb553cb7969f86a0ede0",
+        "paperId": "0c5598424cc96d8fb500eb553cb7969f86a0ede0",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_204976362_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/0c5598424cc96d8fb500eb553cb7969f86a0ede0?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_0c5598424cc96d8fb500eb553cb7969f86a0ede0_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/0c5598424cc96d8fb500eb553cb7969f86a0ede0",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_0c5598424cc96d8fb500eb553cb7969f86a0ede0_web_fallback.json"
+      }
+    ]
+  },
+  "5403702": {
+    "corpusId": 5403702,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:5403702?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_5403702_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/032fbcb58e2282f02426a0f09c6d5b42787936ec",
+        "paperId": "032fbcb58e2282f02426a0f09c6d5b42787936ec",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_5403702_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/032fbcb58e2282f02426a0f09c6d5b42787936ec?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_032fbcb58e2282f02426a0f09c6d5b42787936ec_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/032fbcb58e2282f02426a0f09c6d5b42787936ec",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_032fbcb58e2282f02426a0f09c6d5b42787936ec_web_fallback.json"
+      }
+    ]
+  },
+  "1774259": {
+    "corpusId": 1774259,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:1774259?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_1774259_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d",
+        "paperId": "08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_1774259_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d_web_fallback.json"
+      }
+    ]
+  },
+  "2476229": {
+    "corpusId": 2476229,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:2476229?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_2476229_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/3899f87a2031f3434f89beb68c11a1ca6428328a",
+        "paperId": "3899f87a2031f3434f89beb68c11a1ca6428328a",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_2476229_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/3899f87a2031f3434f89beb68c11a1ca6428328a?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_3899f87a2031f3434f89beb68c11a1ca6428328a_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/3899f87a2031f3434f89beb68c11a1ca6428328a",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_3899f87a2031f3434f89beb68c11a1ca6428328a_web_fallback.json"
+      }
+    ]
+  },
+  "52115592": {
+    "corpusId": 52115592,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 200,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:52115592?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_52115592_graph_direct.json"
+      }
+    ]
+  },
+  "16911296": {
+    "corpusId": 16911296,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:16911296?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_16911296_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/bcf16c08a41009d9f9174c6f72b2ff534232c147",
+        "paperId": "bcf16c08a41009d9f9174c6f72b2ff534232c147",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_16911296_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/bcf16c08a41009d9f9174c6f72b2ff534232c147?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_bcf16c08a41009d9f9174c6f72b2ff534232c147_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/bcf16c08a41009d9f9174c6f72b2ff534232c147",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_bcf16c08a41009d9f9174c6f72b2ff534232c147_web_fallback.json"
+      }
+    ]
+  },
+  "1675452": {
+    "corpusId": 1675452,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:1675452?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_1675452_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/8c6f58ed0ebf379858c0bbe02c53ee51b3eb398a",
+        "paperId": "8c6f58ed0ebf379858c0bbe02c53ee51b3eb398a",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_1675452_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 200,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/8c6f58ed0ebf379858c0bbe02c53ee51b3eb398a?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_8c6f58ed0ebf379858c0bbe02c53ee51b3eb398a_graph.json"
+      }
+    ]
+  },
+  "12718048": {
+    "corpusId": 12718048,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:12718048?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_12718048_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 404,
+        "final_url": "https://api.semanticscholar.org/CorpusID:12718048",
+        "paperId": null,
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_12718048_redirect.json"
+      }
+    ]
+  },
+  "244954670": {
+    "corpusId": 244954670,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:244954670?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_244954670_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "paperId": "eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_244954670_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/eb7c9316c7c26220483cb9315058ceb129b5c167?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_eb7c9316c7c26220483cb9315058ceb129b5c167_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_eb7c9316c7c26220483cb9315058ceb129b5c167_web_fallback.json"
+      }
+    ]
+  },
+  "256461055": {
+    "corpusId": 256461055,
+    "steps": [
+      {
+        "name": "graph_by_corpus_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:256461055?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_256461055_graph_direct.json"
+      },
+      {
+        "name": "legacy_corpusid_redirect",
+        "status_code": 202,
+        "final_url": "https://www.semanticscholar.org/paper/eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "paperId": "eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_256461055_redirect.json"
+      },
+      {
+        "name": "graph_by_paper_id",
+        "status_code": 429,
+        "url": "https://api.semanticscholar.org/graph/v1/paper/eb7c9316c7c26220483cb9315058ceb129b5c167?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_eb7c9316c7c26220483cb9315058ceb129b5c167_graph.json"
+      },
+      {
+        "name": "web_fallback",
+        "status_code": 200,
+        "url": "https://www.semanticscholar.org/api/1/paper/eb7c9316c7c26220483cb9315058ceb129b5c167",
+        "raw_path": "spike\\raw\\x3\\semantic_scholar\\paper_eb7c9316c7c26220483cb9315058ceb129b5c167_web_fallback.json"
+      }
+    ]
+  }
+}

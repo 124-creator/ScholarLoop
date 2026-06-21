@@ -1,0 +1,772 @@
+[
+  {
+    "corpusId": 218487034,
+    "resolvedCorpusId": 218487034,
+    "title": "On Faithfulness and Factuality in Abstractive Summarization",
+    "author_year": "Unknown et al. ({'text': '2020', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_096",
+    "query": "Which studies should I look into that have explored the task of factuality in abstractive summarization and proposed ways to detect hallucinated content in generated text?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We conducted a large scale human evaluation of several neural abstractive summarization systems to better understand the types of hallucinations they produce."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "In this paper we have analyzed limitations of these models for abstractive document summarization and found that these models are highly prone to hallucinate content that is unfaithful to the input document."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "In this paper we have analyzed limitations of these models for abstractive document summarization and found that these models are highly prone to hallucinate content that is unfaithful to the input document."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 226254579,
+    "resolvedCorpusId": 226254579,
+    "title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+    "author_year": "Chunting Zhou et al. (2020)",
+    "doi": "10.18653/v1/2021.findings-acl.120",
+    "query_id": "litsearch_002",
+    "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "有出处",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "有出处",
+        "source": "Semantic Scholar externalIds.DOI + Crossref"
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Neural sequence models can generate highly fluent sentences but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input, which can cause a lack of trust in the model."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We also introduce a novel method for learning to model hallucination detection, based on pretrained language models fine tuned on synthetic data that includes automatically inserted hallucinations."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Neural sequence models can generate highly fluent sentences but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input, which can cause a lack of trust in the model."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 196183567,
+    "resolvedCorpusId": 196183567,
+    "title": "A Simple Recipe towards Reducing Hallucination in Neural Surface Realisation",
+    "author_year": "Feng Nie et al. (2019)",
+    "doi": "10.18653/v1/P19-1256",
+    "query_id": "litsearch_096",
+    "query": "Which studies should I look into that have explored the task of factuality in abstractive summarization and proposed ways to detect hallucinated content in generated text?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "有出处",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "有出处",
+        "source": "Semantic Scholar externalIds.DOI + Crossref"
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Recent neural language generation systems often hallucinate contents (i.e., producing irrelevant or contradicted facts), especially when trained on loosely corresponding pairs of the input structure and text."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "To mitigate this issue, we propose to integrate a language understanding module for data refinement with self-training iterations to effectively induce strong equivalence between the input data and the paired text."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "To mitigate this issue, we propose to integrate a language understanding module for data refinement with self-training iterations to effectively induce strong equivalence between the input data and the paired text."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Experiments on the E2E challenge dataset show that our proposed framework can reduce more than 50% relative unaligned noise from the original data-text pairs."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 233407441,
+    "resolvedCorpusId": 233407441,
+    "title": "Understanding Factuality in Abstractive Summarization with FRANK: A Benchmark for Factuality Metrics",
+    "author_year": "Unknown et al. ({'text': '2021', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_096",
+    "query": "Which studies should I look into that have explored the task of factuality in abstractive summarization and proposed ways to detect hallucinated content in generated text?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Modern summarization models generate highly fluent but often factually unreliable outputs."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "This motivated a surge of metrics attempting to measure the factuality of automatically generated summaries."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Through these annotations we identify the proportion of different categories of factual errors and benchmark factuality metrics, showing their correlation with human judgement as well as their specific strengths and weaknesses."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Moreover, all these methods treat factuality as a binary concept and fail to provide deeper insights on the kinds of inconsistencies made by different systems."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 204976362,
+    "resolvedCorpusId": 204976362,
+    "title": "Evaluating the Factual Consistency of Abstractive Text Summarization",
+    "author_year": "Unknown et al. ({'text': '2019', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_002",
+    "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Currently used metrics for assessing summarization algorithms do not account for whether summaries are factually consistent with source documents."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Currently used metrics for assessing summarization algorithms do not account for whether summaries are factually consistent with source documents."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Transferring this model to summaries generated by several state-of-the art models reveals that this highly scalable approach substantially outperforms previous models, including those trained with strong supervision using standard datasets for natural language inference and fact checking."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 5403702,
+    "resolvedCorpusId": 5403702,
+    "title": "Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths",
+    "author_year": "Unknown et al. ({'text': '2015', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_018",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "In this paper, we present SDP-LSTM, a novel neural network to classify the relation of two entities in a sentence."
+      },
+      "数据": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "(2) The multichannel LSTM networks allow effective information integration from heterogeneous sources over the dependency paths."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 1774259,
+    "resolvedCorpusId": 1774259,
+    "title": "Bidirectional Recurrent Convolutional Neural Network for Relation Classification",
+    "author_year": "Unknown et al. ({'text': '2016', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_018",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "In this paper, we present a novel model BRCNN to classify the relation of two entities in a sentence."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Experimental results show that our method outperforms the state-of-theart approaches on the SemEval-2010 Task 8 dataset."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Experimental results show that our method outperforms the state-of-theart approaches on the SemEval-2010 Task 8 dataset."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 2476229,
+    "resolvedCorpusId": 2476229,
+    "title": "End-to-End Relation Extraction using LSTMs on Sequences and Tree Structures",
+    "author_year": "Unknown et al. ({'text': '2016', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_018",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We present a novel end-to-end neural model to extract entities and relations between them."
+      },
+      "数据": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Our model improves over the state-of-the-art feature-based model on end-to-end relation extraction, achieving 12.1% and 5.7% relative error reductions in F1-score on ACE2005 and ACE2004, respectively."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Our model improves over the state-of-the-art feature-based model on end-to-end relation extraction, achieving 12.1% and 5.7% relative error reductions in F1-score on ACE2005 and ACE2004, respectively."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 52115592,
+    "resolvedCorpusId": 52115592,
+    "title": "N-ary Relation Extraction using Graph-State LSTM",
+    "author_year": "Linfeng Song et al. (2018)",
+    "doi": "10.18653/v1/D18-1246",
+    "query_id": "litsearch_018",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "有出处",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "有出处",
+        "source": "Semantic Scholar externalIds.DOI + Crossref"
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Typical methods formulate an input as a document graph, integrating various intra-sentential and inter-sentential dependencies."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "On a standard benchmark, our model shows the best result in the literature."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "On a standard benchmark, our model shows the best result in the literature."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 16911296,
+    "resolvedCorpusId": 16911296,
+    "title": "Sequence-based Structured Prediction for Semantic Parsing",
+    "author_year": "Unknown et al. ({'text': '2016', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_023",
+    "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We propose an approach for semantic parsing that uses a recurrent neural network to map a natural language question into a logical form representation of a KB query."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Our experiments show important improvements over previous results for the same dataset, and also demonstrate the advantage of incorporating the grammatical constraints."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We also show how grammatical constraints on the derivation sequence can easily be integrated inside the RNN-based sequential predictor."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 1675452,
+    "resolvedCorpusId": 1675452,
+    "title": "Neural Semantic Parsing with Type Constraints for Semi-Structured Tables",
+    "author_year": "Jayant Krishnamurthy et al. (2017)",
+    "doi": "10.18653/v1/D17-1160",
+    "query_id": "litsearch_023",
+    "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "有出处",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "有出处",
+        "source": "Semantic Scholar externalIds.DOI + Crossref"
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "We present a new semantic parsing model for answering compositional questions on semi-structured Wikipedia tables."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "On the WikiTableQuestions data set, our parser achieves a state-of-the-art accuracy of 43.3% for a single model and 45.9% for a 5-model ensemble, improving on the best prior score of 38.7% set by a 15-model ensemble."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "On the WikiTableQuestions data set, our parser achieves a state-of-the-art accuracy of 43.3% for a single model and 45.9% for a 5-model ensemble, improving on the best prior score of 38.7% set by a 15-model ensemble."
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 12718048,
+    "resolvedCorpusId": 12718048,
+    "title": null,
+    "author_year": "Unknown et al. (n.d.)",
+    "doi": null,
+    "query_id": "litsearch_023",
+    "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+    "fields": {
+      "标题": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "数据": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "结论": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "局限": {
+        "status": "证据不足/需人工核验",
+        "source": null,
+        "snippet": null
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 244954670,
+    "resolvedCorpusId": 244954670,
+    "title": "VIRT: Improving Representation-based Text Matching via Virtual Interaction",
+    "author_year": "Unknown et al. ({'text': '2021', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_113",
+    "query": "Could you direct me to studies investigating the enhancement of bi-encoder text matching performance through the application of knowledge distillation methods?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Interaction-based approaches treat the text pair as a single sequence and encode it through cross encoders, while representation-based models encode the text pair independently with siamese or dual encoders."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Experimental results on six text matching benchmarks demonstrate the superior performance of our method over several state-of-the-art representation-based models."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "It enables deep interaction between texts by effectively transferring knowledge from the interaction-based model."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "However, these models suffer from severe performance degradation due to the lack of interactions between the pair of texts."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  },
+  {
+    "corpusId": 256461055,
+    "resolvedCorpusId": 244954670,
+    "title": "VIRT: Improving Representation-based Text Matching via Virtual Interaction",
+    "author_year": "Unknown et al. ({'text': '2021', 'fragments': []})",
+    "doi": null,
+    "query_id": "litsearch_113",
+    "query": "Could you direct me to studies investigating the enhancement of bi-encoder text matching performance through the application of knowledge distillation methods?",
+    "fields": {
+      "标题": {
+        "status": "有出处",
+        "source": "Semantic Scholar title"
+      },
+      "作者年份": {
+        "status": "证据不足/需人工核验",
+        "source": "Semantic Scholar authors/year"
+      },
+      "来源·DOI": {
+        "status": "证据不足/需人工核验",
+        "source": null
+      },
+      "推荐理由": {
+        "status": "有出处",
+        "source": "LitSearch query/corpusids gold mapping"
+      },
+      "支持问题": {
+        "status": "有出处",
+        "source": "LitSearch query text"
+      },
+      "方法": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Interaction-based approaches treat the text pair as a single sequence and encode it through cross encoders, while representation-based models encode the text pair independently with siamese or dual encoders."
+      },
+      "数据": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "Experimental results on six text matching benchmarks demonstrate the superior performance of our method over several state-of-the-art representation-based models."
+      },
+      "结论": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "It enables deep interaction between texts by effectively transferring knowledge from the interaction-based model."
+      },
+      "局限": {
+        "status": "有出处",
+        "source": "abstract",
+        "snippet": "However, these models suffer from severe performance degradation due to the lack of interactions between the pair of texts."
+      },
+      "关联强度": {
+        "status": "有出处",
+        "source": "LitSearch official gold target; relevance treated as strong in this spike"
+      }
+    }
+  }
+]

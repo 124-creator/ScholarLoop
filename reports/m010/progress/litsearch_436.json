@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_436",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_436",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_436",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_436",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 3056,
+      "latency_s": 23.65006639994681
+    },
+    {
+      "query_id": "litsearch_436",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 462,
+      "latency_s": 4.046955299912952
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_436",
+    "gold": [
+      258959201
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "first dataset numerical reasoning arithmetic questions number size representation digits words",
+      "earliest dataset math word problems varying number sizes and representations",
+      "original paper dataset arithmetic reasoning different number types size representation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15244472,
+        42237634,
+        17914161,
+        16156540,
+        11358655,
+        8150087,
+        15057133,
+        8798141,
+        15128214,
+        237267179,
+        2166921,
+        2783247,
+        20138082,
+        1880320,
+        19878558,
+        15339879,
+        4013259,
+        11334834,
+        11547363,
+        10587229
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252735195,
+        243865640,
+        253761979,
+        209202200,
+        256868426,
+        243865663,
+        237563143,
+        202583694,
+        53246376,
+        233033850,
+        258959201,
+        186206189,
+        226262182,
+        249062802,
+        254686088,
+        44133715,
+        248227554,
+        247593713,
+        256461049,
+        6715185
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7494276,
+        237513725,
+        7445471,
+        202583694,
+        1690927,
+        19033886,
+        243865663,
+        232335764,
+        6054771,
+        17364624,
+        252735195,
+        10701273,
+        237563143,
+        196184409,
+        1325270,
+        10923861,
+        219302828,
+        248780394,
+        258959201,
+        253510248
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        7445471,
+        243865640,
+        202583694,
+        237563143,
+        7494276,
+        243865663,
+        17364624,
+        252735195,
+        253761979,
+        233033850,
+        237513725,
+        256868426
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252735195,
+        202583694,
+        243865663,
+        7494276,
+        7445471,
+        237563143,
+        243865640,
+        237513725,
+        1690927,
+        258959201,
+        6054771,
+        232335764,
+        17364624,
+        226262182,
+        253761979,
+        253510248,
+        252780839,
+        85504763,
+        196184409,
+        233033850
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 29.10811230004765
+  },
+  "reason_example": {
+    "query_id": "litsearch_436",
+    "query": "Which numerical reasoning paper first published a dataset that considers different types of size of numbers and their representations in arithmetic questions?",
+    "top_results": [
+      {
+        "corpusid": 252735195,
+        "score": 0.920189380645752,
+        "reason": "bm25=1.000; dense=0.867; sub_bm25=1.000; sub_dense=0.902"
+      },
+      {
+        "corpusid": 202583694,
+        "score": 0.9007766246795654,
+        "reason": "bm25=0.839; dense=0.942; sub_bm25=0.684; sub_dense=0.991"
+      },
+      {
+        "corpusid": 243865663,
+        "score": 0.8835399150848389,
+        "reason": "bm25=0.882; dense=0.884; sub_bm25=0.796; sub_dense=1.000"
+      },
+      {
+        "corpusid": 7494276,
+        "score": 0.8809161186218262,
+        "reason": "bm25=0.702; dense=1.000; sub_bm25=0.529; sub_dense=0.889"
+      },
+      {
+        "corpusid": 7445471,
+        "score": 0.8602337837219238,
+        "reason": "bm25=0.720; dense=0.954; sub_bm25=0.395; sub_dense=0.812"
+      }
+    ]
+  }
+}

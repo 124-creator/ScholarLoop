@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_590",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_590",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_590",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_590",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1721,
+      "latency_s": 14.961590599967167
+    },
+    {
+      "query_id": "litsearch_590",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 329,
+      "latency_s": 2.6444367000367492
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_590",
+    "gold": [
+      258741298
+    ],
+    "pool_size": 292,
+    "decomposition": [
+      "integrating black-box LLMs with small specialized language models",
+      "pool of smaller language models guided by black-box LLM",
+      "specialized language model ensemble with black-box LLM"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        8517763,
+        14807899,
+        5906107,
+        219305462,
+        11200749,
+        12416656,
+        2038851,
+        8028944,
+        11897697,
+        259370703,
+        5153623,
+        53639109,
+        2874582,
+        3266239,
+        143326,
+        5137112,
+        7161132,
+        8841728,
+        62435274
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259376531,
+        263152829,
+        247763056,
+        49907212,
+        58004637,
+        258960443,
+        238856959,
+        174802411,
+        231698643,
+        14807899,
+        248987713,
+        241583386,
+        208139568,
+        263830786,
+        258564677,
+        49413369,
+        8640756,
+        264172668,
+        249191952,
+        251648935
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259164815,
+        260899983,
+        260334759,
+        258832427,
+        4049159,
+        21710652,
+        233481097,
+        248779883,
+        260682249,
+        9955187,
+        248368718,
+        252624433,
+        253098969,
+        235097568,
+        247613500,
+        259370830,
+        259212162,
+        900029,
+        14162,
+        245855703
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264172668,
+        259376531,
+        258564677,
+        1515524,
+        14807899,
+        241583386,
+        258378243,
+        259164815,
+        259212162,
+        263152829,
+        263830786,
+        229365694
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263830786,
+        263152829,
+        260334759,
+        259164815,
+        264172668,
+        259212162,
+        260682249,
+        260899983,
+        263610128,
+        259075564,
+        258832427,
+        14807899,
+        261341825,
+        261341914,
+        262825568,
+        261341577,
+        238856959,
+        248299805,
+        258615193,
+        229365694
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 18.949142799945548
+  },
+  "reason_example": {
+    "query_id": "litsearch_590",
+    "query": "Which paper proposes to integrate black-box LLMs with a pool of smaller but specialized language models?",
+    "top_results": [
+      {
+        "corpusid": 263830786,
+        "score": 0.8690290451049805,
+        "reason": "bm25=0.883; dense=0.860; sub_bm25=0.564; sub_dense=0.885"
+      },
+      {
+        "corpusid": 263152829,
+        "score": 0.8656235933303833,
+        "reason": "bm25=0.989; dense=0.784; sub_bm25=1.000; sub_dense=0.810"
+      },
+      {
+        "corpusid": 260334759,
+        "score": 0.854845404624939,
+        "reason": "bm25=0.689; dense=0.965; sub_bm25=0.491; sub_dense=0.988"
+      },
+      {
+        "corpusid": 259164815,
+        "score": 0.8505275845527649,
+        "reason": "bm25=0.626; dense=1.000; sub_bm25=0.628; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264172668,
+        "score": 0.840863823890686,
+        "reason": "bm25=0.855; dense=0.832; sub_bm25=0.552; sub_dense=0.845"
+      }
+    ]
+  }
+}

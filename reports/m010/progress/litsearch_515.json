@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_515",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_515",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_515",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_515",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1021,
+      "latency_s": 5.502323199994862
+    },
+    {
+      "query_id": "litsearch_515",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 338,
+      "latency_s": 2.544991100090556
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_515",
+    "gold": [
+      263830786
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "structured pruning language model billions of parameters",
+      "scaling down large language models using structured pruning",
+      "structured pruning for large-scale language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258685798,
+        211205183,
+        10513825,
+        15518351,
+        14069143,
+        219305462,
+        2375338,
+        7989398,
+        250311509,
+        215415943,
+        17558767,
+        218971966,
+        52154258,
+        207852450,
+        214802016,
+        5153623,
+        7348738,
+        8010515,
+        12405045,
+        207994922
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226262310,
+        257353246,
+        247939339,
+        237485472,
+        250311509,
+        246634950,
+        2973141,
+        234096198,
+        14089312,
+        263830786,
+        254685796,
+        52978527,
+        246430598,
+        7348738,
+        213729382,
+        247922354,
+        235078790,
+        189898449,
+        247447758,
+        162183964
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        893688,
+        204009154,
+        3276484,
+        7348738,
+        259203115,
+        12951248,
+        247741658,
+        263830786,
+        254685796,
+        256827874,
+        11271532,
+        18208128,
+        227905681,
+        9158272,
+        8104571,
+        2973141,
+        239009625,
+        15439171,
+        18055935,
+        246867041
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263830786,
+        204009154,
+        237485472,
+        254685796,
+        3276484,
+        247939339,
+        250311509,
+        2973141,
+        7348738,
+        11271532,
+        893688,
+        15518351
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        204009154,
+        3276484,
+        7348738,
+        893688,
+        263830786,
+        254685796,
+        2973141,
+        237485472,
+        259203115,
+        250311509,
+        247939339,
+        247922354,
+        12951248,
+        226262310,
+        247741658,
+        257985178,
+        256827874,
+        254877227,
+        245855868,
+        11271532
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.411071099922992
+  },
+  "reason_example": {
+    "query_id": "litsearch_515",
+    "query": "Can you find a research paper that discusses using structured pruning techniques to scale down language models, where the original model being pruned has billions of parameters?",
+    "top_results": [
+      {
+        "corpusid": 204009154,
+        "score": 0.9280523061752319,
+        "reason": "bm25=0.845; dense=0.983; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 3276484,
+        "score": 0.9216945171356201,
+        "reason": "bm25=0.835; dense=0.979; sub_bm25=0.631; sub_dense=0.939"
+      },
+      {
+        "corpusid": 7348738,
+        "score": 0.8723477721214294,
+        "reason": "bm25=0.891; dense=0.860; sub_bm25=0.686; sub_dense=0.846"
+      },
+      {
+        "corpusid": 893688,
+        "score": 0.8569473028182983,
+        "reason": "bm25=0.642; dense=1.000; sub_bm25=0.582; sub_dense=0.929"
+      },
+      {
+        "corpusid": 263830786,
+        "score": 0.8464362621307373,
+        "reason": "bm25=0.914; dense=0.802; sub_bm25=1.000; sub_dense=0.896"
+      }
+    ]
+  }
+}

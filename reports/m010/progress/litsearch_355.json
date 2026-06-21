@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_355",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_355",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_355",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_355",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1554,
+      "latency_s": 12.934838299988769
+    },
+    {
+      "query_id": "litsearch_355",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 441,
+      "latency_s": 4.02448329993058
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_355",
+    "gold": [
+      259286910
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "dialogue generation data augmentation semantic space",
+      "one-to-many dialogue augmentation semantic space",
+      "one-to-one dialogue data augmentation semantic space"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16058007,
+        21688943,
+        8880454,
+        2251088,
+        14269795,
+        5536079,
+        1880320,
+        16509032,
+        17765082,
+        811939,
+        17585795,
+        24337225,
+        44090489,
+        4954256,
+        8857864,
+        11524835,
+        15515176,
+        5932962,
+        2421447,
+        258823496
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259286910,
+        49577956,
+        248779925,
+        202779778,
+        236034557,
+        256358906,
+        248780194,
+        245144733,
+        248227429,
+        252819198,
+        252818967,
+        18538074,
+        256194556,
+        248366285,
+        259063822,
+        18165643,
+        248571523,
+        207852875,
+        244346011,
+        244479233
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245144733,
+        8900692,
+        14269795,
+        49577956,
+        226262222,
+        215786013,
+        16213194,
+        259286910,
+        236486257,
+        202779384,
+        259370738,
+        259370822,
+        235390935,
+        14949670,
+        196211466,
+        201657646,
+        249151907,
+        259370637,
+        6302443,
+        221971299
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259286910
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259286910,
+        49577956,
+        245144733,
+        14269795,
+        226262222,
+        259370738,
+        248227429,
+        235458160,
+        221702959,
+        248571523,
+        235358904,
+        236034557,
+        237940600,
+        235390935,
+        221818778,
+        202779778,
+        235248336,
+        221186631,
+        226262397,
+        196211466
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.615945300087333
+  },
+  "reason_example": {
+    "query_id": "litsearch_355",
+    "query": "Find the NLP paper that focuses on dialogue generation and introduces advancements in the augmentation of one-to-many or one-to-one dialogue data by conducting augmentation within the semantic space.",
+    "top_results": [
+      {
+        "corpusid": 259286910,
+        "score": 0.9553672075271606,
+        "reason": "bm25=1.000; dense=0.926; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 49577956,
+        "score": 0.9276583790779114,
+        "reason": "bm25=0.868; dense=0.967; sub_bm25=0.793; sub_dense=0.994"
+      },
+      {
+        "corpusid": 245144733,
+        "score": 0.909041166305542,
+        "reason": "bm25=0.773; dense=1.000; sub_bm25=0.757; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14269795,
+        "score": 0.834139883518219,
+        "reason": "bm25=0.620; dense=0.977; sub_bm25=0.560; sub_dense=0.940"
+      },
+      {
+        "corpusid": 226262222,
+        "score": 0.827319860458374,
+        "reason": "bm25=0.673; dense=0.930; sub_bm25=0.700; sub_dense=0.991"
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_518",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_518",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_518",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_518",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1423,
+      "latency_s": 8.299102000077255
+    },
+    {
+      "query_id": "litsearch_518",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 393,
+      "latency_s": 3.0275225000223145
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_518",
+    "gold": [
+      264306111
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "using pre-trained language model transformers for visual encoding",
+      "LLM transformers encode visual information",
+      "vision language models using pretrained LLM transformers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51879110,
+        17016277,
+        9317139,
+        3063641,
+        2861354,
+        1312573,
+        8463304,
+        195333,
+        2208076,
+        7796573,
+        9787694,
+        14059378,
+        12178716,
+        22918090,
+        243864610,
+        222132852,
+        250390699,
+        6891645,
+        18359398,
+        17106591
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264306111,
+        260440449,
+        263620583,
+        234487197,
+        222134013,
+        249018141,
+        253397675,
+        226262274,
+        264802494,
+        248085462,
+        220768717,
+        2169358,
+        7835559,
+        238407985,
+        31672859,
+        258378243,
+        11027443,
+        237581501,
+        233210153,
+        239016426
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264306111,
+        236460291,
+        237491629,
+        264038763,
+        260440449,
+        222132977,
+        202541078,
+        218502632,
+        257280093,
+        235294249,
+        263620583,
+        257050560,
+        221739041,
+        253510792,
+        238856697,
+        254823436,
+        236924433,
+        235436185,
+        252089779,
+        258212627
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264306111,
+        249018141
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264306111,
+        260440449,
+        263620583,
+        236460291,
+        257280093,
+        235313996,
+        253510792,
+        237491629,
+        227745459,
+        235436185,
+        258426317,
+        252089779,
+        264802494,
+        259375820,
+        252734863,
+        243728757,
+        238856697,
+        234790212,
+        256194594,
+        236924433
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.671955399913713
+  },
+  "reason_example": {
+    "query_id": "litsearch_518",
+    "query": "Is there a paper illustrating that pre-trained transformers from LLMs can be used to encode visual information in a wide range of scenarios?",
+    "top_results": [
+      {
+        "corpusid": 264306111,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 260440449,
+        "score": 0.918584942817688,
+        "reason": "bm25=0.896; dense=0.934; sub_bm25=0.590; sub_dense=0.841"
+      },
+      {
+        "corpusid": 263620583,
+        "score": 0.8900356292724609,
+        "reason": "bm25=0.860; dense=0.910; sub_bm25=0.570; sub_dense=0.919"
+      },
+      {
+        "corpusid": 236460291,
+        "score": 0.8815926313400269,
+        "reason": "bm25=0.735; dense=0.979; sub_bm25=0.797; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257280093,
+        "score": 0.8037538528442383,
+        "reason": "bm25=0.642; dense=0.912; sub_bm25=0.823; sub_dense=0.863"
+      }
+    ]
+  }
+}

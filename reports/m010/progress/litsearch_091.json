@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_091",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_091",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_091",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_091",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 980,
+      "latency_s": 3.7935680999653414
+    },
+    {
+      "query_id": "litsearch_091",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 1.9697416999842972
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_091",
+    "gold": [
+      226976077
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "patronizing language annotated dataset computational linguistics",
+      "condescending language corpus annotation",
+      "patronizing speech dataset NLP"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        44706178,
+        32679052,
+        37225340,
+        11806528,
+        236460248,
+        14008641,
+        64822406,
+        32526624,
+        28841202,
+        18159984,
+        30670514,
+        119309472,
+        239212345,
+        43076624,
+        13400865,
+        23942431,
+        186206301,
+        250390489,
+        231821653,
+        8396538
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226976077,
+        250390489,
+        247778896,
+        250391014,
+        250390602,
+        250390750,
+        250390465,
+        250390735,
+        247318785,
+        250390796,
+        250390546,
+        250390490,
+        250391005,
+        250390589,
+        250141213,
+        250390699,
+        250390722,
+        256460914,
+        250390830,
+        250391042
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250141213,
+        226976077,
+        250390735,
+        250390607,
+        250390465,
+        256460914,
+        685960,
+        258486956,
+        583389,
+        14819943,
+        6174034,
+        244478568,
+        250390602,
+        17644372,
+        3257025,
+        251395478,
+        11573110,
+        15483949,
+        219302511,
+        258959384
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226976077,
+        250390735,
+        250390602,
+        250390489,
+        250141213,
+        250390465,
+        250390830,
+        247778896,
+        250391014
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226976077,
+        250141213,
+        250390735,
+        250390465,
+        250390607,
+        250390602,
+        256460914,
+        247318785,
+        247778896,
+        250390489,
+        247362672,
+        250391014,
+        685960,
+        250390495,
+        250390984,
+        250390722,
+        583389,
+        250391042,
+        174500,
+        250390830
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.050894199986942
+  },
+  "reason_example": {
+    "query_id": "litsearch_091",
+    "query": "Where might I find a dataset annotated specifically for patronizing and condescending language to use in computational linguistics research?",
+    "top_results": [
+      {
+        "corpusid": 226976077,
+        "score": 0.9984545707702637,
+        "reason": "bm25=1.000; dense=0.997; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250141213,
+        "score": 0.9140862226486206,
+        "reason": "bm25=0.785; dense=1.000; sub_bm25=0.812; sub_dense=0.977"
+      },
+      {
+        "corpusid": 250390735,
+        "score": 0.8912067413330078,
+        "reason": "bm25=0.863; dense=0.910; sub_bm25=0.840; sub_dense=0.941"
+      },
+      {
+        "corpusid": 250390465,
+        "score": 0.8774800300598145,
+        "reason": "bm25=0.871; dense=0.882; sub_bm25=0.877; sub_dense=0.973"
+      },
+      {
+        "corpusid": 250390607,
+        "score": 0.8278135657310486,
+        "reason": "bm25=0.737; dense=0.888; sub_bm25=0.764; sub_dense=0.838"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_468",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_468",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_468",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_468",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2203,
+      "latency_s": 15.625108099891804
+    },
+    {
+      "query_id": "litsearch_468",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 503,
+      "latency_s": 3.895928999991156
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_468",
+    "gold": [
+      252873073
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "leveraging dictionaries machine translation language learners low-resource NLP data construction",
+      "using multiple resources dictionaries MT learners for low-resource language NLP",
+      "paper on need for all available resources in low-resource NLP data creation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7468035,
+        554151,
+        249204458,
+        203656646,
+        1680521,
+        14615122,
+        61214793,
+        477882,
+        258486952,
+        15634149,
+        235097443,
+        68153520,
+        159041276,
+        259833836,
+        218974252,
+        216033883,
+        245855866,
+        196174566,
+        258486842,
+        21869081
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258765249,
+        258187606,
+        258486842,
+        234336760,
+        247158789,
+        252873073,
+        241583386,
+        53110354,
+        477882,
+        257921579,
+        221097262,
+        258463916,
+        3302099,
+        52271711,
+        259376815,
+        226290133,
+        22602753,
+        218673522,
+        259833847,
+        235253839
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256460860,
+        252624550,
+        14536586,
+        3411638,
+        46918664,
+        163719,
+        30143730,
+        22835138,
+        219308336,
+        18786150,
+        233324253,
+        235253839,
+        6230113,
+        21720529,
+        19906003,
+        18824729,
+        258212810,
+        15540725,
+        259370570,
+        10934911
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        241583386,
+        258486842,
+        203656646,
+        226290133,
+        235253839,
+        252624550,
+        22602753,
+        14536586,
+        7468035,
+        249204458,
+        259833836,
+        477882
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235253839,
+        252624550,
+        14536586,
+        258212810,
+        30143730,
+        256460860,
+        258486842,
+        3411638,
+        7468035,
+        233324253,
+        52124918,
+        259370570,
+        219308336,
+        22835138,
+        259833851,
+        17418820,
+        5470471,
+        46918664,
+        17419868,
+        163719
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.19592550001107
+  },
+  "reason_example": {
+    "query_id": "litsearch_468",
+    "query": "Which paper highlights the need for leveraging all available resources, including dictionaries, machine translation systems, and language learners, to construct NLP data in low-resource languages?",
+    "top_results": [
+      {
+        "corpusid": 235253839,
+        "score": 0.9083369970321655,
+        "reason": "bm25=0.906; dense=0.910; sub_bm25=0.805; sub_dense=0.919"
+      },
+      {
+        "corpusid": 252624550,
+        "score": 0.9069787859916687,
+        "reason": "bm25=0.785; dense=0.988; sub_bm25=0.856; sub_dense=0.903"
+      },
+      {
+        "corpusid": 14536586,
+        "score": 0.8979394435882568,
+        "reason": "bm25=0.768; dense=0.985; sub_bm25=0.950; sub_dense=0.958"
+      },
+      {
+        "corpusid": 258212810,
+        "score": 0.8954252004623413,
+        "reason": "bm25=0.887; dense=0.901; sub_bm25=1.000; sub_dense=0.750"
+      },
+      {
+        "corpusid": 30143730,
+        "score": 0.8935798406600952,
+        "reason": "bm25=0.847; dense=0.924; sub_bm25=0.680; sub_dense=0.860"
+      }
+    ]
+  }
+}

@@ -1,0 +1,636 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_012",
+  "query": "Can you point me to studies that explore the impact of different data augmentation strategies, such as feature/token/span cutoff or dropout, in the context of contrastive learning for sentence representations?",
+  "criteria": [
+    "contrastive learning sentence representation data augmentation cutoff",
+    "contrastive learning sentence embeddings dropout",
+    "span cutoff contrastive learning sentence representation"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_012.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_012",
+      "corpusid": 237491889,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            82
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Seonghyeon Ye, Jiseon Kim, Alice Oh (2021)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3200655919",
+            "fetched_at": "2026-06-20T00:18:48Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a8646762d8b07f6b7b865fff.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2021.emnlp-main.138; Source: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing; OA: hybrid; Citations: 16",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3200655919",
+            "fetched_at": "2026-06-20T00:18:48Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a8646762d8b07f6b7b865fff.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We introduce EfficientCL, a memory-efficient continual pretraining method that applies contrastive learning with novel data augmentation and curriculum learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            161
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "For data augmentation, we stack two types of operation sequentially: cutoff and PCA jittering.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            162,
+            256
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "For data augmentation, we stack two types of operation sequentially: cutoff and PCA jittering.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            162,
+            256
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "When fine-tuned on GLUE benchmark, our model outperforms baseline models, especially for sentence-level tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            500,
+            610
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "our model outperforms baseline models, especially for sentence-level tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            535,
+            610
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, pretraining a language model from scratch with a huge corpus has high computational costs.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1604,
+            1703
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "For data augmentation, we stack two types of operation sequentially: cutoff and PCA jittering.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            162,
+            256
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1323,
+        "elapsed_s": 6.873380300006829,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_012_237491889.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3200655919",
+        "title": "Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning",
+        "authors": [
+          "Seonghyeon Ye",
+          "Jiseon Kim",
+          "Alice Oh"
+        ],
+        "year": 2021,
+        "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/2021.emnlp-main.138",
+        "oa_status": "hybrid",
+        "citation_count": 16,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:48Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\a8646762d8b07f6b7b865fff.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning",
+          "candidate_title": "Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_012",
+      "corpusid": 258486921,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Measuring the Impact of Data Augmentation Methods for Extremely Low-Resource NMT",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            80
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Annie K. Lamar, Z. Ece Kaya (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4386566342",
+            "fetched_at": "2026-06-20T00:18:50Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\060d9fe4c545fac0963c6d21.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2023.loresmt-1.8; Source: https://doi.org/10.18653/v1/2023.loresmt-1.8; OA: gold; Citations: 7",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4386566342",
+            "fetched_at": "2026-06-20T00:18:50Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\060d9fe4c545fac0963c6d21.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Data augmentation (DA) is a popular strategy to boost performance on neural machine translation tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            102
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Data augmentation (DA) is a popular strategy to boost performance on neural machine translation tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            102
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We demonstrate the utility of this metric by training models for several linguisticallyvaried datasets using the data augmentation methods of back-translation, SwitchOut, and sentence concatenation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            523,
+            721
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Data augmentation (DA) is a popular strategy to boost performance on neural machine translation tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            102
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We demonstrate the utility of this metric by training models for several linguisticallyvaried datasets using the data augmentation methods of back-translation, SwitchOut, and sentence concatenation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            523,
+            721
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, many NMT systems are data-inefficient and are dependent on large amounts of parallel data pairs in order to attain reliable performance, limiting their applicability in low-resource tasks.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1895,
+            2092
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Data augmentation (DA) is a popular strategy to boost performance on neural machine translation tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            102
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 848,
+        "elapsed_s": 1.9588060999521986,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_012_258486921.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4386566342",
+        "title": "Measuring the Impact of Data Augmentation Methods for Extremely Low-Resource NMT",
+        "authors": [
+          "Annie K. Lamar",
+          "Z. Ece Kaya"
+        ],
+        "year": 2023,
+        "venue": "https://doi.org/10.18653/v1/2023.loresmt-1.8",
+        "doi": "10.18653/v1/2023.loresmt-1.8",
+        "oa_status": "gold",
+        "citation_count": 7,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:50Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\060d9fe4c545fac0963c6d21.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Measuring the Impact of Data Augmentation Methods for Extremely Low-Resource NMT",
+          "candidate_title": "Measuring the Impact of Data Augmentation Methods for Extremely Low-Resource NMT",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_012",
+      "corpusid": 248779925,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "On the Impact of Data Augmentation on Downstream Performance in Natural Language Processing",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            91
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Itsuki Okimura, Machel Reid, Makoto Kawano, Yutaka Matsuo (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4285285618",
+            "fetched_at": "2026-06-20T00:18:51Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\ee32754769c53f52c6b8fcc5.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.insights-1.12; Source: https://doi.org/10.18653/v1/2022.insights-1.12; OA: gold; Citations: 14",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4285285618",
+            "fetched_at": "2026-06-20T00:18:51Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\ee32754769c53f52c6b8fcc5.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The reason for this is that within NLP, the impact of proposed data augmentation methods on performance has not been evaluated in a unified manner, and effective data augmentation methods are unclear.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            279,
+            479
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1073,
+        "elapsed_s": 3.6931166000431404,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_012_248779925.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4285285618",
+        "title": "On the Impact of Data Augmentation on Downstream Performance in Natural Language Processing",
+        "authors": [
+          "Itsuki Okimura",
+          "Machel Reid",
+          "Makoto Kawano",
+          "Yutaka Matsuo"
+        ],
+        "year": 2022,
+        "venue": "https://doi.org/10.18653/v1/2022.insights-1.12",
+        "doi": "10.18653/v1/2022.insights-1.12",
+        "oa_status": "gold",
+        "citation_count": 14,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:51Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\ee32754769c53f52c6b8fcc5.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "On the Impact of Data Augmentation on Downstream Performance in Natural Language Processing",
+          "candidate_title": "On the Impact of Data Augmentation on Downstream Performance in Natural Language Processing",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 237491889,
+      "title": "Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning",
+      "cells": [
+        {
+          "criterion": "contrastive learning sentence representation data augmentation cutoff",
+          "addresses": true,
+          "snippet": "We introduce EfficientCL, a memory-efficient continual pretraining method that applies contrastive learning with novel data augmentation and curriculum learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            161
+          ]
+        },
+        {
+          "criterion": "contrastive learning sentence embeddings dropout",
+          "addresses": true,
+          "snippet": "We introduce EfficientCL, a memory-efficient continual pretraining method that applies contrastive learning with novel data augmentation and curriculum learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            161
+          ]
+        },
+        {
+          "criterion": "span cutoff contrastive learning sentence representation",
+          "addresses": true,
+          "snippet": "We introduce EfficientCL, a memory-efficient continual pretraining method that applies contrastive learning with novel data augmentation and curriculum learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            161
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 258486921,
+      "title": "Measuring the Impact of Data Augmentation Methods for Extremely Low-Resource NMT",
+      "cells": [
+        {
+          "criterion": "contrastive learning sentence representation data augmentation cutoff",
+          "addresses": true,
+          "snippet": "Data augmentation (DA) is a popular strategy to boost performance on neural machine translation tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            102
+          ]
+        },
+        {
+          "criterion": "contrastive learning sentence embeddings dropout",
+          "addresses": true,
+          "snippet": "We demonstrate the utility of this metric by training models for several linguisticallyvaried datasets using the data augmentation methods of back-translation, SwitchOut, and sentence concatenation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            523,
+            721
+          ]
+        },
+        {
+          "criterion": "span cutoff contrastive learning sentence representation",
+          "addresses": true,
+          "snippet": "We demonstrate the utility of this metric by training models for several linguisticallyvaried datasets using the data augmentation methods of back-translation, SwitchOut, and sentence concatenation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            523,
+            721
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 248779925,
+      "title": "On the Impact of Data Augmentation on Downstream Performance in Natural Language Processing",
+      "cells": [
+        {
+          "criterion": "contrastive learning sentence representation data augmentation cutoff",
+          "addresses": true,
+          "snippet": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ]
+        },
+        {
+          "criterion": "contrastive learning sentence embeddings dropout",
+          "addresses": true,
+          "snippet": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ]
+        },
+        {
+          "criterion": "span cutoff contrastive learning sentence representation",
+          "addresses": true,
+          "snippet": "With in the broader scope of machine learning, data augmentation is a common strategy to improve generalization and robustness of machine learning models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            154
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      237491889,
+      248779925,
+      258486921
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

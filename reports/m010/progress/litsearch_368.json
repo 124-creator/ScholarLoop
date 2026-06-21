@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_368",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_368",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_368",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_368",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1352,
+      "latency_s": 9.20179239998106
+    },
+    {
+      "query_id": "litsearch_368",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 325,
+      "latency_s": 2.7827965000178665
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_368",
+    "gold": [
+      258436868
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "knowledge distillation vs human annotation cost efficiency",
+      "comparing knowledge distillation and human annotation cost",
+      "cost analysis knowledge distillation human annotation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10595802,
+        13077531,
+        39774871,
+        33414645,
+        19653906,
+        6609459,
+        794942,
+        42994580,
+        17575823,
+        8167107,
+        258765271,
+        12405045,
+        33189508,
+        8621713,
+        3705175,
+        13336402,
+        6785866,
+        8150087,
+        5381395,
+        6300342
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258765271,
+        215238664,
+        226283784,
+        235258277,
+        218502458,
+        11403919,
+        246904453,
+        226284011,
+        17449944,
+        248513007,
+        565463,
+        22032884,
+        15605201,
+        220044838,
+        7086126,
+        239768818,
+        253581567,
+        256390109,
+        237366088,
+        222133007
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258765271,
+        250390701,
+        250390702,
+        526753,
+        235258277,
+        8125776,
+        252368235,
+        256390109,
+        11403919,
+        252991162,
+        18705469,
+        263313957,
+        227231666,
+        237250417,
+        15656809,
+        9220203,
+        237605176,
+        225062027,
+        245425026,
+        248780060
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237366088,
+        235258277,
+        258765271,
+        239768818,
+        246904453,
+        15544275,
+        11403919,
+        19121210,
+        215238664,
+        250390701,
+        22032884,
+        13077531
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258765271,
+        235258277,
+        250390701,
+        250390702,
+        11403919,
+        256390109,
+        218502458,
+        565463,
+        239768818,
+        252991162,
+        15544275,
+        227231666,
+        237366088,
+        252368235,
+        239016109,
+        222133007,
+        237250417,
+        15656809,
+        238857304,
+        252819437
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.209141099941917
+  },
+  "reason_example": {
+    "query_id": "litsearch_368",
+    "query": "Is there a paper comparing knowledge distillation and human annotation in terms of cost efficiency?",
+    "top_results": [
+      {
+        "corpusid": 258765271,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235258277,
+        "score": 0.7882736921310425,
+        "reason": "bm25=0.807; dense=0.776; sub_bm25=0.865; sub_dense=0.955"
+      },
+      {
+        "corpusid": 250390701,
+        "score": 0.7600184082984924,
+        "reason": "bm25=0.657; dense=0.829; sub_bm25=0.824; sub_dense=0.913"
+      },
+      {
+        "corpusid": 250390702,
+        "score": 0.755919337272644,
+        "reason": "bm25=0.685; dense=0.803; sub_bm25=0.671; sub_dense=0.958"
+      },
+      {
+        "corpusid": 11403919,
+        "score": 0.7558753490447998,
+        "reason": "bm25=0.787; dense=0.735; sub_bm25=0.883; sub_dense=0.967"
+      }
+    ]
+  }
+}

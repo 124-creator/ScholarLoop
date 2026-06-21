@@ -1,3 +1,2 @@
-# Lightweight dependencies for the public smoke tests
-numpy
+﻿# Lightweight dependencies for the public smoke tests
 pytest

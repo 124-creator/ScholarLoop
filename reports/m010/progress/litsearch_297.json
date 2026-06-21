@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_297",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_297",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_297",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_297",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1271,
+      "latency_s": 6.8658953999402
+    },
+    {
+      "query_id": "litsearch_297",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 360,
+      "latency_s": 3.105143200024031
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_297",
+    "gold": [
+      244799249
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "knowledge distillation dense retrieval student teacher",
+      "prediction distribution transfer dense retrieval",
+      "enhancing dense retrieval via teacher-student"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38964517,
+        21758,
+        2725045,
+        1047927,
+        32392814,
+        14584850,
+        49565742,
+        18387614,
+        258486963,
+        9988418,
+        250390596,
+        16453936,
+        5871781,
+        9027538,
+        1420479,
+        21022858,
+        8320612,
+        201686118,
+        7326049,
+        14850676
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370551,
+        235720578,
+        234771710,
+        254877181,
+        252780401,
+        245219186,
+        249191769,
+        248780209,
+        2723173,
+        256460933,
+        248562640,
+        255595748,
+        239016109,
+        244909258,
+        256461337,
+        252693220,
+        251564473,
+        237592852,
+        201670719,
+        256461264
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370551,
+        252780401,
+        247450700,
+        248562640,
+        233307448,
+        248987713,
+        235720578,
+        223953532,
+        248562596,
+        2065561,
+        29740950,
+        258960666,
+        227247952,
+        11317625,
+        46939603,
+        258557771,
+        259370633,
+        263866951,
+        17604275,
+        12712634
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235720578,
+        259370551,
+        252780401,
+        254877181
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370551,
+        252780401,
+        235720578,
+        248562640,
+        254877181,
+        248987713,
+        247450700,
+        233307448,
+        227247952,
+        239016109,
+        257913267,
+        234771710,
+        250391099,
+        244909258,
+        252693220,
+        223953532,
+        259370750,
+        7499390,
+        249626454,
+        257038997
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.685174799989909
+  },
+  "reason_example": {
+    "query_id": "litsearch_297",
+    "query": "What are some scholarly articles that explore the enhancement of dense retrieval in student models through the application of prediction distributions from teacher models?",
+    "top_results": [
+      {
+        "corpusid": 259370551,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.837; sub_dense=0.950"
+      },
+      {
+        "corpusid": 252780401,
+        "score": 0.9601670503616333,
+        "reason": "bm25=0.957; dense=0.963; sub_bm25=0.762; sub_dense=0.850"
+      },
+      {
+        "corpusid": 235720578,
+        "score": 0.9394176006317139,
+        "reason": "bm25=0.989; dense=0.906; sub_bm25=1.000; sub_dense=0.957"
+      },
+      {
+        "corpusid": 248562640,
+        "score": 0.9097382426261902,
+        "reason": "bm25=0.890; dense=0.923; sub_bm25=0.955; sub_dense=0.976"
+      },
+      {
+        "corpusid": 254877181,
+        "score": 0.8845342397689819,
+        "reason": "bm25=0.982; dense=0.819; sub_bm25=0.639; sub_dense=0.930"
+      }
+    ]
+  }
+}

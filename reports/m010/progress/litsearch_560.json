@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_560",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_560",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_560",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_560",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 710,
+      "latency_s": 3.132761000073515
+    },
+    {
+      "query_id": "litsearch_560",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 561,
+      "latency_s": 5.360294200014323
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_560",
+    "gold": [
+      261582259
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "cascaded diffusion Markov process first proposed",
+      "novel cascaded diffusion Markov chain",
+      "initial cascade diffusion Markov model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16909656,
+        1519652,
+        7440991,
+        16372558,
+        44706178,
+        5498664,
+        19667393,
+        12082799,
+        3911313,
+        18059389,
+        42297913,
+        237365388,
+        11801961,
+        17002440,
+        10513825,
+        495884,
+        2410236,
+        3929124,
+        8972892,
+        12179283
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250072949,
+        8130657,
+        244908617,
+        1040,
+        254044147,
+        254096040,
+        249626510,
+        256390009,
+        252595881,
+        260091821,
+        247292764,
+        222140788,
+        258833483,
+        257220165,
+        261582259,
+        263672363,
+        261395800,
+        258557287,
+        256846467,
+        259370649
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        495884,
+        249626510,
+        263830943,
+        17263523,
+        263909446,
+        248085573,
+        13300198,
+        5696027,
+        9452248,
+        246863713,
+        247011732,
+        26143700,
+        108306764,
+        258988005,
+        2038068,
+        222125159,
+        250072949,
+        256846836,
+        247292764,
+        5701463
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        1040
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249626510,
+        250072949,
+        263830943,
+        247292764,
+        256390009,
+        5696027,
+        254044147,
+        254096040,
+        222140788,
+        13300198,
+        263909446,
+        257220165,
+        256846467,
+        248085573,
+        495884,
+        9452248,
+        108306764,
+        245131359,
+        247011732,
+        260091821
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.328769300016575
+  },
+  "reason_example": {
+    "query_id": "litsearch_560",
+    "query": "What research first proposed a new kind of cascaded diffusion of a Markov process?",
+    "top_results": [
+      {
+        "corpusid": 249626510,
+        "score": 0.9349566698074341,
+        "reason": "bm25=0.938; dense=0.933; sub_bm25=0.931; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250072949,
+        "score": 0.8675822019577026,
+        "reason": "bm25=1.000; dense=0.779; sub_bm25=0.910; sub_dense=0.888"
+      },
+      {
+        "corpusid": 263830943,
+        "score": 0.8553851842880249,
+        "reason": "bm25=0.830; dense=0.873; sub_bm25=0.955; sub_dense=0.901"
+      },
+      {
+        "corpusid": 247292764,
+        "score": 0.8275474309921265,
+        "reason": "bm25=0.919; dense=0.766; sub_bm25=1.000; sub_dense=0.874"
+      },
+      {
+        "corpusid": 256390009,
+        "score": 0.8246411085128784,
+        "reason": "bm25=0.936; dense=0.750; sub_bm25=0.802; sub_dense=0.750"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_540",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_540",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_540",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_540",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1615,
+      "latency_s": 10.649561999947764
+    },
+    {
+      "query_id": "litsearch_540",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 305,
+      "latency_s": 2.710442000068724
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_540",
+    "gold": [
+      264438909
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "generalized linear model multi-neural spike train data",
+      "GLM spike train analysis multiple neurons",
+      "generalized linear model neural spike trains 1988"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10267911,
+        7597872,
+        10226779,
+        18454652,
+        10517911,
+        233241164,
+        20138082,
+        53093808,
+        202712637,
+        7948161,
+        58740369,
+        215548273,
+        13259257,
+        3664028,
+        53095740,
+        3024142,
+        259075184,
+        67856013,
+        16059892,
+        18076825
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        3338083,
+        208910151,
+        173990671,
+        204749519,
+        263672117,
+        174799037,
+        918796,
+        257050386,
+        209501050,
+        222134075,
+        18853433,
+        232216972,
+        1306065,
+        247613106,
+        10267911,
+        252683860,
+        6508854,
+        259075184,
+        10226779,
+        211988986
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        173990671,
+        245124014,
+        264832900,
+        209501050,
+        257102833,
+        45927246,
+        263672117,
+        42835302,
+        216019748,
+        247446906,
+        1793573,
+        221139554,
+        238407848,
+        246411523,
+        249375359,
+        220835234,
+        267782625,
+        264438909,
+        236460166,
+        252439090
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264438909
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        173990671,
+        209501050,
+        263672117,
+        245124014,
+        264832900,
+        3338083,
+        257102833,
+        1793573,
+        264438909,
+        238407848,
+        204749519,
+        18853433,
+        257050386,
+        221739153,
+        252819005,
+        236460166,
+        256389639,
+        222272028,
+        246411523,
+        252439090
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.462191900005564
+  },
+  "reason_example": {
+    "query_id": "litsearch_540",
+    "query": "What is the first paper that uses the generalized linear model to analyze multi-neural spike train data?",
+    "top_results": [
+      {
+        "corpusid": 173990671,
+        "score": 0.9567388296127319,
+        "reason": "bm25=0.892; dense=1.000; sub_bm25=0.747; sub_dense=1.000"
+      },
+      {
+        "corpusid": 209501050,
+        "score": 0.89961838722229,
+        "reason": "bm25=0.836; dense=0.942; sub_bm25=0.680; sub_dense=0.879"
+      },
+      {
+        "corpusid": 263672117,
+        "score": 0.8949568867683411,
+        "reason": "bm25=0.863; dense=0.916; sub_bm25=0.911; sub_dense=0.930"
+      },
+      {
+        "corpusid": 245124014,
+        "score": 0.8779140710830688,
+        "reason": "bm25=0.716; dense=0.986; sub_bm25=0.593; sub_dense=0.910"
+      },
+      {
+        "corpusid": 264832900,
+        "score": 0.8729637861251831,
+        "reason": "bm25=0.756; dense=0.951; sub_bm25=0.295; sub_dense=0.957"
+      }
+    ]
+  }
+}

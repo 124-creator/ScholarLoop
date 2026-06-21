@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_021",
+  "query": "Can you suggest any literature that explores the idea of training neural networks to translate text passages into related questions?",
+  "criteria": [
+    "neural network training text passage question generation",
+    "sequence-to-sequence model text to question translation",
+    "deep learning question generation from text passages"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_021",
+      "corpusid": 211205183,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            72
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            35,
+            161
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "measure the practical utility of this approach by fine-tuning pre-trained models to answer questions without access to any external context or knowledge",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            187,
+            339
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "fine-tuning pre-trained models to answer questions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            237,
+            287
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "open-domain variants of Natural Questions and WebQuestions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            473,
+            531
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "this approach scales surprisingly well with model size and outperforms models that explicitly look up knowledge on the open-domain variants of Natural Questions and WebQuestions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            354,
+            531
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": ", 2019), and 2) it is possible to retrieve information from the knowledge base using natural language * Equal contribution.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1467,
+            1590
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            35,
+            161
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2113,
+        "elapsed_s": 15.932503100018948,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_021_211205183.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_021",
+      "corpusid": 12164644,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Are you asking the right questions? Teaching Machines to Ask Clarification Questions",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we explore how can we teach machines to ask clarification questions when faced with uncertainty",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            149,
+            244
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "how can we teach machines to ask clarification questions when faced with uncertainty",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            160,
+            244
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we propose two future research directions: a template-based model and a sequence-to-sequence based neural generative model",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            718,
+            840
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We do a preliminary study using data from StackExchange",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            308,
+            363
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "a good question is one whose expected answer is going to be most useful",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            613,
+            684
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "preliminary study",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            316,
+            333
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "we explore how can we teach machines to ask clarification questions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            149,
+            216
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1738,
+        "elapsed_s": 10.178133800043724,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_021_12164644.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_021",
+      "corpusid": 249926985,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Questions Are All You Need to Train a Dense Passage Retriever",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            61
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            143
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Dense retrieval is a central challenge for open-domain tasks, such as Open QA",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            144,
+            221
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "It uses a new passage-retrieval autoencoding scheme, where (1) an input question is used to retrieve a set of evidence passages, and (2) the passages are then used to compute the probability of reconstructing the original question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            486,
+            717
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "only requires access to unpaired inputs and outputs (e.g., questions and potential answer passages)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            385,
+            484
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "ART obtains state-of-the-art results on multiple QA retrieval benchmarks with only generic initialization from a pre-trained language model, removing the need for labeled data and taskspecific losses.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            986,
+            1186
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            143
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "questions and potential answer passages",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            444,
+            483
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1782,
+        "elapsed_s": 10.785737000056542,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_021_249926985.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 211205183,
+      "title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+      "cells": [
+        {
+          "criterion": "neural network training text passage question generation",
+          "addresses": true,
+          "snippet": "It has recently been observed that neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            162
+          ]
+        },
+        {
+          "criterion": "sequence-to-sequence model text to question translation",
+          "addresses": true,
+          "snippet": "It has recently been observed that neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            162
+          ]
+        },
+        {
+          "criterion": "deep learning question generation from text passages",
+          "addresses": true,
+          "snippet": "It has recently been observed that neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            162
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 12164644,
+      "title": "Are you asking the right questions? Teaching Machines to Ask Clarification Questions",
+      "cells": [
+        {
+          "criterion": "neural network training text passage question generation",
+          "addresses": true,
+          "snippet": "Inquiry is fundamental to communication, and machines cannot effectively collaborate with humans unless they can ask questions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            127
+          ]
+        },
+        {
+          "criterion": "sequence-to-sequence model text to question translation",
+          "addresses": true,
+          "snippet": "Inquiry is fundamental to communication, and machines cannot effectively collaborate with humans unless they can ask questions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            127
+          ]
+        },
+        {
+          "criterion": "deep learning question generation from text passages",
+          "addresses": true,
+          "snippet": "Inquiry is fundamental to communication, and machines cannot effectively collaborate with humans unless they can ask questions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            127
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 249926985,
+      "title": "Questions Are All You Need to Train a Dense Passage Retriever",
+      "cells": [
+        {
+          "criterion": "neural network training text passage question generation",
+          "addresses": true,
+          "snippet": "We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            143
+          ]
+        },
+        {
+          "criterion": "sequence-to-sequence model text to question translation",
+          "addresses": true,
+          "snippet": ", questions and potential answer passages).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            442,
+            485
+          ]
+        },
+        {
+          "criterion": "deep learning question generation from text passages",
+          "addresses": true,
+          "snippet": ", questions and potential answer passages).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            442,
+            485
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      12164644,
+      211205183,
+      249926985
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

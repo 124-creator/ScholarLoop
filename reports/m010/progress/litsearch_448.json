@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_448",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_448",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_448",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_448",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1071,
+      "latency_s": 6.375898899976164
+    },
+    {
+      "query_id": "litsearch_448",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 357,
+      "latency_s": 3.1981355999596417
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_448",
+    "gold": [
+      258887946
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "query rewriting expansion conversational search",
+      "first paper combining rewriting expansion reformulation",
+      "query reformulation conversational search rewriting expansion"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2294286,
+        10740890,
+        3247663,
+        18065622,
+        15849128,
+        4306044,
+        15247441,
+        16809711,
+        16937973,
+        27077971,
+        2438100,
+        14095338,
+        18207738,
+        13077531,
+        8064931,
+        258887946,
+        5292642,
+        9830436,
+        10068460,
+        11846872
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258887946,
+        245218563,
+        222290679,
+        14195928,
+        253761982,
+        233296511,
+        259370825,
+        237366244,
+        15387289,
+        16937973,
+        15561830,
+        221703727,
+        254854624,
+        15849128,
+        17672649,
+        248780086,
+        17569849,
+        346591,
+        256460881,
+        6972449
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258887946,
+        221703727,
+        3068831,
+        716983,
+        12779706,
+        259290499,
+        14195928,
+        15849128,
+        2520446,
+        21695225,
+        14284540,
+        44297035,
+        15387289,
+        982854,
+        15009101,
+        16464429,
+        253761982,
+        21706647,
+        234790024,
+        245218563
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258887946,
+        245218563
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258887946,
+        221703727,
+        14195928,
+        245218563,
+        15849128,
+        3068831,
+        253761982,
+        15387289,
+        259290499,
+        2520446,
+        12779706,
+        346591,
+        17569849,
+        259370825,
+        18930050,
+        982854,
+        222290679,
+        248069196,
+        256460881,
+        233296511
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.54496199998539
+  },
+  "reason_example": {
+    "query_id": "litsearch_448",
+    "query": "Which paper first combines rewriting and expansion methods to reformulate a query for conversational search?",
+    "top_results": [
+      {
+        "corpusid": 258887946,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 221703727,
+        "score": 0.789160966873169,
+        "reason": "bm25=0.632; dense=0.894; sub_bm25=0.580; sub_dense=0.745"
+      },
+      {
+        "corpusid": 14195928,
+        "score": 0.7871817350387573,
+        "reason": "bm25=0.684; dense=0.856; sub_bm25=0.878; sub_dense=0.849"
+      },
+      {
+        "corpusid": 245218563,
+        "score": 0.7725930213928223,
+        "reason": "bm25=0.735; dense=0.798; sub_bm25=0.799; sub_dense=0.863"
+      },
+      {
+        "corpusid": 15849128,
+        "score": 0.7600999474525452,
+        "reason": "bm25=0.624; dense=0.851; sub_bm25=0.623; sub_dense=0.712"
+      }
+    ]
+  }
+}

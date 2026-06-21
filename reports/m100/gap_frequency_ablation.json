@@ -1,0 +1,820 @@
+{
+  "schema_version": "m100.gap_frequency_ablation.v1",
+  "status": "implemented",
+  "conclusion": "frequency_is_primary_driver_or_signal_absent",
+  "claim_boundary": "频率配平后空白预测信号减弱或消失；创新主张必须收紧为频率驱动下的候选生成启发。",
+  "honesty_note": "频率消融信号减弱/消失不是停机项；本报告按实测结果收紧或增强主张。",
+  "source": {
+    "m070_results": "reports/m070/results.json",
+    "m070_verified_unchanged": true,
+    "uses_future_only_for_evaluation": true
+  },
+  "config": {
+    "m070_results_path": "reports/m070/results.json",
+    "output_path": "reports/m100/gap_frequency_ablation.json",
+    "seed": 100,
+    "bootstrap_seed": 101,
+    "permutation_seed": 102,
+    "bootstrap_n": 10000,
+    "max_relax_radius": 5,
+    "attempts_per_radius": 200
+  },
+  "m070_original_metrics": {
+    "candidate_fill_rate": 0.108,
+    "baseline_fill_rate": 0.022,
+    "candidate_filled": 54,
+    "baseline_filled": 11,
+    "paired_delta": 0.086,
+    "bootstrap": {
+      "resamples": 10000,
+      "ci95": [
+        0.056,
+        0.116
+      ],
+      "passed": true
+    },
+    "permutation": {
+      "resamples": 10000,
+      "p_one_sided": 9.999000099990002e-05,
+      "passed": true
+    },
+    "passed": true
+  },
+  "frequency_matched_metrics": {
+    "candidate_fill_rate": 0.108,
+    "baseline_fill_rate": 0.306,
+    "candidate_filled": 54,
+    "baseline_filled": 153,
+    "paired_delta": -0.198,
+    "bootstrap": {
+      "resamples": 10000,
+      "ci95": [
+        -0.246,
+        -0.15
+      ],
+      "passed": false
+    },
+    "permutation": {
+      "resamples": 10000,
+      "p_one_sided": 1.0,
+      "passed": false
+    },
+    "passed": false
+  },
+  "matching_quality": {
+    "baseline_count": 500,
+    "candidate_count": 500,
+    "relax_radius_mean": 0.0,
+    "relax_radius_max": 0,
+    "exact_bucket_matches": 500
+  },
+  "slice_counts": {
+    "records": 550348,
+    "past": 455273,
+    "recent": 153133,
+    "future": 95075
+  },
+  "baseline_sample": [
+    {
+      "candidate_index": 0,
+      "concept_a": "object detection",
+      "concept_b": "multi agent",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "few shot",
+        "concept_b": "multi agent"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          11,
+          10
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          11,
+          10
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 2490,
+        "recent_count_a": 1346,
+        "recent_count_b": 1062
+      }
+    },
+    {
+      "candidate_index": 1,
+      "concept_a": "self supervised",
+      "concept_b": "time series",
+      "future_fill_count": 10,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "semi supervised"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          11,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          11,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 3140,
+        "past_count_b": 2195,
+        "recent_count_a": 1803,
+        "recent_count_b": 1013
+      }
+    },
+    {
+      "candidate_index": 2,
+      "concept_a": "self supervised",
+      "concept_b": "multi view",
+      "future_fill_count": 11,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "semantic segmentation"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 3140,
+        "past_count_b": 1285,
+        "recent_count_a": 1803,
+        "recent_count_b": 604
+      }
+    },
+    {
+      "candidate_index": 3,
+      "concept_a": "super resolution",
+      "concept_b": "fine grained",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "semantic segmentation",
+        "concept_b": "anomaly detection"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1433,
+        "past_count_b": 1333,
+        "recent_count_a": 548,
+        "recent_count_b": 540
+      }
+    },
+    {
+      "candidate_index": 4,
+      "concept_a": "object detection",
+      "concept_b": "medical image",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "domain adaptation"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 1103,
+        "recent_count_a": 1346,
+        "recent_count_b": 617
+      }
+    },
+    {
+      "candidate_index": 5,
+      "concept_a": "real time",
+      "concept_b": "pre trained",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "pre training"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 3151,
+        "past_count_b": 1272,
+        "recent_count_a": 1057,
+        "recent_count_b": 818
+      }
+    },
+    {
+      "candidate_index": 6,
+      "concept_a": "self supervised",
+      "concept_b": "pose estimation",
+      "future_fill_count": 3,
+      "matched_to": {
+        "concept_a": "object detection",
+        "concept_b": "question answering"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 3140,
+        "past_count_b": 1436,
+        "recent_count_a": 1803,
+        "recent_count_b": 562
+      }
+    },
+    {
+      "candidate_index": 7,
+      "concept_a": "point cloud",
+      "concept_b": "pre trained",
+      "future_fill_count": 1,
+      "matched_to": {
+        "concept_a": "semantic segmentation",
+        "concept_b": "question answering"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1290,
+        "past_count_b": 1272,
+        "recent_count_a": 648,
+        "recent_count_b": 818
+      }
+    },
+    {
+      "candidate_index": 8,
+      "concept_a": "semi supervised",
+      "concept_b": "multi modal",
+      "future_fill_count": 3,
+      "matched_to": {
+        "concept_a": "time series",
+        "concept_b": "question answering"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2253,
+        "past_count_b": 1393,
+        "recent_count_a": 888,
+        "recent_count_b": 756
+      }
+    },
+    {
+      "candidate_index": 9,
+      "concept_a": "object detection",
+      "concept_b": "pre training",
+      "future_fill_count": 4,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "point cloud"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2973,
+        "past_count_b": 1302,
+        "recent_count_a": 1346,
+        "recent_count_b": 809
+      }
+    },
+    {
+      "candidate_index": 10,
+      "concept_a": "semi supervised",
+      "concept_b": "anomaly detection",
+      "future_fill_count": 7,
+      "matched_to": {
+        "concept_a": "time series",
+        "concept_b": "medical image"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2253,
+        "past_count_b": 1653,
+        "recent_count_a": 888,
+        "recent_count_b": 829
+      }
+    },
+    {
+      "candidate_index": 11,
+      "concept_a": "few shot",
+      "concept_b": "fine grained",
+      "future_fill_count": 5,
+      "matched_to": {
+        "concept_a": "object detection",
+        "concept_b": "image segmentation"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2224,
+        "past_count_b": 1333,
+        "recent_count_a": 1216,
+        "recent_count_b": 540
+      }
+    },
+    {
+      "candidate_index": 12,
+      "concept_a": "question answering",
+      "concept_b": "domain adaptation",
+      "future_fill_count": 1,
+      "matched_to": {
+        "concept_a": "question answering",
+        "concept_b": "image segmentation"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1791,
+        "past_count_b": 2000,
+        "recent_count_a": 712,
+        "recent_count_b": 767
+      }
+    },
+    {
+      "candidate_index": 13,
+      "concept_a": "semantic segmentation",
+      "concept_b": "domain adaptation",
+      "future_fill_count": 16,
+      "matched_to": {
+        "concept_a": "point cloud",
+        "concept_b": "image segmentation"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1956,
+        "past_count_b": 2000,
+        "recent_count_a": 867,
+        "recent_count_b": 767
+      }
+    },
+    {
+      "candidate_index": 14,
+      "concept_a": "multi modal",
+      "concept_b": "super resolution",
+      "future_fill_count": 1,
+      "matched_to": {
+        "concept_a": "anomaly detection",
+        "concept_b": "pose estimation"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1393,
+        "past_count_b": 1433,
+        "recent_count_a": 756,
+        "recent_count_b": 548
+      }
+    },
+    {
+      "candidate_index": 15,
+      "concept_a": "research council",
+      "concept_b": "speech recognition",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "question answering",
+        "concept_b": "pose estimation"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1972,
+        "past_count_b": 1428,
+        "recent_count_a": 524,
+        "recent_count_b": 540
+      }
+    },
+    {
+      "candidate_index": 16,
+      "concept_a": "time series",
+      "concept_b": "research council",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "time series",
+        "concept_b": "pose estimation"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 2195,
+        "past_count_b": 1972,
+        "recent_count_a": 1013,
+        "recent_count_b": 524
+      }
+    },
+    {
+      "candidate_index": 17,
+      "concept_a": "question answering",
+      "concept_b": "fine grained",
+      "future_fill_count": 5,
+      "matched_to": {
+        "concept_a": "image segmentation",
+        "concept_b": "pose estimation"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1791,
+        "past_count_b": 1333,
+        "recent_count_a": 712,
+        "recent_count_b": 540
+      }
+    },
+    {
+      "candidate_index": 18,
+      "concept_a": "pose estimation",
+      "concept_b": "speech recognition",
+      "future_fill_count": 0,
+      "matched_to": {
+        "concept_a": "anomaly detection",
+        "concept_b": "super resolution"
+      },
+      "target_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          10,
+          9
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 1436,
+        "past_count_b": 1428,
+        "recent_count_a": 562,
+        "recent_count_b": 540
+      }
+    },
+    {
+      "candidate_index": 19,
+      "concept_a": "self supervised",
+      "concept_b": "speech recognition",
+      "future_fill_count": 6,
+      "matched_to": {
+        "concept_a": "multi agent",
+        "concept_b": "super resolution"
+      },
+      "target_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "sampled_buckets": {
+        "a": [
+          11,
+          10
+        ],
+        "b": [
+          10,
+          9
+        ]
+      },
+      "relax_radius": 0,
+      "counts": {
+        "past_count_a": 3140,
+        "past_count_b": 1428,
+        "recent_count_a": 1803,
+        "recent_count_b": 540
+      }
+    }
+  ],
+  "elapsed_s": 73.17454900000303
+}

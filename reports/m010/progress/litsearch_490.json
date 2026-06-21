@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_490",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_490",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_490",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_490",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1040,
+      "latency_s": 5.3102241000160575
+    },
+    {
+      "query_id": "litsearch_490",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 549,
+      "latency_s": 4.801129900035448
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_490",
+    "gold": [
+      258461053
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "selective prediction re-attempt low confidence",
+      "enhancing coverage selective classification re-evaluation",
+      "iterative refinement selective prediction system"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6701027,
+        3201381,
+        3911313,
+        263862157,
+        3090899,
+        38406635,
+        2753493,
+        18868491,
+        259376787,
+        2068944,
+        12569456,
+        1451,
+        19401538,
+        885120,
+        246567,
+        2275767,
+        1021605,
+        14145275,
+        5282973,
+        17959703
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258461053,
+        52828932,
+        17913039,
+        258378336,
+        11419428,
+        257102638,
+        227231855,
+        21728300,
+        236477650,
+        14968400,
+        219721462,
+        3090899,
+        46939955,
+        252668614,
+        2388157,
+        254926860,
+        22605062,
+        2855066,
+        9874681,
+        248376815
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258461053,
+        258378336,
+        235328547,
+        256616226,
+        170722491,
+        14462838,
+        244129839,
+        253553811,
+        247778884,
+        18835527,
+        259833441,
+        15873797,
+        1553193,
+        17979800,
+        346591,
+        5595621,
+        28109960,
+        6249291,
+        240354203,
+        947687
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258461053
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258461053,
+        258378336,
+        235328547,
+        256616226,
+        253553811,
+        170722491,
+        14462838,
+        247778884,
+        244129839,
+        247594202,
+        46939955,
+        52828932,
+        17806398,
+        6249291,
+        5595621,
+        17979800,
+        259833441,
+        11419428,
+        225076227,
+        219721462
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.2324924999848
+  },
+  "reason_example": {
+    "query_id": "litsearch_490",
+    "query": "Which paper studies the concept of enhancing the coverage of a selective prediction system by re-attempting the questions on which it was not sufficiently confident.",
+    "top_results": [
+      {
+        "corpusid": 258461053,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.739; sub_dense=0.870"
+      },
+      {
+        "corpusid": 258378336,
+        "score": 0.9140620231628418,
+        "reason": "bm25=0.796; dense=0.993; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235328547,
+        "score": 0.809311032295227,
+        "reason": "bm25=0.584; dense=0.959; sub_bm25=0.157; sub_dense=0.822"
+      },
+      {
+        "corpusid": 256616226,
+        "score": 0.8044067621231079,
+        "reason": "bm25=0.623; dense=0.926; sub_bm25=0.329; sub_dense=0.958"
+      },
+      {
+        "corpusid": 253553811,
+        "score": 0.7964882850646973,
+        "reason": "bm25=0.676; dense=0.877; sub_bm25=0.815; sub_dense=1.000"
+      }
+    ]
+  }
+}

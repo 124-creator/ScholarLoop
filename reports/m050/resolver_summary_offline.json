@@ -1,0 +1,254 @@
+{
+  "schema_version": "m050.resolver_summary.v1",
+  "offline": true,
+  "files": 30,
+  "total_cards": 90,
+  "resolved_cards": 82,
+  "resolved_fields": 164,
+  "manual_fields_preserved": 14,
+  "card_resolution_rate": 0.9111111111111111,
+  "min_title_score": 0.94,
+  "min_token_jaccard": 0.8,
+  "per_file": [
+    {
+      "query_id": "litsearch_000",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_000.json"
+    },
+    {
+      "query_id": "litsearch_001",
+      "cards": 3,
+      "resolved_cards": 1,
+      "resolved_fields": 2,
+      "manual_fields_preserved": 4,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_001.json"
+    },
+    {
+      "query_id": "litsearch_002",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_002.json"
+    },
+    {
+      "query_id": "litsearch_003",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 2,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_003.json"
+    },
+    {
+      "query_id": "litsearch_004",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_004.json"
+    },
+    {
+      "query_id": "litsearch_005",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_005.json"
+    },
+    {
+      "query_id": "litsearch_006",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_006.json"
+    },
+    {
+      "query_id": "litsearch_007",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_007.json"
+    },
+    {
+      "query_id": "litsearch_008",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 2,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_008.json"
+    },
+    {
+      "query_id": "litsearch_009",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_009.json"
+    },
+    {
+      "query_id": "litsearch_010",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_010.json"
+    },
+    {
+      "query_id": "litsearch_011",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_011.json"
+    },
+    {
+      "query_id": "litsearch_012",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_012.json"
+    },
+    {
+      "query_id": "litsearch_013",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_013.json"
+    },
+    {
+      "query_id": "litsearch_014",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_014.json"
+    },
+    {
+      "query_id": "litsearch_015",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_015.json"
+    },
+    {
+      "query_id": "litsearch_016",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 2,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_016.json"
+    },
+    {
+      "query_id": "litsearch_017",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_017.json"
+    },
+    {
+      "query_id": "litsearch_018",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_018.json"
+    },
+    {
+      "query_id": "litsearch_019",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 2,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_019.json"
+    },
+    {
+      "query_id": "litsearch_020",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_020.json"
+    },
+    {
+      "query_id": "litsearch_021",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_021.json"
+    },
+    {
+      "query_id": "litsearch_022",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_022.json"
+    },
+    {
+      "query_id": "litsearch_023",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_023.json"
+    },
+    {
+      "query_id": "litsearch_024",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_024.json"
+    },
+    {
+      "query_id": "litsearch_025",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_025.json"
+    },
+    {
+      "query_id": "litsearch_026",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_026.json"
+    },
+    {
+      "query_id": "litsearch_027",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_027.json"
+    },
+    {
+      "query_id": "litsearch_028",
+      "cards": 3,
+      "resolved_cards": 2,
+      "resolved_fields": 4,
+      "manual_fields_preserved": 2,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_028.json"
+    },
+    {
+      "query_id": "litsearch_029",
+      "cards": 3,
+      "resolved_cards": 3,
+      "resolved_fields": 6,
+      "manual_fields_preserved": 0,
+      "output_path": "reports\\m050\\enriched_replay\\litsearch_029.json"
+    }
+  ]
+}

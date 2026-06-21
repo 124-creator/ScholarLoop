@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_394",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_394",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_394",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_394",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1565,
+      "latency_s": 9.87511679995805
+    },
+    {
+      "query_id": "litsearch_394",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 247,
+      "latency_s": 2.6126912001054734
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_394",
+    "gold": [
+      259203213
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "causal inference finetuning language models",
+      "fine-tuning LLMs with causal methods",
+      "causal effect estimation in language model adaptation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21582009,
+        8752606,
+        51875400,
+        186206208,
+        3906011,
+        10168327,
+        199022672,
+        45897261,
+        235293834,
+        2840902,
+        259370633,
+        263866951,
+        252199592,
+        639945,
+        2184300,
+        252907549,
+        3129121,
+        230799344,
+        129969,
+        3926837
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259129342,
+        52910554,
+        233296222,
+        237491687,
+        218901061,
+        246823215,
+        258378260,
+        1162419,
+        263609006,
+        237439234,
+        244909258,
+        14502761,
+        218487374,
+        256105483,
+        252199592,
+        225066692,
+        255942546,
+        259370886,
+        252683719,
+        249089172
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259129342,
+        256461249,
+        247656360,
+        234741946,
+        18069506,
+        235247884,
+        248780127,
+        202771243,
+        235417439,
+        218470125,
+        252199592,
+        14456180,
+        18132219,
+        238419341,
+        220830688,
+        1683643,
+        235293810,
+        218901061,
+        18966879,
+        29703312
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        244909258,
+        257353639,
+        259129342,
+        252199592,
+        258378260,
+        233296222,
+        52910554,
+        237491687,
+        33932005,
+        1162419,
+        14502761,
+        21582009
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259129342,
+        256461249,
+        52910554,
+        218901061,
+        252199592,
+        14502761,
+        237491687,
+        258378260,
+        1162419,
+        238419341,
+        259370886,
+        252683719,
+        244909258,
+        247656360,
+        15047581,
+        263609006,
+        12134535,
+        260063124,
+        14456180,
+        18132219
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.40005779999774
+  },
+  "reason_example": {
+    "query_id": "litsearch_394",
+    "query": "Is there any paper that combines causal inference and finetuning for language models?",
+    "top_results": [
+      {
+        "corpusid": 259129342,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256461249,
+        "score": 0.8931048512458801,
+        "reason": "bm25=0.767; dense=0.977; sub_bm25=1.000; sub_dense=0.951"
+      },
+      {
+        "corpusid": 52910554,
+        "score": 0.8626700639724731,
+        "reason": "bm25=0.960; dense=0.798; sub_bm25=0.866; sub_dense=0.841"
+      },
+      {
+        "corpusid": 218901061,
+        "score": 0.8463457822799683,
+        "reason": "bm25=0.878; dense=0.825; sub_bm25=0.864; sub_dense=0.785"
+      },
+      {
+        "corpusid": 252199592,
+        "score": 0.8461508750915527,
+        "reason": "bm25=0.843; dense=0.848; sub_bm25=0.699; sub_dense=0.846"
+      }
+    ]
+  }
+}

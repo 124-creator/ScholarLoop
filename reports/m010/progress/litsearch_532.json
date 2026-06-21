@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_532",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_532",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_532",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_532",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 756,
+      "latency_s": 3.408047999953851
+    },
+    {
+      "query_id": "litsearch_532",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 3.191054300055839
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_532",
+    "gold": [
+      263909278
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "theoretical explanation in-context reinforcement learning",
+      "why in-context learning works reinforcement learning theory",
+      "theory of in-context learning for reinforcement learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15057133,
+        29974541,
+        126584,
+        1412569,
+        51985896,
+        6395440,
+        6856962,
+        13395552,
+        16229734,
+        1161892,
+        263609704,
+        2421447,
+        10044222,
+        235732095,
+        252907549,
+        8150087,
+        57373762,
+        14639902,
+        52011783,
+        256274926
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5763832,
+        15057133,
+        264128269,
+        225039786,
+        10044222,
+        231592776,
+        257771709,
+        222291443,
+        253107613,
+        5566545,
+        51883097,
+        253255225,
+        246823215,
+        257913312,
+        63778507,
+        239009555,
+        252968153,
+        27454999,
+        258236460,
+        231847016
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        246823263,
+        258547350,
+        259833782,
+        233181840,
+        253420743,
+        253107613,
+        209832300,
+        211532691,
+        199543783,
+        220041969,
+        60441381,
+        222291443,
+        118696157,
+        211092828,
+        8685592,
+        232233563,
+        239016143,
+        264802502,
+        237303776,
+        3334304
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253107613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        246823263,
+        253107613,
+        264128269,
+        222291443,
+        7782433,
+        199543783,
+        257771709,
+        238419270,
+        242784472,
+        253420743,
+        225039786,
+        253098210,
+        118696157,
+        5763832,
+        253255225,
+        220041969,
+        54458698,
+        3334304,
+        264802502,
+        233181840
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.73717790003866
+  },
+  "reason_example": {
+    "query_id": "litsearch_532",
+    "query": "Is there any paper that theoretically explains why in-context reinforcement learning works?",
+    "top_results": [
+      {
+        "corpusid": 246823263,
+        "score": 0.8900701999664307,
+        "reason": "bm25=0.725; dense=1.000; sub_bm25=0.933; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253107613,
+        "score": 0.8863905072212219,
+        "reason": "bm25=0.879; dense=0.892; sub_bm25=0.948; sub_dense=0.918"
+      },
+      {
+        "corpusid": 264128269,
+        "score": 0.885443389415741,
+        "reason": "bm25=0.956; dense=0.839; sub_bm25=1.000; sub_dense=0.846"
+      },
+      {
+        "corpusid": 222291443,
+        "score": 0.8664499521255493,
+        "reason": "bm25=0.879; dense=0.858; sub_bm25=0.763; sub_dense=0.919"
+      },
+      {
+        "corpusid": 7782433,
+        "score": 0.809602677822113,
+        "reason": "bm25=0.762; dense=0.841; sub_bm25=0.813; sub_dense=0.804"
+      }
+    ]
+  }
+}

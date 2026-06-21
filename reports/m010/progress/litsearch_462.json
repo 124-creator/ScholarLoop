@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_462",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_462",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_462",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_462",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 688,
+      "latency_s": 2.2111880999291316
+    },
+    {
+      "query_id": "litsearch_462",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 735,
+      "latency_s": 7.587503099930473
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_462",
+    "gold": [
+      254877569
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "in-context learning with incorrect labels still achieves high accuracy",
+      "absurd demonstrations maintain LLM reasoning performance",
+      "first paper showing effective in-context learning with random or wrong examples"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        281213,
+        1412569,
+        18489348,
+        11914496,
+        5706166,
+        8621713,
+        21711195,
+        1936997,
+        16285911,
+        362196,
+        18846560,
+        4315960,
+        160187,
+        15548317,
+        17355154,
+        6395440,
+        12807398,
+        5077395,
+        9009430,
+        204885239
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257756989,
+        254877569,
+        252693055,
+        263608822,
+        260350986,
+        252519173,
+        252595921,
+        11104974,
+        253097865,
+        239016717,
+        4315960,
+        52186951,
+        189927896,
+        258987746,
+        237304301,
+        218486778,
+        260682249,
+        261696510,
+        54203451,
+        258558112
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877569,
+        252693237,
+        258832540,
+        234797436,
+        255186100,
+        261696510,
+        253510134,
+        263610128,
+        262084051,
+        249017524,
+        202542407,
+        252735112,
+        252693055,
+        257427208,
+        248986239,
+        636958,
+        263620583,
+        259075832,
+        254853961,
+        258461058
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254877569
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877569,
+        252693055,
+        261696510,
+        248986239,
+        260350986,
+        257756989,
+        257427208,
+        218486778,
+        258558112,
+        252693237,
+        255186100,
+        258378229,
+        263620583,
+        252595921,
+        236478307,
+        254853961,
+        258987746,
+        44109223,
+        252735112,
+        12646830
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.052883600001223
+  },
+  "reason_example": {
+    "query_id": "litsearch_462",
+    "query": "Which paper first shows that it is possible to maintain high LLM reasoning performance with in-context examples that are absurdly wrong?",
+    "top_results": [
+      {
+        "corpusid": 254877569,
+        "score": 0.9830414056777954,
+        "reason": "bm25=0.958; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252693055,
+        "score": 0.9270429611206055,
+        "reason": "bm25=0.924; dense=0.929; sub_bm25=0.568; sub_dense=0.713"
+      },
+      {
+        "corpusid": 261696510,
+        "score": 0.8944442272186279,
+        "reason": "bm25=0.802; dense=0.956; sub_bm25=0.586; sub_dense=0.651"
+      },
+      {
+        "corpusid": 248986239,
+        "score": 0.8580325841903687,
+        "reason": "bm25=0.783; dense=0.908; sub_bm25=0.460; sub_dense=0.805"
+      },
+      {
+        "corpusid": 260350986,
+        "score": 0.8422966003417969,
+        "reason": "bm25=0.880; dense=0.817; sub_bm25=0.679; sub_dense=0.741"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_149",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_149",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_149",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_149",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1791,
+      "latency_s": 15.449886500020511
+    },
+    {
+      "query_id": "litsearch_149",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 326,
+      "latency_s": 3.0609591000247747
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_149",
+    "gold": [
+      221703752
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "Transformer knowledge graph completion",
+      "Transformer-based models for link prediction in knowledge graphs",
+      "Knowledge graph completion using attention mechanisms"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16930771,
+        15605878,
+        247613006,
+        252819154,
+        252819130,
+        15503613,
+        218613661,
+        2000271,
+        12936129,
+        34267047,
+        39654639,
+        208058457,
+        219302828,
+        253180414,
+        9644364,
+        237592949,
+        222272207,
+        235377087,
+        248780238,
+        253098905
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247613006,
+        258947086,
+        237592949,
+        7861345,
+        236317402,
+        51880415,
+        252846362,
+        248780238,
+        252819154,
+        236460348,
+        49215805,
+        252367868,
+        233024733,
+        216867622,
+        256461195,
+        253180414,
+        252683270,
+        263880262,
+        230349190,
+        11743245
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253098905,
+        261341583,
+        238215189,
+        233024733,
+        37453604,
+        16663334,
+        261031179,
+        218487188,
+        207863292,
+        70033909,
+        236477697,
+        53080968,
+        15616277,
+        252683270,
+        46919999,
+        252762171,
+        8201148,
+        140116781,
+        11202498,
+        253018482
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252683270,
+        7557552,
+        237592949,
+        247613006,
+        253098905,
+        233189603,
+        248118886,
+        236317402,
+        253180414,
+        248780238,
+        233024733,
+        16930771
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253098905,
+        233024733,
+        261341583,
+        252683270,
+        236477697,
+        238215189,
+        140116781,
+        7557552,
+        248780238,
+        233189603,
+        235313434,
+        261031179,
+        237592949,
+        253180414,
+        253018482,
+        259376764,
+        236317402,
+        239009915,
+        16826424,
+        218487188
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 19.634461900102906
+  },
+  "reason_example": {
+    "query_id": "litsearch_149",
+    "query": "Could you recommend research papers that investigate employing Transformer-based architectures for completing knowledge graphs?",
+    "top_results": [
+      {
+        "corpusid": 253098905,
+        "score": 0.8674558401107788,
+        "reason": "bm25=0.669; dense=1.000; sub_bm25=0.515; sub_dense=0.905"
+      },
+      {
+        "corpusid": 233024733,
+        "score": 0.8429030179977417,
+        "reason": "bm25=0.775; dense=0.888; sub_bm25=0.533; sub_dense=0.799"
+      },
+      {
+        "corpusid": 261341583,
+        "score": 0.8325484991073608,
+        "reason": "bm25=0.608; dense=0.982; sub_bm25=0.638; sub_dense=0.876"
+      },
+      {
+        "corpusid": 252683270,
+        "score": 0.8231934309005737,
+        "reason": "bm25=0.761; dense=0.865; sub_bm25=0.483; sub_dense=0.718"
+      },
+      {
+        "corpusid": 236477697,
+        "score": 0.7763519287109375,
+        "reason": "bm25=0.633; dense=0.872; sub_bm25=0.389; sub_dense=0.791"
+      }
+    ]
+  }
+}

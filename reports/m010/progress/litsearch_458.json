@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_458",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_458",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_458",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_458",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1521,
+      "latency_s": 10.727883300045505
+    },
+    {
+      "query_id": "litsearch_458",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 443,
+      "latency_s": 4.081331699970178
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_458",
+    "gold": [
+      258960642
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "shared adapter module across layers first proposed",
+      "parameter-efficient fine-tuning shared adapter layers",
+      "adapter module shared across transformer layers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        839014,
+        258960642,
+        243865327,
+        51950856,
+        30963769,
+        241583457,
+        199371687,
+        235309789,
+        11066599,
+        258170518,
+        11617396,
+        2468769,
+        184483809,
+        10216304,
+        3285020,
+        258765269,
+        1356737,
+        53613471,
+        234347350,
+        259376787
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        235309789,
+        248506096,
+        258960642,
+        3285020,
+        229365834,
+        227035216,
+        234741719,
+        253762044,
+        218470182,
+        243865667,
+        235313889,
+        220525782,
+        259376671,
+        249018173,
+        247594451,
+        252367909,
+        235794868,
+        256627195,
+        253265357,
+        235359141
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        246867418,
+        3141413,
+        38191621,
+        5122420,
+        248506096,
+        53366105,
+        4944928,
+        9649143,
+        1862839,
+        110013556,
+        45927246,
+        14478849,
+        34277164,
+        779651,
+        220525782,
+        258960642,
+        30836513,
+        22273514,
+        238531695,
+        235309789
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256461083,
+        235309789,
+        248506096,
+        220525782,
+        253762044,
+        258960642
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248506096,
+        235309789,
+        258960642,
+        246867418,
+        220525782,
+        3285020,
+        1204679,
+        5122420,
+        235313889,
+        256461083,
+        227035216,
+        249018173,
+        38191621,
+        247594451,
+        257079046,
+        253762044,
+        253265357,
+        232035936,
+        3141413,
+        252819459
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.604704200057313
+  },
+  "reason_example": {
+    "query_id": "litsearch_458",
+    "query": "Which paper first proposed shared adapter module across layers?",
+    "top_results": [
+      {
+        "corpusid": 248506096,
+        "score": 0.91795814037323,
+        "reason": "bm25=0.935; dense=0.907; sub_bm25=0.945; sub_dense=0.981"
+      },
+      {
+        "corpusid": 235309789,
+        "score": 0.8606948852539062,
+        "reason": "bm25=1.000; dense=0.768; sub_bm25=1.000; sub_dense=0.878"
+      },
+      {
+        "corpusid": 258960642,
+        "score": 0.8247472643852234,
+        "reason": "bm25=0.874; dense=0.792; sub_bm25=0.871; sub_dense=0.903"
+      },
+      {
+        "corpusid": 246867418,
+        "score": 0.787415623664856,
+        "reason": "bm25=0.469; dense=1.000; sub_bm25=0.542; sub_dense=1.000"
+      },
+      {
+        "corpusid": 220525782,
+        "score": 0.7414031624794006,
+        "reason": "bm25=0.655; dense=0.799; sub_bm25=0.655; sub_dense=0.901"
+      }
+    ]
+  }
+}

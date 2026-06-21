@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_221",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_221",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_221",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_221",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 832,
+      "latency_s": 3.5132954999571666
+    },
+    {
+      "query_id": "litsearch_221",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 296,
+      "latency_s": 2.1185650000115857
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_221",
+    "gold": [
+      253237701
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "initializing language models with pretrained weights from nondiffusion models",
+      "convergence behavior of diffusion losses in language models",
+      "effects of pretrained initialization on diffusion model training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8517763,
+        253762031,
+        3923764,
+        30908728,
+        14122119,
+        248779924,
+        233033383,
+        11637792,
+        33548672,
+        38743106,
+        252763288,
+        252763330,
+        9526061,
+        219305462,
+        2251088,
+        235097675,
+        11200749,
+        21547774,
+        235294015,
+        248780502
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        245502568,
+        260091821,
+        248780502,
+        254044147,
+        258987792,
+        244908617,
+        249626510,
+        210702665,
+        216869396,
+        256390009,
+        252668503,
+        259370794,
+        1556508,
+        226289695,
+        231855409,
+        235097529,
+        248780143,
+        14888512,
+        247011539,
+        11553895
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254044147,
+        253762079,
+        252917661,
+        222140842,
+        247656607,
+        254877112,
+        248665662,
+        249017999,
+        1662042,
+        248780432,
+        258987920,
+        252819190,
+        6855748,
+        243865616,
+        233365297,
+        226283796,
+        253107491,
+        222310161,
+        216869396,
+        245855703
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254044147,
+        252917661,
+        258987792
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254044147,
+        252917661,
+        222140842,
+        249017999,
+        216869396,
+        258987792,
+        254877112,
+        247656607,
+        258762609,
+        229924220,
+        252439131,
+        248780502,
+        8176549,
+        258987920,
+        258378192,
+        243865616,
+        226283796,
+        252780005,
+        215416175,
+        248780432
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 6.975570100010373
+  },
+  "reason_example": {
+    "query_id": "litsearch_221",
+    "query": "Could you suggest research that examines the effects of starting language models with weights from pretrained nondiffusion models on the convergence behavior of diffusion losses?",
+    "top_results": [
+      {
+        "corpusid": 254044147,
+        "score": 0.9767457246780396,
+        "reason": "bm25=0.942; dense=1.000; sub_bm25=1.000; sub_dense=0.978"
+      },
+      {
+        "corpusid": 252917661,
+        "score": 0.8764301538467407,
+        "reason": "bm25=0.731; dense=0.973; sub_bm25=0.868; sub_dense=0.960"
+      },
+      {
+        "corpusid": 222140842,
+        "score": 0.8669106960296631,
+        "reason": "bm25=0.718; dense=0.966; sub_bm25=0.748; sub_dense=0.978"
+      },
+      {
+        "corpusid": 249017999,
+        "score": 0.8587777018547058,
+        "reason": "bm25=0.762; dense=0.923; sub_bm25=0.686; sub_dense=0.834"
+      },
+      {
+        "corpusid": 216869396,
+        "score": 0.8538696765899658,
+        "reason": "bm25=0.852; dense=0.855; sub_bm25=1.000; sub_dense=0.877"
+      }
+    ]
+  }
+}

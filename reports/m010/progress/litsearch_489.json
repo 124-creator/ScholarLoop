@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_489",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_489",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_489",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_489",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 990,
+      "latency_s": 4.739763199933805
+    },
+    {
+      "query_id": "litsearch_489",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 355,
+      "latency_s": 3.3045775999780744
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_489",
+    "gold": [
+      258822815
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "multiple constraint queries retrieval systems",
+      "handling multi-constraint queries in information retrieval",
+      "retrieval systems for conjunctive queries"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3087818,
+        2186770,
+        13867802,
+        9169848,
+        14067737,
+        202594324,
+        16970491,
+        14669758,
+        258887719,
+        6290422,
+        2645484,
+        247158700,
+        199551786,
+        10155686,
+        15185389,
+        257038821,
+        14881317,
+        226254024,
+        10740890,
+        14148825
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258822815,
+        13867802,
+        3087818,
+        14669758,
+        12362348,
+        237347134,
+        248780479,
+        14067737,
+        253628240,
+        234096175,
+        202594324,
+        239016988,
+        9169848,
+        52979524,
+        247594620,
+        6216639,
+        5669460,
+        6910290,
+        208617314,
+        264439509
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264439509,
+        258822815,
+        12362348,
+        2520446,
+        1944690,
+        13867802,
+        250122248,
+        220047976,
+        18053326,
+        7989948,
+        18549358,
+        1518385,
+        838814,
+        12877866,
+        5287880,
+        252819151,
+        11895984,
+        67425046,
+        14071324,
+        13080442
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264439509,
+        258822815
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258822815,
+        13867802,
+        12362348,
+        264439509,
+        14669758,
+        6216639,
+        5887618,
+        2520446,
+        14067737,
+        220047976,
+        14071324,
+        51867104,
+        15185389,
+        6290422,
+        6910290,
+        247594620,
+        237347134,
+        5618937,
+        581537,
+        235422061
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.802434799959883
+  },
+  "reason_example": {
+    "query_id": "litsearch_489",
+    "query": "Which paper studies how current retrieval systems handle queries which contain multiple constraints?",
+    "top_results": [
+      {
+        "corpusid": 258822815,
+        "score": 0.9725555181503296,
+        "reason": "bm25=1.000; dense=0.954; sub_bm25=1.000; sub_dense=0.985"
+      },
+      {
+        "corpusid": 13867802,
+        "score": 0.9305819869041443,
+        "reason": "bm25=0.968; dense=0.906; sub_bm25=0.645; sub_dense=0.926"
+      },
+      {
+        "corpusid": 12362348,
+        "score": 0.9084586501121521,
+        "reason": "bm25=0.855; dense=0.944; sub_bm25=0.902; sub_dense=0.973"
+      },
+      {
+        "corpusid": 264439509,
+        "score": 0.8865903615951538,
+        "reason": "bm25=0.716; dense=1.000; sub_bm25=1.000; sub_dense=0.968"
+      },
+      {
+        "corpusid": 14669758,
+        "score": 0.8385262489318848,
+        "reason": "bm25=0.937; dense=0.773; sub_bm25=0.820; sub_dense=0.711"
+      }
+    ]
+  }
+}

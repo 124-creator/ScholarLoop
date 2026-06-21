@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "report_path": "spike\\x1b-LLM基线与Amin.md",
+  "aggregate": [
+    {
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.02,
+      "F1": 0.0
+    },
+    {
+      "system": "bm25",
+      "P@10": 0.08,
+      "R@20": 0.36,
+      "F1": 0.13
+    },
+    {
+      "system": "embedding_lsa",
+      "P@10": 0.0,
+      "R@20": 0.15,
+      "F1": 0.0
+    },
+    {
+      "system": "single_llm",
+      "P@10": 0.05,
+      "R@20": 0.27,
+      "F1": 0.08,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 40493,
+      "total_latency_s": 146.21951290010475
+    },
+    {
+      "system": "a_min",
+      "P@10": 0.060000000000000005,
+      "R@20": 0.39,
+      "F1": 0.09333333333333334,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2972,
+      "total_latency_s": 25.174726700061
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "hallucinated_or_out_of_pool": 0,
+  "amin_pass_weak_judgement": true
+}

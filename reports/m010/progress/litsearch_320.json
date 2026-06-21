@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_320",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_320",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_320",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_320",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1802,
+      "latency_s": 12.897902199998498
+    },
+    {
+      "query_id": "litsearch_320",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 240,
+      "latency_s": 2.2162346999393776
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_320",
+    "gold": [
+      236034557
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "conversational generation models internet knowledge enhancement",
+      "improving dialogue systems using web knowledge",
+      "retrieval-augmented generation for conversational AI"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1449890,
+        7293586,
+        3920851,
+        249017494,
+        258685798,
+        10724165,
+        37453604,
+        52281610,
+        235358263,
+        6990165,
+        1891955,
+        788835,
+        472478,
+        235097498,
+        5772336,
+        12178716,
+        14339570,
+        5334746,
+        237491743,
+        2870061
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258762811,
+        236034557,
+        788835,
+        174801285,
+        943698,
+        246285807,
+        238353898,
+        258378355,
+        259274843,
+        6990165,
+        20891669,
+        247475975,
+        52281610,
+        237329472,
+        259924559,
+        207847382,
+        260379071,
+        9142609,
+        248524755,
+        259376803
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        260063121,
+        233210701,
+        173990530,
+        218613702,
+        8900692,
+        53218829,
+        253265213,
+        52333947,
+        259289128,
+        214802401,
+        243865401,
+        221971299,
+        248118521,
+        243865216,
+        8700252,
+        259370708,
+        226283429,
+        252819352,
+        257920051,
+        231786305
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        174801285,
+        17810027,
+        247475975,
+        52281610,
+        235097498,
+        259289128,
+        248227301,
+        258378355,
+        260063121,
+        6990165,
+        207847382,
+        258762811
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        260063121,
+        236034557,
+        174801285,
+        259289128,
+        52281610,
+        173990530,
+        247475975,
+        233210701,
+        53218829,
+        17810027,
+        258378355,
+        246285807,
+        8900692,
+        52333947,
+        219401758,
+        207847382,
+        243865216,
+        259370647,
+        251040750,
+        260379071
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.279123500105925
+  },
+  "reason_example": {
+    "query_id": "litsearch_320",
+    "query": "What research has been conducted on enhancing conversational generation models using knowledge sourced from the internet?",
+    "top_results": [
+      {
+        "corpusid": 260063121,
+        "score": 0.9114058613777161,
+        "reason": "bm25=0.779; dense=1.000; sub_bm25=0.571; sub_dense=0.955"
+      },
+      {
+        "corpusid": 236034557,
+        "score": 0.9027535915374756,
+        "reason": "bm25=0.927; dense=0.887; sub_bm25=1.000; sub_dense=0.924"
+      },
+      {
+        "corpusid": 174801285,
+        "score": 0.8794560432434082,
+        "reason": "bm25=0.907; dense=0.861; sub_bm25=0.560; sub_dense=0.840"
+      },
+      {
+        "corpusid": 259289128,
+        "score": 0.862375020980835,
+        "reason": "bm25=0.729; dense=0.951; sub_bm25=0.656; sub_dense=0.929"
+      },
+      {
+        "corpusid": 52281610,
+        "score": 0.8602999448776245,
+        "reason": "bm25=0.855; dense=0.864; sub_bm25=0.702; sub_dense=0.890"
+      }
+    ]
+  }
+}

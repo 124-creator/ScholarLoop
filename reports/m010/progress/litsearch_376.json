@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_376",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_376",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_376",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_376",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 660,
+      "latency_s": 2.3803673000074923
+    },
+    {
+      "query_id": "litsearch_376",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 399,
+      "latency_s": 4.108304800000042
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_376",
+    "gold": [
+      258436686
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "app for Dungeons & Dragons collecting gameplay transcripts health values",
+      "tabletop RPG app data health tracking research paper",
+      "real transcripts from virtual tabletop game health statistics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6626680,
+        1405599,
+        10776665,
+        2338256,
+        2437822,
+        15235418,
+        28632902,
+        44197490,
+        686638,
+        670218,
+        6723570,
+        10496324,
+        18043676,
+        1182312,
+        8807545,
+        10975793,
+        15244472,
+        45897261,
+        18969604,
+        16471491
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258436686,
+        259187562,
+        247741039,
+        252624621,
+        258378343,
+        243865433,
+        10685747,
+        37933255,
+        19001656,
+        233210218,
+        20806800,
+        86716257,
+        232352537,
+        258987457,
+        237492025,
+        220047262,
+        252624738,
+        5814479,
+        11485057,
+        236478290
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252819309,
+        15535947,
+        252624655,
+        6626680,
+        203734629,
+        252624539,
+        5814479,
+        235417027,
+        5480101,
+        258436686,
+        252847512,
+        248512563,
+        218869893,
+        259370766,
+        909778,
+        259137389,
+        225373692,
+        11485057,
+        2029255,
+        37933255
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258436686
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258436686,
+        6626680,
+        5814479,
+        37933255,
+        11485057,
+        252624539,
+        252624655,
+        259187562,
+        15535947,
+        233210218,
+        203734629,
+        2924179,
+        248512563,
+        252624738,
+        16357199,
+        252624621,
+        10685747,
+        5480101,
+        259370766,
+        252847512
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.030611699912697
+  },
+  "reason_example": {
+    "query_id": "litsearch_376",
+    "query": "Is there a paper that uses an app for a popular tabletop game to gather real transcripts of gameplay with concrete values for players' and monsters' health?",
+    "top_results": [
+      {
+        "corpusid": 258436686,
+        "score": 0.9416630268096924,
+        "reason": "bm25=1.000; dense=0.903; sub_bm25=1.000; sub_dense=0.953"
+      },
+      {
+        "corpusid": 6626680,
+        "score": 0.8686501383781433,
+        "reason": "bm25=0.739; dense=0.955; sub_bm25=0.422; sub_dense=0.872"
+      },
+      {
+        "corpusid": 5814479,
+        "score": 0.8646926879882812,
+        "reason": "bm25=0.762; dense=0.933; sub_bm25=0.452; sub_dense=0.828"
+      },
+      {
+        "corpusid": 37933255,
+        "score": 0.8444414138793945,
+        "reason": "bm25=0.795; dense=0.877; sub_bm25=0.473; sub_dense=0.949"
+      },
+      {
+        "corpusid": 11485057,
+        "score": 0.830202579498291,
+        "reason": "bm25=0.756; dense=0.880; sub_bm25=0.498; sub_dense=0.927"
+      }
+    ]
+  }
+}

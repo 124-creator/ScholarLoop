@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_282",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_282",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_282",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_282",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1300,
+      "latency_s": 6.805951200076379
+    },
+    {
+      "query_id": "litsearch_282",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 218,
+      "latency_s": 1.9263997999951243
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_282",
+    "gold": [
+      234681504
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "dataset summarization conversational dialogues",
+      "comprehensive dialogue summarization dataset",
+      "broad-spectrum conversation summarization corpus"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        247447718,
+        9830436,
+        3926047,
+        7440991,
+        119309472,
+        252624485,
+        17934328,
+        6170866,
+        13463039,
+        2535099,
+        12101738,
+        18792136,
+        235212591,
+        17931477,
+        258967690,
+        18803813,
+        250150526,
+        14206097,
+        15218055,
+        13392034
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        218487043,
+        250150526,
+        252433181,
+        198348613,
+        259376780,
+        52932143,
+        258947377,
+        224706438,
+        202237637,
+        258762811,
+        21729890,
+        256461043,
+        248496938,
+        1559412,
+        248780080,
+        250390613,
+        252818918,
+        236318502,
+        253447251,
+        216642138
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258378335,
+        241583667,
+        13226783,
+        208010268,
+        224803222,
+        233295991,
+        433745,
+        232185439,
+        252818999,
+        222133028,
+        234681504,
+        52897360,
+        259370717,
+        34703679,
+        235359080,
+        14129605,
+        237353191,
+        248779962,
+        830109,
+        14639627
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        241583667,
+        14639627,
+        253447251,
+        13463039
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        241583667,
+        259376780,
+        224706438,
+        222133028,
+        250150526,
+        218487043,
+        52897360,
+        198348613,
+        14639627,
+        52932143,
+        254877347,
+        208010268,
+        250210913,
+        252818918,
+        243865218,
+        258833159,
+        263609485,
+        248496938,
+        215548215,
+        252070518
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.36309760005679
+  },
+  "reason_example": {
+    "query_id": "litsearch_282",
+    "query": "Is there a comprehensive dataset available for summarizing broad-spectrum conversational dialogues?",
+    "top_results": [
+      {
+        "corpusid": 241583667,
+        "score": 0.8707171678543091,
+        "reason": "bm25=0.738; dense=0.959; sub_bm25=0.806; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259376780,
+        "score": 0.8351600170135498,
+        "reason": "bm25=0.869; dense=0.812; sub_bm25=1.000; sub_dense=0.793"
+      },
+      {
+        "corpusid": 224706438,
+        "score": 0.8300855159759521,
+        "reason": "bm25=0.864; dense=0.807; sub_bm25=0.855; sub_dense=0.793"
+      },
+      {
+        "corpusid": 222133028,
+        "score": 0.8067758083343506,
+        "reason": "bm25=0.667; dense=0.900; sub_bm25=0.745; sub_dense=0.912"
+      },
+      {
+        "corpusid": 250150526,
+        "score": 0.800812840461731,
+        "reason": "bm25=0.927; dense=0.716; sub_bm25=0.926; sub_dense=0.669"
+      }
+    ]
+  }
+}

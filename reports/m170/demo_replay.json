@@ -1,0 +1,27 @@
+{
+  "schema_version": "m170.demo_replay.v1",
+  "checked_at_utc": "2026-06-21T08:02:36.160856+00:00",
+  "status": "PASS",
+  "studio_fidelity": {
+    "status": "PASS",
+    "span_mismatch_count": 0,
+    "baseline_mismatch_count": 0,
+    "trail_fabrication": 0
+  },
+  "m120_span": {
+    "status": "PASS",
+    "mismatch_count": 0
+  },
+  "m120_trail": {
+    "status": "PASS",
+    "fabrication": 0
+  },
+  "graph_determinism": {
+    "status": "PASS",
+    "svg_byte_equal": true
+  },
+  "m080_verify_replay": {
+    "status": "PASS",
+    "path": "reports/m170/m080_verify_replay/fidelity_audit.json"
+  }
+}

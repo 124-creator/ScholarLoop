@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_358",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_358",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_358",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_358",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1549,
+      "latency_s": 10.583714399952441
+    },
+    {
+      "query_id": "litsearch_358",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 221,
+      "latency_s": 2.50079080008436
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_358",
+    "gold": [
+      259370694
+    ],
+    "pool_size": 228,
+    "decomposition": [
+      "personalized news headline generation techniques",
+      "impact of personalized headlines on reader engagement",
+      "optimizing news headlines for reader attraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259376685,
+        3120642,
+        53222920,
+        248182532,
+        27322753,
+        174798262,
+        2591089,
+        16771067,
+        51887970,
+        21732255,
+        15569175,
+        13742826,
+        196186167,
+        259370694,
+        27494062,
+        227905956,
+        6634530,
+        3157058,
+        211043879,
+        14408629
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370694,
+        259376685,
+        215415963,
+        258378338,
+        27322753,
+        53083146,
+        398,
+        235294032,
+        238857348,
+        174800714,
+        208192645,
+        18166512,
+        21732255,
+        214802410,
+        2591089,
+        9896657,
+        8788995,
+        2941806,
+        252819351,
+        9701937
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370694,
+        9701937,
+        253802651,
+        26905605,
+        10119966,
+        398,
+        258378276,
+        253384019,
+        1114511,
+        5737916,
+        235294032,
+        27322753,
+        52917952,
+        53083146,
+        17323310,
+        2054513,
+        1679303,
+        259376685,
+        18871276,
+        196186167
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        53083146,
+        259370694,
+        398,
+        215415963,
+        258378338,
+        253802651,
+        259376685,
+        27322753,
+        53222920,
+        3120642,
+        2591089,
+        174800714
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370694,
+        259376685,
+        215415963,
+        9701937,
+        398,
+        253802651,
+        27322753,
+        53083146,
+        235294032,
+        258378338,
+        174800714,
+        10119966,
+        214802410,
+        52009825,
+        218974437,
+        252819351,
+        196186167,
+        18166512,
+        53222920,
+        238857348
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.105243399972096
+  },
+  "reason_example": {
+    "query_id": "litsearch_358",
+    "query": "How to better attract readers to news articles by generating personalized headlines?",
+    "top_results": [
+      {
+        "corpusid": 259370694,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259376685,
+        "score": 0.8318686485290527,
+        "reason": "bm25=0.953; dense=0.751; sub_bm25=0.909; sub_dense=0.849"
+      },
+      {
+        "corpusid": 215415963,
+        "score": 0.7725979089736938,
+        "reason": "bm25=0.839; dense=0.728; sub_bm25=0.855; sub_dense=0.799"
+      },
+      {
+        "corpusid": 9701937,
+        "score": 0.7648724913597107,
+        "reason": "bm25=0.601; dense=0.874; sub_bm25=0.387; sub_dense=0.954"
+      },
+      {
+        "corpusid": 398,
+        "score": 0.762715220451355,
+        "reason": "bm25=0.691; dense=0.811; sub_bm25=0.742; sub_dense=0.944"
+      }
+    ]
+  }
+}

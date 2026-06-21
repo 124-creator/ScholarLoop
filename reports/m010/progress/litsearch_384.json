@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_384",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_384",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_384",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_384",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 726,
+      "latency_s": 3.2281273999251425
+    },
+    {
+      "query_id": "litsearch_384",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 242,
+      "latency_s": 2.577601799974218
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_384",
+    "gold": [
+      258947336
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "minimally-contrasting social situations dataset",
+      "social situations different behavior appropriateness dataset",
+      "contrasting scenarios decision behavior norms dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252907549,
+        1412569,
+        142368,
+        748386,
+        18252135,
+        9370589,
+        5494577,
+        218487374,
+        6552710,
+        51990022,
+        6609459,
+        252819355,
+        126584,
+        52010793,
+        9330805,
+        29974541,
+        2287804,
+        6543834,
+        2147770,
+        16295757
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        195584474,
+        248512563,
+        7228488,
+        11916483,
+        262356072,
+        2395934,
+        128296356,
+        225103376,
+        2684375,
+        207853290,
+        5959218,
+        6552710,
+        51990022,
+        241583698,
+        10356460,
+        8277151,
+        18958973,
+        8676933,
+        59553561,
+        195808
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251643460,
+        258378215,
+        233189561,
+        256231532,
+        241583456,
+        34363067,
+        252819417,
+        8926220,
+        258486901,
+        15373458,
+        253116635,
+        231709784,
+        248512563,
+        256461177,
+        17993065,
+        10042186,
+        252460317,
+        252619979,
+        15282351,
+        19653448
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        128296356,
+        253116635,
+        248512563,
+        251643460,
+        7228488,
+        225103376,
+        9370589,
+        11916483,
+        262356072,
+        218487374,
+        195584474,
+        51990022
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248512563,
+        258378215,
+        251643460,
+        253116635,
+        252819417,
+        256231532,
+        20243833,
+        27719343,
+        34363067,
+        259252584,
+        218487374,
+        225103376,
+        128296356,
+        51878825,
+        11916483,
+        262356072,
+        241583456,
+        259360414,
+        1058073,
+        258486901
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 6.919876400032081
+  },
+  "reason_example": {
+    "query_id": "litsearch_384",
+    "query": "Is there any dataset that contains minimally-contrasting social situations that lead to different decisions about which behaviors are appropriate in that situation?",
+    "top_results": [
+      {
+        "corpusid": 248512563,
+        "score": 0.8590211868286133,
+        "reason": "bm25=0.961; dense=0.791; sub_bm25=0.827; sub_dense=0.874"
+      },
+      {
+        "corpusid": 258378215,
+        "score": 0.8207945823669434,
+        "reason": "bm25=0.756; dense=0.864; sub_bm25=0.769; sub_dense=0.987"
+      },
+      {
+        "corpusid": 251643460,
+        "score": 0.8177666664123535,
+        "reason": "bm25=0.544; dense=1.000; sub_bm25=0.815; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253116635,
+        "score": 0.7961159944534302,
+        "reason": "bm25=0.790; dense=0.800; sub_bm25=0.802; sub_dense=0.942"
+      },
+      {
+        "corpusid": 252819417,
+        "score": 0.7954679727554321,
+        "reason": "bm25=0.759; dense=0.820; sub_bm25=0.899; sub_dense=1.000"
+      }
+    ]
+  }
+}

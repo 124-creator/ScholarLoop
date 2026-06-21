@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_138",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_138",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_138",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_138",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1080,
+      "latency_s": 5.136079300078563
+    },
+    {
+      "query_id": "litsearch_138",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 384,
+      "latency_s": 2.802491799928248
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_138",
+    "gold": [
+      235097242
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "neural network fact memory component language modeling",
+      "incorporating external memory into language models without retraining",
+      "fact memory augmentation for language models no fine-tuning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        211205183,
+        18913987,
+        17728778,
+        258765297,
+        1737513,
+        51876536,
+        1185652,
+        45438237,
+        53216170,
+        213729382,
+        235482401,
+        236179527,
+        258959471,
+        85464175,
+        254247079,
+        18021407,
+        239735505,
+        252819233,
+        836219,
+        53023292
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234096198,
+        213729382,
+        235097242,
+        247026123,
+        216641845,
+        236912915,
+        238226736,
+        1987772,
+        233481638,
+        2742513,
+        264306063,
+        18913987,
+        233289412,
+        258765297,
+        247476419,
+        226283911,
+        211205183,
+        17728778,
+        259376601,
+        220045413
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235097242,
+        54660213,
+        252819027,
+        222141054,
+        44111606,
+        259376711,
+        8693672,
+        257921894,
+        227230646,
+        226965048,
+        233289412,
+        11185579,
+        250150808,
+        254877603,
+        250425903,
+        219531164,
+        2617281,
+        257279790,
+        254247079,
+        14915449
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097242,
+        258959471,
+        233289412,
+        254247079
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235097242,
+        233289412,
+        8693672,
+        14715110,
+        238226736,
+        258437155,
+        254247079,
+        13624075,
+        209475822,
+        220045413,
+        239049989,
+        53158404,
+        222208562,
+        264306063,
+        264172174,
+        3579956,
+        211205183,
+        202763744,
+        253498917,
+        256461013
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.47239070001524
+  },
+  "reason_example": {
+    "query_id": "litsearch_138",
+    "query": "Could you recommend a study that investigates incorporating a fact memory component into neural networks to improve language modeling activities without requiring retraining or fine-tuning?",
+    "top_results": [
+      {
+        "corpusid": 235097242,
+        "score": 0.9775819182395935,
+        "reason": "bm25=0.944; dense=1.000; sub_bm25=0.964; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233289412,
+        "score": 0.8495155572891235,
+        "reason": "bm25=0.764; dense=0.907; sub_bm25=0.708; sub_dense=0.916"
+      },
+      {
+        "corpusid": 8693672,
+        "score": 0.8013043999671936,
+        "reason": "bm25=0.638; dense=0.910; sub_bm25=0.882; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14715110,
+        "score": 0.7937121987342834,
+        "reason": "bm25=0.679; dense=0.870; sub_bm25=0.880; sub_dense=0.845"
+      },
+      {
+        "corpusid": 238226736,
+        "score": 0.7936141490936279,
+        "reason": "bm25=0.794; dense=0.793; sub_bm25=0.742; sub_dense=0.780"
+      }
+    ]
+  }
+}

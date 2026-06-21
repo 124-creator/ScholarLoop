@@ -1,0 +1,646 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_029",
+  "query": "Could you point me to studies that discuss the development of open information extraction systems with lexical and syntactic constraints to ensure the extraction is coherent and informative?",
+  "criteria": [
+    "open information extraction lexical syntactic constraints coherent extraction",
+    "development open information extraction systems lexical constraints informative",
+    "syntactic constraints open IE coherence informativeness"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_029.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 10318045,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Identifying Relations for Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            53
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Anthony Fader, Stephen Soderland, Oren Etzioni (2011)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2167187514",
+            "fetched_at": "2026-06-20T00:20:15Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a495aebe83ee7e5a9df00678.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.220.8889; OA: closed; Citations: 1152",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2167187514",
+            "fetched_at": "2026-06-20T00:20:15Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a495aebe83ee7e5a9df00678.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we introduce two simple syntactic and lexical constraints on binary relations expressed by verbs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            288,
+            385
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions. To overcome these problems, we introduce two simple syntactic and lexical constraints on binary relations expressed by verbs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            385
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We implemented the constraints in the REVERB Open IE system",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            386,
+            445
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "massive corpora",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            75,
+            90
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            259
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The paper concludes with a detailed analysis of REVERB's errors, suggesting directions for future work.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            694,
+            797
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            259
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2020,
+        "elapsed_s": 12.419000699999742,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_10318045.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2167187514",
+        "title": "Identifying Relations for Open Information Extraction",
+        "authors": [
+          "Anthony Fader",
+          "Stephen Soderland",
+          "Oren Etzioni"
+        ],
+        "year": 2011,
+        "venue": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.220.8889",
+        "doi": "",
+        "oa_status": "closed",
+        "citation_count": 1152,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:15Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\a495aebe83ee7e5a9df00678.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Identifying Relations for Open Information Extraction",
+          "candidate_title": "Identifying Relations for Open Information Extraction",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 49215220,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Survey on Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            39
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Christina Niklaus, Matthias Cetto, André Freitas, Siegfried Handschuh (2018)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2808121837",
+            "fetched_at": "2026-06-20T00:20:17Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\26cb2586c0f3f3f3c32024e3.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.1806.05599; Source: Research Explorer (The University of Manchester); OA: green; Citations: 9",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2808121837",
+            "fetched_at": "2026-06-20T00:20:17Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\26cb2586c0f3f3f3c32024e3.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We present the major challenges that such systems face, show the evolution of the suggested approaches over time and depict the specific issues they address.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            291
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We present the major challenges that such systems face, show the evolution of the suggested approaches over time and depict the specific issues they address.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            291
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1064,
+        "elapsed_s": 5.169807799975388,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_49215220.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2808121837",
+        "title": "A Survey on Open Information Extraction",
+        "authors": [
+          "Christina Niklaus",
+          "Matthias Cetto",
+          "André Freitas",
+          "Siegfried Handschuh"
+        ],
+        "year": 2018,
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": "10.48550/arxiv.1806.05599",
+        "oa_status": "green",
+        "citation_count": 9,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:17Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\26cb2586c0f3f3f3c32024e3.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "A Survey on Open Information Extraction",
+          "candidate_title": "A Survey on Open Information Extraction",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 52811129,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            65
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "William Léchelle, Fabrizio Gotti, Phillippe Langlais (2019)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2890045624",
+            "fetched_at": "2026-06-20T00:20:21Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\29060ad753c471696e1ec3ba.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/w19-4002; Source: https://doi.org/10.18653/v1/w19-4002; OA: gold; Citations: 2",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2890045624",
+            "fetched_at": "2026-06-20T00:20:21Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\29060ad753c471696e1ec3ba.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "A promising method is that explored by Mishra et al.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            5436,
+            5488
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Among seven compared extractors, we find the MinIE system to perform best.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            611,
+            685
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We produce our annotation guidelines specifying what is correct to extract and what is not.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            306,
+            397
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1023,
+        "elapsed_s": 4.345166199957021,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_52811129.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2890045624",
+        "title": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+        "authors": [
+          "William Léchelle",
+          "Fabrizio Gotti",
+          "Phillippe Langlais"
+        ],
+        "year": 2019,
+        "venue": "https://doi.org/10.18653/v1/w19-4002",
+        "doi": "10.18653/v1/w19-4002",
+        "oa_status": "gold",
+        "citation_count": 2,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:21Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\29060ad753c471696e1ec3ba.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+          "candidate_title": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 10318045,
+      "title": "Identifying Relations for Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 49215220,
+      "title": "A Survey on Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 52811129,
+      "title": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      10318045,
+      49215220,
+      52811129
+    ],
+    "edges": [
+      {
+        "source": 49215220,
+        "target": 10318045
+      },
+      {
+        "source": 52811129,
+        "target": 10318045
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

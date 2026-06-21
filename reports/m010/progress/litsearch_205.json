@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_205",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_205",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_205",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_205",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1359,
+      "latency_s": 7.959801199962385
+    },
+    {
+      "query_id": "litsearch_205",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 228,
+      "latency_s": 1.5283525999402627
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_205",
+    "gold": [
+      235097662
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "retrieval augmented conversational search",
+      "conversational response ranking",
+      "retrieve and rank in conversational search"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17555240,
+        2294286,
+        47215776,
+        195345381,
+        245131173,
+        127756,
+        15908485,
+        1136959,
+        16806189,
+        2248510,
+        16773647,
+        45694917,
+        59848390,
+        261341902,
+        14224863,
+        26321333,
+        10370220,
+        12386976,
+        14431795,
+        18762115
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256460881,
+        231582969,
+        245131173,
+        233296511,
+        261768583,
+        11805606,
+        243865375,
+        195345381,
+        207853111,
+        246285807,
+        7287895,
+        237490882,
+        241583806,
+        118674834,
+        247547046,
+        644194,
+        245218563,
+        259370765,
+        216562635,
+        207869708
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245131173,
+        17163745,
+        237940453,
+        174798391,
+        256460881,
+        245218563,
+        34834757,
+        259370822,
+        252819028,
+        233296511,
+        259370797,
+        236460317,
+        252873036,
+        12822295,
+        52281331,
+        15009101,
+        3329936,
+        252847541,
+        258887946,
+        247693669
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231582969,
+        195345381,
+        11805606,
+        261768583,
+        245131173,
+        256460881,
+        233296511,
+        245218563
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256460881,
+        245131173,
+        233296511,
+        231582969,
+        11805606,
+        245218563,
+        12822295,
+        261768583,
+        246285807,
+        216562635,
+        258887946,
+        196178045,
+        237490882,
+        118674834,
+        236460317,
+        245218415,
+        52281331,
+        241583806,
+        195345381,
+        238259221
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.257597899995744
+  },
+  "reason_example": {
+    "query_id": "litsearch_205",
+    "query": "Could you suggest papers that tackle conversational search by using retrieval and conversational response ranking?",
+    "top_results": [
+      {
+        "corpusid": 256460881,
+        "score": 0.9781473875045776,
+        "reason": "bm25=1.000; dense=0.964; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 245131173,
+        "score": 0.9738047122955322,
+        "reason": "bm25=0.935; dense=1.000; sub_bm25=0.796; sub_dense=0.983"
+      },
+      {
+        "corpusid": 233296511,
+        "score": 0.9255549907684326,
+        "reason": "bm25=0.887; dense=0.951; sub_bm25=0.916; sub_dense=0.880"
+      },
+      {
+        "corpusid": 231582969,
+        "score": 0.9096246957778931,
+        "reason": "bm25=0.953; dense=0.881; sub_bm25=0.872; sub_dense=0.984"
+      },
+      {
+        "corpusid": 11805606,
+        "score": 0.8713638782501221,
+        "reason": "bm25=0.827; dense=0.901; sub_bm25=0.828; sub_dense=1.000"
+      }
+    ]
+  }
+}

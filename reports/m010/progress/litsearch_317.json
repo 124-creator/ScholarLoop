@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_317",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_317",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_317",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_317",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 957,
+      "latency_s": 4.9490297000156716
+    },
+    {
+      "query_id": "litsearch_317",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.342781199957244
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_317",
+    "gold": [
+      235422047
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "contrastive learning radiology report generation",
+      "contrastive methods distinguishing normal abnormal medical images",
+      "contrastive techniques for radiology report abnormality detection"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21547774,
+        2251088,
+        2290666,
+        3920851,
+        14478849,
+        258685798,
+        33112883,
+        46057261,
+        1843005,
+        14470771,
+        16584852,
+        5231912,
+        33548672,
+        252763288,
+        252763330,
+        5154017,
+        7567116,
+        16133005,
+        18123232,
+        29580111
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235422047,
+        252819369,
+        236477655,
+        236460168,
+        252763316,
+        259370813,
+        247476265,
+        32972697,
+        226222210,
+        252818921,
+        29580111,
+        1786290,
+        258486915,
+        2202507,
+        62159671,
+        369772,
+        250390962,
+        2290666,
+        1829980,
+        259076439
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253553576,
+        259376752,
+        252819369,
+        235422047,
+        196199713,
+        1786290,
+        258378281,
+        247922414,
+        21338790,
+        226222210,
+        259138298,
+        259376911,
+        14838976,
+        253762055,
+        259370813,
+        1829980,
+        18522417,
+        264038744,
+        5360024,
+        258557717
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235422047,
+        252819369
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235422047,
+        252819369,
+        259376752,
+        253553576,
+        1786290,
+        226222210,
+        259370813,
+        236477655,
+        247476265,
+        258378281,
+        1829980,
+        253762055,
+        18522417,
+        259138298,
+        247922414,
+        236460168,
+        21731016,
+        258486915,
+        196199713,
+        258557717
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.228175400057808
+  },
+  "reason_example": {
+    "query_id": "litsearch_317",
+    "query": "What research has been conducted on applying contrastive techniques to distinguish normal from abnormal imagery for the creation of radiology reports?",
+    "top_results": [
+      {
+        "corpusid": 235422047,
+        "score": 0.9671676158905029,
+        "reason": "bm25=1.000; dense=0.945; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252819369,
+        "score": 0.9469449520111084,
+        "reason": "bm25=0.916; dense=0.967; sub_bm25=0.955; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259376752,
+        "score": 0.858912467956543,
+        "reason": "bm25=0.662; dense=0.990; sub_bm25=0.818; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253553576,
+        "score": 0.8442867398262024,
+        "reason": "bm25=0.611; dense=1.000; sub_bm25=0.748; sub_dense=0.960"
+      },
+      {
+        "corpusid": 1786290,
+        "score": 0.8160463571548462,
+        "reason": "bm25=0.736; dense=0.869; sub_bm25=0.594; sub_dense=0.825"
+      }
+    ]
+  }
+}

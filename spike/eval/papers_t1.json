@@ -1,0 +1,678 @@
+[
+  {
+    "corpusId": 218487034,
+    "paperId": "dbeeca8466e0c177ec67c60d529899232415ca87",
+    "title": "On Faithfulness and Factuality in Abstractive Summarization",
+    "abstract": "It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation. In this paper we have analyzed limitations of these models for abstractive document summarization and found that these models are highly prone to hallucinate content that is unfaithful to the input document. We conducted a large scale human evaluation of several neural abstractive summarization systems to better understand the types of hallucinations they produce. Our human annotators found substantial amounts of hallucinated content in all model generated summaries. However, our analysis does show that pretrained models are better summarizers not only in terms of raw metrics, i.e., ROUGE, but also in generating faithful and factual summaries as evaluated by humans. Furthermore, we show that textual entailment measures better correlate with faithfulness than standard metrics, potentially leading the way to automatic evaluation metrics as well as training and decoding criteria.",
+    "authors": [],
+    "year": {
+      "text": "2020",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Annual Meeting of the Association for Computational Linguistics",
+      "fragments": []
+    },
+    "journal": {
+      "name": "ArXiv",
+      "volume": "abs/2005.00661"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 218487034,
+    "resolvedCorpusId": 218487034,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_218487034_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_218487034_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 226254579,
+    "paperId": "186c3507e3f0acf80bfe65ea19d408554f688665",
+    "title": "Detecting Hallucinated Content in Conditional Neural Sequence Generation",
+    "abstract": "Neural sequence models can generate highly fluent sentences but recent studies have also shown that they are also prone to hallucinate additional content not supported by the input, which can cause a lack of trust in the model. To better assess the faithfulness of the machine outputs, we propose a new task to predict whether each token in the output sequence is hallucinated conditioned on the source input, and collect new manually annotated evaluation sets for this task. We also introduce a novel method for learning to model hallucination detection, based on pretrained language models fine tuned on synthetic data that includes automatically inserted hallucinations. Experiments on machine translation and abstract text summarization demonstrate the effectiveness of our proposed approach -- we obtain an average F1 of around 0.6 across all the benchmark datasets and achieve significant improvements in sentence-level hallucination scoring compared to baseline methods. We also release our annotated data and code for future research at this https URL.",
+    "authors": [
+      "Chunting Zhou",
+      "Jiatao Gu",
+      "Mona T. Diab",
+      "P. Guzmán",
+      "Luke Zettlemoyer",
+      "Marjan Ghazvininejad"
+    ],
+    "year": 2020,
+    "doi": "10.18653/v1/2021.findings-acl.120",
+    "arxiv": "2011.02593",
+    "externalIds": {
+      "MAG": "3095962368",
+      "DBLP": "journals/corr/abs-2011-02593",
+      "ACL": "2021.findings-acl.120",
+      "ArXiv": "2011.02593",
+      "DOI": "10.18653/v1/2021.findings-acl.120",
+      "CorpusId": 226254579
+    },
+    "venue": "Findings",
+    "journal": {
+      "name": "ArXiv",
+      "volume": "abs/2011.02593"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": 230,
+    "openAccessPdf": {
+      "url": "https://aclanthology.org/2021.findings-acl.120.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2011.02593, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "tldr": "A new task to predict whether each token in the output sequence is hallucinated conditioned on the source input, and a novel method for learning to model hallucination detection, based on pretrained language models fine tuned on synthetic data that includes automatically inserted hallucinations.",
+    "source": "semanticscholar_graph",
+    "requestedCorpusId": 226254579,
+    "resolvedCorpusId": 226254579,
+    "crossref": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_226254579_doi.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_226254579_doi.json"
+    },
+    "arxiv_fetch": {
+      "status_code": 200,
+      "mode": "id_list",
+      "raw_path": "spike\\raw\\x3\\arxiv\\corpus_226254579_arxiv.xml.json"
+    }
+  },
+  {
+    "corpusId": 196183567,
+    "paperId": "8aa12409bc8ca1c18016c77d756ea2eae9ef9968",
+    "title": "A Simple Recipe towards Reducing Hallucination in Neural Surface Realisation",
+    "abstract": "Recent neural language generation systems often hallucinate contents (i.e., producing irrelevant or contradicted facts), especially when trained on loosely corresponding pairs of the input structure and text. To mitigate this issue, we propose to integrate a language understanding module for data refinement with self-training iterations to effectively induce strong equivalence between the input data and the paired text. Experiments on the E2E challenge dataset show that our proposed framework can reduce more than 50% relative unaligned noise from the original data-text pairs. A vanilla sequence-to-sequence neural NLG model trained on the refined data has improved on content correctness compared with the current state-of-the-art ensemble generator.",
+    "authors": [
+      "Feng Nie",
+      "Jin-ge Yao",
+      "Jinpeng Wang",
+      "Rong Pan",
+      "Chin-Yew Lin"
+    ],
+    "year": 2019,
+    "doi": "10.18653/v1/P19-1256",
+    "arxiv": null,
+    "externalIds": {
+      "DBLP": "conf/acl/NieYWPL19",
+      "ACL": "P19-1256",
+      "MAG": "2953035981",
+      "DOI": "10.18653/v1/P19-1256",
+      "CorpusId": 196183567
+    },
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "journal": {
+      "pages": "2673-2679"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": 90,
+    "openAccessPdf": {
+      "url": "https://doi.org/10.18653/v1/p19-1256",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/P19-1256, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "tldr": "This work proposes to integrate a language understanding module for data refinement with self-training iterations to effectively induce strong equivalence between the input data and the paired text to mitigate neural language generation systems often hallucinate contents.",
+    "source": "semanticscholar_graph",
+    "requestedCorpusId": 196183567,
+    "resolvedCorpusId": 196183567,
+    "crossref": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_196183567_doi.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_196183567_doi.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 233407441,
+    "paperId": "667bdd2a8dc997d40c106ff6761babebe4050762",
+    "title": "Understanding Factuality in Abstractive Summarization with FRANK: A Benchmark for Factuality Metrics",
+    "abstract": "Modern summarization models generate highly fluent but often factually unreliable outputs. This motivated a surge of metrics attempting to measure the factuality of automatically generated summaries. Due to the lack of common benchmarks, these metrics cannot be compared. Moreover, all these methods treat factuality as a binary concept and fail to provide deeper insights on the kinds of inconsistencies made by different systems. To address these limitations, we devise a typology of factual errors and use it to collect human annotations of generated summaries from state-of-the-art summarization systems for the CNN/DM and XSum datasets. Through these annotations we identify the proportion of different categories of factual errors and benchmark factuality metrics, showing their correlation with human judgement as well as their specific strengths and weaknesses.",
+    "authors": [],
+    "year": {
+      "text": "2021",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "North American Chapter of the Association for Computational Linguistics",
+      "fragments": []
+    },
+    "journal": {
+      "name": "ArXiv",
+      "volume": "abs/2104.13346"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 233407441,
+    "resolvedCorpusId": 233407441,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_233407441_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_233407441_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 204976362,
+    "paperId": "0c5598424cc96d8fb500eb553cb7969f86a0ede0",
+    "title": "Evaluating the Factual Consistency of Abstractive Text Summarization",
+    "abstract": "Currently used metrics for assessing summarization algorithms do not account for whether summaries are factually consistent with source documents. We propose a weakly-supervised, model-based approach for verifying factual consistency and identifying conflicts between source documents and a generated summary. Training data is generated by applying a series of rule-based transformations to the sentences of source documents. The factual consistency model is then trained jointly for three tasks: 1) identify whether sentences remain factually consistent after transformation, 2) extract a span in the source documents to support the consistency prediction, 3) extract a span in the summary sentence that is inconsistent if one exists. Transferring this model to summaries generated by several state-of-the art models reveals that this highly scalable approach substantially outperforms previous models, including those trained with strong supervision using standard datasets for natural language inference and fact checking. Additionally, human evaluation shows that the auxiliary span extraction tasks provide useful assistance in the process of verifying factual consistency.",
+    "authors": [],
+    "year": {
+      "text": "2019",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Conference on Empirical Methods in Natural Language Processing",
+      "fragments": []
+    },
+    "journal": {
+      "pages": "9332-9346"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 204976362,
+    "resolvedCorpusId": 204976362,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_204976362_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_204976362_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 5403702,
+    "paperId": "032fbcb58e2282f02426a0f09c6d5b42787936ec",
+    "title": "Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths",
+    "abstract": "Relation classification is an important research arena in the field of natural language processing (NLP). In this paper, we present SDP-LSTM, a novel neural network to classify the relation of two entities in a sentence. Our neural architecture leverages the shortest dependency path (SDP) between two entities; multichannel recurrent neural networks, with long short term memory (LSTM) units, pick up heterogeneous information along the SDP. Our proposed model has several distinct features: (1) The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence. (2) The multichannel LSTM networks allow effective information integration from heterogeneous sources over the dependency paths. (3) A customized dropout strategy regularizes the neural network to alleviate overfitting. We test our model on the SemEval 2010 relation classification task, and achieve an $F_1$-score of 83.7\\%, higher than competing methods in the literature.",
+    "authors": [],
+    "year": {
+      "text": "2015",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Conference on Empirical Methods in Natural Language Processing",
+      "fragments": []
+    },
+    "journal": {
+      "name": "ArXiv",
+      "volume": "abs/1508.03720"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 5403702,
+    "resolvedCorpusId": 5403702,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_5403702_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_5403702_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 1774259,
+    "paperId": "08b63b1f9a770c1b6f8545c2e1e4a9bfb6a2de6d",
+    "title": "Bidirectional Recurrent Convolutional Neural Network for Relation Classification",
+    "abstract": "Relation classification is an important semantic processing task in the field of natural language processing (NLP). In this paper, we present a novel model BRCNN to classify the relation of two entities in a sentence. Some state-of-the-art systems concentrate on modeling the shortest dependency path (SDP) between two entities leveraging convolutional or recurrent neural networks. We further explore how to make full use of the dependency relations information in the SDP, by combining convolutional neural networks and twochannel recurrent neural networks with long short term memory (LSTM) units. We propose a bidirectional architecture to learn relation representations with directional information along the SDP forwards and backwards at the same time, which benefits classifying the direction of relations. Experimental results show that our method outperforms the state-of-theart approaches on the SemEval-2010 Task 8 dataset.",
+    "authors": [],
+    "year": {
+      "text": "2016",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Annual Meeting of the Association for Computational Linguistics",
+      "fragments": []
+    },
+    "journal": {
+      "name": "",
+      "volume": "1",
+      "pages": "756-765"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 1774259,
+    "resolvedCorpusId": 1774259,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_1774259_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_1774259_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 2476229,
+    "paperId": "3899f87a2031f3434f89beb68c11a1ca6428328a",
+    "title": "End-to-End Relation Extraction using LSTMs on Sequences and Tree Structures",
+    "abstract": "We present a novel end-to-end neural model to extract entities and relations between them. Our recurrent neural network based model captures both word sequence and dependency tree substructure information by stacking bidirectional tree-structured LSTM-RNNs on bidirectional sequential LSTM-RNNs. This allows our model to jointly represent both entities and relations with shared parameters in a single model. We further encourage detection of entities during training and use of entity information in relation extraction via entity pretraining and scheduled sampling. Our model improves over the state-of-the-art feature-based model on end-to-end relation extraction, achieving 12.1% and 5.7% relative error reductions in F1-score on ACE2005 and ACE2004, respectively. We also show that our LSTM-RNN based model compares favorably to the state-of-the-art CNN based model (in F1-score) on nominal relation classification (SemEval-2010 Task 8). Finally, we present an extensive ablation analysis of several model components.",
+    "authors": [],
+    "year": {
+      "text": "2016",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Annual Meeting of the Association for Computational Linguistics",
+      "fragments": []
+    },
+    "journal": {
+      "name": "ArXiv",
+      "volume": "abs/1601.00770"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 2476229,
+    "resolvedCorpusId": 2476229,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_2476229_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_2476229_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 52115592,
+    "paperId": "749c00144b6a005f0fbe3ee8cc07e0090a45f7b8",
+    "title": "N-ary Relation Extraction using Graph-State LSTM",
+    "abstract": "Cross-sentence n-ary relation extraction detects relations among n entities across multiple sentences. Typical methods formulate an input as a document graph, integrating various intra-sentential and inter-sentential dependencies. The current state-of-the-art method splits the input graph into two DAGs, adopting a DAG-structured LSTM for each. Though being able to model rich linguistic knowledge by leveraging graph edges, important information can be lost in the splitting procedure. We propose a graph-state LSTM model, which uses a parallel state to model each word, recurrently enriching state values via message passing. Compared with DAG LSTMs, our graph LSTM keeps the original graph structure, and speeds up computation by allowing more parallelization. On a standard benchmark, our model shows the best result in the literature.",
+    "authors": [
+      "Linfeng Song",
+      "Yue Zhang",
+      "Zhiguo Wang",
+      "D. Gildea"
+    ],
+    "year": 2018,
+    "doi": "10.18653/v1/D18-1246",
+    "arxiv": "1808.09101",
+    "externalIds": {
+      "MAG": "2951403367",
+      "DBLP": "journals/corr/abs-1808-09101",
+      "ArXiv": "1808.09101",
+      "ACL": "D18-1246",
+      "DOI": "10.18653/v1/D18-1246",
+      "CorpusId": 52115592
+    },
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "journal": {
+      "pages": "2226-2235"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": 169,
+    "openAccessPdf": {
+      "url": "https://www.aclweb.org/anthology/D18-1246.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1808.09101, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "tldr": "This work proposes a graph-state LSTM model, which uses a parallel state to model each word, recurrently enriching state values via message passing, and speeds up computation by allowing more parallelization.",
+    "source": "semanticscholar_graph",
+    "requestedCorpusId": 52115592,
+    "resolvedCorpusId": 52115592,
+    "crossref": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_52115592_doi.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_52115592_doi.json"
+    },
+    "arxiv_fetch": {
+      "status_code": 200,
+      "mode": "id_list",
+      "raw_path": "spike\\raw\\x3\\arxiv\\corpus_52115592_arxiv.xml.json"
+    }
+  },
+  {
+    "corpusId": 16911296,
+    "paperId": "bcf16c08a41009d9f9174c6f72b2ff534232c147",
+    "title": "Sequence-based Structured Prediction for Semantic Parsing",
+    "abstract": "We propose an approach for semantic parsing that uses a recurrent neural network to map a natural language question into a logical form representation of a KB query. Building on recent work by (Wang et al., 2015), the interpretable logical forms, which are structured objects obeying certain constraints, are enumerated by an underlying grammar and are paired with their canonical realizations. In order to use sequence prediction, we need to sequentialize these logical forms. We compare three sequentializations: a direct linearization of the logical form, a linearization of the associated canonical realization, and a sequence consisting of derivation steps relative to the underlying grammar. We also show how grammatical constraints on the derivation sequence can easily be integrated inside the RNN-based sequential predictor. Our experiments show important improvements over previous results for the same dataset, and also demonstrate the advantage of incorporating the grammatical constraints.",
+    "authors": [],
+    "year": {
+      "text": "2016",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Annual Meeting of the Association for Computational Linguistics",
+      "fragments": []
+    },
+    "journal": {
+      "name": "",
+      "volume": "1",
+      "pages": "1341-1350"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 16911296,
+    "resolvedCorpusId": 16911296,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_16911296_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_16911296_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 1675452,
+    "paperId": "8c6f58ed0ebf379858c0bbe02c53ee51b3eb398a",
+    "title": "Neural Semantic Parsing with Type Constraints for Semi-Structured Tables",
+    "abstract": "We present a new semantic parsing model for answering compositional questions on semi-structured Wikipedia tables. Our parser is an encoder-decoder neural network with two key technical innovations: (1) a grammar for the decoder that only generates well-typed logical forms; and (2) an entity embedding and linking module that identifies entity mentions while generalizing across tables. We also introduce a novel method for training our neural model with question-answer supervision. On the WikiTableQuestions data set, our parser achieves a state-of-the-art accuracy of 43.3% for a single model and 45.9% for a 5-model ensemble, improving on the best prior score of 38.7% set by a 15-model ensemble. These results suggest that type constraints and entity linking are valuable components to incorporate in neural semantic parsers.",
+    "authors": [
+      "Jayant Krishnamurthy",
+      "Pradeep Dasigi",
+      "Matt Gardner"
+    ],
+    "year": 2017,
+    "doi": "10.18653/v1/D17-1160",
+    "arxiv": null,
+    "externalIds": {
+      "MAG": "2757361303",
+      "DBLP": "conf/emnlp/KrishnamurthyDG17",
+      "ACL": "D17-1160",
+      "DOI": "10.18653/v1/D17-1160",
+      "CorpusId": 1675452
+    },
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "journal": {
+      "pages": "1516-1526"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": 228,
+    "openAccessPdf": {
+      "url": "https://www.aclweb.org/anthology/D17-1160.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/D17-1160, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "tldr": "A new semantic parsing model for answering compositional questions on semi-structured Wikipedia tables with a state-of-the-art accuracy and type constraints and entity linking are valuable components to incorporate in neural semantic parsers.",
+    "source": "semanticscholar_graph",
+    "requestedCorpusId": 1675452,
+    "resolvedCorpusId": 1675452,
+    "crossref": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_1675452_doi.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "doi",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_1675452_doi.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "requestedCorpusId": 12718048,
+    "corpusId": 12718048,
+    "resolvedCorpusId": null,
+    "fetch_error": {
+      "corpusId": 12718048,
+      "steps": [
+        {
+          "name": "graph_by_corpus_id",
+          "status_code": 429,
+          "url": "https://api.semanticscholar.org/graph/v1/paper/CorpusId:12718048?fields=paperId%2CcorpusId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CexternalIds%2CcitationCount%2CfieldsOfStudy%2CopenAccessPdf%2Curl%2Cvenue%2Cjournal%2CpublicationTypes%2Ctldr%2CreferenceCount%2CinfluentialCitationCount",
+          "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_12718048_graph_direct.json"
+        },
+        {
+          "name": "legacy_corpusid_redirect",
+          "status_code": 404,
+          "final_url": "https://api.semanticscholar.org/CorpusID:12718048",
+          "paperId": null,
+          "raw_path": "spike\\raw\\x3\\semantic_scholar\\corpus_12718048_redirect.json"
+        }
+      ]
+    },
+    "crossref": {
+      "status_code": null,
+      "mode": "no_doi_or_title",
+      "raw_path": null
+    },
+    "openalex": {
+      "status_code": null,
+      "mode": "no_doi_or_title",
+      "raw_path": null
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 244954670,
+    "paperId": "eb7c9316c7c26220483cb9315058ceb129b5c167",
+    "title": "VIRT: Improving Representation-based Text Matching via Virtual Interaction",
+    "abstract": "Text matching is a fundamental research problem in natural language understanding. Interaction-based approaches treat the text pair as a single sequence and encode it through cross encoders, while representation-based models encode the text pair independently with siamese or dual encoders. Interaction-based models require dense computations and thus are impractical in real-world applications. Representation-based models have become the mainstream paradigm for efficient text matching. However, these models suffer from severe performance degradation due to the lack of interactions between the pair of texts. To remedy this, we propose a Virtual InteRacTion mechanism (VIRT) for improving representation-based text matching while maintaining its efficiency. In particular, we introduce an interactive knowledge distillation module that is only applied during training. It enables deep interaction between texts by effectively transferring knowledge from the interaction-based model. A light interaction strategy is designed to fully leverage the learned interactive knowledge. Experimental results on six text matching benchmarks demonstrate the superior performance of our method over several state-of-the-art representation-based models. We further show that VIRT can be integrated into existing methods as plugins to lift their performances.",
+    "authors": [],
+    "year": {
+      "text": "2021",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Conference on Empirical Methods in Natural Language Processing",
+      "fragments": []
+    },
+    "journal": {
+      "pages": "914-925"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 244954670,
+    "resolvedCorpusId": 244954670,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_244954670_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_244954670_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  },
+  {
+    "corpusId": 244954670,
+    "paperId": "eb7c9316c7c26220483cb9315058ceb129b5c167",
+    "title": "VIRT: Improving Representation-based Text Matching via Virtual Interaction",
+    "abstract": "Text matching is a fundamental research problem in natural language understanding. Interaction-based approaches treat the text pair as a single sequence and encode it through cross encoders, while representation-based models encode the text pair independently with siamese or dual encoders. Interaction-based models require dense computations and thus are impractical in real-world applications. Representation-based models have become the mainstream paradigm for efficient text matching. However, these models suffer from severe performance degradation due to the lack of interactions between the pair of texts. To remedy this, we propose a Virtual InteRacTion mechanism (VIRT) for improving representation-based text matching while maintaining its efficiency. In particular, we introduce an interactive knowledge distillation module that is only applied during training. It enables deep interaction between texts by effectively transferring knowledge from the interaction-based model. A light interaction strategy is designed to fully leverage the learned interactive knowledge. Experimental results on six text matching benchmarks demonstrate the superior performance of our method over several state-of-the-art representation-based models. We further show that VIRT can be integrated into existing methods as plugins to lift their performances.",
+    "authors": [],
+    "year": {
+      "text": "2021",
+      "fragments": []
+    },
+    "doi": null,
+    "arxiv": null,
+    "externalIds": {},
+    "venue": {
+      "text": "Conference on Empirical Methods in Natural Language Processing",
+      "fragments": []
+    },
+    "journal": {
+      "pages": "914-925"
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "citationCount": null,
+    "openAccessPdf": null,
+    "tldr": null,
+    "source": "semanticscholar_web_fallback",
+    "requestedCorpusId": 256461055,
+    "resolvedCorpusId": 244954670,
+    "crossref": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\crossref\\corpus_256461055_title_search.json"
+    },
+    "openalex": {
+      "status_code": 200,
+      "mode": "title_search",
+      "raw_path": "spike\\raw\\x3\\openalex\\corpus_256461055_title_search.json"
+    },
+    "arxiv_fetch": {
+      "status_code": null,
+      "mode": "no_arxiv_id",
+      "raw_path": null
+    }
+  }
+]

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_136",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_136",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_136",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_136",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1027,
+      "latency_s": 5.23478990001604
+    },
+    {
+      "query_id": "litsearch_136",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 319,
+      "latency_s": 2.907771799946204
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_136",
+    "gold": [
+      233289620
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "contrastive learning sentence embeddings",
+      "sentence embedding improvement contrastive learning",
+      "application of contrastive sentence embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7539145,
+        30488100,
+        15204692,
+        20776159,
+        23804177,
+        3930720,
+        13170584,
+        186206208,
+        233029500,
+        45770971,
+        186206301,
+        1144073,
+        9405005,
+        186206487,
+        199022672,
+        2891943,
+        7600496,
+        224281690,
+        18022579,
+        219307312
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        246411155,
+        240288762,
+        237386548,
+        248377556,
+        220044873,
+        232104960,
+        219530980,
+        3527244,
+        259370776,
+        235422673,
+        258756324,
+        18341076,
+        234487239,
+        247450777,
+        247158084,
+        252847570,
+        15026764,
+        219708470,
+        7819714,
+        196200182
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237491889,
+        233296292,
+        247158698,
+        248377556,
+        248299679,
+        259370776,
+        252847570,
+        250390973,
+        235422673,
+        174798413,
+        246411155,
+        3525802,
+        248572170,
+        240288762,
+        252763361,
+        258588364,
+        252918345,
+        253107551,
+        247410985,
+        259370833
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252847570,
+        248299679,
+        246411155,
+        259370776,
+        235422673,
+        237386548,
+        240288762,
+        248377556,
+        252763361,
+        247158084,
+        237491889,
+        250390973
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248377556,
+        246411155,
+        240288762,
+        259370776,
+        235422673,
+        237491889,
+        252847570,
+        248299679,
+        250390973,
+        233296292,
+        237386548,
+        247158698,
+        247158084,
+        252763361,
+        248572170,
+        247410985,
+        258588364,
+        174798413,
+        3525802,
+        219530980
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.357733499957249
+  },
+  "reason_example": {
+    "query_id": "litsearch_136",
+    "query": "Could you recommend a study that investigates how contrastive learning enhances sentence-level embeddings in natural language processing, especially for subsequent applications?",
+    "top_results": [
+      {
+        "corpusid": 248377556,
+        "score": 0.972448468208313,
+        "reason": "bm25=0.957; dense=0.983; sub_bm25=0.961; sub_dense=0.993"
+      },
+      {
+        "corpusid": 246411155,
+        "score": 0.954675555229187,
+        "reason": "bm25=1.000; dense=0.924; sub_bm25=0.961; sub_dense=0.982"
+      },
+      {
+        "corpusid": 240288762,
+        "score": 0.9458630084991455,
+        "reason": "bm25=0.983; dense=0.921; sub_bm25=0.878; sub_dense=0.910"
+      },
+      {
+        "corpusid": 259370776,
+        "score": 0.9303723573684692,
+        "reason": "bm25=0.863; dense=0.976; sub_bm25=0.841; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235422673,
+        "score": 0.9159717559814453,
+        "reason": "bm25=0.857; dense=0.955; sub_bm25=0.885; sub_dense=0.943"
+      }
+    ]
+  }
+}

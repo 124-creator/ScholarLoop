@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_032",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_032",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_032",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_032",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1260,
+      "latency_s": 8.121765900054015
+    },
+    {
+      "query_id": "litsearch_032",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 383,
+      "latency_s": 3.3563975000288337
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_032",
+    "gold": [
+      252199533
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "suicide risk detection classifier low-resource language",
+      "explicit suicide terminology classifier development",
+      "suicide risk prediction low-resource language lexicon"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10513825,
+        8517763,
+        247594674,
+        256461173,
+        7542363,
+        219305462,
+        15168504,
+        21720529,
+        17796799,
+        5731389,
+        6298465,
+        226237153,
+        9181084,
+        17172906,
+        11531028,
+        15776056,
+        248780464,
+        53289396,
+        197676367,
+        218977367
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252199533,
+        250390685,
+        198184729,
+        258378157,
+        235358754,
+        199555238,
+        9778830,
+        248780215,
+        17315163,
+        199552829,
+        234094328,
+        46959165,
+        7439066,
+        186206498,
+        14064997,
+        233189632,
+        250390554,
+        250390894,
+        19028966,
+        198939259
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9778830,
+        38155999,
+        252199533,
+        250390685,
+        12173422,
+        235358754,
+        198939259,
+        199552829,
+        13460184,
+        199556932,
+        14064997,
+        51879885,
+        46959165,
+        7749438,
+        7439066,
+        46967432,
+        258378157,
+        248780215,
+        233189632,
+        252847496
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252199533
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252199533,
+        250390685,
+        9778830,
+        235358754,
+        199552829,
+        258378157,
+        198184729,
+        46959165,
+        248780215,
+        7439066,
+        14064997,
+        198939259,
+        199555238,
+        234094328,
+        199556932,
+        51879885,
+        233189632,
+        38155999,
+        13460184,
+        46967432
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.32666630006861
+  },
+  "reason_example": {
+    "query_id": "litsearch_032",
+    "query": "Could you provide me with a reference that discusses the development of classifiers for suicide risk detection in a low-resource language, with a specific focus on using explicit suicide-related terminology?",
+    "top_results": [
+      {
+        "corpusid": 252199533,
+        "score": 0.9744998216629028,
+        "reason": "bm25=1.000; dense=0.957; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250390685,
+        "score": 0.9252207279205322,
+        "reason": "bm25=0.880; dense=0.955; sub_bm25=0.782; sub_dense=0.960"
+      },
+      {
+        "corpusid": 9778830,
+        "score": 0.9243489503860474,
+        "reason": "bm25=0.811; dense=1.000; sub_bm25=0.773; sub_dense=0.984"
+      },
+      {
+        "corpusid": 235358754,
+        "score": 0.8968371152877808,
+        "reason": "bm25=0.824; dense=0.945; sub_bm25=0.888; sub_dense=0.940"
+      },
+      {
+        "corpusid": 199552829,
+        "score": 0.8739312887191772,
+        "reason": "bm25=0.795; dense=0.926; sub_bm25=0.773; sub_dense=0.956"
+      }
+    ]
+  }
+}

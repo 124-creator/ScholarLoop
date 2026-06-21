@@ -1,0 +1,656 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_020",
+  "query": "Can you suggest a corpus that contains French encyclopedia documents with semantic annotations and includes a test set of manually written question/answer triplets that align with the constraints of FrameNet semantic analysis?",
+  "criteria": [
+    "French encyclopedia corpus with FrameNet semantic annotations",
+    "French FrameNet-annotated corpus including question-answer triplets",
+    "Manually written QA test set for French FrameNet semantic analysis"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_020.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_020",
+      "corpusid": 6959594,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Developing a French FrameNet: Methodology and First results",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            59
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Marie Candito, Pascal Amsili, Lucie Barque, Farah Benamara, Gaël de Chalendar, Marianne Djemaa, et al. (2014)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W101138681",
+            "fetched_at": "2026-06-20T00:19:29Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\e45a5a9cc9ff15d63839b844.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/2b9njb53tzvv; Source: https://doi.org/10.63317/2b9njb53tzvv; OA: gold; Citations: 39",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W101138681",
+            "fetched_at": "2026-06-20T00:19:29Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\e45a5a9cc9ff15d63839b844.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "focusing on a set of notional domains, we delimited a subset of English frames, adapted them to French data when necessary, and developed the corresponding French lexicon.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            183,
+            354
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We believe that working domain by domain helped us to enforce the coherence of the resulting resource, and also has the advantage that, though the number of frames is limited (around a hundred), we obtain full coverage within a given domain.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            355,
+            596
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1130,
+        "elapsed_s": 5.082910700002685,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_020_6959594.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W101138681",
+        "title": "Developing a French FrameNet: Methodology and First results",
+        "authors": [
+          "Marie Candito",
+          "Pascal Amsili",
+          "Lucie Barque",
+          "Farah Benamara",
+          "Gaël de Chalendar",
+          "Marianne Djemaa",
+          "Pauline Haas",
+          "Richard Huyghe",
+          "Yvette Yannick Mathieu",
+          "Philippe Müller",
+          "Benoît Sagot",
+          "Laure Vieu"
+        ],
+        "year": 2014,
+        "venue": "https://doi.org/10.63317/2b9njb53tzvv",
+        "doi": "10.63317/2b9njb53tzvv",
+        "oa_status": "gold",
+        "citation_count": 39,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:29Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\e45a5a9cc9ff15d63839b844.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Developing a French FrameNet: Methodology and First results",
+          "candidate_title": "Developing a French FrameNet: Methodology and First results",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_020",
+      "corpusid": 30530226,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A general framework for the annotation of causality based on FrameNet",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            69
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Laure Vieu, Philippe Müller, Marie Candito, Marianne Djemaa (2016)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2577260496",
+            "fetched_at": "2026-06-20T00:19:30Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\c8242c4341da5874f081fbf0.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/4bddq2o7ouhf; Source: https://doi.org/10.63317/4bddq2o7ouhf; OA: gold; Citations: 6",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2577260496",
+            "fetched_at": "2026-06-20T00:19:30Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\c8242c4341da5874f081fbf0.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "The aim of our project is to have both the largest possible coverage of causal phenomena in French, across all parts of speech, and have it linked to a general semantic framework such as FN, to benefit in particular from the relations between other semantic frames, e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            225,
+            493
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "The result is arguably a significant improvement of the treatment of causality in FN itself.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1196,
+            1288
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1227,
+        "elapsed_s": 5.516239800024778,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_020_30530226.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2577260496",
+        "title": "A General Framework for the Annotation of Causality Based on FrameNet",
+        "authors": [
+          "Laure Vieu",
+          "Philippe Müller",
+          "Marie Candito",
+          "Marianne Djemaa"
+        ],
+        "year": 2016,
+        "venue": "https://doi.org/10.63317/4bddq2o7ouhf",
+        "doi": "10.63317/4bddq2o7ouhf",
+        "oa_status": "gold",
+        "citation_count": 6,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:30Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\c8242c4341da5874f081fbf0.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "A general framework for the annotation of causality based on FrameNet",
+          "candidate_title": "A General Framework for the Annotation of Causality Based on FrameNet",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_020",
+      "corpusid": 983587,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Corpus annotation within the French FrameNet: a domain-by-domain methodology",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            76
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Marianne Djemaa, Marie Candito, Philippe Müller, Laure Vieu (2016)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2571959413",
+            "fetched_at": "2026-06-20T00:19:33Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\3b8240ac75da094e1c5179a6.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/35a894vi8hcr; Source: https://doi.org/10.63317/35a894vi8hcr; OA: gold; Citations: 7",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2571959413",
+            "fetched_at": "2026-06-20T00:19:33Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\3b8240ac75da094e1c5179a6.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "the subsequent corpus annotation phase, which focused on four notional domains (commercial transactions, cognitive stances, causality and verbal communication).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            254,
+            414
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "frames and roles were annotated on two French Treebanks (the French Treebank (Abeillé andBarrier, 2004)and the Sequoia Treebank (Candito and Seddah, 2012)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            691,
+            845
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "In the resource's current status, there are 98 frames, 662 frame-evoking words, 872 senses, and about 13000 annotated frames, with their semantic roles assigned to portions of text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            928,
+            1109
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Given full coverage is not reachable for a relatively \"new\" FrameNet project",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            415,
+            491
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2152,
+        "elapsed_s": 13.722145100007765,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_020_983587.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2571959413",
+        "title": "Corpus Annotation within the French FrameNet: a Domain-by-domain Methodology",
+        "authors": [
+          "Marianne Djemaa",
+          "Marie Candito",
+          "Philippe Müller",
+          "Laure Vieu"
+        ],
+        "year": 2016,
+        "venue": "https://doi.org/10.63317/35a894vi8hcr",
+        "doi": "10.63317/35a894vi8hcr",
+        "oa_status": "gold",
+        "citation_count": 7,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:33Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\3b8240ac75da094e1c5179a6.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Corpus annotation within the French FrameNet: a domain-by-domain methodology",
+          "candidate_title": "Corpus Annotation within the French FrameNet: a Domain-by-domain Methodology",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 6959594,
+      "title": "Developing a French FrameNet: Methodology and First results",
+      "cells": [
+        {
+          "criterion": "French encyclopedia corpus with FrameNet semantic annotations",
+          "addresses": true,
+          "snippet": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ]
+        },
+        {
+          "criterion": "French FrameNet-annotated corpus including question-answer triplets",
+          "addresses": true,
+          "snippet": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ]
+        },
+        {
+          "criterion": "Manually written QA test set for French FrameNet semantic analysis",
+          "addresses": true,
+          "snippet": "The Asfalda project aims to develop a French corpus with frame-based semantic annotations and automatic tools for shallow semantic analysis.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 30530226,
+      "title": "A general framework for the annotation of causality based on FrameNet",
+      "cells": [
+        {
+          "criterion": "French encyclopedia corpus with FrameNet semantic annotations",
+          "addresses": true,
+          "snippet": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ]
+        },
+        {
+          "criterion": "French FrameNet-annotated corpus including question-answer triplets",
+          "addresses": true,
+          "snippet": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ]
+        },
+        {
+          "criterion": "Manually written QA test set for French FrameNet semantic analysis",
+          "addresses": true,
+          "snippet": "We present here a general set of semantic frames to annotate causal expressions, with a rich lexicon in French and an annotated corpus of about 4000 instances of causal lexical items with their corresponding semantic frames.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            224
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 983587,
+      "title": "Corpus annotation within the French FrameNet: a domain-by-domain methodology",
+      "cells": [
+        {
+          "criterion": "French encyclopedia corpus with FrameNet semantic annotations",
+          "addresses": true,
+          "snippet": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ]
+        },
+        {
+          "criterion": "French FrameNet-annotated corpus including question-answer triplets",
+          "addresses": true,
+          "snippet": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ]
+        },
+        {
+          "criterion": "Manually written QA test set for French FrameNet semantic analysis",
+          "addresses": true,
+          "snippet": "This paper reports on the development of a French FrameNet, within the ASFALDA project.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            87
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      983587,
+      6959594,
+      30530226
+    ],
+    "edges": [
+      {
+        "source": 30530226,
+        "target": 6959594
+      },
+      {
+        "source": 983587,
+        "target": 6959594
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

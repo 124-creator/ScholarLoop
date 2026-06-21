@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_004",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_004",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_004",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_004",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 3380,
+      "latency_s": 23.978676700033247
+    },
+    {
+      "query_id": "litsearch_004",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 251,
+      "latency_s": 2.448701599962078
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_004",
+    "gold": [
+      233296182
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "contextualized calibration language model answer probability",
+      "calibration of predictions in language models with context",
+      "probability calibration for contextual answers in LMs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        57916,
+        3923764,
+        30908728,
+        235293834,
+        236460248,
+        2776389,
+        27787263,
+        893688,
+        779618,
+        8517763,
+        8841728,
+        8752606,
+        219305462,
+        224281690,
+        3073489,
+        14069143,
+        51997874,
+        75817,
+        3906011,
+        8206654
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233454709,
+        250551977,
+        209439505,
+        216867328,
+        247594202,
+        246867279,
+        256846523,
+        240070283,
+        258999368,
+        202120592,
+        252411639,
+        258378337,
+        221808425,
+        258967265,
+        235313818,
+        218487046,
+        257154227,
+        258615193,
+        251868792,
+        259370531
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        62934027,
+        13412990,
+        17214004,
+        252918666,
+        1722348,
+        235313893,
+        9839359,
+        2879445,
+        263609662,
+        233296182,
+        254877576,
+        257039062,
+        17933971,
+        250551977,
+        2605710,
+        1494871,
+        5361885,
+        247594202,
+        12247766,
+        1069475
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        212747810,
+        248964978,
+        263609662,
+        247594202,
+        2879445,
+        13412990,
+        218487046,
+        250551977,
+        253383825,
+        258615193
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250551977,
+        247594202,
+        252918666,
+        13412990,
+        2879445,
+        17214004,
+        235313893,
+        263609662,
+        17455216,
+        1722348,
+        253383825,
+        237503353,
+        252819476,
+        2741054,
+        254877576,
+        212747810,
+        62934027,
+        259370610,
+        258615193,
+        248780488
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 1.2275607000337914
+  },
+  "reason_example": {
+    "query_id": "litsearch_004",
+    "query": "Are there papers that propose contextualized calibration for the probability of answers in language models?",
+    "top_results": [
+      {
+        "corpusid": 250551977,
+        "score": 0.8829315304756165,
+        "reason": "bm25=0.961; dense=0.831; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247594202,
+        "score": 0.8551739454269409,
+        "reason": "bm25=0.910; dense=0.819; sub_bm25=0.872; sub_dense=0.936"
+      },
+      {
+        "corpusid": 252918666,
+        "score": 0.8477306365966797,
+        "reason": "bm25=0.719; dense=0.934; sub_bm25=0.501; sub_dense=0.858"
+      },
+      {
+        "corpusid": 13412990,
+        "score": 0.839926540851593,
+        "reason": "bm25=0.608; dense=0.995; sub_bm25=0.551; sub_dense=0.967"
+      },
+      {
+        "corpusid": 2879445,
+        "score": 0.8259401321411133,
+        "reason": "bm25=0.743; dense=0.881; sub_bm25=0.637; sub_dense=0.850"
+      }
+    ]
+  }
+}

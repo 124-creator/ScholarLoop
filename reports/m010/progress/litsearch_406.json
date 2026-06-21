@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_406",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_406",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_406",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_406",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1715,
+      "latency_s": 14.035950000048615
+    },
+    {
+      "query_id": "litsearch_406",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 358,
+      "latency_s": 3.4278037000913173
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_406",
+    "gold": [
+      258987457
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "reinforcement learning teacher AI inferring mental states role-playing",
+      "student mental state inference RL teaching role-play",
+      "AI mental state estimation reinforcement learning game setup"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6559235,
+        216804296,
+        8368494,
+        13395552,
+        42994580,
+        8395799,
+        12405045,
+        8738940,
+        259360601,
+        258987457,
+        17934328,
+        8150087,
+        6705113,
+        37387939,
+        2245732,
+        15057133,
+        1161892,
+        8912414,
+        8265456,
+        8339153
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258987457,
+        216804296,
+        257353270,
+        14724343,
+        8781666,
+        1256086,
+        256390109,
+        236478290,
+        259360601,
+        239024453,
+        54458698,
+        13687188,
+        247741039,
+        250311633,
+        13352766,
+        219965999,
+        7259458,
+        53080145,
+        258079331,
+        249191769
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258987457,
+        1256086,
+        237057231,
+        53215593,
+        244270768,
+        3921978,
+        257353270,
+        8781666,
+        257280165,
+        53867751,
+        12256925,
+        215415923,
+        247025766,
+        10458880,
+        248377437,
+        236411231,
+        208637067,
+        233181840,
+        259075346,
+        219965999
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258987457
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258987457,
+        1256086,
+        257353270,
+        8781666,
+        14724343,
+        216804296,
+        219965999,
+        13687188,
+        54458698,
+        215415923,
+        247025766,
+        53215593,
+        259360601,
+        252815905,
+        244270768,
+        259075346,
+        3557557,
+        53867751,
+        222177165,
+        241583142
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 19.025129799963906
+  },
+  "reason_example": {
+    "query_id": "litsearch_406",
+    "query": "Is there any paper that studies a teacher AI inferring mental states of a student role in a role-playing game setup using reinforcement learning?",
+    "top_results": [
+      {
+        "corpusid": 258987457,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.803; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1256086,
+        "score": 0.9307452440261841,
+        "reason": "bm25=0.881; dense=0.964; sub_bm25=0.604; sub_dense=0.986"
+      },
+      {
+        "corpusid": 257353270,
+        "score": 0.9144561290740967,
+        "reason": "bm25=0.933; dense=0.902; sub_bm25=0.763; sub_dense=0.782"
+      },
+      {
+        "corpusid": 8781666,
+        "score": 0.9003841876983643,
+        "reason": "bm25=0.906; dense=0.896; sub_bm25=0.711; sub_dense=0.989"
+      },
+      {
+        "corpusid": 14724343,
+        "score": 0.8737674951553345,
+        "reason": "bm25=0.908; dense=0.851; sub_bm25=0.821; sub_dense=0.926"
+      }
+    ]
+  }
+}

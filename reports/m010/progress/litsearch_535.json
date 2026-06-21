@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_535",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_535",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_535",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_535",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 773,
+      "latency_s": 3.4088422000641003
+    },
+    {
+      "query_id": "litsearch_535",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 263,
+      "latency_s": 1.9626839000266045
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_535",
+    "gold": [
+      264128166
+    ],
+    "pool_size": 293,
+    "decomposition": [
+      "probabilistic formulation retrosynthesis",
+      "probabilistic model retrosynthesis",
+      "retrosynthesis probabilistic approach"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        1021605,
+        12405045,
+        3911313,
+        18059389,
+        32969140,
+        42297913,
+        237365388,
+        19401538,
+        11358655,
+        2410236,
+        3929124,
+        12179283,
+        16735270,
+        18792136,
+        219305462,
+        12569456,
+        701705,
+        1786876,
+        2985830
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264128166,
+        261395800,
+        5334223,
+        15208133,
+        17293462,
+        10325407,
+        12271396,
+        241583547,
+        6048919,
+        14768806,
+        6386563,
+        10082070,
+        3227723,
+        4089626,
+        11752799,
+        715773,
+        9988418,
+        115816,
+        8389796,
+        6019533
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264128166,
+        261395800,
+        59759783,
+        1380342,
+        5193894,
+        3205160,
+        5334223,
+        32317491,
+        7440104,
+        14968252,
+        32746911,
+        222349276,
+        18827772,
+        7917329,
+        8365362,
+        8762213,
+        40013876,
+        1741394,
+        7939732,
+        18734417
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        261395800,
+        264128166
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264128166,
+        261395800,
+        5334223,
+        59759783,
+        1380342,
+        32317491,
+        5193894,
+        32954707,
+        18734417,
+        17975958,
+        222349276,
+        14968252,
+        32746911,
+        8365362,
+        219310198,
+        15828439,
+        40013876,
+        32824096,
+        227231843,
+        238744253
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.93421059998218
+  },
+  "reason_example": {
+    "query_id": "litsearch_535",
+    "query": "Name a paper which proposes a probabilsitic formulation of retrosynthesis.",
+    "top_results": [
+      {
+        "corpusid": 264128166,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261395800,
+        "score": 0.9432185888290405,
+        "reason": "bm25=0.967; dense=0.927; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5334223,
+        "score": 0.7626814842224121,
+        "reason": "bm25=0.886; dense=0.680; sub_bm25=0.885; sub_dense=0.741"
+      },
+      {
+        "corpusid": 59759783,
+        "score": 0.6513532400131226,
+        "reason": "bm25=0.467; dense=0.774; sub_bm25=0.287; sub_dense=0.834"
+      },
+      {
+        "corpusid": 1380342,
+        "score": 0.6350408792495728,
+        "reason": "bm25=0.444; dense=0.762; sub_bm25=0.000; sub_dense=0.616"
+      }
+    ]
+  }
+}

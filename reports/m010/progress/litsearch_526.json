@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_526",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_526",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_526",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_526",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1271,
+      "latency_s": 6.578246799996123
+    },
+    {
+      "query_id": "litsearch_526",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 307,
+      "latency_s": 2.502821300062351
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_526",
+    "gold": [
+      258480014
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "generalizable NeRF disentangle texture shape",
+      "neural radiance field disentangled appearance geometry",
+      "generalizable NeRF shape texture separation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        24663,
+        15057133,
+        126584,
+        42994580,
+        6609459,
+        17575823,
+        45897261,
+        8446444,
+        2115850,
+        6389592,
+        1405599,
+        219304675,
+        8912414,
+        1412569,
+        9845306,
+        17329159,
+        29974541,
+        2075102,
+        3120642,
+        5494577
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258480014,
+        222310549,
+        261076339,
+        231718721,
+        54101493,
+        258059971,
+        237502811,
+        252532222,
+        220793552,
+        251564597,
+        233306976,
+        257205872,
+        261245530,
+        247594476,
+        251104701,
+        257255328,
+        231627872,
+        264825424,
+        247939414,
+        258426737
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264436566,
+        261245530,
+        258835696,
+        257427479,
+        45927246,
+        9845306,
+        22751368,
+        212725580,
+        46169616,
+        10912608,
+        233306976,
+        222310549,
+        37094099,
+        258048805,
+        258480014,
+        264825424,
+        202712891,
+        219530758,
+        246294519,
+        246822414
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258480014,
+        251564597,
+        261245530
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258480014,
+        222310549,
+        261245530,
+        233306976,
+        54101493,
+        231718721,
+        251564597,
+        264825424,
+        252532222,
+        257427479,
+        258835696,
+        261076339,
+        246294519,
+        220793552,
+        232147505,
+        9845306,
+        157060539,
+        235376961,
+        247594476,
+        211094978
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.867018199991435
+  },
+  "reason_example": {
+    "query_id": "litsearch_526",
+    "query": "Is there any generalizable NeRF paper that disentangles texture and shape?",
+    "top_results": [
+      {
+        "corpusid": 258480014,
+        "score": 0.9333895444869995,
+        "reason": "bm25=1.000; dense=0.889; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222310549,
+        "score": 0.9115039110183716,
+        "reason": "bm25=0.935; dense=0.896; sub_bm25=0.837; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261245530,
+        "score": 0.8728796243667603,
+        "reason": "bm25=0.735; dense=0.965; sub_bm25=0.578; sub_dense=0.959"
+      },
+      {
+        "corpusid": 233306976,
+        "score": 0.84709632396698,
+        "reason": "bm25=0.772; dense=0.897; sub_bm25=0.529; sub_dense=0.958"
+      },
+      {
+        "corpusid": 54101493,
+        "score": 0.8074179887771606,
+        "reason": "bm25=0.825; dense=0.795; sub_bm25=0.678; sub_dense=0.854"
+      }
+    ]
+  }
+}

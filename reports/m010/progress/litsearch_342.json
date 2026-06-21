@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_342",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_342",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_342",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_342",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 999,
+      "latency_s": 6.653777900035493
+    },
+    {
+      "query_id": "litsearch_342",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 256,
+      "latency_s": 2.2858794000931084
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_342",
+    "gold": [
+      244270388
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "image captioning models worse than human captions",
+      "generated captions inferior to human-written captions",
+      "human vs machine caption quality comparison"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15743676,
+        49671404,
+        174798153,
+        235658821,
+        2489350,
+        248887549,
+        182916006,
+        203595196,
+        238198699,
+        215543098,
+        18446213,
+        52896891,
+        259376699,
+        21706141,
+        1659659,
+        12979818,
+        18597583,
+        5730661,
+        1425156,
+        2565824
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        15743676,
+        235658821,
+        244270388,
+        253080824,
+        252624545,
+        49671404,
+        238198699,
+        246276059,
+        248887549,
+        16495042,
+        229371403,
+        224803745,
+        253224427,
+        202537622,
+        231709269,
+        251903830,
+        235097275,
+        214667180,
+        174798153,
+        174799768
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        225068033,
+        253080824,
+        52176506,
+        2887802,
+        248780552,
+        237431500,
+        227217634,
+        202537622,
+        259089101,
+        13115581,
+        253098066,
+        215754413,
+        247694105,
+        30046385,
+        252907549,
+        260125086,
+        2948298,
+        4899062,
+        21703337,
+        264172710
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253080824,
+        253224427,
+        244270388,
+        235658821,
+        238198699,
+        202537622,
+        252624545,
+        15743676,
+        2887802,
+        229371403,
+        49671404,
+        174798153
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253080824,
+        15743676,
+        235658821,
+        244270388,
+        2887802,
+        202537622,
+        252624545,
+        253224427,
+        238198699,
+        229371403,
+        259089101,
+        253098066,
+        237431500,
+        214667180,
+        2948298,
+        52176506,
+        30046385,
+        259327452,
+        246276059,
+        215754413
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.908180200029165
+  },
+  "reason_example": {
+    "query_id": "litsearch_342",
+    "query": "Which paper shows that generated captions of models are still worse than human written ones?",
+    "top_results": [
+      {
+        "corpusid": 253080824,
+        "score": 0.9534590244293213,
+        "reason": "bm25=0.891; dense=0.995; sub_bm25=0.984; sub_dense=0.993"
+      },
+      {
+        "corpusid": 15743676,
+        "score": 0.8783555030822754,
+        "reason": "bm25=1.000; dense=0.797; sub_bm25=0.787; sub_dense=0.802"
+      },
+      {
+        "corpusid": 235658821,
+        "score": 0.86031574010849,
+        "reason": "bm25=0.925; dense=0.817; sub_bm25=1.000; sub_dense=0.914"
+      },
+      {
+        "corpusid": 244270388,
+        "score": 0.8501688241958618,
+        "reason": "bm25=0.907; dense=0.812; sub_bm25=0.914; sub_dense=0.918"
+      },
+      {
+        "corpusid": 2887802,
+        "score": 0.8465733528137207,
+        "reason": "bm25=0.680; dense=0.957; sub_bm25=0.709; sub_dense=0.893"
+      }
+    ]
+  }
+}

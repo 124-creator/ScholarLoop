@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_594",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_594",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_594",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_594",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1014,
+      "latency_s": 4.888108299928717
+    },
+    {
+      "query_id": "litsearch_594",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.4284316999837756
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_594",
+    "gold": [
+      263671662
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "MMD flows Riesz kernels Bayesian inverse problems",
+      "Maximum Mean Discrepancy flow Riesz kernel inverse problem",
+      "Riesz kernel MMD flow Bayesian inversion"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6124685,
+        2838871,
+        184482941,
+        18539120,
+        227231856,
+        41510874,
+        53639109,
+        250391050,
+        6723570,
+        312010,
+        6141627,
+        14471353,
+        61355894,
+        6911768,
+        258823075,
+        9878815,
+        10068460,
+        11265348,
+        11337486,
+        44985205
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258823075,
+        263671662,
+        238259607,
+        259937490,
+        228376209,
+        249394960,
+        52002336,
+        258557287,
+        231918471,
+        252596112,
+        260203353,
+        252596252,
+        235606439,
+        3652033,
+        263671852,
+        3531856,
+        236087352,
+        236486075,
+        52922902,
+        248427082
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258823075,
+        252596252,
+        263671662,
+        246863713,
+        228376209,
+        258557287,
+        263671852,
+        252668615,
+        259937490,
+        232257804,
+        238259607,
+        249394960,
+        253080440,
+        235212307,
+        247011732,
+        239050236,
+        257220165,
+        260203353,
+        254017742,
+        247476432
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258823075
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258823075,
+        263671662,
+        252596252,
+        259937490,
+        238259607,
+        228376209,
+        258557287,
+        263671852,
+        249394960,
+        260203353,
+        252668615,
+        52002336,
+        253080440,
+        52922902,
+        232257804,
+        246863713,
+        18324297,
+        251280102,
+        235212307,
+        247011732
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.170601600082591
+  },
+  "reason_example": {
+    "query_id": "litsearch_594",
+    "query": "Which paper utilized MMD flows with Riesz kernels to solve Bayesian inverse problems?",
+    "top_results": [
+      {
+        "corpusid": 258823075,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263671662,
+        "score": 0.8275164365768433,
+        "reason": "bm25=0.652; dense=0.945; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252596252,
+        "score": 0.752838134765625,
+        "reason": "bm25=0.403; dense=0.986; sub_bm25=0.357; sub_dense=0.985"
+      },
+      {
+        "corpusid": 259937490,
+        "score": 0.717294454574585,
+        "reason": "bm25=0.508; dense=0.857; sub_bm25=0.367; sub_dense=0.870"
+      },
+      {
+        "corpusid": 238259607,
+        "score": 0.7135002017021179,
+        "reason": "bm25=0.539; dense=0.830; sub_bm25=0.722; sub_dense=0.830"
+      }
+    ]
+  }
+}

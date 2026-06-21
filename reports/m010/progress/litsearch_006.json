@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_006",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_006",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_006",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_006",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1666,
+      "latency_s": 10.198197399964556
+    },
+    {
+      "query_id": "litsearch_006",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 292,
+      "latency_s": 2.0379330000141636
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_006",
+    "gold": [
+      174801080
+    ],
+    "pool_size": 209,
+    "decomposition": [
+      "multi-hop question decomposition into single-hop sub-questions",
+      "transforming multi-hop questions to single-hop for QA models",
+      "question decomposition methods for multi-hop reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        211258645,
+        252693442,
+        174801080,
+        251718892,
+        225102917,
+        238744031,
+        196206886,
+        258866132,
+        245616876,
+        256460928,
+        49363931,
+        252780709,
+        5434996,
+        252365096,
+        248069196,
+        252873105,
+        47020074,
+        155100120,
+        259187807,
+        218487313
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        211258744,
+        211258645,
+        252780709,
+        174801764,
+        236477336,
+        251718892,
+        202565945,
+        174801080,
+        226236740,
+        252819457,
+        252365096,
+        236771976,
+        224705407,
+        247518809,
+        248780551,
+        155100120,
+        225066758,
+        91184245,
+        202773198,
+        252070626
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        211258744,
+        252780709,
+        174801764,
+        248780551,
+        251718892,
+        225066758,
+        248827723,
+        236477336,
+        237592852,
+        236771976,
+        247518809,
+        252070626,
+        252819457,
+        91184245,
+        202712552,
+        202583429,
+        234776197,
+        235097600,
+        226236740,
+        256460981
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        174801080,
+        211258645,
+        251718892,
+        211258744,
+        202565945,
+        247518809,
+        174801764,
+        252780709
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        211258744,
+        252780709,
+        174801764,
+        251718892,
+        236477336,
+        211258645,
+        248780551,
+        202565945,
+        252819457,
+        225066758,
+        236771976,
+        247518809,
+        226236740,
+        174801080,
+        252070626,
+        91184245,
+        248827723,
+        202583429,
+        235097600,
+        224705407
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.037874799920246
+  },
+  "reason_example": {
+    "query_id": "litsearch_006",
+    "query": "Can you direct me to research that explores methods for transforming multi-hop questions into single-hop sub-questions to leverage existing single-hop answer models?",
+    "top_results": [
+      {
+        "corpusid": 211258744,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252780709,
+        "score": 0.9340217113494873,
+        "reason": "bm25=0.906; dense=0.953; sub_bm25=0.982; sub_dense=1.000"
+      },
+      {
+        "corpusid": 174801764,
+        "score": 0.87624192237854,
+        "reason": "bm25=0.894; dense=0.864; sub_bm25=0.847; sub_dense=0.917"
+      },
+      {
+        "corpusid": 251718892,
+        "score": 0.8544456958770752,
+        "reason": "bm25=0.862; dense=0.849; sub_bm25=1.000; sub_dense=0.997"
+      },
+      {
+        "corpusid": 236477336,
+        "score": 0.8516585826873779,
+        "reason": "bm25=0.885; dense=0.829; sub_bm25=1.000; sub_dense=0.972"
+      }
+    ]
+  }
+}

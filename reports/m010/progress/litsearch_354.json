@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_354",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_354",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_354",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_354",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 977,
+      "latency_s": 6.285434400080703
+    },
+    {
+      "query_id": "litsearch_354",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 283,
+      "latency_s": 2.6817559000337496
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_354",
+    "gold": [
+      258557740
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "relation extraction dataset translated data comparison English",
+      "cross-lingual relation extraction benchmark translated vs English",
+      "dataset paper relation extraction performance on translated text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18123232,
+        2039066,
+        2753493,
+        17881228,
+        2068944,
+        244464114,
+        3266239,
+        6654636,
+        7030749,
+        258765228,
+        640783,
+        208267281,
+        1701627,
+        129945536,
+        11482722,
+        18446213,
+        245279384,
+        2100529,
+        6945479,
+        1579047
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        215509168,
+        245279384,
+        248227853,
+        258557740,
+        253107167,
+        258765228,
+        248426721,
+        129945536,
+        2039066,
+        208267281,
+        1701627,
+        259370565,
+        261341863,
+        251395918,
+        1973525,
+        6234837,
+        261342050,
+        233189525,
+        252918407,
+        8790370
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        215509168,
+        2039066,
+        14471969,
+        1387162,
+        259370565,
+        199577725,
+        233189525,
+        13877296,
+        14304056,
+        258765228,
+        236478098,
+        9158312,
+        259224336,
+        14334573,
+        5987198,
+        6441476,
+        14609354,
+        8410942,
+        18123232,
+        7343474
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258557740,
+        215509168,
+        233189525
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        215509168,
+        2039066,
+        259370565,
+        258765228,
+        245279384,
+        233189525,
+        258557740,
+        248426721,
+        236478098,
+        261341863,
+        1387162,
+        13877296,
+        261342050,
+        14471969,
+        253107167,
+        199577725,
+        251395918,
+        18123232,
+        14304056,
+        14045170
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.397846600040793
+  },
+  "reason_example": {
+    "query_id": "litsearch_354",
+    "query": "Could you recommend a dataset paper which presents relation extraction performance on translated data and compare it to English data?",
+    "top_results": [
+      {
+        "corpusid": 215509168,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2039066,
+        "score": 0.9220834970474243,
+        "reason": "bm25=0.829; dense=0.984; sub_bm25=0.958; sub_dense=0.949"
+      },
+      {
+        "corpusid": 259370565,
+        "score": 0.8732354640960693,
+        "reason": "bm25=0.812; dense=0.914; sub_bm25=0.761; sub_dense=0.948"
+      },
+      {
+        "corpusid": 258765228,
+        "score": 0.8607181310653687,
+        "reason": "bm25=0.876; dense=0.851; sub_bm25=0.743; sub_dense=0.949"
+      },
+      {
+        "corpusid": 245279384,
+        "score": 0.853492021560669,
+        "reason": "bm25=0.925; dense=0.806; sub_bm25=0.986; sub_dense=0.880"
+      }
+    ]
+  }
+}

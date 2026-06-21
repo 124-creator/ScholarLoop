@@ -1,0 +1,618 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_019",
+  "query": "Can you refer me to research that adapts the concept of Word Mover's Distance to sentences, addressing the limitations of bag-of-words approaches and considering the order of words for text similarity?",
+  "criteria": [
+    "Word Mover's Distance sentence similarity word order",
+    "beyond bag-of-words text similarity word mover's distance",
+    "sentence-level document distance using word embeddings order"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_019.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_019",
+      "corpusid": 201739091,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "WMD O : Fluency-based Word Mover's Distance for Machine Translation Evaluation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            78
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2971094522",
+            "candidate_title": "WMDO: Fluency-based Word Mover’s Distance for Machine Translation Evaluation",
+            "title_score": 0.9933774834437086,
+            "title_token_jaccard": 0.7692307692307693,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2971094522",
+            "candidate_title": "WMDO: Fluency-based Word Mover’s Distance for Machine Translation Evaluation",
+            "title_score": 0.9933774834437086,
+            "title_token_jaccard": 0.7692307692307693,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Building on the Word Mover's Distance metric and various word embeddings, we introduce a fragmentation penalty to account for fluency of a translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            259,
+            410
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Matching in the semantic space has been investigated for translation evaluation, but the constraints of a translation's word order have not been fully explored.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            98,
+            258
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we introduce a fragmentation penalty to account for fluency of a translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            333,
+            410
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "However, this requires linguistic resources to lemmatise the data or lexical databases to fetch synonyms/paraphrases, which do not exist for most languages.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1822,
+            1978
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This word order extension is shown to perform better than standard WMD, with promising results against other types of metrics.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            411,
+            537
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We propose WMD O , a metric based on distance between distributions in the semantic vector space.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            97
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Building on the Word Mover's Distance metric and various word embeddings, we introduce a fragmentation penalty to account for fluency of a translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            259,
+            410
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1329,
+        "elapsed_s": 6.935422500013374,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_019_201739091.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": null
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_019",
+      "corpusid": 248780466,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Binary Encoded Word Mover's Distance",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            36
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "C. A. Johnson (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4285226496",
+            "fetched_at": "2026-06-20T00:19:25Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\cbc5f66a0007e48f539f6a15.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.repl4nlp-1.17; Source: https://doi.org/10.18653/v1/2022.repl4nlp-1.17; OA: gold; Citations: 2",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4285226496",
+            "fetched_at": "2026-06-20T00:19:25Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\cbc5f66a0007e48f539f6a15.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Proceedings of the 7th Workshop on Representation Learning for NLP",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            231,
+            297
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "This metric achieves impressive results on semantic similarity tasks, but is slow and difficult to scale due to the large number of floating point calculations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            132,
+            292
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This metric achieves impressive results on semantic similarity tasks, but is slow and difficult to scale due to the large number of floating point calculations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            132,
+            292
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "This metric achieves impressive results on semantic similarity tasks, but is slow and difficult to scale due to the large number of floating point calculations.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            132,
+            292
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1539,
+        "elapsed_s": 10.667516899993643,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_019_248780466.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4285226496",
+        "title": "Binary Encoded Word Mover’s Distance",
+        "authors": [
+          "C. A. Johnson"
+        ],
+        "year": 2022,
+        "venue": "https://doi.org/10.18653/v1/2022.repl4nlp-1.17",
+        "doi": "10.18653/v1/2022.repl4nlp-1.17",
+        "oa_status": "gold",
+        "citation_count": 2,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:25Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\cbc5f66a0007e48f539f6a15.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Binary Encoded Word Mover's Distance",
+          "candidate_title": "Binary Encoded Word Mover’s Distance",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_019",
+      "corpusid": 192530110,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Sentence Mover's Similarity: Automatic Evaluation for Multi-Sentence Texts",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            74
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Elizabeth Clark, Aslı Çelikyılmaz, Noah A. Smith (2019)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2947771965",
+            "fetched_at": "2026-06-20T00:19:27Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\4594c729c499577ab5dfb55d.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/p19-1264; Source: https://doi.org/10.18653/v1/p19-1264; OA: gold; Citations: 143",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2947771965",
+            "fetched_at": "2026-06-20T00:19:27Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\4594c729c499577ab5dfb55d.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We introduce methods based on sentence mover's similarity; our automatic metrics evaluate text in a continuous space using word and sentence embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            306,
+            458
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The most common automatic metrics, like BLEU and ROUGE, depend on exact word matching, an inflexible approach for measuring semantic similarity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            161,
+            305
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We introduce methods based on sentence mover's similarity",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            306,
+            363
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "both on machine-generated summaries (average length of 3.4 sentences) and human-authored essays (average length of 7.5)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            559,
+            678
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We find that sentence-based metrics correlate with human judgments significantly better than ROUGE",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            459,
+            557
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, existing automatic metrics for evaluating text are problematic.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1900,
+            1972
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "sentence mover's similarity can be used as a reward when learning a generation model via reinforcement learning",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            698,
+            809
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1353,
+        "elapsed_s": 6.210396800073795,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_019_192530110.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2947771965",
+        "title": "Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts",
+        "authors": [
+          "Elizabeth Clark",
+          "Aslı Çelikyılmaz",
+          "Noah A. Smith"
+        ],
+        "year": 2019,
+        "venue": "https://doi.org/10.18653/v1/p19-1264",
+        "doi": "10.18653/v1/p19-1264",
+        "oa_status": "gold",
+        "citation_count": 143,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:27Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\4594c729c499577ab5dfb55d.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Sentence Mover's Similarity: Automatic Evaluation for Multi-Sentence Texts",
+          "candidate_title": "Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 201739091,
+      "title": "WMD O : Fluency-based Word Mover's Distance for Machine Translation Evaluation",
+      "cells": [
+        {
+          "criterion": "Word Mover's Distance sentence similarity word order",
+          "addresses": true,
+          "snippet": "We propose WMD O , a metric based on distance between distributions in the semantic vector space.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            97
+          ]
+        },
+        {
+          "criterion": "beyond bag-of-words text similarity word mover's distance",
+          "addresses": true,
+          "snippet": "We propose WMD O , a metric based on distance between distributions in the semantic vector space.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            97
+          ]
+        },
+        {
+          "criterion": "sentence-level document distance using word embeddings order",
+          "addresses": true,
+          "snippet": "We propose WMD O , a metric based on distance between distributions in the semantic vector space.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            97
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 248780466,
+      "title": "Binary Encoded Word Mover's Distance",
+      "cells": [
+        {
+          "criterion": "Word Mover's Distance sentence similarity word order",
+          "addresses": true,
+          "snippet": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        },
+        {
+          "criterion": "beyond bag-of-words text similarity word mover's distance",
+          "addresses": true,
+          "snippet": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        },
+        {
+          "criterion": "sentence-level document distance using word embeddings order",
+          "addresses": true,
+          "snippet": "Word Mover's Distance is a textual distance metric which calculates the minimum transport cost between two sets of word embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 192530110,
+      "title": "Sentence Mover's Similarity: Automatic Evaluation for Multi-Sentence Texts",
+      "cells": [
+        {
+          "criterion": "Word Mover's Distance sentence similarity word order",
+          "addresses": true,
+          "snippet": "The most common automatic metrics, like BLEU and ROUGE, depend on exact word matching, an inflexible approach for measuring semantic similarity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            161,
+            305
+          ]
+        },
+        {
+          "criterion": "beyond bag-of-words text similarity word mover's distance",
+          "addresses": true,
+          "snippet": "For evaluating machine-generated texts, automatic methods hold the promise of avoiding collection of human judgments, which can be expensive and time-consuming.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            160
+          ]
+        },
+        {
+          "criterion": "sentence-level document distance using word embeddings order",
+          "addresses": true,
+          "snippet": "The most common automatic metrics, like BLEU and ROUGE, depend on exact word matching, an inflexible approach for measuring semantic similarity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            161,
+            305
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      192530110,
+      201739091,
+      248780466
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

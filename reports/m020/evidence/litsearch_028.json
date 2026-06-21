@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_028",
+  "query": "Could you point me to research on binary classification systems that predict whether sentences within a context require clarification, particularly using the wikiHowToImprove dataset?",
+  "criteria": [
+    "binary classification clarification need sentences",
+    "wikiHowToImprove dataset clarification prediction",
+    "sentence-level clarification binary classifier"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 202773799,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Asking Clarification Questions in Knowledge-Based Question Answering",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            68
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "given a question, identify whether clarification is needed",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            547,
+            605
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide representative baselines for these tasks",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            703,
+            754
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "we construct a new clarification dataset, CLAQUA, with nearly 40K open-domain examples.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            418,
+            505
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Experiments show that the proposed model achieves better performance than strong baselines.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            839,
+            930
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "there still remain several unsolved problems, like reasonable automatic evaluation metrics for clarification question generation and powerful models for handling entity sparsity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1008,
+            1186
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The dataset supports three serial tasks: given a question, identify whether clarification is needed",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            506,
+            605
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1890,
+        "elapsed_s": 10.907477700035088,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_202773799.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 258765297,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Predicting the presence of inline citations in academic text using binary classification",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            88
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we fine-tuned SciBERT on both an imbalanced and a balanced dataset containing sentences with and without inline citations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            291,
+            413
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "both an imbalanced and a balanced dataset containing sentences with and without inline citations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            316,
+            412
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We achieved an overall accuracy of over 0.92, suggesting that language patterns alone could be used to predict where inline citations should appear.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            414,
+            562
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1243,
+        "elapsed_s": 5.683580999961123,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_258765297.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 236486314,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            89
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Detecting Clarification Requirements in Instructional Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            31,
+            89
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "sentence from an instructional text",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1136,
+            1171
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "the best scoring system achieved an accuracy of 68%.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            354,
+            406
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Annotators and systems were provided with additional context, here shortened in brackets.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2792,
+            2881
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "detect whether a sentence from an instructional text requires clarification",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1119,
+            1194
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1521,
+        "elapsed_s": 9.772595699992962,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_236486314.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 202773799,
+      "title": "Asking Clarification Questions in Knowledge-Based Question Answering",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 258765297,
+      "title": "Predicting the presence of inline citations in academic text using binary classification",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "To that end, we fine-tuned SciBERT on both an imbalanced and a balanced dataset containing sentences with and without inline citations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            278,
+            413
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 236486314,
+      "title": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      202773799,
+      236486314,
+      258765297
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

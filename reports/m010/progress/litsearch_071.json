@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_071",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_071",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_071",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_071",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2006,
+      "latency_s": 17.978973699966446
+    },
+    {
+      "query_id": "litsearch_071",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 301,
+      "latency_s": 2.4308777999831364
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_071",
+    "gold": [
+      2782776
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "streaming degree evaluation simultaneous machine translation",
+      "metrics for flow in simultaneous translation",
+      "recent developments SiMT evaluation streaming"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51878325,
+        554151,
+        52058047,
+        12985296,
+        128029,
+        33479987,
+        35003556,
+        2749381,
+        7567116,
+        46412765,
+        32782433,
+        61214793,
+        5371957,
+        10837599,
+        8954558,
+        14005414,
+        38407095,
+        49742509,
+        7468035,
+        2909838
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247518546,
+        247518800,
+        247519155,
+        237491600,
+        236478193,
+        232013472,
+        235097418,
+        221738837,
+        244464127,
+        247244911,
+        250391008,
+        259370839,
+        359451,
+        248780304,
+        257255341,
+        32416022,
+        18091538,
+        8975369,
+        215416342,
+        235097367
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247519155,
+        222158312,
+        235097367,
+        34175343,
+        237491600,
+        253098198,
+        1874608,
+        245855699,
+        256461221,
+        250391072,
+        4646778,
+        201690478,
+        972365,
+        247244911,
+        936390,
+        220919861,
+        18091538,
+        1308307,
+        15581113,
+        247518800
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097367,
+        237491600,
+        247519155,
+        247518546,
+        247518800,
+        236478193,
+        222158312
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247519155,
+        237491600,
+        247518800,
+        236478193,
+        222158312,
+        235097367,
+        247518546,
+        247244911,
+        18091538,
+        253098198,
+        250391072,
+        1308307,
+        250391008,
+        235097418,
+        916523,
+        253553349,
+        5093808,
+        220060300,
+        11223001,
+        220919861
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 22.901187099982053
+  },
+  "reason_example": {
+    "query_id": "litsearch_071",
+    "query": "What are the recent developments in evaluating the flow or 'streaming degree' of the translation processes in simultaneous machine translation (SiMT), and which metric has proven useful for this purpose?",
+    "top_results": [
+      {
+        "corpusid": 247519155,
+        "score": 0.9685620069503784,
+        "reason": "bm25=0.921; dense=1.000; sub_bm25=0.628; sub_dense=0.796"
+      },
+      {
+        "corpusid": 237491600,
+        "score": 0.9330182075500488,
+        "reason": "bm25=0.904; dense=0.952; sub_bm25=0.596; sub_dense=0.808"
+      },
+      {
+        "corpusid": 247518800,
+        "score": 0.929294764995575,
+        "reason": "bm25=0.971; dense=0.902; sub_bm25=0.753; sub_dense=0.765"
+      },
+      {
+        "corpusid": 236478193,
+        "score": 0.8964115381240845,
+        "reason": "bm25=0.902; dense=0.893; sub_bm25=0.575; sub_dense=0.722"
+      },
+      {
+        "corpusid": 222158312,
+        "score": 0.8943606019020081,
+        "reason": "bm25=0.792; dense=0.963; sub_bm25=0.774; sub_dense=0.843"
+      }
+    ]
+  }
+}

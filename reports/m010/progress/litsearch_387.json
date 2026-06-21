@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_387",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_387",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_387",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_387",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1497,
+      "latency_s": 9.193850600044243
+    },
+    {
+      "query_id": "litsearch_387",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.1463518999516964
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_387",
+    "gold": [
+      253734483
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "knowledge distillation out-of-distribution detection text",
+      "knowledge distillation anomaly detection text",
+      "language model distillation OOD detection"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14371097,
+        8752606,
+        17934328,
+        12776597,
+        10166824,
+        199022672,
+        229923739,
+        52158272,
+        247595230,
+        227230285,
+        256697545,
+        17008400,
+        1966857,
+        244464088,
+        2840902,
+        46953263,
+        10041554,
+        250390489,
+        184483086,
+        230799344
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        257102434,
+        246867225,
+        11542450,
+        208139512,
+        258832820,
+        258378244,
+        252546561,
+        237354142,
+        231861566,
+        196178484,
+        21719007,
+        253734483,
+        256615740,
+        238408395,
+        229923739,
+        248780319,
+        263333942,
+        256390313,
+        12776597,
+        227231878
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253734483,
+        220047190,
+        252546561,
+        258832820,
+        237503353,
+        11542450,
+        2465888,
+        11568211,
+        207930099,
+        250390702,
+        215745290,
+        245425026,
+        259370700,
+        238857304,
+        253097876,
+        6838726,
+        235258277,
+        222290903,
+        29703312,
+        239009471
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253734483
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253734483,
+        11542450,
+        258832820,
+        252546561,
+        237503353,
+        220047190,
+        196178484,
+        258378332,
+        237354142,
+        256390129,
+        235258277,
+        250390702,
+        259370700,
+        253097876,
+        215745290,
+        16938441,
+        253237337,
+        245425026,
+        257219883,
+        222290903
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.379897499922663
+  },
+  "reason_example": {
+    "query_id": "litsearch_387",
+    "query": "Is there any paper leverages knowledge distillation of language models for textual out-of-distribution detection or anomaly detection?",
+    "top_results": [
+      {
+        "corpusid": 253734483,
+        "score": 0.9356212019920349,
+        "reason": "bm25=0.839; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 11542450,
+        "score": 0.9256026744842529,
+        "reason": "bm25=0.929; dense=0.923; sub_bm25=0.908; sub_dense=0.943"
+      },
+      {
+        "corpusid": 258832820,
+        "score": 0.925492525100708,
+        "reason": "bm25=0.903; dense=0.941; sub_bm25=0.828; sub_dense=0.924"
+      },
+      {
+        "corpusid": 252546561,
+        "score": 0.9219583868980408,
+        "reason": "bm25=0.877; dense=0.952; sub_bm25=0.803; sub_dense=0.792"
+      },
+      {
+        "corpusid": 237503353,
+        "score": 0.8774031400680542,
+        "reason": "bm25=0.784; dense=0.940; sub_bm25=0.747; sub_dense=0.829"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_542",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_542",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_542",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_542",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1215,
+      "latency_s": 8.224723299965262
+    },
+    {
+      "query_id": "litsearch_542",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 239,
+      "latency_s": 2.035430100047961
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_542",
+    "gold": [
+      264439509
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "open-source dataset knowledge retrieval constraint satisfaction",
+      "dataset integrating knowledge graph and constraint satisfaction",
+      "knowledge retrieval with constraint queries benchmark"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9028508,
+        59642407,
+        1488057,
+        2000271,
+        6530117,
+        16773647,
+        2136580,
+        252873036,
+        264439509,
+        33978616,
+        229923350,
+        186232078,
+        21707684,
+        52900003,
+        14258249,
+        221246230,
+        14250965,
+        236460257,
+        258960666,
+        241583195
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        264439509,
+        262954661,
+        226283753,
+        13040597,
+        241583195,
+        259298658,
+        221802772,
+        5332858,
+        21707684,
+        257078996,
+        258822815,
+        52900003,
+        14634824,
+        237099275,
+        236460035,
+        2167791,
+        254877499,
+        248239874,
+        14258249,
+        237347134
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        18549358,
+        220047976,
+        52009210,
+        264439509,
+        52012400,
+        250127391,
+        2861451,
+        250390991,
+        14250965,
+        16639862,
+        258378284,
+        259370535,
+        1211866,
+        208617314,
+        957320,
+        53223679,
+        37047,
+        202767979,
+        258822815,
+        226283753
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264439509
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264439509,
+        226283753,
+        18549358,
+        258822815,
+        208617314,
+        14250965,
+        250390991,
+        52012400,
+        258378284,
+        52009210,
+        258865613,
+        2861451,
+        221802772,
+        229923350,
+        241583195,
+        9028508,
+        7319766,
+        60657401,
+        59642407,
+        220047976
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.054715599981137
+  },
+  "reason_example": {
+    "query_id": "litsearch_542",
+    "query": "What open-source dataset combined knowledge retrieval with constraint satisfaction queries?",
+    "top_results": [
+      {
+        "corpusid": 264439509,
+        "score": 0.937637209892273,
+        "reason": "bm25=1.000; dense=0.896; sub_bm25=1.000; sub_dense=0.973"
+      },
+      {
+        "corpusid": 226283753,
+        "score": 0.7524850964546204,
+        "reason": "bm25=0.658; dense=0.816; sub_bm25=0.879; sub_dense=0.809"
+      },
+      {
+        "corpusid": 18549358,
+        "score": 0.7454920411109924,
+        "reason": "bm25=0.364; dense=1.000; sub_bm25=0.872; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258822815,
+        "score": 0.7157328128814697,
+        "reason": "bm25=0.565; dense=0.816; sub_bm25=0.842; sub_dense=0.841"
+      },
+      {
+        "corpusid": 208617314,
+        "score": 0.6983420252799988,
+        "reason": "bm25=0.500; dense=0.831; sub_bm25=0.564; sub_dense=0.833"
+      }
+    ]
+  }
+}

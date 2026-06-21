@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_268",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_268",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_268",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_268",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 769,
+      "latency_s": 2.7274603999685496
+    },
+    {
+      "query_id": "litsearch_268",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 254,
+      "latency_s": 2.262584700016305
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_268",
+    "gold": [
+      235694265
+    ],
+    "pool_size": 246,
+    "decomposition": [
+      "human ability to distinguish AI-generated text from human-written text",
+      "human detection of AI-generated text accuracy",
+      "factors affecting human discrimination of AI vs human text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21547774,
+        6934412,
+        259165572,
+        19653906,
+        665630,
+        21694023,
+        159040684,
+        248779918,
+        6047026,
+        1095471,
+        10165340,
+        250391050,
+        259145296,
+        229923851,
+        2064584,
+        14113765,
+        237502721,
+        247939526,
+        5977811,
+        235313818
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259145296,
+        235694265,
+        237502721,
+        159040684,
+        250144771,
+        260063149,
+        247315430,
+        235294145,
+        214802795,
+        226237099,
+        5226139,
+        226283635,
+        259096160,
+        24663,
+        256461346,
+        182952848,
+        258959097,
+        17635339,
+        247519233,
+        173188413
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250144771,
+        3927803,
+        259165572,
+        1428271,
+        2180596,
+        258378265,
+        235694265,
+        247594674,
+        8373986,
+        218973758,
+        221835708,
+        259145296,
+        264038809,
+        12062777,
+        2859241,
+        12317426,
+        260063145,
+        250150956,
+        7707558,
+        215754413
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259145296,
+        247315430,
+        235694265,
+        226237099,
+        260063149,
+        237502721,
+        235294145
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235694265,
+        250144771,
+        259145296,
+        237502721,
+        159040684,
+        235294145,
+        226237099,
+        260063149,
+        259096160,
+        3927803,
+        211204954,
+        249642180,
+        7905258,
+        247315430,
+        259165572,
+        220968818,
+        258378265,
+        9928113,
+        264405698,
+        250390537
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.110583700006828
+  },
+  "reason_example": {
+    "query_id": "litsearch_268",
+    "query": "Have any research papers investigated human capacity to distinguish AI-generated text from human-authored text?",
+    "top_results": [
+      {
+        "corpusid": 235694265,
+        "score": 0.9301316738128662,
+        "reason": "bm25=0.987; dense=0.892; sub_bm25=0.987; sub_dense=0.836"
+      },
+      {
+        "corpusid": 250144771,
+        "score": 0.9272552728652954,
+        "reason": "bm25=0.818; dense=1.000; sub_bm25=1.000; sub_dense=0.852"
+      },
+      {
+        "corpusid": 259145296,
+        "score": 0.9270789623260498,
+        "reason": "bm25=1.000; dense=0.878; sub_bm25=0.889; sub_dense=0.816"
+      },
+      {
+        "corpusid": 237502721,
+        "score": 0.8312503099441528,
+        "reason": "bm25=0.877; dense=0.801; sub_bm25=0.861; sub_dense=0.770"
+      },
+      {
+        "corpusid": 159040684,
+        "score": 0.805453896522522,
+        "reason": "bm25=0.832; dense=0.788; sub_bm25=0.746; sub_dense=0.648"
+      }
+    ]
+  }
+}

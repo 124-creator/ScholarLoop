@@ -1,0 +1,515 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_006",
+  "query": "Can you direct me to research that explores methods for transforming multi-hop questions into single-hop sub-questions to leverage existing single-hop answer models?",
+  "criteria": [
+    "multi-hop question decomposition into single-hop sub-questions",
+    "transforming multi-hop questions to single-hop for QA models",
+    "question decomposition methods for multi-hop reasoning"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_006",
+      "corpusid": 211258744,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Do Multi-Hop Question Answering Systems Know How to Answer the Single-Hop Sub-Questions?",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            88
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We adopt a neural decomposition model to generate sub-questions for a multi-hop complex question, followed by extracting the corresponding sub-answers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            364,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We adopt a neural decomposition model to generate sub-questions for a multi-hop complex question, followed by extracting the corresponding sub-answers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            364,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We adopt a neural decomposition model to generate sub-questions for a multi-hop complex question, followed by extracting the corresponding sub-answers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            364,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Rapid progress has been made in the field of question answering (QA), thanks to the release of many large-scale, highquality QA datasets.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1500,
+            1637
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This indicates that these models manage to answer the multi-hop questions using some partial clues, instead of truly understanding the reasoning paths.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            706,
+            857
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We show that multiple state-of-the-art multi-hop QA models fail to correctly answer a large portion of subquestions, although their corresponding multi-hop questions are correctly answered.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            516,
+            705
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We adopt a neural decomposition model to generate sub-questions for a multi-hop complex question",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            364,
+            460
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1816,
+        "elapsed_s": 10.547707499936223,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_006_211258744.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_006",
+      "corpusid": 252780709,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Understanding and Improving Zero-shot Multi-hop Reasoning in Generative Question Answering",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            90
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Generative question answering (QA) models generate answers to questions either solely based on the parameters of the model (the closed-book setting) or additionally retrieving relevant evidence (the open-book setting).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We perform several studies aimed at better understanding the multi-hop reasoning capabilities of generative QA models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            357,
+            475
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we decompose multi-hop questions into multiple corresponding single-hop questions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            483,
+            564
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "when trained only on single-hop questions, models generalize poorly to multi-hop questions",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            746,
+            836
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "multi-hop reasoning does not emerge naturally in generative QA models, but can be encouraged by advances in training or modeling techniques",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1150,
+            1289
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Generative QA models can answer some relatively complex questions, but the mechanism through which they do so is still poorly understood.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            219,
+            356
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Generative question answering (QA) models generate answers to questions either solely based on the parameters of the model (the closed-book setting) or additionally retrieving relevant evidence (the open-book setting).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1685,
+        "elapsed_s": 8.369238800019957,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_006_252780709.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_006",
+      "corpusid": 174801764,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            62
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "single-hop reasoning can solve much more of the dataset than previously thought",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            436,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Our analysis is centered on HOTPOTQA, where we show that single-hop reasoning can solve much more of the dataset than previously thought.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            379,
+            516
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "introduce a single-hop BERT-based RC model that achieves 67 F1",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            520,
+            582
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Our analysis is centered on HOTPOTQA",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            379,
+            415
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "even highly compositional questions can be answered with a single hop if they target specific entity types, or the facts needed to answer them are redundant.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            221,
+            378
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We also design an evaluation setting where humans are not shown all of the necessary paragraphs for the intended multi-hop reasoning but can still answer over 80% of questions.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            631,
+            807
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "single-hop reasoning can solve much more of the dataset than previously thought",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            436,
+            515
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1762,
+        "elapsed_s": 10.051989300060086,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_006_174801764.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 211258744,
+      "title": "Do Multi-Hop Question Answering Systems Know How to Answer the Single-Hop Sub-Questions?",
+      "cells": [
+        {
+          "criterion": "multi-hop question decomposition into single-hop sub-questions",
+          "addresses": true,
+          "snippet": "Multi-hop question answering (QA) requires a model to retrieve and integrate information from different parts of a long text to answer a question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            146
+          ]
+        },
+        {
+          "criterion": "transforming multi-hop questions to single-hop for QA models",
+          "addresses": true,
+          "snippet": "Multi-hop question answering (QA) requires a model to retrieve and integrate information from different parts of a long text to answer a question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            146
+          ]
+        },
+        {
+          "criterion": "question decomposition methods for multi-hop reasoning",
+          "addresses": true,
+          "snippet": "Multi-hop question answering (QA) requires a model to retrieve and integrate information from different parts of a long text to answer a question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            146
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 252780709,
+      "title": "Understanding and Improving Zero-shot Multi-hop Reasoning in Generative Question Answering",
+      "cells": [
+        {
+          "criterion": "multi-hop question decomposition into single-hop sub-questions",
+          "addresses": true,
+          "snippet": "Generative question answering (QA) models generate answers to questions either solely based on the parameters of the model (the closed-book setting) or additionally retrieving relevant evidence (the open-book setting).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        },
+        {
+          "criterion": "transforming multi-hop questions to single-hop for QA models",
+          "addresses": true,
+          "snippet": "Generative question answering (QA) models generate answers to questions either solely based on the parameters of the model (the closed-book setting) or additionally retrieving relevant evidence (the open-book setting).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        },
+        {
+          "criterion": "question decomposition methods for multi-hop reasoning",
+          "addresses": true,
+          "snippet": "Generative question answering (QA) models generate answers to questions either solely based on the parameters of the model (the closed-book setting) or additionally retrieving relevant evidence (the open-book setting).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            218
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 174801764,
+      "title": "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+      "cells": [
+        {
+          "criterion": "multi-hop question decomposition into single-hop sub-questions",
+          "addresses": true,
+          "snippet": "Multi-hop reading comprehension (RC) questions are challenging because they require reading and reasoning over multiple paragraphs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        },
+        {
+          "criterion": "transforming multi-hop questions to single-hop for QA models",
+          "addresses": true,
+          "snippet": "Multi-hop reading comprehension (RC) questions are challenging because they require reading and reasoning over multiple paragraphs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        },
+        {
+          "criterion": "question decomposition methods for multi-hop reasoning",
+          "addresses": true,
+          "snippet": "Multi-hop reading comprehension (RC) questions are challenging because they require reading and reasoning over multiple paragraphs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            131
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      174801764,
+      211258744,
+      252780709
+    ],
+    "edges": [
+      {
+        "source": 252780709,
+        "target": 174801764
+      },
+      {
+        "source": 252780709,
+        "target": 211258744
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

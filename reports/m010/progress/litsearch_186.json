@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_186",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_186",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_186",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_186",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1345,
+      "latency_s": 9.209460499929264
+    },
+    {
+      "query_id": "litsearch_186",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 381,
+      "latency_s": 2.6545244000153616
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_186",
+    "gold": [
+      247362971
+    ],
+    "pool_size": 226,
+    "decomposition": [
+      "complex natural language queries multi-step reasoning knowledge base",
+      "dataset comparing attributes set operations question answering",
+      "diverse intricate queries without entity linking"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248779936,
+        22155691,
+        51870165,
+        249017494,
+        247362971,
+        30331387,
+        233296655,
+        8787864,
+        9923087,
+        252365262,
+        226283830,
+        236460186,
+        8737837,
+        3444808,
+        211296452,
+        226262367,
+        243865277,
+        2981155,
+        5434996,
+        16466547
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        247362971,
+        259370544,
+        236459854,
+        22155691,
+        174801764,
+        202773198,
+        233296655,
+        5040774,
+        226262367,
+        48364557,
+        226236740,
+        209202200,
+        258865613,
+        238408158,
+        248780359,
+        3986974,
+        1662965,
+        235294046,
+        18309765,
+        1835722
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16639862,
+        52009210,
+        247362971,
+        250127391,
+        226236740,
+        348944,
+        201668424,
+        53079802,
+        237491606,
+        259370640,
+        252683172,
+        9838551,
+        259370544,
+        18549358,
+        52012400,
+        220047976,
+        252819147,
+        174801764,
+        1044201,
+        235303644
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247362971,
+        226236740
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247362971,
+        259370544,
+        226236740,
+        174801764,
+        201668424,
+        250127391,
+        52009210,
+        22155691,
+        233296655,
+        5040774,
+        235303644,
+        248780359,
+        258987923,
+        236459854,
+        258822815,
+        18309765,
+        258865613,
+        348944,
+        53079802,
+        16639862
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.410008200095035
+  },
+  "reason_example": {
+    "query_id": "litsearch_186",
+    "query": "Could you suggest a dataset containing diverse, intricate natural language queries that necessitate multi-step reasoning, comparing attributes, and performing set operations for answering questions from a knowledge base, without depending on entity linking?",
+    "top_results": [
+      {
+        "corpusid": 247362971,
+        "score": 0.9886125326156616,
+        "reason": "bm25=1.000; dense=0.981; sub_bm25=0.925; sub_dense=0.950"
+      },
+      {
+        "corpusid": 259370544,
+        "score": 0.9166866540908813,
+        "reason": "bm25=0.970; dense=0.881; sub_bm25=1.000; sub_dense=0.813"
+      },
+      {
+        "corpusid": 226236740,
+        "score": 0.8960319757461548,
+        "reason": "bm25=0.848; dense=0.928; sub_bm25=0.658; sub_dense=0.806"
+      },
+      {
+        "corpusid": 174801764,
+        "score": 0.8856501579284668,
+        "reason": "bm25=0.909; dense=0.870; sub_bm25=0.459; sub_dense=0.810"
+      },
+      {
+        "corpusid": 201668424,
+        "score": 0.8687857389450073,
+        "reason": "bm25=0.799; dense=0.915; sub_bm25=0.812; sub_dense=0.900"
+      }
+    ]
+  }
+}

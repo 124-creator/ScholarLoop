@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_086",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_086",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_086",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_086",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 980,
+      "latency_s": 5.361243300023489
+    },
+    {
+      "query_id": "litsearch_086",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 309,
+      "latency_s": 3.0149446999421343
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_086",
+    "gold": [
+      233219699
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "standard practices probing machine learning models",
+      "guidelines probing classifiers information captured",
+      "probing without training new task best practices"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248780559,
+        14000702,
+        10520645,
+        204800552,
+        61325961,
+        161340,
+        233029494,
+        925045,
+        2717337,
+        36800561,
+        1718521,
+        237257615,
+        253734944,
+        235313749,
+        79360,
+        51873595,
+        52046908,
+        239009754,
+        256104918,
+        258463915
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        250279831,
+        233181831,
+        252819062,
+        233219700,
+        248239728,
+        248780559,
+        225076039,
+        218486796,
+        85459688,
+        220047815,
+        211532533,
+        52046908,
+        233210199,
+        259075538,
+        251402047,
+        235097491,
+        226283990,
+        253734944,
+        253397675,
+        249062882
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258823428,
+        214693050,
+        250279831,
+        238634210,
+        251648657,
+        233219699,
+        215814222,
+        247634813,
+        249121168,
+        211532533,
+        256662499,
+        9794990,
+        247594470,
+        253098972,
+        256461462,
+        236924832,
+        221761662,
+        231609191,
+        247154974,
+        259861536
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250279831,
+        233181831,
+        252819062,
+        237452461,
+        237513875,
+        247634813,
+        248780559
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250279831,
+        211532533,
+        233181831,
+        214693050,
+        247634813,
+        249121168,
+        233219699,
+        258823428,
+        235097491,
+        236924832,
+        251648657,
+        218486796,
+        237513875,
+        235294052,
+        247154974,
+        259861536,
+        237452461,
+        247594470,
+        239009519,
+        238634210
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.961257299990393
+  },
+  "reason_example": {
+    "query_id": "litsearch_086",
+    "query": "Where can I find guidelines on standard practices for probing machine learning models to discern what information the models have captured without training them on a new task?",
+    "top_results": [
+      {
+        "corpusid": 250279831,
+        "score": 0.9916461706161499,
+        "reason": "bm25=1.000; dense=0.986; sub_bm25=0.750; sub_dense=1.000"
+      },
+      {
+        "corpusid": 211532533,
+        "score": 0.9037946462631226,
+        "reason": "bm25=0.830; dense=0.953; sub_bm25=0.747; sub_dense=0.811"
+      },
+      {
+        "corpusid": 233181831,
+        "score": 0.8964196443557739,
+        "reason": "bm25=0.934; dense=0.872; sub_bm25=0.789; sub_dense=0.835"
+      },
+      {
+        "corpusid": 214693050,
+        "score": 0.8934116363525391,
+        "reason": "bm25=0.754; dense=0.986; sub_bm25=0.726; sub_dense=0.929"
+      },
+      {
+        "corpusid": 247634813,
+        "score": 0.8769332766532898,
+        "reason": "bm25=0.756; dense=0.958; sub_bm25=0.846; sub_dense=0.874"
+      }
+    ]
+  }
+}

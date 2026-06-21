@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_433",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_433",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_433",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_433",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1517,
+      "latency_s": 9.513587800087407
+    },
+    {
+      "query_id": "litsearch_433",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 378,
+      "latency_s": 3.590041499934159
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_433",
+    "gold": [
+      253523259
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "first multimodal model combining text and speech transformers",
+      "trained without labelled text-speech pairs",
+      "multimodal text speech transformer unpaired training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5601748,
+        36562731,
+        12806852,
+        250390539,
+        259376723,
+        18837411,
+        1544363,
+        16165854,
+        230105001,
+        248780297,
+        6934412,
+        9497515,
+        59336710,
+        247619273,
+        17768039,
+        56657855,
+        259376569,
+        222140805,
+        9298137,
+        226283720
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235794968,
+        245853756,
+        256461338,
+        235899058,
+        258865836,
+        254591489,
+        260063227,
+        252847508,
+        222140805,
+        7179848,
+        248780297,
+        15992475,
+        25492437,
+        248780411,
+        245616875,
+        6104403,
+        236460006,
+        236460134,
+        21729459,
+        56657855
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        216570869,
+        220045916,
+        15992475,
+        215754220,
+        233219888,
+        259370720,
+        21547774,
+        236486303,
+        543388,
+        219571176,
+        7811669,
+        6104403,
+        259376723,
+        235313546,
+        13318712,
+        236477993,
+        29077435,
+        21701499,
+        247450929,
+        778557
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258865836,
+        236460006,
+        235794968,
+        259376723,
+        245853756,
+        235899058,
+        259370720,
+        56657855,
+        260063227,
+        18837411,
+        6104403,
+        248780297
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        15992475,
+        235794968,
+        6104403,
+        259370720,
+        245853756,
+        259376723,
+        236460006,
+        252762414,
+        258865836,
+        232185558,
+        219571176,
+        248780411,
+        254591489,
+        260063227,
+        220045916,
+        258865688,
+        245616875,
+        259088588,
+        17007944,
+        259376576
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.174239599960856
+  },
+  "reason_example": {
+    "query_id": "litsearch_433",
+    "query": "Which is the first multimodal model combining text and speech transformers trained without labelled text-speech pairs?",
+    "top_results": [
+      {
+        "corpusid": 15992475,
+        "score": 0.9359803199768066,
+        "reason": "bm25=0.864; dense=0.984; sub_bm25=0.846; sub_dense=0.993"
+      },
+      {
+        "corpusid": 235794968,
+        "score": 0.9238566160202026,
+        "reason": "bm25=1.000; dense=0.873; sub_bm25=0.955; sub_dense=1.000"
+      },
+      {
+        "corpusid": 6104403,
+        "score": 0.8980374336242676,
+        "reason": "bm25=0.847; dense=0.932; sub_bm25=0.929; sub_dense=0.874"
+      },
+      {
+        "corpusid": 259370720,
+        "score": 0.8804501295089722,
+        "reason": "bm25=0.779; dense=0.948; sub_bm25=0.609; sub_dense=0.955"
+      },
+      {
+        "corpusid": 245853756,
+        "score": 0.8766353130340576,
+        "reason": "bm25=0.963; dense=0.819; sub_bm25=0.970; sub_dense=0.803"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_054",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_054",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_054",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_054",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1502,
+      "latency_s": 9.270422799978405
+    },
+    {
+      "query_id": "litsearch_054",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 263,
+      "latency_s": 1.719314799993299
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_054",
+    "gold": [
+      214713480
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "graph-to-graph transformer dependency parsing",
+      "iterative refinement dependency parsing",
+      "graph transformer syntactic parsing advancements"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2337034,
+        14415278,
+        424889,
+        16858536,
+        18780774,
+        2301676,
+        9669733,
+        6732044,
+        174797942,
+        19035533,
+        1097163,
+        2298682,
+        17566738,
+        202541467,
+        16246188,
+        15749329,
+        9289495,
+        195069169,
+        259376680,
+        209064370
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        214713480,
+        8819300,
+        236486201,
+        227334932,
+        174799386,
+        237420740,
+        8778603,
+        52074926,
+        258486902,
+        49208503,
+        236460104,
+        14333463,
+        17566738,
+        202773239,
+        259376680,
+        9289495,
+        9950135,
+        9431510,
+        222140805,
+        240288693
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        214713480,
+        207852571,
+        9431510,
+        15533677,
+        11509848,
+        8841597,
+        235367733,
+        18780774,
+        8743383,
+        2102270,
+        16246188,
+        196184929,
+        252819150,
+        28253803,
+        16706302,
+        35174263,
+        6267446,
+        236486109,
+        1842024,
+        14038100
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        214713480
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        214713480,
+        9431510,
+        207852571,
+        8841597,
+        18780774,
+        235367733,
+        2102270,
+        252819150,
+        8778603,
+        15533677,
+        236486201,
+        17566738,
+        16048023,
+        9289495,
+        236986938,
+        16246188,
+        9950135,
+        14415278,
+        32355516,
+        11509848
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.595681000035256
+  },
+  "reason_example": {
+    "query_id": "litsearch_054",
+    "query": "I'm searching for studies that explore advancements in dependency parsing, particularly using graph-to-graph transformers with iterative refinement processes. Which publications should I look into?",
+    "top_results": [
+      {
+        "corpusid": 214713480,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.963"
+      },
+      {
+        "corpusid": 9431510,
+        "score": 0.8504016399383545,
+        "reason": "bm25=0.745; dense=0.921; sub_bm25=0.659; sub_dense=0.921"
+      },
+      {
+        "corpusid": 207852571,
+        "score": 0.8446796536445618,
+        "reason": "bm25=0.719; dense=0.928; sub_bm25=0.953; sub_dense=1.000"
+      },
+      {
+        "corpusid": 8841597,
+        "score": 0.8229144215583801,
+        "reason": "bm25=0.742; dense=0.877; sub_bm25=0.659; sub_dense=0.963"
+      },
+      {
+        "corpusid": 18780774,
+        "score": 0.8072751760482788,
+        "reason": "bm25=0.723; dense=0.863; sub_bm25=0.689; sub_dense=0.874"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_124",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_124",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_124",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_124",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1625,
+      "latency_s": 12.065587500110269
+    },
+    {
+      "query_id": "litsearch_124",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.3156208000145853
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_124",
+    "gold": [
+      236477370
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "mitigating bias in natural language understanding example reweighting",
+      "example reweighting for debiasing NLU",
+      "bias mitigation NLU reweighting training examples"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5472320,
+        7591554,
+        2776389,
+        3930720,
+        2491133,
+        2718695,
+        45770971,
+        9405005,
+        14038010,
+        233029459,
+        10513825,
+        8955494,
+        16205078,
+        52141368,
+        15204692,
+        16047614,
+        235482360,
+        13400865,
+        44979057,
+        764565
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        221970551,
+        258378297,
+        218613632,
+        256461446,
+        233864681,
+        53467348,
+        237491723,
+        248779966,
+        252819262,
+        247596779,
+        230349190,
+        232222259,
+        237490811,
+        195316733,
+        237277931,
+        226254460,
+        3101865,
+        238583726,
+        252403180,
+        220281039
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        227247851,
+        258486946,
+        239015827,
+        247694107,
+        209461005,
+        247613246,
+        195316733,
+        207996257,
+        259370743,
+        256461446,
+        236460084,
+        218971825,
+        215191351,
+        236486260,
+        248780380,
+        253116931,
+        239010011,
+        236477415,
+        190000105,
+        220281039
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247694107,
+        256461446,
+        218613632,
+        233864681,
+        237491723,
+        259370845,
+        195316733,
+        250390802,
+        230349190,
+        253397743,
+        226254460,
+        250390561
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256461446,
+        195316733,
+        218613632,
+        247694107,
+        233864681,
+        220281039,
+        237491723,
+        218971825,
+        258378297,
+        239015827,
+        253397743,
+        250390561,
+        221970551,
+        225075985,
+        209461005,
+        253157517,
+        258486946,
+        236477415,
+        259370845,
+        259370743
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.325007799896412
+  },
+  "reason_example": {
+    "query_id": "litsearch_124",
+    "query": "Could you recommend a study that explores mitigating bias in natural language understanding via example reweighting?",
+    "top_results": [
+      {
+        "corpusid": 256461446,
+        "score": 0.9538025856018066,
+        "reason": "bm25=0.955; dense=0.953; sub_bm25=0.939; sub_dense=0.917"
+      },
+      {
+        "corpusid": 195316733,
+        "score": 0.9120239019393921,
+        "reason": "bm25=0.838; dense=0.962; sub_bm25=0.996; sub_dense=0.901"
+      },
+      {
+        "corpusid": 218613632,
+        "score": 0.8935673236846924,
+        "reason": "bm25=0.970; dense=0.842; sub_bm25=0.909; sub_dense=0.822"
+      },
+      {
+        "corpusid": 247694107,
+        "score": 0.8900773525238037,
+        "reason": "bm25=0.756; dense=0.979; sub_bm25=0.777; sub_dense=0.926"
+      },
+      {
+        "corpusid": 233864681,
+        "score": 0.8815370202064514,
+        "reason": "bm25=0.922; dense=0.855; sub_bm25=0.768; sub_dense=0.864"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_112",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_112",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_112",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_112",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1371,
+      "latency_s": 9.086531699984334
+    },
+    {
+      "query_id": "litsearch_112",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 330,
+      "latency_s": 2.6433796000201255
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_112",
+    "gold": [
+      247939641
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "few-shot slot tagging model micro-F1 evaluation",
+      "averaging micro-F1 across episodes slot tagging",
+      "few-shot learning slot filling performance metrics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        220046230,
+        202775306,
+        248722176,
+        251274344,
+        248366286,
+        256827099,
+        247939641,
+        52011652,
+        14249319,
+        233210613,
+        254877171,
+        219558508,
+        17348301,
+        15594009,
+        234679287,
+        258765247,
+        251979431,
+        260063200,
+        245144606,
+        14630989
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        219558508,
+        247939641,
+        236477946,
+        220046230,
+        237491880,
+        258947736,
+        256460900,
+        237532321,
+        252819348,
+        235422049,
+        250390921,
+        252383739,
+        253475828,
+        256461052,
+        202775306,
+        3507990,
+        235097269,
+        248118703,
+        209058570,
+        216080986
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236477946,
+        202888950,
+        341,
+        10568663,
+        821034,
+        247939641,
+        23678406,
+        71145737,
+        219558508,
+        238408300,
+        53082972,
+        16532922,
+        235683072,
+        220048265,
+        2335669,
+        17783896,
+        252819431,
+        259376579,
+        252818977,
+        1117579
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236477946,
+        219558508,
+        247939641,
+        237491880,
+        237532321,
+        220046230,
+        253475828,
+        240288835,
+        202888950,
+        248722176,
+        251274344,
+        254877171
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236477946,
+        219558508,
+        247939641,
+        220046230,
+        202888950,
+        237491880,
+        821034,
+        216080986,
+        3507990,
+        71145737,
+        232104960,
+        235683072,
+        237532321,
+        237940684,
+        238408300,
+        253475828,
+        23678406,
+        252992469,
+        250390921,
+        251223486
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.532611000002362
+  },
+  "reason_example": {
+    "query_id": "litsearch_112",
+    "query": "Could you direct me to research that evaluates few-shot slot tagging model performance by averaging micro-F1 scores across different test episodes?",
+    "top_results": [
+      {
+        "corpusid": 236477946,
+        "score": 0.9396635293960571,
+        "reason": "bm25=0.849; dense=1.000; sub_bm25=0.965; sub_dense=1.000"
+      },
+      {
+        "corpusid": 219558508,
+        "score": 0.9084705114364624,
+        "reason": "bm25=1.000; dense=0.847; sub_bm25=1.000; sub_dense=0.908"
+      },
+      {
+        "corpusid": 247939641,
+        "score": 0.9079923629760742,
+        "reason": "bm25=0.927; dense=0.895; sub_bm25=0.948; sub_dense=0.900"
+      },
+      {
+        "corpusid": 220046230,
+        "score": 0.8063364028930664,
+        "reason": "bm25=0.826; dense=0.793; sub_bm25=0.826; sub_dense=0.850"
+      },
+      {
+        "corpusid": 202888950,
+        "score": 0.7811697721481323,
+        "reason": "bm25=0.544; dense=0.940; sub_bm25=0.406; sub_dense=0.983"
+      }
+    ]
+  }
+}

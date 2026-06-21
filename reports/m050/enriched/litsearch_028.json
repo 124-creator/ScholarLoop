@@ -1,0 +1,624 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_028",
+  "query": "Could you point me to research on binary classification systems that predict whether sentences within a context require clarification, particularly using the wikiHowToImprove dataset?",
+  "criteria": [
+    "binary classification clarification need sentences",
+    "wikiHowToImprove dataset clarification prediction",
+    "sentence-level clarification binary classifier"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_028.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 202773799,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Asking Clarification Questions in Knowledge-Based Question Answering",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            68
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Jingjing Xu, Yuechen Wang, Duyu Tang, Nan Duan, Pengcheng Yang, Qi Zeng, et al. (2019)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2971169991",
+            "fetched_at": "2026-06-20T00:20:11Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\9b16f65a97899066e720d6de.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/d19-1172; Source: https://doi.org/10.18653/v1/d19-1172; OA: gold; Citations: 49",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2971169991",
+            "fetched_at": "2026-06-20T00:20:11Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\9b16f65a97899066e720d6de.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "given a question, identify whether clarification is needed",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            547,
+            605
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide representative baselines for these tasks",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            703,
+            754
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "we construct a new clarification dataset, CLAQUA, with nearly 40K open-domain examples.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            418,
+            505
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Experiments show that the proposed model achieves better performance than strong baselines.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            839,
+            930
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "there still remain several unsolved problems, like reasonable automatic evaluation metrics for clarification question generation and powerful models for handling entity sparsity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1008,
+            1186
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The dataset supports three serial tasks: given a question, identify whether clarification is needed",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            506,
+            605
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1890,
+        "elapsed_s": 10.907477700035088,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_202773799.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2971169991",
+        "title": "Asking Clarification Questions in Knowledge-Based Question Answering",
+        "authors": [
+          "Jingjing Xu",
+          "Yuechen Wang",
+          "Duyu Tang",
+          "Nan Duan",
+          "Pengcheng Yang",
+          "Qi Zeng",
+          "Ming Zhou",
+          "Xu Sun"
+        ],
+        "year": 2019,
+        "venue": "https://doi.org/10.18653/v1/d19-1172",
+        "doi": "10.18653/v1/d19-1172",
+        "oa_status": "gold",
+        "citation_count": 49,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:11Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\9b16f65a97899066e720d6de.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Asking Clarification Questions in Knowledge-Based Question Answering",
+          "candidate_title": "Asking Clarification Questions in Knowledge-Based Question Answering",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 258765297,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Predicting the presence of inline citations in academic text using binary classification",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            88
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2886739254",
+            "candidate_title": "Citations in Scientific Texts: Do Social Relations Matter?",
+            "title_score": 0.4583333333333333,
+            "title_token_jaccard": 0.1111111111111111,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2886739254",
+            "candidate_title": "Citations in Scientific Texts: Do Social Relations Matter?",
+            "title_score": 0.4583333333333333,
+            "title_token_jaccard": 0.1111111111111111,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we fine-tuned SciBERT on both an imbalanced and a balanced dataset containing sentences with and without inline citations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            291,
+            413
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "both an imbalanced and a balanced dataset containing sentences with and without inline citations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            316,
+            412
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We achieved an overall accuracy of over 0.92, suggesting that language patterns alone could be used to predict where inline citations should appear.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            414,
+            562
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1243,
+        "elapsed_s": 5.683580999961123,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_258765297.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": null
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_028",
+      "corpusid": 236486314,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            89
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Michael Roth, Talita Anthonio (2021)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3185038183",
+            "fetched_at": "2026-06-20T00:20:14Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\256114317a7d4b1e57a4b140.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2021.unimplicit-1.4; Source: https://doi.org/10.18653/v1/2021.unimplicit-1.4; OA: gold; Citations: 4",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3185038183",
+            "fetched_at": "2026-06-20T00:20:14Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\256114317a7d4b1e57a4b140.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Detecting Clarification Requirements in Instructional Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            31,
+            89
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "sentence from an instructional text",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1136,
+            1171
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "the best scoring system achieved an accuracy of 68%.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            354,
+            406
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Annotators and systems were provided with additional context, here shortened in brackets.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2792,
+            2881
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "detect whether a sentence from an instructional text requires clarification",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1119,
+            1194
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1521,
+        "elapsed_s": 9.772595699992962,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_028_236486314.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3185038183",
+        "title": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+        "authors": [
+          "Michael Roth",
+          "Talita Anthonio"
+        ],
+        "year": 2021,
+        "venue": "https://doi.org/10.18653/v1/2021.unimplicit-1.4",
+        "doi": "10.18653/v1/2021.unimplicit-1.4",
+        "oa_status": "gold",
+        "citation_count": 4,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:14Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\256114317a7d4b1e57a4b140.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+          "candidate_title": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 202773799,
+      "title": "Asking Clarification Questions in Knowledge-Based Question Answering",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The ability to ask clarification questions is essential for knowledge-based question answering (KBQA) systems, especially for handling ambiguous phenomena.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 258765297,
+      "title": "Predicting the presence of inline citations in academic text using binary classification",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "To that end, we fine-tuned SciBERT on both an imbalanced and a balanced dataset containing sentences with and without inline citations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            278,
+            413
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The goal of this study was to determine what kind of accuracy we could reach in predicting whether or not a sentence should contain an inline citation using a simple binary classification model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            83,
+            277
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 236486314,
+      "title": "UnImplicit Shared Task Report: Detecting Clarification Requirements in Instructional Text",
+      "cells": [
+        {
+          "criterion": "binary classification clarification need sentences",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        },
+        {
+          "criterion": "wikiHowToImprove dataset clarification prediction",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        },
+        {
+          "criterion": "sentence-level clarification binary classifier",
+          "addresses": true,
+          "snippet": "The task requires computational models to predict whether a sentence contains aspects of meaning that are contextually unspecified and thus require clarification.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            164,
+            326
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      202773799,
+      236486314,
+      258765297
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

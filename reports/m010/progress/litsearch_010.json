@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_010",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_010",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_010",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_010",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1117,
+      "latency_s": 5.490853899973445
+    },
+    {
+      "query_id": "litsearch_010",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 277,
+      "latency_s": 2.3943246999988332
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_010",
+    "gold": [
+      226283450
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "depression detection online posts diagnostic tools temporal artifacts",
+      "depression detection social media topical artifacts mitigation",
+      "addressing temporal topical bias depression detection online posts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        226283955,
+        2779136,
+        208229984,
+        1504997,
+        3044536,
+        7742063,
+        248780087,
+        51875175,
+        250390867,
+        233864716,
+        9222529,
+        16711873,
+        5493791,
+        14344552,
+        53080013,
+        248392181,
+        174803474,
+        44117930,
+        13424418,
+        227044274
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        53579036,
+        605706,
+        41240466,
+        248780087,
+        248780092,
+        248426722,
+        215754413,
+        235694304,
+        182952848,
+        233387769,
+        235416586,
+        248780560,
+        226283955,
+        248779973,
+        253098848,
+        60736592,
+        2300698,
+        32436585,
+        249209826,
+        246015366
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        32436585,
+        53137220,
+        248780203,
+        248085560,
+        29710525,
+        29324687,
+        248366439,
+        248780085,
+        250390971,
+        220445624,
+        53579036,
+        605706,
+        16504570,
+        18498622,
+        248426722,
+        250150639,
+        241583628,
+        248693343,
+        14715892,
+        248779885
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        53579036,
+        53137220
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        53579036,
+        32436585,
+        605706,
+        248426722,
+        248366439,
+        53137220,
+        29324687,
+        248780560,
+        248779885,
+        248693343,
+        248780092,
+        18498622,
+        41240466,
+        17145831,
+        248780085,
+        220047307,
+        241583628,
+        248779973,
+        250390929,
+        248780087
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.015600200043991
+  },
+  "reason_example": {
+    "query_id": "litsearch_010",
+    "query": "Can you point me to a work that uses diagnostic tools to detect depression from online posts, and investigates strategies that address common temporal and topical artifacts that plague these models?",
+    "top_results": [
+      {
+        "corpusid": 53579036,
+        "score": 0.9450832605361938,
+        "reason": "bm25=1.000; dense=0.908; sub_bm25=0.911; sub_dense=0.948"
+      },
+      {
+        "corpusid": 32436585,
+        "score": 0.9243684411048889,
+        "reason": "bm25=0.811; dense=1.000; sub_bm25=0.990; sub_dense=0.988"
+      },
+      {
+        "corpusid": 605706,
+        "score": 0.9213546514511108,
+        "reason": "bm25=0.944; dense=0.906; sub_bm25=1.000; sub_dense=0.906"
+      },
+      {
+        "corpusid": 248426722,
+        "score": 0.8824517726898193,
+        "reason": "bm25=0.875; dense=0.887; sub_bm25=0.923; sub_dense=0.878"
+      },
+      {
+        "corpusid": 248366439,
+        "score": 0.8753010034561157,
+        "reason": "bm25=0.792; dense=0.931; sub_bm25=0.916; sub_dense=0.848"
+      }
+    ]
+  }
+}

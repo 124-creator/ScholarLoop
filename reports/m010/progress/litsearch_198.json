@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_198",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_198",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_198",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_198",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1177,
+      "latency_s": 6.235050599905662
+    },
+    {
+      "query_id": "litsearch_198",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 451,
+      "latency_s": 4.0484013999812305
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_198",
+    "gold": [
+      229923949
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "multi-modal pre-training for document comprehension",
+      "visual document understanding pre-training methods",
+      "pre-training strategies for layout-rich documents"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16657732,
+        18344772,
+        6732044,
+        53235209,
+        12755666,
+        248218517,
+        14669758,
+        7989398,
+        16529280,
+        6636263,
+        17100013,
+        222291139,
+        16858278,
+        279168,
+        18400586,
+        104602,
+        23353329,
+        8507410,
+        244100079,
+        52830097
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236478090,
+        18344772,
+        229924402,
+        259370808,
+        174798289,
+        248779960,
+        21721818,
+        173188813,
+        248218517,
+        12877866,
+        12522650,
+        252819367,
+        229923949,
+        249240598,
+        252763281,
+        63268486,
+        254854092,
+        8437895,
+        248505914,
+        258967524
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        229923949,
+        252818928,
+        239015946,
+        253499356,
+        248779909,
+        236459832,
+        259266012,
+        229924402,
+        222091022,
+        17451961,
+        247434179,
+        252819215,
+        258967524,
+        258378275,
+        246863402,
+        259376577,
+        245219186,
+        259376676,
+        219176849,
+        247450925
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        229923949,
+        258967524,
+        248218517,
+        229924402,
+        259370808,
+        247450925,
+        236478090,
+        174798289,
+        18344772,
+        16529280,
+        46938018,
+        21721818
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        229923949,
+        229924402,
+        236478090,
+        174798289,
+        258967524,
+        249240598,
+        252819367,
+        18344772,
+        763569,
+        247450925,
+        254854092,
+        253499356,
+        248218517,
+        254044707,
+        237604959,
+        12522650,
+        252818928,
+        259376492,
+        14099827,
+        17451961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.056485099950805
+  },
+  "reason_example": {
+    "query_id": "litsearch_198",
+    "query": "Could you suggest a study that explores the use of multi-modal pre-training techniques to improve the comprehension of documents with a high visual content?",
+    "top_results": [
+      {
+        "corpusid": 229923949,
+        "score": 0.9349000453948975,
+        "reason": "bm25=0.837; dense=1.000; sub_bm25=0.954; sub_dense=0.882"
+      },
+      {
+        "corpusid": 229924402,
+        "score": 0.9204055070877075,
+        "reason": "bm25=0.931; dense=0.913; sub_bm25=0.809; sub_dense=0.926"
+      },
+      {
+        "corpusid": 236478090,
+        "score": 0.897061824798584,
+        "reason": "bm25=1.000; dense=0.828; sub_bm25=0.905; sub_dense=0.941"
+      },
+      {
+        "corpusid": 174798289,
+        "score": 0.8581329584121704,
+        "reason": "bm25=0.886; dense=0.839; sub_bm25=0.697; sub_dense=0.793"
+      },
+      {
+        "corpusid": 258967524,
+        "score": 0.855391263961792,
+        "reason": "bm25=0.819; dense=0.879; sub_bm25=1.000; sub_dense=0.814"
+      }
+    ]
+  }
+}

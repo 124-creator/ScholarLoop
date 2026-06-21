@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_135",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_135",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_135",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_135",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2102,
+      "latency_s": 17.540679599973373
+    },
+    {
+      "query_id": "litsearch_135",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.4481511999620125
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_135",
+    "gold": [
+      235421599
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "denoising method using clean annotated subset",
+      "impact of clean data subset on denoising performance",
+      "improving denoising with curated training subsets"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        248118963,
+        6732044,
+        6881568,
+        237353665,
+        11242051,
+        15402420,
+        49213156,
+        220045413,
+        19914801,
+        8033304,
+        53223919,
+        202777169,
+        52113461,
+        11376628,
+        227230612,
+        5368679,
+        17100013,
+        49420146,
+        3208226
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235614202,
+        258352421,
+        383404,
+        49215805,
+        259370568,
+        252545361,
+        220045413,
+        256461159,
+        256615188,
+        259370718,
+        21730715,
+        204838217,
+        16211318,
+        237353665,
+        236772379,
+        231627799,
+        248779966,
+        252367996,
+        18400586,
+        233189607
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        23884510,
+        18918187,
+        258865266,
+        213488539,
+        247084493,
+        222177254,
+        256615188,
+        235614202,
+        198901420,
+        15399557,
+        247011732,
+        2974620,
+        261211338,
+        52156056,
+        220265948,
+        254125609,
+        237416552,
+        222133372,
+        263671852,
+        14850799
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        23884510,
+        2974620,
+        235614202,
+        256615188,
+        247084493,
+        252545361,
+        247011732,
+        258865266,
+        222177254,
+        213488539,
+        243865344,
+        237353665
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235614202,
+        23884510,
+        256615188,
+        247084493,
+        258865266,
+        222177254,
+        213488539,
+        18918187,
+        247011732,
+        2974620,
+        261211338,
+        52156056,
+        198901420,
+        222133372,
+        248227853,
+        252545361,
+        228063969,
+        220265948,
+        245144350,
+        258959063
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.114669400034472
+  },
+  "reason_example": {
+    "query_id": "litsearch_135",
+    "query": "Could you recommend a study that investigates how a subset with clean, annotated datasets improve denoising methods?",
+    "top_results": [
+      {
+        "corpusid": 235614202,
+        "score": 0.9591208696365356,
+        "reason": "bm25=1.000; dense=0.932; sub_bm25=1.000; sub_dense=0.919"
+      },
+      {
+        "corpusid": 23884510,
+        "score": 0.9036217331886292,
+        "reason": "bm25=0.759; dense=1.000; sub_bm25=0.654; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256615188,
+        "score": 0.8918510675430298,
+        "reason": "bm25=0.818; dense=0.941; sub_bm25=0.850; sub_dense=0.897"
+      },
+      {
+        "corpusid": 247084493,
+        "score": 0.889019250869751,
+        "reason": "bm25=0.789; dense=0.956; sub_bm25=0.805; sub_dense=0.907"
+      },
+      {
+        "corpusid": 258865266,
+        "score": 0.8864032030105591,
+        "reason": "bm25=0.755; dense=0.974; sub_bm25=0.696; sub_dense=0.862"
+      }
+    ]
+  }
+}

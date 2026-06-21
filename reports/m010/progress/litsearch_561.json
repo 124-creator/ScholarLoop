@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_561",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_561",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_561",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_561",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1411,
+      "latency_s": 9.351977900019847
+    },
+    {
+      "query_id": "litsearch_561",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 478,
+      "latency_s": 4.073016099981032
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_561",
+    "gold": [
+      263605851
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "LLM code generation robotic simulation sim-to-real",
+      "policy pre-training simulation LLM robot code",
+      "first work language model program simulation robot learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        174797905,
+        202712637,
+        250391050,
+        201107103,
+        210063976,
+        257038566,
+        253762079,
+        202566001,
+        236155179,
+        10211692,
+        252963279,
+        235417503,
+        173188130,
+        246000055,
+        198974889,
+        250390647,
+        233365158,
+        229376913,
+        5653948,
+        247619108
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263605851,
+        238419270,
+        242784472,
+        53113014,
+        253157500,
+        257482484,
+        259298732,
+        257365313,
+        248178090,
+        232222444,
+        7537863,
+        6848450,
+        5037032,
+        222272305,
+        13286538,
+        11824338,
+        8051675,
+        252568043,
+        15591640,
+        229297679
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248228159,
+        238419270,
+        242784472,
+        263605851,
+        53113014,
+        233181840,
+        257687184,
+        254198961,
+        264802494,
+        252780278,
+        200884,
+        52897771,
+        264555578,
+        238419356,
+        232222444,
+        238259902,
+        227054483,
+        252968170,
+        13053999,
+        233714270
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263605851
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263605851,
+        238419270,
+        242784472,
+        53113014,
+        248228159,
+        232222444,
+        253157500,
+        252780278,
+        257482484,
+        5037032,
+        259298732,
+        222272305,
+        257687184,
+        264555578,
+        52935027,
+        233181840,
+        264802494,
+        254198961,
+        248178090,
+        231924830
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.929623799980618
+  },
+  "reason_example": {
+    "query_id": "litsearch_561",
+    "query": "What work first uses LLM to code robotic simulation tasks and show sim-to-real benefits with policy pre-training in simulation?",
+    "top_results": [
+      {
+        "corpusid": 263605851,
+        "score": 0.9942424297332764,
+        "reason": "bm25=1.000; dense=0.990; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 238419270,
+        "score": 0.9247969388961792,
+        "reason": "bm25=0.816; dense=0.997; sub_bm25=0.716; sub_dense=0.892"
+      },
+      {
+        "corpusid": 242784472,
+        "score": 0.9247969388961792,
+        "reason": "bm25=0.816; dense=0.997; sub_bm25=0.716; sub_dense=0.892"
+      },
+      {
+        "corpusid": 53113014,
+        "score": 0.9102914929389954,
+        "reason": "bm25=0.792; dense=0.989; sub_bm25=0.719; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248228159,
+        "score": 0.8078604936599731,
+        "reason": "bm25=0.520; dense=1.000; sub_bm25=0.420; sub_dense=0.888"
+      }
+    ]
+  }
+}

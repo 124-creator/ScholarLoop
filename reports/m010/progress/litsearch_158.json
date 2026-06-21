@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_158",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_158",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_158",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_158",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1495,
+      "latency_s": 11.859624200034887
+    },
+    {
+      "query_id": "litsearch_158",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 3.6388254000339657
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_158",
+    "gold": [
+      236478070
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "multihead attention word interrelations political bias news",
+      "transformer attention political perspective detection news articles",
+      "attention networks word relationships political stance classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        31313505,
+        14054366,
+        1444138,
+        196179812,
+        2474505,
+        221761488,
+        233029501,
+        220060895,
+        2441691,
+        6617307,
+        12983984,
+        51879475,
+        10261581,
+        196180578,
+        16406099,
+        6896649,
+        52008947,
+        6037404,
+        51871240,
+        192546007
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        231802248,
+        52183735,
+        235097622,
+        196180578,
+        252624600,
+        207758164,
+        202537179,
+        236477957,
+        256627247,
+        248780089,
+        52008947,
+        256460863,
+        203591628,
+        199557221,
+        233189537,
+        248721957,
+        203736437,
+        252819262,
+        220444934,
+        252819324
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        52183735,
+        220056948,
+        235097622,
+        250390719,
+        252819262,
+        12603509,
+        253381539,
+        233029482,
+        231802248,
+        236478070,
+        6037404,
+        9844885,
+        8894136,
+        220444934,
+        4989386,
+        10486261,
+        227227651,
+        250179903,
+        3029216,
+        15175552
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097622,
+        231802248,
+        52183735,
+        196180578,
+        252819262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52183735,
+        235097622,
+        231802248,
+        252819262,
+        202537179,
+        220444934,
+        196180578,
+        250390719,
+        233189537,
+        6037404,
+        252624600,
+        248780089,
+        220056948,
+        199557221,
+        248085885,
+        12603509,
+        256460863,
+        16108144,
+        202766228,
+        2331913
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.748601200059056
+  },
+  "reason_example": {
+    "query_id": "litsearch_158",
+    "query": "Could you recommend research that examines how multihead attention networks discern word interrelations in news content for detecting political perspectives?",
+    "top_results": [
+      {
+        "corpusid": 52183735,
+        "score": 0.9592431783676147,
+        "reason": "bm25=0.898; dense=1.000; sub_bm25=0.908; sub_dense=0.955"
+      },
+      {
+        "corpusid": 235097622,
+        "score": 0.9441533088684082,
+        "reason": "bm25=0.894; dense=0.978; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231802248,
+        "score": 0.9340609312057495,
+        "reason": "bm25=1.000; dense=0.890; sub_bm25=1.000; sub_dense=0.864"
+      },
+      {
+        "corpusid": 252819262,
+        "score": 0.8592827320098877,
+        "reason": "bm25=0.784; dense=0.909; sub_bm25=0.882; sub_dense=0.944"
+      },
+      {
+        "corpusid": 202537179,
+        "score": 0.8527625799179077,
+        "reason": "bm25=0.848; dense=0.856; sub_bm25=0.812; sub_dense=0.978"
+      }
+    ]
+  }
+}

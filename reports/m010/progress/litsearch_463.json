@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_463",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_463",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_463",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_463",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 916,
+      "latency_s": 5.649511700030416
+    },
+    {
+      "query_id": "litsearch_463",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 271,
+      "latency_s": 4.312045100028627
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_463",
+    "gold": [
+      258461287
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "LLMs as prompt-based evaluators for text generation",
+      "first paper using LLMs as annotators for text quality evaluation",
+      "prompting large language models to act as professional annotators"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259833850,
+        226282223,
+        6218032,
+        5945772,
+        102351048,
+        203688153,
+        6885323,
+        237452528,
+        1309464,
+        20845242,
+        233365004,
+        2783247,
+        17198322,
+        247595225,
+        256461175,
+        222272299,
+        252199605,
+        252386188,
+        16493816,
+        253762014
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253157899,
+        249394777,
+        256461096,
+        102351048,
+        253098066,
+        248779877,
+        259287175,
+        52010727,
+        259370827,
+        814656,
+        245218525,
+        235293831,
+        207468,
+        196174735,
+        252818954,
+        57373775,
+        6892548,
+        259833772,
+        259924559,
+        1049742
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249062554,
+        254877323,
+        52010727,
+        236460248,
+        249017555,
+        253098066,
+        248300077,
+        235694265,
+        259370853,
+        252917728,
+        11807364,
+        260125086,
+        252907549,
+        5213689,
+        202734604,
+        237502721,
+        259370779,
+        7736752,
+        8373986,
+        252995541
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258461287
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52010727,
+        253098066,
+        260125086,
+        249062554,
+        237502721,
+        259370827,
+        102351048,
+        9771696,
+        235293831,
+        258461287,
+        480747,
+        218487034,
+        259287175,
+        202541563,
+        248300077,
+        254877384,
+        57373775,
+        202734604,
+        260351048,
+        236912561
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.310891200089827
+  },
+  "reason_example": {
+    "query_id": "litsearch_463",
+    "query": "Which paper first shows that large language models can be prompted to act like professional annotators to evaluate text generation quality?",
+    "top_results": [
+      {
+        "corpusid": 52010727,
+        "score": 0.9468461275100708,
+        "reason": "bm25=0.909; dense=0.972; sub_bm25=0.552; sub_dense=0.790"
+      },
+      {
+        "corpusid": 253098066,
+        "score": 0.9420384168624878,
+        "reason": "bm25=0.928; dense=0.952; sub_bm25=0.480; sub_dense=0.786"
+      },
+      {
+        "corpusid": 260125086,
+        "score": 0.8956596255302429,
+        "reason": "bm25=0.846; dense=0.929; sub_bm25=0.760; sub_dense=0.761"
+      },
+      {
+        "corpusid": 249062554,
+        "score": 0.8921079635620117,
+        "reason": "bm25=0.730; dense=1.000; sub_bm25=0.322; sub_dense=0.889"
+      },
+      {
+        "corpusid": 237502721,
+        "score": 0.8777587413787842,
+        "reason": "bm25=0.812; dense=0.922; sub_bm25=0.526; sub_dense=0.729"
+      }
+    ]
+  }
+}

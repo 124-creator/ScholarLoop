@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_510",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_510",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_510",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_510",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 992,
+      "latency_s": 4.849153999937698
+    },
+    {
+      "query_id": "litsearch_510",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 211,
+      "latency_s": 1.8311248000245541
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_510",
+    "gold": [
+      259924554
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "world model planning constraint satisfaction",
+      "constrained planning world model",
+      "planning with world models under constraints"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18792136,
+        221761488,
+        3098317,
+        126584,
+        28775375,
+        129886,
+        58302,
+        15281983,
+        18061836,
+        11189692,
+        26478127,
+        283560,
+        4959516,
+        30326019,
+        19867257,
+        3926047,
+        7440991,
+        10261581,
+        14395328,
+        16771067
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        261100891,
+        224705315,
+        11189692,
+        238419267,
+        253510370,
+        5925287,
+        195346786,
+        13907931,
+        260484262,
+        258461058,
+        52179536,
+        51918625,
+        1924466,
+        1347118,
+        8277151,
+        257427177,
+        57189211,
+        258331993,
+        221112471,
+        4986726
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        6188348,
+        3930198,
+        8704366,
+        246240506,
+        636958,
+        9101909,
+        12760345,
+        560295,
+        60441381,
+        27490680,
+        41258013,
+        31856765,
+        1925790,
+        44095973,
+        14674477,
+        33985488,
+        3107402,
+        1182156,
+        259095535,
+        250089350
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        221112471,
+        27490680,
+        41258013,
+        238419267,
+        7653072,
+        6188348,
+        10912083,
+        8704366,
+        9776071,
+        11189692,
+        5925287,
+        8277151
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        8704366,
+        6188348,
+        27490680,
+        41258013,
+        636958,
+        3107402,
+        560295,
+        60441381,
+        7653072,
+        118920300,
+        258564677,
+        257687184,
+        15894165,
+        238419356,
+        8003060,
+        5925287,
+        252681067,
+        6143941,
+        3652072,
+        233714270
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.654645600006916
+  },
+  "reason_example": {
+    "query_id": "litsearch_510",
+    "query": "Are there any papers that use a world model for planning to ensure that decisions meet constraints?",
+    "top_results": [
+      {
+        "corpusid": 8704366,
+        "score": 0.8906748294830322,
+        "reason": "bm25=0.836; dense=0.927; sub_bm25=0.547; sub_dense=0.719"
+      },
+      {
+        "corpusid": 6188348,
+        "score": 0.8850679993629456,
+        "reason": "bm25=0.713; dense=1.000; sub_bm25=0.451; sub_dense=0.768"
+      },
+      {
+        "corpusid": 27490680,
+        "score": 0.8780231475830078,
+        "reason": "bm25=0.855; dense=0.893; sub_bm25=0.665; sub_dense=0.821"
+      },
+      {
+        "corpusid": 41258013,
+        "score": 0.8780231475830078,
+        "reason": "bm25=0.855; dense=0.893; sub_bm25=0.665; sub_dense=0.821"
+      },
+      {
+        "corpusid": 636958,
+        "score": 0.8332347869873047,
+        "reason": "bm25=0.708; dense=0.917; sub_bm25=0.497; sub_dense=0.656"
+      }
+    ]
+  }
+}

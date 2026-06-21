@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_045",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_045",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_045",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_045",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2328,
+      "latency_s": 16.387861800030805
+    },
+    {
+      "query_id": "litsearch_045",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 244,
+      "latency_s": 1.6151197000872344
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_045",
+    "gold": [
+      222310116
+    ],
+    "pool_size": 235,
+    "decomposition": [
+      "synthetic data generation question answering domain adaptation",
+      "domain adaptation for question answering systems synthetic data",
+      "generating synthetic training data for domain specific QA"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        20167120,
+        252519549,
+        15621151,
+        11885212,
+        10707097,
+        237364113,
+        7403488,
+        56336392,
+        252777295,
+        64865,
+        201624189,
+        252624633,
+        9521532,
+        10109492,
+        6796158,
+        15164488,
+        19347174,
+        44140055,
+        53223062,
+        2751836
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237364113,
+        226262188,
+        18142616,
+        252199900,
+        252519549,
+        247518803,
+        16534280,
+        7403488,
+        251402004,
+        237605269,
+        231704318,
+        233296924,
+        222310116,
+        21723120,
+        9521532,
+        241583153,
+        51875796,
+        215745354,
+        235254629,
+        256461195
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222310116,
+        237364113,
+        247518803,
+        252519549,
+        211258652,
+        15164488,
+        236477924,
+        207847581,
+        226262188,
+        253107930,
+        11732037,
+        248085035,
+        189762081,
+        235641367,
+        43225062,
+        236459854,
+        233189589,
+        241583153,
+        5934502,
+        231933637
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222310116,
+        247518803,
+        226262188,
+        15164488,
+        255393778,
+        237364113,
+        252519549
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237364113,
+        222310116,
+        247518803,
+        252519549,
+        226262188,
+        211258652,
+        16534280,
+        15164488,
+        252199900,
+        207847581,
+        241583153,
+        253107930,
+        233296924,
+        236459854,
+        189762081,
+        251402004,
+        252735056,
+        11732037,
+        225067135,
+        247594360
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 21.27542259998154
+  },
+  "reason_example": {
+    "query_id": "litsearch_045",
+    "query": "I'm exploring ways to enhance question answering systems through domain adaptation. Could you point me towards research that specifically focuses on synthetic data generation for this purpose?",
+    "top_results": [
+      {
+        "corpusid": 237364113,
+        "score": 0.9749029874801636,
+        "reason": "bm25=1.000; dense=0.958; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222310116,
+        "score": 0.8759679794311523,
+        "reason": "bm25=0.690; dense=1.000; sub_bm25=0.872; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247518803,
+        "score": 0.85617995262146,
+        "reason": "bm25=0.730; dense=0.940; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252519549,
+        "score": 0.8277989625930786,
+        "reason": "bm25=0.742; dense=0.885; sub_bm25=0.853; sub_dense=0.892"
+      },
+      {
+        "corpusid": 226262188,
+        "score": 0.8153418898582458,
+        "reason": "bm25=0.805; dense=0.822; sub_bm25=0.890; sub_dense=0.846"
+      }
+    ]
+  }
+}

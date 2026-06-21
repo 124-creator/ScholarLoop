@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_571",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_571",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_571",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_571",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1859,
+      "latency_s": 13.575976599939167
+    },
+    {
+      "query_id": "litsearch_571",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 411,
+      "latency_s": 3.5395511999959126
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_571",
+    "gold": [
+      259108646
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "VQ tokens versus pixel images dense recognition quantitative comparison",
+      "VQ-VAE tokens inferior to pixels for segmentation detection",
+      "discrete visual tokens vs raw pixels dense prediction tasks results"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259108646,
+        253080830,
+        6540287,
+        11062835,
+        13045218,
+        373182,
+        2539019,
+        16970491,
+        203953161,
+        2845337,
+        9182147,
+        7270459,
+        647664,
+        216570869,
+        216641917,
+        748386,
+        6438614,
+        28214,
+        9292408,
+        14327960
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259108646,
+        258041281,
+        257766694,
+        263153393,
+        250526649,
+        249192149,
+        204512445,
+        263334567,
+        236134152,
+        249848272,
+        67855770,
+        248834106,
+        3947794,
+        237347122,
+        257804924,
+        17996690,
+        252847574,
+        225039882,
+        6016457,
+        244478155
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259108646,
+        244478155,
+        263153393,
+        1583135,
+        2350854,
+        253158014,
+        18424928,
+        258426737,
+        227127234,
+        225039882,
+        247411282,
+        248887665,
+        51876695,
+        252968113,
+        9319388,
+        85529011,
+        263134283,
+        249395677,
+        260378993,
+        258041281
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        257766694,
+        248834106,
+        244478155,
+        263153393,
+        259108646,
+        258041281,
+        263134283,
+        249192149,
+        263334567,
+        250526649,
+        13045218,
+        67855770
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259108646,
+        263153393,
+        244478155,
+        258041281,
+        225039882,
+        249192149,
+        257766694,
+        263334567,
+        263134283,
+        258426737,
+        248834106,
+        250526649,
+        9319388,
+        207869899,
+        207852415,
+        18424928,
+        252968113,
+        2350854,
+        247411282,
+        211296301
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.356542199966498
+  },
+  "reason_example": {
+    "query_id": "litsearch_571",
+    "query": "Which paper contains quantitative results demonstrating taking VQ tokens as inputs is inferior to pixel images for dense recognition tasks?",
+    "top_results": [
+      {
+        "corpusid": 259108646,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.943"
+      },
+      {
+        "corpusid": 263153393,
+        "score": 0.8003969192504883,
+        "reason": "bm25=0.580; dense=0.947; sub_bm25=0.749; sub_dense=1.000"
+      },
+      {
+        "corpusid": 244478155,
+        "score": 0.7659287452697754,
+        "reason": "bm25=0.487; dense=0.952; sub_bm25=0.592; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258041281,
+        "score": 0.7412417531013489,
+        "reason": "bm25=0.649; dense=0.803; sub_bm25=0.846; sub_dense=0.794"
+      },
+      {
+        "corpusid": 225039882,
+        "score": 0.7051811814308167,
+        "reason": "bm25=0.487; dense=0.851; sub_bm25=0.383; sub_dense=0.786"
+      }
+    ]
+  }
+}

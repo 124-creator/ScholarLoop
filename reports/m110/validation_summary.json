@@ -1,0 +1,47 @@
+{
+  "schema_version": "m110.validation_summary.v1",
+  "checked_at_utc": "2026-06-20T13:18:21.360056+00:00",
+  "status": "implemented_not_verified",
+  "plan_status_line": "- 状态：implemented（2026-06-20 Codex 执行完成，待总指挥初查；不自宣 verified；原 Router 人类批准 draft→approved；**完整性必须件：消除提交物料中已被 M100 证伪的预测性研究空白主张**）",
+  "claim_reconciliation": {
+    "report": "reports/m110/claim_reconciliation.json",
+    "records_count": 13,
+    "minimum_required_records": 8
+  },
+  "consistency_scan": {
+    "report": "reports/m110/consistency_scan.json",
+    "passed": true,
+    "residual_count": 0,
+    "scanned_lines": 312
+  },
+  "secret_scan": {
+    "report": "reports/m110/secret_scan.json",
+    "passed": true,
+    "findings_count": 0
+  },
+  "frozen_hashes": {
+    "report": "reports/m110/frozen_hashes.json",
+    "passed": true,
+    "checked_paths": [
+      "reports/m070",
+      "reports/m100",
+      "src"
+    ]
+  },
+  "tests": {
+    "report": "reports/m110/pytest.txt",
+    "passed": true,
+    "summary_line": "46 passed in 52.88s"
+  },
+  "modified_submission_files": [
+    "docs/submission/01-作品简介.md",
+    "docs/submission/02-项目文档.md",
+    "docs/submission/03-视频脚本与演示走查.md",
+    "docs/submission/04-指标汇总表.md",
+    "docs/submission/06-创新叙事.md",
+    "docs/submission/08-主张溯源清单.md"
+  ],
+  "test_file": "tests/test_m110_submission_reconciliation.py",
+  "retrospective": "docs/dev/retrospectives/110-提交物料创新叙事重构-复盘.md",
+  "passed_for_implementation": true
+}

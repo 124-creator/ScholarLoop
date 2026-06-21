@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_194",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_194",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_194",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_194",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1636,
+      "latency_s": 11.011789400014095
+    },
+    {
+      "query_id": "litsearch_194",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 369,
+      "latency_s": 2.748331699986011
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_194",
+    "gold": [
+      245130931
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "crowdsourcing annotation annotator expertise lack paradigms",
+      "data annotation crowdsourcing non-expert annotator strategies",
+      "improving annotation quality crowdsourcing low expertise workers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235482360,
+        748926,
+        253098240,
+        8431320,
+        237366202,
+        234487239,
+        3520809,
+        17106591,
+        226226405,
+        2421447,
+        21700910,
+        10513825,
+        4480,
+        18344772,
+        7343474,
+        8395279,
+        8969708,
+        258463915,
+        254877171,
+        6446861
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        15544275,
+        15960453,
+        253098240,
+        252873184,
+        239009731,
+        226226405,
+        9062373,
+        230349190,
+        17585853,
+        235253726,
+        248496232,
+        21711201,
+        2574778,
+        11674476,
+        8050769,
+        252624447,
+        8969708,
+        14230149,
+        18400586,
+        2421447
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245297106,
+        10322344,
+        238634705,
+        11843300,
+        10435668,
+        258309343,
+        15275430,
+        2421447,
+        13015530,
+        2463804,
+        3119193,
+        11994461,
+        6467977,
+        11940528,
+        8950336,
+        3954835,
+        17489944,
+        252624762,
+        239009731,
+        1730144
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248496232,
+        252873184,
+        239009731,
+        15544275,
+        226226405,
+        245297106,
+        2421447,
+        253098240,
+        15960453,
+        21698749,
+        8969708,
+        776271
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        239009731,
+        245297106,
+        15544275,
+        2421447,
+        253098240,
+        15960453,
+        248496232,
+        252873184,
+        13015530,
+        250122126,
+        10322344,
+        238634705,
+        21698749,
+        15275430,
+        9355314,
+        235253726,
+        5066019,
+        11940528,
+        8082083,
+        258309343
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.868894299957901
+  },
+  "reason_example": {
+    "query_id": "litsearch_194",
+    "query": "Could you suggest a study that explores data annotation paradigms that help assuage concerns in lack of annotator expertise when using crowdsourcing?",
+    "top_results": [
+      {
+        "corpusid": 239009731,
+        "score": 0.9241475462913513,
+        "reason": "bm25=0.983; dense=0.885; sub_bm25=1.000; sub_dense=0.929"
+      },
+      {
+        "corpusid": 245297106,
+        "score": 0.9100449681282043,
+        "reason": "bm25=0.775; dense=1.000; sub_bm25=0.621; sub_dense=0.968"
+      },
+      {
+        "corpusid": 15544275,
+        "score": 0.898823618888855,
+        "reason": "bm25=1.000; dense=0.831; sub_bm25=0.689; sub_dense=0.851"
+      },
+      {
+        "corpusid": 2421447,
+        "score": 0.8919448852539062,
+        "reason": "bm25=0.841; dense=0.926; sub_bm25=0.678; sub_dense=0.949"
+      },
+      {
+        "corpusid": 253098240,
+        "score": 0.8908482789993286,
+        "reason": "bm25=0.995; dense=0.821; sub_bm25=0.631; sub_dense=0.784"
+      }
+    ]
+  }
+}

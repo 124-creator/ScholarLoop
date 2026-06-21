@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_170",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_170",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_170",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_170",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1475,
+      "latency_s": 11.597693599993363
+    },
+    {
+      "query_id": "litsearch_170",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 396,
+      "latency_s": 3.1296370999189094
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_170",
+    "gold": [
+      247187518
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "contrastive learning logical reasoning text",
+      "improve logical reasoning with contrastive learning",
+      "contrastive learning for reasoning over text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2000271,
+        15569102,
+        62132187,
+        6953360,
+        8005006,
+        4643315,
+        6362566,
+        52230636,
+        224803647,
+        235313469,
+        1144879,
+        7378347,
+        12744446,
+        33871285,
+        18946220,
+        235097405,
+        7521670,
+        64631730,
+        577805,
+        14046602
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234335834,
+        247187518,
+        224803647,
+        209485573,
+        247613006,
+        235368289,
+        222272463,
+        49213156,
+        5655307,
+        259370794,
+        215548215,
+        235421949,
+        237513406,
+        258841105,
+        256461192,
+        247518855,
+        7660386,
+        258971713,
+        218486877,
+        233423348
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247187518,
+        235613482,
+        234335834,
+        258547350,
+        259833782,
+        235421949,
+        216642259,
+        239016717,
+        246823998,
+        235313879,
+        250390973,
+        234797436,
+        253384019,
+        237442331,
+        247158698,
+        15075376,
+        256461398,
+        259501636,
+        58248297,
+        259370543
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247187518
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247187518,
+        234335834,
+        235421949,
+        209485573,
+        224803647,
+        234797436,
+        250390973,
+        235613482,
+        15075376,
+        215238846,
+        229923565,
+        218486877,
+        239016717,
+        250390469,
+        259370794,
+        247158698,
+        235313879,
+        247518855,
+        253398396,
+        174799945
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.933660499984398
+  },
+  "reason_example": {
+    "query_id": "litsearch_170",
+    "query": "Could you recommend research that investigates how to use contrastive learning for improving logical reasoning over text?",
+    "top_results": [
+      {
+        "corpusid": 247187518,
+        "score": 0.9825071096420288,
+        "reason": "bm25=0.956; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 234335834,
+        "score": 0.9426772594451904,
+        "reason": "bm25=1.000; dense=0.904; sub_bm25=0.989; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235421949,
+        "score": 0.8445877432823181,
+        "reason": "bm25=0.824; dense=0.859; sub_bm25=0.815; sub_dense=0.953"
+      },
+      {
+        "corpusid": 209485573,
+        "score": 0.8156620860099792,
+        "reason": "bm25=0.922; dense=0.745; sub_bm25=0.629; sub_dense=0.842"
+      },
+      {
+        "corpusid": 224803647,
+        "score": 0.8151297569274902,
+        "reason": "bm25=0.939; dense=0.732; sub_bm25=0.923; sub_dense=0.941"
+      }
+    ]
+  }
+}

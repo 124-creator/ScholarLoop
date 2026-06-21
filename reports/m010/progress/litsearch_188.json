@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_188",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_188",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_188",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_188",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1190,
+      "latency_s": 6.491351200034842
+    },
+    {
+      "query_id": "litsearch_188",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 1.9439310000743717
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_188",
+    "gold": [
+      245144839
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "generative information extraction surface form generation",
+      "generative entity labeling methods",
+      "generative entity type classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        881437,
+        5800139,
+        222310755,
+        16033402,
+        253762024,
+        9482302,
+        9954976,
+        255775287,
+        13340006,
+        15691543,
+        2731424,
+        10749859,
+        18629393,
+        27077971,
+        53083555,
+        218470552,
+        5027001,
+        9551366,
+        26340853,
+        249204434
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5800139,
+        10927924,
+        16677041,
+        259370837,
+        258378193,
+        253018966,
+        2622167,
+        881437,
+        255775287,
+        6621386,
+        259093058,
+        18021356,
+        256461274,
+        5606323,
+        226278272,
+        5570507,
+        14551434,
+        250391019,
+        49664709,
+        235352501
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        13589134,
+        9585292,
+        15436060,
+        12422320,
+        1017257,
+        6551679,
+        1026180,
+        14800475,
+        9371149,
+        5771683,
+        252819116,
+        245144839,
+        12968935,
+        1890344,
+        17963947,
+        252815772,
+        1291519,
+        1441185,
+        168170028,
+        1400165
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253098905,
+        255775287,
+        168170028,
+        5570507,
+        881437,
+        5800139,
+        218470552,
+        250150633,
+        219307724,
+        13589134,
+        9482302,
+        41324867
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        13589134,
+        5800139,
+        245144839,
+        253098905,
+        5771683,
+        252819116,
+        218470552,
+        250150633,
+        168170028,
+        252735228,
+        6010549,
+        5484698,
+        16677041,
+        219307724,
+        5570507,
+        1662965,
+        2109203,
+        11830260,
+        221970440,
+        53591648
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.659006999921985
+  },
+  "reason_example": {
+    "query_id": "litsearch_188",
+    "query": "Could you suggest a research article that explores generative methods for extracting information, specifically one that covers the generation of surface forms, labeling of entities, and classification of entity types?",
+    "top_results": [
+      {
+        "corpusid": 13589134,
+        "score": 0.9136339426040649,
+        "reason": "bm25=0.784; dense=1.000; sub_bm25=0.605; sub_dense=0.812"
+      },
+      {
+        "corpusid": 5800139,
+        "score": 0.8953770399093628,
+        "reason": "bm25=1.000; dense=0.826; sub_bm25=0.501; sub_dense=0.786"
+      },
+      {
+        "corpusid": 245144839,
+        "score": 0.8729247450828552,
+        "reason": "bm25=0.848; dense=0.889; sub_bm25=0.997; sub_dense=0.994"
+      },
+      {
+        "corpusid": 253098905,
+        "score": 0.8669513463973999,
+        "reason": "bm25=0.882; dense=0.857; sub_bm25=0.647; sub_dense=0.852"
+      },
+      {
+        "corpusid": 5771683,
+        "score": 0.862880527973175,
+        "reason": "bm25=0.822; dense=0.890; sub_bm25=0.344; sub_dense=0.769"
+      }
+    ]
+  }
+}

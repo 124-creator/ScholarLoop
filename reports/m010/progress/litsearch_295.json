@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_295",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_295",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_295",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_295",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1190,
+      "latency_s": 6.187586800078861
+    },
+    {
+      "query_id": "litsearch_295",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.083351199980825
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_295",
+    "gold": [
+      235422257
+    ],
+    "pool_size": 279,
+    "decomposition": [
+      "methods to reduce computational cost of attention in transformers",
+      "low-computation attention mechanisms transformer",
+      "selective key-value pairing per query memory saving attention"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6271137,
+        1412569,
+        14175295,
+        29063930,
+        29785361,
+        1122131,
+        251465356,
+        13221934,
+        14528916,
+        17173602,
+        43183943,
+        9781519,
+        233029475,
+        17409270,
+        49430466,
+        222208993,
+        17974121,
+        2368628,
+        5232546,
+        8690664
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        239016586,
+        3000562,
+        235422257,
+        869203,
+        2724633,
+        263830071,
+        236478196,
+        43982267,
+        226283836,
+        257258160,
+        211133221,
+        13221934,
+        46920380,
+        222176890,
+        64234728,
+        197661197,
+        52893258,
+        252683294,
+        222291117,
+        1944690
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        239016586,
+        246867127,
+        159041867,
+        226262310,
+        235422257,
+        218487351,
+        209315300,
+        237513393,
+        253735201,
+        237371909,
+        248780077,
+        248780244,
+        232035936,
+        241583247,
+        243728757,
+        255440465,
+        235254260,
+        229923069,
+        235293987,
+        222134166
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235422257,
+        159041867,
+        248965487,
+        3000562,
+        239016586,
+        2724633,
+        226283836,
+        222176890,
+        248811280,
+        264147054,
+        256389522,
+        219708219
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        239016586,
+        235422257,
+        159041867,
+        226262310,
+        246867127,
+        253735201,
+        220968978,
+        256389522,
+        229923720,
+        222176890,
+        219708219,
+        237371909,
+        235293987,
+        248811280,
+        229923069,
+        263620583,
+        248780077,
+        248780244,
+        209315300,
+        264147054
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.75226949993521
+  },
+  "reason_example": {
+    "query_id": "litsearch_295",
+    "query": "What approaches have been suggested to lower the computational demands of basic attention mechanisms in transformers, and is there a study that explores a memory-saving technique through selective key-value pairing for each query?",
+    "top_results": [
+      {
+        "corpusid": 239016586,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235422257,
+        "score": 0.9479076266288757,
+        "reason": "bm25=0.965; dense=0.936; sub_bm25=0.707; sub_dense=0.853"
+      },
+      {
+        "corpusid": 159041867,
+        "score": 0.842330813407898,
+        "reason": "bm25=0.647; dense=0.973; sub_bm25=0.705; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226262310,
+        "score": 0.8211497664451599,
+        "reason": "bm25=0.625; dense=0.952; sub_bm25=0.635; sub_dense=0.907"
+      },
+      {
+        "corpusid": 246867127,
+        "score": 0.8173087239265442,
+        "reason": "bm25=0.560; dense=0.989; sub_bm25=0.744; sub_dense=0.922"
+      }
+    ]
+  }
+}

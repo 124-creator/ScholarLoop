@@ -1,0 +1,642 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_024",
+  "query": "Can you suggest recent studies that have integrated prompt fine-tuning into semi-supervised learning workflows for natural language understanding tasks?",
+  "criteria": [
+    "prompt fine-tuning semi-supervised learning natural language understanding",
+    "semi-supervised prompt tuning NLU",
+    "prompt-based semi-supervised learning for text classification"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_024.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_024",
+      "corpusid": 248779986,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Prompt Tuning for Discriminative Pre-trained Language Models",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            60
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Yuan Yao, Bowen Dong, Ao Zhang, Zhengyan Zhang, Ruobing Xie, Zhiyuan Liu, et al. (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4281479158",
+            "fetched_at": "2026-06-20T00:19:50Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a13d0e250f7197abe13bc23b.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.findings-acl.273; Source: Findings of the Association for Computational Linguistics: ACL 2022; OA: hybrid; Citations: 37",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4281479158",
+            "fetched_at": "2026-06-20T00:19:50Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\a13d0e250f7197abe13bc23b.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, to the best of our knowledge, existing works focus on prompt-tuning generative PLMs that are pre-trained to generate target tokens, such as BERT(Devlin et al.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            154,
+            321
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 949,
+        "elapsed_s": 2.7466959999874234,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_024_248779986.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4281479158",
+        "title": "Prompt Tuning for Discriminative Pre-trained Language Models",
+        "authors": [
+          "Yuan Yao",
+          "Bowen Dong",
+          "Ao Zhang",
+          "Zhengyan Zhang",
+          "Ruobing Xie",
+          "Zhiyuan Liu",
+          "Leyu Lin",
+          "Maosong Sun",
+          "Jianyong Wang"
+        ],
+        "year": 2022,
+        "venue": "Findings of the Association for Computational Linguistics: ACL 2022",
+        "doi": "10.18653/v1/2022.findings-acl.273",
+        "oa_status": "hybrid",
+        "citation_count": 37,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:50Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\a13d0e250f7197abe13bc23b.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Prompt Tuning for Discriminative Pre-trained Language Models",
+          "candidate_title": "Prompt Tuning for Discriminative Pre-trained Language Models",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_024",
+      "corpusid": 259833809,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "SPC: Soft Prompt Construction for Cross Domain Generalization",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            61
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Wenbo Zhao, Arpit Gupta, Tagyoung Chung, Jing Huang (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385571683",
+            "fetched_at": "2026-06-20T00:19:51Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2912f6e5aba358b6a4fc8d87.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2023.repl4nlp-1.10; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.10; OA: gold; Citations: 4",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385571683",
+            "fetched_at": "2026-06-20T00:19:51Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2912f6e5aba358b6a4fc8d87.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Recent advances in prompt tuning have proven effective as a new language modeling paradigm for various natural language understanding tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Recent advances in prompt tuning have proven effective as a new language modeling paradigm for various natural language understanding tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "This paper proposes a principled learning framework-soft prompt construction (SPC)-to facilitate learning domainadaptable soft prompts.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            338,
+            473
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "it is challenging to adapt the soft prompt embeddings to different domains or generalize to low-data settings",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            150,
+            259
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We show SPC can improve upon SOTA for contextual query rewriting, summarization, and paraphrase detection by up to 5%, 19%, and 16%, respectively.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            621,
+            767
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "learning soft prompts itself is unstable, task-specific, and bias-prone.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            265,
+            337
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Recent advances in prompt tuning have proven effective as a new language modeling paradigm for various natural language understanding tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1976,
+        "elapsed_s": 11.667469499981962,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_024_259833809.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4385571683",
+        "title": "SPC: Soft Prompt Construction for Cross Domain Generalization",
+        "authors": [
+          "Wenbo Zhao",
+          "Arpit Gupta",
+          "Tagyoung Chung",
+          "Jing Huang"
+        ],
+        "year": 2023,
+        "venue": "https://doi.org/10.18653/v1/2023.repl4nlp-1.10",
+        "doi": "10.18653/v1/2023.repl4nlp-1.10",
+        "oa_status": "gold",
+        "citation_count": 4,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:51Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\2912f6e5aba358b6a4fc8d87.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "SPC: Soft Prompt Construction for Cross Domain Generalization",
+          "candidate_title": "SPC: Soft Prompt Construction for Cross Domain Generalization",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_024",
+      "corpusid": 253761978,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "FPC: Fine-tuning with Prompt Curriculum for Relation Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            63
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Sicheng Yang, Dandan Song (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4404784020",
+            "fetched_at": "2026-06-20T00:19:53Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\511146a59ecb6214d53010d0.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.aacl-main.78; Source: https://doi.org/10.18653/v1/2022.aacl-main.78; OA: gold; Citations: 5",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4404784020",
+            "fetched_at": "2026-06-20T00:19:53Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\511146a59ecb6214d53010d0.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "prompt-based fine-tuning has been proposed and attracted much attention",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            290,
+            361
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "under fully supervised and low-resource settings",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1000,
+            1048
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we propose a novel method Fine-tuning with Prompt Curriculum (FPC)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            516,
+            582
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "four widely used RE benchmarks under fully supervised and low-resource settings",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            969,
+            1048
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "FPC can significantly outperform the existing methods and obtain the new state-of-the-art results",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1085,
+            1182
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, such methods directly treat relation labels as class numbers, therefore they ignore the semantics of relation labels.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            153,
+            279
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The current classification methods for relation extraction (RE) generally utilize pre-trained language models (PLMs) and have achieved superior results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            152
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1423,
+        "elapsed_s": 7.1425797999836504,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_024_253761978.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4404784020",
+        "title": "FPC: Fine-tuning with Prompt Curriculum for Relation Extraction",
+        "authors": [
+          "Sicheng Yang",
+          "Dandan Song"
+        ],
+        "year": 2022,
+        "venue": "https://doi.org/10.18653/v1/2022.aacl-main.78",
+        "doi": "10.18653/v1/2022.aacl-main.78",
+        "oa_status": "gold",
+        "citation_count": 5,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:53Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\511146a59ecb6214d53010d0.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "FPC: Fine-tuning with Prompt Curriculum for Relation Extraction",
+          "candidate_title": "FPC: Fine-tuning with Prompt Curriculum for Relation Extraction",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 248779986,
+      "title": "Prompt Tuning for Discriminative Pre-trained Language Models",
+      "cells": [
+        {
+          "criterion": "prompt fine-tuning semi-supervised learning natural language understanding",
+          "addresses": true,
+          "snippet": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ]
+        },
+        {
+          "criterion": "semi-supervised prompt tuning NLU",
+          "addresses": true,
+          "snippet": "Recent works have shown promising results of prompt tuning in stimulating pre-trained language models (PLMs) for natural language processing (NLP) tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            153
+          ]
+        },
+        {
+          "criterion": "prompt-based semi-supervised learning for text classification",
+          "addresses": true,
+          "snippet": "Comprehensive experiments on text classification and question answering show that, compared with vanilla fine-tuning, DPT achieves significantly higher performance, and also prevents the unstable problem in tuning large PLMs in both full-set and low-resource settings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            623,
+            891
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 259833809,
+      "title": "SPC: Soft Prompt Construction for Cross Domain Generalization",
+      "cells": [
+        {
+          "criterion": "prompt fine-tuning semi-supervised learning natural language understanding",
+          "addresses": true,
+          "snippet": "Recent advances in prompt tuning have proven effective as a new language modeling paradigm for various natural language understanding tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ]
+        },
+        {
+          "criterion": "semi-supervised prompt tuning NLU",
+          "addresses": true,
+          "snippet": "Recent advances in prompt tuning have proven effective as a new language modeling paradigm for various natural language understanding tasks.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            140
+          ]
+        },
+        {
+          "criterion": "prompt-based semi-supervised learning for text classification",
+          "addresses": true,
+          "snippet": "However, it is challenging to adapt the soft prompt embeddings to different domains or generalize to low-data settings when learning soft prompts itself is unstable, task-specific, and bias-prone.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            141,
+            337
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 253761978,
+      "title": "FPC: Fine-tuning with Prompt Curriculum for Relation Extraction",
+      "cells": [
+        {
+          "criterion": "prompt fine-tuning semi-supervised learning natural language understanding",
+          "addresses": true,
+          "snippet": "Recently, prompt-based fine-tuning has been proposed and attracted much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            280,
+            362
+          ]
+        },
+        {
+          "criterion": "semi-supervised prompt tuning NLU",
+          "addresses": true,
+          "snippet": "Recently, prompt-based fine-tuning has been proposed and attracted much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            280,
+            362
+          ]
+        },
+        {
+          "criterion": "prompt-based semi-supervised learning for text classification",
+          "addresses": true,
+          "snippet": "The current classification methods for relation extraction (RE) generally utilize pre-trained language models (PLMs) and have achieved superior results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            152
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      248779986,
+      253761978,
+      259833809
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_418",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_418",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_418",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_418",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 793,
+      "latency_s": 3.7489373000571504
+    },
+    {
+      "query_id": "litsearch_418",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 293,
+      "latency_s": 2.935712300008163
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_418",
+    "gold": [
+      254877165
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "commonsense reasoning dataset generate sentences describing concept relations",
+      "dataset diverse sentences relation between concepts commonsense",
+      "commonsense knowledge graph sentence generation diverse"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        254877165,
+        58740369,
+        29974541,
+        8665449,
+        235658556,
+        237421077,
+        252211995,
+        748386,
+        39683298,
+        60718875,
+        6212787,
+        6124685,
+        235313469,
+        7653809,
+        208527026,
+        5548414,
+        1412569,
+        220344856,
+        131773797,
+        252763317
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        254877165,
+        218500588,
+        221879187,
+        235293697,
+        226227504,
+        235731975,
+        234682053,
+        247447167,
+        250391051,
+        260495678,
+        243865246,
+        235352728,
+        218470125,
+        222177123,
+        239016601,
+        252819088,
+        259064204,
+        233289738,
+        202540590,
+        173188167
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2000271,
+        254877165,
+        218500588,
+        221879187,
+        237541456,
+        260495679,
+        235166616,
+        5286967,
+        235592830,
+        247447167,
+        250391051,
+        260495678,
+        253098034,
+        258685674,
+        52123220,
+        173188167,
+        226262292,
+        253553784,
+        3906011,
+        218595822
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254877165,
+        218500588,
+        221879187
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877165,
+        218500588,
+        221879187,
+        247447167,
+        250391051,
+        260495678,
+        173188167,
+        253098034,
+        234682053,
+        226227504,
+        235293697,
+        202539082,
+        237532183,
+        235731975,
+        202789367,
+        252819088,
+        233240926,
+        235166616,
+        239016601,
+        5286967
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.693325300002471
+  },
+  "reason_example": {
+    "query_id": "litsearch_418",
+    "query": "Is there commonsense reasoning dataset which generates diverse sentences to describe the relation between concepts?",
+    "top_results": [
+      {
+        "corpusid": 254877165,
+        "score": 0.984886884689331,
+        "reason": "bm25=1.000; dense=0.975; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 218500588,
+        "score": 0.8905816078186035,
+        "reason": "bm25=0.852; dense=0.916; sub_bm25=0.976; sub_dense=0.898"
+      },
+      {
+        "corpusid": 221879187,
+        "score": 0.838982343673706,
+        "reason": "bm25=0.741; dense=0.904; sub_bm25=0.748; sub_dense=0.930"
+      },
+      {
+        "corpusid": 247447167,
+        "score": 0.7653284072875977,
+        "reason": "bm25=0.630; dense=0.855; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250391051,
+        "score": 0.7653284072875977,
+        "reason": "bm25=0.630; dense=0.855; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

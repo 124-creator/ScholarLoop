@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_521",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_521",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_521",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_521",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1032,
+      "latency_s": 5.689898299984634
+    },
+    {
+      "query_id": "litsearch_521",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 331,
+      "latency_s": 2.469770499970764
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_521",
+    "gold": [
+      259203325
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "data selection information theory",
+      "general data selection method information theory",
+      "information theoretic data selection"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        639945,
+        229220464,
+        3166233,
+        13309080,
+        11358655,
+        15853016,
+        10357166,
+        245616871,
+        247940018,
+        6379412,
+        252763276,
+        7030749,
+        7586460,
+        14087839,
+        750455,
+        15622349,
+        17603831,
+        13069084,
+        9292550,
+        1579047
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13069084,
+        6630458,
+        12260466,
+        9828777,
+        62057456,
+        10140027,
+        11318695,
+        108334676,
+        46719720,
+        252763276,
+        16260344,
+        259370804,
+        18371469,
+        130265,
+        203557889,
+        10662251,
+        17900912,
+        12409561,
+        13309080,
+        5464204
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        262825257,
+        60500790,
+        4643315,
+        15941361,
+        233029494,
+        12712634,
+        8339153,
+        3235204,
+        8265456,
+        11706793,
+        16894878,
+        108334676,
+        69301737,
+        16585956,
+        14800475,
+        17274515,
+        541674,
+        1194739,
+        14732351,
+        32274572
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        6133269,
+        262825257
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        262825257,
+        108334676,
+        12260466,
+        17274515,
+        3235204,
+        16585956,
+        6133269,
+        256390161,
+        236477424,
+        15941361,
+        1118457,
+        6379412,
+        16260344,
+        15315010,
+        10662251,
+        11706793,
+        3254638,
+        33932005,
+        253553811,
+        541674
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.05869029997848
+  },
+  "reason_example": {
+    "query_id": "litsearch_521",
+    "query": "Is there a paper which proposes a general data selection method based on information theory?",
+    "top_results": [
+      {
+        "corpusid": 262825257,
+        "score": 0.9407521486282349,
+        "reason": "bm25=0.852; dense=1.000; sub_bm25=0.791; sub_dense=1.000"
+      },
+      {
+        "corpusid": 108334676,
+        "score": 0.9175101518630981,
+        "reason": "bm25=0.930; dense=0.909; sub_bm25=0.669; sub_dense=0.838"
+      },
+      {
+        "corpusid": 12260466,
+        "score": 0.8882993459701538,
+        "reason": "bm25=0.980; dense=0.827; sub_bm25=1.000; sub_dense=0.764"
+      },
+      {
+        "corpusid": 17274515,
+        "score": 0.8466871976852417,
+        "reason": "bm25=0.763; dense=0.903; sub_bm25=0.714; sub_dense=0.811"
+      },
+      {
+        "corpusid": 3235204,
+        "score": 0.837232768535614,
+        "reason": "bm25=0.709; dense=0.923; sub_bm25=0.578; sub_dense=0.885"
+      }
+    ]
+  }
+}

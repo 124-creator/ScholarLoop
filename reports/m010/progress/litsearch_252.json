@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_252",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_252",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_252",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_252",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1259,
+      "latency_s": 8.016365999937989
+    },
+    {
+      "query_id": "litsearch_252",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 266,
+      "latency_s": 2.7029160000383854
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_252",
+    "gold": [
+      223953416
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "off-the-shelf summarization techniques improving neural abstractive summarization",
+      "combining extractive and abstractive summarization methods",
+      "using existing summarizers to boost neural abstractive models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        94818,
+        420614,
+        1026180,
+        60718875,
+        26698484,
+        1465750,
+        27242794,
+        1843005,
+        52111191,
+        3919442,
+        21547774,
+        201306636,
+        236460257,
+        252819333,
+        36997937,
+        196201849,
+        1094063,
+        17005865,
+        231931813,
+        259376580
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        26698484,
+        52111191,
+        1026180,
+        255125461,
+        53081342,
+        256460965,
+        202541012,
+        420614,
+        53046735,
+        235097525,
+        244034689,
+        252118507,
+        209387642,
+        236460081,
+        252407628,
+        235097426,
+        222378280,
+        1843005,
+        1207251,
+        241583641
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        174800577,
+        53079679,
+        223953416,
+        26698484,
+        1918428,
+        52111191,
+        53046735,
+        9508540,
+        202541012,
+        875708,
+        1499080,
+        174798262,
+        202537639,
+        21697472,
+        218718706,
+        1770102,
+        233296487,
+        170079112,
+        195833318,
+        44129061
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        223953416,
+        1026180,
+        202541012,
+        235097525,
+        26698484
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        26698484,
+        52111191,
+        53079679,
+        53046735,
+        202541012,
+        223953416,
+        1026180,
+        1918428,
+        174800577,
+        9508540,
+        252407628,
+        218718706,
+        1770102,
+        209387642,
+        174798262,
+        202537639,
+        13707541,
+        53081342,
+        53079938,
+        233296487
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.348278100020252
+  },
+  "reason_example": {
+    "query_id": "litsearch_252",
+    "query": "Has any research explored using other off-the-shelf summarization techniques to improve neural abstractive summarization?",
+    "top_results": [
+      {
+        "corpusid": 26698484,
+        "score": 0.983630895614624,
+        "reason": "bm25=1.000; dense=0.973; sub_bm25=0.927; sub_dense=0.965"
+      },
+      {
+        "corpusid": 52111191,
+        "score": 0.9584554433822632,
+        "reason": "bm25=0.970; dense=0.951; sub_bm25=1.000; sub_dense=0.992"
+      },
+      {
+        "corpusid": 53079679,
+        "score": 0.8921886682510376,
+        "reason": "bm25=0.741; dense=0.993; sub_bm25=0.827; sub_dense=0.999"
+      },
+      {
+        "corpusid": 53046735,
+        "score": 0.8856960535049438,
+        "reason": "bm25=0.802; dense=0.942; sub_bm25=0.894; sub_dense=0.956"
+      },
+      {
+        "corpusid": 202541012,
+        "score": 0.8837291598320007,
+        "reason": "bm25=0.807; dense=0.935; sub_bm25=0.850; sub_dense=0.937"
+      }
+    ]
+  }
+}

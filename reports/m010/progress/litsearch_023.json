@@ -1,0 +1,227 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_023",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_023",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_023",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_023",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1746,
+      "latency_s": 11.790069099981338
+    },
+    {
+      "query_id": "litsearch_023",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.123343500075862
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_023",
+    "gold": [
+      16911296,
+      1675452,
+      12718048
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "semantic parsing knowledge-constrained decoding grammar rules",
+      "high-quality meaning representation generation semantic parsing",
+      "enhanced semantic parsing methods constrained decoding"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        40524180,
+        7367830,
+        8110552,
+        15897148,
+        15412473,
+        584718,
+        252819405,
+        5380171,
+        28343036,
+        15217163,
+        204893632,
+        236477930,
+        135465038,
+        252683406,
+        11275066,
+        1139492,
+        15549605,
+        52013675,
+        195700014,
+        259370573
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236477930,
+        15412473,
+        226262340,
+        235417352,
+        204893632,
+        135465038,
+        259370698,
+        252819405,
+        6365996,
+        5578635,
+        227231451,
+        2164190,
+        7367830,
+        258987792,
+        61982581,
+        9707387,
+        208267359,
+        237940440,
+        196187342,
+        256389762
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        6078902,
+        5667590,
+        9344818,
+        248780580,
+        14472576,
+        977575,
+        7785983,
+        18297290,
+        18046808,
+        252819003,
+        1833955,
+        32260611,
+        3235119,
+        17029751,
+        18259498,
+        6971327,
+        44167998,
+        226227399,
+        6349911,
+        226227505
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236477930,
+        208267359,
+        226262340,
+        6078902,
+        15412473,
+        196187342,
+        235417352,
+        7367830,
+        8110552,
+        135465038,
+        6365996,
+        584718
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236477930,
+        226262340,
+        15412473,
+        6078902,
+        44167998,
+        6365996,
+        977575,
+        135465038,
+        5667590,
+        283356,
+        196187342,
+        226227399,
+        584718,
+        8310845,
+        44118603,
+        6228816,
+        235417352,
+        208267359,
+        252763354,
+        9271185
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.334047200041823
+  },
+  "reason_example": {
+    "query_id": "litsearch_023",
+    "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+    "top_results": [
+      {
+        "corpusid": 236477930,
+        "score": 0.8977270126342773,
+        "reason": "bm25=1.000; dense=0.830; sub_bm25=0.985; sub_dense=0.842"
+      },
+      {
+        "corpusid": 226262340,
+        "score": 0.89397132396698,
+        "reason": "bm25=0.934; dense=0.867; sub_bm25=0.804; sub_dense=0.883"
+      },
+      {
+        "corpusid": 15412473,
+        "score": 0.8910136222839355,
+        "reason": "bm25=0.998; dense=0.820; sub_bm25=0.800; sub_dense=0.819"
+      },
+      {
+        "corpusid": 6078902,
+        "score": 0.8886845111846924,
+        "reason": "bm25=0.722; dense=1.000; sub_bm25=0.641; sub_dense=0.948"
+      },
+      {
+        "corpusid": 44167998,
+        "score": 0.8359798192977905,
+        "reason": "bm25=0.741; dense=0.900; sub_bm25=0.600; sub_dense=0.939"
+      }
+    ]
+  }
+}

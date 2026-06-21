@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_539",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_539",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_539",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_539",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1077,
+      "latency_s": 5.606033700052649
+    },
+    {
+      "query_id": "litsearch_539",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 328,
+      "latency_s": 3.096306400024332
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_539",
+    "gold": [
+      260125817
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "first theoretical study small initialization neural networks",
+      "small initialization theory neural networks early work",
+      "pioneering paper neural network training small initial weights"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        253018859,
+        201641506,
+        208176134,
+        184482634,
+        9497515,
+        51872107,
+        245906452,
+        219558792,
+        5547578,
+        235422063,
+        260125817,
+        3411040,
+        237592862,
+        195833273,
+        257365819,
+        3278107,
+        15378527,
+        11217889,
+        51985896,
+        225075982
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        201058750,
+        240354190,
+        208176134,
+        202573010,
+        189898449,
+        238419007,
+        260125817,
+        235829223,
+        239016655,
+        52920808,
+        245906452,
+        210702665,
+        257365819,
+        9665723,
+        253018859,
+        202888483,
+        52922363,
+        252762187,
+        254043898,
+        225075982
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        210702665,
+        52948669,
+        16209268,
+        17272965,
+        52920808,
+        15734062,
+        260125817,
+        211259030,
+        52922363,
+        221802286,
+        222141662,
+        235078790,
+        9665723,
+        222141728,
+        203610572,
+        246411523,
+        238407888,
+        252762329,
+        52893515,
+        240354190
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        260125817
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        210702665,
+        260125817,
+        52920808,
+        240354190,
+        201058750,
+        52922363,
+        9665723,
+        189898449,
+        52948669,
+        202573010,
+        16209268,
+        235829223,
+        221802286,
+        15734062,
+        222141662,
+        245906452,
+        211259030,
+        202888483,
+        233481638,
+        252668546
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.698453100048937
+  },
+  "reason_example": {
+    "query_id": "litsearch_539",
+    "query": "What is the first paper that theoretically studies training neural networks under small initialization?",
+    "top_results": [
+      {
+        "corpusid": 210702665,
+        "score": 0.9215292930603027,
+        "reason": "bm25=0.804; dense=1.000; sub_bm25=0.911; sub_dense=1.000"
+      },
+      {
+        "corpusid": 260125817,
+        "score": 0.8667747974395752,
+        "reason": "bm25=0.846; dense=0.880; sub_bm25=0.957; sub_dense=0.907"
+      },
+      {
+        "corpusid": 52920808,
+        "score": 0.8651185035705566,
+        "reason": "bm25=0.820; dense=0.895; sub_bm25=0.749; sub_dense=0.904"
+      },
+      {
+        "corpusid": 240354190,
+        "score": 0.8601664304733276,
+        "reason": "bm25=0.925; dense=0.817; sub_bm25=1.000; sub_dense=0.885"
+      },
+      {
+        "corpusid": 201058750,
+        "score": 0.8334225416183472,
+        "reason": "bm25=1.000; dense=0.722; sub_bm25=0.616; sub_dense=0.659"
+      }
+    ]
+  }
+}

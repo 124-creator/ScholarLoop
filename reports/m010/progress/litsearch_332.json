@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_332",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_332",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_332",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_332",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1151,
+      "latency_s": 7.342111399979331
+    },
+    {
+      "query_id": "litsearch_332",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 3.210628899978474
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_332",
+    "gold": [
+      230433941
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "parameter-efficient fine-tuning for transformers",
+      "adapter layers in transformer language models",
+      "low-rank adaptation (LoRA) for large language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5456318,
+        8539843,
+        8517763,
+        8752606,
+        18792136,
+        219305462,
+        235097675,
+        3879624,
+        7600496,
+        30344039,
+        14069143,
+        3906011,
+        248722176,
+        259376488,
+        6583976,
+        252819085,
+        5153623,
+        199022672,
+        256461409,
+        57916
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259376488,
+        235313889,
+        259360526,
+        248986389,
+        195218574,
+        216914731,
+        250390508,
+        258426317,
+        258947572,
+        230433941,
+        250391001,
+        258615660,
+        221761685,
+        237500542,
+        15108580,
+        249017865,
+        259833855,
+        258179227,
+        238856900,
+        236478014
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        241583483,
+        254685798,
+        258865689,
+        226281941,
+        232035936,
+        226246215,
+        222291680,
+        260440449,
+        207916021,
+        248986389,
+        233219888,
+        237010911,
+        252846121,
+        259833855,
+        256460956,
+        201742730,
+        218629975,
+        235097568,
+        218502632,
+        159041867
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231672601,
+        258865689,
+        259360526,
+        248986389,
+        235313889
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248986389,
+        258865689,
+        259833855,
+        216914731,
+        259360526,
+        235313889,
+        201742730,
+        207916021,
+        222291680,
+        256460956,
+        259376488,
+        238856900,
+        231672601,
+        252780109,
+        240353697,
+        254685798,
+        247628024,
+        253510792,
+        258947572,
+        256460937
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.566169500001706
+  },
+  "reason_example": {
+    "query_id": "litsearch_332",
+    "query": "What techniques exist for efficiently fine-tuning transformer language models by adjusting a limited set of parameters?",
+    "top_results": [
+      {
+        "corpusid": 248986389,
+        "score": 0.952814519405365,
+        "reason": "bm25=0.966; dense=0.944; sub_bm25=0.936; sub_dense=0.795"
+      },
+      {
+        "corpusid": 258865689,
+        "score": 0.9441231489181519,
+        "reason": "bm25=0.883; dense=0.985; sub_bm25=0.857; sub_dense=0.805"
+      },
+      {
+        "corpusid": 259833855,
+        "score": 0.925997257232666,
+        "reason": "bm25=0.911; dense=0.936; sub_bm25=0.792; sub_dense=0.766"
+      },
+      {
+        "corpusid": 216914731,
+        "score": 0.9070674180984497,
+        "reason": "bm25=0.959; dense=0.873; sub_bm25=0.590; sub_dense=0.904"
+      },
+      {
+        "corpusid": 259360526,
+        "score": 0.8999497890472412,
+        "reason": "bm25=0.970; dense=0.853; sub_bm25=0.739; sub_dense=0.786"
+      }
+    ]
+  }
+}

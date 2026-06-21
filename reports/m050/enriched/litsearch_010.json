@@ -1,0 +1,600 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_010",
+  "query": "Can you point me to a work that uses diagnostic tools to detect depression from online posts, and investigates strategies that address common temporal and topical artifacts that plague these models?",
+  "criteria": [
+    "depression detection online posts diagnostic tools temporal artifacts",
+    "depression detection social media topical artifacts mitigation",
+    "addressing temporal topical bias depression detection online posts"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_010.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_010",
+      "corpusid": 53579036,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Detecting Linguistic Traces of Depression in Topic-Restricted Text: Attending to Self-Stigmatized Depression with NLP",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            117
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "JT Wolohan, Misato Hiraga, Atreyee Mukherjee, Zeeshan Ali Sayyed, Matthew Millard (2018)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2940818588",
+            "fetched_at": "2026-06-20T00:18:39Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\381a43f6a00c80efd000e99f.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: https://www.aclweb.org/anthology/W18-4102; OA: closed; Citations: 64",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2940818588",
+            "fetched_at": "2026-06-20T00:18:39Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\381a43f6a00c80efd000e99f.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Natural language processing researchers have proven the ability of machine learning approaches to detect depression-related cues from language; however, to date, these efforts have primarily assumed it was acceptable to leave depression-related texts in the data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            263
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Our concerns with this are twofold: first, that the models may be overfitting on depression-related signals, which may not be present in all depressed users (only those who talk about depression on social media); and second, that these models would under-perform for users who are sensitive to the public stigma of depression.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            264,
+            590
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We construct a novel corpus of texts from 12,106 Reddit users and perform lexical and predictive analyses under two conditions: one where all text produced by the users is included and one where the depression-related posts are withheld.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            647,
+            884
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We construct a novel corpus of texts from 12,106 Reddit users and perform lexical and predictive analyses under two conditions: one where all text produced by the users is included and one where the depression-related posts are withheld.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            647,
+            884
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We find significant differences in the language used by depressed users under the two conditions as well as a difference in the ability of machine learning algorithms to correctly detect depression. However, despite the lexical differences and reduced classification performance-each of which suggests that users may be able to fool algorithms by avoiding direct discussion of depression-a still respectable overall performance suggests lexical models are reasonably robust and well suited for a role in a diagnostic or monitoring capacity.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            885,
+            1425
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Natural language processing researchers have proven the ability of machine learning approaches to detect depression-related cues from language; however, to date, these efforts have primarily assumed it was acceptable to leave depression-related texts in the data.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            263
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Our concerns with this are twofold: first, that the models may be overfitting on depression-related signals, which may not be present in all depressed users (only those who talk about depression on social media); and second, that these models would under-perform for users who are sensitive to the public stigma of depression.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            264,
+            590
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2042,
+        "elapsed_s": 11.069553400040604,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_010_53579036.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2940818588",
+        "title": "Detecting Linguistic Traces of Depression in Topic-Restricted Text: Attending to Self-Stigmatized Depression with NLP",
+        "authors": [
+          "JT Wolohan",
+          "Misato Hiraga",
+          "Atreyee Mukherjee",
+          "Zeeshan Ali Sayyed",
+          "Matthew Millard"
+        ],
+        "year": 2018,
+        "venue": "https://www.aclweb.org/anthology/W18-4102",
+        "doi": "",
+        "oa_status": "closed",
+        "citation_count": 64,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:39Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\381a43f6a00c80efd000e99f.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Detecting Linguistic Traces of Depression in Topic-Restricted Text: Attending to Self-Stigmatized Depression with NLP",
+          "candidate_title": "Detecting Linguistic Traces of Depression in Topic-Restricted Text: Attending to Self-Stigmatized Depression with NLP",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_010",
+      "corpusid": 32436585,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "",
+          "status": "证据不足",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "missing_title"
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Depression is a major threat to public health, accounting for almost 12% of all disabilities and claiming the life of 1 out of 5 patients suffering from it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we explored how analysis of online health forums may help identify such episodes.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            226,
+            307
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We collected posts and replies from users of several forums on healthboards.com and analyzed changes in their use of language and activity levels over time.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            308,
+            464
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We collected posts and replies from users of several forums on healthboards.com",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            308,
+            387
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Our models based on these findings achieved 94 F 1 for detecting users who will withdraw from a Depression forum by the end of a 1-year observation period.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            619,
+            774
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although depression carries a significant amount of the total burden of all the diseases, this is not its most tragic outcome.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            2279,
+            2405
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Depression is a major threat to public health, accounting for almost 12% of all disabilities and claiming the life of 1 out of 5 patients suffering from it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1990,
+        "elapsed_s": 13.484808699926361,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_010_32436585.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_010",
+      "corpusid": 605706,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Depression and Self-Harm Risk Assessment in Online Forums",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            57
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Andrew Yates, Arman Cohan, Nazli Goharian (2017)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2753465613",
+            "fetched_at": "2026-06-20T00:18:41Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\16559affeacf87fcca9b4c6e.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/d17-1322; Source: https://doi.org/10.18653/v1/d17-1322; OA: gold; Citations: 19",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2753465613",
+            "fetched_at": "2026-06-20T00:18:41Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\16559affeacf87fcca9b4c6e.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            189
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            189
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "In this work, we present a framework for supporting and studying users in both types of communities.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            190,
+            290
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Self-harm is closely related to depression, which makes identifying depressed users on general forums a crucial related task.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            503,
+            628
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We propose methods for identifying posts in support communities that may indicate a risk of self-harm, and demonstrate that our approach outperforms strong previously proposed methods for identifying such posts.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            291,
+            502
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Mental health remains a major challenge in public health care.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1680,
+            1742
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            189
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1008,
+        "elapsed_s": 4.64121990010608,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_010_605706.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2753465613",
+        "title": "Depression and Self-Harm Risk Assessment in Online Forums",
+        "authors": [
+          "Andrew Yates",
+          "Arman Cohan",
+          "Nazli Goharian"
+        ],
+        "year": 2017,
+        "venue": "https://doi.org/10.18653/v1/d17-1322",
+        "doi": "10.18653/v1/d17-1322",
+        "oa_status": "gold",
+        "citation_count": 19,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:41Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\16559affeacf87fcca9b4c6e.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Depression and Self-Harm Risk Assessment in Online Forums",
+          "candidate_title": "Depression and Self-Harm Risk Assessment in Online Forums",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 53579036,
+      "title": "Detecting Linguistic Traces of Depression in Topic-Restricted Text: Attending to Self-Stigmatized Depression with NLP",
+      "cells": [
+        {
+          "criterion": "depression detection online posts diagnostic tools temporal artifacts",
+          "addresses": true,
+          "snippet": "Natural language processing researchers have proven the ability of machine learning approaches to detect depression-related cues from language; however, to date, these efforts have primarily assumed it was acceptable to leave depression-related texts in the data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            263
+          ]
+        },
+        {
+          "criterion": "depression detection social media topical artifacts mitigation",
+          "addresses": true,
+          "snippet": "Natural language processing researchers have proven the ability of machine learning approaches to detect depression-related cues from language; however, to date, these efforts have primarily assumed it was acceptable to leave depression-related texts in the data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            263
+          ]
+        },
+        {
+          "criterion": "addressing temporal topical bias depression detection online posts",
+          "addresses": true,
+          "snippet": "Natural language processing researchers have proven the ability of machine learning approaches to detect depression-related cues from language; however, to date, these efforts have primarily assumed it was acceptable to leave depression-related texts in the data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            263
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 32436585,
+      "title": "",
+      "cells": [
+        {
+          "criterion": "depression detection online posts diagnostic tools temporal artifacts",
+          "addresses": true,
+          "snippet": "Depression is a major threat to public health, accounting for almost 12% of all disabilities and claiming the life of 1 out of 5 patients suffering from it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ]
+        },
+        {
+          "criterion": "depression detection social media topical artifacts mitigation",
+          "addresses": true,
+          "snippet": "Depression is a major threat to public health, accounting for almost 12% of all disabilities and claiming the life of 1 out of 5 patients suffering from it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ]
+        },
+        {
+          "criterion": "addressing temporal topical bias depression detection online posts",
+          "addresses": true,
+          "snippet": "Depression is a major threat to public health, accounting for almost 12% of all disabilities and claiming the life of 1 out of 5 patients suffering from it.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            156
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 605706,
+      "title": "Depression and Self-Harm Risk Assessment in Online Forums",
+      "cells": [
+        {
+          "criterion": "depression detection online posts diagnostic tools temporal artifacts",
+          "addresses": true,
+          "snippet": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            189
+          ]
+        },
+        {
+          "criterion": "depression detection social media topical artifacts mitigation",
+          "addresses": true,
+          "snippet": "Self-harm is closely related to depression, which makes identifying depressed users on general forums a crucial related task.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            503,
+            628
+          ]
+        },
+        {
+          "criterion": "addressing temporal topical bias depression detection online posts",
+          "addresses": true,
+          "snippet": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            189
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      605706,
+      32436585,
+      53579036
+    ],
+    "edges": [
+      {
+        "source": 53579036,
+        "target": 605706
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

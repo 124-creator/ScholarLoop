@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_195",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_195",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_195",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_195",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1383,
+      "latency_s": 9.465536499978043
+    },
+    {
+      "query_id": "litsearch_195",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 276,
+      "latency_s": 2.1460513001075014
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_195",
+    "gold": [
+      219530980
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "beta distribution span size sampling unsupervised text representation",
+      "unsupervised learning span sampling beta distribution",
+      "beta distribution for span selection in text embedding"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13488062,
+        233029494,
+        237365390,
+        2000271,
+        208058457,
+        250390721,
+        53235209,
+        32575724,
+        15204692,
+        20695016,
+        235732095,
+        4954706,
+        15164488,
+        237267360,
+        1423969,
+        1841979,
+        3926047,
+        4643315,
+        5456318,
+        5989400
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13943154,
+        53235209,
+        2663445,
+        7861345,
+        222272463,
+        247158698,
+        248780587,
+        202775670,
+        254823652,
+        53781800,
+        232222259,
+        661,
+        237490829,
+        227217847,
+        254200096,
+        235293778,
+        243985604,
+        236486318,
+        231861566,
+        499924
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1810,
+        252091128,
+        248779964,
+        248780375,
+        235097282,
+        12126824,
+        213005726,
+        2937095,
+        13003592,
+        725590,
+        6795327,
+        15519576,
+        5799193,
+        3147137,
+        59336240,
+        235353020,
+        12640852,
+        252873563,
+        251710301,
+        248986557
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        219531032,
+        247158698,
+        5799193,
+        236486318
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        219531032,
+        235097282,
+        5799193,
+        252873563,
+        1810,
+        235353020,
+        2937095,
+        6903650,
+        10471775,
+        202775670,
+        12020345,
+        251710301,
+        202776961,
+        13943154,
+        522937,
+        7826531,
+        21668064,
+        8589745,
+        213005726,
+        5193044
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.143604599987157
+  },
+  "reason_example": {
+    "query_id": "litsearch_195",
+    "query": "Could you suggest a study that explores employing a beta distribution to sample span sizes within unsupervised learning frameworks for text representation?",
+    "top_results": [
+      {
+        "corpusid": 219531032,
+        "score": 0.8878062963485718,
+        "reason": "bm25=0.908; dense=0.874; sub_bm25=0.979; sub_dense=0.939"
+      },
+      {
+        "corpusid": 235097282,
+        "score": 0.8705230951309204,
+        "reason": "bm25=0.756; dense=0.947; sub_bm25=0.611; sub_dense=0.859"
+      },
+      {
+        "corpusid": 5799193,
+        "score": 0.8705114126205444,
+        "reason": "bm25=0.800; dense=0.917; sub_bm25=0.789; sub_dense=0.955"
+      },
+      {
+        "corpusid": 252873563,
+        "score": 0.8609150648117065,
+        "reason": "bm25=0.799; dense=0.902; sub_bm25=0.877; sub_dense=0.894"
+      },
+      {
+        "corpusid": 1810,
+        "score": 0.847413182258606,
+        "reason": "bm25=0.619; dense=1.000; sub_bm25=0.431; sub_dense=0.909"
+      }
+    ]
+  }
+}

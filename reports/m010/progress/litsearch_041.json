@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_041",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_041",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_041",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_041",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1501,
+      "latency_s": 9.054193799966015
+    },
+    {
+      "query_id": "litsearch_041",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 389,
+      "latency_s": 2.7415920000057667
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_041",
+    "gold": [
+      215238965
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "nuclear norm complexity measure linear model probing",
+      "theoretical basis nuclear norm weight matrix complexity",
+      "nuclear norm as measure of complexity in linear classifiers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9685049,
+        9410421,
+        3906011,
+        18461192,
+        236460248,
+        203688153,
+        1410966,
+        7038187,
+        5509775,
+        838814,
+        6559235,
+        13927379,
+        1969767,
+        32959350,
+        10853724,
+        15287917,
+        2328195,
+        14675184,
+        18699296,
+        4306044
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        67856138,
+        259108565,
+        257985378,
+        246706248,
+        251648112,
+        231709861,
+        229297705,
+        258833680,
+        245117320,
+        52920337,
+        17063549,
+        102352478,
+        15683369,
+        214693050,
+        211252411,
+        15850772,
+        196156203,
+        5543102,
+        257913759,
+        1423969
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254125471,
+        7579436,
+        6923433,
+        256739260,
+        259243562,
+        263609114,
+        3531730,
+        16484743,
+        318261,
+        8780454,
+        214536507,
+        238354388,
+        225075982,
+        258823075,
+        6729691,
+        27681954,
+        212414027,
+        36687039,
+        235212307,
+        229297705
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        3531730,
+        229297705,
+        16550910,
+        1423969,
+        256739260,
+        52920337,
+        211252411,
+        245117320,
+        263830446,
+        203688153,
+        12871696,
+        15683369
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254125471,
+        229297705,
+        256739260,
+        6923433,
+        263609114,
+        27681954,
+        3531730,
+        203641721,
+        214536507,
+        238354388,
+        1423969,
+        16484743,
+        235212307,
+        263830446,
+        12871696,
+        222141728,
+        257079026,
+        250048824,
+        257985378,
+        16938012
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.095922200009227
+  },
+  "reason_example": {
+    "query_id": "litsearch_041",
+    "query": "I would like to understand the theoretical basis for using the nuclear norm of a weight matrix as a measure of complexity in linear models for probing tasks. Which paper should I refer to?",
+    "top_results": [
+      {
+        "corpusid": 254125471,
+        "score": 0.8995414972305298,
+        "reason": "bm25=0.749; dense=1.000; sub_bm25=0.480; sub_dense=0.973"
+      },
+      {
+        "corpusid": 229297705,
+        "score": 0.8992401361465454,
+        "reason": "bm25=0.956; dense=0.861; sub_bm25=0.931; sub_dense=0.935"
+      },
+      {
+        "corpusid": 256739260,
+        "score": 0.8912000060081482,
+        "reason": "bm25=0.818; dense=0.940; sub_bm25=0.544; sub_dense=0.818"
+      },
+      {
+        "corpusid": 6923433,
+        "score": 0.8830967545509338,
+        "reason": "bm25=0.762; dense=0.964; sub_bm25=0.382; sub_dense=0.863"
+      },
+      {
+        "corpusid": 263609114,
+        "score": 0.8823070526123047,
+        "reason": "bm25=0.807; dense=0.932; sub_bm25=0.430; sub_dense=0.929"
+      }
+    ]
+  }
+}

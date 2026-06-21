@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_177",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_177",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_177",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_177",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1144,
+      "latency_s": 6.806239400058985
+    },
+    {
+      "query_id": "litsearch_177",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 253,
+      "latency_s": 1.9671811000443995
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_177",
+    "gold": [
+      235669650
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "cognitive biases in interpreting AI explanations",
+      "human evaluation of explainable NLP",
+      "effects of cognitive biases on explainable AI interpretation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14122119,
+        32306529,
+        27787263,
+        186206301,
+        219300512,
+        9405005,
+        3073489,
+        230349190,
+        3891855,
+        3923764,
+        30908728,
+        962094,
+        1891955,
+        17585795,
+        4898223,
+        2776389,
+        11637792,
+        33548672,
+        252763288,
+        252763330
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        230349190,
+        232233376,
+        173188413,
+        253510134,
+        252089594,
+        227905558,
+        229371403,
+        218502350,
+        2872204,
+        8861532,
+        233240791,
+        233289948,
+        258546862,
+        1650314,
+        238743793,
+        196171855,
+        235248187,
+        256231532,
+        256461135,
+        250390537
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232404166,
+        218502350,
+        249461900,
+        173188413,
+        235669650,
+        231821650,
+        252089594,
+        235606327,
+        53236424,
+        222209056,
+        258960511,
+        231821653,
+        254102968,
+        256461135,
+        51985896,
+        221739295,
+        8724439,
+        247187928,
+        232233376,
+        201667918
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        230349190,
+        218502350,
+        229371403,
+        256461135,
+        173188413,
+        253510134,
+        232233376,
+        252089594,
+        232404166,
+        238743793,
+        236460242,
+        14122119
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        173188413,
+        218502350,
+        252089594,
+        232233376,
+        232404166,
+        235669650,
+        235606327,
+        230349190,
+        253510134,
+        256461135,
+        254102968,
+        229371403,
+        231821650,
+        258546862,
+        258960511,
+        222209056,
+        247187928,
+        8861532,
+        238743793,
+        236460242
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.014463400002569
+  },
+  "reason_example": {
+    "query_id": "litsearch_177",
+    "query": "Could you recommend research that investigates the influence of cognitive biases on human interpretation of AI-generated explanations, specifically within the realm of explainable natural language processing?",
+    "top_results": [
+      {
+        "corpusid": 173188413,
+        "score": 0.9302790760993958,
+        "reason": "bm25=0.893; dense=0.955; sub_bm25=0.877; sub_dense=0.941"
+      },
+      {
+        "corpusid": 218502350,
+        "score": 0.9095821380615234,
+        "reason": "bm25=0.812; dense=0.975; sub_bm25=1.000; sub_dense=0.980"
+      },
+      {
+        "corpusid": 252089594,
+        "score": 0.877896785736084,
+        "reason": "bm25=0.844; dense=0.900; sub_bm25=0.839; sub_dense=0.935"
+      },
+      {
+        "corpusid": 232233376,
+        "score": 0.8711581230163574,
+        "reason": "bm25=0.955; dense=0.815; sub_bm25=0.905; sub_dense=0.851"
+      },
+      {
+        "corpusid": 232404166,
+        "score": 0.8703613877296448,
+        "reason": "bm25=0.676; dense=1.000; sub_bm25=0.803; sub_dense=1.000"
+      }
+    ]
+  }
+}

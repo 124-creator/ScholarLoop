@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_107",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_107",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_107",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_107",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2486,
+      "latency_s": 23.550112499971874
+    },
+    {
+      "query_id": "litsearch_107",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 460,
+      "latency_s": 4.539582400000654
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_107",
+    "gold": [
+      233296292
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "self-supervised contrastive learning sentence embeddings in-batch negatives",
+      "sentence embeddings contrastive learning with in-batch negatives",
+      "contrastive learning sentence embeddings without external data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        247450777,
+        219530980,
+        8368494,
+        1697838,
+        12405045,
+        201666520,
+        236477631,
+        9462924,
+        9816686,
+        237571775,
+        243865319,
+        9289604,
+        13907064,
+        258486963,
+        16662659,
+        2245732,
+        6723444,
+        236486283,
+        2644775,
+        7367421
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248496439,
+        222272463,
+        247450777,
+        235358707,
+        235422673,
+        233296292,
+        247244896,
+        219530980,
+        240288762,
+        252907682,
+        246823772,
+        231592453,
+        254044229,
+        252992913,
+        258378211,
+        252715969,
+        220425360,
+        257233135,
+        233219842,
+        256416154
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248496439,
+        247158698,
+        235422673,
+        252918345,
+        233296292,
+        258588364,
+        248299679,
+        247450777,
+        238857079,
+        237453212,
+        219530980,
+        247597138,
+        252438842,
+        235187266,
+        2107337,
+        229156351,
+        3525802,
+        59336240,
+        252763361,
+        261342112
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233296292,
+        235187266,
+        248496439,
+        219530980,
+        235422673,
+        247450777,
+        258588364,
+        248299679,
+        253499206
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248496439,
+        235422673,
+        233296292,
+        247450777,
+        219530980,
+        258588364,
+        248299679,
+        235358707,
+        247244896,
+        235187266,
+        222272463,
+        240288762,
+        252918345,
+        247158698,
+        257233135,
+        246823772,
+        204788776,
+        246411155,
+        252847570,
+        254044229
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 29.73883809999097
+  },
+  "reason_example": {
+    "query_id": "litsearch_107",
+    "query": "Can you give me a paper that does self-supervised contrastive learning of sentence embeddings by sampling in-batch negatives?",
+    "top_results": [
+      {
+        "corpusid": 248496439,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235422673,
+        "score": 0.9093506336212158,
+        "reason": "bm25=0.859; dense=0.943; sub_bm25=0.855; sub_dense=0.993"
+      },
+      {
+        "corpusid": 233296292,
+        "score": 0.9002096056938171,
+        "reason": "bm25=0.852; dense=0.932; sub_bm25=0.852; sub_dense=0.978"
+      },
+      {
+        "corpusid": 247450777,
+        "score": 0.8916937112808228,
+        "reason": "bm25=0.880; dense=0.899; sub_bm25=0.929; sub_dense=0.968"
+      },
+      {
+        "corpusid": 219530980,
+        "score": 0.8610498905181885,
+        "reason": "bm25=0.811; dense=0.895; sub_bm25=0.877; sub_dense=0.963"
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_068",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_068",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_068",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_068",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1475,
+      "latency_s": 10.9524143000599
+    },
+    {
+      "query_id": "litsearch_068",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 355,
+      "latency_s": 2.5583300000289455
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_068",
+    "gold": [
+      174798321,
+      245855898
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "soft-constrained terminology translation neural machine translation",
+      "hard-constrained decoding neural machine translation terminology",
+      "comparison soft-constrained hard-constrained terminology NMT"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1266013,
+        44090489,
+        61214793,
+        237717628,
+        195584234,
+        68153520,
+        51878325,
+        45492851,
+        171820989,
+        19012205,
+        2646100,
+        52096162,
+        188720,
+        196196191,
+        199501730,
+        251980393,
+        34175343,
+        53079945,
+        5412263,
+        173990986
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        174798321,
+        234469688,
+        4936344,
+        245855898,
+        248780311,
+        224705315,
+        15272436,
+        235606235,
+        256460974,
+        196196191,
+        222002282,
+        13663540,
+        247940034,
+        253510989,
+        52096162,
+        44090489,
+        195584234,
+        23597733,
+        15172361,
+        38497711
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        174798321,
+        13663540,
+        259370792,
+        245855898,
+        216553002,
+        23339307,
+        261494512,
+        235358574,
+        250179955,
+        235606235,
+        4936344,
+        248780523,
+        253510989,
+        11212020,
+        245855931,
+        234469688,
+        8822680,
+        256460974,
+        52118537,
+        38497711
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        174798321,
+        234469688,
+        216553002,
+        13663540,
+        4936344,
+        235606235,
+        245855898
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        174798321,
+        13663540,
+        245855898,
+        4936344,
+        234469688,
+        235606235,
+        256460974,
+        259370792,
+        216553002,
+        253510989,
+        15272436,
+        224705315,
+        38497711,
+        23339307,
+        248780523,
+        222002282,
+        261494512,
+        11212020,
+        52096162,
+        44090489
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 15.820232399972156
+  },
+  "reason_example": {
+    "query_id": "litsearch_068",
+    "query": "What are some soft-constrained methods proposed in the literature for terminology translation in neural machine translation systems, and how do they differ from hard-constrained decoding methods that might degrade translation quality or increase complexity?",
+    "top_results": [
+      {
+        "corpusid": 174798321,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.939; sub_dense=1.000"
+      },
+      {
+        "corpusid": 13663540,
+        "score": 0.9484683871269226,
+        "reason": "bm25=0.898; dense=0.982; sub_bm25=1.000; sub_dense=0.977"
+      },
+      {
+        "corpusid": 245855898,
+        "score": 0.938592791557312,
+        "reason": "bm25=0.945; dense=0.934; sub_bm25=1.000; sub_dense=0.989"
+      },
+      {
+        "corpusid": 4936344,
+        "score": 0.8999081254005432,
+        "reason": "bm25=0.966; dense=0.856; sub_bm25=0.699; sub_dense=0.861"
+      },
+      {
+        "corpusid": 234469688,
+        "score": 0.8985517024993896,
+        "reason": "bm25=0.981; dense=0.844; sub_bm25=0.975; sub_dense=0.912"
+      }
+    ]
+  }
+}

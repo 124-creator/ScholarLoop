@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_559",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_559",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_559",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_559",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 732,
+      "latency_s": 3.688780799973756
+    },
+    {
+      "query_id": "litsearch_559",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 469,
+      "latency_s": 4.603080800035968
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_559",
+    "gold": [
+      263831633
+    ],
+    "pool_size": 293,
+    "decomposition": [
+      "RLAIF replaces RLHF alignment language models",
+      "RLAIF vs RLHF language model alignment comparison",
+      "RLAIF aligned language model from scratch without human feedback"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53093808,
+        6218032,
+        259833850,
+        10919045,
+        248780193,
+        248811371,
+        33871285,
+        15743676,
+        253762014,
+        256460860,
+        14777162,
+        248779887,
+        16056702,
+        27016310,
+        241583598,
+        253420419,
+        2237870,
+        7018509,
+        14069143,
+        778138
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264306078,
+        258999206,
+        229371403,
+        974899,
+        253762088,
+        253447029,
+        14435489,
+        247849290,
+        252365186,
+        249712412,
+        234778324,
+        254877694,
+        248475947,
+        6218032,
+        7590259,
+        252818954,
+        209009596,
+        250390544,
+        202719284,
+        248780182
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        219301746,
+        7849235,
+        2637386,
+        16848750,
+        5265615,
+        42000998,
+        12909218,
+        8906175,
+        10243239,
+        7498059,
+        9107244,
+        33189508,
+        16652144,
+        1272090,
+        9867391,
+        119887,
+        8672140,
+        10068460,
+        1242264,
+        40306783
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        908361,
+        14435489,
+        237572244,
+        264306078,
+        2637386,
+        97528,
+        229371403,
+        9001123,
+        7641265,
+        253762088,
+        16848750,
+        55565528,
+        3196409,
+        9867391,
+        7590259,
+        8104571,
+        237732031,
+        5994263,
+        237513421,
+        8672140
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.34837779996451
+  },
+  "reason_example": {
+    "query_id": "litsearch_559",
+    "query": "What paper shows that RLAIF can fully replace RLHF to align language models from scratch?",
+    "top_results": [
+      {
+        "corpusid": 908361,
+        "score": 0.8194036483764648,
+        "reason": "bm25=0.783; dense=0.844; sub_bm25=0.285; sub_dense=0.907"
+      },
+      {
+        "corpusid": 14435489,
+        "score": 0.8030890226364136,
+        "reason": "bm25=0.882; dense=0.751; sub_bm25=0.360; sub_dense=0.827"
+      },
+      {
+        "corpusid": 237572244,
+        "score": 0.801587700843811,
+        "reason": "bm25=0.779; dense=0.817; sub_bm25=0.160; sub_dense=0.859"
+      },
+      {
+        "corpusid": 264306078,
+        "score": 0.7926508188247681,
+        "reason": "bm25=1.000; dense=0.654; sub_bm25=1.000; sub_dense=0.761"
+      },
+      {
+        "corpusid": 2637386,
+        "score": 0.767011284828186,
+        "reason": "bm25=0.573; dense=0.896; sub_bm25=0.443; sub_dense=1.000"
+      }
+    ]
+  }
+}

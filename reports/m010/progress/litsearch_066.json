@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_066",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_066",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_066",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_066",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1668,
+      "latency_s": 11.645040799980052
+    },
+    {
+      "query_id": "litsearch_066",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 466,
+      "latency_s": 3.617224199930206
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_066",
+    "gold": [
+      9870160
+    ],
+    "pool_size": 241,
+    "decomposition": [
+      "attention mechanism bidirectional RNN relation classification",
+      "bidirectional LSTM attention relation extraction",
+      "attention model bidirectional recurrent neural network relation classification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        246702346,
+        13328594,
+        184482634,
+        28545836,
+        51882139,
+        251980404,
+        5079983,
+        51876071,
+        195741695,
+        32392814,
+        202777183,
+        6271137,
+        8700588,
+        53125827,
+        16733173,
+        2248908,
+        29785361,
+        237329472,
+        53222782,
+        7443908
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        1774259,
+        246702346,
+        51882139,
+        251980404,
+        260063222,
+        52153793,
+        7437060,
+        16733173,
+        201692852,
+        57825721,
+        218684573,
+        246240193,
+        51876071,
+        14526320,
+        51929842,
+        184482634,
+        233864728,
+        207852603,
+        5079983,
+        220046827
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9870160,
+        174800694,
+        1774259,
+        18795469,
+        8950084,
+        9524495,
+        202234950,
+        17297069,
+        53082590,
+        202777183,
+        7437060,
+        248779953,
+        201692852,
+        236477936,
+        220047815,
+        5993225,
+        2476229,
+        226226530,
+        52153793,
+        441563
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        9870160,
+        202234950,
+        202777183,
+        52153793,
+        1774259,
+        7437060,
+        51882139,
+        51876071,
+        218684573,
+        246702346,
+        201692852,
+        16733173
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1774259,
+        9870160,
+        7437060,
+        52153793,
+        174800694,
+        201692852,
+        18795469,
+        202777183,
+        17297069,
+        226226530,
+        51882139,
+        218684573,
+        8950084,
+        51876071,
+        51929842,
+        202234950,
+        16733173,
+        236477936,
+        5993225,
+        227054213
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.639384499983862
+  },
+  "reason_example": {
+    "query_id": "litsearch_066",
+    "query": "What are some of the key papers to look at for understanding how attention mechanisms have been used to enhance bidirectional recurrent neural networks in relation classification tasks?",
+    "top_results": [
+      {
+        "corpusid": 1774259,
+        "score": 0.9478310346603394,
+        "reason": "bm25=1.000; dense=0.913; sub_bm25=1.000; sub_dense=0.989"
+      },
+      {
+        "corpusid": 9870160,
+        "score": 0.8950196504592896,
+        "reason": "bm25=0.738; dense=1.000; sub_bm25=0.934; sub_dense=1.000"
+      },
+      {
+        "corpusid": 7437060,
+        "score": 0.8486258387565613,
+        "reason": "bm25=0.820; dense=0.867; sub_bm25=0.715; sub_dense=0.907"
+      },
+      {
+        "corpusid": 52153793,
+        "score": 0.8312332630157471,
+        "reason": "bm25=0.839; dense=0.826; sub_bm25=0.850; sub_dense=0.805"
+      },
+      {
+        "corpusid": 174800694,
+        "score": 0.8299081325531006,
+        "reason": "bm25=0.604; dense=0.981; sub_bm25=0.828; sub_dense=1.000"
+      }
+    ]
+  }
+}

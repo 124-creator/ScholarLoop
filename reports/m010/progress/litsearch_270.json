@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_270",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_270",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_270",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_270",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1056,
+      "latency_s": 5.335238000028767
+    },
+    {
+      "query_id": "litsearch_270",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 254,
+      "latency_s": 1.672570800059475
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_270",
+    "gold": [
+      235097475
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "document summarization using memory networks",
+      "long document summarization without truncation",
+      "memory networks for long input handling"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51876439,
+        219302828,
+        258685798,
+        1342240,
+        16290774,
+        1136032,
+        18920342,
+        235097196,
+        2112310,
+        219306473,
+        253098682,
+        247476419,
+        199668918,
+        5154017,
+        5212627,
+        225075741,
+        19122719,
+        2380086,
+        6906150,
+        15946534
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247476419,
+        2112310,
+        235097475,
+        253098682,
+        4564356,
+        256662515,
+        236477874,
+        11743245,
+        219965343,
+        247958146,
+        227231042,
+        220665912,
+        588477,
+        256231485,
+        15946534,
+        6216639,
+        16496622,
+        235422257,
+        229924221,
+        1843005
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235097475,
+        248780072,
+        232075836,
+        201697450,
+        53079938,
+        102352252,
+        252819295,
+        53079679,
+        227239144,
+        2482257,
+        11676265,
+        59599804,
+        22716243,
+        15195249,
+        1843005,
+        875708,
+        170079112,
+        235262720,
+        189898,
+        10177077
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097475,
+        222140769
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235097475,
+        232075836,
+        253098682,
+        1843005,
+        227239144,
+        202541012,
+        222140769,
+        201697450,
+        102352252,
+        11664367,
+        53079938,
+        235262720,
+        218718706,
+        227231042,
+        236477874,
+        11676265,
+        875708,
+        12036979,
+        189898,
+        253237148
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.892863000044599
+  },
+  "reason_example": {
+    "query_id": "litsearch_270",
+    "query": "Have any research papers suggested methods for summarizing arbitrary length documents without truncating the input, by using memory networks?",
+    "top_results": [
+      {
+        "corpusid": 235097475,
+        "score": 0.9778233170509338,
+        "reason": "bm25=0.945; dense=1.000; sub_bm25=0.775; sub_dense=0.943"
+      },
+      {
+        "corpusid": 232075836,
+        "score": 0.8611876964569092,
+        "reason": "bm25=0.728; dense=0.950; sub_bm25=0.956; sub_dense=0.923"
+      },
+      {
+        "corpusid": 253098682,
+        "score": 0.8333967328071594,
+        "reason": "bm25=0.943; dense=0.760; sub_bm25=0.696; sub_dense=0.831"
+      },
+      {
+        "corpusid": 1843005,
+        "score": 0.8321743011474609,
+        "reason": "bm25=0.805; dense=0.850; sub_bm25=0.657; sub_dense=1.000"
+      },
+      {
+        "corpusid": 227239144,
+        "score": 0.8070266246795654,
+        "reason": "bm25=0.674; dense=0.896; sub_bm25=0.608; sub_dense=0.900"
+      }
+    ]
+  }
+}

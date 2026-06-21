@@ -1,0 +1,640 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_009",
+  "query": "Can you point me to a paper that discussed transformer-based sentence embeddings?",
+  "criteria": [
+    "transformer sentence embeddings",
+    "BERT sentence embeddings",
+    "sentence transformers"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_009.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_009",
+      "corpusid": 259833800,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            77
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Vivi Năstase, Paola Merlo (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570517",
+            "fetched_at": "2026-06-20T00:17:31Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2ebad8fa1f30fec1cccbfa65.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2023.repl4nlp-1.3; Source: https://doi.org/10.18653/v1/2023.repl4nlp-1.3; OA: gold; Citations: 1",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570517",
+            "fetched_at": "2026-06-20T00:17:31Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\2ebad8fa1f30fec1cccbfa65.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Sentence embeddings induced with various transformer architectures encode much semantic and syntactic information",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            113
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We investigate whether specific grammatical information can be accessed in these distributed representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            166,
+            275
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "a two-dimensional reshaping of these vectors allows various learning architectures to access such information.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            583,
+            693
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "data from a task developed to test rule-like generalizations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            282,
+            342
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "current sentence embeddings contain information that is regularly distributed, and which can be captured when the embeddings are reshaped into higher dimensional arrays.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            958,
+            1127
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Sentence embeddings induced with various transformer architectures encode much semantic and syntactic information in a distributed manner in a one-dimensional array.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            165
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "our experiments on detecting subject-verb agreement yield several promising results",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            344,
+            427
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1261,
+        "elapsed_s": 5.283344900002703,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_009_259833800.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4385570517",
+        "title": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+        "authors": [
+          "Vivi Năstase",
+          "Paola Merlo"
+        ],
+        "year": 2023,
+        "venue": "https://doi.org/10.18653/v1/2023.repl4nlp-1.3",
+        "doi": "10.18653/v1/2023.repl4nlp-1.3",
+        "oa_status": "gold",
+        "citation_count": 1,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:31Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\2ebad8fa1f30fec1cccbfa65.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+          "candidate_title": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_009",
+      "corpusid": 256105273,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Syntax-guided Neural Module Distillation to Probe Compositionality in Sentence Embeddings",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            89
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Rohan Pandey (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4317940169",
+            "fetched_at": "2026-06-20T00:17:33Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\8af5c040fa375a982d6ccc2b.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2301.08998; Source: arXiv (Cornell University); OA: green; Citations: 0",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4317940169",
+            "fetched_at": "2026-06-20T00:17:33Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\8af5c040fa375a982d6ccc2b.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Given a sentence, we construct a neural module net based on its syntax parse and train it end-to-end to approximate the sentence's embedding generated by a transformer model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            143,
+            317
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Past work probing compositionality in sentence embedding models faces issues determining the causal impact of implicit syntax representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Given a sentence, we construct a neural module net based on its syntax parse and train it end-to-end to approximate the sentence's embedding generated by a transformer model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            143,
+            317
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We find differences in the distillability of various sentence embedding models",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            638,
+            716
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We find differences in the distillability of various sentence embedding models that broadly correlate with their performance, but observe that distillability doesn't considerably vary by model size. We also present preliminary evidence that much syntax-guided composition in sentence embedding models is linear, and that non-linearities may serve primarily to handle non-compositional phrases.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            638,
+            1031
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We find differences in the distillability of various sentence embedding models that broadly correlate with their performance, but observe that distillability doesn't considerably vary by model size.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            638,
+            836
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Past work probing compositionality in sentence embedding models faces issues determining the causal impact of implicit syntax representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1924,
+        "elapsed_s": 9.74924340005964,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_009_256105273.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4317940169",
+        "title": "Syntax-guided Neural Module Distillation to Probe Compositionality in Sentence Embeddings",
+        "authors": [
+          "Rohan Pandey"
+        ],
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2301.08998",
+        "oa_status": "green",
+        "citation_count": 0,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:33Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\8af5c040fa375a982d6ccc2b.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Syntax-guided Neural Module Distillation to Probe Compositionality in Sentence Embeddings",
+          "candidate_title": "Syntax-guided Neural Module Distillation to Probe Compositionality in Sentence Embeddings",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_009",
+      "corpusid": 24461982,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            99
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Alexis Conneau, Germán Kruszewski, Guillaume Lample, Loïc Barrault, Marco Baroni (2018)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4292353911",
+            "fetched_at": "2026-06-20T00:18:37Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\8836d90688e3274b4d0d7b75.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.1805.01070; Source: arXiv (Cornell University); OA: green; Citations: 7",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4292353911",
+            "fetched_at": "2026-06-20T00:18:37Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\8836d90688e3274b4d0d7b75.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "\"Downstream\" tasks, often based on sentence classification, are commonly used to evaluate the quality of sentence representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            156,
+            286
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "#* vector, sentence embedding methods have achieved impressive results in tasks ranging from machine translation (Sutskever et al.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1902,
+            2032
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 980,
+        "elapsed_s": 4.402496000053361,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_009_24461982.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4292353911",
+        "title": "What you can cram into a single vector: Probing sentence embeddings for linguistic properties",
+        "authors": [
+          "Alexis Conneau",
+          "Germán Kruszewski",
+          "Guillaume Lample",
+          "Loïc Barrault",
+          "Marco Baroni"
+        ],
+        "year": 2018,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.1805.01070",
+        "oa_status": "green",
+        "citation_count": 7,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:37Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\8836d90688e3274b4d0d7b75.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties",
+          "candidate_title": "What you can cram into a single vector: Probing sentence embeddings for linguistic properties",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 259833800,
+      "title": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+      "cells": [
+        {
+          "criterion": "transformer sentence embeddings",
+          "addresses": true,
+          "snippet": "Sentence embeddings induced with various transformer architectures encode much semantic and syntactic information in a distributed manner in a one-dimensional array.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            165
+          ]
+        },
+        {
+          "criterion": "BERT sentence embeddings",
+          "addresses": true,
+          "snippet": "Sentence embeddings induced with various transformer architectures encode much semantic and syntactic information in a distributed manner in a one-dimensional array.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            165
+          ]
+        },
+        {
+          "criterion": "sentence transformers",
+          "addresses": true,
+          "snippet": "Sentence embeddings induced with various transformer architectures encode much semantic and syntactic information in a distributed manner in a one-dimensional array.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            165
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 256105273,
+      "title": "Syntax-guided Neural Module Distillation to Probe Compositionality in Sentence Embeddings",
+      "cells": [
+        {
+          "criterion": "transformer sentence embeddings",
+          "addresses": true,
+          "snippet": "Past work probing compositionality in sentence embedding models faces issues determining the causal impact of implicit syntax representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        },
+        {
+          "criterion": "BERT sentence embeddings",
+          "addresses": true,
+          "snippet": "Past work probing compositionality in sentence embedding models faces issues determining the causal impact of implicit syntax representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        },
+        {
+          "criterion": "sentence transformers",
+          "addresses": true,
+          "snippet": "Past work probing compositionality in sentence embedding models faces issues determining the causal impact of implicit syntax representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 24461982,
+      "title": "What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties",
+      "cells": [
+        {
+          "criterion": "transformer sentence embeddings",
+          "addresses": true,
+          "snippet": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "BERT sentence embeddings",
+          "addresses": true,
+          "snippet": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        },
+        {
+          "criterion": "sentence transformers",
+          "addresses": true,
+          "snippet": "Although much effort has recently been devoted to training high-quality sentence embeddings, we still have a poor understanding of what they are capturing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            155
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      24461982,
+      256105273,
+      259833800
+    ],
+    "edges": [
+      {
+        "source": 256105273,
+        "target": 24461982
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

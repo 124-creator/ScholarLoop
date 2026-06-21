@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_527",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_527",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_527",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_527",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 621,
+      "latency_s": 2.1138739999150857
+    },
+    {
+      "query_id": "litsearch_527",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 321,
+      "latency_s": 2.985742299933918
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_527",
+    "gold": [
+      264802494
+    ],
+    "pool_size": 271,
+    "decomposition": [
+      "GPT-2 D4RL PEFT",
+      "pretrained GPT-2 offline RL parameter-efficient fine-tuning",
+      "GPT-2 D4RL adapter"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        29974541,
+        7518198,
+        243865637,
+        2778259,
+        3852408,
+        65850,
+        235097394,
+        258547278,
+        12405045,
+        168170148,
+        7224455,
+        794942,
+        248780381,
+        8912414,
+        257913673,
+        234357758,
+        8476273,
+        2485161,
+        3088089,
+        46000085
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247958012,
+        239009526,
+        258947572,
+        202583429,
+        234357758,
+        264172506,
+        227231309,
+        250164294,
+        5765246,
+        258461336,
+        263829270,
+        260063230,
+        244119782,
+        258686160,
+        245218563,
+        6089013,
+        233289620,
+        218487168,
+        253237701,
+        202120592
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        239009526,
+        248177957,
+        226283937,
+        209832510,
+        17630430,
+        53731906,
+        18208128,
+        237532411,
+        259376907,
+        258179929,
+        253762061,
+        233296808,
+        235368160,
+        259376475,
+        259137871,
+        602639,
+        779651,
+        226299975,
+        260900008,
+        248572222
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        239009526,
+        248177957,
+        227231309,
+        253762061,
+        235458009,
+        256461348,
+        258179929,
+        258960366,
+        258947572,
+        233296808,
+        260887189,
+        252386188,
+        258588055,
+        236460229,
+        233204575,
+        260900008,
+        252917630,
+        253019001,
+        254877171,
+        259376907
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 5.995584700023755
+  },
+  "reason_example": {
+    "query_id": "litsearch_527",
+    "query": "Is there any paper applies off-shelf GPT-2 model in D4RL tasks, using PEFT techniques?",
+    "top_results": [
+      {
+        "corpusid": 239009526,
+        "score": 0.953008770942688,
+        "reason": "bm25=0.883; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248177957,
+        "score": 0.7863144874572754,
+        "reason": "bm25=0.569; dense=0.931; sub_bm25=0.709; sub_dense=0.873"
+      },
+      {
+        "corpusid": 227231309,
+        "score": 0.7094607353210449,
+        "reason": "bm25=0.769; dense=0.670; sub_bm25=0.788; sub_dense=0.685"
+      },
+      {
+        "corpusid": 253762061,
+        "score": 0.7082531452178955,
+        "reason": "bm25=0.622; dense=0.766; sub_bm25=0.843; sub_dense=0.676"
+      },
+      {
+        "corpusid": 235458009,
+        "score": 0.6892609000205994,
+        "reason": "bm25=0.633; dense=0.727; sub_bm25=0.929; sub_dense=0.977"
+      }
+    ]
+  }
+}

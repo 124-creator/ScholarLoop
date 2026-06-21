@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_106",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_106",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_106",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_106",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1706,
+      "latency_s": 12.164055500063114
+    },
+    {
+      "query_id": "litsearch_106",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 215,
+      "latency_s": 2.0705735000083223
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_106",
+    "gold": [
+      248780440
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "automatic debiasing language models prompting",
+      "prompt-based bias mitigation LLMs",
+      "zero-shot debiasing language models using prompts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219309121,
+        11280500,
+        219302901,
+        27016310,
+        186206883,
+        252624538,
+        8320612,
+        247596835,
+        6215855,
+        8752606,
+        11964950,
+        7038187,
+        222133199,
+        252819154,
+        21120278,
+        247656360,
+        10010426,
+        52111710,
+        248779910,
+        2679145
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247596835,
+        252991162,
+        231698657,
+        252624538,
+        231741340,
+        256415953,
+        252367427,
+        248780049,
+        247613246,
+        252222228,
+        232185097,
+        254877569,
+        252439170,
+        253553277,
+        258041372,
+        248780440,
+        259370606,
+        248986239,
+        259833814,
+        239015827
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247619066,
+        249017555,
+        248780440,
+        239015827,
+        250390802,
+        250279831,
+        251953607,
+        2832533,
+        252716013,
+        259833850,
+        258332119,
+        249282716,
+        254591475,
+        243865641,
+        248069254,
+        257038392,
+        235097394,
+        252222228,
+        237416760,
+        234337004
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780440,
+        247596835
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780440,
+        247619066,
+        239015827,
+        247596835,
+        250279831,
+        252222228,
+        249282716,
+        249017555,
+        252439170,
+        259833814,
+        232185097,
+        258332119,
+        250311509,
+        252716013,
+        248069254,
+        249017524,
+        248177827,
+        254591475,
+        254877569,
+        257378358
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.173334899940528
+  },
+  "reason_example": {
+    "query_id": "litsearch_106",
+    "query": "Are there studies that investigate debiasing language models automatically using prompting?",
+    "top_results": [
+      {
+        "corpusid": 248780440,
+        "score": 0.8233087062835693,
+        "reason": "bm25=0.708; dense=0.900; sub_bm25=0.822; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247619066,
+        "score": 0.822378933429718,
+        "reason": "bm25=0.556; dense=1.000; sub_bm25=0.555; sub_dense=0.909"
+      },
+      {
+        "corpusid": 239015827,
+        "score": 0.8131468296051025,
+        "reason": "bm25=0.694; dense=0.892; sub_bm25=0.858; sub_dense=0.934"
+      },
+      {
+        "corpusid": 247596835,
+        "score": 0.7962828874588013,
+        "reason": "bm25=1.000; dense=0.660; sub_bm25=0.865; sub_dense=0.899"
+      },
+      {
+        "corpusid": 250279831,
+        "score": 0.7705367207527161,
+        "reason": "bm25=0.613; dense=0.875; sub_bm25=0.715; sub_dense=0.885"
+      }
+    ]
+  }
+}

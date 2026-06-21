@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_046",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_046",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_046",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_046",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1448,
+      "latency_s": 8.27063080004882
+    },
+    {
+      "query_id": "litsearch_046",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 307,
+      "latency_s": 2.1482316000619903
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_046",
+    "gold": [
+      232258000
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "perplexity misinformation detection",
+      "perplexity fact-checking",
+      "perplexity fake news detection"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        26889702,
+        236477851,
+        258463981,
+        2735574,
+        27094656,
+        14342971,
+        44167055,
+        3104512,
+        16530521,
+        16981389,
+        3265448,
+        5440348,
+        6609459,
+        18718806,
+        126584,
+        8985962,
+        2591089,
+        12758647,
+        9385931,
+        29974541
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253107194,
+        232258000,
+        235097501,
+        248392317,
+        49320819,
+        239009616,
+        226281376,
+        254853990,
+        235258245,
+        248780234,
+        252564364,
+        249953983,
+        14124213,
+        254877112,
+        259376644,
+        212414986,
+        252624406,
+        226262371,
+        222177140,
+        251518354
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        49320819,
+        85556928,
+        236460200,
+        235097501,
+        244464088,
+        235097689,
+        29298828,
+        218974006,
+        28297509,
+        208325499,
+        251518354,
+        3099801,
+        235293804,
+        224802782,
+        253107194,
+        11770023,
+        259376833,
+        5555594,
+        247007285,
+        323451
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        49320819,
+        235097501,
+        253107194,
+        236460200,
+        251518354,
+        224802782,
+        226281376,
+        239009616,
+        218974006,
+        85556928,
+        248780450,
+        208325499,
+        222177140,
+        29298828,
+        254853990,
+        248780234,
+        215744944,
+        235731930,
+        232258000,
+        218613630
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.837576300022192
+  },
+  "reason_example": {
+    "query_id": "litsearch_046",
+    "query": "I'm interested in understanding how perplexity is utilized in identifying misinformation or fact-checking. Are there studies discussing this application of perplexity?",
+    "top_results": [
+      {
+        "corpusid": 49320819,
+        "score": 0.9593907594680786,
+        "reason": "bm25=0.898; dense=1.000; sub_bm25=0.640; sub_dense=0.917"
+      },
+      {
+        "corpusid": 235097501,
+        "score": 0.9269044399261475,
+        "reason": "bm25=0.904; dense=0.942; sub_bm25=0.687; sub_dense=0.894"
+      },
+      {
+        "corpusid": 253107194,
+        "score": 0.9010529518127441,
+        "reason": "bm25=1.000; dense=0.835; sub_bm25=0.757; sub_dense=0.833"
+      },
+      {
+        "corpusid": 236460200,
+        "score": 0.8819420337677002,
+        "reason": "bm25=0.781; dense=0.949; sub_bm25=0.819; sub_dense=0.973"
+      },
+      {
+        "corpusid": 251518354,
+        "score": 0.8387042880058289,
+        "reason": "bm25=0.787; dense=0.873; sub_bm25=0.921; sub_dense=1.000"
+      }
+    ]
+  }
+}

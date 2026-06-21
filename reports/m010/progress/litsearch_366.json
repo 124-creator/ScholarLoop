@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_366",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_366",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_366",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_366",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1418,
+      "latency_s": 8.759680300019681
+    },
+    {
+      "query_id": "litsearch_366",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 221,
+      "latency_s": 2.177582199918106
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_366",
+    "gold": [
+      254854340
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "methods for detecting critical errors in dialogue system responses",
+      "evaluation metrics for dialogue system errors",
+      "types of critical errors in conversational AI"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8535026,
+        2862211,
+        29974541,
+        34153729,
+        67239762,
+        52896891,
+        17409270,
+        2175391,
+        18868099,
+        17173602,
+        7174676,
+        320447,
+        15617679,
+        1444138,
+        9800912,
+        1405599,
+        5097820,
+        249605593,
+        259370838,
+        6543362
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248506045,
+        10544039,
+        253237753,
+        7638635,
+        1031946,
+        249605593,
+        13898293,
+        248780221,
+        6186002,
+        258378197,
+        263609476,
+        11318695,
+        256460861,
+        226283776,
+        18403161,
+        220058855,
+        5611041,
+        16406099,
+        247594339,
+        1502408
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8880454,
+        8301004,
+        1795288,
+        219302330,
+        247411224,
+        981073,
+        233864494,
+        27942819,
+        235358130,
+        151157,
+        1192509,
+        17667899,
+        14142581,
+        235254434,
+        247158435,
+        1785607,
+        9197196,
+        219573466,
+        1593264,
+        1184214
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2688449,
+        220058855,
+        2862211,
+        52896891,
+        18868099,
+        10485974,
+        249605593,
+        27942819,
+        248506045,
+        7638635,
+        39059266,
+        8535026
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        220058855,
+        8301004,
+        27942819,
+        1795288,
+        8880454,
+        219302330,
+        249605593,
+        7930267,
+        2688449,
+        7638635,
+        247158435,
+        1785607,
+        1184214,
+        263609476,
+        248506045,
+        18403161,
+        1880070,
+        10485974,
+        247411224,
+        151157
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.07507809996605
+  },
+  "reason_example": {
+    "query_id": "litsearch_366",
+    "query": "Is there a method for measuring the critical errors that a dialogue system makes in its responses?",
+    "top_results": [
+      {
+        "corpusid": 220058855,
+        "score": 0.8442495465278625,
+        "reason": "bm25=0.876; dense=0.823; sub_bm25=0.722; sub_dense=0.858"
+      },
+      {
+        "corpusid": 8301004,
+        "score": 0.8394568562507629,
+        "reason": "bm25=0.680; dense=0.946; sub_bm25=0.844; sub_dense=0.999"
+      },
+      {
+        "corpusid": 27942819,
+        "score": 0.8381938934326172,
+        "reason": "bm25=0.809; dense=0.858; sub_bm25=0.622; sub_dense=0.958"
+      },
+      {
+        "corpusid": 1795288,
+        "score": 0.8351274728775024,
+        "reason": "bm25=0.720; dense=0.912; sub_bm25=0.736; sub_dense=1.000"
+      },
+      {
+        "corpusid": 8880454,
+        "score": 0.8323488831520081,
+        "reason": "bm25=0.581; dense=1.000; sub_bm25=0.708; sub_dense=1.000"
+      }
+    ]
+  }
+}

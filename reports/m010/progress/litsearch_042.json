@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_042",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_042",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_042",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_042",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1462,
+      "latency_s": 7.653340400080197
+    },
+    {
+      "query_id": "litsearch_042",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 284,
+      "latency_s": 2.1425357999978587
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_042",
+    "gold": [
+      11128248,
+      229349316
+    ],
+    "pool_size": 229,
+    "decomposition": [
+      "computational humor detection repetition features",
+      "humor recognition GPT-2 language model",
+      "computational humor detection text features"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        227231309,
+        37225340,
+        32392814,
+        668597,
+        243865409,
+        261494511,
+        14812600,
+        252819358,
+        59524008,
+        257366185,
+        16732339,
+        252819205,
+        62627145,
+        20382420,
+        229349316,
+        249431669,
+        29785361,
+        46482966,
+        252781097,
+        8437895
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        229349316,
+        258486847,
+        5766640,
+        11128248,
+        256662672,
+        52012194,
+        202767593,
+        53235876,
+        258378296,
+        202772732,
+        44158782,
+        35159512,
+        259095915,
+        227231309,
+        895713,
+        233004478,
+        227230405,
+        51867524,
+        241583185,
+        221292933
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        5766640,
+        11128248,
+        51880154,
+        258486847,
+        1659137,
+        10634429,
+        227230405,
+        229349316,
+        52012194,
+        221292933,
+        6296389,
+        256739243,
+        11939055,
+        44158782,
+        44072778,
+        259095915,
+        239768767,
+        220060209,
+        53235876,
+        253762001
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233004478,
+        259095915,
+        229349316,
+        258486847,
+        5766640,
+        53235876,
+        11128248,
+        221292933,
+        202767593,
+        256662672,
+        52012194,
+        35159512
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5766640,
+        11128248,
+        258486847,
+        229349316,
+        52012194,
+        202767593,
+        53235876,
+        44158782,
+        227230405,
+        259095915,
+        51880154,
+        221292933,
+        6296389,
+        233004478,
+        258378296,
+        256662672,
+        11939055,
+        25320232,
+        256739243,
+        202772732
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 12.496305799926631
+  },
+  "reason_example": {
+    "query_id": "litsearch_042",
+    "query": "I'm conducting research on computational humor and looking at various approaches to detect it within texts. What are some articles that explore features like repetition or use language models like GPT-2 for humor recognition?",
+    "top_results": [
+      {
+        "corpusid": 5766640,
+        "score": 0.9778960943222046,
+        "reason": "bm25=0.945; dense=1.000; sub_bm25=0.785; sub_dense=0.998"
+      },
+      {
+        "corpusid": 11128248,
+        "score": 0.9615709185600281,
+        "reason": "bm25=0.944; dense=0.973; sub_bm25=0.982; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258486847,
+        "score": 0.9385979175567627,
+        "reason": "bm25=0.960; dense=0.924; sub_bm25=0.829; sub_dense=0.924"
+      },
+      {
+        "corpusid": 229349316,
+        "score": 0.9340925216674805,
+        "reason": "bm25=1.000; dense=0.890; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52012194,
+        "score": 0.8652504682540894,
+        "reason": "bm25=0.831; dense=0.888; sub_bm25=0.818; sub_dense=0.910"
+      }
+    ]
+  }
+}

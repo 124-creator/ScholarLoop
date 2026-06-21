@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_581",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_581",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_581",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_581",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 903,
+      "latency_s": 4.493355999933556
+    },
+    {
+      "query_id": "litsearch_581",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 279,
+      "latency_s": 2.1870050999568775
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_581",
+    "gold": [
+      258436870
+    ],
+    "pool_size": 227,
+    "decomposition": [
+      "differential privacy in-context learning",
+      "differential privacy prompt leakage",
+      "in-context learning differential privacy first paper"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        221761488,
+        39654639,
+        2136464,
+        11846872,
+        17063555,
+        4643315,
+        15213255,
+        257038791,
+        21696519,
+        51848072,
+        53238603,
+        249890250,
+        1767631,
+        196179812,
+        15078437,
+        1412569,
+        1153579,
+        10740890,
+        119302127,
+        208139512
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237346951,
+        208139512,
+        231942635,
+        238419564,
+        231750016,
+        248227918,
+        259298735,
+        252735292,
+        223956916,
+        237353275,
+        256461131,
+        232046284,
+        263310823,
+        248965347,
+        243847413,
+        222225275,
+        248780423,
+        253107364,
+        252668508,
+        250491294
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247084141,
+        243847413,
+        252735292,
+        256627683,
+        248780423,
+        232046284,
+        221655222,
+        238419564,
+        227152280,
+        231942635,
+        231861410,
+        264555202,
+        252668508,
+        264439585,
+        257219732,
+        8696462,
+        258378239,
+        225062526,
+        252917944,
+        222378211
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237346951,
+        248227918,
+        248780423
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238419564,
+        231942635,
+        252735292,
+        243847413,
+        232046284,
+        237346951,
+        259298735,
+        248227918,
+        208139512,
+        247084141,
+        248780423,
+        231750016,
+        237353275,
+        252668508,
+        223956916,
+        221655222,
+        253107364,
+        264439585,
+        257219732,
+        264555202
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.558915399946272
+  },
+  "reason_example": {
+    "query_id": "litsearch_581",
+    "query": "Which paper first studied differential privacy for in-context learning to prevent prompt leakage attacks?",
+    "top_results": [
+      {
+        "corpusid": 238419564,
+        "score": 0.9429652094841003,
+        "reason": "bm25=0.976; dense=0.921; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231942635,
+        "score": 0.9316153526306152,
+        "reason": "bm25=0.981; dense=0.899; sub_bm25=0.605; sub_dense=0.921"
+      },
+      {
+        "corpusid": 252735292,
+        "score": 0.9256225824356079,
+        "reason": "bm25=0.908; dense=0.937; sub_bm25=0.712; sub_dense=0.916"
+      },
+      {
+        "corpusid": 243847413,
+        "score": 0.9112740755081177,
+        "reason": "bm25=0.813; dense=0.977; sub_bm25=0.522; sub_dense=0.938"
+      },
+      {
+        "corpusid": 232046284,
+        "score": 0.8987876772880554,
+        "reason": "bm25=0.853; dense=0.929; sub_bm25=0.825; sub_dense=0.963"
+      }
+    ]
+  }
+}

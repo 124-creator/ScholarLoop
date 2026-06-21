@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_098",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_098",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_098",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_098",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 905,
+      "latency_s": 3.8345665000379086
+    },
+    {
+      "query_id": "litsearch_098",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 371,
+      "latency_s": 3.4228036000858992
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_098",
+    "gold": [
+      258960423
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "dataset labeled acceptable non-acceptable questions ethically contentious",
+      "dataset question filtering legality ethics labels",
+      "dataset sensitive questions acceptability labels"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258967690,
+        15247441,
+        38218347,
+        1665987,
+        5292642,
+        8191960,
+        60824678,
+        115466382,
+        18391127,
+        9429534,
+        2294286,
+        3926047,
+        7213852,
+        7440991,
+        119309472,
+        9773210,
+        17683994,
+        824017,
+        9800912,
+        249204419
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258960423,
+        234491937,
+        198324796,
+        6258462,
+        3060785,
+        220047814,
+        249062866,
+        15351197,
+        258762844,
+        242763941,
+        250390581,
+        256739277,
+        7653072,
+        225040672,
+        232307434,
+        252411778,
+        252364968,
+        2638551,
+        12025181,
+        174803609
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235727489,
+        218900504,
+        253244515,
+        233864979,
+        248094722,
+        34376694,
+        236486181,
+        7434807,
+        232168787,
+        235421154,
+        15291488,
+        235097431,
+        196188987,
+        235293811,
+        189927972,
+        227230438,
+        256194365,
+        250390668,
+        53635478,
+        258486901
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258960423
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258960423,
+        218900504,
+        235727489,
+        253244515,
+        232168787,
+        38898903,
+        236486181,
+        196188987,
+        236459875,
+        202783357,
+        248094722,
+        1058073,
+        17639050,
+        249062866,
+        233864979,
+        7434807,
+        259370803,
+        37022833,
+        258486901,
+        189927972
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.77363680000417
+  },
+  "reason_example": {
+    "query_id": "litsearch_098",
+    "query": "*Could you suggest a dataset with legally or ethically contentious content, and labels for acceptable and non-acceptable questions.",
+    "top_results": [
+      {
+        "corpusid": 258960423,
+        "score": 0.8670626878738403,
+        "reason": "bm25=1.000; dense=0.778; sub_bm25=1.000; sub_dense=0.932"
+      },
+      {
+        "corpusid": 218900504,
+        "score": 0.8293482065200806,
+        "reason": "bm25=0.589; dense=0.990; sub_bm25=0.418; sub_dense=0.984"
+      },
+      {
+        "corpusid": 235727489,
+        "score": 0.7547591328620911,
+        "reason": "bm25=0.387; dense=1.000; sub_bm25=0.936; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253244515,
+        "score": 0.7454793453216553,
+        "reason": "bm25=0.382; dense=0.988; sub_bm25=0.136; sub_dense=0.920"
+      },
+      {
+        "corpusid": 232168787,
+        "score": 0.7218250632286072,
+        "reason": "bm25=0.468; dense=0.891; sub_bm25=0.599; sub_dense=0.941"
+      }
+    ]
+  }
+}

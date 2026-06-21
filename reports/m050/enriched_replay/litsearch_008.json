@@ -1,0 +1,628 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_008",
+  "query": "Can you list some publications that discuss the evaluation metrics used in semantic role labeling tasks, specifically focusing on precision and evaluation scripts used in shared tasks like SemEval?",
+  "criteria": [
+    "semantic role labeling evaluation metrics precision",
+    "SemEval shared task semantic role labeling evaluation script",
+    "precision recall semantic role labeling shared task"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_008.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_008",
+      "corpusid": 16509032,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Introduction to the CoNLL-2005 Shared Task: Semantic Role Labeling",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            66
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2126851059",
+            "candidate_title": "Introduction to the CoNLL-2005 shared task",
+            "title_score": 0.7850467289719626,
+            "title_token_jaccard": 0.7,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2126851059",
+            "candidate_title": "Introduction to the CoNLL-2005 shared task",
+            "title_score": 0.7850467289719626,
+            "title_token_jaccard": 0.7,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "present a general overview of the 19 systems that have contributed to the task, providing a comparative description and results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            185,
+            313
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "describe the data sets and evaluation methods",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            179
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "describe the data sets and evaluation methods",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            179
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "CoNLL-2005 shared task on Semantic Role Labeling",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            30,
+            78
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "providing a comparative description and results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            265,
+            313
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We introduce the specification and goals of the task, describe the data sets and evaluation methods, and present a general overview of the 19 systems that have contributed to the task, providing a comparative description and results.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            80,
+            313
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "In this paper we describe the CoNLL-2005 shared task on Semantic Role Labeling.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            79
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1631,
+        "elapsed_s": 8.443785000010394,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_008_16509032.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": null
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_008",
+      "corpusid": 252846088,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "PriMeSRL-Eval: A Practical Quality Metric for Semantic Role Labeling Systems Evaluation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            87
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Ishan Jindal, Alexandre Rademaker, Nguyen Khoi Tran, Huaiyu Zhu, Hiroshi Kanayama, Marina Danilevsky, et al. (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4306179294",
+            "fetched_at": "2026-06-20T00:17:28Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\bb3fcb7d31880d45dd2b5bd9.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2210.06408; Source: arXiv (Cornell University); OA: green; Citations: 0",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4306179294",
+            "fetched_at": "2026-06-20T00:17:28Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\bb3fcb7d31880d45dd2b5bd9.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we address key practical issues with existing evaluation scripts and propose a more strict SRL evaluation metric, PriMeSRL.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            641,
+            764
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Unfortunately, the existing SRL evaluation scripts do not consider the full effect of this error propagation aspect.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            302,
+            418
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "propose a more strict SRL evaluation metric, PriMeSRL.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            710,
+            764
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "They either evaluate arguments independent of predicate sense (CoNLL09) or do not evaluate predicate sense at all (CoNLL05)",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            419,
+            542
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "the quality evaluation of all SoTA SRL models drops significantly, and their relative rankings also change",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            804,
+            910
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Unfortunately, the existing SRL evaluation scripts do not consider the full effect of this error propagation aspect.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            302,
+            418
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "a more strict SRL evaluation metric",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            718,
+            753
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2241,
+        "elapsed_s": 13.34475739998743,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_008_252846088.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4306179294",
+        "title": "PriMeSRL-Eval: A Practical Quality Metric for Semantic Role Labeling Systems Evaluation",
+        "authors": [
+          "Ishan Jindal",
+          "Alexandre Rademaker",
+          "Nguyen Khoi Tran",
+          "Huaiyu Zhu",
+          "Hiroshi Kanayama",
+          "Marina Danilevsky",
+          "Yunyao Li"
+        ],
+        "year": 2022,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2210.06408",
+        "oa_status": "green",
+        "citation_count": 0,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:28Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\bb3fcb7d31880d45dd2b5bd9.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "PriMeSRL-Eval: A Practical Quality Metric for Semantic Role Labeling Systems Evaluation",
+          "candidate_title": "PriMeSRL-Eval: A Practical Quality Metric for Semantic Role Labeling Systems Evaluation",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_008",
+      "corpusid": 2331493,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Evaluating Machine Translation Utility via Semantic Role Labels",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            63
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Chi-kiu Lo, Dekai Wu (2010)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W1559176553",
+            "fetched_at": "2026-06-20T00:17:30Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\bec3a75be5e177223bdeed99.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.63317/2yzeaktk7a4u; Source: https://doi.org/10.63317/2yzeaktk7a4u; OA: gold; Citations: 12",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W1559176553",
+            "fetched_at": "2026-06-20T00:17:30Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\bec3a75be5e177223bdeed99.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Direct data analysis is still needed to understand how semantic models can be leveraged to evaluate the utility of MT output.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            850,
+            975
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Recent work has started introducing semantic models into SMT so as to improve the semantic adequacy.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1956,
+            2056
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Such roles can be annotated using Propbank-style PRED and ARG labels.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            413,
+            482
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1303,
+        "elapsed_s": 6.146762000047602,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_008_2331493.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W1559176553",
+        "title": "Evaluating Machine Translation Utility via Semantic Role Labels",
+        "authors": [
+          "Chi-kiu Lo",
+          "Dekai Wu"
+        ],
+        "year": 2010,
+        "venue": "https://doi.org/10.63317/2yzeaktk7a4u",
+        "doi": "10.63317/2yzeaktk7a4u",
+        "oa_status": "gold",
+        "citation_count": 12,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:17:30Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\bec3a75be5e177223bdeed99.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Evaluating Machine Translation Utility via Semantic Role Labels",
+          "candidate_title": "Evaluating Machine Translation Utility via Semantic Role Labels",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 16509032,
+      "title": "Introduction to the CoNLL-2005 Shared Task: Semantic Role Labeling",
+      "cells": [
+        {
+          "criterion": "semantic role labeling evaluation metrics precision",
+          "addresses": true,
+          "snippet": "In this paper we describe the CoNLL-2005 shared task on Semantic Role Labeling.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            79
+          ]
+        },
+        {
+          "criterion": "SemEval shared task semantic role labeling evaluation script",
+          "addresses": true,
+          "snippet": "In this paper we describe the CoNLL-2005 shared task on Semantic Role Labeling.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            79
+          ]
+        },
+        {
+          "criterion": "precision recall semantic role labeling shared task",
+          "addresses": true,
+          "snippet": "In this paper we describe the CoNLL-2005 shared task on Semantic Role Labeling.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            79
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 252846088,
+      "title": "PriMeSRL-Eval: A Practical Quality Metric for Semantic Role Labeling Systems Evaluation",
+      "cells": [
+        {
+          "criterion": "semantic role labeling evaluation metrics precision",
+          "addresses": true,
+          "snippet": "Semantic role labeling (SRL) identifies predicate-argument structures in a sentence.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "SemEval shared task semantic role labeling evaluation script",
+          "addresses": true,
+          "snippet": "Semantic role labeling (SRL) identifies predicate-argument structures in a sentence.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "precision recall semantic role labeling shared task",
+          "addresses": true,
+          "snippet": "Semantic role labeling (SRL) identifies predicate-argument structures in a sentence.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 2331493,
+      "title": "Evaluating Machine Translation Utility via Semantic Role Labels",
+      "cells": [
+        {
+          "criterion": "semantic role labeling evaluation metrics precision",
+          "addresses": true,
+          "snippet": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ]
+        },
+        {
+          "criterion": "SemEval shared task semantic role labeling evaluation script",
+          "addresses": true,
+          "snippet": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ]
+        },
+        {
+          "criterion": "precision recall semantic role labeling shared task",
+          "addresses": true,
+          "snippet": "We present the methodology that underlies new metrics for semantic machine translation evaluation that we are developing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            121
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      2331493,
+      16509032,
+      252846088
+    ],
+    "edges": [
+      {
+        "source": 252846088,
+        "target": 16509032
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "results_status": "implemented_pending_review",
+  "wall_passed": true,
+  "stop_report_exists": false,
+  "plan_status_line": "- 状态：implemented (2026-06-20 Codex completed M060; wall passed; pending human verified, not self-declared verified)",
+  "pytest_passed": true,
+  "pytest_tail": "25 passed in 47.65s",
+  "secret_exact_m060_hit_count": 0,
+  "authorization_bearer_header_hits_in_reports_m060": [],
+  "primary_passed": true,
+  "robust_passed": true,
+  "resolvable_a_v2_f1": 0.19720789003669367,
+  "resolvable_bm25_f1": 0.10584410868119817,
+  "full791_a_v2_f1": 0.19288213975584717,
+  "full791_bm25_f1": 0.10356528219788141,
+  "gold_audit_counts": {
+    "query_count": 50,
+    "official_gold_count": 791,
+    "resolvable_gold_count": 739,
+    "unresolvable_gold_count": 52,
+    "queries_with_unresolvable_gold_count": 22,
+    "resolvable_ratio": 0.934260429835651,
+    "unexpected_unparseable_causes": []
+  }
+}

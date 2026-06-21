@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_484",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_484",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_484",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_484",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1182,
+      "latency_s": 6.963476400007494
+    },
+    {
+      "query_id": "litsearch_484",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 2.6568346000276506
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_484",
+    "gold": [
+      259370539
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "two-stage training method open-domain dialogue evaluator",
+      "cross-domain pre-training task-specific fine-tuning dialogue evaluation",
+      "self-collected dataset open-domain dialogue evaluator"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8605623,
+        252819304,
+        226262238,
+        201306636,
+        236428851,
+        189928589,
+        11505828,
+        218614076,
+        85518355,
+        259833790,
+        256461203,
+        258762309,
+        250390693,
+        259376476,
+        13629456,
+        233365215,
+        256461111,
+        1389241,
+        207916021,
+        244464099
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        216036398,
+        252819304,
+        222176203,
+        226262238,
+        236428851,
+        259376583,
+        252734863,
+        220045953,
+        259370563,
+        257622984,
+        251929143,
+        252595978,
+        227231444,
+        250391033,
+        174798391,
+        236486098,
+        258079422,
+        202771227,
+        236478106,
+        259108831
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        196211466,
+        253098345,
+        236477596,
+        246294520,
+        259370539,
+        236478341,
+        174798391,
+        202785255,
+        8661576,
+        236428851,
+        258841681,
+        1880070,
+        259224700,
+        258179929,
+        218487696,
+        202771227,
+        52897360,
+        224705337,
+        235254478,
+        6508854
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370539,
+        251929143,
+        236428851,
+        226262238,
+        218614076,
+        174798391,
+        216036398,
+        202771227,
+        252819304,
+        259376583,
+        248085567,
+        257622984
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236428851,
+        174798391,
+        251929143,
+        202771227,
+        259370539,
+        246294520,
+        236477596,
+        257622984,
+        202785255,
+        253098345,
+        226262238,
+        248085567,
+        257427158,
+        196211466,
+        235352646,
+        218614076,
+        249191720,
+        243997694,
+        257353639,
+        258179929
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.064475699909963
+  },
+  "reason_example": {
+    "query_id": "litsearch_484",
+    "query": "Which paper proposes the two-stage training method, i.e., task-specific fine-tuning and cross-domain pre-training, to train an open-domain dialogue evaluator using the self-collected dataset.",
+    "top_results": [
+      {
+        "corpusid": 236428851,
+        "score": 0.916905403137207,
+        "reason": "bm25=0.876; dense=0.944; sub_bm25=0.857; sub_dense=0.898"
+      },
+      {
+        "corpusid": 174798391,
+        "score": 0.8725463151931763,
+        "reason": "bm25=0.753; dense=0.952; sub_bm25=0.837; sub_dense=0.953"
+      },
+      {
+        "corpusid": 251929143,
+        "score": 0.8510878086090088,
+        "reason": "bm25=0.767; dense=0.907; sub_bm25=0.874; sub_dense=0.818"
+      },
+      {
+        "corpusid": 202771227,
+        "score": 0.8452620506286621,
+        "reason": "bm25=0.746; dense=0.912; sub_bm25=0.863; sub_dense=0.888"
+      },
+      {
+        "corpusid": 259370539,
+        "score": 0.8451473712921143,
+        "reason": "bm25=0.664; dense=0.966; sub_bm25=0.849; sub_dense=0.969"
+      }
+    ]
+  }
+}

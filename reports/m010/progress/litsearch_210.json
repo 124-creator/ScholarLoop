@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_210",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_210",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_210",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_210",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1462,
+      "latency_s": 8.94667059998028
+    },
+    {
+      "query_id": "litsearch_210",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 323,
+      "latency_s": 2.3256338998908177
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_210",
+    "gold": [
+      235446920
+    ],
+    "pool_size": 228,
+    "decomposition": [
+      "coreference resolution dialogue summarization",
+      "effect of coreference resolution on summarization quality",
+      "coreference resolution in dialogue summarization evaluation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6897473,
+        47179013,
+        241583506,
+        6215504,
+        16771067,
+        9375250,
+        253510465,
+        51918763,
+        161067,
+        14370835,
+        10700106,
+        11858608,
+        235097332,
+        235446920,
+        258486842,
+        5638176,
+        4954256,
+        685960,
+        17423946,
+        254069974
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253510465,
+        235446920,
+        252873184,
+        8057832,
+        241583506,
+        17510107,
+        15294320,
+        17311352,
+        253080850,
+        9375250,
+        9170598,
+        234790024,
+        202237637,
+        17423946,
+        6215504,
+        241583389,
+        221819133,
+        40842904,
+        243840891,
+        241583180
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        18904161,
+        235446920,
+        6897473,
+        9170598,
+        10370220,
+        2893471,
+        5175754,
+        248987173,
+        248780376,
+        252819072,
+        13271004,
+        16041559,
+        5607967,
+        258378335,
+        252819521,
+        241583533,
+        254069974,
+        535939,
+        241583506,
+        14521311
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235446920,
+        241583506,
+        253510465,
+        254069974,
+        236459820,
+        221819133,
+        6897473,
+        8057832,
+        9170598,
+        252873184,
+        9375250,
+        6215504
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235446920,
+        9170598,
+        252873184,
+        241583506,
+        8057832,
+        253510465,
+        234790024,
+        18904161,
+        221819133,
+        10370220,
+        2893471,
+        254069974,
+        248987173,
+        253080850,
+        14521311,
+        202237637,
+        237940487,
+        252819072,
+        15757787,
+        6557193
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.517080799909309
+  },
+  "reason_example": {
+    "query_id": "litsearch_210",
+    "query": "Could you suggest research that examines how coreference resolution affects dialogue summarization quality?",
+    "top_results": [
+      {
+        "corpusid": 235446920,
+        "score": 0.9819498062133789,
+        "reason": "bm25=0.981; dense=0.983; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 9170598,
+        "score": 0.8963326215744019,
+        "reason": "bm25=0.804; dense=0.958; sub_bm25=0.948; sub_dense=0.983"
+      },
+      {
+        "corpusid": 252873184,
+        "score": 0.8927853107452393,
+        "reason": "bm25=0.961; dense=0.847; sub_bm25=0.746; sub_dense=0.838"
+      },
+      {
+        "corpusid": 241583506,
+        "score": 0.8631368279457092,
+        "reason": "bm25=0.827; dense=0.887; sub_bm25=0.969; sub_dense=0.900"
+      },
+      {
+        "corpusid": 8057832,
+        "score": 0.8626633882522583,
+        "reason": "bm25=0.923; dense=0.822; sub_bm25=0.750; sub_dense=0.902"
+      }
+    ]
+  }
+}

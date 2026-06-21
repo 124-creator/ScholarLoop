@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_222",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_222",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_222",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_222",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1980,
+      "latency_s": 12.96668819990009
+    },
+    {
+      "query_id": "litsearch_222",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 270,
+      "latency_s": 1.758153700036928
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_222",
+    "gold": [
+      237386541
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "pre-trained encoder-decoder for code comprehension and generation",
+      "encoder-decoder architecture for automated code repair",
+      "pre-trained code model for bug fixing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5292642,
+        247158700,
+        259376468,
+        18957176,
+        15247441,
+        241583177,
+        201741510,
+        252683406,
+        259376583,
+        199379325,
+        248227577,
+        199379633,
+        5996124,
+        16930771,
+        245855691,
+        246863795,
+        6293901,
+        6680780,
+        60824678,
+        115466382
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237386541,
+        237941066,
+        247315559,
+        247158700,
+        238856828,
+        76666188,
+        259376468,
+        252917569,
+        17355,
+        258378139,
+        102481167,
+        8153918,
+        236460116,
+        256389762,
+        259165134,
+        52125417,
+        241583177,
+        221761146,
+        211171605,
+        196171017
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8153918,
+        256461462,
+        237941066,
+        17355,
+        253097844,
+        237386541,
+        247315559,
+        102481167,
+        234762936,
+        243865284,
+        252993162,
+        215828318,
+        259164815,
+        221761146,
+        52125417,
+        218516704,
+        235719387,
+        52136345,
+        258378289,
+        235254617
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237386541,
+        247158700,
+        237941066,
+        102481167,
+        17355,
+        247315559,
+        8153918,
+        52125417,
+        247362946,
+        259376468,
+        256389762,
+        238856828
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237941066,
+        8153918,
+        237386541,
+        247315559,
+        17355,
+        102481167,
+        247158700,
+        52125417,
+        221761146,
+        253097844,
+        256461462,
+        258378139,
+        234762936,
+        211171605,
+        258378289,
+        232185260,
+        247362946,
+        218516704,
+        252993162,
+        259165134
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.434338200022466
+  },
+  "reason_example": {
+    "query_id": "litsearch_222",
+    "query": "Could you suggest research that explores a pre-trained encoder-decoder architecture aimed at comprehending and generating code, potentially beneficial for enhancing automated code repair systems?",
+    "top_results": [
+      {
+        "corpusid": 237941066,
+        "score": 0.9334559440612793,
+        "reason": "bm25=0.966; dense=0.912; sub_bm25=0.928; sub_dense=0.962"
+      },
+      {
+        "corpusid": 8153918,
+        "score": 0.9218722581863403,
+        "reason": "bm25=0.805; dense=1.000; sub_bm25=0.888; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237386541,
+        "score": 0.9082252979278564,
+        "reason": "bm25=1.000; dense=0.847; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247315559,
+        "score": 0.8836658000946045,
+        "reason": "bm25=0.946; dense=0.842; sub_bm25=0.906; sub_dense=0.968"
+      },
+      {
+        "corpusid": 17355,
+        "score": 0.8762369155883789,
+        "reason": "bm25=0.837; dense=0.903; sub_bm25=0.846; sub_dense=0.855"
+      }
+    ]
+  }
+}

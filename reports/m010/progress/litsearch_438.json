@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_438",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_438",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_438",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_438",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1015,
+      "latency_s": 4.420472399913706
+    },
+    {
+      "query_id": "litsearch_438",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 222,
+      "latency_s": 1.7135604000650346
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_438",
+    "gold": [
+      259370799
+    ],
+    "pool_size": 229,
+    "decomposition": [
+      "grammar error correction ensemble framework",
+      "combining neural and rule-based GEC",
+      "hybrid grammar correction system"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        52012695,
+        15050524,
+        39984436,
+        19401538,
+        10068460,
+        18984250,
+        3006421,
+        9689315,
+        261342131,
+        259370799,
+        782943,
+        16372558,
+        243865305,
+        18065622,
+        5619743,
+        14445929,
+        2114002,
+        6392594,
+        16766006,
+        3064994
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370799,
+        243865305,
+        240420025,
+        233289423,
+        4941839,
+        232427798,
+        208166839,
+        227231551,
+        218869975,
+        16766006,
+        247518934,
+        259376509,
+        247447305,
+        218487230,
+        222377812,
+        52012695,
+        249009330,
+        253098925,
+        11746938,
+        16627556
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        12495493,
+        252819041,
+        6922426,
+        14025468,
+        258486932,
+        15484870,
+        236145112,
+        46940766,
+        259370799,
+        232427798,
+        222377812,
+        243865305,
+        34826662,
+        18051414,
+        240420025,
+        252819391,
+        5092868,
+        219300647,
+        235358263,
+        203610215
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        4941839,
+        240420025,
+        14025468
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370799,
+        243865305,
+        240420025,
+        232427798,
+        6922426,
+        252819041,
+        4941839,
+        258486932,
+        222377812,
+        14025468,
+        16766006,
+        12495493,
+        208166839,
+        203610215,
+        252819391,
+        233289423,
+        34826662,
+        218869975,
+        52012695,
+        15484870
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.067360199987888
+  },
+  "reason_example": {
+    "query_id": "litsearch_438",
+    "query": "Which paper combines the advantages of different frameworks for grammar error correction (GEC) and achieves good performance?",
+    "top_results": [
+      {
+        "corpusid": 259370799,
+        "score": 0.9461675882339478,
+        "reason": "bm25=1.000; dense=0.910; sub_bm25=0.634; sub_dense=0.935"
+      },
+      {
+        "corpusid": 243865305,
+        "score": 0.9262999892234802,
+        "reason": "bm25=0.957; dense=0.906; sub_bm25=0.714; sub_dense=0.883"
+      },
+      {
+        "corpusid": 240420025,
+        "score": 0.9059041738510132,
+        "reason": "bm25=0.914; dense=0.900; sub_bm25=0.861; sub_dense=0.922"
+      },
+      {
+        "corpusid": 232427798,
+        "score": 0.8954225778579712,
+        "reason": "bm25=0.875; dense=0.909; sub_bm25=0.754; sub_dense=0.822"
+      },
+      {
+        "corpusid": 6922426,
+        "score": 0.8928803205490112,
+        "reason": "bm25=0.760; dense=0.982; sub_bm25=0.676; sub_dense=0.937"
+      }
+    ]
+  }
+}

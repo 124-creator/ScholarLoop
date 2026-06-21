@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_129",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_129",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_129",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_129",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1862,
+      "latency_s": 12.72604700003285
+    },
+    {
+      "query_id": "litsearch_129",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 289,
+      "latency_s": 1.999502299935557
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_129",
+    "gold": [
+      247476252
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "graph neural network multi-party conversation reply generation",
+      "GNN multi-party dialogue response generation",
+      "graph neural network reply generation multiparty dialogue"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235482401,
+        7440991,
+        236179518,
+        233025411,
+        16515522,
+        7560145,
+        16657732,
+        236460257,
+        1256365,
+        220044873,
+        235694718,
+        20589561,
+        45438237,
+        237365390,
+        15654042,
+        12979384,
+        59599719,
+        219308116,
+        252624487,
+        17684363
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        20589561,
+        252819095,
+        15963241,
+        247476252,
+        233025411,
+        204950087,
+        16537814,
+        253802645,
+        13488809,
+        196176000,
+        156043304,
+        220044873,
+        258833159,
+        252624487,
+        247613006,
+        11074530,
+        252846362,
+        243865375,
+        220045840,
+        2485548
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247476252,
+        201698197,
+        235293845,
+        16537814,
+        68167178,
+        52009451,
+        29050992,
+        52307098,
+        226262237,
+        202775602,
+        1775262,
+        226262252,
+        259274843,
+        5165773,
+        3851049,
+        5958042,
+        7287895,
+        8738679,
+        2955580,
+        52013218
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247476252
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247476252,
+        16537814,
+        259274843,
+        5165773,
+        220045840,
+        252819095,
+        52013218,
+        201698197,
+        204950087,
+        202775602,
+        258833159,
+        1775262,
+        13488809,
+        52009451,
+        11805606,
+        243865375,
+        252819278,
+        237635233,
+        235293845,
+        253802645
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.06553039990831
+  },
+  "reason_example": {
+    "query_id": "litsearch_129",
+    "query": "Could you recommend a study that investigates employing graph neural networks to produce replies within multi-party conversational contexts?",
+    "top_results": [
+      {
+        "corpusid": 247476252,
+        "score": 0.9686586856842041,
+        "reason": "bm25=0.922; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16537814,
+        "score": 0.9209694862365723,
+        "reason": "bm25=0.865; dense=0.958; sub_bm25=0.776; sub_dense=0.969"
+      },
+      {
+        "corpusid": 259274843,
+        "score": 0.8698731064796448,
+        "reason": "bm25=0.804; dense=0.914; sub_bm25=0.781; sub_dense=0.945"
+      },
+      {
+        "corpusid": 5165773,
+        "score": 0.857970654964447,
+        "reason": "bm25=0.780; dense=0.910; sub_bm25=0.987; sub_dense=0.962"
+      },
+      {
+        "corpusid": 220045840,
+        "score": 0.855859637260437,
+        "reason": "bm25=0.820; dense=0.880; sub_bm25=0.457; sub_dense=0.958"
+      }
+    ]
+  }
+}

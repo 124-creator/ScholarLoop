@@ -1,6 +1,8 @@
-# Optional dependencies for full local experiments
+﻿# Optional dependencies for full local experiments and the original full test suite
+numpy
 pandas
 rank-bm25
 sentence-transformers
 openai
 arxiv
+pytest

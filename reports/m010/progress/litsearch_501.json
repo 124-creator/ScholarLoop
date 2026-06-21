@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_501",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_501",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_501",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_501",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 580,
+      "latency_s": 1.9394867999944836
+    },
+    {
+      "query_id": "litsearch_501",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 280,
+      "latency_s": 2.28255249990616
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_501",
+    "gold": [
+      259370785
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "online adaptation neural machine translation metrics inference stage first paper",
+      "test-time adaptation of automatic MT evaluation metrics",
+      "dynamic metric adaptation for MT during decoding"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11801961,
+        2630663,
+        7551252,
+        554151,
+        8617003,
+        35003556,
+        17334325,
+        19674199,
+        12744446,
+        27787263,
+        51878325,
+        10740890,
+        10839983,
+        202773482,
+        5492007,
+        13538809,
+        15000982,
+        239020523,
+        12806852,
+        26645651
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370785,
+        9460719,
+        11772257,
+        259212108,
+        53248957,
+        202773482,
+        15574572,
+        1809068,
+        110443,
+        621781,
+        261341901,
+        2331610,
+        17247131,
+        7864357,
+        14364246,
+        14733856,
+        10290958,
+        237503512,
+        14016754,
+        259376660
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        20915835,
+        249204457,
+        17263523,
+        215514618,
+        52118297,
+        18952981,
+        219907063,
+        64489950,
+        239020526,
+        249204527,
+        219176848,
+        11772257,
+        11801961,
+        51878325,
+        6834924,
+        3508234,
+        6505137,
+        259370785,
+        53248957,
+        42835302
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370785
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249204457,
+        259370785,
+        11772257,
+        215514618,
+        53248957,
+        18952981,
+        20915835,
+        9460719,
+        17263523,
+        7864357,
+        30817944,
+        8380490,
+        226238894,
+        151916474,
+        3508234,
+        15574572,
+        196156203,
+        52290717,
+        219176848,
+        51799910
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.391281999996863
+  },
+  "reason_example": {
+    "query_id": "litsearch_501",
+    "query": "Which was the first paper to explore the online adaptation of neural MT metrics for use during the inference stage?",
+    "top_results": [
+      {
+        "corpusid": 249204457,
+        "score": 0.8735240697860718,
+        "reason": "bm25=0.723; dense=0.974; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370785,
+        "score": 0.8679454326629639,
+        "reason": "bm25=1.000; dense=0.780; sub_bm25=1.000; sub_dense=0.911"
+      },
+      {
+        "corpusid": 11772257,
+        "score": 0.8552876114845276,
+        "reason": "bm25=0.933; dense=0.804; sub_bm25=0.620; sub_dense=0.571"
+      },
+      {
+        "corpusid": 215514618,
+        "score": 0.8293403387069702,
+        "reason": "bm25=0.799; dense=0.849; sub_bm25=0.939; sub_dense=0.865"
+      },
+      {
+        "corpusid": 53248957,
+        "score": 0.8238109350204468,
+        "reason": "bm25=0.906; dense=0.769; sub_bm25=0.697; sub_dense=0.818"
+      }
+    ]
+  }
+}

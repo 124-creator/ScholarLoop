@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_053",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_053",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_053",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_053",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1116,
+      "latency_s": 6.255186400027014
+    },
+    {
+      "query_id": "litsearch_053",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 258,
+      "latency_s": 1.70194239995908
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_053",
+    "gold": [
+      4460159,
+      11771220
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "LSTM language modeling efficacy studies",
+      "recurrent network CCG supertagging",
+      "LSTM vs other models language modeling comparison"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        52195444,
+        219963738,
+        1298443,
+        3904215,
+        18913987,
+        32959350,
+        6945479,
+        52191945,
+        218613661,
+        10553280,
+        201692852,
+        1185652,
+        2248908,
+        3005102,
+        9932933,
+        18207473,
+        11744937,
+        1870512,
+        232021957,
+        15836245
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248525142,
+        5044692,
+        11637332,
+        18913987,
+        1870512,
+        11771220,
+        218673912,
+        259370691,
+        49667762,
+        218470367,
+        31382372,
+        220968978,
+        16141969,
+        12713052,
+        49742817,
+        247613006,
+        102350771,
+        2043113,
+        1774259,
+        219963738
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11771220,
+        52113185,
+        16141969,
+        2043113,
+        3785155,
+        33513311,
+        202539918,
+        52191945,
+        53299978,
+        201692852,
+        44111606,
+        258378354,
+        49669303,
+        11744937,
+        52113452,
+        222272295,
+        15531603,
+        8625358,
+        218673912,
+        3005102
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "single_llm": {
+      "ranked_top20": [
+        11771220,
+        218673912,
+        11637332,
+        3785155,
+        248525142,
+        201692852,
+        52113185,
+        18913987,
+        219963738,
+        52195444,
+        15178809,
+        3904215
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        11771220,
+        16141969,
+        52113185,
+        2043113,
+        3785155,
+        218673912,
+        11637332,
+        248525142,
+        12713052,
+        52195444,
+        222272295,
+        49742817,
+        31382372,
+        8625358,
+        33513311,
+        15178809,
+        218516935,
+        201692852,
+        212756,
+        18913987
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 9.444302499992773
+  },
+  "reason_example": {
+    "query_id": "litsearch_053",
+    "query": "I'm researching on the efficacy of recurrent networks in language modeling and CCG supertagging. Could you point me to studies that explore LSTM architectures and model comparisons in these tasks?",
+    "top_results": [
+      {
+        "corpusid": 11771220,
+        "score": 0.9454362392425537,
+        "reason": "bm25=0.864; dense=1.000; sub_bm25=0.561; sub_dense=0.960"
+      },
+      {
+        "corpusid": 16141969,
+        "score": 0.8330012559890747,
+        "reason": "bm25=0.842; dense=0.827; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52113185,
+        "score": 0.8204211592674255,
+        "reason": "bm25=0.772; dense=0.853; sub_bm25=0.597; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2043113,
+        "score": 0.8187819123268127,
+        "reason": "bm25=0.829; dense=0.812; sub_bm25=0.510; sub_dense=0.731"
+      },
+      {
+        "corpusid": 3785155,
+        "score": 0.7984312176704407,
+        "reason": "bm25=0.781; dense=0.810; sub_bm25=0.677; sub_dense=0.763"
+      }
+    ]
+  }
+}

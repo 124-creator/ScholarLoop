@@ -1,0 +1,33 @@
+{
+  "schema_version": "m170.localization.v1",
+  "checked_at_utc": "2026-06-21T08:05:39.064494+00:00",
+  "status": "PASS",
+  "required_zh_presence": {
+    "已将问题拆解为：": true,
+    "排序依据": true,
+    "作者/年份/DOI 需人工核验（除非已有离线核验缓存）。": true,
+    "零幻觉：本地找不到可精确匹配的原句时，系统绝不高亮、绝不猜测。": true,
+    "正在核验原文中的支撑句……": true
+  },
+  "required_en_presence": {
+    "Question was decomposed into:": true,
+    "Ranking signal": true,
+    "Manual verification required.": true
+  },
+  "backend_status_code_not_exposed_in_zh": true,
+  "verified_values_not_translated": {
+    "0.1312": {
+      "zh": true,
+      "en": true
+    },
+    "0.0964": {
+      "zh": true,
+      "en": true
+    },
+    "0.1972": {
+      "zh": true,
+      "en": true
+    }
+  },
+  "policy": "Only browser display strings were localized; verified metrics, evidence text, paper titles, abstracts, and char_span data are not translated."
+}

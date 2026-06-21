@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_512",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_512",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_512",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_512",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 830,
+      "latency_s": 3.303307299967855
+    },
+    {
+      "query_id": "litsearch_512",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.359799599973485
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_512",
+    "gold": [
+      263609239
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "sequential learning guarantees linear system solver",
+      "online optimization linear solver distributional assumption target vectors",
+      "regret bounds adaptive linear system solver"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2175391,
+        208058457,
+        15204692,
+        9800912,
+        2982017,
+        3596487,
+        12101738,
+        13488062,
+        33378828,
+        233029494,
+        16724841,
+        219308132,
+        235482370,
+        5268753,
+        15501721,
+        36164,
+        2730331,
+        14774554,
+        2689604,
+        328042
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263609239,
+        11730392,
+        2689604,
+        235313383,
+        52196193,
+        252715969,
+        15616495,
+        2411818,
+        90262473,
+        235731777,
+        247618647,
+        14342526,
+        68221207,
+        52011044,
+        247613106,
+        227126808,
+        195345703,
+        7757882,
+        238419077,
+        925842
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202541346,
+        10419594,
+        15630723,
+        263609239,
+        259212224,
+        252595995,
+        246485884,
+        245334837,
+        252595953,
+        239016143,
+        204743943,
+        227305788,
+        263620670,
+        256231349,
+        250627507,
+        210903109,
+        214693392,
+        254853899,
+        257663689,
+        239049633
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263609239
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263609239,
+        235313383,
+        68221207,
+        238419077,
+        202541346,
+        239016143,
+        254853899,
+        208910151,
+        238419267,
+        226965123,
+        225039786,
+        252715969,
+        257663689,
+        257232817,
+        220042361,
+        222290886,
+        67856138,
+        214693392,
+        263605760,
+        210116632
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.715673999977298
+  },
+  "reason_example": {
+    "query_id": "litsearch_512",
+    "query": "Are there sequential learning guarantees for configuring a linear system solver under a distributional assumption on the systems' target vectors?",
+    "top_results": [
+      {
+        "corpusid": 263609239,
+        "score": 0.9757108688354492,
+        "reason": "bm25=1.000; dense=0.960; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235313383,
+        "score": 0.8607662916183472,
+        "reason": "bm25=0.865; dense=0.858; sub_bm25=0.791; sub_dense=0.900"
+      },
+      {
+        "corpusid": 68221207,
+        "score": 0.8545722961425781,
+        "reason": "bm25=0.812; dense=0.883; sub_bm25=0.896; sub_dense=0.951"
+      },
+      {
+        "corpusid": 238419077,
+        "score": 0.8308420181274414,
+        "reason": "bm25=0.799; dense=0.852; sub_bm25=0.691; sub_dense=0.854"
+      },
+      {
+        "corpusid": 202541346,
+        "score": 0.8277246356010437,
+        "reason": "bm25=0.569; dense=1.000; sub_bm25=0.305; sub_dense=0.966"
+      }
+    ]
+  }
+}

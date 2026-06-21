@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_319",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_319",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_319",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_319",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1408,
+      "latency_s": 8.66047110001091
+    },
+    {
+      "query_id": "litsearch_319",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.7114824999589473
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_319",
+    "gold": [
+      237513596
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "unsupervised keyphrase extraction optimal segment length",
+      "segment length impact keyphrase extraction performance",
+      "ideal segment size unsupervised keyword extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1455080,
+        3920851,
+        18123232,
+        258685798,
+        1342240,
+        8130930,
+        15877270,
+        5334746,
+        252090194,
+        241583424,
+        14334573,
+        5231912,
+        15562425,
+        33548672,
+        237365881,
+        252763288,
+        252763330,
+        33112883,
+        17524865,
+        15218055
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        10430553,
+        4409406,
+        21686061,
+        237513596,
+        4792796,
+        14952736,
+        1121664,
+        15382836,
+        247450766,
+        15479648,
+        233240682,
+        44083836,
+        16042317,
+        33953921,
+        18051784,
+        11777996,
+        258378191,
+        2380086,
+        17869403,
+        52171279
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14952736,
+        8051179,
+        11777996,
+        1121664,
+        10430553,
+        7121258,
+        12261988,
+        10853724,
+        8154293,
+        13137721,
+        12644075,
+        28331732,
+        13969457,
+        11107199,
+        17869403,
+        258378191,
+        15382836,
+        11923352,
+        16042317,
+        4792796
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        11777996,
+        1121664,
+        14952736,
+        7559566,
+        21275504,
+        15382836,
+        16042317,
+        4792796,
+        4409406,
+        21686061,
+        10430553,
+        17869403
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14952736,
+        10430553,
+        1121664,
+        11777996,
+        4792796,
+        15382836,
+        4409406,
+        21686061,
+        258378191,
+        17869403,
+        16042317,
+        12261988,
+        13969457,
+        237513596,
+        9271968,
+        588477,
+        13137721,
+        8154293,
+        21275504,
+        7121258
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.79465210007038
+  },
+  "reason_example": {
+    "query_id": "litsearch_319",
+    "query": "What research has been conducted on determining the ideal segment length for unsupervised keyphrase extraction?",
+    "top_results": [
+      {
+        "corpusid": 14952736,
+        "score": 0.9340531826019287,
+        "reason": "bm25=0.835; dense=1.000; sub_bm25=0.843; sub_dense=0.988"
+      },
+      {
+        "corpusid": 10430553,
+        "score": 0.9335950613021851,
+        "reason": "bm25=1.000; dense=0.889; sub_bm25=0.919; sub_dense=0.895"
+      },
+      {
+        "corpusid": 1121664,
+        "score": 0.8667722940444946,
+        "reason": "bm25=0.810; dense=0.905; sub_bm25=0.953; sub_dense=0.918"
+      },
+      {
+        "corpusid": 11777996,
+        "score": 0.8646798133850098,
+        "reason": "bm25=0.741; dense=0.947; sub_bm25=0.786; sub_dense=0.927"
+      },
+      {
+        "corpusid": 4792796,
+        "score": 0.8292461037635803,
+        "reason": "bm25=0.844; dense=0.819; sub_bm25=0.857; sub_dense=0.863"
+      }
+    ]
+  }
+}

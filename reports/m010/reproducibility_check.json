@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "status": true,
+    "query_count": true,
+    "completed_query_count": true,
+    "protocol": true,
+    "aggregate": true,
+    "hallucinated_or_out_of_pool": true,
+    "significance_equal": true,
+    "per_query_count_equal": true,
+    "per_query_rankings_equal": true
+  },
+  "run1_status": "PASS",
+  "run2_status": "PASS",
+  "run1_processed_new": 75,
+  "run2_processed_new": 0
+}

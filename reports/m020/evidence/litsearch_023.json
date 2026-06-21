@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_023",
+  "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+  "criteria": [
+    "semantic parsing knowledge-constrained decoding grammar rules",
+    "high-quality meaning representation generation semantic parsing",
+    "enhanced semantic parsing methods constrained decoding"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_023",
+      "corpusid": 236477930,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Grammar-Constrained Neural Semantic Parsing with LR Parsers",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            59
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "our approach is conceptually simpler, adds less computational overhead during inference and integrates seamlessly with current SEQ2SEQ frameworks",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            729,
+            874
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we assess how syntactical parsers can be integrated into modern encoder-decoder frameworks",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            331,
+            421
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we implement an attentional SEQ2SEQ model that uses an LR parser to maintain syntactically valid sequences throughout the decoding procedure",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            437,
+            577
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We present preliminary evaluation results against a recurrent SEQ2SEQ baseline on GEOQUERY and ATIS",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            876,
+            975
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "demonstrate improved performance while enforcing grammatical constraints",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            980,
+            1052
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We do not require any modifications to standard SEQ2SEQ neural network architectures and make very little assumptions about the inputs and outputs of such models.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            3226,
+            3388
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Grammar-Constrained Neural Semantic Parsing with LR Parsers",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            59
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1475,
+        "elapsed_s": 7.500370300025679,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_023_236477930.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_023",
+      "corpusid": 226262340,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Benchmarking Meaning Representations in Neural Semantic Parsing",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            63
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "grammar rules heavily impact the performance of different meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1014,
+            1096
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "the impact of meaning representation on semantic parsing is less understood.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            188,
+            264
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "UNIMER, a new unified benchmark on meaning representations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            441,
+            499
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "over three datasets × four meaning representations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            743,
+            793
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "neural semantic parsing approaches exhibit notably different performance when they are trained to generate different meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            848,
+            989
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although researchers have designed a lot of meaning representations, recent work focuses on only a few of them.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            70,
+            181
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "grammar rules heavily impact the performance of different meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1014,
+            1096
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2088,
+        "elapsed_s": 14.563704299973324,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_023_226262340.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_023",
+      "corpusid": 15412473,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Language to Logical Form with Neural Attention",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            46
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "In this paper we present a general method based on an attention-enhanced encoder-decoder model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            255,
+            350
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Semantic parsing aims at mapping natural language to machine interpretable meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            99
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "attention-enhanced encoder-decoder model",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            309,
+            349
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Experimental results on four datasets",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            511,
+            548
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "our approach performs competitively without using hand-engineered features",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            559,
+            633
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "There has recently been a surge of interest in developing machine learning methods for semantic parsing (see the references in Section 2), due in part to the existence of corpora containing utterances annotated with formal meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1601,
+            1848
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "generate their logical forms by conditioning the output sequences or trees on the encoding vectors",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            411,
+            509
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2039,
+        "elapsed_s": 14.56640199990943,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_023_15412473.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 236477930,
+      "title": "Grammar-Constrained Neural Semantic Parsing with LR Parsers",
+      "cells": [
+        {
+          "criterion": "semantic parsing knowledge-constrained decoding grammar rules",
+          "addresses": true,
+          "snippet": "Target meaning representations for semantic parsing tasks are often based on programming or query languages, such as SQL, and can be formalized by a context-free grammar.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            170
+          ]
+        },
+        {
+          "criterion": "high-quality meaning representation generation semantic parsing",
+          "addresses": true,
+          "snippet": "Target meaning representations for semantic parsing tasks are often based on programming or query languages, such as SQL, and can be formalized by a context-free grammar.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            170
+          ]
+        },
+        {
+          "criterion": "enhanced semantic parsing methods constrained decoding",
+          "addresses": true,
+          "snippet": "Target meaning representations for semantic parsing tasks are often based on programming or query languages, such as SQL, and can be formalized by a context-free grammar.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            170
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 226262340,
+      "title": "Benchmarking Meaning Representations in Neural Semantic Parsing",
+      "cells": [
+        {
+          "criterion": "semantic parsing knowledge-constrained decoding grammar rules",
+          "addresses": true,
+          "snippet": "Meaning representation is an important component of semantic parsing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        },
+        {
+          "criterion": "high-quality meaning representation generation semantic parsing",
+          "addresses": true,
+          "snippet": "Meaning representation is an important component of semantic parsing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        },
+        {
+          "criterion": "enhanced semantic parsing methods constrained decoding",
+          "addresses": true,
+          "snippet": "Meaning representation is an important component of semantic parsing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            69
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 15412473,
+      "title": "Language to Logical Form with Neural Attention",
+      "cells": [
+        {
+          "criterion": "semantic parsing knowledge-constrained decoding grammar rules",
+          "addresses": true,
+          "snippet": "Semantic parsing aims at mapping natural language to machine interpretable meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            99
+          ]
+        },
+        {
+          "criterion": "high-quality meaning representation generation semantic parsing",
+          "addresses": true,
+          "snippet": "Semantic parsing aims at mapping natural language to machine interpretable meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            99
+          ]
+        },
+        {
+          "criterion": "enhanced semantic parsing methods constrained decoding",
+          "addresses": true,
+          "snippet": "Semantic parsing aims at mapping natural language to machine interpretable meaning representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            99
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      15412473,
+      226262340,
+      236477930
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

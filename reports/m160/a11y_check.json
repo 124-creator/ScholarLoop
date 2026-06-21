@@ -1,0 +1,19 @@
+{
+  "schema_version": "m140.a11y_check.v1",
+  "status": "PASS",
+  "checks": {
+    "lang_attribute_zh": true,
+    "lang_attribute_en": true,
+    "viewport": true,
+    "aria_labels": true,
+    "keyboard_focusable_graph": true,
+    "focus_visible_css": true,
+    "reduced_motion": true,
+    "dark_mode": true,
+    "no_external_cdn": true,
+    "no_framework_markers": true,
+    "all_states": true
+  },
+  "failed": [],
+  "note": "Static checks for semantic lang, ARIA, keyboard focus, focus ring, reduced motion, dark mode, no CDN, and full state classes."
+}

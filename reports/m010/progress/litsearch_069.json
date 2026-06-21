@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_069",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_069",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_069",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_069",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1418,
+      "latency_s": 10.026974500040524
+    },
+    {
+      "query_id": "litsearch_069",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 341,
+      "latency_s": 2.767269599949941
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_069",
+    "gold": [
+      7785983
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "statistical machine translation word grammar alignment semantic parsing",
+      "GIZA++ semantic parsing alignment meaning representation",
+      "alignment model grammar rules semantic parsing generation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17596252,
+        17875177,
+        8315726,
+        390966,
+        30167514,
+        51878325,
+        61982581,
+        6456225,
+        10983275,
+        9337134,
+        27393482,
+        10146127,
+        15217163,
+        989542,
+        2485577,
+        14638638,
+        6773914,
+        11280500,
+        219302901,
+        14995198
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        61982581,
+        2948428,
+        14995198,
+        390966,
+        7785983,
+        15744099,
+        3908274,
+        2485577,
+        989542,
+        11853100,
+        3664028,
+        11461990,
+        259833872,
+        7970879,
+        15628268,
+        202539004,
+        2869400,
+        10060918,
+        6069687,
+        8315726
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2948428,
+        455928,
+        15744099,
+        61982581,
+        7785983,
+        59685705,
+        5900318,
+        14328976,
+        16508584,
+        6163471,
+        3011925,
+        150325,
+        17992609,
+        2662894,
+        7706905,
+        7427989,
+        15012834,
+        15849173,
+        5183827,
+        651085
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        7785983,
+        61982581,
+        2485577,
+        14995198,
+        989542,
+        8315726,
+        390966,
+        17596252,
+        51868318,
+        59685705,
+        2948428,
+        6364703
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        61982581,
+        2948428,
+        15744099,
+        7785983,
+        59685705,
+        2485577,
+        11853100,
+        8315726,
+        10060918,
+        17992609,
+        150325,
+        3664028,
+        14995198,
+        989542,
+        5900318,
+        51868318,
+        9889539,
+        14925597,
+        6364703,
+        15163135
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.128624300006777
+  },
+  "reason_example": {
+    "query_id": "litsearch_069",
+    "query": "What are some studies that leverage statistical machine translation methodologies, like GIZA++, to improve the alignment process between words and grammar rules in the context of semantic parsing and generation of meaning representations?",
+    "top_results": [
+      {
+        "corpusid": 61982581,
+        "score": 0.9808251857757568,
+        "reason": "bm25=1.000; dense=0.968; sub_bm25=1.000; sub_dense=0.971"
+      },
+      {
+        "corpusid": 2948428,
+        "score": 0.9618740677833557,
+        "reason": "bm25=0.905; dense=1.000; sub_bm25=0.782; sub_dense=0.869"
+      },
+      {
+        "corpusid": 15744099,
+        "score": 0.9363657236099243,
+        "reason": "bm25=0.850; dense=0.994; sub_bm25=0.751; sub_dense=0.916"
+      },
+      {
+        "corpusid": 7785983,
+        "score": 0.9196181893348694,
+        "reason": "bm25=0.852; dense=0.965; sub_bm25=0.967; sub_dense=1.000"
+      },
+      {
+        "corpusid": 59685705,
+        "score": 0.8685508966445923,
+        "reason": "bm25=0.725; dense=0.964; sub_bm25=0.704; sub_dense=0.905"
+      }
+    ]
+  }
+}

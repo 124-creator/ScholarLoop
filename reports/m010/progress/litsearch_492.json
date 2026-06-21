@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_492",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_492",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_492",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_492",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 840,
+      "latency_s": 4.436230199993588
+    },
+    {
+      "query_id": "litsearch_492",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 3.555247399955988
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_492",
+    "gold": [
+      251741028
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "automatically generated manual templates word tuples language model adaptation timestamp",
+      "self-supervised template-based language model adaptation across time",
+      "word tuples temporal adaptation language model templates"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5601748,
+        5810198,
+        248779924,
+        2508203,
+        24337225,
+        34795447,
+        10221354,
+        52094979,
+        8353882,
+        5539038,
+        14067737,
+        294054,
+        9537399,
+        53082905,
+        26938897,
+        2626219,
+        43931385,
+        13830525,
+        1567400,
+        7433743
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252383156,
+        10202222,
+        2508203,
+        52965066,
+        12504014,
+        251741028,
+        8953042,
+        15016194,
+        248780338,
+        2434935,
+        259833807,
+        14848792,
+        5226139,
+        236948957,
+        10109731,
+        220444957,
+        1008877,
+        11126701,
+        14161026,
+        3204377
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14949320,
+        28048967,
+        3204377,
+        52012037,
+        10089709,
+        474726,
+        18021631,
+        15155417,
+        17707301,
+        20661475,
+        40672892,
+        42000998,
+        11621600,
+        245838240,
+        1855408,
+        7919491,
+        235097563,
+        17748163,
+        17715335,
+        40419537
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        251741028
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        3204377,
+        251741028,
+        14848792,
+        8953042,
+        523842,
+        52965066,
+        1952971,
+        15346563,
+        12504014,
+        1821900,
+        1855408,
+        15155417,
+        17707301,
+        14949320,
+        5601748,
+        5430920,
+        52012037,
+        1299396,
+        10859982,
+        13666009
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.197324399952777
+  },
+  "reason_example": {
+    "query_id": "litsearch_492",
+    "query": "Which paper used both automatically generated and manual templates with word tuples to adapt language models from one timestamp to another?",
+    "top_results": [
+      {
+        "corpusid": 3204377,
+        "score": 0.9355977773666382,
+        "reason": "bm25=0.881; dense=0.972; sub_bm25=0.839; sub_dense=1.000"
+      },
+      {
+        "corpusid": 251741028,
+        "score": 0.8838810920715332,
+        "reason": "bm25=0.950; dense=0.840; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14848792,
+        "score": 0.8666677474975586,
+        "reason": "bm25=0.916; dense=0.834; sub_bm25=0.974; sub_dense=0.835"
+      },
+      {
+        "corpusid": 8953042,
+        "score": 0.8450376987457275,
+        "reason": "bm25=0.936; dense=0.785; sub_bm25=1.000; sub_dense=0.854"
+      },
+      {
+        "corpusid": 523842,
+        "score": 0.8357364535331726,
+        "reason": "bm25=0.849; dense=0.827; sub_bm25=0.850; sub_dense=0.720"
+      }
+    ]
+  }
+}

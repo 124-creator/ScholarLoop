@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_550",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_550",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_550",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_550",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1011,
+      "latency_s": 6.862664700020105
+    },
+    {
+      "query_id": "litsearch_550",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 326,
+      "latency_s": 3.070794399944134
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_550",
+    "gold": [
+      260886874
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "pass@k metric code explanation scoring",
+      "first paper pass@k code explanation",
+      "scoring code explanations using pass@k"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9497515,
+        172920,
+        12178716,
+        252819005,
+        8651335,
+        9787694,
+        15350399,
+        13336402,
+        12797409,
+        1312573,
+        13907064,
+        226236734,
+        12292453,
+        10517911,
+        221397331,
+        2500356,
+        221139740,
+        1450294,
+        618047,
+        1591692
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        11142668,
+        554381,
+        258546862,
+        17482666,
+        218974205,
+        218470359,
+        17606580,
+        13907064,
+        236460094,
+        12894873,
+        41626949,
+        250920542,
+        222291680,
+        15621366,
+        218487272,
+        6048999,
+        258765295,
+        235659000,
+        12769320,
+        226236734
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235097593,
+        234342930,
+        237558751,
+        40328883,
+        259164815,
+        220048265,
+        9202726,
+        256461462,
+        235446427,
+        102354583,
+        260886874,
+        9083831,
+        247922557,
+        256461171,
+        12754074,
+        247958464,
+        256461175,
+        51871982,
+        218502350,
+        248862996
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250920542
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234342930,
+        258546862,
+        235097593,
+        250920542,
+        253223917,
+        235446427,
+        218502350,
+        256461175,
+        253510134,
+        256461171,
+        40328883,
+        218974205,
+        218470359,
+        247922557,
+        247958464,
+        258947839,
+        260886874,
+        237558751,
+        18417896,
+        52136345
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.782791300094686
+  },
+  "reason_example": {
+    "query_id": "litsearch_550",
+    "query": "What paper first showed that you can score the code explanations using the pass@k metric?",
+    "top_results": [
+      {
+        "corpusid": 234342930,
+        "score": 0.8756886720657349,
+        "reason": "bm25=0.702; dense=0.991; sub_bm25=0.669; sub_dense=0.942"
+      },
+      {
+        "corpusid": 258546862,
+        "score": 0.8482040166854858,
+        "reason": "bm25=0.961; dense=0.773; sub_bm25=0.916; sub_dense=0.755"
+      },
+      {
+        "corpusid": 235097593,
+        "score": 0.8190929889678955,
+        "reason": "bm25=0.548; dense=1.000; sub_bm25=0.437; sub_dense=0.721"
+      },
+      {
+        "corpusid": 250920542,
+        "score": 0.8185243010520935,
+        "reason": "bm25=0.839; dense=0.805; sub_bm25=0.836; sub_dense=0.768"
+      },
+      {
+        "corpusid": 253223917,
+        "score": 0.81590735912323,
+        "reason": "bm25=0.791; dense=0.833; sub_bm25=0.596; sub_dense=0.781"
+      }
+    ]
+  }
+}

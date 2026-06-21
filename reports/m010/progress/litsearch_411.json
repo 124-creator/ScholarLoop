@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_411",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_411",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_411",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_411",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2705,
+      "latency_s": 25.18061729997862
+    },
+    {
+      "query_id": "litsearch_411",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 323,
+      "latency_s": 2.8485105000436306
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_411",
+    "gold": [
+      258960443
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "Gaussian processes vulnerability text generative models",
+      "Gaussian process adversarial text generation",
+      "analyze vulnerability text-conditioned models Gaussian process"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1405599,
+        26889702,
+        237635095,
+        495884,
+        18324181,
+        13100783,
+        17409270,
+        219306987,
+        259376784,
+        1412569,
+        18061836,
+        24663,
+        1936997,
+        219309490,
+        1345,
+        218688152,
+        13057309,
+        39661249,
+        21022858,
+        33742593
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235731899,
+        232335748,
+        13757156,
+        52986403,
+        3199842,
+        246702343,
+        264818112,
+        252816105,
+        31514982,
+        257767456,
+        246430471,
+        196216403,
+        201669103,
+        3655946,
+        252907346,
+        112842,
+        76666188,
+        10480989,
+        235097275,
+        251252882
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        13170584,
+        252917728,
+        201698224,
+        118685920,
+        10791446,
+        661332,
+        215754413,
+        29703312,
+        14502960,
+        102352781,
+        13757156,
+        218470256,
+        253397955,
+        248779867,
+        202779299,
+        34353891,
+        11815268,
+        257039031,
+        229348988,
+        18323900
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222140954,
+        226818852,
+        3199842,
+        235731899,
+        13757156,
+        31514982,
+        237635095,
+        10480989,
+        52986403,
+        13100783,
+        10237657,
+        11815268
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        13757156,
+        235731899,
+        661332,
+        252917728,
+        201698224,
+        248779867,
+        52986403,
+        10480989,
+        31514982,
+        215754413,
+        3199842,
+        257767456,
+        10237657,
+        202779299,
+        118685920,
+        10791446,
+        38234424,
+        258212748,
+        259841489,
+        246702343
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 29.016331299906597
+  },
+  "reason_example": {
+    "query_id": "litsearch_411",
+    "query": "Is there any paper that utilizes Gaussian processes to analyze the vulnerability of text-conditioned generative models?",
+    "top_results": [
+      {
+        "corpusid": 13757156,
+        "score": 0.848983108997345,
+        "reason": "bm25=0.871; dense=0.834; sub_bm25=1.000; sub_dense=0.800"
+      },
+      {
+        "corpusid": 235731899,
+        "score": 0.8433398604393005,
+        "reason": "bm25=1.000; dense=0.739; sub_bm25=1.000; sub_dense=0.702"
+      },
+      {
+        "corpusid": 661332,
+        "score": 0.7969950437545776,
+        "reason": "bm25=0.678; dense=0.876; sub_bm25=0.838; sub_dense=0.861"
+      },
+      {
+        "corpusid": 252917728,
+        "score": 0.7918224334716797,
+        "reason": "bm25=0.608; dense=0.914; sub_bm25=0.789; sub_dense=0.810"
+      },
+      {
+        "corpusid": 201698224,
+        "score": 0.7870044112205505,
+        "reason": "bm25=0.599; dense=0.912; sub_bm25=0.951; sub_dense=0.946"
+      }
+    ]
+  }
+}

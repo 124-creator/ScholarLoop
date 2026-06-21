@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_414",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_414",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_414",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_414",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 912,
+      "latency_s": 5.521239200024866
+    },
+    {
+      "query_id": "litsearch_414",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.921851599938236
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_414",
+    "gold": [
+      259370741
+    ],
+    "pool_size": 283,
+    "decomposition": [
+      "attribute extraction predefined label set context",
+      "extracting attributes from text using both labels and context",
+      "joint attribute extraction from predefined labels and surrounding text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        236486283,
+        129969,
+        126584,
+        15392152,
+        8584287,
+        2287804,
+        14931569,
+        1182312,
+        16711873,
+        397093,
+        20845242,
+        5566545,
+        17031271,
+        18419162,
+        46482966,
+        21275504,
+        7796573,
+        52176213,
+        8772766,
+        237421077
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        2063643,
+        258967815,
+        5288798,
+        235755362,
+        259370540,
+        28816964,
+        16668055,
+        46482966,
+        226283508,
+        2001317,
+        248426722,
+        247519239,
+        21692511,
+        11125179,
+        252383176,
+        243865566,
+        44172673,
+        126584,
+        10353118,
+        8517808
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7198729,
+        15436060,
+        259370741,
+        32769621,
+        39357895,
+        11311232,
+        259376583,
+        237421077,
+        16509032,
+        250390997,
+        231905,
+        134972,
+        236486170,
+        156055227,
+        250390642,
+        196211550,
+        1447072,
+        3891288,
+        52920257,
+        67855938
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258967815,
+        5288798,
+        134972,
+        16668055
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        15436060,
+        2001317,
+        237421077,
+        258967815,
+        2063643,
+        7198729,
+        196211550,
+        248780185,
+        28816964,
+        44079382,
+        11125179,
+        134972,
+        16668055,
+        18179185,
+        243865566,
+        19017081,
+        259376583,
+        71148539,
+        32115967,
+        218487763
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.642080600024201
+  },
+  "reason_example": {
+    "query_id": "litsearch_414",
+    "query": "Is there any research paper that can extract attributes from both a predefined label set and the surrounding context?",
+    "top_results": [
+      {
+        "corpusid": 15436060,
+        "score": 0.846024751663208,
+        "reason": "bm25=0.628; dense=0.991; sub_bm25=0.838; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2001317,
+        "score": 0.8338790535926819,
+        "reason": "bm25=0.901; dense=0.789; sub_bm25=0.818; sub_dense=0.845"
+      },
+      {
+        "corpusid": 237421077,
+        "score": 0.8321163654327393,
+        "reason": "bm25=0.756; dense=0.883; sub_bm25=0.638; sub_dense=0.868"
+      },
+      {
+        "corpusid": 258967815,
+        "score": 0.8290081024169922,
+        "reason": "bm25=0.929; dense=0.762; sub_bm25=0.692; sub_dense=0.759"
+      },
+      {
+        "corpusid": 2063643,
+        "score": 0.819169282913208,
+        "reason": "bm25=1.000; dense=0.699; sub_bm25=0.592; sub_dense=0.700"
+      }
+    ]
+  }
+}

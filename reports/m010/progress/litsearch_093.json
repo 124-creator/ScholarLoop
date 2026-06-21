@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_093",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_093",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_093",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_093",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1307,
+      "latency_s": 8.408211100031622
+    },
+    {
+      "query_id": "litsearch_093",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 337,
+      "latency_s": 2.634249299997464
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_093",
+    "gold": [
+      10919200,
+      46937952
+    ],
+    "pool_size": 245,
+    "decomposition": [
+      "English readability assessment benchmarking corpora",
+      "corpora frequently used for English readability tool evaluation",
+      "benchmark datasets for English readability formulas"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18471984,
+        17837521,
+        14609354,
+        15031821,
+        7018514,
+        12442445,
+        26132229,
+        14607459,
+        13113450,
+        259126992,
+        40110441,
+        256461195,
+        8865382,
+        27016310,
+        45598818,
+        14933987,
+        216827688,
+        5582507,
+        10254261,
+        245855694
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233029479,
+        13629456,
+        252358196,
+        17837521,
+        252992719,
+        5617603,
+        8499551,
+        241583698,
+        5336265,
+        14423856,
+        7618422,
+        233481113,
+        51874507,
+        52012521,
+        259126992,
+        51872374,
+        15031821,
+        1297763,
+        235790693,
+        13113450
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11326859,
+        233481113,
+        252358196,
+        17984515,
+        13629456,
+        17630032,
+        14925547,
+        241583451,
+        27679003,
+        2758532,
+        7341644,
+        17312852,
+        17837521,
+        2334547,
+        10442472,
+        5474780,
+        14947858,
+        5617603,
+        18098128,
+        245838270
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        13629456,
+        233481113,
+        5617603,
+        27679003,
+        241583451,
+        17837521,
+        252358196,
+        259126992,
+        15031821,
+        233029479,
+        17984515,
+        241583698
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252358196,
+        13629456,
+        233481113,
+        17837521,
+        5617603,
+        233029479,
+        17984515,
+        8499551,
+        241583451,
+        259126992,
+        245838270,
+        27679003,
+        1297763,
+        17630032,
+        2334547,
+        18098128,
+        253080367,
+        46937952,
+        51874507,
+        51872374
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.083173099905252
+  },
+  "reason_example": {
+    "query_id": "litsearch_093",
+    "query": "Which corpora are frequently used in research to benchmark English readability assessment tools?",
+    "top_results": [
+      {
+        "corpusid": 252358196,
+        "score": 0.9642860889434814,
+        "reason": "bm25=0.970; dense=0.961; sub_bm25=0.909; sub_dense=0.964"
+      },
+      {
+        "corpusid": 13629456,
+        "score": 0.9541642665863037,
+        "reason": "bm25=0.982; dense=0.936; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233481113,
+        "score": 0.9365615844726562,
+        "reason": "bm25=0.868; dense=0.982; sub_bm25=0.829; sub_dense=0.962"
+      },
+      {
+        "corpusid": 17837521,
+        "score": 0.9318150877952576,
+        "reason": "bm25=0.964; dense=0.910; sub_bm25=0.913; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5617603,
+        "score": 0.9017161130905151,
+        "reason": "bm25=0.939; dense=0.877; sub_bm25=1.000; sub_dense=0.941"
+      }
+    ]
+  }
+}

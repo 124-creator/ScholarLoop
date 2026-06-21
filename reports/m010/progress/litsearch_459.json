@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_459",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_459",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_459",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_459",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 589,
+      "latency_s": 2.005204700049944
+    },
+    {
+      "query_id": "litsearch_459",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 266,
+      "latency_s": 2.3126031999709085
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_459",
+    "gold": [
+      254044147
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "BERT discrete diffusion language model",
+      "first proposal combining BERT and discrete diffusion",
+      "pretrained masked language model discrete diffusion combination"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248779924,
+        248182535,
+        53633715,
+        259370633,
+        259833850,
+        263866951,
+        4130937,
+        216641917,
+        3926837,
+        232335496,
+        258463920,
+        222090785,
+        250390796,
+        237558720,
+        2438164,
+        254044147,
+        17727830,
+        252361987,
+        19840120,
+        5601748
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254044147,
+        251402961,
+        238354021,
+        254044324,
+        258967241,
+        256900618,
+        248780440,
+        259370760,
+        216036179,
+        248780164,
+        254096040,
+        252917661,
+        257505182,
+        252280461,
+        237485586,
+        263671656,
+        233289620,
+        216553665,
+        237452717,
+        243865562
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254044147,
+        248780571,
+        233365297,
+        237421110,
+        248182535,
+        231672601,
+        257622986,
+        250109898,
+        245218685,
+        216553665,
+        246867373,
+        215754559,
+        247628024,
+        222134068,
+        253762079,
+        243998364,
+        235482389,
+        226283796,
+        233289750,
+        254685579
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254044147
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254044147,
+        248780571,
+        233365297,
+        216553665,
+        237421110,
+        257622986,
+        246867373,
+        245218685,
+        243998364,
+        233289750,
+        216641856,
+        243865616,
+        253116568,
+        231672601,
+        252917661,
+        215754559,
+        252361987,
+        216036179,
+        245425026,
+        258967241
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.349942000000738
+  },
+  "reason_example": {
+    "query_id": "litsearch_459",
+    "query": "Which paper first proposed to combine pretrained masked language models (BERT) and discrete diffusion language models?",
+    "top_results": [
+      {
+        "corpusid": 254044147,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248780571,
+        "score": 0.7283593416213989,
+        "reason": "bm25=0.535; dense=0.857; sub_bm25=0.362; sub_dense=0.888"
+      },
+      {
+        "corpusid": 233365297,
+        "score": 0.7213029861450195,
+        "reason": "bm25=0.521; dense=0.855; sub_bm25=0.390; sub_dense=0.865"
+      },
+      {
+        "corpusid": 216553665,
+        "score": 0.7091769576072693,
+        "reason": "bm25=0.552; dense=0.814; sub_bm25=0.465; sub_dense=0.837"
+      },
+      {
+        "corpusid": 237421110,
+        "score": 0.6910001039505005,
+        "reason": "bm25=0.446; dense=0.854; sub_bm25=0.313; sub_dense=0.783"
+      }
+    ]
+  }
+}

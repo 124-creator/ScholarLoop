@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_393",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_393",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_393",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_393",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 839,
+      "latency_s": 4.360230299993418
+    },
+    {
+      "query_id": "litsearch_393",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 4.191179300076328
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_393",
+    "gold": [
+      258947845
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "automatic dataset creation cross-lingual summarization",
+      "multilingual summarization dataset generation",
+      "cross-lingual summarization dataset low-resource languages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17148729,
+        10396032,
+        17491681,
+        9113,
+        260063173,
+        1161892,
+        20404,
+        7851568,
+        11558985,
+        14324763,
+        14171592,
+        11707528,
+        17205221,
+        17449548,
+        206749,
+        1071914,
+        207978295,
+        7600496,
+        4411469,
+        8368494
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14171592,
+        15409824,
+        226262282,
+        6573501,
+        9113,
+        202558452,
+        258378343,
+        4728277,
+        2169358,
+        52012840,
+        102351034,
+        38838534,
+        10396032,
+        2115850,
+        227231042,
+        1240882,
+        237492025,
+        252365163,
+        797222,
+        7669927
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        251395456,
+        243865371,
+        237532546,
+        243865257,
+        13666009,
+        21703865,
+        241583774,
+        253098967,
+        10338976,
+        250391049,
+        258947845,
+        11577980,
+        6908311,
+        235658519,
+        1968934,
+        14597436,
+        6578489,
+        2114287,
+        220045424,
+        7980682
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258947845,
+        251395456
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258947845,
+        251395456,
+        250391049,
+        243865257,
+        46392264,
+        241583774,
+        21703865,
+        1968934,
+        4728277,
+        243865371,
+        235658519,
+        263609622,
+        220045424,
+        237532546,
+        11664367,
+        15443212,
+        202545706,
+        256461311,
+        13666009,
+        253098967
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.67311490001157
+  },
+  "reason_example": {
+    "query_id": "litsearch_393",
+    "query": "Is there any paper that automatically creates a dataset for summarizing text from one language to another for a large collection of languages?",
+    "top_results": [
+      {
+        "corpusid": 258947845,
+        "score": 0.9055489301681519,
+        "reason": "bm25=0.902; dense=0.908; sub_bm25=0.920; sub_dense=0.985"
+      },
+      {
+        "corpusid": 251395456,
+        "score": 0.8915286064147949,
+        "reason": "bm25=0.729; dense=1.000; sub_bm25=0.930; sub_dense=0.983"
+      },
+      {
+        "corpusid": 250391049,
+        "score": 0.8630764484405518,
+        "reason": "bm25=0.793; dense=0.910; sub_bm25=0.672; sub_dense=0.896"
+      },
+      {
+        "corpusid": 243865257,
+        "score": 0.8607611656188965,
+        "reason": "bm25=0.732; dense=0.947; sub_bm25=0.480; sub_dense=0.892"
+      },
+      {
+        "corpusid": 46392264,
+        "score": 0.8394985795021057,
+        "reason": "bm25=0.881; dense=0.812; sub_bm25=0.244; sub_dense=0.644"
+      }
+    ]
+  }
+}

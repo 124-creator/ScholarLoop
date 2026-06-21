@@ -1,0 +1,57 @@
+{
+  "schema_version": "m080.validation_summary.v1",
+  "status": "implemented_pending_review",
+  "plan_status_line": "- 状态：implemented（2026-06-20 Codex 执行完成；整合可运行与忠实呈现承重均通过；待总指挥核查，不自称 verified）",
+  "fidelity_status": "PASS",
+  "integration_runnable": true,
+  "faithful_zero_fabrication": true,
+  "fabrication": 0,
+  "out_of_pool": 0,
+  "offline_zero_llm": true,
+  "llm_calls_per_request": 0,
+  "upstream_unchanged_during_verification": true,
+  "pytest_passed": true,
+  "pytest_last_line": "33 passed in 58.99s",
+  "secret_scan_passed": true,
+  "secret_scan_files": 64,
+  "secret_regex_hits": 0,
+  "secret_exact_hits": 0,
+  "submission_identity_passed": true,
+  "submission_identity_hits": 0,
+  "submission_files": [
+    "docs/submission/01-作品简介.md",
+    "docs/submission/02-项目文档.md",
+    "docs/submission/03-视频脚本与演示走查.md",
+    "docs/submission/04-指标汇总表.md",
+    "docs/submission/05-复现说明.md",
+    "docs/submission/06-创新叙事.md",
+    "docs/submission/07-数据源与许可.md",
+    "docs/submission/08-主张溯源清单.md",
+    "docs/submission/AGENTS.md"
+  ],
+  "retro_files": [
+    "docs/dev/retrospectives/080-整合Demo与提交物料收束-复盘.md"
+  ],
+  "required_artifacts": {
+    "src/scholarloop/demo/assemble.py": true,
+    "src/scholarloop/demo/app.py": true,
+    "src/scholarloop/demo/render.py": true,
+    "src/scholarloop/demo/verify.py": true,
+    "tests/test_m080_demo.py": true,
+    "reports/m080/fidelity_audit.json": true,
+    "reports/m080/smoke.txt": true,
+    "reports/m080/pytest.txt": true,
+    "reports/m080/secret_scan.json": true,
+    "reports/m080/submission_identity_scan.json": true,
+    "reports/m080/upstream_hashes.json": true
+  },
+  "smoke_log": [
+    "started http://127.0.0.1:61055",
+    "GET /healthz -> 200 {'ok': True, 'mode': 'offline', 'llm_calls_per_request': 0, 'realtime_enabled': False}",
+    "GET /api/queries -> 200 count=30",
+    "GET /api/metrics -> 200 sections=['litsearch', 'realscholarquery', 'research_gaps']",
+    "GET /api/gaps -> 200 items=50",
+    "GET /api/queries/litsearch_000 -> 200 panels=['schema_version', 'query_id', 'query', 'decomposition', 'official_function_map', 'ranking', 'evidence', 'enrichment', 'render_contract']",
+    "GET /?qid=litsearch_000 -> 200, repeat -> 200, bytes=20199"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_089",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_089",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_089",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_089",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2063,
+      "latency_s": 14.828299900051206
+    },
+    {
+      "query_id": "litsearch_089",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 276,
+      "latency_s": 2.1009014999726787
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_089",
+    "gold": [
+      250391089
+    ],
+    "pool_size": 212,
+    "decomposition": [
+      "multilingual datasets intended sarcasm detection English Arabic",
+      "Arabic English sarcasm detection dataset intended",
+      "intended sarcasm detection corpus English Arabic"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        250390571,
+        10952755,
+        249848078,
+        14876718,
+        52798630,
+        250391063,
+        9152030,
+        248863063,
+        13207981,
+        51872374,
+        253237023,
+        794942,
+        174800863,
+        216011074,
+        8571409,
+        304033,
+        250390823,
+        779651,
+        1862839,
+        2124752
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249848078,
+        250390571,
+        250391089,
+        233364962,
+        250390499,
+        250390823,
+        250391063,
+        250391053,
+        250390461,
+        250391084,
+        250390506,
+        233364927,
+        250390759,
+        207847660,
+        250390615,
+        250390741,
+        233365116,
+        248863063,
+        233365144,
+        233364994
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390571,
+        250391089,
+        174799301,
+        248863063,
+        233365144,
+        250390499,
+        207847660,
+        233364994,
+        218595858,
+        249848078,
+        250391020,
+        233364927,
+        250390823,
+        250390741,
+        233365156,
+        250391084,
+        250390615,
+        250390725,
+        4311707,
+        252624494
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250391089,
+        250390571,
+        249848078,
+        250390823,
+        248863063,
+        250390499,
+        250391063,
+        250390461,
+        250390741,
+        250391020,
+        233364962,
+        233364996
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390571,
+        249848078,
+        250391089,
+        250390499,
+        250390823,
+        233364962,
+        207847660,
+        248863063,
+        233365144,
+        233364927,
+        250391084,
+        250391053,
+        233364994,
+        250390461,
+        250390741,
+        250390615,
+        250391063,
+        250391020,
+        250390891,
+        233364996
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.282647700048983
+  },
+  "reason_example": {
+    "query_id": "litsearch_089",
+    "query": "Where can I find multilingual datasets used for the task of intended sarcasm detection, particularly involving English and Arabic?",
+    "top_results": [
+      {
+        "corpusid": 250390571,
+        "score": 0.9818906784057617,
+        "reason": "bm25=0.955; dense=1.000; sub_bm25=0.933; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249848078,
+        "score": 0.9663913249969482,
+        "reason": "bm25=1.000; dense=0.944; sub_bm25=1.000; sub_dense=0.956"
+      },
+      {
+        "corpusid": 250391089,
+        "score": 0.9602760672569275,
+        "reason": "bm25=0.914; dense=0.991; sub_bm25=1.000; sub_dense=0.984"
+      },
+      {
+        "corpusid": 250390499,
+        "score": 0.9137624502182007,
+        "reason": "bm25=0.837; dense=0.965; sub_bm25=0.996; sub_dense=0.971"
+      },
+      {
+        "corpusid": 250390823,
+        "score": 0.8906141519546509,
+        "reason": "bm25=0.822; dense=0.936; sub_bm25=0.913; sub_dense=0.917"
+      }
+    ]
+  }
+}

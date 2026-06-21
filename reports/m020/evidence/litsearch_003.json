@@ -1,0 +1,515 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_003",
+  "query": "Are there any tools or studies that have focused on building a morphological analyzer specifically for handling multiple Arabic dialects?",
+  "criteria": [
+    "morphological analyzer multiple Arabic dialects",
+    "cross-dialectal Arabic morphological analysis tool",
+    "multi-dialect Arabic morphology system"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_003",
+      "corpusid": 7859600,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Creating Resources for Dialectal Arabic from a Single Annotation: A Case Study on Egyptian and Levantine",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            104
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We present a methodology for creating a morphological analyzer and a morphological tagger for dialectal Arabic, and we illustrate it on Egyptian and Levantine Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            349,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We present a methodology for creating a morphological analyzer and a morphological tagger for dialectal Arabic",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            349,
+            459
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We present a methodology for creating a morphological analyzer and a morphological tagger for dialectal Arabic, and we illustrate it on Egyptian and Levantine Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            349,
+            515
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "and we illustrate it on Egyptian and Levantine Arabic",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            461,
+            514
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "To our knowledge, these are the first analyzer and tagger for Levantine.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            516,
+            588
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Arabic dialects present a special problem for natural language processing because there are few Arabic dialect resources, they have no standard orthography, and they have not been studied much.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present a methodology for creating a morphological analyzer and a morphological tagger for dialectal Arabic",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            349,
+            459
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1438,
+        "elapsed_s": 5.904523200006224,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_003_7859600.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_003",
+      "corpusid": 11319902,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "MAGEAD: A Morphological Analyzer and Generator for the Arabic Dialects",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            70
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "explicitly addresses the need for processing the morphology of the dialects",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            119,
+            194
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "allows for combining morphemes from different dialects",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            364,
+            418
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "performs an on-line analysis to or generation from a root+pattern+features representation, it has separate phonological and orthographic representations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            203,
+            355
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Our Levantine data comes from Jordan.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            4133,
+            4170
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Our work is novel in that it explicitly addresses the need for processing the morphology of the dialects.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            90,
+            195
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The principal theoretical contribution of this paper is an organization of morphological knowledge for processing multiple variants of one language family.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1541,
+            1696
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            89
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1199,
+        "elapsed_s": 5.642145800055005,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_003_11319902.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_003",
+      "corpusid": 472215,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Morphological Analyzer for Egyptian Arabic",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            44
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Most tools and resources developed for natural language processing of Arabic are designed for Modern Standard Arabic (MSA) and perform terribly on Arabic dialects, such as Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            188
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We present a linguistically accurate, large-scale morphological analyzer for Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            305,
+            398
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "It accepts multiple orthographic variants and normalizes them to a conventional orthography.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            584,
+            676
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "A Morphological Analyzer for Egyptian Arabic",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            44
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Some have taken a quick-and-dirty approach to model shallow morphology in DA by extending MSA tools, resulting in linguistically inaccurate models (Abo Bakr et al.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2583,
+            2746
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Although DAs are historically related to MSA, there are many phonological, morphological and lexical differences between them.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            1779,
+            1905
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Most tools and resources developed for natural language processing of Arabic are designed for Modern Standard Arabic (MSA) and perform terribly on Arabic dialects, such as Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            188
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1796,
+        "elapsed_s": 11.224735800060444,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_003_472215.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 7859600,
+      "title": "Creating Resources for Dialectal Arabic from a Single Annotation: A Case Study on Egyptian and Levantine",
+      "cells": [
+        {
+          "criterion": "morphological analyzer multiple Arabic dialects",
+          "addresses": true,
+          "snippet": "Arabic dialects present a special problem for natural language processing because there are few Arabic dialect resources, they have no standard orthography, and they have not been studied much.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        },
+        {
+          "criterion": "cross-dialectal Arabic morphological analysis tool",
+          "addresses": true,
+          "snippet": "Arabic dialects present a special problem for natural language processing because there are few Arabic dialect resources, they have no standard orthography, and they have not been studied much.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        },
+        {
+          "criterion": "multi-dialect Arabic morphology system",
+          "addresses": true,
+          "snippet": "Arabic dialects present a special problem for natural language processing because there are few Arabic dialect resources, they have no standard orthography, and they have not been studied much.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            193
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 11319902,
+      "title": "MAGEAD: A Morphological Analyzer and Generator for the Arabic Dialects",
+      "cells": [
+        {
+          "criterion": "morphological analyzer multiple Arabic dialects",
+          "addresses": true,
+          "snippet": "We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            89
+          ]
+        },
+        {
+          "criterion": "cross-dialectal Arabic morphological analysis tool",
+          "addresses": true,
+          "snippet": "We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            89
+          ]
+        },
+        {
+          "criterion": "multi-dialect Arabic morphology system",
+          "addresses": true,
+          "snippet": "We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            89
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 472215,
+      "title": "A Morphological Analyzer for Egyptian Arabic",
+      "cells": [
+        {
+          "criterion": "morphological analyzer multiple Arabic dialects",
+          "addresses": true,
+          "snippet": "Most tools and resources developed for natural language processing of Arabic are designed for Modern Standard Arabic (MSA) and perform terribly on Arabic dialects, such as Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            188
+          ]
+        },
+        {
+          "criterion": "cross-dialectal Arabic morphological analysis tool",
+          "addresses": true,
+          "snippet": "Most tools and resources developed for natural language processing of Arabic are designed for Modern Standard Arabic (MSA) and perform terribly on Arabic dialects, such as Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            188
+          ]
+        },
+        {
+          "criterion": "multi-dialect Arabic morphology system",
+          "addresses": true,
+          "snippet": "Most tools and resources developed for natural language processing of Arabic are designed for Modern Standard Arabic (MSA) and perform terribly on Arabic dialects, such as Egyptian Arabic.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            188
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      472215,
+      7859600,
+      11319902
+    ],
+    "edges": [
+      {
+        "source": 7859600,
+        "target": 472215
+      },
+      {
+        "source": 472215,
+        "target": 11319902
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

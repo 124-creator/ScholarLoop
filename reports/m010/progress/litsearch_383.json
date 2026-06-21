@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_383",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_383",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_383",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_383",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1542,
+      "latency_s": 12.015247499919496
+    },
+    {
+      "query_id": "litsearch_383",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 391,
+      "latency_s": 3.5258199999807402
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_383",
+    "gold": [
+      258947273
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "evaluation metric factual consistency mean max aggregation natural language generation",
+      "mean-max aggregation metric factual consistency NLG",
+      "metric predicting factual consistency score using mean and max"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10166824,
+        75817,
+        7174676,
+        11801961,
+        7591554,
+        15204692,
+        67239762,
+        17558767,
+        6332773,
+        17402234,
+        14774554,
+        8897742,
+        5471801,
+        18247716,
+        3765717,
+        3923764,
+        245297783,
+        9533139,
+        764565,
+        1891955
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233289483,
+        245218667,
+        254877704,
+        204976362,
+        247694170,
+        250390859,
+        259833772,
+        258833028,
+        237571505,
+        258947273,
+        6983180,
+        252763290,
+        12585594,
+        253238030,
+        224803298,
+        216553183,
+        252819451,
+        237353397,
+        231951460,
+        254877713
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877384,
+        259370853,
+        250390859,
+        237492016,
+        247694170,
+        225068033,
+        3942023,
+        248300077,
+        16681511,
+        235097584,
+        226282223,
+        208541377,
+        10438447,
+        7736752,
+        10823586,
+        52010727,
+        254877323,
+        102351981,
+        258685435,
+        258833028
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245218667,
+        233289483,
+        247694170,
+        250390859,
+        254877704,
+        258833028,
+        6332773,
+        12585594,
+        3942023,
+        215238851,
+        14774554,
+        10823586
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247694170,
+        250390859,
+        233289483,
+        258833028,
+        245218667,
+        3942023,
+        237571505,
+        204976362,
+        254877713,
+        254877384,
+        237492016,
+        12585594,
+        6983180,
+        216553183,
+        258947273,
+        253238030,
+        254877704,
+        480747,
+        10438447,
+        7736752
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.858606099965982
+  },
+  "reason_example": {
+    "query_id": "litsearch_383",
+    "query": "Is there an evaluation metric for natural language generation that predicts the factual consistency score through a mean-max aggregation method?",
+    "top_results": [
+      {
+        "corpusid": 247694170,
+        "score": 0.9487347602844238,
+        "reason": "bm25=0.902; dense=0.980; sub_bm25=0.893; sub_dense=0.997"
+      },
+      {
+        "corpusid": 250390859,
+        "score": 0.9477823376655579,
+        "reason": "bm25=0.895; dense=0.983; sub_bm25=0.888; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233289483,
+        "score": 0.9352694749832153,
+        "reason": "bm25=1.000; dense=0.892; sub_bm25=1.000; sub_dense=0.930"
+      },
+      {
+        "corpusid": 258833028,
+        "score": 0.8920966386795044,
+        "reason": "bm25=0.856; dense=0.916; sub_bm25=0.718; sub_dense=0.904"
+      },
+      {
+        "corpusid": 245218667,
+        "score": 0.887010931968689,
+        "reason": "bm25=0.943; dense=0.850; sub_bm25=0.977; sub_dense=0.954"
+      }
+    ]
+  }
+}

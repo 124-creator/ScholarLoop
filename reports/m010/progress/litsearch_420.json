@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_420",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_420",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_420",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_420",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1001,
+      "latency_s": 6.887705000001006
+    },
+    {
+      "query_id": "litsearch_420",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.7289126999676228
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_420",
+    "gold": [
+      258740758
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "long story reading comprehension dataset requiring prior chapters",
+      "benchmark for narrative understanding with long context",
+      "dataset for snippet comprehension integrating preceding text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10344127,
+        6552710,
+        221738937,
+        40329212,
+        29974541,
+        14324763,
+        52012840,
+        233033850,
+        44084725,
+        3090899,
+        6934412,
+        201058596,
+        9359079,
+        7048757,
+        219310240,
+        202539808,
+        202712637,
+        231786617,
+        236460248,
+        32388613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258740758,
+        252917928,
+        202776931,
+        11243593,
+        10344127,
+        14485783,
+        8471750,
+        27249900,
+        17714865,
+        250390431,
+        257255248,
+        241583231,
+        201058596,
+        252222430,
+        219302622,
+        2100831,
+        202539808,
+        6036745,
+        5035209,
+        202750406
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        234334398,
+        231709697,
+        2593903,
+        226262276,
+        15197674,
+        202540590,
+        207926231,
+        234095341,
+        5071138,
+        226262208,
+        234334365,
+        14288014,
+        219556379,
+        9192723,
+        4951516,
+        3871146,
+        245218982,
+        235097544,
+        251224058,
+        9292408
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2593903,
+        17714865,
+        201058596,
+        258740758,
+        202540590,
+        3871146,
+        236486066,
+        214233456,
+        3662564,
+        10344127
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        2593903,
+        202540590,
+        207926231,
+        234334398,
+        234095341,
+        51876026,
+        231709697,
+        15197674,
+        5071138,
+        236486066,
+        3662564,
+        3871146,
+        1726501,
+        234334365,
+        226262208,
+        17714865,
+        250390431,
+        243865619,
+        214233456,
+        9192723
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.92546569998376
+  },
+  "reason_example": {
+    "query_id": "litsearch_420",
+    "query": "Is there such a reading comprehension dataset in understanding a snippet from a long story book, while it requires to integrate the necessary long history texts before the snippet to full understand it?",
+    "top_results": [
+      {
+        "corpusid": 2593903,
+        "score": 0.9174802303314209,
+        "reason": "bm25=0.852; dense=0.961; sub_bm25=0.782; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202540590,
+        "score": 0.9016581773757935,
+        "reason": "bm25=0.861; dense=0.929; sub_bm25=0.806; sub_dense=0.955"
+      },
+      {
+        "corpusid": 207926231,
+        "score": 0.8939473628997803,
+        "reason": "bm25=0.846; dense=0.926; sub_bm25=0.779; sub_dense=0.973"
+      },
+      {
+        "corpusid": 234334398,
+        "score": 0.885452151298523,
+        "reason": "bm25=0.714; dense=1.000; sub_bm25=0.498; sub_dense=0.996"
+      },
+      {
+        "corpusid": 234095341,
+        "score": 0.8761523365974426,
+        "reason": "bm25=0.806; dense=0.923; sub_bm25=0.740; sub_dense=0.924"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_181",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_181",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_181",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_181",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1746,
+      "latency_s": 13.179103100090288
+    },
+    {
+      "query_id": "litsearch_181",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 250,
+      "latency_s": 2.2067382999230176
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_181",
+    "gold": [
+      235368202
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "hierarchical user interest model news recommendation",
+      "hierarchical attention news recommendation user interests",
+      "topic hierarchy user modeling news recommendation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17616273,
+        53010,
+        912359,
+        13020664,
+        14122119,
+        8060911,
+        14497982,
+        8488015,
+        21166550,
+        14971130,
+        235294032,
+        261341575,
+        1165762,
+        5524852,
+        41981492,
+        174800536,
+        235368202,
+        253383917,
+        252819114,
+        229365770
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235294032,
+        235368202,
+        233240813,
+        248780372,
+        231602961,
+        222225275,
+        219720103,
+        218571035,
+        253383917,
+        252819114,
+        220647035,
+        9759915,
+        174800536,
+        202768081,
+        254564256,
+        199551786,
+        17928314,
+        1318419,
+        202789387,
+        235294081
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235368202,
+        9701937,
+        196186167,
+        196217527,
+        26905605,
+        235294032,
+        252624600,
+        1188168,
+        252819489,
+        14752437,
+        61857474,
+        6621722,
+        248780372,
+        14082659,
+        259370694,
+        11876060,
+        2630663,
+        202774468,
+        13238851,
+        2982180
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235368202,
+        235294032,
+        248780372,
+        231602961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235368202,
+        235294032,
+        248780372,
+        233240813,
+        219720103,
+        231602961,
+        196186167,
+        1188168,
+        9759915,
+        252624600,
+        202768081,
+        9701937,
+        259370694,
+        26905605,
+        218571035,
+        17928314,
+        196217527,
+        10119966,
+        61857474,
+        174800536
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.526417699991725
+  },
+  "reason_example": {
+    "query_id": "litsearch_181",
+    "query": "Could you recommend studies on hierarchical modeling of user interests for tailoring news recommendation systems?",
+    "top_results": [
+      {
+        "corpusid": 235368202,
+        "score": 0.9856215715408325,
+        "reason": "bm25=0.964; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235294032,
+        "score": 0.92554771900177,
+        "reason": "bm25=1.000; dense=0.876; sub_bm25=0.826; sub_dense=0.917"
+      },
+      {
+        "corpusid": 248780372,
+        "score": 0.8329387903213501,
+        "reason": "bm25=0.859; dense=0.816; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233240813,
+        "score": 0.793876051902771,
+        "reason": "bm25=0.874; dense=0.741; sub_bm25=0.846; sub_dense=0.769"
+      },
+      {
+        "corpusid": 219720103,
+        "score": 0.7742471098899841,
+        "reason": "bm25=0.763; dense=0.782; sub_bm25=0.697; sub_dense=0.728"
+      }
+    ]
+  }
+}

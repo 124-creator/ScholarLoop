@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_322",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_322",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_322",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_322",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1334,
+      "latency_s": 9.569381600013003
+    },
+    {
+      "query_id": "litsearch_322",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 338,
+      "latency_s": 3.035415800055489
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_322",
+    "gold": [
+      235294032
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "news recommendation combining user preferences and popularity dynamics",
+      "time-sensitive news recommendation with personalization",
+      "news recommender systems considering temporal popularity and user interest"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10071979,
+        33548672,
+        252763288,
+        252763330,
+        52281610,
+        9526061,
+        219305462,
+        16718900,
+        5334746,
+        14933987,
+        2460667,
+        67877118,
+        248780198,
+        9947995,
+        5380171,
+        263609812,
+        29281294,
+        12964363,
+        235097633,
+        16894495
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        222225275,
+        248780198,
+        248780372,
+        231602961,
+        16107723,
+        14935233,
+        233240813,
+        202768081,
+        2773392,
+        254564256,
+        13935427,
+        259370694,
+        174799917,
+        16369019,
+        53083146,
+        838836,
+        218581979,
+        15877270
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        9701937,
+        227905448,
+        52917952,
+        196186167,
+        196217527,
+        14752437,
+        202774468,
+        9759915,
+        11376810,
+        259370694,
+        16369019,
+        26905605,
+        44148608,
+        5864624,
+        1188168,
+        13238851,
+        27757235,
+        252819489
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        231602961,
+        16107723
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        248780198,
+        9759915,
+        259370694,
+        227905448,
+        16369019,
+        202768081,
+        248780372,
+        9701937,
+        2773392,
+        231602961,
+        13238851,
+        11376810,
+        52917952,
+        233240813,
+        44148608,
+        218581979,
+        252819489,
+        53083146
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.457462599966675
+  },
+  "reason_example": {
+    "query_id": "litsearch_322",
+    "query": "What research has been conducted on news recommendation engines that consider individual user preferences as well as the time-sensitive popularity of news content?",
+    "top_results": [
+      {
+        "corpusid": 235294032,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252624600,
+        "score": 0.8823146820068359,
+        "reason": "bm25=0.785; dense=0.947; sub_bm25=0.980; sub_dense=0.840"
+      },
+      {
+        "corpusid": 248780198,
+        "score": 0.7552457451820374,
+        "reason": "bm25=0.742; dense=0.764; sub_bm25=0.594; sub_dense=0.660"
+      },
+      {
+        "corpusid": 9759915,
+        "score": 0.7356332540512085,
+        "reason": "bm25=0.604; dense=0.824; sub_bm25=0.752; sub_dense=0.805"
+      },
+      {
+        "corpusid": 259370694,
+        "score": 0.7350672483444214,
+        "reason": "bm25=0.633; dense=0.803; sub_bm25=0.523; sub_dense=0.856"
+      }
+    ]
+  }
+}

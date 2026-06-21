@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_017",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_017",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_017",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_017",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1186,
+      "latency_s": 7.642222100053914
+    },
+    {
+      "query_id": "litsearch_017",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 250,
+      "latency_s": 1.8693549999734387
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_017",
+    "gold": [
+      237442211
+    ],
+    "pool_size": 247,
+    "decomposition": [
+      "NLI model sentence-level relation extraction hypothesis generation verification",
+      "entity-type constraints relation extraction NLI",
+      "sentence-level relation extraction natural language inference"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        225062666,
+        2100529,
+        1208298,
+        15281983,
+        229331968,
+        14100944,
+        16401903,
+        18087464,
+        6127415,
+        237386548,
+        577937,
+        5987198,
+        231879840,
+        5606323,
+        572854,
+        237397713,
+        16334122,
+        16126320,
+        1317204,
+        9289495
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259376696,
+        231879840,
+        17034927,
+        236477597,
+        53103613,
+        248506045,
+        184487889,
+        18087464,
+        1317204,
+        5993225,
+        249301181,
+        17894632,
+        236478166,
+        195316274,
+        129945615,
+        235593061,
+        1675452,
+        1125700,
+        259766260,
+        294054
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        231750020,
+        189898081,
+        17034927,
+        235313346,
+        24217865,
+        7888363,
+        233189525,
+        196187587,
+        235313469,
+        1387162,
+        248405819,
+        87648,
+        236477597,
+        18391662,
+        14334573,
+        2391734,
+        2253256,
+        259370565,
+        231879840,
+        7343474
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        17034927,
+        259376696,
+        231750020,
+        231879840,
+        235313346,
+        202541610,
+        184487889,
+        7888363,
+        236477597,
+        18087464,
+        5993225,
+        5606323
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        17034927,
+        231879840,
+        236477597,
+        231750020,
+        235313346,
+        189898081,
+        184487889,
+        259376696,
+        87648,
+        248405819,
+        233189525,
+        18087464,
+        7888363,
+        249301181,
+        5993225,
+        244054803,
+        196187587,
+        225062645,
+        15279271,
+        24217865
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.562018899945542
+  },
+  "reason_example": {
+    "query_id": "litsearch_017",
+    "query": "Can you recommend a paper that uses an NLI model for sentence-level relation extraction using hypothesis generation and verification with entity-type constraints?",
+    "top_results": [
+      {
+        "corpusid": 17034927,
+        "score": 0.9748526811599731,
+        "reason": "bm25=0.975; dense=0.975; sub_bm25=0.978; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231879840,
+        "score": 0.9282381534576416,
+        "reason": "bm25=0.981; dense=0.893; sub_bm25=0.870; sub_dense=0.894"
+      },
+      {
+        "corpusid": 236477597,
+        "score": 0.9246488809585571,
+        "reason": "bm25=0.951; dense=0.907; sub_bm25=0.798; sub_dense=0.839"
+      },
+      {
+        "corpusid": 231750020,
+        "score": 0.8769948482513428,
+        "reason": "bm25=0.692; dense=1.000; sub_bm25=0.808; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235313346,
+        "score": 0.8680150508880615,
+        "reason": "bm25=0.709; dense=0.974; sub_bm25=0.739; sub_dense=0.933"
+      }
+    ]
+  }
+}

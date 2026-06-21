@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_483",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_483",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_483",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_483",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 630,
+      "latency_s": 2.0399086999241263
+    },
+    {
+      "query_id": "litsearch_483",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 334,
+      "latency_s": 2.8992537999292836
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_483",
+    "gold": [
+      259342823
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "memory-efficient optimizer with confidence-based updates",
+      "optimizer considering update confidence for memory reduction",
+      "confidence-guided memory-efficient optimization algorithm"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1021605,
+        219305462,
+        12405045,
+        5153623,
+        6622478,
+        1870332,
+        3265280,
+        11358655,
+        962094,
+        6723570,
+        7440991,
+        8035278,
+        38406635,
+        1182312,
+        2753493,
+        5495014,
+        12569456,
+        13523782,
+        130265,
+        16072122
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259342823,
+        61153617,
+        204800654,
+        235376887,
+        238408308,
+        231698643,
+        41626949,
+        252715881,
+        243865373,
+        3508234,
+        5495014,
+        263310678,
+        102029,
+        52904249,
+        7823385,
+        56895534,
+        235490410,
+        256826746,
+        257280243,
+        248366447
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259342823,
+        235490410,
+        247446857,
+        3508234,
+        61153617,
+        258418258,
+        11772257,
+        235458498,
+        53483457,
+        244714983,
+        263609239,
+        238215172,
+        108296106,
+        237491843,
+        249097686,
+        252846263,
+        220525353,
+        253237975,
+        257405483,
+        248377377
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259342823
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259342823,
+        61153617,
+        235490410,
+        3508234,
+        204800654,
+        247446857,
+        238408308,
+        235376887,
+        258418258,
+        53483457,
+        108296106,
+        256826746,
+        11772257,
+        6628106,
+        238419059,
+        7823385,
+        252715881,
+        249097686,
+        244714983,
+        238408445
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.927659700042568
+  },
+  "reason_example": {
+    "query_id": "litsearch_483",
+    "query": "Which paper proposes a memory-efficient optimizer considering the confidence of each update during the optimization?",
+    "top_results": [
+      {
+        "corpusid": 259342823,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 61153617,
+        "score": 0.8660070896148682,
+        "reason": "bm25=0.860; dense=0.870; sub_bm25=0.823; sub_dense=0.952"
+      },
+      {
+        "corpusid": 235490410,
+        "score": 0.8202670812606812,
+        "reason": "bm25=0.653; dense=0.932; sub_bm25=0.495; sub_dense=0.926"
+      },
+      {
+        "corpusid": 3508234,
+        "score": 0.798827588558197,
+        "reason": "bm25=0.682; dense=0.877; sub_bm25=0.375; sub_dense=0.860"
+      },
+      {
+        "corpusid": 204800654,
+        "score": 0.7790597677230835,
+        "reason": "bm25=0.821; dense=0.751; sub_bm25=0.572; sub_dense=0.798"
+      }
+    ]
+  }
+}

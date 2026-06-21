@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_447",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_447",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_447",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_447",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1157,
+      "latency_s": 6.064032299909741
+    },
+    {
+      "query_id": "litsearch_447",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 440,
+      "latency_s": 4.251347700017504
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_447",
+    "gold": [
+      259370752
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "first paper combining different uncertainty quantification methods",
+      "pioneering work integrating multiple uncertainty quantification approaches",
+      "early fusion of uncertainty quantification techniques"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10740890,
+        11116896,
+        51991797,
+        16545185,
+        18065622,
+        24546582,
+        4013259,
+        51871267,
+        202749914,
+        13883427,
+        259212823,
+        16165854,
+        49656757,
+        15686634,
+        35003556,
+        3098164,
+        15467624,
+        13436224,
+        2731424,
+        16146688
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370752,
+        227151564,
+        264490587,
+        256358379,
+        263909107,
+        209314627,
+        247058767,
+        250150652,
+        15126155,
+        238744509,
+        248780161,
+        222272162,
+        264306282,
+        263830894,
+        222272340,
+        245704549,
+        8256717,
+        21722589,
+        49666783,
+        237373355
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        149848,
+        259370752,
+        18138229,
+        11386125,
+        18377006,
+        51999629,
+        8844517,
+        16750650,
+        222272162,
+        21722589,
+        235790530,
+        10460252,
+        14692027,
+        16033481,
+        262065523,
+        19035533,
+        6113477,
+        9373550,
+        219636236,
+        236740394
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370752,
+        19035533,
+        209314627
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370752,
+        222272162,
+        21722589,
+        18138229,
+        149848,
+        16750650,
+        264490587,
+        8844517,
+        11386125,
+        262065523,
+        51999629,
+        16033481,
+        18377006,
+        209314627,
+        19035533,
+        235790530,
+        250150652,
+        2801015,
+        9937118,
+        9373550
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.134089200058952
+  },
+  "reason_example": {
+    "query_id": "litsearch_447",
+    "query": "Which paper first combines different methods for uncertainty quantification in one?",
+    "top_results": [
+      {
+        "corpusid": 259370752,
+        "score": 0.9767950773239136,
+        "reason": "bm25=1.000; dense=0.961; sub_bm25=0.918; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222272162,
+        "score": 0.8046433925628662,
+        "reason": "bm25=0.687; dense=0.883; sub_bm25=0.599; sub_dense=0.741"
+      },
+      {
+        "corpusid": 21722589,
+        "score": 0.796654224395752,
+        "reason": "bm25=0.668; dense=0.883; sub_bm25=0.742; sub_dense=0.883"
+      },
+      {
+        "corpusid": 18138229,
+        "score": 0.7934733033180237,
+        "reason": "bm25=0.568; dense=0.944; sub_bm25=0.639; sub_dense=0.890"
+      },
+      {
+        "corpusid": 149848,
+        "score": 0.7928043007850647,
+        "reason": "bm25=0.482; dense=1.000; sub_bm25=0.695; sub_dense=1.000"
+      }
+    ]
+  }
+}

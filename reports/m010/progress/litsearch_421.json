@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_421",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_421",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_421",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_421",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1622,
+      "latency_s": 11.611758099985309
+    },
+    {
+      "query_id": "litsearch_421",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 396,
+      "latency_s": 3.222974699921906
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_421",
+    "gold": [
+      253581399
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "dynamic sequence tokenizer learned via gradient backpropagation",
+      "input-conditional tokenizer segmentation",
+      "learnable tokenizer backpropagation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        10520585,
+        26889702,
+        36965648,
+        15244472,
+        12527684,
+        16067124,
+        11818303,
+        248780188,
+        1871953,
+        5144565,
+        243839750,
+        12161321,
+        237491658,
+        3193864,
+        10898406,
+        11980309,
+        53034346,
+        18116989,
+        38406635
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        239009828,
+        3421136,
+        263889455,
+        261682321,
+        256615681,
+        227905138,
+        173991084,
+        44158569,
+        46938675,
+        58028789,
+        215238756,
+        20038688,
+        383,
+        252715594,
+        53093304,
+        6715185,
+        257631995,
+        225062758,
+        248780519,
+        5144565
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14592727,
+        9655643,
+        196199527,
+        7045397,
+        258749470,
+        371926,
+        6049881,
+        259370625,
+        248780519,
+        21699993,
+        15876808,
+        52144307,
+        15409824,
+        253581399,
+        5519195,
+        22336489,
+        1576258,
+        5673033,
+        196175723,
+        248006342
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        9655643,
+        261682321
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        9655643,
+        7045397,
+        248780519,
+        261682321,
+        44158569,
+        263889455,
+        15409824,
+        6715185,
+        196199527,
+        14592727,
+        238582670,
+        371926,
+        257258159,
+        248006342,
+        208513914,
+        259370625,
+        5509327,
+        21699993,
+        258749470,
+        11835599
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.808877100003883
+  },
+  "reason_example": {
+    "query_id": "litsearch_421",
+    "query": "Provide an example of a paper which proposes a method to learn a dynamic (conditioned on the input) sequence tokenizer (segmenter) via standard gradient backpropagation.",
+    "top_results": [
+      {
+        "corpusid": 9655643,
+        "score": 0.8941091299057007,
+        "reason": "bm25=0.786; dense=0.966; sub_bm25=0.303; sub_dense=0.965"
+      },
+      {
+        "corpusid": 7045397,
+        "score": 0.8814444541931152,
+        "reason": "bm25=0.815; dense=0.926; sub_bm25=0.572; sub_dense=0.961"
+      },
+      {
+        "corpusid": 248780519,
+        "score": 0.877585232257843,
+        "reason": "bm25=0.850; dense=0.896; sub_bm25=0.584; sub_dense=0.959"
+      },
+      {
+        "corpusid": 261682321,
+        "score": 0.8551570177078247,
+        "reason": "bm25=0.950; dense=0.792; sub_bm25=0.793; sub_dense=0.858"
+      },
+      {
+        "corpusid": 44158569,
+        "score": 0.8550825715065002,
+        "reason": "bm25=0.887; dense=0.834; sub_bm25=0.728; sub_dense=0.843"
+      }
+    ]
+  }
+}

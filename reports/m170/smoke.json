@@ -1,0 +1,41 @@
+{
+  "schema_version": "m170.smoke.v1",
+  "checked_at_utc": "2026-06-21T08:02:47.904274+00:00",
+  "status": "PASS",
+  "checks": {
+    "/healthz": {
+      "status": 200,
+      "bytes": 67,
+      "elapsed_s": 0.002973399998154491
+    },
+    "/studio?lang=zh&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 75163,
+      "elapsed_s": 0.02847919997293502
+    },
+    "/studio?lang=en&qid=litsearch_000": {
+      "status": 200,
+      "bytes": 76014,
+      "elapsed_s": 0.014065099996514618
+    },
+    "/api/graph_stable": {
+      "status": 200,
+      "bytes": 68716,
+      "elapsed_s": 0.007978200010256842
+    },
+    "/api/search?q=large%20language%20model%20compression": {
+      "status": 200,
+      "bytes": 10406,
+      "elapsed_s": 10.966596599988407,
+      "payload_status": "ok",
+      "count": 10,
+      "cost": {
+        "llm_calls": 0,
+        "tokens": 277,
+        "latency_s": 10.935219000006327
+      },
+      "cache": null
+    }
+  },
+  "log": "reports/m170/smoke.txt"
+}

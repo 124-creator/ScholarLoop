@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_478",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_478",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_478",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_478",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 999,
+      "latency_s": 5.151091800071299
+    },
+    {
+      "query_id": "litsearch_478",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 270,
+      "latency_s": 2.119460199959576
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_478",
+    "gold": [
+      258887622
+    ],
+    "pool_size": 241,
+    "decomposition": [
+      "multilingual text simplification dataset over 12 languages",
+      "text simplification finetuning in-context learning evaluation",
+      "dataset for text simplification multiple languages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        221761488,
+        12635393,
+        34993372,
+        227231856,
+        1345,
+        11846872,
+        2136464,
+        13077531,
+        245616871,
+        247940018,
+        221738937,
+        51872374,
+        7378347,
+        16576270,
+        1383144,
+        184482941,
+        1585700,
+        18893263,
+        6559235,
+        7468035
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252402913,
+        226262242,
+        258967869,
+        8687826,
+        8416074,
+        244085480,
+        219309891,
+        3234156,
+        21685311,
+        256461170,
+        258887622,
+        52010555,
+        219307074,
+        11099003,
+        253553580,
+        256461105,
+        224818126,
+        53080846,
+        259370682,
+        16680775
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8687826,
+        52010555,
+        7962289,
+        14206097,
+        256460918,
+        10103892,
+        236478176,
+        259370682,
+        241583342,
+        8884060,
+        17817489,
+        209536754,
+        14332689,
+        9609078,
+        252624754,
+        252624470,
+        21713133,
+        6791168,
+        256461048,
+        219309891
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226262242
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        8687826,
+        52010555,
+        259370682,
+        10103892,
+        252402913,
+        219309891,
+        241583342,
+        8416074,
+        3234156,
+        17817489,
+        235097405,
+        256461048,
+        11099003,
+        258967869,
+        256461170,
+        244085480,
+        10356528,
+        256460918,
+        16680775,
+        258887622
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.562309000059031
+  },
+  "reason_example": {
+    "query_id": "litsearch_478",
+    "query": "Which paper produces a dataset for text simplification in over 12 languages and evaluates both finetuning and in context learning approaches to text simplification in those languages?",
+    "top_results": [
+      {
+        "corpusid": 8687826,
+        "score": 0.9847644567489624,
+        "reason": "bm25=0.962; dense=1.000; sub_bm25=0.966; sub_dense=0.973"
+      },
+      {
+        "corpusid": 52010555,
+        "score": 0.9676086902618408,
+        "reason": "bm25=0.935; dense=0.990; sub_bm25=0.793; sub_dense=0.983"
+      },
+      {
+        "corpusid": 259370682,
+        "score": 0.9174562096595764,
+        "reason": "bm25=0.894; dense=0.933; sub_bm25=0.777; sub_dense=0.913"
+      },
+      {
+        "corpusid": 10103892,
+        "score": 0.9157208800315857,
+        "reason": "bm25=0.879; dense=0.940; sub_bm25=0.805; sub_dense=0.950"
+      },
+      {
+        "corpusid": 252402913,
+        "score": 0.9137901067733765,
+        "reason": "bm25=1.000; dense=0.856; sub_bm25=0.884; sub_dense=0.913"
+      }
+    ]
+  }
+}

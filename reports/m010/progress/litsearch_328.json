@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_328",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_328",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_328",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_328",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 990,
+      "latency_s": 5.504004699992947
+    },
+    {
+      "query_id": "litsearch_328",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 258,
+      "latency_s": 2.53354540001601
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_328",
+    "gold": [
+      233231453,
+      248780177
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "\"continuous prompts\" \"soft prompts\" language models",
+      "\"vector-based prompts\" vs \"discrete prompts\" NLP",
+      "\"prompt tuning\" \"continuous embeddings\" transformers"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258486963,
+        38964517,
+        10513825,
+        16453936,
+        3923764,
+        30908728,
+        2776389,
+        16020183,
+        186206301,
+        14323173,
+        219305462,
+        3073489,
+        6583976,
+        41981492,
+        1420479,
+        5153623,
+        21022858,
+        893688,
+        7542363,
+        9410751
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        245144420,
+        238856973,
+        257038392,
+        263608162,
+        233231453,
+        253762014,
+        253116574,
+        263830025,
+        252693397,
+        257038347,
+        263830433,
+        258887528,
+        259370697,
+        252715594,
+        252519660,
+        237452236,
+        248780440,
+        248405974,
+        250390802,
+        237532411
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        257038392,
+        245144420,
+        241033259,
+        259376547,
+        252716013,
+        246485605,
+        237416760,
+        250390802,
+        263608162,
+        264172710,
+        258332119,
+        232021601,
+        257038347,
+        26329175,
+        248006390,
+        248779986,
+        37122890,
+        252519660,
+        12405045,
+        19711128
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245144420,
+        263608162,
+        233231453,
+        252519660,
+        257038347,
+        238856973,
+        257038392
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245144420,
+        257038392,
+        263608162,
+        257038347,
+        250390802,
+        237416760,
+        233231453,
+        258332119,
+        252519660,
+        246485605,
+        252716013,
+        238856973,
+        248006390,
+        260063200,
+        237532411,
+        261557296,
+        14994862,
+        264426355,
+        261494012,
+        6034400
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 9.110228899982758
+  },
+  "reason_example": {
+    "query_id": "litsearch_328",
+    "query": "What research should I consult regarding the application of continuous vector prompts in language models instead of the conventional discrete token-level prompts?",
+    "top_results": [
+      {
+        "corpusid": 245144420,
+        "score": 0.9652459621429443,
+        "reason": "bm25=1.000; dense=0.942; sub_bm25=0.923; sub_dense=0.939"
+      },
+      {
+        "corpusid": 257038392,
+        "score": 0.952195405960083,
+        "reason": "bm25=0.880; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263608162,
+        "score": 0.8332761526107788,
+        "reason": "bm25=0.857; dense=0.817; sub_bm25=1.000; sub_dense=0.875"
+      },
+      {
+        "corpusid": 257038347,
+        "score": 0.7890041470527649,
+        "reason": "bm25=0.770; dense=0.802; sub_bm25=0.874; sub_dense=0.827"
+      },
+      {
+        "corpusid": 250390802,
+        "score": 0.7872188687324524,
+        "reason": "bm25=0.732; dense=0.824; sub_bm25=0.678; sub_dense=0.885"
+      }
+    ]
+  }
+}

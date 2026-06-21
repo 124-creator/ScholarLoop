@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_123",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_123",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_123",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_123",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1214,
+      "latency_s": 8.297882600105368
+    },
+    {
+      "query_id": "litsearch_123",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.1187116999644786
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_123",
+    "gold": [
+      236318140
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "language models robustness surface form commonsense knowledge",
+      "paraphrasing robustness commonsense reasoning",
+      "surface form perturbation commonsense knowledge evaluation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        45438237,
+        243865648,
+        173990423,
+        248779991,
+        13907064,
+        258463965,
+        52141518,
+        250144216,
+        6427940,
+        5638681,
+        250141213,
+        4380524,
+        207930099,
+        219305462,
+        174801175,
+        8666396,
+        29767064,
+        16657732,
+        18151307,
+        202542872
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13907064,
+        232222259,
+        189762527,
+        253244266,
+        207930099,
+        245218685,
+        221865854,
+        218486812,
+        254854264,
+        238857304,
+        202541043,
+        174803111,
+        247450642,
+        243865246,
+        6427940,
+        202789367,
+        221891676,
+        13746563,
+        227247851,
+        6856950
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        245218685,
+        218486778,
+        253244266,
+        238857304,
+        263802565,
+        264172710,
+        233289738,
+        218870181,
+        259075832,
+        218516875,
+        237091328,
+        244345615,
+        13848633,
+        252968000,
+        226226964,
+        218486812,
+        258588125,
+        259370617,
+        64949518,
+        256460996
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253244266,
+        245218685,
+        207930099,
+        218486812,
+        259075832,
+        173990423,
+        227247851,
+        247450642,
+        252968000,
+        189762527
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245218685,
+        253244266,
+        238857304,
+        218486812,
+        233289738,
+        207930099,
+        247450642,
+        259075832,
+        258588125,
+        189762527,
+        202541043,
+        252968000,
+        221865854,
+        227247851,
+        235592830,
+        248780037,
+        260125086,
+        202789367,
+        252819215,
+        221891676
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.635159999947064
+  },
+  "reason_example": {
+    "query_id": "litsearch_123",
+    "query": "Could you recommend a study that explores how language models are not robust to the surface form editing when testing commonsense knowledge?",
+    "top_results": [
+      {
+        "corpusid": 245218685,
+        "score": 0.9577722549438477,
+        "reason": "bm25=0.894; dense=1.000; sub_bm25=0.931; sub_dense=0.998"
+      },
+      {
+        "corpusid": 253244266,
+        "score": 0.935572624206543,
+        "reason": "bm25=0.922; dense=0.945; sub_bm25=1.000; sub_dense=0.919"
+      },
+      {
+        "corpusid": 238857304,
+        "score": 0.908471405506134,
+        "reason": "bm25=0.888; dense=0.922; sub_bm25=0.856; sub_dense=0.891"
+      },
+      {
+        "corpusid": 218486812,
+        "score": 0.8800064325332642,
+        "reason": "bm25=0.892; dense=0.872; sub_bm25=0.792; sub_dense=0.931"
+      },
+      {
+        "corpusid": 233289738,
+        "score": 0.8751429319381714,
+        "reason": "bm25=0.830; dense=0.906; sub_bm25=0.845; sub_dense=0.912"
+      }
+    ]
+  }
+}

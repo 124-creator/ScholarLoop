@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_350",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_350",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_350",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_350",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1442,
+      "latency_s": 9.862616099999286
+    },
+    {
+      "query_id": "litsearch_350",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 305,
+      "latency_s": 2.6336417999118567
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_350",
+    "gold": [
+      238259938
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "transfer learning between ABSA tasks under same training paradigm",
+      "knowledge transfer in aspect-based sentiment analysis across tasks",
+      "shared paradigm for multi-task learning in ABSA"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252819043,
+        10034668,
+        21547774,
+        21022858,
+        8624752,
+        9564539,
+        18754073,
+        174798413,
+        18158903,
+        248572452,
+        2709318,
+        37453604,
+        182953256,
+        253762028,
+        260309480,
+        7909356,
+        248780281,
+        202785312,
+        229924220,
+        4903640
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819043,
+        60736592,
+        233304856,
+        252355558,
+        69568073,
+        229924220,
+        247594025,
+        244800755,
+        226226469,
+        259370804,
+        30943329,
+        257532608,
+        250390474,
+        248405974,
+        262738077,
+        247594451,
+        256461195,
+        62648364,
+        218470359,
+        15719016
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258547350,
+        259833782,
+        1449408,
+        252668904,
+        248780242,
+        3926047,
+        51881529,
+        1612367,
+        9220203,
+        1300761,
+        256105391,
+        248779987,
+        247476090,
+        235248419,
+        20966066,
+        251393228,
+        5297309,
+        12307451,
+        259064260,
+        245855864
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248405974,
+        247594451,
+        250390946,
+        28929215,
+        237250417,
+        239009519,
+        252668904,
+        249062609,
+        8624752,
+        4712464,
+        262738077,
+        10034668
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252668904,
+        247476090,
+        251393228,
+        28929215,
+        248405974,
+        247450925,
+        256105391,
+        7301499,
+        519236,
+        237513421,
+        6587686,
+        248780242,
+        235248419,
+        258547350,
+        259833782,
+        4712464,
+        204838340,
+        262738077,
+        239009519,
+        16956796
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.095787599915639
+  },
+  "reason_example": {
+    "query_id": "litsearch_350",
+    "query": "ould you direct me to research that shows that the transfer of specialized knowledge between various ABSA tasks if trained under the same paradigm?",
+    "top_results": [
+      {
+        "corpusid": 252668904,
+        "score": 0.8940579891204834,
+        "reason": "bm25=0.796; dense=0.959; sub_bm25=0.574; sub_dense=0.760"
+      },
+      {
+        "corpusid": 247476090,
+        "score": 0.838463306427002,
+        "reason": "bm25=0.821; dense=0.850; sub_bm25=0.690; sub_dense=0.899"
+      },
+      {
+        "corpusid": 251393228,
+        "score": 0.8287535905838013,
+        "reason": "bm25=0.801; dense=0.847; sub_bm25=0.635; sub_dense=0.894"
+      },
+      {
+        "corpusid": 28929215,
+        "score": 0.8241651058197021,
+        "reason": "bm25=0.885; dense=0.784; sub_bm25=0.823; sub_dense=0.874"
+      },
+      {
+        "corpusid": 248405974,
+        "score": 0.8129397630691528,
+        "reason": "bm25=0.921; dense=0.741; sub_bm25=0.606; sub_dense=0.833"
+      }
+    ]
+  }
+}

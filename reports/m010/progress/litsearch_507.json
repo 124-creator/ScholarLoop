@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_507",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_507",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_507",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_507",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1169,
+      "latency_s": 5.752218500012532
+    },
+    {
+      "query_id": "litsearch_507",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 323,
+      "latency_s": 2.3940456999698654
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_507",
+    "gold": [
+      258041281
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "variable length image tokenization",
+      "adaptive token number for vision transformers",
+      "learned token dropping for images"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1741394,
+        1871953,
+        5710819,
+        53109277,
+        252211995,
+        6723570,
+        10776665,
+        11951283,
+        8530975,
+        12207704,
+        129939336,
+        1949172,
+        201660357,
+        259165546,
+        16720635,
+        16181764,
+        54579291,
+        17451961,
+        258547350,
+        259833782
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        251402961,
+        257254909,
+        226262182,
+        250299115,
+        53109277,
+        251223857,
+        41637493,
+        3457087,
+        227230672,
+        251280143,
+        256461349,
+        237291795,
+        222290865,
+        246430782,
+        6369527,
+        244138387,
+        202772083,
+        259370517,
+        54462139,
+        17451961
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        244478155,
+        51876695,
+        263889455,
+        244908227,
+        16053260,
+        1583135,
+        235436185,
+        1612367,
+        261682321,
+        195218789,
+        2208884,
+        237485374,
+        7887385,
+        248887665,
+        29159323,
+        222310549,
+        18373301,
+        54101493,
+        252846193,
+        13276568
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263889455,
+        244908227
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        251402961,
+        244478155,
+        235436185,
+        263889455,
+        244908227,
+        261682321,
+        16053260,
+        29159323,
+        3457087,
+        195218789,
+        252846193,
+        248887665,
+        251280143,
+        256194054,
+        246634193,
+        6369527,
+        251253049,
+        249192149,
+        51876695,
+        257254909
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 8.869666400016285
+  },
+  "reason_example": {
+    "query_id": "litsearch_507",
+    "query": "Can we learn to represent an image with arbitary numbers of tokens?",
+    "top_results": [
+      {
+        "corpusid": 251402961,
+        "score": 0.8975400924682617,
+        "reason": "bm25=1.000; dense=0.829; sub_bm25=0.358; sub_dense=0.798"
+      },
+      {
+        "corpusid": 244478155,
+        "score": 0.880922794342041,
+        "reason": "bm25=0.702; dense=1.000; sub_bm25=0.381; sub_dense=0.918"
+      },
+      {
+        "corpusid": 235436185,
+        "score": 0.8759084939956665,
+        "reason": "bm25=0.808; dense=0.921; sub_bm25=0.702; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263889455,
+        "score": 0.8746507167816162,
+        "reason": "bm25=0.742; dense=0.963; sub_bm25=0.913; sub_dense=0.946"
+      },
+      {
+        "corpusid": 244908227,
+        "score": 0.8553471565246582,
+        "reason": "bm25=0.694; dense=0.963; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

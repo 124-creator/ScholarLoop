@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_388",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_388",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_388",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_388",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1371,
+      "latency_s": 8.338956900057383
+    },
+    {
+      "query_id": "litsearch_388",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 387,
+      "latency_s": 3.1177855000132695
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_388",
+    "gold": [
+      259370836
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "adversarial attacks on code models using attention scores semantic information",
+      "guaranteeing compilable adversarial examples for source code models",
+      "attention-based semantic perturbation for code with compilation guarantee"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9798738,
+        10584078,
+        207852642,
+        1405599,
+        259370836,
+        13907064,
+        7879290,
+        8415184,
+        235358847,
+        6799782,
+        165163987,
+        229376913,
+        13266502,
+        16333456,
+        196202909,
+        1071914,
+        33742593,
+        10402642,
+        247628083,
+        256389762
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        196202909,
+        259370836,
+        252199778,
+        256389762,
+        246702343,
+        249017783,
+        226262189,
+        237453239,
+        208527270,
+        49907212,
+        219981806,
+        204806122,
+        3488815,
+        249538400,
+        253384392,
+        256460876,
+        248476236,
+        234353603,
+        80628357,
+        222134151
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252199778,
+        259370836,
+        102353948,
+        236460144,
+        249017783,
+        256389762,
+        203610580,
+        19340026,
+        248780270,
+        258947738,
+        232269939,
+        258960612,
+        248377045,
+        237353665,
+        258888064,
+        196183669,
+        235417102,
+        233230124,
+        247618882,
+        222134151
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252199778,
+        259370836
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370836,
+        252199778,
+        256389762,
+        249017783,
+        236460144,
+        102353948,
+        246702343,
+        222134151,
+        196202909,
+        247223086,
+        264935143,
+        19340026,
+        237453239,
+        247594854,
+        80628357,
+        261341570,
+        237353665,
+        248780270,
+        236460238,
+        208527270
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.431568100000732
+  },
+  "reason_example": {
+    "query_id": "litsearch_388",
+    "query": "Is there any paper that address attacks on code models by leveraging the semantic information of the source code through attention scores, while also guaranteeing that the generated adversarial examples can always be compiled successfully?",
+    "top_results": [
+      {
+        "corpusid": 259370836,
+        "score": 0.9932242631912231,
+        "reason": "bm25=0.991; dense=0.995; sub_bm25=1.000; sub_dense=0.988"
+      },
+      {
+        "corpusid": 252199778,
+        "score": 0.974498987197876,
+        "reason": "bm25=0.936; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256389762,
+        "score": 0.9035132527351379,
+        "reason": "bm25=0.929; dense=0.886; sub_bm25=0.869; sub_dense=0.848"
+      },
+      {
+        "corpusid": 249017783,
+        "score": 0.898155927658081,
+        "reason": "bm25=0.853; dense=0.928; sub_bm25=0.735; sub_dense=0.921"
+      },
+      {
+        "corpusid": 236460144,
+        "score": 0.872144341468811,
+        "reason": "bm25=0.783; dense=0.931; sub_bm25=0.748; sub_dense=0.905"
+      }
+    ]
+  }
+}

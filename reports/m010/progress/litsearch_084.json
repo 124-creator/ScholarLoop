@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_084",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_084",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_084",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_084",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 923,
+      "latency_s": 5.329977000015788
+    },
+    {
+      "query_id": "litsearch_084",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 386,
+      "latency_s": 2.986931699910201
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_084",
+    "gold": [
+      12360898
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "multilingual sentiment corpus reviews DVDs music books",
+      "cross-language sentiment classification dataset product reviews",
+      "multilingual review corpus for sentiment analysis Amazon"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5837605,
+        219305462,
+        19020387,
+        258685798,
+        44757354,
+        15773620,
+        252763288,
+        8852106,
+        3891855,
+        31003489,
+        52176213,
+        42825371,
+        2421447,
+        3135458,
+        5153623,
+        8517763,
+        203688701,
+        3002355,
+        703192,
+        593447
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        234487217,
+        222141483,
+        15773620,
+        248476041,
+        844657,
+        6442284,
+        15416031,
+        53234404,
+        4324024,
+        259376815,
+        14473519,
+        33780956,
+        21687093,
+        258765250,
+        251267923,
+        550498,
+        11613358,
+        3856903,
+        220046457,
+        259370666
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        13051685,
+        222141483,
+        1784375,
+        14915669,
+        18039958,
+        15773620,
+        13189192,
+        11657346,
+        14605915,
+        251267923,
+        15980568,
+        209079290,
+        13861819,
+        6937425,
+        513094,
+        17864960,
+        259376616,
+        221097262,
+        29060920,
+        4324024
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222141483,
+        15773620,
+        3135458
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222141483,
+        15773620,
+        13051685,
+        248476041,
+        251267923,
+        1784375,
+        4324024,
+        14605915,
+        13861819,
+        3135458,
+        29060920,
+        15980568,
+        593447,
+        221097262,
+        21687093,
+        10162234,
+        246063436,
+        14915669,
+        259370666,
+        17864960
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.688794299960136
+  },
+  "reason_example": {
+    "query_id": "litsearch_084",
+    "query": "Where can I find a multilingual corpus that includes reviews on DVDs, music, and books for the purposes of cross-language sentiment classification research?",
+    "top_results": [
+      {
+        "corpusid": 222141483,
+        "score": 0.9696375131607056,
+        "reason": "bm25=0.985; dense=0.959; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15773620,
+        "score": 0.9397158026695251,
+        "reason": "bm25=0.972; dense=0.918; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 13051685,
+        "score": 0.9288492202758789,
+        "reason": "bm25=0.822; dense=1.000; sub_bm25=0.643; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248476041,
+        "score": 0.912337064743042,
+        "reason": "bm25=0.972; dense=0.873; sub_bm25=0.633; sub_dense=0.902"
+      },
+      {
+        "corpusid": 251267923,
+        "score": 0.9078090786933899,
+        "reason": "bm25=0.906; dense=0.909; sub_bm25=0.730; sub_dense=0.892"
+      }
+    ]
+  }
+}

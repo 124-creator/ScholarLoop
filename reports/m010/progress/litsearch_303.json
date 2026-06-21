@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_303",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_303",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_303",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_303",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1769,
+      "latency_s": 12.044311999925412
+    },
+    {
+      "query_id": "litsearch_303",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 243,
+      "latency_s": 2.46787489997223
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_303",
+    "gold": [
+      233296059
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "neural conversational model decoder limitations",
+      "factual accuracy issues in neural dialogue generation",
+      "challenges of precise response generation in chatbots"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        218688152,
+        53097966,
+        257038566,
+        3920851,
+        52158272,
+        235490333,
+        52013218,
+        479222,
+        10724165,
+        259370633,
+        263866951,
+        7100502,
+        7412007,
+        52113643,
+        3926837,
+        10919045,
+        51872107,
+        60718875,
+        53093304,
+        7081613
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52013218,
+        237940418,
+        7100502,
+        243914328,
+        6040286,
+        7657149,
+        7003342,
+        222378161,
+        52198214,
+        186206491,
+        236460003,
+        218674568,
+        238251642,
+        52113643,
+        7081613,
+        53217693,
+        235352857,
+        5616324,
+        53104603,
+        248780180
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        174798410,
+        231709253,
+        257833668,
+        252734720,
+        14095338,
+        207917676,
+        214802433,
+        229371419,
+        248227301,
+        29050992,
+        245117859,
+        237581501,
+        251320564,
+        252283929,
+        235490333,
+        52159416,
+        252819211,
+        222090359,
+        222141794,
+        229371403
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        202539373,
+        219686914,
+        19181149,
+        235490333,
+        243914328,
+        226262237,
+        7287895,
+        52013218
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52013218,
+        219686914,
+        245117859,
+        5165773,
+        174798410,
+        257636907,
+        258987298,
+        222378161,
+        202539373,
+        226262237,
+        214714251,
+        7287895,
+        234338939,
+        243914328,
+        258999153,
+        231709253,
+        174801285,
+        237940418,
+        19181149,
+        201657646
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.817622000002302
+  },
+  "reason_example": {
+    "query_id": "litsearch_303",
+    "query": "What difficulties do neural conversational models face, particularly concerning the decoder's ability to produce precise and fact-based replies?",
+    "top_results": [
+      {
+        "corpusid": 52013218,
+        "score": 0.9431177377700806,
+        "reason": "bm25=1.000; dense=0.905; sub_bm25=0.983; sub_dense=0.891"
+      },
+      {
+        "corpusid": 219686914,
+        "score": 0.8255133628845215,
+        "reason": "bm25=0.687; dense=0.918; sub_bm25=0.918; sub_dense=0.934"
+      },
+      {
+        "corpusid": 245117859,
+        "score": 0.8238032460212708,
+        "reason": "bm25=0.607; dense=0.968; sub_bm25=0.451; sub_dense=0.846"
+      },
+      {
+        "corpusid": 5165773,
+        "score": 0.8220251798629761,
+        "reason": "bm25=0.673; dense=0.922; sub_bm25=0.751; sub_dense=0.905"
+      },
+      {
+        "corpusid": 174798410,
+        "score": 0.8205281496047974,
+        "reason": "bm25=0.551; dense=1.000; sub_bm25=0.475; sub_dense=0.973"
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_276",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_276",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_276",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_276",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1028,
+      "latency_s": 4.976376900100149
+    },
+    {
+      "query_id": "litsearch_276",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 353,
+      "latency_s": 2.4480387000367045
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_276",
+    "gold": [
+      232104941
+    ],
+    "pool_size": 229,
+    "decomposition": [
+      "data augmentation for text-to-SQL using SQL-to-text generation",
+      "improving text-to-SQL parser by incorporating SQL-to-text examples",
+      "utilizing reverse mapping from SQL to natural language for training text-to-SQL models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1095471,
+        2439516,
+        247451194,
+        250391032,
+        227230338,
+        460493,
+        259376645,
+        247628083,
+        37532748,
+        248779964,
+        258987509,
+        3137601,
+        18275488,
+        233365099,
+        9431510,
+        9778688,
+        2073916,
+        14270923,
+        14785490,
+        226282223
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        232104941,
+        233210172,
+        253237772,
+        247450580,
+        247447354,
+        235352985,
+        252222356,
+        258987509,
+        52979524,
+        258960278,
+        224814101,
+        222067029,
+        256105733,
+        226283757,
+        251719280,
+        254679892,
+        235433328,
+        52282359,
+        207863446,
+        155092736
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232104941,
+        253237772,
+        251719280,
+        258987509,
+        218516925,
+        247447354,
+        235352985,
+        235433328,
+        252819055,
+        1942340,
+        226283757,
+        159041042,
+        248780134,
+        220047209,
+        52979524,
+        202540793,
+        236486090,
+        258960278,
+        226283779,
+        225039884
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        232104941,
+        253237772
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        232104941,
+        253237772,
+        247447354,
+        235352985,
+        258987509,
+        251719280,
+        247450580,
+        235433328,
+        52979524,
+        252819055,
+        258960278,
+        226283757,
+        218516925,
+        159041042,
+        233210172,
+        202540793,
+        236486090,
+        155092736,
+        222067029,
+        207863446
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.897348099970259
+  },
+  "reason_example": {
+    "query_id": "litsearch_276",
+    "query": "How can SQL-to-text be utilized to improve text-to-SQL parsing through data augmentation techniques?",
+    "top_results": [
+      {
+        "corpusid": 232104941,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.987"
+      },
+      {
+        "corpusid": 253237772,
+        "score": 0.9532040953636169,
+        "reason": "bm25=0.895; dense=0.992; sub_bm25=0.958; sub_dense=0.999"
+      },
+      {
+        "corpusid": 247447354,
+        "score": 0.9033195972442627,
+        "reason": "bm25=0.867; dense=0.927; sub_bm25=1.000; sub_dense=0.950"
+      },
+      {
+        "corpusid": 235352985,
+        "score": 0.8989477157592773,
+        "reason": "bm25=0.861; dense=0.924; sub_bm25=0.946; sub_dense=0.932"
+      },
+      {
+        "corpusid": 258987509,
+        "score": 0.8977809548377991,
+        "reason": "bm25=0.825; dense=0.946; sub_bm25=0.853; sub_dense=0.969"
+      }
+    ]
+  }
+}

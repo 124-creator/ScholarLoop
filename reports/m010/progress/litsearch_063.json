@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_063",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_063",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_063",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_063",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 979,
+      "latency_s": 4.581514599965885
+    },
+    {
+      "query_id": "litsearch_063",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 415,
+      "latency_s": 3.930108700064011
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_063",
+    "gold": [
+      236460293,
+      201058550
+    ],
+    "pool_size": 248,
+    "decomposition": [
+      "beam search limitations full target context neural machine translation",
+      "approaches address beam search context neural machine translation",
+      "improving beam search future context nmt"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51868421,
+        45492851,
+        171820989,
+        1274371,
+        90242101,
+        19012205,
+        21022858,
+        32782433,
+        61214793,
+        6271137,
+        51878325,
+        14118934,
+        11989788,
+        67156980,
+        231288,
+        7323268,
+        11749313,
+        1122131,
+        38964517,
+        52118537
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        51870634,
+        221818756,
+        5038627,
+        52118537,
+        119302203,
+        222002282,
+        203902359,
+        248780228,
+        38497711,
+        227231718,
+        90242101,
+        249017500,
+        249172784,
+        4936344,
+        4410027,
+        30601989,
+        231802262,
+        91184122,
+        207986455,
+        227230690
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780523,
+        52118537,
+        52132833,
+        5038627,
+        2782776,
+        4936344,
+        91184122,
+        51870634,
+        8555434,
+        30601989,
+        6834924,
+        235390382,
+        51868236,
+        236486106,
+        7838719,
+        233210339,
+        38497711,
+        231802262,
+        8822680,
+        203610420
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52118537,
+        51870634,
+        227230690,
+        5038627,
+        4936344,
+        8555434
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52118537,
+        248780523,
+        5038627,
+        51870634,
+        4936344,
+        91184122,
+        30601989,
+        2782776,
+        38497711,
+        222002282,
+        8555434,
+        231802262,
+        52132833,
+        119302203,
+        233210339,
+        234763107,
+        7838719,
+        222141794,
+        3718988,
+        249172784
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.405356800067239
+  },
+  "reason_example": {
+    "query_id": "litsearch_063",
+    "query": "What approaches have been used to address the limitations of the beam search method in neural machine translation systems in terms of considering the full target context?",
+    "top_results": [
+      {
+        "corpusid": 52118537,
+        "score": 0.9687702655792236,
+        "reason": "bm25=0.973; dense=0.966; sub_bm25=1.000; sub_dense=0.939"
+      },
+      {
+        "corpusid": 248780523,
+        "score": 0.9271275997161865,
+        "reason": "bm25=0.818; dense=1.000; sub_bm25=0.679; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5038627,
+        "score": 0.9242769479751587,
+        "reason": "bm25=0.978; dense=0.889; sub_bm25=0.966; sub_dense=0.935"
+      },
+      {
+        "corpusid": 51870634,
+        "score": 0.9200527667999268,
+        "reason": "bm25=1.000; dense=0.867; sub_bm25=0.850; sub_dense=0.868"
+      },
+      {
+        "corpusid": 4936344,
+        "score": 0.8953219652175903,
+        "reason": "bm25=0.930; dense=0.872; sub_bm25=0.756; sub_dense=0.894"
+      }
+    ]
+  }
+}

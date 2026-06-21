@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_474",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_474",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_474",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_474",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 671,
+      "latency_s": 2.4737427999498323
+    },
+    {
+      "query_id": "litsearch_474",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 223,
+      "latency_s": 1.7609254999551922
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_474",
+    "gold": [
+      254877175
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "deep learning mathematical reasoning survey",
+      "deep learning math reasoning review",
+      "neural network mathematical reasoning survey"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        243865348,
+        26889702,
+        1412569,
+        53222920,
+        6124685,
+        30908728,
+        6414073,
+        15769193,
+        6723570,
+        9862431,
+        2136464,
+        5720899,
+        12405045,
+        16041559,
+        2338256,
+        9416280,
+        825928,
+        16285911,
+        6395440,
+        9246755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254877175,
+        252595921,
+        236478211,
+        248780430,
+        202888819,
+        1690927,
+        254221198,
+        243865253,
+        259089125,
+        233289738,
+        252410658,
+        256461385,
+        252819143,
+        257912616,
+        259376527,
+        52011884,
+        7067122,
+        44152919,
+        196171855,
+        252819124
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877175,
+        2808403,
+        208547770,
+        237372712,
+        248780449,
+        248779953,
+        252410658,
+        51678464,
+        68221207,
+        5776935,
+        85504763,
+        5763832,
+        214693392,
+        51999252,
+        220044873,
+        256868426,
+        236460003,
+        20038688,
+        209960830,
+        252715683
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254877175
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877175,
+        252410658,
+        259089125,
+        85504763,
+        252595921,
+        220044873,
+        2808403,
+        252819124,
+        253237047,
+        243865253,
+        202888819,
+        212956516,
+        248780449,
+        226281876,
+        5763832,
+        52011884,
+        263831268,
+        248779953,
+        261076496,
+        13757156
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.166606799932197
+  },
+  "reason_example": {
+    "query_id": "litsearch_474",
+    "query": "Which paper is the first to comprehensively review the progress of deep learning in mathematical reasoning?",
+    "top_results": [
+      {
+        "corpusid": 254877175,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252410658,
+        "score": 0.7524067163467407,
+        "reason": "bm25=0.754; dense=0.751; sub_bm25=0.729; sub_dense=0.759"
+      },
+      {
+        "corpusid": 259089125,
+        "score": 0.7213507890701294,
+        "reason": "bm25=0.757; dense=0.697; sub_bm25=0.922; sub_dense=0.792"
+      },
+      {
+        "corpusid": 85504763,
+        "score": 0.718224287033081,
+        "reason": "bm25=0.685; dense=0.740; sub_bm25=0.646; sub_dense=0.961"
+      },
+      {
+        "corpusid": 252595921,
+        "score": 0.7150535583496094,
+        "reason": "bm25=0.824; dense=0.643; sub_bm25=0.637; sub_dense=0.797"
+      }
+    ]
+  }
+}

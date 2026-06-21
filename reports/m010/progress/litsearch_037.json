@@ -1,0 +1,224 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_037",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_037",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_037",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_037",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1428,
+      "latency_s": 8.836164799984545
+    },
+    {
+      "query_id": "litsearch_037",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 268,
+      "latency_s": 2.08444430003874
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_037",
+    "gold": [
+      259376639
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "clickbait spoiling methods",
+      "counteracting clickbait competitions",
+      "revealing key information upfront clickbait"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763288,
+        5994778,
+        17181515,
+        13309080,
+        5231912,
+        13509553,
+        6390419,
+        5070505,
+        1136032,
+        4948322,
+        21703865,
+        153312318,
+        254854405,
+        235425,
+        2649448,
+        226283737,
+        15684328,
+        33112883,
+        258463948,
+        13470418
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259376844,
+        259376889,
+        247593812,
+        259376736,
+        259376688,
+        259376471,
+        259376900,
+        259376489,
+        259376639,
+        11676263,
+        52013710,
+        17181515,
+        259376841,
+        246863402,
+        9607040,
+        3292002,
+        251402038,
+        1118457,
+        1989432,
+        44077201
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259376639,
+        247593812,
+        259376841,
+        259376736,
+        259376889,
+        259376844,
+        259376872,
+        259376900,
+        259376471,
+        52013710,
+        259376688,
+        259376895,
+        251402038,
+        259376811,
+        27322753,
+        259376514,
+        259376489,
+        259376567,
+        259376685,
+        208325499
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259376639,
+        247593812,
+        259376844,
+        259376889,
+        259376841,
+        259376736,
+        259376688,
+        259376900,
+        259376471,
+        259376489,
+        251402038
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247593812,
+        259376844,
+        259376889,
+        259376736,
+        259376639,
+        259376841,
+        259376688,
+        259376471,
+        259376900,
+        52013710,
+        259376489,
+        259376895,
+        251402038,
+        259376872,
+        27322753,
+        259376514,
+        259376811,
+        259376685,
+        259376567,
+        259376732
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.517169800004922
+  },
+  "reason_example": {
+    "query_id": "litsearch_037",
+    "query": "Has there been any recent work or competitions focused on the development of methods to counteract clickbait through spoiling, such as revealing key information upfront?",
+    "top_results": [
+      {
+        "corpusid": 247593812,
+        "score": 0.9302719831466675,
+        "reason": "bm25=0.878; dense=0.965; sub_bm25=0.984; sub_dense=0.988"
+      },
+      {
+        "corpusid": 259376844,
+        "score": 0.9301021099090576,
+        "reason": "bm25=1.000; dense=0.884; sub_bm25=1.000; sub_dense=0.948"
+      },
+      {
+        "corpusid": 259376889,
+        "score": 0.9144830703735352,
+        "reason": "bm25=0.925; dense=0.908; sub_bm25=0.951; sub_dense=0.923"
+      },
+      {
+        "corpusid": 259376736,
+        "score": 0.9073053598403931,
+        "reason": "bm25=0.854; dense=0.943; sub_bm25=0.981; sub_dense=0.976"
+      },
+      {
+        "corpusid": 259376639,
+        "score": 0.8932941555976868,
+        "reason": "bm25=0.733; dense=1.000; sub_bm25=0.981; sub_dense=1.000"
+      }
+    ]
+  }
+}

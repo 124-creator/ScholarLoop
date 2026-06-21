@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_300",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_300",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_300",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_300",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1637,
+      "latency_s": 10.123376599978656
+    },
+    {
+      "query_id": "litsearch_300",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 2.4916413999162614
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_300",
+    "gold": [
+      247748640
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "conversational agents external knowledge integration emotional support",
+      "tactics emotional support conversational agents",
+      "recent advances dialogue systems emotional support"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        16412467,
+        6602375,
+        236460257,
+        252624631,
+        252519245,
+        1412569,
+        263609552,
+        14099827,
+        18116989,
+        763569,
+        5162676,
+        13907064,
+        249151885,
+        258832725,
+        195064031,
+        7099494,
+        198357469,
+        6972449,
+        52281610,
+        15597954
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52281610,
+        249210059,
+        17958293,
+        220445475,
+        8265053,
+        237558746,
+        252519245,
+        52891534,
+        258740721,
+        247547046,
+        226283975,
+        44161874,
+        252819095,
+        174801285,
+        11788643,
+        258832725,
+        21691751,
+        257985681,
+        252780132,
+        236134091
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235294326,
+        247748640,
+        258740721,
+        195069365,
+        52070059,
+        10674151,
+        241583570,
+        252519245,
+        226283651,
+        15963241,
+        220445475,
+        26412971,
+        56657857,
+        16405901,
+        46458006,
+        12431432,
+        1828228,
+        6992160,
+        226239363,
+        252780132
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258740721,
+        52281610,
+        249210059,
+        237558746,
+        252519245,
+        258832725,
+        250390610,
+        220445475,
+        17958293,
+        46458006,
+        16412467,
+        18434623
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        220445475,
+        258740721,
+        249210059,
+        252519245,
+        17958293,
+        247748640,
+        52281610,
+        26412971,
+        252780132,
+        241583570,
+        237558746,
+        11788643,
+        46458006,
+        252819095,
+        15963241,
+        226283651,
+        541020,
+        2125746,
+        226283975,
+        235294326
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.27318869996816
+  },
+  "reason_example": {
+    "query_id": "litsearch_300",
+    "query": "What are the latest developments in conversational agents that integrate external knowledge sources and employ diverse tactics to offer emotional support during interactions?",
+    "top_results": [
+      {
+        "corpusid": 220445475,
+        "score": 0.8954050540924072,
+        "reason": "bm25=0.914; dense=0.883; sub_bm25=1.000; sub_dense=0.793"
+      },
+      {
+        "corpusid": 258740721,
+        "score": 0.8917773962020874,
+        "reason": "bm25=0.832; dense=0.931; sub_bm25=0.905; sub_dense=0.954"
+      },
+      {
+        "corpusid": 249210059,
+        "score": 0.8828815221786499,
+        "reason": "bm25=0.957; dense=0.834; sub_bm25=0.736; sub_dense=0.808"
+      },
+      {
+        "corpusid": 252519245,
+        "score": 0.8722429275512695,
+        "reason": "bm25=0.849; dense=0.888; sub_bm25=0.683; sub_dense=0.873"
+      },
+      {
+        "corpusid": 17958293,
+        "score": 0.859197735786438,
+        "reason": "bm25=0.926; dense=0.815; sub_bm25=0.778; sub_dense=0.849"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_160",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_160",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_160",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_160",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1262,
+      "latency_s": 6.844898300012574
+    },
+    {
+      "query_id": "litsearch_160",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 356,
+      "latency_s": 2.8383379000006244
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_160",
+    "gold": [
+      233209848
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "syntactic configuration aspect-level sentiment analysis RoBERTa",
+      "syntactic structure aspect-based sentiment analysis pretrained model",
+      "dependency parsing aspect sentiment analysis RoBERTa"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5899668,
+        225063191,
+        18153548,
+        15527245,
+        27539999,
+        12968637,
+        15044815,
+        202782487,
+        252847487,
+        1560072,
+        220647035,
+        7440991,
+        20864422,
+        233219418,
+        233365289,
+        2052791,
+        256616034,
+        251403840,
+        12501197,
+        247656607
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233209848,
+        52011568,
+        220647035,
+        18993998,
+        15527245,
+        202782487,
+        18153548,
+        227904903,
+        250391015,
+        220045413,
+        12501197,
+        6982417,
+        227905696,
+        248227547,
+        227231695,
+        256461316,
+        52013036,
+        6526153,
+        189928395,
+        14140173
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233209848,
+        16706682,
+        5472627,
+        15527245,
+        2280364,
+        233189601,
+        251403958,
+        61955135,
+        12501197,
+        221761314,
+        14982427,
+        238857158,
+        252819053,
+        204848225,
+        6786457,
+        14817153,
+        10468862,
+        1249398,
+        14781593,
+        15268705
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233209848,
+        204848225,
+        16706682,
+        15527245,
+        18993998,
+        52011568,
+        225063191,
+        202782487,
+        227904903,
+        12501197,
+        18153548,
+        220647035
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        233209848,
+        15527245,
+        16706682,
+        52011568,
+        12501197,
+        18153548,
+        204848225,
+        15268705,
+        251403958,
+        18993998,
+        6786457,
+        202773689,
+        248227547,
+        14975350,
+        250390474,
+        221761314,
+        252819053,
+        243865646,
+        261341917,
+        235367681
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.356687000021338
+  },
+  "reason_example": {
+    "query_id": "litsearch_160",
+    "query": "Could you recommend research that examines how syntactic configurations affect aspect-level sentiment analysis when employing a pretrained model such as RoBERTa?",
+    "top_results": [
+      {
+        "corpusid": 233209848,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15527245,
+        "score": 0.83521568775177,
+        "reason": "bm25=0.800; dense=0.859; sub_bm25=0.936; sub_dense=0.992"
+      },
+      {
+        "corpusid": 16706682,
+        "score": 0.8135722875595093,
+        "reason": "bm25=0.702; dense=0.888; sub_bm25=0.893; sub_dense=0.998"
+      },
+      {
+        "corpusid": 52011568,
+        "score": 0.7928268313407898,
+        "reason": "bm25=0.864; dense=0.746; sub_bm25=0.787; sub_dense=0.848"
+      },
+      {
+        "corpusid": 12501197,
+        "score": 0.7875153422355652,
+        "reason": "bm25=0.727; dense=0.828; sub_bm25=0.809; sub_dense=0.877"
+      }
+    ]
+  }
+}

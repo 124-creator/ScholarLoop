@@ -1,0 +1,506 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_011",
+  "query": "Can you point me to studies discussing methods for evaluating text generation models on various dimensions? I'm particularly interested in models like T5 and FLAN-T5, and how to assess their performance on summary-level and turn-level tasks.",
+  "criteria": [
+    "evaluation methods for text generation models T5 FLAN-T5",
+    "summary-level evaluation metrics for T5",
+    "turn-level evaluation of FLAN-T5 performance"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_011",
+      "corpusid": 196180216,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Learning to Select, Track, and Generate for Data-to-Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            56
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We propose a data-to-text generation model with two modules, one for tracking and the other for text generation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            112
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We propose a data-to-text generation model with two modules, one for tracking and the other for text generation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            112
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Our tracking module selects and keeps track of salient information and memorizes which record has been mentioned. Our generation module generates a summary conditioned on the state of tracking module.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            113,
+            313
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "data-to-text generation model",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            13,
+            42
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "In addition, we also explore the effectiveness of the writer information for generation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            489,
+            577
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Incorporating writer information further improves the performance, contributing to content planning and surface realization.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            706,
+            830
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Our generation module generates a summary conditioned on the state of tracking module.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            227,
+            313
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2048,
+        "elapsed_s": 14.716851900098845,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_011_196180216.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_011",
+      "corpusid": 253098066,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "On the Limitations of Reference-Free Evaluations of Generated Text",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            66
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we recommend that reference-free metrics should be used as diagnostic tools for analyzing and understanding model behavior instead of measures of how well models perform a task, in which the goal is to achieve as high of a score as possible.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            947,
+            1188
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we demonstrate that these reference-free metrics are inherently biased and limited in their ability to evaluate generated text",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            294,
+            420
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We show how reference-free metrics are equivalent to using one generation model to evaluate another",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            536,
+            635
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "without the aid of a human-written reference text, which can be time consuming and expensive to collect or entirely unavailable in online applications.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            119,
+            270
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "we demonstrate that these reference-free metrics are inherently biased and limited in their ability to evaluate generated text, and we argue that they should not be used to measure progress on tasks like machine translation or summarization.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            294,
+            535
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "the metrics can be optimized at test time to find the approximate best-possible output, (2) they are inherently biased toward models which are more similar to their own, and (3) they can be biased against higher-quality outputs, including those written by humans.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            672,
+            935
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "There is significant interest in developing evaluation metrics which accurately estimate the quality of generated text without the aid of a human-written reference text, which can be time consuming and expensive to collect or entirely unavailable in online applications.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            270
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2202,
+        "elapsed_s": 13.597766899969429,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_011_253098066.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_011",
+      "corpusid": 252917728,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Model Criticism for Long-Form Text Generation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            45
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Language models have demonstrated the ability to generate highly fluent text; however, it remains unclear whether their output retains coherent high-level structure (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            168
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "we propose to apply a statistical tool, model criticism in latent space, to evaluate the high-level structure of the generated text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            198,
+            330
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Model criticism compares the distributions between real and generated data in a latent space obtained according to an assumptive generative process.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            331,
+            479
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We perform experiments on three representative aspects of highlevel discourse-coherence, coreference, and topicality",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            568,
+            684
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "transformer-based language models are able to capture topical structures but have a harder time maintaining structural coherence or modeling coreference.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            699,
+            852
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Language models have demonstrated the ability to generate highly fluent text; however, it remains unclear whether their output retains coherent high-level structure (e.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            168
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Language models have demonstrated the ability to generate highly fluent text; however, it remains unclear whether their output retains coherent high-level structure (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            168
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1836,
+        "elapsed_s": 11.390562999993563,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_011_252917728.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 196180216,
+      "title": "Learning to Select, Track, and Generate for Data-to-Text",
+      "cells": [
+        {
+          "criterion": "evaluation methods for text generation models T5 FLAN-T5",
+          "addresses": true,
+          "snippet": "We propose a data-to-text generation model with two modules, one for tracking and the other for text generation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            112
+          ]
+        },
+        {
+          "criterion": "summary-level evaluation metrics for T5",
+          "addresses": true,
+          "snippet": "Experimental results show that our model outperforms existing models in all evaluation metrics even without writer information.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            578,
+            705
+          ]
+        },
+        {
+          "criterion": "turn-level evaluation of FLAN-T5 performance",
+          "addresses": true,
+          "snippet": "Experimental results show that our model outperforms existing models in all evaluation metrics even without writer information.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            578,
+            705
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 253098066,
+      "title": "On the Limitations of Reference-Free Evaluations of Generated Text",
+      "cells": [
+        {
+          "criterion": "evaluation methods for text generation models T5 FLAN-T5",
+          "addresses": true,
+          "snippet": "There is significant interest in developing evaluation metrics which accurately estimate the quality of generated text without the aid of a human-written reference text, which can be time consuming and expensive to collect or entirely unavailable in online applications.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            270
+          ]
+        },
+        {
+          "criterion": "summary-level evaluation metrics for T5",
+          "addresses": true,
+          "snippet": "There is significant interest in developing evaluation metrics which accurately estimate the quality of generated text without the aid of a human-written reference text, which can be time consuming and expensive to collect or entirely unavailable in online applications.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            270
+          ]
+        },
+        {
+          "criterion": "turn-level evaluation of FLAN-T5 performance",
+          "addresses": true,
+          "snippet": "There is significant interest in developing evaluation metrics which accurately estimate the quality of generated text without the aid of a human-written reference text, which can be time consuming and expensive to collect or entirely unavailable in online applications.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            270
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 252917728,
+      "title": "Model Criticism for Long-Form Text Generation",
+      "cells": [
+        {
+          "criterion": "evaluation methods for text generation models T5 FLAN-T5",
+          "addresses": true,
+          "snippet": "Language models have demonstrated the ability to generate highly fluent text; however, it remains unclear whether their output retains coherent high-level structure (e.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            168
+          ]
+        },
+        {
+          "criterion": "summary-level evaluation metrics for T5",
+          "addresses": true,
+          "snippet": "We hypothesize that researchers have focused on local fluency partly because it is easy to automatically evaluate through metrics such as perplexity and n-gram matching.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1746,
+            1915
+          ]
+        },
+        {
+          "criterion": "turn-level evaluation of FLAN-T5 performance",
+          "addresses": true,
+          "snippet": "This work takes a step toward the automatic evaluation of the high-level structure of the generated text by applying a tool from statistics, model criticism in latent space (Dey et al.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2071,
+            2255
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      196180216,
+      252917728,
+      253098066
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

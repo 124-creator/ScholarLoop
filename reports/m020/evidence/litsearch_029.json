@@ -1,0 +1,515 @@
+{
+  "schema_version": "m020.query_evidence.v1",
+  "query_id": "litsearch_029",
+  "query": "Could you point me to studies that discuss the development of open information extraction systems with lexical and syntactic constraints to ensure the extraction is coherent and informative?",
+  "criteria": [
+    "open information extraction lexical syntactic constraints coherent extraction",
+    "development open information extraction systems lexical constraints informative",
+    "syntactic constraints open IE coherence informativeness"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 10318045,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Identifying Relations for Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            53
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "we introduce two simple syntactic and lexical constraints on binary relations expressed by verbs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            288,
+            385
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions. To overcome these problems, we introduce two simple syntactic and lexical constraints on binary relations expressed by verbs.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            385
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "We implemented the constraints in the REVERB Open IE system",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            386,
+            445
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "massive corpora",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            75,
+            90
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            259
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The paper concludes with a detailed analysis of REVERB's errors, suggesting directions for future work.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            694,
+            797
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "This paper shows that the output of state-ofthe-art Open IE systems is rife with uninformative and incoherent extractions.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            137,
+            259
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 2020,
+        "elapsed_s": 12.419000699999742,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_10318045.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 49215220,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "A Survey on Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            39
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We present the major challenges that such systems face, show the evolution of the suggested approaches over time and depict the specific issues they address.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            291
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We present the major challenges that such systems face, show the evolution of the suggested approaches over time and depict the specific issues they address.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            134,
+            291
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1064,
+        "elapsed_s": 5.169807799975388,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_49215220.json",
+        "llm_error": null
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_029",
+      "corpusid": 52811129,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            65
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi"
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "A promising method is that explored by Mishra et al.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            5436,
+            5488
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Among seven compared extractors, we find the MinIE system to perform best.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            611,
+            685
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "We produce our annotation guidelines specifying what is correct to extract and what is not.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            306,
+            397
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1023,
+        "elapsed_s": 4.345166199957021,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_029_52811129.json",
+        "llm_error": null
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 10318045,
+      "title": "Identifying Relations for Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "Open Information Extraction (IE) is the task of extracting assertions from massive corpora without requiring a pre-specified vocabulary.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            136
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 49215220,
+      "title": "A Survey on Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "We provide a detailed overview of the various approaches that were proposed to date to solve the task of Open Information Extraction.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            133
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 52811129,
+      "title": "WiRe57 : A Fine-Grained Benchmark for Open Information Extraction",
+      "cells": [
+        {
+          "criterion": "open information extraction lexical syntactic constraints coherent extraction",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "development open information extraction systems lexical constraints informative",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        },
+        {
+          "criterion": "syntactic constraints open IE coherence informativeness",
+          "addresses": true,
+          "snippet": "We build a reference for the task of Open Information Extraction, on five documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            84
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      10318045,
+      49215220,
+      52811129
+    ],
+    "edges": [
+      {
+        "source": 49215220,
+        "target": 10318045
+      },
+      {
+        "source": 52811129,
+        "target": 10318045
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

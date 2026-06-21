@@ -1,0 +1,21 @@
+{
+  "schema_version": "m030.demo_manifest.v1",
+  "mode": "offline_alias_to_grounded_m020_docs",
+  "demos": [
+    {
+      "demo_id": "ai_research_litsearch_000",
+      "query_id": "litsearch_000",
+      "label": "AI 科研演示：大语言模型压缩 / 知识蒸馏",
+      "source_evidence": "reports/m020/evidence/litsearch_000.json",
+      "no_new_fields": true
+    },
+    {
+      "demo_id": "ai_research_litsearch_002",
+      "query_id": "litsearch_002",
+      "label": "AI 科研演示：幻觉检测 / 神经生成",
+      "source_evidence": "reports/m020/evidence/litsearch_002.json",
+      "no_new_fields": true
+    }
+  ],
+  "note": "Carbon-price demo is not fabricated offline; current cross-domain demo uses existing grounded AI research LitSearch evidence."
+}

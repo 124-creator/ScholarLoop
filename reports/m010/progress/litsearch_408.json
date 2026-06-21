@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_408",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_408",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_408",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_408",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 960,
+      "latency_s": 6.291188200004399
+    },
+    {
+      "query_id": "litsearch_408",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 377,
+      "latency_s": 3.530854400014505
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_408",
+    "gold": [
+      258685798
+    ],
+    "pool_size": 288,
+    "decomposition": [
+      "pretrain language model Dark Web onion data",
+      "language model training Tor hidden services",
+      "crawl .onion domains for language model"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13259257,
+        14421213,
+        253762032,
+        17974121,
+        7174383,
+        2196577,
+        15036406,
+        207968532,
+        7847158,
+        258685798,
+        17262840,
+        6175613,
+        7597872,
+        1614453,
+        2605710,
+        5436060,
+        13639078,
+        53093808,
+        2020038,
+        51985896
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        237453677,
+        14640650,
+        18322326,
+        235417501,
+        256194594,
+        8412311,
+        67855467,
+        8625425,
+        250164086,
+        216080642,
+        249538336,
+        220046485,
+        52010325,
+        150847,
+        195064026,
+        13495455,
+        258841031,
+        247447149,
+        15114924,
+        2248353
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258685798,
+        248177737,
+        27584524,
+        49741579,
+        207853304,
+        249059926,
+        252624421,
+        7180520,
+        12485783,
+        15330994,
+        231925122,
+        253080321,
+        15443212,
+        254293626,
+        247450572,
+        259376645,
+        18787304,
+        257205715,
+        3108566,
+        259376729
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258685798
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258685798,
+        15443212,
+        207853304,
+        15330994,
+        248177737,
+        258841031,
+        15110123,
+        7180520,
+        12485783,
+        2750870,
+        250164279,
+        13420142,
+        252624421,
+        3108566,
+        222377812,
+        247475929,
+        256389395,
+        252624648,
+        216641610,
+        253080321
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.946266600047238
+  },
+  "reason_example": {
+    "query_id": "litsearch_408",
+    "query": "Is there any paper that uses data collected from the Dark Web, specifically onion domains, to pretrain a language model?",
+    "top_results": [
+      {
+        "corpusid": 258685798,
+        "score": 0.8440282940864563,
+        "reason": "bm25=0.610; dense=1.000; sub_bm25=0.800; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15443212,
+        "score": 0.7622966766357422,
+        "reason": "bm25=0.774; dense=0.755; sub_bm25=0.394; sub_dense=0.831"
+      },
+      {
+        "corpusid": 207853304,
+        "score": 0.7597697377204895,
+        "reason": "bm25=0.671; dense=0.819; sub_bm25=0.448; sub_dense=0.837"
+      },
+      {
+        "corpusid": 15330994,
+        "score": 0.7530505657196045,
+        "reason": "bm25=0.724; dense=0.772; sub_bm25=0.349; sub_dense=0.967"
+      },
+      {
+        "corpusid": 248177737,
+        "score": 0.7495988607406616,
+        "reason": "bm25=0.617; dense=0.838; sub_bm25=1.000; sub_dense=0.880"
+      }
+    ]
+  }
+}

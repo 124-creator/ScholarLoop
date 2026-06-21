@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_497",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_497",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_497",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_497",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 770,
+      "latency_s": 3.1402485999278724
+    },
+    {
+      "query_id": "litsearch_497",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 2.0275642999913543
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_497",
+    "gold": [
+      254877347
+    ],
+    "pool_size": 234,
+    "decomposition": [
+      "low-resource dialogue summarization pre-trained model",
+      "pre-trained model for dialogue summarization few-shot",
+      "dialogue summarization low-resource pretrained"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18792136,
+        259376568,
+        226283748,
+        184487659,
+        256827874,
+        247619273,
+        261341576,
+        258463957,
+        222291139,
+        207916021,
+        245838284,
+        227230468,
+        248780491,
+        241583467,
+        259076439,
+        244464099,
+        259376735,
+        236460317,
+        258486952,
+        229923565
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254877347,
+        237453677,
+        203586495,
+        248780491,
+        241583467,
+        226283748,
+        227230468,
+        258463957,
+        256846498,
+        196184482,
+        247596810,
+        247519076,
+        259376568,
+        241583667,
+        236460317,
+        248085462,
+        257921579,
+        235658519,
+        235253839,
+        254877060
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877347,
+        235196029,
+        237453677,
+        256461027,
+        250627596,
+        236460120,
+        252818999,
+        235253875,
+        241583467,
+        252819508,
+        243865577,
+        246822626,
+        245218843,
+        255125461,
+        263609622,
+        221749138,
+        224705337,
+        252763332,
+        259833839,
+        252847535
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254877347,
+        237453677
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254877347,
+        237453677,
+        235196029,
+        241583467,
+        250627596,
+        256461027,
+        236460120,
+        248780491,
+        236460317,
+        263609622,
+        254877060,
+        252847535,
+        255125461,
+        241583667,
+        211092198,
+        221865540,
+        252763332,
+        243865577,
+        259833839,
+        252818999
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.022669699974358
+  },
+  "reason_example": {
+    "query_id": "litsearch_497",
+    "query": "Which pre-trained model is specifically designed for low-resource dialogue summarization tasks?",
+    "top_results": [
+      {
+        "corpusid": 254877347,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237453677,
+        "score": 0.9585490822792053,
+        "reason": "bm25=0.986; dense=0.940; sub_bm25=1.000; sub_dense=0.973"
+      },
+      {
+        "corpusid": 235196029,
+        "score": 0.8741897344589233,
+        "reason": "bm25=0.759; dense=0.951; sub_bm25=0.801; sub_dense=0.954"
+      },
+      {
+        "corpusid": 241583467,
+        "score": 0.8599727153778076,
+        "reason": "bm25=0.868; dense=0.854; sub_bm25=0.657; sub_dense=0.903"
+      },
+      {
+        "corpusid": 250627596,
+        "score": 0.8461201190948486,
+        "reason": "bm25=0.756; dense=0.906; sub_bm25=0.684; sub_dense=0.899"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_014",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_014",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_014",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_014",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 879,
+      "latency_s": 2.4938138000434265
+    },
+    {
+      "query_id": "litsearch_014",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 256,
+      "latency_s": 1.862074900069274
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_014",
+    "gold": [
+      250390607
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "patronizing language detection vulnerable communities",
+      "condescending language recognition marginalized groups",
+      "detecting condescending speech vulnerable populations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        250390607,
+        679264,
+        2260284,
+        226283830,
+        5162676,
+        18914615,
+        5472320,
+        18233668,
+        186206487,
+        250391042,
+        6665269,
+        236486294,
+        252819131,
+        1394829,
+        251402238,
+        256461173,
+        419762,
+        1572825,
+        20382420,
+        250141213
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390607,
+        226976077,
+        250390750,
+        250391042,
+        250390796,
+        250390589,
+        250391037,
+        250390465,
+        247778896,
+        250391014,
+        250390602,
+        250141213,
+        250390735,
+        250390495,
+        256460914,
+        248218725,
+        247318785,
+        250390490,
+        250390699,
+        250390655
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390607,
+        226976077,
+        250141213,
+        256460914,
+        247596779,
+        247362672,
+        250390735,
+        250390465,
+        174799974,
+        244117167,
+        252819068,
+        252846537,
+        244018855,
+        237945268,
+        235683199,
+        250391037,
+        244164296,
+        252619979,
+        201683127,
+        250390796
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250390607,
+        226976077,
+        250141213,
+        250391042,
+        250390796,
+        250390465,
+        250391037,
+        250390735,
+        250390750,
+        256460914,
+        250390495,
+        247778896
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390607,
+        226976077,
+        250141213,
+        250390465,
+        256460914,
+        250390796,
+        250391037,
+        250391042,
+        250390735,
+        250390750,
+        247362672,
+        250390589,
+        247318785,
+        250390495,
+        250390602,
+        250391014,
+        250390722,
+        247778896,
+        250390984,
+        250390830
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.3827611999586225
+  },
+  "reason_example": {
+    "query_id": "litsearch_014",
+    "query": "Can you point to studies or tasks focused on detecting patronizing and condescending language, particularly in contexts involving vulnerable communities?",
+    "top_results": [
+      {
+        "corpusid": 250390607,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226976077,
+        "score": 0.947062075138092,
+        "reason": "bm25=0.934; dense=0.956; sub_bm25=1.000; sub_dense=0.965"
+      },
+      {
+        "corpusid": 250141213,
+        "score": 0.8099074363708496,
+        "reason": "bm25=0.733; dense=0.861; sub_bm25=0.676; sub_dense=0.955"
+      },
+      {
+        "corpusid": 250390465,
+        "score": 0.7572453618049622,
+        "reason": "bm25=0.783; dense=0.740; sub_bm25=0.824; sub_dense=0.928"
+      },
+      {
+        "corpusid": 256460914,
+        "score": 0.7492172718048096,
+        "reason": "bm25=0.688; dense=0.790; sub_bm25=0.986; sub_dense=1.000"
+      }
+    ]
+  }
+}

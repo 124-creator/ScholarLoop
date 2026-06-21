@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_417",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_417",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_417",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_417",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1247,
+      "latency_s": 7.935685699922033
+    },
+    {
+      "query_id": "litsearch_417",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 339,
+      "latency_s": 3.200581399956718
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_417",
+    "gold": [
+      252280753
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "balance representativeness diversity few-shot sample selection",
+      "representative diverse sample selection few-shot learning",
+      "trade-off representativeness diversity data selection few-shot"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9595259,
+        247451194,
+        234103448,
+        260421343,
+        14293205,
+        203688568,
+        14029756,
+        43705894,
+        6543362,
+        16852232,
+        252186404,
+        256461438,
+        244920860,
+        248780336,
+        10062671,
+        3210023,
+        2115850,
+        18454652,
+        221761488,
+        222208845
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253475828,
+        237091103,
+        238260199,
+        253202023,
+        53082972,
+        235755110,
+        238856821,
+        252819363,
+        5744634,
+        247619108,
+        252280753,
+        246823215,
+        251643403,
+        257280083,
+        252907242,
+        67856640,
+        238408406,
+        246210223,
+        261431375,
+        71145737
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        246679938,
+        71145737,
+        237091103,
+        252280753,
+        253475828,
+        49868626,
+        219969405,
+        259096160,
+        235755110,
+        202888950,
+        215238851,
+        249848252,
+        247158518,
+        238408300,
+        204734348,
+        251223486,
+        252683631,
+        238408406,
+        202230734,
+        235097672
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235755110,
+        237091103,
+        252280753,
+        251643403
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253475828,
+        237091103,
+        252280753,
+        235755110,
+        71145737,
+        238408406,
+        219969405,
+        251643403,
+        202888950,
+        215238851,
+        238408300,
+        257280083,
+        259096160,
+        253202023,
+        49868626,
+        53082972,
+        211252411,
+        238856821,
+        261431375,
+        29162291
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.262879599933513
+  },
+  "reason_example": {
+    "query_id": "litsearch_417",
+    "query": "Is there any works that explores how to achieve balance between representativeness and diversity in chosen samples for few-shot data selection?",
+    "top_results": [
+      {
+        "corpusid": 253475828,
+        "score": 0.9676007032394409,
+        "reason": "bm25=1.000; dense=0.946; sub_bm25=0.647; sub_dense=0.987"
+      },
+      {
+        "corpusid": 237091103,
+        "score": 0.9581650495529175,
+        "reason": "bm25=0.944; dense=0.967; sub_bm25=0.864; sub_dense=0.995"
+      },
+      {
+        "corpusid": 252280753,
+        "score": 0.9171984791755676,
+        "reason": "bm25=0.868; dense=0.950; sub_bm25=1.000; sub_dense=0.906"
+      },
+      {
+        "corpusid": 235755110,
+        "score": 0.9155451059341431,
+        "reason": "bm25=0.893; dense=0.930; sub_bm25=1.000; sub_dense=0.943"
+      },
+      {
+        "corpusid": 71145737,
+        "score": 0.9140821695327759,
+        "reason": "bm25=0.821; dense=0.976; sub_bm25=0.656; sub_dense=1.000"
+      }
+    ]
+  }
+}

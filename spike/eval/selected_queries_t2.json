@@ -1,0 +1,118 @@
+[
+  {
+    "query_id": "litsearch_096",
+    "query_set": "inline_acl",
+    "query": "Which studies should I look into that have explored the task of factuality in abstractive summarization and proposed ways to detect hallucinated content in generated text?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      218487034,
+      226254579,
+      196183567,
+      233407441,
+      204976362
+    ]
+  },
+  {
+    "query_id": "litsearch_018",
+    "query_set": "inline_acl",
+    "query": "Can you recommend some literature that focuses on dependency-based models for relation extraction, especially those that utilize dependency parsing to capture non-local syntactic relations?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      5403702,
+      1774259,
+      2476229,
+      52115592
+    ]
+  },
+  {
+    "query_id": "litsearch_023",
+    "query_set": "inline_acl",
+    "query": "Can you suggest literature on enhanced semantic parsing methods that focus on generating high-quality meaning representations and utilize knowledge-constrained decoding under specific grammar rules?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      16911296,
+      1675452,
+      12718048
+    ]
+  },
+  {
+    "query_id": "litsearch_002",
+    "query_set": "inline_acl",
+    "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      226254579,
+      204976362
+    ]
+  },
+  {
+    "query_id": "litsearch_113",
+    "query_set": "inline_nonacl",
+    "query": "Could you direct me to studies investigating the enhancement of bi-encoder text matching performance through the application of knowledge distillation methods?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      244954670,
+      256461055
+    ]
+  },
+  {
+    "query_id": "litsearch_156",
+    "query_set": "inline_nonacl",
+    "query": "Could you recommend research that examines how an annotator's individual attributes, like their gender, ethnicity, and political views, influence their judgment of content deemed offensive?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      238634705,
+      244117167
+    ]
+  },
+  {
+    "query_id": "litsearch_257",
+    "query_set": "inline_nonacl",
+    "query": "Have any new metrics been developed to assess the factual alignment of machine-generated summaries with their original source texts?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      244345901,
+      233219059
+    ]
+  },
+  {
+    "query_id": "litsearch_328",
+    "query_set": "inline_nonacl",
+    "query": "What research should I consult regarding the application of continuous vector prompts in language models instead of the conventional discrete token-level prompts?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      233231453,
+      248780177
+    ]
+  },
+  {
+    "query_id": "litsearch_334",
+    "query_set": "inline_nonacl",
+    "query": "What techniques exist to enhance the few-shot fine-tuning performance in small pre-trained language models?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      229923710,
+      210838924
+    ]
+  },
+  {
+    "query_id": "litsearch_335",
+    "query_set": "inline_nonacl",
+    "query": "What techniques have been investigated to enhance multimodal sentiment analysis by fusing different modalities?",
+    "quality": 2,
+    "specificity": 0,
+    "corpusids": [
+      237372185,
+      236460184
+    ]
+  }
+]

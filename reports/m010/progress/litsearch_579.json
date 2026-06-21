@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_579",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_579",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_579",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_579",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1100,
+      "latency_s": 6.561594199971296
+    },
+    {
+      "query_id": "litsearch_579",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 398,
+      "latency_s": 4.290182899916545
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_579",
+    "gold": [
+      264147017
+    ],
+    "pool_size": 277,
+    "decomposition": [
+      "transformer width gradient descent relational reasoning proof",
+      "wide transformer relational reasoning learnability first",
+      "transformers universal approximation relational reasoning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        244305814,
+        264147017,
+        235358624,
+        1572825,
+        222291183,
+        253080708,
+        202712637,
+        236478383,
+        259370684,
+        14015791,
+        237433536,
+        253098557,
+        254877399,
+        7586460,
+        51869382,
+        259370751,
+        51882191,
+        226283796,
+        53079155,
+        235390794
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        247702013,
+        43982267,
+        257912616,
+        229923851,
+        250280065,
+        248798499,
+        235358624,
+        264147017,
+        218718982,
+        252780488,
+        259370684,
+        226283796,
+        226262281,
+        248780002,
+        202583694,
+        251647801,
+        202540362,
+        221879025,
+        211678036,
+        221995630
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264147017,
+        257912616,
+        252815657,
+        259298658,
+        257280093,
+        202540355,
+        257365083,
+        234778324,
+        259375820,
+        263620583,
+        257038220,
+        226281941,
+        252089779,
+        264146611,
+        264439160,
+        239009538,
+        236460291,
+        254043800,
+        252992725,
+        247958465
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264147017,
+        244305814,
+        257912616,
+        252815657,
+        259375820,
+        257365083,
+        235358624,
+        43982267,
+        254877399,
+        226283796,
+        202540362,
+        246015914
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257912616,
+        264147017,
+        252815657,
+        43982267,
+        257365083,
+        259298658,
+        259375820,
+        250280065,
+        246015914,
+        263620583,
+        235358624,
+        234778324,
+        170078913,
+        248798499,
+        215548225,
+        243865347,
+        8221720,
+        257038220,
+        259370794,
+        59553561
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.038606100017205
+  },
+  "reason_example": {
+    "query_id": "litsearch_579",
+    "query": "Which paper first proved that wide-enough transformer architectures trained with gradient methods on enough data would learn to solve relational reasoning tasks?",
+    "top_results": [
+      {
+        "corpusid": 257912616,
+        "score": 0.9454840421676636,
+        "reason": "bm25=0.926; dense=0.959; sub_bm25=1.000; sub_dense=0.958"
+      },
+      {
+        "corpusid": 264147017,
+        "score": 0.9328079223632812,
+        "reason": "bm25=0.832; dense=1.000; sub_bm25=0.872; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252815657,
+        "score": 0.8593491315841675,
+        "reason": "bm25=0.714; dense=0.956; sub_bm25=0.991; sub_dense=0.892"
+      },
+      {
+        "corpusid": 43982267,
+        "score": 0.858065128326416,
+        "reason": "bm25=0.997; dense=0.766; sub_bm25=0.843; sub_dense=0.651"
+      },
+      {
+        "corpusid": 257365083,
+        "score": 0.802114725112915,
+        "reason": "bm25=0.733; dense=0.848; sub_bm25=0.497; sub_dense=0.777"
+      }
+    ]
+  }
+}

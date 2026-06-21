@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_075",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_075",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_075",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_075",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 755,
+      "latency_s": 3.2326551999431103
+    },
+    {
+      "query_id": "litsearch_075",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 317,
+      "latency_s": 3.000651099951938
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_075",
+    "gold": [
+      173611
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "discourse parsing binarization method",
+      "non-binary subtree binarization discourse",
+      "RST tree binarization methodology"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        43108487,
+        12015221,
+        16020183,
+        2421447,
+        19653906,
+        5257325,
+        11200749,
+        13009101,
+        15000982,
+        21547774,
+        28841202,
+        221761488,
+        942378,
+        2034680,
+        1130969,
+        2069120,
+        5959493,
+        218688152,
+        1182312
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236460343,
+        259165122,
+        2530161,
+        198950473,
+        237347097,
+        5877789,
+        16732339,
+        6448087,
+        989542,
+        20290316,
+        15049973,
+        241583585,
+        1308373,
+        235097618,
+        46482966,
+        9833924,
+        11654465,
+        40394099,
+        9283125,
+        1130969
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        198979559,
+        7956913,
+        5119226,
+        6743006,
+        2507563,
+        3240806,
+        9784084,
+        1794968,
+        6001422,
+        17016748,
+        26463041,
+        2510315,
+        930523,
+        15925296,
+        235097470,
+        8574660,
+        8108072,
+        11919464,
+        3553635,
+        514191
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        18599816,
+        236460343,
+        12792759,
+        17016748,
+        15049973
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5119226,
+        15049973,
+        9833924,
+        6743006,
+        15925296,
+        6001422,
+        3240806,
+        17016748,
+        18047996,
+        198979559,
+        7956913,
+        46393371,
+        3161786,
+        18599816,
+        236460343,
+        1151494,
+        13898992,
+        90262473,
+        9784084,
+        227904792
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.97764489997644
+  },
+  "reason_example": {
+    "query_id": "litsearch_075",
+    "query": "What research could I reference to understand the methodology for binarizing non-binary subtrees in the context of discourse parsing?",
+    "top_results": [
+      {
+        "corpusid": 5119226,
+        "score": 0.8889536261558533,
+        "reason": "bm25=0.753; dense=0.979; sub_bm25=0.351; sub_dense=0.887"
+      },
+      {
+        "corpusid": 15049973,
+        "score": 0.8855628967285156,
+        "reason": "bm25=0.869; dense=0.897; sub_bm25=0.616; sub_dense=0.883"
+      },
+      {
+        "corpusid": 9833924,
+        "score": 0.883838415145874,
+        "reason": "bm25=0.859; dense=0.900; sub_bm25=0.336; sub_dense=0.831"
+      },
+      {
+        "corpusid": 6743006,
+        "score": 0.8815306425094604,
+        "reason": "bm25=0.756; dense=0.965; sub_bm25=0.490; sub_dense=0.932"
+      },
+      {
+        "corpusid": 15925296,
+        "score": 0.8704913854598999,
+        "reason": "bm25=0.773; dense=0.935; sub_bm25=0.718; sub_dense=0.936"
+      }
+    ]
+  }
+}

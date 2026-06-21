@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_308",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_308",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_308",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_308",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1160,
+      "latency_s": 7.32434709998779
+    },
+    {
+      "query_id": "litsearch_308",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 353,
+      "latency_s": 3.1387938000261784
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_308",
+    "gold": [
+      229376913
+    ],
+    "pool_size": 225,
+    "decomposition": [
+      "improvements to multi-head self-attention for transmitting unprocessed attention scores",
+      "transformer architecture modifications for stable training of self-attention",
+      "recent developments in transformer attention mechanisms that avoid softmax normalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        247315171,
+        15000982,
+        211259041,
+        256697068,
+        250390876,
+        237364609,
+        236477957,
+        219963738,
+        7542363,
+        259370796,
+        52093134,
+        207969314,
+        27242794,
+        202565479,
+        257767722,
+        226283912,
+        67855494,
+        218487704,
+        53230049,
+        201741510
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        207969314,
+        247315171,
+        211259041,
+        226283912,
+        236477957,
+        196181767,
+        232380086,
+        218487704,
+        256460924,
+        202592085,
+        219177032,
+        248780246,
+        229923069,
+        243864624,
+        246702346,
+        248811280,
+        162183964,
+        208100714,
+        253157981,
+        189762556
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        211259041,
+        248780077,
+        159041867,
+        248780244,
+        218487351,
+        248811280,
+        207969314,
+        221819182,
+        237513393,
+        222140635,
+        226262310,
+        226227385,
+        218487704,
+        234777911,
+        229923069,
+        253735201,
+        255440465,
+        189762556,
+        250390876,
+        196181767
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226283912,
+        207969314,
+        196181767,
+        248811280,
+        218487704,
+        162183964,
+        253157981,
+        247315171,
+        236477957,
+        248780246,
+        211259041,
+        250390876
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        211259041,
+        207969314,
+        248811280,
+        218487704,
+        196181767,
+        226283912,
+        229923069,
+        218487351,
+        237513393,
+        248780077,
+        189762556,
+        232380086,
+        159041867,
+        247315171,
+        226227385,
+        253157981,
+        248780244,
+        162183964,
+        253735201,
+        51880415
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.4993241999764
+  },
+  "reason_example": {
+    "query_id": "litsearch_308",
+    "query": "What recent developments in transformer architecture aim to improve the multi-head self-attention mechanism for better transmission of unprocessed attention scores and more stable training?",
+    "top_results": [
+      {
+        "corpusid": 211259041,
+        "score": 0.9617924690246582,
+        "reason": "bm25=0.904; dense=1.000; sub_bm25=0.767; sub_dense=0.983"
+      },
+      {
+        "corpusid": 207969314,
+        "score": 0.9454407691955566,
+        "reason": "bm25=1.000; dense=0.909; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248811280,
+        "score": 0.8581603169441223,
+        "reason": "bm25=0.767; dense=0.919; sub_bm25=0.726; sub_dense=0.885"
+      },
+      {
+        "corpusid": 218487704,
+        "score": 0.8509982824325562,
+        "reason": "bm25=0.815; dense=0.875; sub_bm25=0.779; sub_dense=0.946"
+      },
+      {
+        "corpusid": 196181767,
+        "score": 0.8439112305641174,
+        "reason": "bm25=0.847; dense=0.842; sub_bm25=0.806; sub_dense=0.793"
+      }
+    ]
+  }
+}

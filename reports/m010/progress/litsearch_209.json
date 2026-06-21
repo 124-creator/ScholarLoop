@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_209",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_209",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_209",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_209",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1397,
+      "latency_s": 8.217030599946156
+    },
+    {
+      "query_id": "litsearch_209",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 289,
+      "latency_s": 2.1645940999733284
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_209",
+    "gold": [
+      231639161
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "multimodal annotation system for dialogue analysis in video",
+      "video dialogue analysis tool with multimodal annotations",
+      "assistive system for analyzing video dialogues using multimodal annotation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8535026,
+        18228857,
+        28775375,
+        723864,
+        2266741,
+        12693740,
+        13165579,
+        1444138,
+        12101738,
+        8292781,
+        221761488,
+        17409270,
+        29255757,
+        10776665,
+        132169,
+        10915312,
+        1705467,
+        2527431,
+        14547272,
+        18117872
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        13165579,
+        249712518,
+        12693740,
+        241583292,
+        132169,
+        22273514,
+        232275342,
+        11548713,
+        12012407,
+        255393961,
+        259370654,
+        10421029,
+        8470323,
+        15296864,
+        2653492,
+        15351197,
+        17139469,
+        252873184,
+        6203313,
+        223956820
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        17632922,
+        2302063,
+        12012407,
+        8177828,
+        15202564,
+        16472823,
+        767219,
+        262477053,
+        11019380,
+        231639161,
+        18818338,
+        7692969,
+        257233111,
+        220445442,
+        2817150,
+        12506231,
+        34316884,
+        18070886,
+        10634770,
+        21732055
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        2302063,
+        18212263,
+        241583292,
+        12012407
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        12012407,
+        2302063,
+        15202564,
+        241583292,
+        13165579,
+        255393961,
+        249712518,
+        767219,
+        17632922,
+        18212263,
+        7692969,
+        21732055,
+        230433768,
+        10634770,
+        8177828,
+        17007437,
+        251437196,
+        15296864,
+        231639161,
+        262477053
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.787525899941102
+  },
+  "reason_example": {
+    "query_id": "litsearch_209",
+    "query": "Could you suggest research that examines a system for multimodal annotation intended to assist people in analyzing dialogues within video content?",
+    "top_results": [
+      {
+        "corpusid": 12012407,
+        "score": 0.9140995144844055,
+        "reason": "bm25=0.796; dense=0.993; sub_bm25=0.827; sub_dense=0.903"
+      },
+      {
+        "corpusid": 2302063,
+        "score": 0.8739975690841675,
+        "reason": "bm25=0.696; dense=0.993; sub_bm25=0.978; sub_dense=0.997"
+      },
+      {
+        "corpusid": 15202564,
+        "score": 0.8538416028022766,
+        "reason": "bm25=0.715; dense=0.946; sub_bm25=0.954; sub_dense=0.939"
+      },
+      {
+        "corpusid": 241583292,
+        "score": 0.8285412788391113,
+        "reason": "bm25=0.826; dense=0.830; sub_bm25=0.988; sub_dense=0.867"
+      },
+      {
+        "corpusid": 13165579,
+        "score": 0.8173470497131348,
+        "reason": "bm25=1.000; dense=0.696; sub_bm25=0.720; sub_dense=0.761"
+      }
+    ]
+  }
+}

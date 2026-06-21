@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_586",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_586",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_586",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_586",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 899,
+      "latency_s": 4.397866200073622
+    },
+    {
+      "query_id": "litsearch_586",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 387,
+      "latency_s": 2.9798163999803364
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_586",
+    "gold": [
+      260887189
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "character encodings ciphers bypass safety guardrails large language models",
+      "convincing model not natural language bypass safety alignment",
+      "adversarial attacks using encoding or framing as non-language to evade LLM safety"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11815268,
+        233365004,
+        10093992,
+        215415943,
+        14365503,
+        237263305,
+        196175723,
+        18446213,
+        18414132,
+        13973810,
+        19020561,
+        3160983,
+        49420146,
+        6241932,
+        14323173,
+        9961130,
+        10504311,
+        11311225,
+        14761787,
+        32706233
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        260887189,
+        10093992,
+        252968000,
+        20196501,
+        3160983,
+        258378263,
+        6955865,
+        12471099,
+        263311025,
+        249063099,
+        11379360,
+        259833771,
+        89638,
+        8440981,
+        27993144,
+        7020117,
+        258378329,
+        237416760,
+        258959097,
+        257767721
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261341825,
+        252907607,
+        252968000,
+        20196501,
+        18059389,
+        252907549,
+        235417102,
+        248182535,
+        1611078,
+        37802982,
+        248780370,
+        259833820,
+        53060250,
+        219306908,
+        263311025,
+        218487582,
+        37122890,
+        252624666,
+        14749549,
+        248524755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        260887189
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252968000,
+        261341825,
+        20196501,
+        260887189,
+        263311025,
+        6955865,
+        248780370,
+        10093992,
+        252907607,
+        248524755,
+        218487582,
+        235417102,
+        16870294,
+        37802982,
+        8137902,
+        12471099,
+        253420419,
+        249394509,
+        14162,
+        259833820
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.949571900069714
+  },
+  "reason_example": {
+    "query_id": "litsearch_586",
+    "query": "Which paper found that using common character encodings and ciphers, or even just convincing the model that it is not communicating in natural language, can bypass the safety guardrails of large models?",
+    "top_results": [
+      {
+        "corpusid": 252968000,
+        "score": 0.8484288454055786,
+        "reason": "bm25=0.795; dense=0.884; sub_bm25=0.708; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261341825,
+        "score": 0.8302686214447021,
+        "reason": "bm25=0.576; dense=1.000; sub_bm25=0.703; sub_dense=0.980"
+      },
+      {
+        "corpusid": 20196501,
+        "score": 0.8048120737075806,
+        "reason": "bm25=0.774; dense=0.826; sub_bm25=0.320; sub_dense=0.787"
+      },
+      {
+        "corpusid": 260887189,
+        "score": 0.7762221097946167,
+        "reason": "bm25=1.000; dense=0.627; sub_bm25=1.000; sub_dense=0.747"
+      },
+      {
+        "corpusid": 263311025,
+        "score": 0.7471597194671631,
+        "reason": "bm25=0.739; dense=0.753; sub_bm25=0.876; sub_dense=0.929"
+      }
+    ]
+  }
+}

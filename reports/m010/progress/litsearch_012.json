@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_012",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_012",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_012",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_012",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2165,
+      "latency_s": 15.440216499962844
+    },
+    {
+      "query_id": "litsearch_012",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 291,
+      "latency_s": 2.3819325000513345
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_012",
+    "gold": [
+      235187266,
+      233296292
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "contrastive learning sentence representation data augmentation cutoff",
+      "contrastive learning sentence embeddings dropout",
+      "span cutoff contrastive learning sentence representation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763335,
+        252819197,
+        15990927,
+        256274926,
+        7652137,
+        14249389,
+        14202085,
+        8438741,
+        253384279,
+        10583358,
+        5125684,
+        51874663,
+        4896064,
+        226226505,
+        52176213,
+        255340736,
+        3525802,
+        1631222,
+        256461050,
+        235489736
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248227429,
+        247410985,
+        222272463,
+        233423348,
+        232092617,
+        14249389,
+        237491889,
+        251643762,
+        252763335,
+        256194627,
+        259064227,
+        253801822,
+        253384279,
+        51874663,
+        224705447,
+        219179868,
+        258486921,
+        6495498,
+        235352852,
+        256461357
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237491889,
+        235422524,
+        248779925,
+        258486921,
+        248299679,
+        253107551,
+        231603138,
+        224726548,
+        235422673,
+        252819197,
+        258378297,
+        247158913,
+        225041226,
+        252199965,
+        247158698,
+        258959304,
+        227231247,
+        21725995,
+        233296292,
+        226262205
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237491889,
+        235422673,
+        247410985,
+        248227429,
+        3525802,
+        251643762,
+        260063146
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237491889,
+        258486921,
+        248779925,
+        247410985,
+        235422524,
+        235422673,
+        252819197,
+        248227429,
+        256461050,
+        52078335,
+        256461357,
+        250390973,
+        248299679,
+        240288762,
+        252763335,
+        235352852,
+        252199965,
+        3525802,
+        247158698,
+        233423348
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 21.454754199949093
+  },
+  "reason_example": {
+    "query_id": "litsearch_012",
+    "query": "Can you point me to studies that explore the impact of different data augmentation strategies, such as feature/token/span cutoff or dropout, in the context of contrastive learning for sentence representations?",
+    "top_results": [
+      {
+        "corpusid": 237491889,
+        "score": 0.9472408294677734,
+        "reason": "bm25=0.868; dense=1.000; sub_bm25=1.000; sub_dense=0.935"
+      },
+      {
+        "corpusid": 258486921,
+        "score": 0.8807698488235474,
+        "reason": "bm25=0.814; dense=0.926; sub_bm25=0.377; sub_dense=0.819"
+      },
+      {
+        "corpusid": 248779925,
+        "score": 0.8754231929779053,
+        "reason": "bm25=0.715; dense=0.982; sub_bm25=0.351; sub_dense=0.763"
+      },
+      {
+        "corpusid": 247410985,
+        "score": 0.863929271697998,
+        "reason": "bm25=0.964; dense=0.797; sub_bm25=0.714; sub_dense=0.874"
+      },
+      {
+        "corpusid": 235422524,
+        "score": 0.8603655695915222,
+        "reason": "bm25=0.675; dense=0.984; sub_bm25=0.383; sub_dense=0.831"
+      }
+    ]
+  }
+}

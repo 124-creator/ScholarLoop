@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_118",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_118",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_118",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_118",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1293,
+      "latency_s": 10.560141499969177
+    },
+    {
+      "query_id": "litsearch_118",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 287,
+      "latency_s": 2.869474499952048
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_118",
+    "gold": [
+      247958464
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "cross project code summarization evaluation methodology",
+      "time-segmented evaluation methodology code summarization",
+      "comparison cross-project time-segmented evaluation code summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        247958464,
+        7440991,
+        16771067,
+        17747581,
+        64489950,
+        12131248,
+        17881228,
+        13488062,
+        16657732,
+        221761488,
+        261431370,
+        15491080,
+        237532546,
+        9607722,
+        13341873,
+        252624560,
+        14846265,
+        10422921,
+        11957545,
+        221097200
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        247958464,
+        252624525,
+        53235639,
+        8651371,
+        253080850,
+        49215805,
+        256460965,
+        220045413,
+        220045424,
+        18682642,
+        250390566,
+        258841681,
+        218571152,
+        222177239,
+        203610372,
+        258967881,
+        252624560,
+        16232037,
+        237532546,
+        16495042
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247958464,
+        12238390,
+        10436913,
+        256461175,
+        235446427,
+        256739259,
+        14473583,
+        16147701,
+        102354583,
+        53080548,
+        1564173,
+        236912977,
+        46919818,
+        252819014,
+        17228952,
+        12258794,
+        5312836,
+        14862422,
+        16426981,
+        18332402
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247958464
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247958464,
+        235446427,
+        10436913,
+        12238390,
+        16147701,
+        256739259,
+        53080548,
+        256461175,
+        14473583,
+        8651371,
+        237532546,
+        102354583,
+        16232037,
+        10866815,
+        5312836,
+        46919818,
+        16495042,
+        237353008,
+        10310518,
+        236477892
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.64432379999198
+  },
+  "reason_example": {
+    "query_id": "litsearch_118",
+    "query": "Could you recommend a study that examines how cross project code summarization evaluation methodologies compare to time-segmented eval methodology.",
+    "top_results": [
+      {
+        "corpusid": 247958464,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235446427,
+        "score": 0.6415212154388428,
+        "reason": "bm25=0.407; dense=0.798; sub_bm25=0.449; sub_dense=0.903"
+      },
+      {
+        "corpusid": 10436913,
+        "score": 0.6190655827522278,
+        "reason": "bm25=0.309; dense=0.826; sub_bm25=0.353; sub_dense=0.774"
+      },
+      {
+        "corpusid": 12238390,
+        "score": 0.6128627061843872,
+        "reason": "bm25=0.251; dense=0.854; sub_bm25=0.365; sub_dense=0.823"
+      },
+      {
+        "corpusid": 16147701,
+        "score": 0.6075572967529297,
+        "reason": "bm25=0.373; dense=0.764; sub_bm25=0.340; sub_dense=0.811"
+      }
+    ]
+  }
+}

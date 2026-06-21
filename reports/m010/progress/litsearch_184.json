@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_184",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_184",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_184",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_184",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1197,
+      "latency_s": 7.474139099940658
+    },
+    {
+      "query_id": "litsearch_184",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 284,
+      "latency_s": 2.093402700033039
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_184",
+    "gold": [
+      235294032
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "popularity bias news recommendation",
+      "distinguishing user interest from popularity news recommendation",
+      "debiasing popularity news recommendation systems"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        479222,
+        10724165,
+        53222920,
+        6602375,
+        1412569,
+        221517069,
+        231602961,
+        235294032,
+        218688152,
+        248182548,
+        260421342,
+        260426220,
+        12742176,
+        27242794,
+        94818,
+        8011103,
+        21022858,
+        237353165,
+        1320,
+        10119966
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        235294032,
+        231602961,
+        248780372,
+        233240813,
+        248780198,
+        9759915,
+        251518354,
+        2773392,
+        199557221,
+        259370694,
+        218627041,
+        254564256,
+        253383917,
+        202768081,
+        10119966,
+        245616866,
+        53080647,
+        53083146,
+        222225275,
+        26905605
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235294032,
+        9701937,
+        252624600,
+        52917952,
+        14752437,
+        16369019,
+        227905448,
+        196217527,
+        240285382,
+        202774468,
+        9759915,
+        259370694,
+        218627041,
+        196186167,
+        202537179,
+        11376810,
+        1679303,
+        26905605,
+        235368202,
+        184482874
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        248780372,
+        231602961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235294032,
+        252624600,
+        227905448,
+        9759915,
+        16369019,
+        248780372,
+        9701937,
+        259370694,
+        248780198,
+        218627041,
+        52917952,
+        231602961,
+        26905605,
+        202768081,
+        2773392,
+        202537179,
+        253446810,
+        14752437,
+        53083146,
+        233240813
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.911414199974388
+  },
+  "reason_example": {
+    "query_id": "litsearch_184",
+    "query": "Could you recommend studies that tackle the issue of popularity bias within news recommendation engines and offer techniques to distinguish between user interests and the popularity of news items?",
+    "top_results": [
+      {
+        "corpusid": 235294032,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252624600,
+        "score": 0.7958440184593201,
+        "reason": "bm25=0.567; dense=0.948; sub_bm25=0.648; sub_dense=0.878"
+      },
+      {
+        "corpusid": 227905448,
+        "score": 0.7528470158576965,
+        "reason": "bm25=0.576; dense=0.871; sub_bm25=0.499; sub_dense=0.772"
+      },
+      {
+        "corpusid": 9759915,
+        "score": 0.7512415051460266,
+        "reason": "bm25=0.639; dense=0.826; sub_bm25=0.553; sub_dense=0.789"
+      },
+      {
+        "corpusid": 16369019,
+        "score": 0.7480155229568481,
+        "reason": "bm25=0.558; dense=0.874; sub_bm25=0.409; sub_dense=0.750"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "implemented_pending_review",
+  "wall_passed": true,
+  "stop_report_exists": false,
+  "t0_spike_passed": true,
+  "full_prediction_passed": true,
+  "selection_uses_future": false,
+  "future_used_only_for_evaluation": true,
+  "narration_out_of_evidence": 0,
+  "pytest_passed": true,
+  "secret_scan_passed": true,
+  "secret_hits": 0,
+  "secret_scanned_file_count": 40,
+  "plan_status_line": "- 状态：implemented（2026-06-20 Codex 执行完成；T0 schema 桩与全量预测性承重均通过；待总指挥核查，不自称 verified）",
+  "retro_files": [
+    "docs/dev/retrospectives/070-研究空白发现层-复盘.md"
+  ],
+  "report_md_files": [
+    "reports/m070/评测报告.md"
+  ],
+  "required_artifacts": {
+    "src/scholarloop/gaps/detect.py": true,
+    "src/scholarloop/gaps/narrate.py": true,
+    "src/scholarloop/eval/run_gaps.py": true,
+    "spike/gaps/run_gap_spike.py": true,
+    "spike/gaps/gap_schema_spike.json": true,
+    "tests/test_m070_gaps.py": true,
+    "reports/m070/spike/gap_schema_spike.json": true,
+    "reports/m070/results.json": true,
+    "reports/m070/significance.json": true,
+    "reports/m070/gaps_display.json": true,
+    "reports/m070/pytest.txt": true,
+    "reports/m070/secret_scan.json": true,
+    "reports/m070/validation_summary.json": true
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_389",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_389",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_389",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_389",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1130,
+      "latency_s": 6.869583799969405
+    },
+    {
+      "query_id": "litsearch_389",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 252,
+      "latency_s": 2.445028300047852
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_389",
+    "gold": [
+      254854514
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "speech text embedding alignment method better than CTC",
+      "improving speech-text alignment beyond connectionist temporal classification",
+      "alternative to CTC for aligning speech and text embeddings"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2115850,
+        36562731,
+        5461896,
+        5077395,
+        238638466,
+        8912414,
+        17329159,
+        17242981,
+        11365040,
+        203688313,
+        203161846,
+        17178436,
+        487442,
+        14251390,
+        237332940,
+        5440379,
+        53419761,
+        52111434,
+        1849143,
+        6204420
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252815434,
+        257050250,
+        234357798,
+        258960119,
+        2115850,
+        227151914,
+        252907554,
+        52167559,
+        52095262,
+        259376671,
+        195699400,
+        21698095,
+        203161846,
+        233029492,
+        46458006,
+        2310240,
+        252624744,
+        203688313,
+        15719016,
+        52018558
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248525011,
+        8287419,
+        258960119,
+        234357798,
+        253541735,
+        252624744,
+        259064345,
+        195346835,
+        52881014,
+        6559721,
+        225075898,
+        28253578,
+        8549005,
+        10034668,
+        246276212,
+        8176549,
+        253250019,
+        8964961,
+        234174468,
+        4227065
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258960119,
+        252815434,
+        257050250,
+        234357798
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234357798,
+        258960119,
+        252815434,
+        257050250,
+        252624744,
+        21698095,
+        233029492,
+        195346835,
+        259064345,
+        248525011,
+        52881014,
+        231749867,
+        17419868,
+        195699400,
+        52095262,
+        28253578,
+        8964961,
+        258967716,
+        8287419,
+        252762414
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.363963600015268
+  },
+  "reason_example": {
+    "query_id": "litsearch_389",
+    "query": "Is there any paper that aligns speech and text embeddings better than CTC training?",
+    "top_results": [
+      {
+        "corpusid": 234357798,
+        "score": 0.9411015510559082,
+        "reason": "bm25=0.929; dense=0.949; sub_bm25=0.879; sub_dense=0.965"
+      },
+      {
+        "corpusid": 258960119,
+        "score": 0.9385780096054077,
+        "reason": "bm25=0.895; dense=0.967; sub_bm25=0.834; sub_dense=0.994"
+      },
+      {
+        "corpusid": 252815434,
+        "score": 0.9177796840667725,
+        "reason": "bm25=1.000; dense=0.863; sub_bm25=1.000; sub_dense=0.937"
+      },
+      {
+        "corpusid": 257050250,
+        "score": 0.8746966123580933,
+        "reason": "bm25=0.959; dense=0.818; sub_bm25=0.881; sub_dense=0.852"
+      },
+      {
+        "corpusid": 252624744,
+        "score": 0.8560551404953003,
+        "reason": "bm25=0.761; dense=0.920; sub_bm25=0.508; sub_dense=0.870"
+      }
+    ]
+  }
+}

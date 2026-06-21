@@ -20,6 +20,8 @@ data/raw/
 *.pt
 *.pth
 *.onnx
+*.pkl
+*.bin
 
 # Python
 __pycache__/

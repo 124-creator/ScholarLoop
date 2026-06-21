@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_403",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_403",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_403",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_403",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 950,
+      "latency_s": 5.600766299990937
+    },
+    {
+      "query_id": "litsearch_403",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 297,
+      "latency_s": 3.0587635999545455
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_403",
+    "gold": [
+      249431866
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "new multimodal video dataset",
+      "image-level multimodal models fail on video",
+      "video dataset challenges image-text models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        251223792,
+        202676821,
+        44145776,
+        47020074,
+        218977403,
+        230799344,
+        232240219,
+        6622732,
+        13537374,
+        196781,
+        8301412,
+        18892448,
+        253098331,
+        255393961,
+        5399186,
+        221139740,
+        226283737,
+        235592830,
+        4942335,
+        53081887
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        232240219,
+        255393961,
+        257557257,
+        235485398,
+        52000158,
+        253080885,
+        235658556,
+        248780562,
+        44145776,
+        227231855,
+        258378236,
+        15251225,
+        247518942,
+        244896303,
+        256461338,
+        125985114,
+        227151289,
+        261076491,
+        250299115,
+        67856640
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        232185558,
+        235125628,
+        252377795,
+        235485398,
+        220302636,
+        226262333,
+        258486935,
+        257039090,
+        9401721,
+        222310695,
+        238531427,
+        257557257,
+        248779993,
+        226283672,
+        261124675,
+        248780363,
+        255340832,
+        254823126,
+        237353356,
+        235097249
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235658556,
+        255393961
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235485398,
+        257557257,
+        235658556,
+        244896303,
+        226262333,
+        261076491,
+        255340832,
+        232185558,
+        235125628,
+        232240219,
+        52000158,
+        226283672,
+        258378236,
+        248780562,
+        255393961,
+        259096096,
+        252624748,
+        250299115,
+        247922520,
+        248512651
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.60792430001311
+  },
+  "reason_example": {
+    "query_id": "litsearch_403",
+    "query": "Is there any paper that proposes a new multimodal video dataset that image-level multimodal models do not work well?",
+    "top_results": [
+      {
+        "corpusid": 235485398,
+        "score": 0.9556571841239929,
+        "reason": "bm25=0.958; dense=0.954; sub_bm25=0.994; sub_dense=0.890"
+      },
+      {
+        "corpusid": 257557257,
+        "score": 0.934309720993042,
+        "reason": "bm25=0.972; dense=0.909; sub_bm25=0.591; sub_dense=0.892"
+      },
+      {
+        "corpusid": 235658556,
+        "score": 0.8906113505363464,
+        "reason": "bm25=0.941; dense=0.857; sub_bm25=1.000; sub_dense=0.954"
+      },
+      {
+        "corpusid": 244896303,
+        "score": 0.8861141800880432,
+        "reason": "bm25=0.896; dense=0.880; sub_bm25=0.621; sub_dense=0.823"
+      },
+      {
+        "corpusid": 226262333,
+        "score": 0.8851706981658936,
+        "reason": "bm25=0.801; dense=0.941; sub_bm25=0.730; sub_dense=0.964"
+      }
+    ]
+  }
+}

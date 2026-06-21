@@ -1,0 +1,24 @@
+{
+  "schema_version": "m130.studio_fidelity.v1",
+  "status": "PASS",
+  "point_verify_function": "scholarloop.demo.source_text.verify_value_span via scholarloop.demo.interactive.build_span_fidelity",
+  "contract": "highlight only when source_text[char_span] == value; baseline values equal verified JSON; realtime is not verified load-bearing",
+  "span_fidelity_status": "PASS",
+  "span_total_checks": 1170,
+  "span_highlightable_count": 989,
+  "span_mismatch_count": 0,
+  "baseline_mismatch_count": 0,
+  "baseline_mismatches": [],
+  "mismatch_count": 0,
+  "trail_fidelity_status": "PASS",
+  "trail_fabrication": 0,
+  "graph_determinism_status": "PASS",
+  "realtime_label": "实时·非确定性·非 verified 承重",
+  "verified_json_sources": [
+    "reports\\m040\\results.json",
+    "reports\\m060\\results.json",
+    "reports\\m070\\gaps_display.json",
+    "reports/m020/evidence",
+    "reports/m120/span_fidelity.json"
+  ]
+}

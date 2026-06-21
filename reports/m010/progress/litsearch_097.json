@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_097",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_097",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_097",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_097",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 983,
+      "latency_s": 4.449019900057465
+    },
+    {
+      "query_id": "litsearch_097",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 321,
+      "latency_s": 2.5245399000123143
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_097",
+    "gold": [
+      74065
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "open information extraction nouns adjectives beyond verbs",
+      "open IE expansion to nouns and adjectives techniques",
+      "non-verbal open information extraction methods"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7424936,
+        1190575,
+        1412569,
+        15115888,
+        27242794,
+        2646100,
+        36806655,
+        6937668,
+        19035533,
+        21758798,
+        13606599,
+        8807447,
+        198164686,
+        654690,
+        219305804,
+        248780316,
+        6423117,
+        18136471,
+        249062609,
+        19357725
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        28841086,
+        20124105,
+        222141733,
+        52013393,
+        9453140,
+        21758798,
+        36806655,
+        252461161,
+        8607756,
+        9916807,
+        398778,
+        7424936,
+        9257307,
+        17628683,
+        253762040,
+        250048566,
+        6423117,
+        9330555,
+        1970133,
+        9833874
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        12433832,
+        74065,
+        12124988,
+        17178053,
+        17991416,
+        17096521,
+        53097386,
+        10318045,
+        226262315,
+        252819082,
+        18946652,
+        52010258,
+        13481251,
+        237513626,
+        6838726,
+        6551679,
+        2077889,
+        52811129,
+        12422320,
+        1455080
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        12433832,
+        74065,
+        10318045,
+        49215220,
+        9257307
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        12433832,
+        74065,
+        10318045,
+        20124105,
+        8607756,
+        13481251,
+        9453140,
+        2522670,
+        17178053,
+        258378284,
+        18946652,
+        806064,
+        237513626,
+        226262315,
+        9090544,
+        49215220,
+        17096521,
+        11125179,
+        6838726,
+        219309009
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.646124399965629
+  },
+  "reason_example": {
+    "query_id": "litsearch_097",
+    "query": "Which work should I explore to understand the techniques that expand the scope of open infomation extraction beyond verbs, to include various parts of speech such as nouns and adjectives?",
+    "top_results": [
+      {
+        "corpusid": 12433832,
+        "score": 0.9364569187164307,
+        "reason": "bm25=0.841; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 74065,
+        "score": 0.8876681923866272,
+        "reason": "bm25=0.798; dense=0.948; sub_bm25=1.000; sub_dense=0.963"
+      },
+      {
+        "corpusid": 10318045,
+        "score": 0.84574294090271,
+        "reason": "bm25=0.780; dense=0.890; sub_bm25=0.726; sub_dense=0.906"
+      },
+      {
+        "corpusid": 20124105,
+        "score": 0.8442410230636597,
+        "reason": "bm25=0.971; dense=0.759; sub_bm25=0.805; sub_dense=0.732"
+      },
+      {
+        "corpusid": 8607756,
+        "score": 0.8381022214889526,
+        "reason": "bm25=0.891; dense=0.803; sub_bm25=0.701; sub_dense=0.696"
+      }
+    ]
+  }
+}

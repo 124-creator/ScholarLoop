@@ -1,0 +1,33 @@
+{
+  "schema_version": "m140.i18n_coverage.v1",
+  "status": "PASS",
+  "supported_langs": [
+    "zh",
+    "en"
+  ],
+  "default_lang": "zh",
+  "missing_keys_by_lang": {
+    "zh": [],
+    "en": []
+  },
+  "missing_required_markers": {
+    "zh": [],
+    "en": []
+  },
+  "verified_values_not_translated": true,
+  "verified_value_presence": {
+    "0.1312": {
+      "zh": true,
+      "en": true
+    },
+    "0.0964": {
+      "zh": true,
+      "en": true
+    },
+    "0.1972": {
+      "zh": true,
+      "en": true
+    }
+  },
+  "policy": "i18n translates UI chrome only; verified metrics, evidence text, paper titles, abstracts, and char_span slices remain unchanged."
+}

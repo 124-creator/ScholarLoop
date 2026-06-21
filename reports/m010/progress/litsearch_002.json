@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_002",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_002",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_002",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_002",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1125,
+      "latency_s": 5.650182000012137
+    },
+    {
+      "query_id": "litsearch_002",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 335,
+      "latency_s": 2.429816900053993
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_002",
+    "gold": [
+      226254579,
+      204976362
+    ],
+    "pool_size": 257,
+    "decomposition": [
+      "post-hoc hallucination detection token-level neural generation",
+      "sentence-level hallucination detection post-hoc neural generation",
+      "post-hoc techniques hallucination detection token sentence level"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15857378,
+        34405847,
+        252847531,
+        221265974,
+        241583448,
+        14054366,
+        7079385,
+        52090464,
+        126584,
+        12341085,
+        199501730,
+        235125766,
+        199551982,
+        2470574,
+        220046446,
+        30326019,
+        27834461,
+        6078795,
+        8787879,
+        198996284
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226254579,
+        199551982,
+        233296648,
+        235352852,
+        19973349,
+        233241116,
+        232185104,
+        52090464,
+        235248193,
+        259376803,
+        174800272,
+        253761434,
+        252907639,
+        254853721,
+        233231373,
+        216056470,
+        252847531,
+        222141002,
+        221265974,
+        51950470
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256000114,
+        222290728,
+        233296648,
+        226254579,
+        233231373,
+        244909449,
+        251468136,
+        233296487,
+        247476018,
+        253097869,
+        252907639,
+        248227301,
+        254853721,
+        237329050,
+        254823170,
+        250390457,
+        218538004,
+        247741137,
+        196183567,
+        224814113
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233296648,
+        226254579,
+        256000114,
+        254853721,
+        251468136,
+        233231373,
+        233296487,
+        252907639
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226254579,
+        233296648,
+        256000114,
+        233231373,
+        233296487,
+        252907639,
+        254853721,
+        251468136,
+        222290728,
+        199551982,
+        248227301,
+        237329050,
+        253097869,
+        235352852,
+        244909449,
+        254823170,
+        247476018,
+        247741137,
+        52090464,
+        196183567
+      ],
+      "P@10": 0.1,
+      "R@20": 0.5,
+      "F1": 0.16666666666666669
+    },
+    "elapsed_s": 12.278801999986172
+  },
+  "reason_example": {
+    "query_id": "litsearch_002",
+    "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+    "top_results": [
+      {
+        "corpusid": 226254579,
+        "score": 0.9366124868392944,
+        "reason": "bm25=1.000; dense=0.894; sub_bm25=0.655; sub_dense=0.947"
+      },
+      {
+        "corpusid": 233296648,
+        "score": 0.9337438941001892,
+        "reason": "bm25=0.980; dense=0.903; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256000114,
+        "score": 0.9251412749290466,
+        "reason": "bm25=0.813; dense=1.000; sub_bm25=0.633; sub_dense=1.000"
+      },
+      {
+        "corpusid": 233231373,
+        "score": 0.8724558353424072,
+        "reason": "bm25=0.852; dense=0.886; sub_bm25=0.627; sub_dense=0.897"
+      },
+      {
+        "corpusid": 233296487,
+        "score": 0.8518601655960083,
+        "reason": "bm25=0.826; dense=0.869; sub_bm25=0.637; sub_dense=0.880"
+      }
+    ]
+  }
+}

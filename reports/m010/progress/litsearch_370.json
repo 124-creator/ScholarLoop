@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_370",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_370",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_370",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_370",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1676,
+      "latency_s": 12.874967699986883
+    },
+    {
+      "query_id": "litsearch_370",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 265,
+      "latency_s": 2.953350199968554
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_370",
+    "gold": [
+      258959097
+    ],
+    "pool_size": 285,
+    "decomposition": [
+      "large language models visual Raven's Progressive Matrices",
+      "LLM Raven's Progressive Matrices visual reasoning",
+      "applying language models to Raven's matrices"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259833850,
+        241583483,
+        11614881,
+        45438237,
+        5399186,
+        45897261,
+        17675456,
+        17974121,
+        250390814,
+        258959097,
+        13309080,
+        45246326,
+        18359398,
+        49420146,
+        5436060,
+        2200840,
+        241583598,
+        253420419,
+        16229734,
+        263609813
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        257365083,
+        258959097,
+        214220671,
+        235613482,
+        247451154,
+        3158579,
+        52894384,
+        254591489,
+        237605175,
+        233365238,
+        54462139,
+        244345615,
+        259370886,
+        67856680,
+        244773609,
+        259833771,
+        213704197,
+        252819215,
+        38898903,
+        232233782
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258959097,
+        2678583,
+        247656607,
+        18210792,
+        219306908,
+        215761283,
+        9807832,
+        259370603,
+        41981492,
+        259833850,
+        14099827,
+        12859640,
+        235293738,
+        36687039,
+        214220671,
+        236460083,
+        763569,
+        40419537,
+        196203177,
+        49669303
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258959097,
+        257365083,
+        214220671,
+        235613482,
+        237605175
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258959097,
+        214220671,
+        257365083,
+        237605175,
+        235613482,
+        196203177,
+        244345615,
+        252222320,
+        2678583,
+        14099827,
+        9807832,
+        259370603,
+        36687039,
+        202579350,
+        763569,
+        174797895,
+        236460083,
+        245838276,
+        235293738,
+        225062299
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 16.935918600065634
+  },
+  "reason_example": {
+    "query_id": "litsearch_370",
+    "query": "Is there a paper that applies large language models to visual Raven’s Progressive Matrices?",
+    "top_results": [
+      {
+        "corpusid": 258959097,
+        "score": 0.9588514566421509,
+        "reason": "bm25=0.897; dense=1.000; sub_bm25=0.862; sub_dense=1.000"
+      },
+      {
+        "corpusid": 214220671,
+        "score": 0.8450393676757812,
+        "reason": "bm25=0.770; dense=0.895; sub_bm25=0.900; sub_dense=0.990"
+      },
+      {
+        "corpusid": 257365083,
+        "score": 0.8447078466415405,
+        "reason": "bm25=1.000; dense=0.741; sub_bm25=1.000; sub_dense=0.948"
+      },
+      {
+        "corpusid": 237605175,
+        "score": 0.7412745356559753,
+        "reason": "bm25=0.619; dense=0.823; sub_bm25=0.354; sub_dense=0.855"
+      },
+      {
+        "corpusid": 235613482,
+        "score": 0.7409884929656982,
+        "reason": "bm25=0.675; dense=0.785; sub_bm25=0.653; sub_dense=0.867"
+      }
+    ]
+  }
+}

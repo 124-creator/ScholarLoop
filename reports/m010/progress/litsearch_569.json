@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_569",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_569",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_569",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_569",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1304,
+      "latency_s": 7.088436600053683
+    },
+    {
+      "query_id": "litsearch_569",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 231,
+      "latency_s": 2.331300999969244
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_569",
+    "gold": [
+      263334074
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "neural theorem proving block-by-block",
+      "first paper block-by-block proof neural theorem proving",
+      "neural theorem proving incremental proof blocks"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11383050,
+        1519586,
+        2202801,
+        8292781,
+        7153934,
+        249204420,
+        46928091,
+        2266741,
+        6723570,
+        7440991,
+        8832939,
+        16771067,
+        235485452,
+        18461192,
+        1024327,
+        18155929,
+        566029,
+        52896891,
+        49560309,
+        6124685
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        220363813,
+        263334074,
+        46928091,
+        259370805,
+        231879554,
+        3219410,
+        16265681,
+        7537013,
+        166228264,
+        8201526,
+        231861390,
+        237372712,
+        202577934,
+        225103395,
+        7098873,
+        226254596,
+        249848305,
+        8240630,
+        227054213,
+        255749563
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237372712,
+        263334074,
+        11066688,
+        3509777,
+        211132734,
+        85504763,
+        247362438,
+        2040861,
+        221139554,
+        202888819,
+        203593355,
+        45927246,
+        257404922,
+        170201386,
+        209140749,
+        51872107,
+        231879554,
+        227231843,
+        221970224,
+        261557333
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263334074
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263334074,
+        237372712,
+        220363813,
+        231879554,
+        46928091,
+        11066688,
+        16265681,
+        259370805,
+        8201526,
+        257404922,
+        211132734,
+        209140749,
+        203593355,
+        257365037,
+        202888819,
+        254877175,
+        3299269,
+        253098549,
+        3509777,
+        247362438
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.358904600027017
+  },
+  "reason_example": {
+    "query_id": "litsearch_569",
+    "query": "Which neural theorem proving paper first attempted to prove theorems in a block-by-block manner?",
+    "top_results": [
+      {
+        "corpusid": 263334074,
+        "score": 0.9257189035415649,
+        "reason": "bm25=0.904; dense=0.940; sub_bm25=0.907; sub_dense=0.942"
+      },
+      {
+        "corpusid": 237372712,
+        "score": 0.8505668044090271,
+        "reason": "bm25=0.626; dense=1.000; sub_bm25=0.907; sub_dense=1.000"
+      },
+      {
+        "corpusid": 220363813,
+        "score": 0.843374490737915,
+        "reason": "bm25=1.000; dense=0.739; sub_bm25=0.958; sub_dense=0.732"
+      },
+      {
+        "corpusid": 231879554,
+        "score": 0.7751330137252808,
+        "reason": "bm25=0.766; dense=0.781; sub_bm25=0.900; sub_dense=0.787"
+      },
+      {
+        "corpusid": 46928091,
+        "score": 0.771507203578949,
+        "reason": "bm25=0.803; dense=0.750; sub_bm25=0.977; sub_dense=0.857"
+      }
+    ]
+  }
+}

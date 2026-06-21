@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_229",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_229",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_229",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_229",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1045,
+      "latency_s": 5.238813299918547
+    },
+    {
+      "query_id": "litsearch_229",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 267,
+      "latency_s": 1.7755524000385776
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_229",
+    "gold": [
+      212718077
+    ],
+    "pool_size": 230,
+    "decomposition": [
+      "clustering-based attention mechanism Transformer",
+      "efficient attention clustering Transformer",
+      "Transformer attention clustering approximation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        639945,
+        7440991,
+        252763339,
+        253157981,
+        6941747,
+        34504645,
+        258547323,
+        258840844,
+        218613661,
+        51734726,
+        236457320,
+        16930771,
+        226227385,
+        237605519,
+        236477957,
+        166480460,
+        8431601,
+        236460291,
+        250390876,
+        252600018
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226227385,
+        7861345,
+        236477957,
+        237605519,
+        207758164,
+        258840844,
+        253511217,
+        243865251,
+        998391,
+        215814331,
+        189762556,
+        227230564,
+        207853045,
+        226283912,
+        52013036,
+        232105052,
+        216868592,
+        241583247,
+        236477354,
+        248811280
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        226227385,
+        248780077,
+        218487351,
+        248780244,
+        159041867,
+        237513393,
+        234777911,
+        226262310,
+        246867127,
+        253157981,
+        232380086,
+        189762556,
+        248562491,
+        237940880,
+        259164782,
+        255440465,
+        222176890,
+        262824542,
+        211259041,
+        241583247
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226227385,
+        998391
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226227385,
+        248780244,
+        248780077,
+        189762556,
+        258840844,
+        232380086,
+        253157981,
+        159041867,
+        226262310,
+        259164782,
+        241583247,
+        248811280,
+        184486755,
+        211259041,
+        201698358,
+        207853045,
+        243865251,
+        236477354,
+        253511217,
+        236477957
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.715332900057547
+  },
+  "reason_example": {
+    "query_id": "litsearch_229",
+    "query": "Could you suggest research that investigates a clustering-based efficient attention mechanism within Transformer models?",
+    "top_results": [
+      {
+        "corpusid": 226227385,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248780244,
+        "score": 0.8417766094207764,
+        "reason": "bm25=0.731; dense=0.915; sub_bm25=0.878; sub_dense=0.955"
+      },
+      {
+        "corpusid": 248780077,
+        "score": 0.8395665287971497,
+        "reason": "bm25=0.699; dense=0.934; sub_bm25=0.758; sub_dense=0.899"
+      },
+      {
+        "corpusid": 189762556,
+        "score": 0.8378681540489197,
+        "reason": "bm25=0.867; dense=0.818; sub_bm25=0.893; sub_dense=0.882"
+      },
+      {
+        "corpusid": 258840844,
+        "score": 0.8300390243530273,
+        "reason": "bm25=0.944; dense=0.754; sub_bm25=0.921; sub_dense=0.777"
+      }
+    ]
+  }
+}

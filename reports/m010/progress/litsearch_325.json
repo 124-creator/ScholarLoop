@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_325",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_325",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_325",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_325",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1695,
+      "latency_s": 13.64284579991363
+    },
+    {
+      "query_id": "litsearch_325",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 262,
+      "latency_s": 2.724403699976392
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_325",
+    "gold": [
+      237453212
+    ],
+    "pool_size": 221,
+    "decomposition": [
+      "unsupervised sentence embedding methods",
+      "contrastive learning for sentence embeddings",
+      "unsupervised contrastive sentence embedding approaches"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        253499206,
+        18995018,
+        245877654,
+        248299679,
+        252438842,
+        13042734,
+        248572170,
+        85543290,
+        247158698,
+        17681935,
+        52811940,
+        235097268,
+        259833864,
+        2432354,
+        237453212,
+        231847070,
+        247450777,
+        259370776,
+        5522668,
+        29785361
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        246411155,
+        253499206,
+        248299679,
+        247158698,
+        245877654,
+        252918345,
+        252438842,
+        253157513,
+        258588364,
+        219530980,
+        248572170,
+        247450777,
+        235422673,
+        237453212,
+        233296292,
+        231847070,
+        252847570,
+        259370776,
+        254926550,
+        252967802
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248299679,
+        259370776,
+        16251657,
+        258765234,
+        233296292,
+        247158698,
+        3525802,
+        248572170,
+        252438842,
+        24461982,
+        246411155,
+        253107551,
+        196192207,
+        258588364,
+        174798413,
+        245877654,
+        250390973,
+        253499206,
+        235422673,
+        59336240
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248299679,
+        252438842,
+        246411155,
+        237453212,
+        247158698,
+        253499206,
+        245877654,
+        259370776,
+        248572170,
+        253157513,
+        252918345,
+        258588364
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248299679,
+        246411155,
+        253499206,
+        247158698,
+        252438842,
+        259370776,
+        245877654,
+        248572170,
+        233296292,
+        258588364,
+        252918345,
+        253157513,
+        219530980,
+        235422673,
+        16251657,
+        252847570,
+        254926550,
+        247410985,
+        248377556,
+        237453212
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.13689019996673
+  },
+  "reason_example": {
+    "query_id": "litsearch_325",
+    "query": "What research is available on acquiring sentence embeddings through unsupervised approaches, possibly employing contrastive learning methods?",
+    "top_results": [
+      {
+        "corpusid": 248299679,
+        "score": 0.9881182909011841,
+        "reason": "bm25=0.970; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 246411155,
+        "score": 0.9374198913574219,
+        "reason": "bm25=1.000; dense=0.896; sub_bm25=0.946; sub_dense=0.943"
+      },
+      {
+        "corpusid": 253499206,
+        "score": 0.9151069521903992,
+        "reason": "bm25=0.997; dense=0.861; sub_bm25=0.985; sub_dense=0.904"
+      },
+      {
+        "corpusid": 247158698,
+        "score": 0.9104495048522949,
+        "reason": "bm25=0.886; dense=0.927; sub_bm25=0.800; sub_dense=0.910"
+      },
+      {
+        "corpusid": 252438842,
+        "score": 0.8773748278617859,
+        "reason": "bm25=0.847; dense=0.898; sub_bm25=0.923; sub_dense=0.963"
+      }
+    ]
+  }
+}

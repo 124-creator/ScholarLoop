@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_076",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_076",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_076",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_076",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1469,
+      "latency_s": 9.470386400003918
+    },
+    {
+      "query_id": "litsearch_076",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 234,
+      "latency_s": 1.895972599973902
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_076",
+    "gold": [
+      14764893
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "annotation of user comments for claim verifiability",
+      "claim verification in online comments annotation",
+      "verifiability labeling of user-generated content"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3920851,
+        201704,
+        8305322,
+        22909596,
+        1365869,
+        7741748,
+        233305372,
+        1843005,
+        15638860,
+        10700106,
+        14915669,
+        15877270,
+        15672460,
+        229923350,
+        5334746,
+        18909604,
+        236477943,
+        2913402,
+        3892528,
+        10062143
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5106916,
+        12108058,
+        14764893,
+        235097536,
+        207852724,
+        196202891,
+        22909596,
+        10892501,
+        11788643,
+        14190307,
+        239618381,
+        237273857,
+        202785816,
+        248427054,
+        229923350,
+        196181642,
+        236772762,
+        241583404,
+        12830640,
+        15877270
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14764893,
+        53081509,
+        174800816,
+        9679538,
+        21699219,
+        252818964,
+        31199034,
+        21689265,
+        10562276,
+        227231161,
+        5106916,
+        9666015,
+        239618381,
+        199022760,
+        15364004,
+        10321545,
+        8589715,
+        248780057,
+        247939792,
+        3119193
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        5106916,
+        239618381,
+        14764893,
+        53081509,
+        12108058,
+        14190307,
+        10892501,
+        235097536,
+        229923350,
+        202785816,
+        201704,
+        196202891
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        5106916,
+        14764893,
+        239618381,
+        12108058,
+        21689265,
+        235097536,
+        53081509,
+        36826180,
+        14190307,
+        10892501,
+        252355558,
+        252818964,
+        1893041,
+        196202891,
+        199523501,
+        202785816,
+        241583404,
+        31199034,
+        239618389,
+        13696025
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.48896860005334
+  },
+  "reason_example": {
+    "query_id": "litsearch_076",
+    "query": "What research has been done on annotating user comments with claim verifiability",
+    "top_results": [
+      {
+        "corpusid": 5106916,
+        "score": 0.9218703508377075,
+        "reason": "bm25=1.000; dense=0.870; sub_bm25=1.000; sub_dense=0.886"
+      },
+      {
+        "corpusid": 14764893,
+        "score": 0.8884680271148682,
+        "reason": "bm25=0.721; dense=1.000; sub_bm25=0.814; sub_dense=0.995"
+      },
+      {
+        "corpusid": 239618381,
+        "score": 0.7902705669403076,
+        "reason": "bm25=0.673; dense=0.868; sub_bm25=0.659; sub_dense=0.851"
+      },
+      {
+        "corpusid": 12108058,
+        "score": 0.7817997336387634,
+        "reason": "bm25=0.770; dense=0.790; sub_bm25=0.788; sub_dense=0.927"
+      },
+      {
+        "corpusid": 21689265,
+        "score": 0.7492538094520569,
+        "reason": "bm25=0.564; dense=0.873; sub_bm25=0.567; sub_dense=0.898"
+      }
+    ]
+  }
+}

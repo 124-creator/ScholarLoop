@@ -1,0 +1,21 @@
+{
+  "schema_version": "m110.consistency_scan.v1",
+  "checked_at_utc": "2026-06-20T13:15:46.548374+00:00",
+  "scope": "docs/submission/*.md excluding AGENTS.md",
+  "scanned_files": [
+    "docs/submission/01-作品简介.md",
+    "docs/submission/02-项目文档.md",
+    "docs/submission/03-视频脚本与演示走查.md",
+    "docs/submission/04-指标汇总表.md",
+    "docs/submission/05-复现说明.md",
+    "docs/submission/06-创新叙事.md",
+    "docs/submission/07-数据源与许可.md",
+    "docs/submission/08-主张溯源清单.md",
+    "docs/submission/09-M100-专家分与结构化补充.md"
+  ],
+  "scanned_lines": 312,
+  "residual_count": 0,
+  "residuals": [],
+  "passed": true,
+  "m100_aligned_reference": "docs/submission/09-M100-专家分与结构化补充.md"
+}

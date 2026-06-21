@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_216",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_216",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_216",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_216",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 898,
+      "latency_s": 4.1097653999459
+    },
+    {
+      "query_id": "litsearch_216",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 322,
+      "latency_s": 2.4682680000551045
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_216",
+    "gold": [
+      233296808
+    ],
+    "pool_size": 228,
+    "decomposition": [
+      "prompt tuning soft embeddings pretrained language models downstream tasks",
+      "soft prompt tuning effectiveness minimal finetuning",
+      "continuous prompt embeddings adaptation downstream applications"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        232134931,
+        219309121,
+        248779924,
+        259833855,
+        252991162,
+        186206301,
+        256461329,
+        8752606,
+        211205183,
+        27016310,
+        236486069,
+        257365136,
+        248780502,
+        231847008,
+        1049011,
+        233231453,
+        196185011,
+        248780177,
+        8028944,
+        235358498
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259833855,
+        257365136,
+        237452236,
+        237439234,
+        248780177,
+        216553665,
+        248405974,
+        253098972,
+        248693115,
+        252780166,
+        233231453,
+        258378153,
+        250391006,
+        248085161,
+        233296808,
+        248780043,
+        259833809,
+        216869396,
+        237452662,
+        248779986
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259833855,
+        248780177,
+        226283990,
+        248779986,
+        259833814,
+        237452236,
+        237439234,
+        248693115,
+        247619066,
+        264812826,
+        264172710,
+        235417501,
+        235652287,
+        236486069,
+        253098983,
+        225067567,
+        264306063,
+        235359141,
+        256460956,
+        258378153
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780177,
+        237452236,
+        259833855,
+        257365136,
+        233231453,
+        237439234,
+        248405974,
+        248693115,
+        252991162,
+        216869396,
+        236486069,
+        232134931
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259833855,
+        248780177,
+        237452236,
+        237439234,
+        257365136,
+        248779986,
+        226283990,
+        248693115,
+        233231453,
+        258378153,
+        252780166,
+        233296808,
+        264812826,
+        259833814,
+        235652287,
+        247619066,
+        248405974,
+        237452662,
+        235359141,
+        256460956
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.808236300013959
+  },
+  "reason_example": {
+    "query_id": "litsearch_216",
+    "query": "Could you suggest research that examines how well prompt tuning using soft embeddings works for utilizing pretrained language models in downstream applications with minimal finetuning?",
+    "top_results": [
+      {
+        "corpusid": 259833855,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.957; sub_dense=0.990"
+      },
+      {
+        "corpusid": 248780177,
+        "score": 0.9131092429161072,
+        "reason": "bm25=0.856; dense=0.951; sub_bm25=0.779; sub_dense=0.976"
+      },
+      {
+        "corpusid": 237452236,
+        "score": 0.898269534111023,
+        "reason": "bm25=0.926; dense=0.880; sub_bm25=1.000; sub_dense=0.985"
+      },
+      {
+        "corpusid": 237439234,
+        "score": 0.8646741509437561,
+        "reason": "bm25=0.858; dense=0.869; sub_bm25=0.712; sub_dense=0.855"
+      },
+      {
+        "corpusid": 257365136,
+        "score": 0.8567173480987549,
+        "reason": "bm25=0.930; dense=0.808; sub_bm25=0.871; sub_dense=0.984"
+      }
+    ]
+  }
+}

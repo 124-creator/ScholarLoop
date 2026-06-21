@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_094",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_094",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_094",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_094",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1182,
+      "latency_s": 7.377187500009313
+    },
+    {
+      "query_id": "litsearch_094",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 343,
+      "latency_s": 2.694044500007294
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_094",
+    "gold": [
+      52967399
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "typical fine-tuning configurations BERT RoBERTa",
+      "fine-tuning hyperparameters BERT language understanding",
+      "standard fine-tuning settings deep bidirectional transformers NLU"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5472320,
+        7038187,
+        252819322,
+        10120820,
+        229365774,
+        248266472,
+        15213255,
+        233364939,
+        215238613,
+        5137112,
+        6349991,
+        184487812,
+        199379698,
+        207916021,
+        691418,
+        37226517,
+        218613661,
+        2776389,
+        9800912,
+        234741946
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235254612,
+        52967399,
+        226283990,
+        215238613,
+        201304248,
+        215814272,
+        250390967,
+        231979101,
+        232035499,
+        207916021,
+        252819322,
+        220045413,
+        199668646,
+        236460261,
+        259376711,
+        260063230,
+        184483517,
+        220525782,
+        229923565,
+        252624613
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        207916021,
+        236459909,
+        52967399,
+        218629975,
+        201730645,
+        159041867,
+        207853045,
+        225062299,
+        222176890,
+        226246215,
+        218502632,
+        252780109,
+        226283990,
+        253510792,
+        215238613,
+        215814272,
+        222291680,
+        233365297,
+        259376711,
+        231718746
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52967399,
+        226283990,
+        235254612
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52967399,
+        207916021,
+        226283990,
+        215238613,
+        215814272,
+        201730645,
+        259376711,
+        220045413,
+        250390967,
+        235254612,
+        253510792,
+        219571176,
+        201304248,
+        219558836,
+        216641856,
+        231718746,
+        199668646,
+        199379698,
+        210714061,
+        236459909
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.37906780000776
+  },
+  "reason_example": {
+    "query_id": "litsearch_094",
+    "query": "Which paper specifies the typical configurations used in fine-tuning deep bidirectional transformers like BERT and RoBERTa for language understanding tasks?",
+    "top_results": [
+      {
+        "corpusid": 52967399,
+        "score": 0.9825190305709839,
+        "reason": "bm25=0.999; dense=0.972; sub_bm25=0.831; sub_dense=0.958"
+      },
+      {
+        "corpusid": 207916021,
+        "score": 0.9587956666946411,
+        "reason": "bm25=0.897; dense=1.000; sub_bm25=0.977; sub_dense=0.931"
+      },
+      {
+        "corpusid": 226283990,
+        "score": 0.8887449502944946,
+        "reason": "bm25=0.943; dense=0.853; sub_bm25=0.816; sub_dense=0.963"
+      },
+      {
+        "corpusid": 215238613,
+        "score": 0.8847678899765015,
+        "reason": "bm25=0.937; dense=0.850; sub_bm25=0.401; sub_dense=0.777"
+      },
+      {
+        "corpusid": 215814272,
+        "score": 0.8788700103759766,
+        "reason": "bm25=0.923; dense=0.850; sub_bm25=0.611; sub_dense=0.855"
+      }
+    ]
+  }
+}

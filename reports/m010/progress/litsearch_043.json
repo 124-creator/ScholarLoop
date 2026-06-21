@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_043",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_043",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_043",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_043",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1405,
+      "latency_s": 7.595720399986021
+    },
+    {
+      "query_id": "litsearch_043",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 318,
+      "latency_s": 2.0050789000233635
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_043",
+    "gold": [
+      207880568
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "XLM-R multilingual representation learning",
+      "XLM-R transformer architecture",
+      "multilingual transformer embeddings XLM-R"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259376593,
+        252819412,
+        250390539,
+        226283737,
+        174800553,
+        259376848,
+        250390616,
+        8502465,
+        259287284,
+        218613661,
+        235097623,
+        235313749,
+        252624613,
+        256697545,
+        51734726,
+        199379710,
+        248722176,
+        201070814,
+        253762017,
+        13700629
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253107694,
+        246000055,
+        259376593,
+        258486899,
+        259287284,
+        233864633,
+        236486316,
+        249431367,
+        52012412,
+        203690445,
+        229923851,
+        256598350,
+        263829348,
+        237491776,
+        252692952,
+        251594643,
+        252907203,
+        221761146,
+        238531645,
+        258187606
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233481097,
+        207880568,
+        253116659,
+        222178270,
+        225067567,
+        226281941,
+        235352637,
+        235683062,
+        238856697,
+        236460291,
+        252183546,
+        222291680,
+        159041867,
+        216641856,
+        202541078,
+        237491776,
+        216914731,
+        207847556,
+        246000055,
+        235303732
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253116659,
+        233864633,
+        253107694,
+        246000055,
+        245335278,
+        258486899,
+        237491776,
+        236460291,
+        236486235,
+        259376593,
+        259287284,
+        251594643
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        207880568,
+        246000055,
+        253116659,
+        237491776,
+        222178270,
+        225067567,
+        252183546,
+        236460291,
+        233864633,
+        233481097,
+        256598350,
+        226281941,
+        202541078,
+        253107694,
+        222291680,
+        236486109,
+        258832427,
+        256460986,
+        258486899,
+        223953350
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.264832000015303
+  },
+  "reason_example": {
+    "query_id": "litsearch_043",
+    "query": "I'm exploring efficient transformer architectures for language embeddings and came across some work that utilizes advanced pre-trained models. Which paper should I reference to learn more about the use of XLM-R for multilingual representation learning in a transformer-based setting?",
+    "top_results": [
+      {
+        "corpusid": 207880568,
+        "score": 0.8902093172073364,
+        "reason": "bm25=0.769; dense=0.971; sub_bm25=0.973; sub_dense=0.982"
+      },
+      {
+        "corpusid": 246000055,
+        "score": 0.8763819932937622,
+        "reason": "bm25=0.937; dense=0.836; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253116659,
+        "score": 0.8681519031524658,
+        "reason": "bm25=0.760; dense=0.941; sub_bm25=0.652; sub_dense=0.991"
+      },
+      {
+        "corpusid": 237491776,
+        "score": 0.855164647102356,
+        "reason": "bm25=0.874; dense=0.843; sub_bm25=0.530; sub_dense=0.886"
+      },
+      {
+        "corpusid": 222178270,
+        "score": 0.8506791591644287,
+        "reason": "bm25=0.737; dense=0.926; sub_bm25=0.523; sub_dense=0.869"
+      }
+    ]
+  }
+}

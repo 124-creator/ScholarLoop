@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_442",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_442",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_442",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_442",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1137,
+      "latency_s": 5.481952799949795
+    },
+    {
+      "query_id": "litsearch_442",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 270,
+      "latency_s": 2.217375100008212
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_442",
+    "gold": [
+      259370815
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "GPT-2 automatic diagnosis training",
+      "efficient data augmentation symptom prediction disease identification",
+      "GPT-2 medical diagnosis data augmentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51875856,
+        6737912,
+        229220464,
+        18957176,
+        258486952,
+        51776230,
+        839014,
+        11923352,
+        227230392,
+        1441185,
+        15247441,
+        15634149,
+        13292908,
+        15110225,
+        10673850,
+        16059892,
+        5292642,
+        7885895,
+        11966677,
+        60824678
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370815,
+        16527671,
+        51875856,
+        248986327,
+        202771062,
+        51878788,
+        244464076,
+        259376853,
+        226283798,
+        235313431,
+        15799961,
+        237532273,
+        222133959,
+        51867292,
+        72940739,
+        250391045,
+        251490785,
+        26571926,
+        3769580,
+        259095584
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370815,
+        11045020,
+        252819024,
+        259370774,
+        51878788,
+        222290531,
+        250390993,
+        259833799,
+        248780333,
+        202771062,
+        226299447,
+        15629058,
+        248366439,
+        248986327,
+        243840130,
+        248177735,
+        226284017,
+        259376475,
+        3565485,
+        12831752
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370815,
+        248780333,
+        235313431,
+        252819024,
+        51875856,
+        226283798,
+        248986327,
+        16527671,
+        16780687,
+        51878788,
+        11045020,
+        244464076
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370815,
+        51878788,
+        202771062,
+        248986327,
+        252819024,
+        51875856,
+        11045020,
+        226283798,
+        259370774,
+        259833799,
+        248780333,
+        16527671,
+        222290531,
+        218515435,
+        250390993,
+        12831752,
+        225062783,
+        244464076,
+        248177735,
+        226284017
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.657402000040747
+  },
+  "reason_example": {
+    "query_id": "litsearch_442",
+    "query": "Which paper explored training a GPT-2 for automatic diagnosis, emphasizing efficient data augmentation for symptom prediction and disease identification?",
+    "top_results": [
+      {
+        "corpusid": 259370815,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 51878788,
+        "score": 0.7137570381164551,
+        "reason": "bm25=0.600; dense=0.789; sub_bm25=0.516; sub_dense=0.781"
+      },
+      {
+        "corpusid": 202771062,
+        "score": 0.6922338008880615,
+        "reason": "bm25=0.610; dense=0.747; sub_bm25=0.848; sub_dense=0.772"
+      },
+      {
+        "corpusid": 248986327,
+        "score": 0.6906755566596985,
+        "reason": "bm25=0.626; dense=0.734; sub_bm25=0.870; sub_dense=0.809"
+      },
+      {
+        "corpusid": 252819024,
+        "score": 0.6893352270126343,
+        "reason": "bm25=0.488; dense=0.824; sub_bm25=0.756; sub_dense=0.967"
+      }
+    ]
+  }
+}

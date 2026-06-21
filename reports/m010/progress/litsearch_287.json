@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_287",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_287",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_287",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_287",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 916,
+      "latency_s": 5.194090500008315
+    },
+    {
+      "query_id": "litsearch_287",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 299,
+      "latency_s": 2.4677564000012353
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_287",
+    "gold": [
+      239009871
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "large language models scientific writing ideation",
+      "LLM idea generation scientific concepts",
+      "AI assisted brainstorming scientific writing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        45438237,
+        241583483,
+        53093808,
+        239009871,
+        241583598,
+        253420419,
+        259833850,
+        49420146,
+        248779948,
+        249394890,
+        250390588,
+        10396032,
+        254877569,
+        7492076,
+        17724446,
+        22615716,
+        18357549,
+        253447029,
+        7989398,
+        6325317
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        36741026,
+        239009871,
+        259088686,
+        258486923,
+        259376695,
+        233029468,
+        16361012,
+        14368467,
+        2573563,
+        51871258,
+        237250135,
+        235097633,
+        247627737,
+        247451124,
+        252819339,
+        253447029,
+        885411,
+        259075344,
+        52206963,
+        252365295
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        239009871,
+        2845210,
+        14368467,
+        33107619,
+        259370534,
+        259833850,
+        15595465,
+        14201569,
+        259095948,
+        36568471,
+        239010012,
+        245877546,
+        235265909,
+        2573563,
+        259075538,
+        264038778,
+        28841202,
+        248780007,
+        201667815,
+        253270480
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        239009871,
+        14368467,
+        233029468,
+        2573563,
+        263269807,
+        259088686,
+        253420419,
+        7952407,
+        258486923,
+        253447029,
+        14968002,
+        245502524
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        239009871,
+        14368467,
+        2845210,
+        2573563,
+        233029468,
+        7952407,
+        258486923,
+        16361012,
+        263269807,
+        18136471,
+        235097633,
+        252460901,
+        245502524,
+        159040684,
+        241583682,
+        252365295,
+        1174611,
+        201667815,
+        260063149,
+        259075344
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.693835700047202
+  },
+  "reason_example": {
+    "query_id": "litsearch_287",
+    "query": "Is there a study that investigates if large language models can assist with generating ideas pertinent to scientific concepts during the scientific writing ideation stage?",
+    "top_results": [
+      {
+        "corpusid": 239009871,
+        "score": 0.9993942975997925,
+        "reason": "bm25=0.998; dense=1.000; sub_bm25=0.859; sub_dense=1.000"
+      },
+      {
+        "corpusid": 14368467,
+        "score": 0.8625018000602722,
+        "reason": "bm25=0.927; dense=0.819; sub_bm25=0.812; sub_dense=0.933"
+      },
+      {
+        "corpusid": 2845210,
+        "score": 0.8422551155090332,
+        "reason": "bm25=0.780; dense=0.884; sub_bm25=0.424; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2573563,
+        "score": 0.8031830787658691,
+        "reason": "bm25=0.915; dense=0.729; sub_bm25=0.839; sub_dense=0.799"
+      },
+      {
+        "corpusid": 233029468,
+        "score": 0.7940166592597961,
+        "reason": "bm25=0.940; dense=0.697; sub_bm25=1.000; sub_dense=0.939"
+      }
+    ]
+  }
+}

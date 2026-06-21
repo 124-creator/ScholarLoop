@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_585",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_585",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_585",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_585",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 694,
+      "latency_s": 2.8398002999601886
+    },
+    {
+      "query_id": "litsearch_585",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 246,
+      "latency_s": 2.010735600022599
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_585",
+    "gold": [
+      263909212
+    ],
+    "pool_size": 286,
+    "decomposition": [
+      "formal definition of model selection in LLM agents",
+      "model selection problem multi-modal reasoning agents",
+      "LLM agent model selection formalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        12405045,
+        16627872,
+        14858666,
+        1860368,
+        12878133,
+        18792136,
+        16372558,
+        18414132,
+        233204526,
+        14395328,
+        6096814,
+        6855748,
+        18872979,
+        47020074,
+        18461192,
+        9787601,
+        13591927,
+        1420479,
+        1425156,
+        14576957
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263909212,
+        259370871,
+        248887351,
+        256826762,
+        260682249,
+        260350986,
+        256358735,
+        260203143,
+        254877569,
+        258557654,
+        263333921,
+        254125022,
+        52143467,
+        258291930,
+        237502650,
+        243864624,
+        252907411,
+        202774140,
+        260611249,
+        253447251
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263909212,
+        3915428,
+        253098700,
+        14623451,
+        260682249,
+        893234,
+        5829370,
+        262084051,
+        11009209,
+        64226,
+        41056263,
+        12808898,
+        257901155,
+        14226744,
+        6424219,
+        18417896,
+        13966561,
+        261124675,
+        8199913,
+        16577840
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263909212
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263909212,
+        260682249,
+        253098700,
+        257901155,
+        893234,
+        5829370,
+        256358735,
+        7719615,
+        52891534,
+        13966561,
+        254877569,
+        8199913,
+        262084051,
+        252683303,
+        8683986,
+        255186100,
+        248887351,
+        222208985,
+        14623451,
+        14226744
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 5.883264199947007
+  },
+  "reason_example": {
+    "query_id": "litsearch_585",
+    "query": "Which paper formally defines the problem of model selection in llm agent for multi-modal reasoning?",
+    "top_results": [
+      {
+        "corpusid": 263909212,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 260682249,
+        "score": 0.6897383332252502,
+        "reason": "bm25=0.617; dense=0.738; sub_bm25=0.811; sub_dense=1.000"
+      },
+      {
+        "corpusid": 253098700,
+        "score": 0.6794096231460571,
+        "reason": "bm25=0.511; dense=0.791; sub_bm25=0.578; sub_dense=0.883"
+      },
+      {
+        "corpusid": 257901155,
+        "score": 0.6445488333702087,
+        "reason": "bm25=0.542; dense=0.713; sub_bm25=0.577; sub_dense=0.782"
+      },
+      {
+        "corpusid": 893234,
+        "score": 0.6407972574234009,
+        "reason": "bm25=0.506; dense=0.731; sub_bm25=0.523; sub_dense=0.821"
+      }
+    ]
+  }
+}

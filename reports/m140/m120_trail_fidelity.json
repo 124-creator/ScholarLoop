@@ -1,0 +1,11 @@
+{
+  "schema_version": "m120.trail_fidelity.v1",
+  "status": "PASS",
+  "query_count": 30,
+  "step_count": 120,
+  "fabrication": 0,
+  "fabricated_steps": [],
+  "missing_source_count": 0,
+  "missing_sources": [],
+  "source_policy": "all trail steps surface verified pipeline artifacts only; no generated chain-of-thought"
+}

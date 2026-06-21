@@ -1,0 +1,609 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_001",
+  "query": "Are there any resources available for translating Tunisian Arabic dialect that contain both manually translated comments by native speakers and additional data augmented through methods like segmentation at stop words level?",
+  "criteria": [
+    "Tunisian Arabic translation dataset native speaker comments",
+    "data augmentation segmentation stop words Arabic dialect translation",
+    "Tunisian Arabic dialect parallel corpus augmented translation"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_001.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_001",
+      "corpusid": 252432736,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Standardization of Dialect Comments in Social Networks in View of Sentiment Analysis : Case of Tunisian Dialect",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            111
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4399073714",
+            "candidate_title": "Enhancing Arabic Dialect Detection on Social Media: A Hybrid Model with an Attention Mechanism",
+            "title_score": 0.4158415841584158,
+            "title_token_jaccard": 0.08333333333333333,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4399073714",
+            "candidate_title": "Enhancing Arabic Dialect Detection on Social Media: A Hybrid Model with an Attention Mechanism",
+            "title_score": 0.4158415841584158,
+            "title_token_jaccard": 0.08333333333333333,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "This linguistic situation inhibits mutual understanding between internet users and makes difficult to use computational approaches since most Arabic resources are intended for the formal language: Modern Standard Arabic (MSA).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            181,
+            407
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Each of these steps was evaluated on the same test corpus.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            734,
+            792
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Then, the resulting comments are translated using a neural translation model.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            656,
+            733
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "In effect, MSA presents the formal language for all Arabic dialects, but they are different at all linguistic levels.",
+          "status": "存在争议",
+          "source_field": "full_paper",
+          "char_span": [
+            3111,
+            3228
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1120,
+        "elapsed_s": 4.158369899960235,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_001_252432736.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": null
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_001",
+      "corpusid": 6825507,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Sentiment Analysis of Tunisian Dialect: Linguistic Resources and Experiments",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            76
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2740432722",
+            "candidate_title": "Sentiment Analysis of Tunisian Dialects: Linguistic Ressources and Experiments",
+            "title_score": 0.9868421052631579,
+            "title_token_jaccard": 0.6363636363636364,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "",
+          "status": "需人工核验",
+          "source_field": null,
+          "char_span": null,
+          "confidence": 0.0,
+          "resolution_hint": "online_connector_required_for_author_year_source_doi",
+          "m050_resolution_attempt": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2740432722",
+            "candidate_title": "Sentiment Analysis of Tunisian Dialects: Linguistic Ressources and Experiments",
+            "title_score": 0.9868421052631579,
+            "title_token_jaccard": 0.6363636363636364,
+            "strong_match": false,
+            "threshold": {
+              "normalized_score": 0.94,
+              "token_jaccard": 0.8
+            }
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We use Machine Learning techniques to determine the polarity of comments written in Tunisian dialect.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            457,
+            558
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "First, we evaluate the SA systems performances with models trained using freely available MSA and Multi-dialectal data sets.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            559,
+            683
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "This corpus shows a significant improvement compared to the best model trained on other Arabic dialects or MSA data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            773,
+            889
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "There are many existing researches in the field of Arabic language Sentiment Analysis (SA); however, they are generally restricted to Modern Standard Arabic (MSA) or some dialects of economic or political interest.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            188,
+            402
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1110,
+        "elapsed_s": 4.5687062999932095,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_001_6825507.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": null
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_001",
+      "corpusid": 227231792,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Parallel resources for Tunisian Arabic dialect translation",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            58
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Saméh Kchaou, Rahma Boujelbane, Lamia Hadrich Belguith (2020)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3120055548",
+            "fetched_at": "2026-06-20T00:15:40Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\1881cb0dd12fd2addc52c3aa.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: https://www.aclweb.org/anthology/2020.wanlp-1.18/; OA: closed; Citations: 2",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3120055548",
+            "fetched_at": "2026-06-20T00:15:40Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\1881cb0dd12fd2addc52c3aa.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Indeed, all machine translation systems require a huge amount and good management of training data, which represents a challenge in a lowresource setting such as the Tunisian Arabic dialect.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            149,
+            339
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Obviously, the translation performance is improved by augmenting the size of TD-MSA parallel data sets.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            3467,
+            3570
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "Indeed, all machine translation systems require a huge amount and good management of training data, which represents a challenge in a lowresource setting such as the Tunisian Arabic dialect.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            149,
+            339
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1336,
+        "elapsed_s": 6.572458699927665,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_001_227231792.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3120055548",
+        "title": "Parallel resources for Tunisian Arabic Dialect Translation",
+        "authors": [
+          "Saméh Kchaou",
+          "Rahma Boujelbane",
+          "Lamia Hadrich Belguith"
+        ],
+        "year": 2020,
+        "venue": "https://www.aclweb.org/anthology/2020.wanlp-1.18/",
+        "doi": "",
+        "oa_status": "closed",
+        "citation_count": 2,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:15:40Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\1881cb0dd12fd2addc52c3aa.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Parallel resources for Tunisian Arabic dialect translation",
+          "candidate_title": "Parallel resources for Tunisian Arabic Dialect Translation",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 252432736,
+      "title": "Standardization of Dialect Comments in Social Networks in View of Sentiment Analysis : Case of Tunisian Dialect",
+      "cells": [
+        {
+          "criterion": "Tunisian Arabic translation dataset native speaker comments",
+          "addresses": true,
+          "snippet": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ]
+        },
+        {
+          "criterion": "data augmentation segmentation stop words Arabic dialect translation",
+          "addresses": true,
+          "snippet": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ]
+        },
+        {
+          "criterion": "Tunisian Arabic dialect parallel corpus augmented translation",
+          "addresses": true,
+          "snippet": "With the growing access to the internet, the spoken Arabic dialect language becomes an informal languages written in social media.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 6825507,
+      "title": "Sentiment Analysis of Tunisian Dialect: Linguistic Resources and Experiments",
+      "cells": [
+        {
+          "criterion": "Tunisian Arabic translation dataset native speaker comments",
+          "addresses": true,
+          "snippet": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ]
+        },
+        {
+          "criterion": "data augmentation segmentation stop words Arabic dialect translation",
+          "addresses": true,
+          "snippet": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ]
+        },
+        {
+          "criterion": "Tunisian Arabic dialect parallel corpus augmented translation",
+          "addresses": true,
+          "snippet": "Dialectal Arabic (DA) is significantly different from the Arabic language taught in schools and used in written communication and formal speech (broadcast news, religion, politics, etc.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            185
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 227231792,
+      "title": "Parallel resources for Tunisian Arabic dialect translation",
+      "cells": [
+        {
+          "criterion": "Tunisian Arabic translation dataset native speaker comments",
+          "addresses": true,
+          "snippet": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ]
+        },
+        {
+          "criterion": "data augmentation segmentation stop words Arabic dialect translation",
+          "addresses": true,
+          "snippet": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ]
+        },
+        {
+          "criterion": "Tunisian Arabic dialect parallel corpus augmented translation",
+          "addresses": true,
+          "snippet": "The difficulty of processing dialects is clearly observed in the high cost of building representative corpus, in particular for machine translation.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            148
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      6825507,
+      227231792,
+      252432736
+    ],
+    "edges": [
+      {
+        "source": 252432736,
+        "target": 227231792
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

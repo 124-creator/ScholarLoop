@@ -1,0 +1,221 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_025",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_025",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_025",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_025",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1005,
+      "latency_s": 5.305681199999526
+    },
+    {
+      "query_id": "litsearch_025",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 261,
+      "latency_s": 2.0927823000820354
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_025",
+    "gold": [
+      155089628
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "evaluation of context-aware machine translation discourse deixis",
+      "context-aware machine translation lexical cohesion evaluation",
+      "discourse phenomena evaluation context-aware neural machine translation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        61214793,
+        1412569,
+        8738739,
+        227905498,
+        2414511,
+        162171,
+        14216550,
+        3426226,
+        21022858,
+        32782433,
+        6415383,
+        17826252,
+        199501730,
+        216035817,
+        10198838,
+        12667554,
+        9351555,
+        784169,
+        10865063,
+        7374270
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        155089628,
+        6215504,
+        237513464,
+        227905498,
+        253097720,
+        234342704,
+        251407176,
+        252819127,
+        53246804,
+        1412569,
+        784169,
+        259370789,
+        452011,
+        7261487,
+        1967279,
+        202757536,
+        225062777,
+        2991926,
+        216035817,
+        227230870
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237513464,
+        627662,
+        18125610,
+        10403168,
+        259370789,
+        53246804,
+        9351555,
+        44968305,
+        155089628,
+        7179102,
+        8577994,
+        8418674,
+        261494470,
+        3253153,
+        14968400,
+        6215504,
+        35381197,
+        244464104,
+        17575738,
+        12385862
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        155089628,
+        227905498,
+        259370789,
+        216035817,
+        234342704,
+        7179102,
+        237513464,
+        6215504
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        155089628,
+        237513464,
+        6215504,
+        227905498,
+        259370789,
+        53246804,
+        10403168,
+        253097720,
+        234342704,
+        7179102,
+        627662,
+        18125610,
+        261494470,
+        452011,
+        8577994,
+        216035817,
+        35381197,
+        3253153,
+        44968305,
+        6864375
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.253935999935493
+  },
+  "reason_example": {
+    "query_id": "litsearch_025",
+    "query": "Can you suggest some literature that evaluates the ability of context-aware machine translation systems to handle discourse phenomena such as deixis and lexical cohesion?",
+    "top_results": [
+      {
+        "corpusid": 155089628,
+        "score": 0.9543347358703613,
+        "reason": "bm25=1.000; dense=0.924; sub_bm25=1.000; sub_dense=0.896"
+      },
+      {
+        "corpusid": 237513464,
+        "score": 0.9358528852462769,
+        "reason": "bm25=0.840; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 6215504,
+        "score": 0.8825147151947021,
+        "reason": "bm25=0.854; dense=0.901; sub_bm25=0.714; sub_dense=0.777"
+      },
+      {
+        "corpusid": 227905498,
+        "score": 0.8583377003669739,
+        "reason": "bm25=0.835; dense=0.874; sub_bm25=0.993; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370789,
+        "score": 0.8528647422790527,
+        "reason": "bm25=0.715; dense=0.945; sub_bm25=0.780; sub_dense=0.941"
+      }
+    ]
+  }
+}

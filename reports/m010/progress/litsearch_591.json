@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_591",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_591",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_591",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_591",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1526,
+      "latency_s": 11.427438799990341
+    },
+    {
+      "query_id": "litsearch_591",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 368,
+      "latency_s": 2.690522199962288
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_591",
+    "gold": [
+      260154786
+    ],
+    "pool_size": 258,
+    "decomposition": [
+      "theoretical lower bounds policy learning non-additive rewards",
+      "empirical strategy non-additive rewards policy learning guarantees",
+      "non-additive rewards policy learning lower bounds"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        37012896,
+        20382420,
+        10068460,
+        6461701,
+        226236734,
+        1206711,
+        11866664,
+        248780466,
+        8150087,
+        763228,
+        3127682,
+        1526614,
+        12562747,
+        15792191,
+        2757574,
+        7061704,
+        18597583,
+        52909341,
+        245634541,
+        12738488
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256598204,
+        260154786,
+        49666783,
+        245634541,
+        232170613,
+        258865692,
+        246679865,
+        52297370,
+        252683860,
+        252968162,
+        52909341,
+        200884,
+        246705937,
+        259096096,
+        44065372,
+        256697567,
+        246706248,
+        263791008,
+        263609164,
+        53415112
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        210903109,
+        44095973,
+        195345577,
+        33985488,
+        257632202,
+        245634541,
+        59316477,
+        252683860,
+        239049480,
+        264128269,
+        3625614,
+        44065372,
+        231847016,
+        246822526,
+        239049633,
+        238419077,
+        250089350,
+        256868328,
+        49666783,
+        252693021
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258865692,
+        256868328,
+        232170613,
+        256598204,
+        263609164,
+        49666783,
+        252683860,
+        245634541,
+        52909341,
+        33985488,
+        246679865,
+        56895534
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        245634541,
+        49666783,
+        256598204,
+        252683860,
+        258865692,
+        44065372,
+        3625614,
+        260154786,
+        246679865,
+        232170613,
+        231847016,
+        232170254,
+        59316477,
+        56895534,
+        264128269,
+        246705937,
+        44095973,
+        195345577,
+        256868328,
+        33985488
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 15.720973600051366
+  },
+  "reason_example": {
+    "query_id": "litsearch_591",
+    "query": "Which paper studies how difficult is a policy learning problem under non-additive rewards in terms of theoretical lower bounds, and what could be a potential strategy to solve it empirically while recovering some specialized guarantees?",
+    "top_results": [
+      {
+        "corpusid": 245634541,
+        "score": 0.9409475922584534,
+        "reason": "bm25=0.904; dense=0.966; sub_bm25=0.610; sub_dense=0.937"
+      },
+      {
+        "corpusid": 49666783,
+        "score": 0.9261008501052856,
+        "reason": "bm25=0.907; dense=0.939; sub_bm25=0.870; sub_dense=0.924"
+      },
+      {
+        "corpusid": 256598204,
+        "score": 0.9169967174530029,
+        "reason": "bm25=1.000; dense=0.862; sub_bm25=0.841; sub_dense=0.891"
+      },
+      {
+        "corpusid": 252683860,
+        "score": 0.8928340673446655,
+        "reason": "bm25=0.791; dense=0.960; sub_bm25=0.560; sub_dense=0.940"
+      },
+      {
+        "corpusid": 258865692,
+        "score": 0.8793628215789795,
+        "reason": "bm25=0.835; dense=0.909; sub_bm25=0.819; sub_dense=0.907"
+      }
+    ]
+  }
+}

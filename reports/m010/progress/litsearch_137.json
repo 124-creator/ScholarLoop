@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_137",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_137",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_137",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_137",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 832,
+      "latency_s": 3.9037606000201777
+    },
+    {
+      "query_id": "litsearch_137",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 2.413843199959956
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_137",
+    "gold": [
+      229923538
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "quantization knowledge distillation integration survey",
+      "joint quantization and knowledge distillation training",
+      "model quantization with knowledge distillation combined"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        11242051,
+        7440991,
+        186232078,
+        248118963,
+        237433629,
+        8365362,
+        1300761,
+        6881568,
+        8083387,
+        10603988,
+        7909356,
+        7405607,
+        211205183,
+        52186951,
+        233365289,
+        19914801,
+        235482401,
+        81978080,
+        2666779,
+        4380524
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253735201,
+        237433629,
+        237605176,
+        218502458,
+        253097876,
+        232478335,
+        247741658,
+        222177226,
+        254854264,
+        256461337,
+        8451212,
+        253107373,
+        3323727,
+        256461166,
+        5523142,
+        258865530,
+        257102379,
+        227247952,
+        215238664,
+        247613006
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8125776,
+        250390701,
+        250390702,
+        256461337,
+        244909258,
+        253097876,
+        201670719,
+        248780060,
+        259370700,
+        234771710,
+        259137871,
+        238857304,
+        239016109,
+        227247952,
+        237250417,
+        204838340,
+        237605176,
+        252819437,
+        227231666,
+        8451212
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253735201
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390701,
+        256461337,
+        253097876,
+        237605176,
+        244909258,
+        250390702,
+        218502458,
+        227247952,
+        8451212,
+        238857304,
+        259137871,
+        254854264,
+        237250417,
+        3323727,
+        204838340,
+        8125776,
+        258212842,
+        227231666,
+        235248419,
+        257102379
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.506232299958356
+  },
+  "reason_example": {
+    "query_id": "litsearch_137",
+    "query": "Could you recommend a study that investigates how integrating model quantization with knowledge distillation?",
+    "top_results": [
+      {
+        "corpusid": 250390701,
+        "score": 0.9230072498321533,
+        "reason": "bm25=0.839; dense=0.979; sub_bm25=0.653; sub_dense=0.842"
+      },
+      {
+        "corpusid": 256461337,
+        "score": 0.9038701057434082,
+        "reason": "bm25=0.894; dense=0.910; sub_bm25=0.930; sub_dense=0.924"
+      },
+      {
+        "corpusid": 253097876,
+        "score": 0.8922557234764099,
+        "reason": "bm25=0.910; dense=0.880; sub_bm25=0.748; sub_dense=0.873"
+      },
+      {
+        "corpusid": 237605176,
+        "score": 0.8744052052497864,
+        "reason": "bm25=0.947; dense=0.826; sub_bm25=0.586; sub_dense=0.849"
+      },
+      {
+        "corpusid": 244909258,
+        "score": 0.8576145172119141,
+        "reason": "bm25=0.808; dense=0.891; sub_bm25=0.644; sub_dense=0.782"
+      }
+    ]
+  }
+}

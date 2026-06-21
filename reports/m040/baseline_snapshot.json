@@ -1,0 +1,14 @@
+{
+  "m010_status": "PASS",
+  "query_count": 597,
+  "a_v1_f1_exact": 0.11277564471796502,
+  "a_v1_f1_rounded_4": 0.1128,
+  "bm25_f1_exact": 0.09639377930835218,
+  "m010_results_sha256": "fb6b6899c012bf5f53ece72937e317b2dcb3404a9305d281757ad156208dcaa9",
+  "m010_significance_sha256": "ec1b429993d12597695a9509ae312f543aa20ff2e3c206aef5dcce8068f5c27f",
+  "config_present": {
+    "LLM_BASE_URL": true,
+    "LLM_API_KEY": true,
+    "LLM_MODEL": true
+  }
+}

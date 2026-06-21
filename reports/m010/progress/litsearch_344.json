@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_344",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_344",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_344",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_344",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 634,
+      "latency_s": 2.787643500021659
+    },
+    {
+      "query_id": "litsearch_344",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 272,
+      "latency_s": 2.6446984000504017
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_344",
+    "gold": [
+      233033613
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "sparse attention module summarization",
+      "introduces sparse attention mechanism",
+      "evaluated on summarization task"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763339,
+        225063191,
+        2432562,
+        11380974,
+        9121717,
+        15597064,
+        40524180,
+        42653685,
+        94818,
+        2145617,
+        258378335,
+        9609078,
+        1770102,
+        8173531,
+        14941328,
+        51879461,
+        222134049,
+        3892528,
+        10724165,
+        34245575
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        238744469,
+        252693111,
+        212718077,
+        249063064,
+        248780244,
+        337730,
+        982761,
+        237940880,
+        259370771,
+        15567696,
+        247618871,
+        57189197,
+        2300310,
+        263608118,
+        235293798,
+        84843987,
+        233033662,
+        226262229,
+        254854373,
+        53083244
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        249063064,
+        202771122,
+        233033613,
+        235186832,
+        42119295,
+        252763332,
+        2861585,
+        235358334,
+        1046281,
+        252819163,
+        53046735,
+        253098395,
+        202779863,
+        1791846,
+        11989149,
+        174800577,
+        258486857,
+        224818792,
+        223953416,
+        259088854
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        238744469
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        249063064,
+        202771122,
+        238744469,
+        233033662,
+        53046735,
+        53083244,
+        202779863,
+        235186832,
+        235358334,
+        196174574,
+        1918428,
+        337730,
+        1499080,
+        235293798,
+        212718077,
+        21663953,
+        235262720,
+        237940880,
+        248780473,
+        219323550
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 6.13965799997095
+  },
+  "reason_example": {
+    "query_id": "litsearch_344",
+    "query": "Which work introduces sparse attention modules and evaluate specifically on summarization?",
+    "top_results": [
+      {
+        "corpusid": 249063064,
+        "score": 0.92539381980896,
+        "reason": "bm25=0.813; dense=1.000; sub_bm25=0.770; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202771122,
+        "score": 0.8827530145645142,
+        "reason": "bm25=0.708; dense=0.999; sub_bm25=0.762; sub_dense=0.988"
+      },
+      {
+        "corpusid": 238744469,
+        "score": 0.8749412298202515,
+        "reason": "bm25=1.000; dense=0.792; sub_bm25=0.829; sub_dense=0.825"
+      },
+      {
+        "corpusid": 233033662,
+        "score": 0.8434432744979858,
+        "reason": "bm25=0.770; dense=0.892; sub_bm25=0.735; sub_dense=0.856"
+      },
+      {
+        "corpusid": 53046735,
+        "score": 0.8260674476623535,
+        "reason": "bm25=0.686; dense=0.919; sub_bm25=0.589; sub_dense=0.915"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_127",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_127",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_127",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_127",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 766,
+      "latency_s": 3.6342859000433236
+    },
+    {
+      "query_id": "litsearch_127",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 393,
+      "latency_s": 3.0100266999797896
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_127",
+    "gold": [
+      234741719
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "Chinese sequence labeling BERT lexical bilinear attention",
+      "character-to-word bilinear attention Chinese NER",
+      "improving Chinese sequence labeling with BERT and lexicon"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235482360,
+        5453178,
+        8507410,
+        5153623,
+        16715295,
+        5389622,
+        16657732,
+        6723570,
+        202776307,
+        12795660,
+        245838347,
+        12682675,
+        235244974,
+        3038599,
+        52299393,
+        19914801,
+        2771429,
+        237571350,
+        16343761,
+        6063584
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237571350,
+        2749334,
+        52153894,
+        52013262,
+        16343761,
+        782758,
+        236477700,
+        207847868,
+        237945263,
+        207869719,
+        52160556,
+        52010197,
+        67856361,
+        16566986,
+        258486868,
+        201698358,
+        7063079,
+        220045413,
+        20803199,
+        5075704
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        234741719,
+        222377578,
+        207847868,
+        251274344,
+        253761964,
+        253157580,
+        220046453,
+        253080785,
+        236477700,
+        52013262,
+        231718808,
+        14724419,
+        226262399,
+        235422673,
+        202122780,
+        215745521,
+        216641856,
+        248780477,
+        207869719,
+        229923035
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        234741719,
+        237571350,
+        207847868
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234741719,
+        207847868,
+        52013262,
+        236477700,
+        253761964,
+        222377578,
+        237571350,
+        2749334,
+        207869719,
+        253157580,
+        220046453,
+        16343761,
+        782758,
+        5075704,
+        201058720,
+        14724419,
+        251274344,
+        67856361,
+        234487195,
+        215745521
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.335599499987438
+  },
+  "reason_example": {
+    "query_id": "litsearch_127",
+    "query": "Could you recommend a study that explores the improvement of Chinese sequence labeling with BERT through the incorporation of lexical data via a character-to-word bilinear attention approach?",
+    "top_results": [
+      {
+        "corpusid": 234741719,
+        "score": 0.928572416305542,
+        "reason": "bm25=0.821; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 207847868,
+        "score": 0.8905124068260193,
+        "reason": "bm25=0.873; dense=0.902; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52013262,
+        "score": 0.8577049970626831,
+        "reason": "bm25=0.916; dense=0.819; sub_bm25=0.708; sub_dense=0.837"
+      },
+      {
+        "corpusid": 236477700,
+        "score": 0.8516945838928223,
+        "reason": "bm25=0.874; dense=0.837; sub_bm25=0.649; sub_dense=0.837"
+      },
+      {
+        "corpusid": 253761964,
+        "score": 0.849104642868042,
+        "reason": "bm25=0.800; dense=0.882; sub_bm25=0.702; sub_dense=0.853"
+      }
+    ]
+  }
+}

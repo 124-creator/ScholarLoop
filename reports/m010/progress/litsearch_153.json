@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_153",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_153",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_153",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_153",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1248,
+      "latency_s": 8.394726199912839
+    },
+    {
+      "query_id": "litsearch_153",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 255,
+      "latency_s": 2.275915200007148
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_153",
+    "gold": [
+      237593027
+    ],
+    "pool_size": 262,
+    "decomposition": [
+      "intersectional bias mitigation transformer evaluation",
+      "techniques reduce intersectional bias transformer models",
+      "assessing fairness methods transformers intersectionality"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        14484940,
+        218763259,
+        1723222,
+        5659368,
+        230349190,
+        218613661,
+        16715295,
+        53639109,
+        6902253,
+        256461008,
+        233365325,
+        259290499,
+        201741510,
+        51621561,
+        208857409,
+        257258185,
+        247613006,
+        1340627,
+        10582446,
+        14727849
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233365325,
+        251928966,
+        237593027,
+        250390904,
+        227151914,
+        256461008,
+        230349190,
+        248780440,
+        226254460,
+        248118886,
+        258686693,
+        239015827,
+        234337004,
+        258486882,
+        256390197,
+        256461210,
+        215238527,
+        57761084,
+        248834106,
+        259290499
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248218650,
+        232035936,
+        252918537,
+        259376778,
+        202541078,
+        250390904,
+        236460291,
+        237593027,
+        258999206,
+        260440449,
+        235294249,
+        238531802,
+        226281941,
+        221739041,
+        225040886,
+        256389522,
+        258378283,
+        262824542,
+        258486882,
+        258378225
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237593027,
+        250390904,
+        258486882,
+        239015827,
+        250311509
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390904,
+        237593027,
+        251928966,
+        233365325,
+        258486882,
+        248118886,
+        232035936,
+        259376778,
+        202541078,
+        248218650,
+        235446334,
+        239015827,
+        248780440,
+        227151914,
+        236460291,
+        248524974,
+        238531645,
+        221739041,
+        235313996,
+        262824542
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.110643799998797
+  },
+  "reason_example": {
+    "query_id": "litsearch_153",
+    "query": "Could you recommend research that assesses techniques to mitigate intersectional biases within Transformer-based models?",
+    "top_results": [
+      {
+        "corpusid": 250390904,
+        "score": 0.9205687046051025,
+        "reason": "bm25=0.927; dense=0.916; sub_bm25=0.914; sub_dense=0.897"
+      },
+      {
+        "corpusid": 237593027,
+        "score": 0.9121018052101135,
+        "reason": "bm25=0.933; dense=0.898; sub_bm25=1.000; sub_dense=0.894"
+      },
+      {
+        "corpusid": 251928966,
+        "score": 0.8815267086029053,
+        "reason": "bm25=0.943; dense=0.841; sub_bm25=0.635; sub_dense=0.732"
+      },
+      {
+        "corpusid": 233365325,
+        "score": 0.8501938581466675,
+        "reason": "bm25=1.000; dense=0.750; sub_bm25=0.689; sub_dense=0.841"
+      },
+      {
+        "corpusid": 258486882,
+        "score": 0.8125832676887512,
+        "reason": "bm25=0.740; dense=0.861; sub_bm25=0.635; sub_dense=0.702"
+      }
+    ]
+  }
+}

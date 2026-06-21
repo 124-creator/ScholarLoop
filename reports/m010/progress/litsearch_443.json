@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_443",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_443",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_443",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_443",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 770,
+      "latency_s": 3.852746000047773
+    },
+    {
+      "query_id": "litsearch_443",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 511,
+      "latency_s": 4.442743199993856
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_443",
+    "gold": [
+      259370636
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "aggregating statements to represent political actors pre-training language model",
+      "learning mapping from language to representation pre-training political actors",
+      "first paper political actor representation aggregation statements pre-training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259370636,
+        1759792,
+        226290133,
+        1212207,
+        3193864,
+        5259715,
+        35494,
+        12795660,
+        6201412,
+        258714901,
+        6989088,
+        31750065,
+        16006663,
+        11383050,
+        16611940,
+        424889,
+        6559983,
+        196209335,
+        18462813,
+        2432242
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370636,
+        252918249,
+        218581891,
+        220047861,
+        10250712,
+        226262314,
+        219299945,
+        12115558,
+        14261417,
+        233346787,
+        250390647,
+        220060883,
+        248987101,
+        258888223,
+        252186430,
+        235254286,
+        1759792,
+        196199934,
+        13630061,
+        222208886
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259370636,
+        252918249,
+        250390647,
+        203689439,
+        27628985,
+        220047861,
+        196199934,
+        236478070,
+        3841628,
+        250391067,
+        259360654,
+        15365277,
+        229923321,
+        8894136,
+        234339299,
+        14261417,
+        259376910,
+        4989386,
+        248505805,
+        256461322
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370636,
+        252918249,
+        250390647,
+        220047861,
+        196209335,
+        218581891,
+        233346787,
+        248505805,
+        258714901,
+        247762182,
+        1759792,
+        35494
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259370636,
+        252918249,
+        220047861,
+        250390647,
+        14261417,
+        196199934,
+        218581891,
+        236478070,
+        219299945,
+        203689439,
+        248505805,
+        234339299,
+        4989386,
+        12422512,
+        256461322,
+        259376910,
+        227227651,
+        243865665,
+        233346787,
+        8894136
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.56583639991004
+  },
+  "reason_example": {
+    "query_id": "litsearch_443",
+    "query": "Which paper first aggregates statements to represent political actors and learns the mapping from languages to representation via pre-training?",
+    "top_results": [
+      {
+        "corpusid": 259370636,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252918249,
+        "score": 0.7490754723548889,
+        "reason": "bm25=0.664; dense=0.806; sub_bm25=0.790; sub_dense=0.859"
+      },
+      {
+        "corpusid": 220047861,
+        "score": 0.6600301265716553,
+        "reason": "bm25=0.597; dense=0.702; sub_bm25=0.703; sub_dense=0.749"
+      },
+      {
+        "corpusid": 250390647,
+        "score": 0.6485047936439514,
+        "reason": "bm25=0.512; dense=0.740; sub_bm25=0.542; sub_dense=0.798"
+      },
+      {
+        "corpusid": 14261417,
+        "score": 0.6156678795814514,
+        "reason": "bm25=0.522; dense=0.678; sub_bm25=0.517; sub_dense=0.741"
+      }
+    ]
+  }
+}

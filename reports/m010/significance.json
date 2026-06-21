@@ -1,0 +1,14 @@
+{
+  "scholarloop_a_vs_bm25_f1": {
+    "mean_delta": 0.016381865409612843,
+    "ci95": [
+      0.011170850366830265,
+      0.021690493615335215
+    ],
+    "resamples": 10000,
+    "passed": true
+  },
+  "scholarloop_a_f1": 0.11277564471796502,
+  "other_baseline_mean_f1": 0.07874474225796052,
+  "passed": true
+}

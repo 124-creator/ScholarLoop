@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_397",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_397",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_397",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_397",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1521,
+      "latency_s": 13.29783990001306
+    },
+    {
+      "query_id": "litsearch_397",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 292,
+      "latency_s": 3.0683458999264985
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_397",
+    "gold": [
+      259370693
+    ],
+    "pool_size": 287,
+    "decomposition": [
+      "effectiveness of testimonials in discussions",
+      "role of anecdotes in persuasive discourse",
+      "annotating testimonial use in argumentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        29974541,
+        126584,
+        15057133,
+        6389592,
+        7066450,
+        8912414,
+        22340408,
+        7362243,
+        12083964,
+        10639238,
+        26889702,
+        18199386,
+        62016582,
+        13395552,
+        794942,
+        6860686,
+        9149592,
+        10687787,
+        19020561
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        2991861,
+        18130401,
+        233296719,
+        7066450,
+        6710484,
+        730146,
+        16765642,
+        252819218,
+        7106458,
+        2134057,
+        1676875,
+        394987,
+        65265001,
+        259376490,
+        32848329,
+        46482966,
+        231698993,
+        256461217,
+        6053951,
+        219308399
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        17393033,
+        18130401,
+        1363323,
+        15956543,
+        259370693,
+        252819218,
+        14510400,
+        260063124,
+        6933057,
+        53081509,
+        3904790,
+        18716176,
+        25167923,
+        18734417,
+        7520375,
+        6356235,
+        198993887,
+        248780584,
+        259376777,
+        227231843
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        18130401,
+        252819218,
+        7066450,
+        18199386,
+        53081708,
+        2991861,
+        6710484,
+        16361170,
+        16765642,
+        6618252,
+        1676875,
+        14715892
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        18130401,
+        252819218,
+        2991861,
+        259370693,
+        6618252,
+        16361170,
+        6819967,
+        7066450,
+        15956543,
+        6356235,
+        6710484,
+        1058073,
+        16765642,
+        730146,
+        260063124,
+        250122126,
+        5973442,
+        9418786,
+        37694086,
+        51872928
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.29639740008861
+  },
+  "reason_example": {
+    "query_id": "litsearch_397",
+    "query": "Is there any paper that explores and annotates the effectiveness of using testimonials or anecdotes in discussions?",
+    "top_results": [
+      {
+        "corpusid": 18130401,
+        "score": 0.9340802431106567,
+        "reason": "bm25=0.866; dense=0.980; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252819218,
+        "score": 0.8931642770767212,
+        "reason": "bm25=0.820; dense=0.942; sub_bm25=1.000; sub_dense=0.991"
+      },
+      {
+        "corpusid": 2991861,
+        "score": 0.8522824048995972,
+        "reason": "bm25=1.000; dense=0.754; sub_bm25=0.928; sub_dense=0.946"
+      },
+      {
+        "corpusid": 259370693,
+        "score": 0.8380787372589111,
+        "reason": "bm25=0.634; dense=0.974; sub_bm25=0.546; sub_dense=0.938"
+      },
+      {
+        "corpusid": 6618252,
+        "score": 0.812531590461731,
+        "reason": "bm25=0.762; dense=0.846; sub_bm25=0.711; sub_dense=0.865"
+      }
+    ]
+  }
+}

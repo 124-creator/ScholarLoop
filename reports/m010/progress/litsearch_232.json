@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_232",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_232",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_232",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_232",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2085,
+      "latency_s": 13.532256199978292
+    },
+    {
+      "query_id": "litsearch_232",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 373,
+      "latency_s": 2.7910461999708787
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_232",
+    "gold": [
+      243865296
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "cross-lingual aspect-based sentiment analysis",
+      "code-switching aspect terms sentiment analysis",
+      "multilingual aspect-based sentiment analysis with code-switching"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        10587229,
+        225063191,
+        15717555,
+        18153548,
+        29060920,
+        15044815,
+        5983392,
+        15527245,
+        10745873,
+        61874237,
+        236460241,
+        51918677,
+        202605494,
+        230349190,
+        6982417,
+        7336765,
+        252818910,
+        238638488,
+        532463,
+        16942441
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865296,
+        6982417,
+        189928395,
+        532463,
+        29060920,
+        250390474,
+        15268705,
+        15527245,
+        202773689,
+        16908961,
+        247793069,
+        227905696,
+        261342049,
+        252460147,
+        12501197,
+        2239641,
+        256461305,
+        222141048,
+        8024533,
+        52011568
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1671104,
+        16908961,
+        4324024,
+        243865296,
+        5472627,
+        15527245,
+        5177306,
+        53239866,
+        18473670,
+        251490897,
+        2097631,
+        8523995,
+        14817153,
+        10468862,
+        14160045,
+        15268705,
+        34732784,
+        250163996,
+        19173845,
+        252763336
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865296,
+        29060920,
+        16908961,
+        236460241,
+        15527245,
+        19173845,
+        14982427,
+        1075182,
+        6982417,
+        7336765,
+        532463,
+        53239866
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        243865296,
+        16908961,
+        15527245,
+        15268705,
+        5177306,
+        4324024,
+        5472627,
+        10468862,
+        29060920,
+        6786457,
+        8523995,
+        19173845,
+        18473670,
+        251490897,
+        7336552,
+        1671104,
+        251403958,
+        250390474,
+        8024533,
+        2239641
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 18.646123900078237
+  },
+  "reason_example": {
+    "query_id": "litsearch_232",
+    "query": "Could you suggest research that investigates aspect-based sentiment analysis across different languages, incorporating methods such as code-switching of aspect terms?",
+    "top_results": [
+      {
+        "corpusid": 243865296,
+        "score": 0.9801104068756104,
+        "reason": "bm25=1.000; dense=0.967; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16908961,
+        "score": 0.9392656087875366,
+        "reason": "bm25=0.889; dense=0.973; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15527245,
+        "score": 0.9289090037345886,
+        "reason": "bm25=0.891; dense=0.954; sub_bm25=0.747; sub_dense=0.938"
+      },
+      {
+        "corpusid": 15268705,
+        "score": 0.9171026349067688,
+        "reason": "bm25=0.892; dense=0.934; sub_bm25=0.855; sub_dense=0.892"
+      },
+      {
+        "corpusid": 5177306,
+        "score": 0.9070129990577698,
+        "reason": "bm25=0.844; dense=0.949; sub_bm25=0.905; sub_dense=0.900"
+      }
+    ]
+  }
+}

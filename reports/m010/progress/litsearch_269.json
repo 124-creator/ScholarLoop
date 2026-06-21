@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_269",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_269",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_269",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_269",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1667,
+      "latency_s": 10.476330399978906
+    },
+    {
+      "query_id": "litsearch_269",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 285,
+      "latency_s": 2.285439300001599
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_269",
+    "gold": [
+      233289483
+    ],
+    "pool_size": 281,
+    "decomposition": [
+      "model-generated data for hallucination detection datasets",
+      "annotators identifying hallucinations in model outputs",
+      "diagnostic evaluation datasets for hallucinations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6614930,
+        252624581,
+        244142612,
+        252367360,
+        9875297,
+        247939526,
+        10012351,
+        14478849,
+        258685798,
+        262266785,
+        260063121,
+        258437068,
+        1622644,
+        10707097,
+        259376778,
+        13570295,
+        233189607,
+        53080384,
+        52144534,
+        17224077
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233189607,
+        229923220,
+        233231373,
+        243865246,
+        250164431,
+        258486857,
+        256460979,
+        247154974,
+        248496913,
+        259076187,
+        220665912,
+        44025154,
+        247741137,
+        226283547,
+        255775289,
+        11743245,
+        260063121,
+        252082935,
+        250163969,
+        258418092
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256000114,
+        222290728,
+        248227301,
+        233231373,
+        251468136,
+        247741137,
+        254823170,
+        34362120,
+        244909449,
+        233296648,
+        247476018,
+        250150543,
+        389718,
+        16780687,
+        226283969,
+        5195887,
+        226254579,
+        252907639,
+        233296487,
+        218538004
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        251468136,
+        248227301,
+        256000114,
+        233231373,
+        222290728,
+        247741137
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222290728,
+        248227301,
+        233231373,
+        256000114,
+        251468136,
+        247741137,
+        254823170,
+        250150543,
+        247154974,
+        253097869,
+        247476018,
+        226254579,
+        218538004,
+        15785395,
+        233296487,
+        5195887,
+        244909449,
+        233189607,
+        28297509,
+        237329050
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.638953000074252
+  },
+  "reason_example": {
+    "query_id": "litsearch_269",
+    "query": "Have any research papers investigated the creation of datasets through model-generated data for annotators to identify hallucinations in the results, specifically for developing diagnostic evaluation datasets?",
+    "top_results": [
+      {
+        "corpusid": 222290728,
+        "score": 0.9264272451400757,
+        "reason": "bm25=0.847; dense=0.979; sub_bm25=0.824; sub_dense=0.975"
+      },
+      {
+        "corpusid": 248227301,
+        "score": 0.907058596611023,
+        "reason": "bm25=0.832; dense=0.957; sub_bm25=0.878; sub_dense=0.829"
+      },
+      {
+        "corpusid": 233231373,
+        "score": 0.9050864577293396,
+        "reason": "bm25=0.928; dense=0.890; sub_bm25=0.959; sub_dense=0.924"
+      },
+      {
+        "corpusid": 256000114,
+        "score": 0.8900525569915771,
+        "reason": "bm25=0.725; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 251468136,
+        "score": 0.8492387533187866,
+        "reason": "bm25=0.795; dense=0.885; sub_bm25=1.000; sub_dense=0.952"
+      }
+    ]
+  }
+}

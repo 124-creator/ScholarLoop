@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_502",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_502",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_502",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_502",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 936,
+      "latency_s": 4.558805099921301
+    },
+    {
+      "query_id": "litsearch_502",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 238,
+      "latency_s": 1.763110600062646
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_502",
+    "gold": [
+      259370787
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "source contribution target contribution machine translation hallucination",
+      "local interpretation analysis machine translation hallucination",
+      "analyzing source target contributions output generation hallucination MT"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        61325961,
+        15143016,
+        6156509,
+        10539419,
+        44470886,
+        8289107,
+        16006663,
+        261342056,
+        2705641,
+        36965648,
+        216034120,
+        65674,
+        11980309,
+        10313983,
+        16805396,
+        2672522,
+        8373700,
+        13978200,
+        7177285,
+        1028124
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256000114,
+        224818197,
+        247476018,
+        233231373,
+        201690478,
+        253097869,
+        10313983,
+        254823170,
+        247741137,
+        237581301,
+        201671273,
+        7672097,
+        233296487,
+        14569368,
+        17839244,
+        248987101,
+        27834461,
+        235254048,
+        259370787,
+        224814113
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233231373,
+        256000114,
+        254823170,
+        251468136,
+        222290728,
+        253097869,
+        254853721,
+        247476018,
+        226254579,
+        233296487,
+        218538004,
+        248227301,
+        244909449,
+        247741137,
+        11280500,
+        219302901,
+        250179935,
+        215754413,
+        247939224,
+        2672522
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        256000114,
+        224818197,
+        249017500,
+        233231373,
+        222290728,
+        247476018,
+        253097869,
+        201690478,
+        237581301,
+        36752192,
+        2672522,
+        10313983
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256000114,
+        233231373,
+        254823170,
+        247476018,
+        251468136,
+        253097869,
+        222290728,
+        224818197,
+        233296487,
+        247741137,
+        226254579,
+        254853721,
+        201690478,
+        218538004,
+        2672522,
+        224814113,
+        249017500,
+        226226857,
+        237581301,
+        248227301
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.517857900005765
+  },
+  "reason_example": {
+    "query_id": "litsearch_502",
+    "query": "Which work discusses an analysis of source and target contributions to output generation based on local interpretation when machine translation models experience hallucinations?",
+    "top_results": [
+      {
+        "corpusid": 256000114,
+        "score": 0.9776707887649536,
+        "reason": "bm25=1.000; dense=0.963; sub_bm25=0.958; sub_dense=0.987"
+      },
+      {
+        "corpusid": 233231373,
+        "score": 0.9562394618988037,
+        "reason": "bm25=0.891; dense=1.000; sub_bm25=0.832; sub_dense=1.000"
+      },
+      {
+        "corpusid": 254823170,
+        "score": 0.8548392057418823,
+        "reason": "bm25=0.780; dense=0.905; sub_bm25=0.908; sub_dense=0.922"
+      },
+      {
+        "corpusid": 247476018,
+        "score": 0.8498375415802002,
+        "reason": "bm25=0.958; dense=0.778; sub_bm25=0.600; sub_dense=0.867"
+      },
+      {
+        "corpusid": 251468136,
+        "score": 0.8147314786911011,
+        "reason": "bm25=0.712; dense=0.883; sub_bm25=0.309; sub_dense=0.990"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_431",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_431",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_431",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_431",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 632,
+      "latency_s": 2.3810393000021577
+    },
+    {
+      "query_id": "litsearch_431",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 231,
+      "latency_s": 1.907909300061874
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_431",
+    "gold": [
+      258832605
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "dataset narration generation temporal localization Chinese movies",
+      "Chinese movie dataset narration generation",
+      "temporal localization dataset Chinese film"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2046106,
+        10492906,
+        236460248,
+        5213689,
+        10108216,
+        17336955,
+        30066470,
+        40295279,
+        9420848,
+        12126440,
+        237366146,
+        5540311,
+        58224172,
+        679264,
+        715201,
+        2260284,
+        5128289,
+        6749590,
+        7133783,
+        9731144
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        16483584,
+        10070203,
+        226262201,
+        15621289,
+        17662569,
+        252624427,
+        248780557,
+        8246817,
+        15495226,
+        237503423,
+        15415907,
+        260493816,
+        258378358,
+        253098734,
+        259370883,
+        8847804,
+        2513777,
+        202776306,
+        1234741,
+        102351546
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        212644644,
+        253628210,
+        3841900,
+        14344552,
+        236460035,
+        244187,
+        246063473,
+        233240744,
+        218763557,
+        12711013,
+        236460201,
+        238215773,
+        8994087,
+        233181803,
+        1805495,
+        201709210,
+        250210913,
+        252993103,
+        13463039,
+        2177536
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252624427
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        3841900,
+        15621289,
+        252624427,
+        16483584,
+        236460201,
+        16389576,
+        44084674,
+        253098734,
+        212644644,
+        2513777,
+        102351546,
+        17662569,
+        259370883,
+        15415907,
+        237503423,
+        14344552,
+        260493816,
+        202122454,
+        8847804,
+        236460035
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 5.029100300045684
+  },
+  "reason_example": {
+    "query_id": "litsearch_431",
+    "query": "Which dataset supports narration generation and temporal localization tasks in Chinese movies?",
+    "top_results": [
+      {
+        "corpusid": 3841900,
+        "score": 0.8954451680183411,
+        "reason": "bm25=0.769; dense=0.980; sub_bm25=0.756; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15621289,
+        "score": 0.8767795562744141,
+        "reason": "bm25=0.930; dense=0.841; sub_bm25=0.904; sub_dense=0.881"
+      },
+      {
+        "corpusid": 252624427,
+        "score": 0.8737398982048035,
+        "reason": "bm25=0.907; dense=0.852; sub_bm25=0.987; sub_dense=0.818"
+      },
+      {
+        "corpusid": 16483584,
+        "score": 0.8724555969238281,
+        "reason": "bm25=1.000; dense=0.787; sub_bm25=0.964; sub_dense=0.804"
+      },
+      {
+        "corpusid": 236460201,
+        "score": 0.847758412361145,
+        "reason": "bm25=0.737; dense=0.922; sub_bm25=0.671; sub_dense=0.965"
+      }
+    ]
+  }
+}

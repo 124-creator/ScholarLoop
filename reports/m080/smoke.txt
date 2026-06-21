@@ -1,0 +1,7 @@
+started http://127.0.0.1:61055
+GET /healthz -> 200 {'ok': True, 'mode': 'offline', 'llm_calls_per_request': 0, 'realtime_enabled': False}
+GET /api/queries -> 200 count=30
+GET /api/metrics -> 200 sections=['litsearch', 'realscholarquery', 'research_gaps']
+GET /api/gaps -> 200 items=50
+GET /api/queries/litsearch_000 -> 200 panels=['schema_version', 'query_id', 'query', 'decomposition', 'official_function_map', 'ranking', 'evidence', 'enrichment', 'render_contract']
+GET /?qid=litsearch_000 -> 200, repeat -> 200, bytes=20199

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_207",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_207",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_207",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_207",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1096,
+      "latency_s": 5.802221299964003
+    },
+    {
+      "query_id": "litsearch_207",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 360,
+      "latency_s": 2.6315561999799684
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_207",
+    "gold": [
+      237572264
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "language models long context evaluation Project Gutenberg",
+      "how well language models use extended context book dataset",
+      "language models long-range context experiments Gutenberg"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        52838300,
+        2496355,
+        241583195,
+        202541467,
+        233033383,
+        6183156,
+        252763288,
+        253762031,
+        8517763,
+        1583135,
+        12670725,
+        11634568,
+        27865020,
+        174800809,
+        16466547,
+        250390714,
+        259002931,
+        8469161,
+        9289495,
+        252847545
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        18999067,
+        235416586,
+        7902059,
+        243948403,
+        196177554,
+        250390714,
+        8469161,
+        252847545,
+        252780532,
+        35892073,
+        201685203,
+        243885635,
+        250311633,
+        243601666,
+        252847588,
+        256461195,
+        252624606,
+        62648364,
+        219308172,
+        830744
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1494871,
+        1144632,
+        235446334,
+        2496355,
+        232021663,
+        255340449,
+        233231336,
+        241583774,
+        252819059,
+        6776293,
+        250390588,
+        222290596,
+        18991996,
+        45286117,
+        8349712,
+        67332552,
+        258463942,
+        11456678,
+        7454685,
+        244345615
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235446334,
+        2496355,
+        252847545,
+        237532225,
+        52307098,
+        252780532,
+        196177554,
+        243948403,
+        4954256,
+        233033383,
+        243885635,
+        235416586
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        2496355,
+        235446334,
+        1144632,
+        243948403,
+        6776293,
+        252780532,
+        241583319,
+        241583774,
+        51869292,
+        7454685,
+        252846223,
+        252819059,
+        218502143,
+        219531164,
+        15179129,
+        226283796,
+        262677056,
+        196177554,
+        248377000,
+        2381275
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.119771700003184
+  },
+  "reason_example": {
+    "query_id": "litsearch_207",
+    "query": "Could you suggest research that assesses if language models use extended contextual information, with experiments on the book dataset from Project Gutenberg?",
+    "top_results": [
+      {
+        "corpusid": 2496355,
+        "score": 0.8806775212287903,
+        "reason": "bm25=0.772; dense=0.953; sub_bm25=1.000; sub_dense=0.895"
+      },
+      {
+        "corpusid": 235446334,
+        "score": 0.8266891241073608,
+        "reason": "bm25=0.631; dense=0.957; sub_bm25=0.647; sub_dense=0.888"
+      },
+      {
+        "corpusid": 1144632,
+        "score": 0.8061030507087708,
+        "reason": "bm25=0.557; dense=0.972; sub_bm25=0.393; sub_dense=0.878"
+      },
+      {
+        "corpusid": 243948403,
+        "score": 0.7882834076881409,
+        "reason": "bm25=0.876; dense=0.730; sub_bm25=0.920; sub_dense=0.694"
+      },
+      {
+        "corpusid": 6776293,
+        "score": 0.7796201109886169,
+        "reason": "bm25=0.575; dense=0.916; sub_bm25=0.410; sub_dense=0.972"
+      }
+    ]
+  }
+}

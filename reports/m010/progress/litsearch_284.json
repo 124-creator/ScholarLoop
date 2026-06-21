@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_284",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_284",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_284",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_284",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 663,
+      "latency_s": 2.0664063000585884
+    },
+    {
+      "query_id": "litsearch_284",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 219,
+      "latency_s": 1.8698262999532744
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_284",
+    "gold": [
+      235313818
+    ],
+    "pool_size": 254,
+    "decomposition": [
+      "psychological counseling question answer pairs dataset",
+      "mental health counseling QA dataset research",
+      "therapeutic dialogue dataset question answer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1860368,
+        1373518,
+        15218055,
+        67239762,
+        9521532,
+        248779936,
+        235313818,
+        10083809,
+        248505942,
+        52156147,
+        216553243,
+        21695200,
+        17558767,
+        245838276,
+        247447718,
+        1428529,
+        252818917,
+        6293901,
+        8535026,
+        29974541
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        235313818,
+        248505942,
+        1373518,
+        7656873,
+        258378353,
+        21695200,
+        252365096,
+        258378157,
+        9521532,
+        245838276,
+        250121189,
+        216553243,
+        252819457,
+        1428529,
+        202558699,
+        8829812,
+        14071482,
+        226236740,
+        174800890,
+        16219815
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235313818,
+        258378353,
+        21725263,
+        2751836,
+        15673319,
+        14331898,
+        259261785,
+        13430360,
+        226283905,
+        249151889,
+        248505942,
+        196180984,
+        5790829,
+        189259,
+        202572622,
+        259370732,
+        235097193,
+        231709697,
+        96824,
+        1428529
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235313818
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235313818,
+        258378353,
+        248505942,
+        21725263,
+        7656873,
+        1373518,
+        259261785,
+        1428529,
+        202572622,
+        259370732,
+        13430360,
+        196180984,
+        21695200,
+        106054,
+        226283905,
+        237353087,
+        16219815,
+        52158121,
+        9521532,
+        231709697
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 4.726580699905753
+  },
+  "reason_example": {
+    "query_id": "litsearch_284",
+    "query": "Is there a dataset containing question-answer pairs used in psychological counseling available for research?",
+    "top_results": [
+      {
+        "corpusid": 235313818,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258378353,
+        "score": 0.799973726272583,
+        "reason": "bm25=0.694; dense=0.871; sub_bm25=1.000; sub_dense=0.833"
+      },
+      {
+        "corpusid": 248505942,
+        "score": 0.7447320818901062,
+        "reason": "bm25=0.755; dense=0.738; sub_bm25=0.749; sub_dense=0.766"
+      },
+      {
+        "corpusid": 21725263,
+        "score": 0.7366178035736084,
+        "reason": "bm25=0.575; dense=0.844; sub_bm25=0.904; sub_dense=1.000"
+      },
+      {
+        "corpusid": 7656873,
+        "score": 0.6958732008934021,
+        "reason": "bm25=0.705; dense=0.690; sub_bm25=0.671; sub_dense=0.544"
+      }
+    ]
+  }
+}

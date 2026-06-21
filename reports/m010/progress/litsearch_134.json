@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_134",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_134",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_134",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_134",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1347,
+      "latency_s": 8.074684099992737
+    },
+    {
+      "query_id": "litsearch_134",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 228,
+      "latency_s": 1.8798710000701249
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_134",
+    "gold": [
+      253098395
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "abstractive summarization sentence informativeness assessment",
+      "guiding summarization informativeness scoring",
+      "informativeness-based abstractive summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        13488062,
+        202676734,
+        258378308,
+        31703928,
+        18675799,
+        234487239,
+        7718505,
+        18201337,
+        241583411,
+        7367421,
+        61181701,
+        572854,
+        47179013,
+        235482360,
+        248118963,
+        3510042,
+        233029465,
+        252819242,
+        32029618
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52012819,
+        202771122,
+        241583411,
+        44174597,
+        233204406,
+        5499666,
+        44243501,
+        1770102,
+        202541012,
+        252407628,
+        258378308,
+        53079679,
+        53046735,
+        221865540,
+        241583245,
+        208010268,
+        1918428,
+        30141324,
+        222378280,
+        202583464
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        203610250,
+        6218032,
+        12238390,
+        4942873,
+        7179236,
+        2244467,
+        9008917,
+        173990628,
+        1026180,
+        253098395,
+        47179013,
+        223953416,
+        2861585,
+        4943174,
+        15714062,
+        11944261,
+        220045947,
+        202537639,
+        226282456,
+        18715648
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        31703928,
+        44174597,
+        5499666,
+        1770102,
+        241583411,
+        202771122,
+        258378308,
+        202676734,
+        52012819,
+        6218032,
+        220045947,
+        233204406
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        241583411,
+        203610250,
+        202771122,
+        6218032,
+        2244467,
+        5499666,
+        4942873,
+        208010268,
+        1770102,
+        220045947,
+        1918428,
+        253098395,
+        53046735,
+        52012819,
+        259370510,
+        44174597,
+        10229459,
+        195069392,
+        202537639,
+        224818792
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.87388239998836
+  },
+  "reason_example": {
+    "query_id": "litsearch_134",
+    "query": "Could you recommend a study that investigates guiding abstractive summarization through assessing sentence informativeness?",
+    "top_results": [
+      {
+        "corpusid": 241583411,
+        "score": 0.8935807943344116,
+        "reason": "bm25=0.970; dense=0.842; sub_bm25=0.858; sub_dense=0.877"
+      },
+      {
+        "corpusid": 203610250,
+        "score": 0.8883237242698669,
+        "reason": "bm25=0.721; dense=1.000; sub_bm25=0.780; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202771122,
+        "score": 0.8760163187980652,
+        "reason": "bm25=0.976; dense=0.809; sub_bm25=0.823; sub_dense=0.790"
+      },
+      {
+        "corpusid": 6218032,
+        "score": 0.8750755786895752,
+        "reason": "bm25=0.695; dense=0.995; sub_bm25=0.681; sub_dense=0.975"
+      },
+      {
+        "corpusid": 2244467,
+        "score": 0.867599368095398,
+        "reason": "bm25=0.776; dense=0.928; sub_bm25=0.809; sub_dense=0.945"
+      }
+    ]
+  }
+}

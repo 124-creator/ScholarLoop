@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_182",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_182",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_182",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_182",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1072,
+      "latency_s": 5.576905300025828
+    },
+    {
+      "query_id": "litsearch_182",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.457780900062062
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_182",
+    "gold": [
+      247451284
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "multi-party conversation discourse organization models",
+      "dialogue segmentation multi-turn conversation",
+      "discourse parsing multi-party dialogues"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258378335,
+        1363323,
+        10724165,
+        10108216,
+        467514,
+        679264,
+        5739852,
+        17565543,
+        42653685,
+        16515522,
+        16793003,
+        9177856,
+        247613006,
+        2954152,
+        554151,
+        14510214,
+        6990658,
+        201126736,
+        31692237,
+        199442238
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        226262343,
+        52307098,
+        2954152,
+        81978080,
+        241583585,
+        199442238,
+        252847540,
+        259370771,
+        15645781,
+        248780220,
+        201698178,
+        9142609,
+        226262425,
+        247613006,
+        230433768,
+        252361546,
+        2809398,
+        238582630,
+        796558,
+        14708992
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1363323,
+        43108487,
+        1006472,
+        17727830,
+        13009101,
+        2434370,
+        260480536,
+        15714062,
+        311594,
+        27076560,
+        12083964,
+        11074530,
+        259376777,
+        20589561,
+        10042186,
+        6174034,
+        5119226,
+        199022413,
+        19016046,
+        1775262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        28909912,
+        81978080,
+        226262343,
+        252847540,
+        31692237,
+        1363323
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1006472,
+        20589561,
+        226262343,
+        81978080,
+        28909912,
+        17727830,
+        238582630,
+        6817372,
+        51872928,
+        796558,
+        1607202,
+        14001275,
+        10786031,
+        252847540,
+        31692237,
+        12083964,
+        19016046,
+        106054,
+        5119226,
+        5256689
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.647139400010929
+  },
+  "reason_example": {
+    "query_id": "litsearch_182",
+    "query": "Could you recommend studies that concentrate on analyzing and constructing models for discourse organization in conversations involving multiple turns and parties, aimed at separating dialogues?",
+    "top_results": [
+      {
+        "corpusid": 1006472,
+        "score": 0.9214257001876831,
+        "reason": "bm25=0.869; dense=0.957; sub_bm25=0.619; sub_dense=0.845"
+      },
+      {
+        "corpusid": 20589561,
+        "score": 0.8861258625984192,
+        "reason": "bm25=0.877; dense=0.892; sub_bm25=1.000; sub_dense=0.904"
+      },
+      {
+        "corpusid": 226262343,
+        "score": 0.855792760848999,
+        "reason": "bm25=1.000; dense=0.760; sub_bm25=0.247; sub_dense=0.717"
+      },
+      {
+        "corpusid": 81978080,
+        "score": 0.8516201972961426,
+        "reason": "bm25=0.976; dense=0.769; sub_bm25=0.473; sub_dense=0.733"
+      },
+      {
+        "corpusid": 28909912,
+        "score": 0.8433654308319092,
+        "reason": "bm25=0.851; dense=0.838; sub_bm25=0.410; sub_dense=0.802"
+      }
+    ]
+  }
+}

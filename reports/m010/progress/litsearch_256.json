@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_256",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_256",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_256",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_256",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 972,
+      "latency_s": 5.065177600015886
+    },
+    {
+      "query_id": "litsearch_256",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 306,
+      "latency_s": 2.704799500061199
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_256",
+    "gold": [
+      237363853
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "improved integrated gradients interpolation",
+      "interpolation strategies gradient accuracy attribution",
+      "integrated gradients extension interpolation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        220047777,
+        14519034,
+        226283823,
+        250164086,
+        202565622,
+        6163471,
+        15855502,
+        94818,
+        33112883,
+        36997937,
+        173188413,
+        7471438,
+        1106719,
+        7751200,
+        1809292,
+        3920851,
+        6543362,
+        4367293,
+        3343295,
+        16760497
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237363853,
+        220266076,
+        220404588,
+        250164086,
+        264426013,
+        235490410,
+        222378211,
+        249097923,
+        248506064,
+        1770217,
+        228063783,
+        202778739,
+        247761945,
+        248377570,
+        49907212,
+        173990671,
+        239009555,
+        7751200,
+        256105646,
+        259861536
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252683760,
+        235490410,
+        221878944,
+        215786510,
+        2479619,
+        257038905,
+        227240564,
+        250334377,
+        67856101,
+        220665539,
+        5834589,
+        238354231,
+        253581330,
+        253080510,
+        237491843,
+        250626929,
+        3508234,
+        17611960,
+        258437184,
+        255341108
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237363853
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237363853,
+        235490410,
+        252683760,
+        2479619,
+        1770217,
+        257038905,
+        202778739,
+        220665539,
+        211296676,
+        256105646,
+        256846667,
+        248506064,
+        215786510,
+        239016655,
+        247595088,
+        5834589,
+        49876500,
+        235358966,
+        210919941,
+        258437184
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.648164499900304
+  },
+  "reason_example": {
+    "query_id": "litsearch_256",
+    "query": "Has there been any work that improves the work on integrated gradients by leveraging interpolation strategies to improve gradient accuracies?",
+    "top_results": [
+      {
+        "corpusid": 237363853,
+        "score": 0.9147584438323975,
+        "reason": "bm25=1.000; dense=0.858; sub_bm25=1.000; sub_dense=0.942"
+      },
+      {
+        "corpusid": 235490410,
+        "score": 0.8513376712799072,
+        "reason": "bm25=0.667; dense=0.974; sub_bm25=0.448; sub_dense=0.871"
+      },
+      {
+        "corpusid": 252683760,
+        "score": 0.8093878626823425,
+        "reason": "bm25=0.523; dense=1.000; sub_bm25=0.510; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2479619,
+        "score": 0.7917740345001221,
+        "reason": "bm25=0.555; dense=0.950; sub_bm25=0.323; sub_dense=0.982"
+      },
+      {
+        "corpusid": 1770217,
+        "score": 0.7829132080078125,
+        "reason": "bm25=0.659; dense=0.866; sub_bm25=0.341; sub_dense=0.849"
+      }
+    ]
+  }
+}

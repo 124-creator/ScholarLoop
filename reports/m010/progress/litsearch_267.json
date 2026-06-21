@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_267",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_267",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_267",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_267",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 992,
+      "latency_s": 4.2462716000154614
+    },
+    {
+      "query_id": "litsearch_267",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 298,
+      "latency_s": 2.3646515000145882
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_267",
+    "gold": [
+      237581068
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "pre-training architecture for dense retrieval",
+      "improving dense retrieval with pre-training",
+      "dedicated pre-training for dense retrieval"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        10857255,
+        16248365,
+        12691214,
+        14236677,
+        237581068,
+        232307006,
+        2791115,
+        10974019,
+        3911313,
+        8043801,
+        2391734,
+        209071986,
+        12124973,
+        5977811,
+        6438614,
+        5702756,
+        9422633,
+        1106719,
+        3119048
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        237581068,
+        250311114,
+        232307006,
+        258762869,
+        252917569,
+        237213465,
+        251224409,
+        249926985,
+        259370750,
+        252624756,
+        14236677,
+        248562640,
+        238419331,
+        247447562,
+        2391734,
+        231815627,
+        10479804,
+        247450700,
+        250279955,
+        214802635
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        254877046,
+        247450700,
+        7610287,
+        247447562,
+        256827818,
+        249926985,
+        253553743,
+        258762633,
+        11296398,
+        250311114,
+        252519173,
+        46052710,
+        9268650,
+        237581068,
+        248562596,
+        646153,
+        248562640,
+        253237545,
+        245144555,
+        233029494
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237581068,
+        250311114,
+        252917569,
+        247447562
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237581068,
+        250311114,
+        247450700,
+        247447562,
+        249926985,
+        232307006,
+        251224409,
+        259370750,
+        254877046,
+        248562640,
+        253553743,
+        231815627,
+        6216639,
+        237213465,
+        252519173,
+        258762633,
+        252917569,
+        211068995,
+        252816088,
+        258762869
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.445562500040978
+  },
+  "reason_example": {
+    "query_id": "litsearch_267",
+    "query": "Have any research papers introduced a dedicated pre-training architecture designed to improve dense retrieval system efficacy?",
+    "top_results": [
+      {
+        "corpusid": 237581068,
+        "score": 0.9173643589019775,
+        "reason": "bm25=1.000; dense=0.862; sub_bm25=1.000; sub_dense=0.927"
+      },
+      {
+        "corpusid": 250311114,
+        "score": 0.8681750297546387,
+        "reason": "bm25=0.864; dense=0.871; sub_bm25=0.992; sub_dense=0.936"
+      },
+      {
+        "corpusid": 247450700,
+        "score": 0.8619022369384766,
+        "reason": "bm25=0.682; dense=0.982; sub_bm25=0.920; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247447562,
+        "score": 0.8355621695518494,
+        "reason": "bm25=0.708; dense=0.921; sub_bm25=0.920; sub_dense=0.881"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.8335360884666443,
+        "reason": "bm25=0.768; dense=0.877; sub_bm25=0.878; sub_dense=0.829"
+      }
+    ]
+  }
+}

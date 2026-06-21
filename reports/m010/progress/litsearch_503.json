@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_503",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_503",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_503",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_503",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 783,
+      "latency_s": 3.6278726999880746
+    },
+    {
+      "query_id": "litsearch_503",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 275,
+      "latency_s": 2.060824800049886
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_503",
+    "gold": [
+      258947156
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "smart reply candidate response optimization metric direct optimization",
+      "improving smart reply by directly optimizing user selection metric",
+      "optimizing response selection metric in smart reply task"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8610322,
+        258947156,
+        2097631,
+        17409270,
+        1226771,
+        8748091,
+        25207728,
+        257767709,
+        15446515,
+        6723570,
+        1524421,
+        654690,
+        219305804,
+        26685646,
+        247218489,
+        9246755,
+        3705175,
+        260537993,
+        406060,
+        202565859
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258947156,
+        18776034,
+        237558746,
+        222341385,
+        3005526,
+        247594339,
+        30645217,
+        102352298,
+        780171,
+        226262365,
+        251442441,
+        11204982,
+        897143,
+        260537993,
+        226283776,
+        253237753,
+        14963043,
+        17163745,
+        226283819,
+        247218489
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258947156,
+        7874364,
+        256461394,
+        174798391,
+        9558943,
+        261768583,
+        30047779,
+        218763500,
+        8850805,
+        1136893,
+        6290422,
+        263609552,
+        237940453,
+        226283874,
+        249605593,
+        15841279,
+        251718987,
+        16826307,
+        245218415,
+        259370797
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258947156
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258947156,
+        261768583,
+        256461394,
+        251442441,
+        249605593,
+        10153720,
+        17163745,
+        237940453,
+        1136893,
+        6290422,
+        30645217,
+        30047779,
+        253237753,
+        53234825,
+        28992980,
+        7874364,
+        263609552,
+        259370797,
+        256461094,
+        235097397
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.128734800033271
+  },
+  "reason_example": {
+    "query_id": "litsearch_503",
+    "query": "Which work proposes an approach to improve candidate responses in the smart reply task by directly optimizing the metric to ensure that a response is selected by the user?",
+    "top_results": [
+      {
+        "corpusid": 258947156,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261768583,
+        "score": 0.7644813060760498,
+        "reason": "bm25=0.649; dense=0.841; sub_bm25=0.622; sub_dense=0.879"
+      },
+      {
+        "corpusid": 256461394,
+        "score": 0.7531731724739075,
+        "reason": "bm25=0.559; dense=0.883; sub_bm25=0.380; sub_dense=0.869"
+      },
+      {
+        "corpusid": 251442441,
+        "score": 0.7442753314971924,
+        "reason": "bm25=0.700; dense=0.774; sub_bm25=0.690; sub_dense=0.818"
+      },
+      {
+        "corpusid": 249605593,
+        "score": 0.7401952743530273,
+        "reason": "bm25=0.658; dense=0.795; sub_bm25=0.379; sub_dense=0.859"
+      }
+    ]
+  }
+}

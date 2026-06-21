@@ -1,0 +1,10 @@
+{
+  "scanned": "docs\\submission",
+  "banned_terms": [
+    "学校",
+    "学院",
+    "导师"
+  ],
+  "hits": [],
+  "passed": true
+}

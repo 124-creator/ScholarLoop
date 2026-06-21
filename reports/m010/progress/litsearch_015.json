@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_015",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_015",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_015",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_015",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1513,
+      "latency_s": 10.446218900033273
+    },
+    {
+      "query_id": "litsearch_015",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 257,
+      "latency_s": 1.9117255999008194
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_015",
+    "gold": [
+      52057510
+    ],
+    "pool_size": 239,
+    "decomposition": [
+      "conversational QA dataset blind to evidence",
+      "information-seeking conversational QA without passage access",
+      "questioner not shown passage conversational dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258959064,
+        18489348,
+        235212591,
+        252545242,
+        253116797,
+        225040142,
+        220424770,
+        236477596,
+        52070059,
+        248069196,
+        253098861,
+        45438237,
+        5480900,
+        17454434,
+        253628210,
+        7513089,
+        14972216,
+        231847217,
+        5568643,
+        221970302
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        225040142,
+        249926985,
+        173990818,
+        257920051,
+        238259221,
+        253628210,
+        245218415,
+        253098861,
+        225062758,
+        218487043,
+        298588,
+        202539373,
+        60736592,
+        3566136,
+        53080062,
+        257078996,
+        52055325,
+        31743299,
+        207847382,
+        3474156
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        52057510,
+        257920051,
+        218487043,
+        201657804,
+        52055325,
+        253098861,
+        248069196,
+        208108034,
+        199577753,
+        207847382,
+        258887719,
+        2074746,
+        245838340,
+        252545242,
+        243865589,
+        256627323,
+        249192029,
+        245218415,
+        252519549,
+        253628210
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        257920051,
+        253098861,
+        225040142,
+        52055325,
+        245218415,
+        248069196,
+        201657804,
+        202539373,
+        252545242,
+        249926985,
+        173990818,
+        253628210
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257920051,
+        218487043,
+        253098861,
+        249926985,
+        225040142,
+        253628210,
+        245218415,
+        201657804,
+        52055325,
+        248069196,
+        173990818,
+        207847382,
+        238259221,
+        52057510,
+        2074746,
+        257078996,
+        199577753,
+        202539373,
+        196171642,
+        237592932
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.909011899959296
+  },
+  "reason_example": {
+    "query_id": "litsearch_015",
+    "query": "Can you recommend a conversational QA dataset where the human questioner does not have access to the evidence passage to simulate a more real-world information-seeking environment?",
+    "top_results": [
+      {
+        "corpusid": 257920051,
+        "score": 0.9573613405227661,
+        "reason": "bm25=0.911; dense=0.988; sub_bm25=0.885; sub_dense=0.935"
+      },
+      {
+        "corpusid": 218487043,
+        "score": 0.9220432043075562,
+        "reason": "bm25=0.844; dense=0.974; sub_bm25=0.883; sub_dense=0.955"
+      },
+      {
+        "corpusid": 253098861,
+        "score": 0.9070696830749512,
+        "reason": "bm25=0.876; dense=0.928; sub_bm25=0.881; sub_dense=0.810"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.9063156843185425,
+        "reason": "bm25=0.960; dense=0.871; sub_bm25=0.860; sub_dense=0.780"
+      },
+      {
+        "corpusid": 225040142,
+        "score": 0.9047132730484009,
+        "reason": "bm25=1.000; dense=0.841; sub_bm25=0.864; sub_dense=0.759"
+      }
+    ]
+  }
+}

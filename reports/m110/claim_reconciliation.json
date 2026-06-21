@@ -1,0 +1,140 @@
+{
+  "schema_version": "m110.claim_reconciliation.v1",
+  "checked_at_utc": "2026-06-20T13:15:46.546021+00:00",
+  "status": "implemented",
+  "records_count": 13,
+  "minimum_required_records": 8,
+  "records": [
+    {
+      "file": "docs/submission/01-作品简介.md",
+      "line_after": 3,
+      "old_claim_summary": "M080-era claim: verifiable research-gap discovery in intro",
+      "new_claim_summary": "Reframed as research-gap candidate-generation hint; M100 frequency boundary added.",
+      "new_text": "ScholarLoop 面向复杂学术查询：把查询拆解、多路召回、A-v2 排序、证据矩阵、真实元数据连接器与研究空白候选启发做成 offline 0-LLM Demo。A-v2 在 LitSearch/RealScholarQuery 上优于 BM25；字段忠实呈现，缺失只标“需人工核验”。研究空白仅作候选提示，M100 频率配平后不主张独立预测能力。指标：`reports/m040/results.json`、`reports/m060/results.json`、`reports/m070/results.json`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/02-项目文档.md",
+      "line_after": 15,
+      "old_claim_summary": "M080-era claim: deterministic gaps plus time-slice predictive validation",
+      "new_claim_summary": "Reframed as deterministic high-activity zero-history concept-pair candidate hint; no frequency-independent prediction claim.",
+      "new_text": "5. **研究空白候选生成启发**：以确定性概念对检测 + 时间切片回看输出“高活跃、零历史共现”的候选方向，LLM 只做接地叙述且越界论文 id 为 0。M100 频率配平消融显示旧预测优势未保持，因此本项不声称频率无关的独立预测能力。来源：`reports/m070/results.json`、`reports/m070/gaps_display.json`、`reports/m100/gap_frequency_ablation.json`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/02-项目文档.md",
+      "line_after": 44,
+      "old_claim_summary": "M080-era metric row: research-gap predictive delta=0.086 vs random concept pairs",
+      "new_claim_summary": "Keeps 0.108/0.022 and adds M100 frequency-matched baseline 0.306 plus delta -0.198.",
+      "new_text": "| 研究空白候选启发 | 组合空白填补率 `0.108`、原随机概念对 `0.022`、Δ=`0.086`；M100 频率匹配随机对 `0.306`、频率配平 Δ=`-0.198` | `reports/m070/significance.json`、`reports/m100/gap_frequency_ablation.json` |",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/02-项目文档.md",
+      "line_after": 55,
+      "old_claim_summary": "M080-era innovation boundary: fill rate significantly higher than random concept pairs",
+      "new_claim_summary": "Reframed as candidate hint; frequency ablation shows old advantage mainly driven by concept frequency.",
+      "new_text": "- 创新主张限定为：A-v2 跨两公开基准显著优于 BM25；证据矩阵与真实连接器降低虚构风险；研究空白只作为“高活跃·零历史共现”候选生成启发。M100 频率配平消融显示，旧的未来填补率优势主要由概念频率驱动，提交表述不再把它作为独立预测能力。来源：`reports/m040/results.json`、`reports/m060/significance.json`、`reports/m070/significance.json`、`reports/m100/gap_frequency_ablation.json`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/02-项目文档.md",
+      "line_after": 56,
+      "old_claim_summary": "M080-era boundary: frequency matching was not yet required",
+      "new_claim_summary": "Updated to M100 negative result as a visible self-falsification evidence item.",
+      "new_text": "- M100 将频率混杂正面检验并保留负结果：候选填补率 `0.108` 低于频率匹配随机对 `0.306`，频率配平 Δ=`-0.198`。该自我证伪过程是可信治理证据，不是隐藏项。来源：`reports/m100/gap_frequency_ablation.json`、`docs/dev/000-决策日志.md` M100/M110 记录。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/03-视频脚本与演示走查.md",
+      "line_after": 54,
+      "old_claim_summary": "Video script claim: future fill rate significantly above random concept pairs",
+      "new_claim_summary": "Reframed narration to candidate hint plus M100 frequency-matched negative delta.",
+      "new_text": "讲解点：M070 提供“高活跃·零历史共现”概念对的候选生成启发，候选填补率 `0.108`，原随机基线 `0.022`。M100 频率配平消融进一步显示，频率匹配随机对为 `0.306`、频率配平 Δ=`-0.198`，因此这里不把研究空白作为频率无关的独立预测能力，只作为候选方向提示和自我证伪案例。引用：`reports/m070/significance.json`、`reports/m070/gaps_display.json`、`reports/m100/gap_frequency_ablation.json`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/04-指标汇总表.md",
+      "line_after": 16,
+      "old_claim_summary": "Metric table row: candidate fill/random baseline as predictive support",
+      "new_claim_summary": "Keeps numbers but marks as candidate-generation hint; M100 removes independent prediction claim.",
+      "new_text": "| 研究空白 | 候选填补率 / 原随机基线 | `0.108` / `0.022` | `reports/m070/significance.json.gap_prediction_vs_random` | 候选生成启发；M100 频率配平后不保留独立预测主张 |",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/04-指标汇总表.md",
+      "line_after": 17,
+      "old_claim_summary": "Metric table row: delta/CI/p as prediction-bearing evidence",
+      "new_claim_summary": "Keeps original delta and adds frequency-matched delta -0.198 and frequency-driver note.",
+      "new_text": "| 研究空白 | 原 Δ / CI95 / p；频率配平 Δ | `0.086` / `[0.056, 0.116]` / `9.999e-05`；`-0.198` | `reports/m070/significance.json`、`reports/m100/gap_frequency_ablation.json` | 频率匹配随机对为 `0.306`，旧优势主要由概念频率驱动 |",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/06-创新叙事.md",
+      "line_after": 5,
+      "old_claim_summary": "Innovation positioning: research gaps as verifiable structured signal",
+      "new_claim_summary": "Repositioned innovation to evidence chain, real metadata, cross-benchmark generalization, and self-falsification.",
+      "new_text": "PaSa、SPAR、Ai2 Paper Finder 等系统强调多智能体检索、查询演化或多索引采样。ScholarLoop 的差异化定位是：在公开基准排序之外，把推荐结果做成可复核证据链、真实出处快照和跨基准泛化证据，并把不成立的强主张主动用消融桩推翻和收紧，而不是让 LLM 主观判断“哪里有空白”。赛题参考来源：`00-赛题/科研场景下复杂学术查询的智能论文搜索与推荐.txt`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/06-创新叙事.md",
+      "line_after": 12,
+      "old_claim_summary": "Innovation point: research-gap fill rate significantly higher than random concept pairs",
+      "new_claim_summary": "Rewritten as self-falsification methodology with 0.108 vs 0.306 and delta -0.198.",
+      "new_text": "4. **自我证伪方法论**：M070 的研究空白结果保留为“高活跃、零历史共现”候选生成启发；M100 频率配平消融正面检验并推翻旧强主张：候选填补率 `0.108` 低于频率匹配随机对 `0.306`，频率配平 Δ=`-0.198`。因此提交材料不声称频率无关的独立预测能力，而把这件事作为“发现风险—建桩检验—诚实收紧”的严谨性证据。来源：`reports/m070/significance.json`、`reports/m100/gap_frequency_ablation.json`、`docs/dev/000-决策日志.md`。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/06-创新叙事.md",
+      "line_after": 16,
+      "old_claim_summary": "Honesty boundary: frequency effect not fully removed / not required",
+      "new_claim_summary": "Updated to explicit boundary: research gaps are hints only; M100 negative result stays visible.",
+      "new_text": "- 研究空白只作为候选方向生成启发，不作为频率无关的独立预测能力；M100 的负结果必须保留并正面呈现。",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/06-创新叙事.md",
+      "line_after": 28,
+      "old_claim_summary": "Official mapping: verifiable research gaps as innovation pillar",
+      "new_claim_summary": "Mapped innovation to evidence chain, real sources, cross-benchmark generalization, and self-falsification.",
+      "new_text": "| 创新 | 忠实证据链 + 真实出处 + 跨基准泛化 + 自我证伪方法论 | `reports/m020/`、`reports/m050/`、`reports/m060/`、`reports/m100/` |",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    },
+    {
+      "file": "docs/submission/08-主张溯源清单.md",
+      "line_after": 13,
+      "old_claim_summary": "Claim trace: research-gap predictive significance above random concept pairs",
+      "new_claim_summary": "Rewritten as research-gap candidate hint with frequency-matching boundary and M100 evidence.",
+      "new_text": "| 研究空白候选启发（频率配平后不保留独立预测主张） | `reports/m070/significance.json.gap_prediction_vs_random`、`reports/m100/gap_frequency_ablation.json` |",
+      "evidence_paths": [
+        "reports/m100/gap_frequency_ablation.json"
+      ]
+    }
+  ],
+  "new_uniform_positioning": "Research gaps are deterministic high-activity zero-history concept-pair candidate-generation hints; M100 frequency matching shows the old predictive advantage is not retained, so no frequency-independent prediction claim remains."
+}

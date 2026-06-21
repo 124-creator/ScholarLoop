@@ -1,1 +1,1 @@
-"""Lightweight offline web demo for ScholarLoop M030."""
+﻿"""Lightweight offline web demo for ScholarLoop M030."""

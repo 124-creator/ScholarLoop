@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_301",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_301",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_301",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_301",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1694,
+      "latency_s": 10.400022399961017
+    },
+    {
+      "query_id": "litsearch_301",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 306,
+      "latency_s": 2.9288732999702916
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_301",
+    "gold": [
+      221507798
+    ],
+    "pool_size": 265,
+    "decomposition": [
+      "benchmarks for knowledge-rich language models evaluation",
+      "datasets used to assess knowledge in NLP tasks",
+      "evaluation benchmarks for factual knowledge in language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        39654639,
+        53633715,
+        259833850,
+        236318140,
+        10919045,
+        33871285,
+        232076061,
+        27016310,
+        249017494,
+        9830179,
+        245297783,
+        5162676,
+        259370534,
+        253420301,
+        3920851,
+        235097200,
+        243865630,
+        4380524,
+        8752606,
+        9344388
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253244049,
+        253107178,
+        231847008,
+        236318140,
+        240288605,
+        949304,
+        258686286,
+        252185476,
+        218486812,
+        215745286,
+        232076061,
+        261705995,
+        235367710,
+        247702013,
+        252780328,
+        235097200,
+        250390904,
+        264172668,
+        259370534,
+        253397675
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        256461139,
+        258686286,
+        252846670,
+        247613500,
+        210714061,
+        252819451,
+        222290596,
+        259165244,
+        13848633,
+        226226964,
+        248780386,
+        202235596,
+        248368718,
+        252873220,
+        231740666,
+        245148999,
+        238744120,
+        221516475,
+        260899983,
+        248266434
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231740666,
+        236318140,
+        231847008,
+        258686286,
+        253244049,
+        253107178,
+        260899983,
+        264172668,
+        259370534,
+        232076061,
+        253420301,
+        39654639
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258686286,
+        231847008,
+        253107178,
+        231740666,
+        259370534,
+        260899983,
+        264172668,
+        253244049,
+        256461139,
+        222290596,
+        250150808,
+        248368718,
+        236318140,
+        218486812,
+        258676204,
+        248085548,
+        259165244,
+        252846670,
+        247613500,
+        215745536
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.841761899995618
+  },
+  "reason_example": {
+    "query_id": "litsearch_301",
+    "query": "What benchmarks have prior research utilized to assess models performing knowledge-rich language tasks?",
+    "top_results": [
+      {
+        "corpusid": 258686286,
+        "score": 0.9630171656608582,
+        "reason": "bm25=0.912; dense=0.997; sub_bm25=0.803; sub_dense=0.821"
+      },
+      {
+        "corpusid": 231847008,
+        "score": 0.9303408265113831,
+        "reason": "bm25=0.955; dense=0.914; sub_bm25=1.000; sub_dense=0.916"
+      },
+      {
+        "corpusid": 253107178,
+        "score": 0.9019904136657715,
+        "reason": "bm25=0.964; dense=0.861; sub_bm25=0.706; sub_dense=0.819"
+      },
+      {
+        "corpusid": 231740666,
+        "score": 0.8874720335006714,
+        "reason": "bm25=0.786; dense=0.955; sub_bm25=0.802; sub_dense=0.827"
+      },
+      {
+        "corpusid": 259370534,
+        "score": 0.8870030641555786,
+        "reason": "bm25=0.853; dense=0.910; sub_bm25=0.701; sub_dense=0.789"
+      }
+    ]
+  }
+}

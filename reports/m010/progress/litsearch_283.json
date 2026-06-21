@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_283",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_283",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_283",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_283",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1067,
+      "latency_s": 5.21828979998827
+    },
+    {
+      "query_id": "litsearch_283",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 247,
+      "latency_s": 2.1573265999322757
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_283",
+    "gold": [
+      237497416
+    ],
+    "pool_size": 222,
+    "decomposition": [
+      "dataset for targeted sentiment analysis user reviews",
+      "Yelp sentiment analysis dataset",
+      "Amazon reviews sentiment analysis dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        237497416,
+        248572392,
+        156874,
+        7213852,
+        14473519,
+        208278254,
+        18255935,
+        260063173,
+        12101738,
+        203688701,
+        17865105,
+        15275291,
+        64865,
+        14633221,
+        15011038,
+        15562838,
+        53079677,
+        5772336,
+        14941894,
+        15247441
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        237497416,
+        248572392,
+        208278254,
+        258463931,
+        156874,
+        14473519,
+        53080574,
+        211133169,
+        248572220,
+        227012682,
+        51878959,
+        251476015,
+        569253,
+        17865105,
+        53079677,
+        18255935,
+        244054905,
+        227231494,
+        2425494,
+        14633221
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237497416,
+        248572392,
+        208513183,
+        182952458,
+        4978914,
+        156874,
+        203688701,
+        13861819,
+        5548421,
+        2425494,
+        248572220,
+        245616870,
+        227012682,
+        231741125,
+        5073886,
+        12004716,
+        18766748,
+        251490897,
+        236478014,
+        14473519
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237497416
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237497416,
+        248572392,
+        156874,
+        248572220,
+        14473519,
+        227012682,
+        2425494,
+        5073886,
+        236478014,
+        182952458,
+        251490897,
+        17865105,
+        208513183,
+        203688701,
+        53080574,
+        251476015,
+        208278254,
+        12004716,
+        18255935,
+        14633221
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.283670599921606
+  },
+  "reason_example": {
+    "query_id": "litsearch_283",
+    "query": "Is there a dataset available for open-domain targeted sentiment analysis containing user reviews from platforms like Yelp and Amazon?",
+    "top_results": [
+      {
+        "corpusid": 237497416,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248572392,
+        "score": 0.8666201233863831,
+        "reason": "bm25=0.845; dense=0.881; sub_bm25=0.824; sub_dense=0.918"
+      },
+      {
+        "corpusid": 156874,
+        "score": 0.697564959526062,
+        "reason": "bm25=0.579; dense=0.776; sub_bm25=0.814; sub_dense=0.851"
+      },
+      {
+        "corpusid": 248572220,
+        "score": 0.6724915504455566,
+        "reason": "bm25=0.531; dense=0.767; sub_bm25=0.942; sub_dense=0.928"
+      },
+      {
+        "corpusid": 14473519,
+        "score": 0.6724703311920166,
+        "reason": "bm25=0.574; dense=0.738; sub_bm25=0.807; sub_dense=0.797"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_340",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_340",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_340",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_340",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2024,
+      "latency_s": 18.293982099974528
+    },
+    {
+      "query_id": "litsearch_340",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 340,
+      "latency_s": 3.852987700025551
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_340",
+    "gold": [
+      235359080
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "introduced task generating extended coherent dialogues from brief summaries",
+      "first paper on dialogue generation from short summaries",
+      "extending summaries into coherent dialogues original work"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53222920,
+        1722924,
+        11704126,
+        14129605,
+        5981194,
+        2769726,
+        14983394,
+        7397883,
+        11923352,
+        2706681,
+        1199139,
+        1021605,
+        1465750,
+        424889,
+        11383050,
+        15185389,
+        44140073,
+        1449408,
+        8997127,
+        12405045
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14129605,
+        14639627,
+        1199139,
+        218883429,
+        236459857,
+        16686441,
+        12358185,
+        174798022,
+        58549,
+        248496938,
+        13259257,
+        11577980,
+        260680487,
+        195766764,
+        2887802,
+        7520280,
+        15307540,
+        32832705,
+        2917544,
+        17557921
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258378335,
+        2809398,
+        13226783,
+        15714062,
+        5405986,
+        208010268,
+        241583667,
+        252819508,
+        233295991,
+        14639627,
+        222133028,
+        5555658,
+        241583180,
+        250390992,
+        259833839,
+        8807447,
+        10732775,
+        2055498,
+        10019526,
+        255125461
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        6302443,
+        208010268,
+        14639627,
+        13226783,
+        241583667,
+        14129605,
+        1199139,
+        5981194,
+        1722924,
+        174798022,
+        13259257,
+        1465750
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        14129605,
+        14639627,
+        208010268,
+        5405986,
+        241583667,
+        2809398,
+        13226783,
+        174798022,
+        258378335,
+        11944261,
+        253762050,
+        222341644,
+        233189560,
+        2055498,
+        2320863,
+        2917544,
+        258588392,
+        252070518,
+        182953211,
+        18398233
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 23.557191500090994
+  },
+  "reason_example": {
+    "query_id": "litsearch_340",
+    "query": "Which paper introduced the task of creating extended, coherent dialogues from brief summaries?",
+    "top_results": [
+      {
+        "corpusid": 14129605,
+        "score": 0.8831636905670166,
+        "reason": "bm25=1.000; dense=0.805; sub_bm25=1.000; sub_dense=0.955"
+      },
+      {
+        "corpusid": 14639627,
+        "score": 0.8488895893096924,
+        "reason": "bm25=0.851; dense=0.848; sub_bm25=0.923; sub_dense=0.989"
+      },
+      {
+        "corpusid": 208010268,
+        "score": 0.8141992092132568,
+        "reason": "bm25=0.744; dense=0.861; sub_bm25=0.824; sub_dense=0.953"
+      },
+      {
+        "corpusid": 5405986,
+        "score": 0.7992841005325317,
+        "reason": "bm25=0.705; dense=0.862; sub_bm25=0.653; sub_dense=0.896"
+      },
+      {
+        "corpusid": 241583667,
+        "score": 0.7753176093101501,
+        "reason": "bm25=0.653; dense=0.857; sub_bm25=0.742; sub_dense=0.949"
+      }
+    ]
+  }
+}

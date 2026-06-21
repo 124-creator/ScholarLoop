@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_486",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_486",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_486",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_486",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1990,
+      "latency_s": 15.538000299944542
+    },
+    {
+      "query_id": "litsearch_486",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 325,
+      "latency_s": 2.5584473999915645
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_486",
+    "gold": [
+      259360414
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "social relationships help identify inappropriate messages",
+      "using social ties to detect inappropriate content",
+      "role of social connections in filtering inappropriate messages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252907549,
+        3329936,
+        14085759,
+        227231650,
+        3185254,
+        5574617,
+        53613471,
+        12627601,
+        17864082,
+        259360414,
+        955196,
+        1425156,
+        17679593,
+        7450499,
+        3876179,
+        885120,
+        947719,
+        15736620,
+        229220464,
+        1025468
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259360414,
+        232168787,
+        3329936,
+        8932111,
+        8265053,
+        5200733,
+        236460039,
+        237365386,
+        258378215,
+        250390867,
+        44083836,
+        1862889,
+        19192295,
+        53613471,
+        67856299,
+        18037132,
+        16527671,
+        254853990,
+        20023745,
+        2005717
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259360414,
+        16052100,
+        202538032,
+        259376786,
+        226254033,
+        252619979,
+        196194724,
+        51879029,
+        252624551,
+        16157758,
+        14430523,
+        236477447,
+        53608327,
+        15373458,
+        8821211,
+        219952882,
+        235254726,
+        226262230,
+        7443422,
+        1092059
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259360414,
+        232168787,
+        3876179,
+        16052100,
+        8265053,
+        53613471,
+        237945258,
+        53137220,
+        3329936,
+        252907549,
+        19192295,
+        947719
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259360414,
+        232168787,
+        16052100,
+        51879029,
+        3876179,
+        8265053,
+        16695586,
+        67856299,
+        226254033,
+        53137220,
+        235097502,
+        259376786,
+        196194724,
+        226262230,
+        14430523,
+        250390867,
+        8821211,
+        7443422,
+        2193818,
+        250390878
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 19.108011099975556
+  },
+  "reason_example": {
+    "query_id": "litsearch_486",
+    "query": "Which paper showed that social relationships were helpful for identifying inappropriate messages?",
+    "top_results": [
+      {
+        "corpusid": 259360414,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 232168787,
+        "score": 0.7511062026023865,
+        "reason": "bm25=0.786; dense=0.728; sub_bm25=1.000; sub_dense=0.875"
+      },
+      {
+        "corpusid": 16052100,
+        "score": 0.7182822227478027,
+        "reason": "bm25=0.479; dense=0.878; sub_bm25=0.470; sub_dense=0.878"
+      },
+      {
+        "corpusid": 51879029,
+        "score": 0.7024217844009399,
+        "reason": "bm25=0.520; dense=0.824; sub_bm25=0.890; sub_dense=0.909"
+      },
+      {
+        "corpusid": 3876179,
+        "score": 0.6850517988204956,
+        "reason": "bm25=0.598; dense=0.743; sub_bm25=0.452; sub_dense=0.636"
+      }
+    ]
+  }
+}

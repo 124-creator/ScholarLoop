@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_541",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_541",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_541",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_541",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 786,
+      "latency_s": 2.3516301000490785
+    },
+    {
+      "query_id": "litsearch_541",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.092183999950066
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_541",
+    "gold": [
+      263334596
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "molecular representation learning benchmark conformer ensemble thermodynamic",
+      "benchmark conformer ensembles molecular properties chemical reactions",
+      "molecular representation learning benchmark thermodynamic conformer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        263334596,
+        13488062,
+        226283830,
+        19020387,
+        8348149,
+        6276996,
+        2780057,
+        27628985,
+        53289396,
+        253734458,
+        15515176,
+        202712637,
+        42994580,
+        209423118,
+        252493971,
+        429630,
+        13907064,
+        14015791,
+        253761968,
+        7440991
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        263334596,
+        238583028,
+        232290577,
+        257771340,
+        237592805,
+        234334847,
+        54444711,
+        239009574,
+        252816105,
+        210920362,
+        237581512,
+        252780973,
+        209423118,
+        247450626,
+        227162254,
+        231967791,
+        248965495,
+        231855369,
+        252692952,
+        263831010
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        263334596,
+        231967791,
+        234334847,
+        263620293,
+        247292764,
+        227162254,
+        238583028,
+        257771340,
+        237581512,
+        259836930,
+        212414027,
+        252692952,
+        258332176,
+        7849238,
+        252693198,
+        249191498,
+        252816105,
+        231855369,
+        237592805,
+        84186721
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263334596
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263334596,
+        238583028,
+        234334847,
+        231967791,
+        257771340,
+        227162254,
+        237581512,
+        237592805,
+        247292764,
+        252816105,
+        232290577,
+        263620293,
+        259836930,
+        252692952,
+        239009574,
+        231855369,
+        54444711,
+        258332176,
+        247450626,
+        252693198
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.634772899909876
+  },
+  "reason_example": {
+    "query_id": "litsearch_541",
+    "query": "What molecular representation learning paper introduced a benchmark that focuses on learning over thermodynamically-accessible conformer ensembles across diverse molecular properties and chemical reactions?",
+    "top_results": [
+      {
+        "corpusid": 263334596,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 238583028,
+        "score": 0.7180799841880798,
+        "reason": "bm25=0.629; dense=0.777; sub_bm25=0.722; sub_dense=0.841"
+      },
+      {
+        "corpusid": 234334847,
+        "score": 0.7156469821929932,
+        "reason": "bm25=0.505; dense=0.856; sub_bm25=0.578; sub_dense=0.950"
+      },
+      {
+        "corpusid": 231967791,
+        "score": 0.7045624256134033,
+        "reason": "bm25=0.435; dense=0.884; sub_bm25=0.370; sub_dense=0.967"
+      },
+      {
+        "corpusid": 257771340,
+        "score": 0.6902812719345093,
+        "reason": "bm25=0.565; dense=0.774; sub_bm25=0.555; sub_dense=0.864"
+      }
+    ]
+  }
+}

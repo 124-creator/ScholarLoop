@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_305",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_305",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_305",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_305",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1102,
+      "latency_s": 6.288681900012307
+    },
+    {
+      "query_id": "litsearch_305",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 231,
+      "latency_s": 2.4297783999936655
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_305",
+    "gold": [
+      235294032
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "personalized news recommendation popularity",
+      "news recommendation user preferences trending stories",
+      "hybrid news recommendation popularity personalization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        33805426,
+        12872974,
+        15879777,
+        26340853,
+        15817159,
+        219323571,
+        2894283,
+        67741411,
+        6617307,
+        34703679,
+        16883813,
+        17089339,
+        17153466,
+        16334122,
+        1870116,
+        3929124,
+        18792136,
+        219305462,
+        6732044,
+        1036169
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        219323571,
+        235294032,
+        26662618,
+        216642080,
+        248780372,
+        13935427,
+        252624600,
+        259370694,
+        6634530,
+        245616866,
+        9627703,
+        7465678,
+        252819489,
+        203641808,
+        226278255,
+        1607878,
+        5045941,
+        53083146,
+        2925653,
+        5688042
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235294032,
+        9701937,
+        259370694,
+        252624600,
+        196217527,
+        202774468,
+        196186167,
+        1679303,
+        26905605,
+        52917952,
+        14752437,
+        227905448,
+        1114511,
+        252819489,
+        219323571,
+        53083146,
+        248780372,
+        10119966,
+        11376810,
+        19592436
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235294032,
+        248780372,
+        252624600,
+        219323571,
+        252819489
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235294032,
+        219323571,
+        252624600,
+        259370694,
+        9701937,
+        248780372,
+        252819489,
+        53083146,
+        19592436,
+        26662618,
+        6634530,
+        26905605,
+        10119966,
+        1114511,
+        5864624,
+        231602961,
+        202768081,
+        52917952,
+        9182833,
+        2925653
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.588969000033103
+  },
+  "reason_example": {
+    "query_id": "litsearch_305",
+    "query": "What methods exist for tailoring news suggestions that consider a user's preferences as well as the current popularity of news stories?",
+    "top_results": [
+      {
+        "corpusid": 235294032,
+        "score": 0.9295554161071777,
+        "reason": "bm25=0.824; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 219323571,
+        "score": 0.8912177681922913,
+        "reason": "bm25=1.000; dense=0.819; sub_bm25=0.707; sub_dense=0.795"
+      },
+      {
+        "corpusid": 252624600,
+        "score": 0.8529521226882935,
+        "reason": "bm25=0.716; dense=0.944; sub_bm25=0.882; sub_dense=0.894"
+      },
+      {
+        "corpusid": 259370694,
+        "score": 0.8511463403701782,
+        "reason": "bm25=0.711; dense=0.944; sub_bm25=0.617; sub_dense=0.864"
+      },
+      {
+        "corpusid": 9701937,
+        "score": 0.8142299056053162,
+        "reason": "bm25=0.588; dense=0.965; sub_bm25=0.258; sub_dense=0.999"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_289",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_289",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_289",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_289",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1502,
+      "latency_s": 10.117429200094193
+    },
+    {
+      "query_id": "litsearch_289",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.6002133999718353
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_289",
+    "gold": [
+      236459913
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "Transformer decoder extracting representations from CNN in clinical notes",
+      "CNN and Transformer shared representation learning for clinical text",
+      "Interactive representation learning with CNN and Transformer on clinical notes"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252819005,
+        15392152,
+        5399186,
+        258486947,
+        3842563,
+        52894354,
+        19754679,
+        9163756,
+        11376656,
+        222141662,
+        52985435,
+        259376483,
+        1705467,
+        253498917,
+        195833318,
+        5129093,
+        17091031,
+        19952568,
+        26889702,
+        256461013
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236459913,
+        240288543,
+        243865572,
+        158046910,
+        256461291,
+        248780510,
+        253498917,
+        225103074,
+        256461013,
+        253523078,
+        7439066,
+        8020289,
+        15704866,
+        11250154,
+        259833776,
+        252819005,
+        199579741,
+        252819038,
+        252370477,
+        244729051
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236459913,
+        257205854,
+        237634985,
+        253223917,
+        233231507,
+        233289659,
+        259370787,
+        222290427,
+        252370477,
+        226222210,
+        226262194,
+        259833783,
+        256461334,
+        199379709,
+        195739828,
+        466355,
+        240288543,
+        243865572,
+        225103074,
+        102352287
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236459913
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236459913,
+        237634985,
+        240288543,
+        243865572,
+        257205854,
+        158046910,
+        253223917,
+        225103074,
+        222290427,
+        252370477,
+        233289659,
+        199579741,
+        8020289,
+        182952938,
+        102352287,
+        256461291,
+        226222210,
+        233231507,
+        248780510,
+        256461334
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.732099200016819
+  },
+  "reason_example": {
+    "query_id": "litsearch_289",
+    "query": "Is there any research that investigates how to use Transformer decoders to extract interactive shared representations from CNN networks on clinical notes?",
+    "top_results": [
+      {
+        "corpusid": 236459913,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.965"
+      },
+      {
+        "corpusid": 237634985,
+        "score": 0.8685552477836609,
+        "reason": "bm25=0.706; dense=0.977; sub_bm25=0.974; sub_dense=1.000"
+      },
+      {
+        "corpusid": 240288543,
+        "score": 0.8638134002685547,
+        "reason": "bm25=0.857; dense=0.869; sub_bm25=0.778; sub_dense=0.938"
+      },
+      {
+        "corpusid": 243865572,
+        "score": 0.8638134002685547,
+        "reason": "bm25=0.857; dense=0.869; sub_bm25=0.778; sub_dense=0.938"
+      },
+      {
+        "corpusid": 257205854,
+        "score": 0.8565389513969421,
+        "reason": "bm25=0.658; dense=0.989; sub_bm25=0.993; sub_dense=1.000"
+      }
+    ]
+  }
+}

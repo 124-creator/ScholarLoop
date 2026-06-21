@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_321",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_321",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_321",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_321",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1026,
+      "latency_s": 6.230199499987066
+    },
+    {
+      "query_id": "litsearch_321",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 2.733902800013311
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_321",
+    "gold": [
+      254685691
+    ],
+    "pool_size": 256,
+    "decomposition": [
+      "visual data in text summarization",
+      "image integration summarization",
+      "multimodal summarization visual"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        70136121,
+        94818,
+        33742593,
+        3920851,
+        2914874,
+        1843005,
+        17350305,
+        2439516,
+        6647500,
+        2251088,
+        5334746,
+        40394099,
+        241583424,
+        41440660,
+        5231912,
+        33548672,
+        252763288,
+        252763330,
+        7737976,
+        774
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237329472,
+        248475947,
+        235265871,
+        237420398,
+        2433570,
+        14606708,
+        1843005,
+        254685691,
+        14611826,
+        11818253,
+        235212487,
+        37893133,
+        222177833,
+        253116838,
+        252212927,
+        15628268,
+        2404854,
+        42095291,
+        26698484,
+        258378275
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        102471,
+        236912977,
+        13898507,
+        17228952,
+        40129348,
+        6534816,
+        3177185,
+        31363511,
+        9778688,
+        15798344,
+        17887383,
+        3013665,
+        252624635,
+        15878323,
+        247446806,
+        196208241,
+        7550466,
+        1447029,
+        2404854,
+        224704949
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254685691,
+        237420398
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248475947,
+        235265871,
+        2404854,
+        236912977,
+        1843005,
+        237420398,
+        254685691,
+        10436913,
+        17887383,
+        196208241,
+        248780499,
+        7737976,
+        31363511,
+        247626118,
+        15866983,
+        102471,
+        15190468,
+        53223951,
+        2433570,
+        16263080
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.627533299964853
+  },
+  "reason_example": {
+    "query_id": "litsearch_321",
+    "query": "What research has been conducted on incorporating visual data into the text summarization process?",
+    "top_results": [
+      {
+        "corpusid": 248475947,
+        "score": 0.8787188529968262,
+        "reason": "bm25=0.979; dense=0.812; sub_bm25=0.712; sub_dense=0.723"
+      },
+      {
+        "corpusid": 235265871,
+        "score": 0.8583130836486816,
+        "reason": "bm25=0.958; dense=0.792; sub_bm25=0.615; sub_dense=0.785"
+      },
+      {
+        "corpusid": 2404854,
+        "score": 0.8497365713119507,
+        "reason": "bm25=0.847; dense=0.851; sub_bm25=0.834; sub_dense=0.850"
+      },
+      {
+        "corpusid": 236912977,
+        "score": 0.8365533351898193,
+        "reason": "bm25=0.599; dense=0.995; sub_bm25=0.732; sub_dense=1.000"
+      },
+      {
+        "corpusid": 1843005,
+        "score": 0.8276951313018799,
+        "reason": "bm25=0.900; dense=0.780; sub_bm25=0.825; sub_dense=0.798"
+      }
+    ]
+  }
+}

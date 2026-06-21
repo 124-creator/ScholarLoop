@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_467",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_467",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_467",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_467",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 759,
+      "latency_s": 3.3804785000393167
+    },
+    {
+      "query_id": "litsearch_467",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 304,
+      "latency_s": 2.6926551000215113
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_467",
+    "gold": [
+      258887491
+    ],
+    "pool_size": 278,
+    "decomposition": [
+      "mutual learning multilingual models",
+      "benefits mutual learning multilingual NLP",
+      "paper mutual learning improves multilingual"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18446213,
+        2233478,
+        16453056,
+        30963769,
+        3127682,
+        6496936,
+        13292908,
+        246706128,
+        259376691,
+        830228,
+        10707097,
+        6442284,
+        232307483,
+        6395440,
+        8265456,
+        8339153,
+        15875372,
+        252683294,
+        6104581,
+        15360146
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        15875372,
+        11865562,
+        233324442,
+        222134076,
+        204788776,
+        11277821,
+        233365315,
+        245124148,
+        14628558,
+        12462915,
+        219303483,
+        247476407,
+        15697409,
+        243865274,
+        222140859,
+        7231337,
+        199668753,
+        2233478,
+        237452461,
+        204913961
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        53601909,
+        237513421,
+        186206487,
+        6089322,
+        253762088,
+        15769193,
+        258947231,
+        30908728,
+        252819059,
+        243865274,
+        199000713,
+        3919731,
+        48360047,
+        231719559,
+        249062609,
+        258987920,
+        252847490,
+        214727705,
+        2558649,
+        174798289
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243865274
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        243865274,
+        199000713,
+        994500,
+        237513421,
+        222177276,
+        231719559,
+        204509033,
+        238408056,
+        53601909,
+        245838381,
+        204788776,
+        204913961,
+        258557659,
+        15875372,
+        222134076,
+        237452461,
+        174798289,
+        253762088,
+        252819059,
+        220525491
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 6.7208136999979615
+  },
+  "reason_example": {
+    "query_id": "litsearch_467",
+    "query": "Which paper found that mutual learning benefits multlingual models?",
+    "top_results": [
+      {
+        "corpusid": 243865274,
+        "score": 0.8376197218894958,
+        "reason": "bm25=0.801; dense=0.862; sub_bm25=1.000; sub_dense=0.893"
+      },
+      {
+        "corpusid": 199000713,
+        "score": 0.7860352993011475,
+        "reason": "bm25=0.679; dense=0.857; sub_bm25=0.625; sub_dense=0.606"
+      },
+      {
+        "corpusid": 994500,
+        "score": 0.7703883051872253,
+        "reason": "bm25=0.733; dense=0.796; sub_bm25=0.605; sub_dense=0.831"
+      },
+      {
+        "corpusid": 237513421,
+        "score": 0.7633088827133179,
+        "reason": "bm25=0.447; dense=0.974; sub_bm25=0.497; sub_dense=0.949"
+      },
+      {
+        "corpusid": 222177276,
+        "score": 0.7472045421600342,
+        "reason": "bm25=0.734; dense=0.756; sub_bm25=0.799; sub_dense=0.829"
+      }
+    ]
+  }
+}

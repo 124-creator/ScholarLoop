@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_280",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_280",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_280",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_280",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1365,
+      "latency_s": 7.260430400026962
+    },
+    {
+      "query_id": "litsearch_280",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 342,
+      "latency_s": 2.656512000015937
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_280",
+    "gold": [
+      248779939
+    ],
+    "pool_size": 231,
+    "decomposition": [
+      "two-stage training named entity recognition knowledge distillation",
+      "synthetic data augmentation for named entity recognition",
+      "adapting NER to new entities with knowledge distillation and synthetic data"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51881529,
+        15620379,
+        7243224,
+        1112316,
+        252907270,
+        5953370,
+        16611476,
+        226307751,
+        2185273,
+        258968157,
+        6042994,
+        8882495,
+        32093443,
+        248780336,
+        11406047,
+        18134392,
+        588986,
+        1321154,
+        10643680,
+        237304281
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248779939,
+        252907270,
+        1586727,
+        236317335,
+        7243224,
+        228084090,
+        8469161,
+        10893614,
+        259370518,
+        259370892,
+        225062888,
+        250390451,
+        247595093,
+        236477669,
+        247594812,
+        236460177,
+        234679391,
+        306227,
+        248426846,
+        252918526
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236317335,
+        237304281,
+        11406047,
+        248779939,
+        237420553,
+        251564410,
+        252907270,
+        237101139,
+        259376884,
+        225041226,
+        259376502,
+        259376719,
+        248780336,
+        12022794,
+        249301459,
+        244464087,
+        226283493,
+        237490315,
+        258762309,
+        201666359
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780336,
+        248779939,
+        236317335,
+        237304281,
+        11406047,
+        247595093,
+        252907270,
+        259376719,
+        225062888,
+        1112316,
+        7243224,
+        10893614
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248779939,
+        236317335,
+        252907270,
+        237304281,
+        11406047,
+        259376502,
+        228084090,
+        259376884,
+        218502458,
+        237420553,
+        259376719,
+        247595093,
+        236460177,
+        235258277,
+        225062888,
+        259370518,
+        259370892,
+        226283493,
+        8469161,
+        248780437
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.862371299997903
+  },
+  "reason_example": {
+    "query_id": "litsearch_280",
+    "query": "Is it possible to adatp named entity recognition systems to learn new entities by combining knowledge distillation and synthetic data augmentation by using a two-stage training approach?",
+    "top_results": [
+      {
+        "corpusid": 248779939,
+        "score": 0.9672079086303711,
+        "reason": "bm25=1.000; dense=0.945; sub_bm25=1.000; sub_dense=0.956"
+      },
+      {
+        "corpusid": 236317335,
+        "score": 0.9000903367996216,
+        "reason": "bm25=0.750; dense=1.000; sub_bm25=0.973; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252907270,
+        "score": 0.8745002746582031,
+        "reason": "bm25=0.848; dense=0.892; sub_bm25=0.826; sub_dense=0.908"
+      },
+      {
+        "corpusid": 237304281,
+        "score": 0.8613033294677734,
+        "reason": "bm25=0.662; dense=0.994; sub_bm25=0.995; sub_dense=0.926"
+      },
+      {
+        "corpusid": 11406047,
+        "score": 0.8343848586082458,
+        "reason": "bm25=0.632; dense=0.969; sub_bm25=0.736; sub_dense=0.907"
+      }
+    ]
+  }
+}

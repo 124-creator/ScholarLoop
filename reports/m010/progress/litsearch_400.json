@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_400",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_400",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_400",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_400",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1396,
+      "latency_s": 10.677027799887583
+    },
+    {
+      "query_id": "litsearch_400",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.8910852998960763
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_400",
+    "gold": [
+      259370656
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "graph neural network multi-label intent classification",
+      "label information graph neural network low-resource classification",
+      "multi-label intent classification low-resource"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252763297,
+        49742750,
+        233365293,
+        34190303,
+        51782450,
+        237365390,
+        30578862,
+        236477466,
+        16389974,
+        259833824,
+        235166842,
+        220046457,
+        226262332,
+        28780865,
+        236460275,
+        226262383,
+        251449214,
+        8261321,
+        44145776,
+        252819335
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236460275,
+        174800272,
+        259370656,
+        243865566,
+        32115967,
+        16389974,
+        9365010,
+        6437046,
+        258378248,
+        256460874,
+        237452237,
+        231592352,
+        243865290,
+        233365293,
+        227230304,
+        201645364,
+        243865265,
+        259833824,
+        53082972,
+        248986847
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252992810,
+        252992662,
+        236460275,
+        243865566,
+        226262370,
+        248986847,
+        235166842,
+        174800272,
+        209439835,
+        259370656,
+        225075866,
+        232013402,
+        213085920,
+        202774148,
+        248218711,
+        253446922,
+        222133909,
+        240354628,
+        226283927,
+        240354406
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370656,
+        236460275,
+        248986847,
+        243865566
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236460275,
+        243865566,
+        174800272,
+        252992810,
+        259370656,
+        248986847,
+        226262370,
+        32115967,
+        252992662,
+        9365010,
+        6437046,
+        235166842,
+        225075866,
+        240354628,
+        237452237,
+        222133909,
+        247158749,
+        258960494,
+        256460874,
+        231592352
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.539361599949189
+  },
+  "reason_example": {
+    "query_id": "litsearch_400",
+    "query": "Is there any paper that leverages graph neural network by integrating label information for multi-label low-resource intent classification?",
+    "top_results": [
+      {
+        "corpusid": 236460275,
+        "score": 0.967287540435791,
+        "reason": "bm25=1.000; dense=0.945; sub_bm25=1.000; sub_dense=0.918"
+      },
+      {
+        "corpusid": 243865566,
+        "score": 0.9282498359680176,
+        "reason": "bm25=0.911; dense=0.940; sub_bm25=0.929; sub_dense=0.930"
+      },
+      {
+        "corpusid": 174800272,
+        "score": 0.8795041441917419,
+        "reason": "bm25=0.972; dense=0.818; sub_bm25=1.000; sub_dense=0.958"
+      },
+      {
+        "corpusid": 252992810,
+        "score": 0.8609548807144165,
+        "reason": "bm25=0.652; dense=1.000; sub_bm25=0.563; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370656,
+        "score": 0.8411527872085571,
+        "reason": "bm25=0.913; dense=0.793; sub_bm25=0.919; sub_dense=0.896"
+      }
+    ]
+  }
+}

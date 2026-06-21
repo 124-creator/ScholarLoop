@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_454",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_454",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_454",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_454",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1169,
+      "latency_s": 5.646010700031184
+    },
+    {
+      "query_id": "litsearch_454",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 2.604852700023912
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_454",
+    "gold": [
+      258762633
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "document content intermediate generation target generative retrieval",
+      "textual document identifiers generative retrieval",
+      "first introduced intermediate target content document identifiers generative retrieval"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        261341902,
+        210063635,
+        9246755,
+        53244660,
+        562554,
+        59848390,
+        16623670,
+        210722162,
+        13981343,
+        18443059,
+        4196207,
+        6187812,
+        29153375,
+        7351982,
+        9208282,
+        15531056,
+        17198322,
+        6938470,
+        3102210,
+        16017753
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258947148,
+        259370571,
+        238353991,
+        21697471,
+        102351463,
+        258762633,
+        7351982,
+        8800995,
+        398,
+        17769145,
+        12822295,
+        17602750,
+        2649124,
+        184417,
+        5307938,
+        239890018,
+        16502182,
+        27732417,
+        65373,
+        210722162
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        15897255,
+        258762633,
+        2872582,
+        27732417,
+        250391000,
+        14461673,
+        7916496,
+        1743238,
+        912173,
+        1592006,
+        5307938,
+        5771683,
+        252819487,
+        15570294,
+        258947148,
+        8251206,
+        13600036,
+        20798625,
+        2649124,
+        9598874
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258947148,
+        261341902
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258947148,
+        258762633,
+        27732417,
+        259370571,
+        5307938,
+        2649124,
+        912173,
+        16502182,
+        12822295,
+        5771683,
+        17769145,
+        10915312,
+        7916496,
+        398,
+        102351463,
+        226227078,
+        248780343,
+        10922426,
+        6475860,
+        7318039
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.469705000054091
+  },
+  "reason_example": {
+    "query_id": "litsearch_454",
+    "query": "Which paper first introduced document content as an intermediate generation target and utilized textual document identifiers in generative retrieval?",
+    "top_results": [
+      {
+        "corpusid": 258947148,
+        "score": 0.9261056184768677,
+        "reason": "bm25=1.000; dense=0.877; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258762633,
+        "score": 0.9058328866958618,
+        "reason": "bm25=0.806; dense=0.972; sub_bm25=0.708; sub_dense=0.940"
+      },
+      {
+        "corpusid": 27732417,
+        "score": 0.8660858869552612,
+        "reason": "bm25=0.732; dense=0.956; sub_bm25=0.706; sub_dense=0.916"
+      },
+      {
+        "corpusid": 259370571,
+        "score": 0.8517448902130127,
+        "reason": "bm25=0.915; dense=0.809; sub_bm25=0.871; sub_dense=0.846"
+      },
+      {
+        "corpusid": 5307938,
+        "score": 0.8308167457580566,
+        "reason": "bm25=0.743; dense=0.889; sub_bm25=0.741; sub_dense=0.850"
+      }
+    ]
+  }
+}

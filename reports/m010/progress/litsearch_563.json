@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_563",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_563",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_563",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_563",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1715,
+      "latency_s": 13.22705790004693
+    },
+    {
+      "query_id": "litsearch_563",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 321,
+      "latency_s": 2.7716123999562114
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_563",
+    "gold": [
+      264172935
+    ],
+    "pool_size": 246,
+    "decomposition": [
+      "video foundation model vision language model robot planning",
+      "combine video foundation model vision language model high dimensional planning",
+      "video foundation model VLM robot planning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        8028944,
+        53639109,
+        3920851,
+        259833850,
+        10919045,
+        248779924,
+        33871285,
+        11200749,
+        27016310,
+        51623575,
+        248562640,
+        6553227,
+        253762079,
+        2260284,
+        8752606,
+        9344388,
+        189762140,
+        258378194,
+        237329472,
+        197254
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264172935,
+        249018141,
+        257687184,
+        257766959,
+        247922520,
+        202565422,
+        256615635,
+        174802916,
+        235765481,
+        249953817,
+        263908842,
+        17629634,
+        252595919,
+        259924554,
+        256827026,
+        249626076,
+        248562640,
+        223956820,
+        227305788,
+        251719133
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264172935,
+        202565422,
+        222066988,
+        238226673,
+        3930198,
+        263908842,
+        52155604,
+        51867690,
+        7715455,
+        227305788,
+        257766959,
+        197254,
+        2044324,
+        39290532,
+        258331993,
+        221738974,
+        247627890,
+        249953817,
+        226283618,
+        252222320
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264172935,
+        257766959,
+        247922520
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264172935,
+        202565422,
+        263908842,
+        257766959,
+        222066988,
+        249953817,
+        227305788,
+        257687184,
+        249018141,
+        259924554,
+        7715455,
+        235765481,
+        258331993,
+        238226673,
+        252222320,
+        51867690,
+        259164552,
+        252595919,
+        263889455,
+        229923865
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 17.05622070003301
+  },
+  "reason_example": {
+    "query_id": "litsearch_563",
+    "query": "What work proposes to combine video foundation models with vision language models to effective high dimensional robot planning?",
+    "top_results": [
+      {
+        "corpusid": 264172935,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202565422,
+        "score": 0.8851679563522339,
+        "reason": "bm25=0.895; dense=0.879; sub_bm25=0.906; sub_dense=0.942"
+      },
+      {
+        "corpusid": 263908842,
+        "score": 0.7944188714027405,
+        "reason": "bm25=0.836; dense=0.767; sub_bm25=0.760; sub_dense=0.843"
+      },
+      {
+        "corpusid": 257766959,
+        "score": 0.7941800355911255,
+        "reason": "bm25=0.905; dense=0.720; sub_bm25=0.815; sub_dense=0.734"
+      },
+      {
+        "corpusid": 222066988,
+        "score": 0.7906132936477661,
+        "reason": "bm25=0.659; dense=0.878; sub_bm25=0.687; sub_dense=0.899"
+      }
+    ]
+  }
+}

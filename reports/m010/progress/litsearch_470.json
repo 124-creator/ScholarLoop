@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_470",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_470",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_470",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_470",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 776,
+      "latency_s": 2.911387200001627
+    },
+    {
+      "query_id": "litsearch_470",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 256,
+      "latency_s": 3.030352000030689
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_470",
+    "gold": [
+      254853990
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "timeliness metric human evaluation misinformation detection introduced",
+      "human-evaluated timeliness measure for fake news detection",
+      "introducing temporal relevance metric for misinformation with human assessment"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        39183834,
+        424889,
+        6556276,
+        8748191,
+        19161058,
+        748386,
+        52158272,
+        2499521,
+        53247198,
+        14249474,
+        201736389,
+        2233478,
+        2379563,
+        6470935,
+        259376510,
+        6602296,
+        12305813,
+        46984294,
+        4884863,
+        19987797
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254853990,
+        247011130,
+        250150966,
+        224706966,
+        19161058,
+        17127566,
+        237250087,
+        211204954,
+        8702526,
+        233210613,
+        12769320,
+        1777506,
+        221654275,
+        8431414,
+        258546862,
+        102351048,
+        250390914,
+        251518354,
+        248721957,
+        256461119
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252624618,
+        252819040,
+        251518354,
+        250150966,
+        254853990,
+        236460200,
+        8251771,
+        5092868,
+        8570911,
+        11568211,
+        15204328,
+        6733826,
+        256461023,
+        202787823,
+        7691927,
+        257206126,
+        244464088,
+        248721957,
+        227231347,
+        252564353
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        254853990
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        254853990,
+        250150966,
+        251518354,
+        252819040,
+        211204954,
+        233210613,
+        236460200,
+        248721957,
+        256461023,
+        247011130,
+        227231347,
+        253107194,
+        224706966,
+        6733826,
+        13747175,
+        252624618,
+        233365310,
+        250390933,
+        258547076,
+        8702526
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.809735400020145
+  },
+  "reason_example": {
+    "query_id": "litsearch_470",
+    "query": "Which paper introduced the human-evaluated timeliness metric for misinformation detection?",
+    "top_results": [
+      {
+        "corpusid": 254853990,
+        "score": 0.9369635581970215,
+        "reason": "bm25=1.000; dense=0.895; sub_bm25=1.000; sub_dense=0.962"
+      },
+      {
+        "corpusid": 250150966,
+        "score": 0.8990877270698547,
+        "reason": "bm25=0.876; dense=0.914; sub_bm25=0.913; sub_dense=0.921"
+      },
+      {
+        "corpusid": 251518354,
+        "score": 0.8595950603485107,
+        "reason": "bm25=0.768; dense=0.921; sub_bm25=0.734; sub_dense=0.848"
+      },
+      {
+        "corpusid": 252819040,
+        "score": 0.8180593252182007,
+        "reason": "bm25=0.654; dense=0.927; sub_bm25=0.872; sub_dense=0.947"
+      },
+      {
+        "corpusid": 211204954,
+        "score": 0.8016406893730164,
+        "reason": "bm25=0.838; dense=0.777; sub_bm25=0.814; sub_dense=0.736"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_588",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_588",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_588",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_588",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 629,
+      "latency_s": 1.6973963999189436
+    },
+    {
+      "query_id": "litsearch_588",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 389,
+      "latency_s": 3.7124332999810576
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_588",
+    "gold": [
+      264306078
+    ],
+    "pool_size": 291,
+    "decomposition": [
+      "Constrained MDP LLM alignment helpfulness harmlessness",
+      "first paper modeling LLM alignment as constrained Markov decision process",
+      "constrained MDP for helpful and harmless language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2753493,
+        5498664,
+        16059892,
+        11644259,
+        12405045,
+        18076825,
+        1860368,
+        12562747,
+        29473407,
+        1400498,
+        441908,
+        12735028,
+        12795660,
+        16165854,
+        47020074,
+        189490,
+        21693300,
+        1458921,
+        56417298,
+        18347073
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264306078,
+        263835408,
+        220344856,
+        202783183,
+        51878991,
+        17500705,
+        259376527,
+        264306063,
+        195346934,
+        260887189,
+        222002282,
+        5219389,
+        11644259,
+        2667234,
+        202565538,
+        258564677,
+        8246884,
+        248085338,
+        9867391,
+        16475365
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1399879,
+        18211380,
+        27202788,
+        1538872,
+        215825206,
+        738823,
+        108334676,
+        15069542,
+        16780088,
+        8404578,
+        32561132,
+        59642407,
+        9867391,
+        2525,
+        37424778,
+        17079373,
+        30353010,
+        848100,
+        13936472,
+        16388657
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264306078
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264306078,
+        9867391,
+        18211380,
+        108334676,
+        1994218,
+        15069542,
+        263835408,
+        8404578,
+        738823,
+        17079373,
+        848100,
+        1538872,
+        2014784,
+        1399879,
+        17502715,
+        8031067,
+        257663689,
+        16388657,
+        9709745,
+        30353010
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 6.60107330000028
+  },
+  "reason_example": {
+    "query_id": "litsearch_588",
+    "query": "Which paper is the first to model the helpfulness and harmlessness alignment of LLMs as a Constrained MDP problem?",
+    "top_results": [
+      {
+        "corpusid": 264306078,
+        "score": 0.8422426581382751,
+        "reason": "bm25=1.000; dense=0.737; sub_bm25=1.000; sub_dense=0.777"
+      },
+      {
+        "corpusid": 9867391,
+        "score": 0.7651306986808777,
+        "reason": "bm25=0.630; dense=0.855; sub_bm25=0.516; sub_dense=0.941"
+      },
+      {
+        "corpusid": 18211380,
+        "score": 0.7558592557907104,
+        "reason": "bm25=0.419; dense=0.981; sub_bm25=0.330; sub_dense=0.696"
+      },
+      {
+        "corpusid": 108334676,
+        "score": 0.7454273700714111,
+        "reason": "bm25=0.547; dense=0.878; sub_bm25=0.313; sub_dense=0.594"
+      },
+      {
+        "corpusid": 1994218,
+        "score": 0.7443603873252869,
+        "reason": "bm25=0.598; dense=0.842; sub_bm25=0.444; sub_dense=1.000"
+      }
+    ]
+  }
+}

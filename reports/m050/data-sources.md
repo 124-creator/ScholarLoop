@@ -1,9 +1,9 @@
-# M050 · 数据源 / 许可 / 字段 / 频率说明（X3）
+﻿# M050 · 数据源 / 许可 / 字段 / 频率说明（X3）
 
 - 生成日期：2026-06-20
 - 模块：050 真实学术 API 连接器
 - 原则：只用开放免费学术元数据 API；不爬全文、不绕墙、不使用付费/受限数据；所有响应缓存到 `reports/m050/cache/`，离线评测以缓存快照为准。
-- 礼貌 UA：`ScholarLoop-M050/0.1 (mailto:15517837680@163.com; academic metadata connector)`（项目真实联系邮箱）。
+- 礼貌 UA：`ScholarLoop-M050/0.1 (mailto:no-public-email@example.com; academic metadata connector)`（项目真实联系邮箱）。
 
 ## 1. OpenAlex（主源）
 

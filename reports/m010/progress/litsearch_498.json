@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_498",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_498",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_498",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_498",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1571,
+      "latency_s": 9.890592699986883
+    },
+    {
+      "query_id": "litsearch_498",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 329,
+      "latency_s": 2.5941995000466704
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_498",
+    "gold": [
+      258833194
+    ],
+    "pool_size": 236,
+    "decomposition": [
+      "AMR event structure causal relation recognition",
+      "Abstract Meaning Representation causal event extraction",
+      "using AMR graphs for causal relation identification"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252624581,
+        640783,
+        2018689,
+        7859072,
+        236459985,
+        15392152,
+        248496614,
+        10070203,
+        8775253,
+        28968115,
+        13856836,
+        7403520,
+        8290654,
+        8052901,
+        1216445,
+        201702115,
+        226283497,
+        256827163,
+        17281269,
+        1527631
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        253116561,
+        8052901,
+        220047360,
+        9961954,
+        2018689,
+        1162419,
+        258833194,
+        236459985,
+        235097301,
+        250391021,
+        248496614,
+        18600354,
+        1527631,
+        13856836,
+        227231527,
+        49210924,
+        222355402,
+        251437933,
+        245218553,
+        248780194
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7231965,
+        9961954,
+        8052901,
+        258833194,
+        6364632,
+        38234032,
+        252818997,
+        248218685,
+        850180,
+        237735642,
+        235097301,
+        3030259,
+        17716605,
+        15139323,
+        235253912,
+        21706146,
+        7294125,
+        260063107,
+        253080458,
+        6323983
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258833194
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        8052901,
+        9961954,
+        258833194,
+        7231965,
+        235097301,
+        6364632,
+        248496614,
+        13856836,
+        15139323,
+        1162419,
+        253116561,
+        248218685,
+        251437933,
+        6323983,
+        21706146,
+        13321135,
+        236459985,
+        237735642,
+        2018689,
+        13357099
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.441968900035135
+  },
+  "reason_example": {
+    "query_id": "litsearch_498",
+    "query": "Which research paper leverages event structure information from Abstract Meaning Representation (AMR) graphs to aid in recognizing causal relations between events?",
+    "top_results": [
+      {
+        "corpusid": 8052901,
+        "score": 0.9529502391815186,
+        "reason": "bm25=0.931; dense=0.968; sub_bm25=0.770; sub_dense=1.000"
+      },
+      {
+        "corpusid": 9961954,
+        "score": 0.9472065567970276,
+        "reason": "bm25=0.907; dense=0.974; sub_bm25=1.000; sub_dense=0.844"
+      },
+      {
+        "corpusid": 258833194,
+        "score": 0.9136196374893188,
+        "reason": "bm25=0.875; dense=0.940; sub_bm25=0.890; sub_dense=0.984"
+      },
+      {
+        "corpusid": 7231965,
+        "score": 0.8853262066841125,
+        "reason": "bm25=0.713; dense=1.000; sub_bm25=0.942; sub_dense=0.966"
+      },
+      {
+        "corpusid": 235097301,
+        "score": 0.8612169623374939,
+        "reason": "bm25=0.861; dense=0.862; sub_bm25=0.735; sub_dense=0.753"
+      }
+    ]
+  }
+}

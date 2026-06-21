@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_595",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_595",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_595",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_595",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1083,
+      "latency_s": 5.829342999961227
+    },
+    {
+      "query_id": "litsearch_595",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 2.8976791999302804
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_595",
+    "gold": [
+      263830433
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "generalization bounds self-supervised learning CLIP",
+      "theoretical guarantees contrastive learning generalization",
+      "generalization error analysis multimodal models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        250390721,
+        7539145,
+        252715492,
+        238582894,
+        24957784,
+        235293834,
+        258486963,
+        8752606,
+        186206208,
+        261342032,
+        2432242,
+        10749859,
+        16541788,
+        30488100,
+        31105714,
+        39654639,
+        199022672,
+        208058457,
+        256461103,
+        238419044
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263134283,
+        222209080,
+        257482844,
+        252715492,
+        59600012,
+        289313,
+        233296628,
+        248780562,
+        238419044,
+        247291992,
+        257233135,
+        221761685,
+        253111598,
+        247315653,
+        252715969,
+        231592453,
+        263909278,
+        240354511,
+        240419913,
+        244714837
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        223956716,
+        238419044,
+        289313,
+        222209080,
+        252683253,
+        247291992,
+        240354511,
+        67855429,
+        248811614,
+        222341795,
+        255340736,
+        262825257,
+        263831863,
+        258212506,
+        249712234,
+        252683793,
+        3548196,
+        174799918,
+        249097525,
+        257757379
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        223956716,
+        240354511,
+        238419044
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        238419044,
+        222209080,
+        289313,
+        223956716,
+        247291992,
+        257482844,
+        240354511,
+        252683253,
+        59600012,
+        258212506,
+        263134283,
+        263830433,
+        246240517,
+        255340736,
+        222378250,
+        231592453,
+        67855429,
+        252715492,
+        249097525,
+        233189592
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.446482000057586
+  },
+  "reason_example": {
+    "query_id": "litsearch_595",
+    "query": "What paper provides generalization bounds for self supervised learning models eg. CLIP",
+    "top_results": [
+      {
+        "corpusid": 238419044,
+        "score": 0.9337577223777771,
+        "reason": "bm25=0.879; dense=0.971; sub_bm25=0.888; sub_dense=0.913"
+      },
+      {
+        "corpusid": 222209080,
+        "score": 0.9321006536483765,
+        "reason": "bm25=0.980; dense=0.900; sub_bm25=0.890; sub_dense=0.957"
+      },
+      {
+        "corpusid": 289313,
+        "score": 0.9291406869888306,
+        "reason": "bm25=0.888; dense=0.956; sub_bm25=0.800; sub_dense=0.920"
+      },
+      {
+        "corpusid": 223956716,
+        "score": 0.86134934425354,
+        "reason": "bm25=0.653; dense=1.000; sub_bm25=0.677; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247291992,
+        "score": 0.8376461267471313,
+        "reason": "bm25=0.872; dense=0.815; sub_bm25=0.911; sub_dense=0.865"
+      }
+    ]
+  }
+}

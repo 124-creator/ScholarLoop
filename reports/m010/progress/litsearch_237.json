@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_237",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_237",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_237",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_237",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1207,
+      "latency_s": 6.090169899980538
+    },
+    {
+      "query_id": "litsearch_237",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 308,
+      "latency_s": 2.355367499985732
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_237",
+    "gold": [
+      234763248
+    ],
+    "pool_size": 242,
+    "decomposition": [
+      "graph-based methods n-ary relational fact prediction knowledge graph",
+      "knowledge graph completion n-ary relations graph neural networks",
+      "hypergraph representation learning n-ary facts link prediction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7861345,
+        248780238,
+        253098905,
+        220046563,
+        247613006,
+        252781069,
+        252819130,
+        18648384,
+        248780535,
+        234763248,
+        2245732,
+        1798864,
+        1432114,
+        34267047,
+        39654639,
+        13078199,
+        1266013,
+        5093066,
+        21688828,
+        14777407
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780535,
+        234763248,
+        7861345,
+        237213618,
+        247613006,
+        235436105,
+        221857750,
+        18946652,
+        52110037,
+        248780238,
+        248780002,
+        102352412,
+        202785034,
+        233210621,
+        252781069,
+        259370851,
+        214802539,
+        256461037,
+        2797612,
+        253098905
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14047545,
+        140116781,
+        248780238,
+        234763248,
+        253098905,
+        252762171,
+        44113572,
+        221090697,
+        207852450,
+        14409919,
+        261341583,
+        252070677,
+        59316623,
+        238215189,
+        221857750,
+        236459932,
+        207863292,
+        218487188,
+        235658634,
+        173990725
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        234763248,
+        221857750,
+        248780535,
+        237213618,
+        252284039,
+        220046563,
+        52110037,
+        248780002,
+        247613006,
+        253098905,
+        248780238,
+        7861345
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        234763248,
+        248780238,
+        253098905,
+        14047545,
+        248780535,
+        140116781,
+        221857750,
+        248780002,
+        102352412,
+        52110037,
+        7861345,
+        237213618,
+        207852450,
+        249538526,
+        221090697,
+        207847719,
+        59316623,
+        252762171,
+        238215189,
+        235436105
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.80780309997499
+  },
+  "reason_example": {
+    "query_id": "litsearch_237",
+    "query": "Could you suggest research that investigates graph-based methods for predicting connections in knowledge graphs, focusing on n-ary relational facts rather than just simple triple structures?",
+    "top_results": [
+      {
+        "corpusid": 234763248,
+        "score": 0.9206095933914185,
+        "reason": "bm25=0.925; dense=0.917; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248780238,
+        "score": 0.8448565006256104,
+        "reason": "bm25=0.698; dense=0.943; sub_bm25=0.387; sub_dense=0.833"
+      },
+      {
+        "corpusid": 253098905,
+        "score": 0.776092529296875,
+        "reason": "bm25=0.608; dense=0.888; sub_bm25=0.413; sub_dense=0.856"
+      },
+      {
+        "corpusid": 14047545,
+        "score": 0.7712196111679077,
+        "reason": "bm25=0.428; dense=1.000; sub_bm25=0.340; sub_dense=0.871"
+      },
+      {
+        "corpusid": 248780535,
+        "score": 0.7701951265335083,
+        "reason": "bm25=1.000; dense=0.617; sub_bm25=1.000; sub_dense=0.755"
+      }
+    ]
+  }
+}

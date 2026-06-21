@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_488",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_488",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_488",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_488",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 966,
+      "latency_s": 6.072997399955057
+    },
+    {
+      "query_id": "litsearch_488",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 317,
+      "latency_s": 2.4806047999300063
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_488",
+    "gold": [
+      259063796
+    ],
+    "pool_size": 284,
+    "decomposition": [
+      "instruction tuning compression supporting set words",
+      "small set of words instruction tuning useful",
+      "compressing instructions in instruction tuning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6218032,
+        6517211,
+        7425199,
+        10370220,
+        203688153,
+        6741003,
+        9246755,
+        27191574,
+        220044873,
+        281213,
+        7270459,
+        261382,
+        4640543,
+        37430294,
+        248392181,
+        15853016,
+        1412569,
+        7030749,
+        1922970,
+        8292781
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233306884,
+        248266490,
+        248496232,
+        259370786,
+        259063796,
+        258765272,
+        218684494,
+        248986755,
+        9963298,
+        253107865,
+        258823428,
+        56657805,
+        259370688,
+        231709269,
+        260063164,
+        239015970,
+        252815378,
+        252918165,
+        214803082,
+        260334759
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247518570,
+        33742593,
+        259342096,
+        8079405,
+        7138451,
+        248266490,
+        2991968,
+        248780177,
+        259063796,
+        247594470,
+        260866107,
+        14722592,
+        27077971,
+        571598,
+        11256747,
+        58148141,
+        41074112,
+        715221,
+        16387995,
+        7023256
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259063796,
+        259370786,
+        248266490,
+        842523,
+        233365250,
+        6218032,
+        4640543,
+        203688153,
+        233306884,
+        9963298,
+        11808,
+        9330805
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248266490,
+        259063796,
+        259342096,
+        247518570,
+        258765272,
+        259370688,
+        7138451,
+        248496232,
+        263834884,
+        252918165,
+        248986755,
+        842523,
+        260866107,
+        8079405,
+        231709269,
+        259108266,
+        259370786,
+        247447170,
+        6903396,
+        258823428
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.566205400042236
+  },
+  "reason_example": {
+    "query_id": "litsearch_488",
+    "query": "Which paper shows that in instruction tuning, the instructions can be compressed to small supporting sets of words that provide useful information?",
+    "top_results": [
+      {
+        "corpusid": 248266490,
+        "score": 0.9612380266189575,
+        "reason": "bm25=0.953; dense=0.966; sub_bm25=0.955; sub_dense=0.982"
+      },
+      {
+        "corpusid": 259063796,
+        "score": 0.947697639465332,
+        "reason": "bm25=0.925; dense=0.963; sub_bm25=0.808; sub_dense=0.919"
+      },
+      {
+        "corpusid": 259342096,
+        "score": 0.9196527004241943,
+        "reason": "bm25=0.823; dense=0.984; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247518570,
+        "score": 0.8999289274215698,
+        "reason": "bm25=0.750; dense=1.000; sub_bm25=0.784; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258765272,
+        "score": 0.8857085704803467,
+        "reason": "bm25=0.925; dense=0.860; sub_bm25=0.973; sub_dense=0.956"
+      }
+    ]
+  }
+}

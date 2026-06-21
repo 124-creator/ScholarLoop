@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_169",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_169",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_169",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_169",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1062,
+      "latency_s": 6.811539700021967
+    },
+    {
+      "query_id": "litsearch_169",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 260,
+      "latency_s": 2.470960299950093
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_169",
+    "gold": [
+      235458429
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "generative models for event extraction",
+      "large pre-trained language models event extraction",
+      "template engineering event extraction reduction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        41981492,
+        8517763,
+        257154221,
+        250390647,
+        11784184,
+        17524865,
+        252683419,
+        2251088,
+        5688042,
+        252819242,
+        258960366,
+        249017494,
+        235097664,
+        249892255,
+        241583598,
+        248780307,
+        259833850,
+        226283808,
+        258378191,
+        1515524
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235097664,
+        257154221,
+        235254286,
+        248721950,
+        8711257,
+        251403664,
+        14282973,
+        259187807,
+        6341459,
+        251710301,
+        256461341,
+        14220069,
+        18302428,
+        234358675,
+        248227853,
+        258960366,
+        2114002,
+        219308172,
+        196178503,
+        5688042
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248721950,
+        257154221,
+        8711257,
+        236460103,
+        235097664,
+        235458429,
+        253499316,
+        189928589,
+        6341459,
+        34166175,
+        237735642,
+        216562779,
+        33364495,
+        250390839,
+        222306079,
+        14175558,
+        253510953,
+        249010869,
+        1578341,
+        226262410
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        196178503,
+        248721950,
+        257154221,
+        235097664,
+        253223829
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        257154221,
+        248721950,
+        235097664,
+        8711257,
+        6341459,
+        235254286,
+        196178503,
+        15865939,
+        253499316,
+        222306079,
+        235458429,
+        34166175,
+        14282973,
+        253223829,
+        256461341,
+        225063037,
+        14220069,
+        218630327,
+        604983,
+        237592928
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.013114000088535
+  },
+  "reason_example": {
+    "query_id": "litsearch_169",
+    "query": "Could you recommend research that investigates generative modeling approaches for event extraction, specifically focusing on leveraging large pre-trained language models to reduce the complexity of template engineering?",
+    "top_results": [
+      {
+        "corpusid": 257154221,
+        "score": 0.9674079418182373,
+        "reason": "bm25=0.975; dense=0.963; sub_bm25=0.976; sub_dense=0.952"
+      },
+      {
+        "corpusid": 248721950,
+        "score": 0.9500109553337097,
+        "reason": "bm25=0.875; dense=1.000; sub_bm25=1.000; sub_dense=0.981"
+      },
+      {
+        "corpusid": 235097664,
+        "score": 0.9463107585906982,
+        "reason": "bm25=1.000; dense=0.911; sub_bm25=0.930; sub_dense=0.832"
+      },
+      {
+        "corpusid": 8711257,
+        "score": 0.8978533148765564,
+        "reason": "bm25=0.863; dense=0.921; sub_bm25=0.903; sub_dense=1.000"
+      },
+      {
+        "corpusid": 6341459,
+        "score": 0.8737221956253052,
+        "reason": "bm25=0.849; dense=0.890; sub_bm25=0.904; sub_dense=0.837"
+      }
+    ]
+  }
+}

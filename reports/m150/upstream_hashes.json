@@ -1,0 +1,103 @@
+{
+  "schema_version": "m150.upstream_hashes.v1",
+  "checked_at_utc": "2026-06-21T05:58:24.444660+00:00",
+  "current_hashes": {
+    "reports/m010": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+    "reports/m020": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+    "reports/m030": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+    "reports/m040": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+    "reports/m050": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+    "reports/m060": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+    "reports/m070": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+    "reports/m080": "45a469900e9b0a3bd3aa73b6076bf0fc44444abc5bb44cd76797bcb09521b143",
+    "reports/m090": "f2d58b135727b9ec2d67d5cc2c7f8a9cca1b57f87a87c0fd8182f40b5261ea39",
+    "reports/m100": "c90b331090bf693b78e42f7ee00740c83b4813b24ec29b20afa8f2fafba3ebba",
+    "reports/m110": "fb88f4875abad993d604801311807b8eb79b0eda3fb60812776801eda63ef12b",
+    "reports/m120": "e603f868b2b9816d360ed98515eac5c2c518498576b3f857de2eb0726cd98294",
+    "reports/m130": "a624c94022bd3cd9c0b12ec5723baec8bae7496e519df185db3c69b547edb76f",
+    "reports/m140": "79cad45848d4188977e74ace46580d452e0a4c82a2b514693673e303db78d4aa",
+    "reports/m040/results.json": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+    "src/scholarloop/retrieval/dense_v2.py": "e793f4b02227dd8f85e5618a77045ab2a974fcc6e657f78e8f608bc8bbd84776",
+    "tests/test_m150_realtime_hotfix.py": "df22a7881ccab0de9b4a5b332978b0a4fcf87f56a9e86fe04db9f5fa789f017b",
+    "docs/dev/plans/150-实时搜索路径热修-计划.md": "c3dabf3a92eccc7e7a92782522ad2c7bd2c722cbdaba2ac877221f479b683be3",
+    "docs/dev/retrospectives/150-实时搜索路径热修-复盘.md": "807b72129397d183f34b8d0eb32f58e1bd5a24c99f55245bda780ba1cd36d53d"
+  },
+  "m140_baseline_compare": {
+    "reports/m010": {
+      "current": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+      "m140_baseline": "1b47a78f0c2e9121c53c18ecf31ce94ea3806806c86f2f574f69f25f37c03e24",
+      "same": true
+    },
+    "reports/m020": {
+      "current": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+      "m140_baseline": "1b684c1e1dae96a377558f7b0ceef972abac49e16b29423587c1404c59fb405e",
+      "same": true
+    },
+    "reports/m030": {
+      "current": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+      "m140_baseline": "2a3b4e12de42742d9cbf9b7c8680f64e9d86967b2db164b3e3bc31551f1c042e",
+      "same": true
+    },
+    "reports/m040": {
+      "current": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+      "m140_baseline": "b61d8b6e2abe717e351d47d9666013f32dd1d74ada1ad05970d3f074577e10f9",
+      "same": true
+    },
+    "reports/m040/results.json": {
+      "current": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+      "m140_baseline": "6eb81c8304a80f53094ec22d80ec28ee17b940083a1871e709d55882592b61e9",
+      "same": true
+    },
+    "reports/m050": {
+      "current": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+      "m140_baseline": "5cada3519dfec11e7aa246580070c0a0b2b8493a3eb5936d42016abebe4dc918",
+      "same": true
+    },
+    "reports/m060": {
+      "current": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+      "m140_baseline": "94c6cb1502f85f8e6821c9ac845ce3626c949bdb70fcb5126ecfc77a8f7a5159",
+      "same": true
+    },
+    "reports/m070": {
+      "current": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+      "m140_baseline": "7872b249d0bc08c36ea882670cac62909d3c0222a6fdb01874d9a16ebc9d11f5",
+      "same": true
+    },
+    "reports/m080": {
+      "current": "45a469900e9b0a3bd3aa73b6076bf0fc44444abc5bb44cd76797bcb09521b143",
+      "m140_baseline": "45a469900e9b0a3bd3aa73b6076bf0fc44444abc5bb44cd76797bcb09521b143",
+      "same": true
+    },
+    "reports/m090": {
+      "current": "f2d58b135727b9ec2d67d5cc2c7f8a9cca1b57f87a87c0fd8182f40b5261ea39",
+      "m140_baseline": "f2d58b135727b9ec2d67d5cc2c7f8a9cca1b57f87a87c0fd8182f40b5261ea39",
+      "same": true
+    },
+    "reports/m100": {
+      "current": "c90b331090bf693b78e42f7ee00740c83b4813b24ec29b20afa8f2fafba3ebba",
+      "m140_baseline": "53428c8a15f4903a05db24b117706c1138b55a272f9d6a8312836853dac41519",
+      "same": false
+    },
+    "reports/m110": {
+      "current": "fb88f4875abad993d604801311807b8eb79b0eda3fb60812776801eda63ef12b",
+      "m140_baseline": "fb88f4875abad993d604801311807b8eb79b0eda3fb60812776801eda63ef12b",
+      "same": true
+    },
+    "reports/m120": {
+      "current": "e603f868b2b9816d360ed98515eac5c2c518498576b3f857de2eb0726cd98294",
+      "m140_baseline": "e603f868b2b9816d360ed98515eac5c2c518498576b3f857de2eb0726cd98294",
+      "same": true
+    },
+    "reports/m130": {
+      "current": "a624c94022bd3cd9c0b12ec5723baec8bae7496e519df185db3c69b547edb76f",
+      "m140_baseline": "a624c94022bd3cd9c0b12ec5723baec8bae7496e519df185db3c69b547edb76f",
+      "same": true
+    }
+  },
+  "load_bearing_unchanged": {
+    "reports/m040/results.json": true,
+    "m040_m060_frozen_eval_invariance": true,
+    "m080_m140_demo_replay": true
+  },
+  "volatile_note": "Full reports/m100 directory may include realtime raw/precheck cache from interactive runs; M150 load-bearing invariance is checked on M040/M060 frozen results and demo replay artifacts."
+}

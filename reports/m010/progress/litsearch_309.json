@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_309",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_309",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_309",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_309",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1627,
+      "latency_s": 9.72439210000448
+    },
+    {
+      "query_id": "litsearch_309",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 327,
+      "latency_s": 2.9318697000853717
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_309",
+    "gold": [
+      229923710
+    ],
+    "pool_size": 212,
+    "decomposition": [
+      "few-shot learning pretrained language models prompt-based fine-tuning",
+      "improving few-shot learning with prompt tuning in PLMs",
+      "recent advances prompt-based fine-tuning few-shot learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259833814,
+        30908728,
+        258959304,
+        243865402,
+        256461029,
+        253762079,
+        248810745,
+        259376677,
+        237329472,
+        258685798,
+        18995018,
+        241583630,
+        238857158,
+        248779859,
+        252118558,
+        258558112,
+        32679052,
+        226226469,
+        29661510,
+        248780381
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252118558,
+        258959304,
+        248085161,
+        253098972,
+        252819363,
+        229923710,
+        256900985,
+        248405974,
+        256461159,
+        248810745,
+        248366286,
+        250607486,
+        259833814,
+        253238066,
+        237440234,
+        248228003,
+        248572452,
+        248693115,
+        249017865,
+        236772379
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253238066,
+        237353222,
+        248693115,
+        235652287,
+        237452662,
+        236956577,
+        252992469,
+        248780567,
+        237416585,
+        229923710,
+        248779924,
+        252280753,
+        258041372,
+        238856821,
+        252668803,
+        247497303,
+        259833814,
+        247939864,
+        256460948,
+        252519660
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258959304,
+        248506039,
+        229923710,
+        253238066,
+        243865402,
+        252819363,
+        252118558,
+        256900985,
+        248779859,
+        259833814,
+        248693115,
+        248810745
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253238066,
+        248693115,
+        229923710,
+        237353222,
+        236956577,
+        237452662,
+        252819363,
+        259833814,
+        248780567,
+        235652287,
+        258959304,
+        248228003,
+        252280753,
+        237452236,
+        252992469,
+        238856821,
+        256900985,
+        256460948,
+        258041372,
+        248506039
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.647342000040226
+  },
+  "reason_example": {
+    "query_id": "litsearch_309",
+    "query": "What recent research has been conducted on improving few-shot learning in pre-trained language models through the use of prompt-based fine tuning techniques?",
+    "top_results": [
+      {
+        "corpusid": 253238066,
+        "score": 0.9534637928009033,
+        "reason": "bm25=0.884; dense=1.000; sub_bm25=0.967; sub_dense=1.000"
+      },
+      {
+        "corpusid": 248693115,
+        "score": 0.9282681941986084,
+        "reason": "bm25=0.843; dense=0.985; sub_bm25=0.948; sub_dense=0.971"
+      },
+      {
+        "corpusid": 229923710,
+        "score": 0.901836633682251,
+        "reason": "bm25=0.957; dense=0.865; sub_bm25=1.000; sub_dense=0.909"
+      },
+      {
+        "corpusid": 237353222,
+        "score": 0.9003478288650513,
+        "reason": "bm25=0.751; dense=1.000; sub_bm25=0.673; sub_dense=0.973"
+      },
+      {
+        "corpusid": 236956577,
+        "score": 0.8584332466125488,
+        "reason": "bm25=0.740; dense=0.937; sub_bm25=0.798; sub_dense=0.906"
+      }
+    ]
+  }
+}

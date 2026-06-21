@@ -1,0 +1,54 @@
+{
+  "reproducibility": {
+    "stable_run1_equals_run2": true,
+    "compared_fields": [
+      "status",
+      "protocol core",
+      "aggregate metrics only",
+      "aggregate_by_split metrics only",
+      "split_deltas",
+      "significance",
+      "per_query ranked_top20"
+    ],
+    "excluded_volatile_fields": [
+      "total_wall_s",
+      "prepare/dense elapsed",
+      "per-query elapsed",
+      "aggregate latency totals"
+    ],
+    "run2_total_wall_s": 1145.6836331000013,
+    "run2_p50_query_s": 1.50360290000026,
+    "run2_p95_query_s": 2.816726399999606
+  },
+  "upstream": {
+    "m010_results_unchanged": true,
+    "m010_significance_unchanged": true,
+    "current_hashes": {
+      "reports/m010/results.json": "fb6b6899c012bf5f53ece72937e317b2dcb3404a9305d281757ad156208dcaa9",
+      "reports/m010/significance.json": "ec1b429993d12597695a9509ae312f543aa20ff2e3c206aef5dcce8068f5c27f",
+      "src/scholarloop/config.py": "6811274b141e48e2121051a65eb20bb0d4b8dd00cae377ad302830b59212bea6",
+      "src/scholarloop/eval/run_full.py": "82651ef43b5b6f83bc904b63db7e24733f28b12473657e799ba90330387ac817",
+      "src/scholarloop/rank/fusion.py": "721afea7adb2f9d4b44850e8bef079638a813551e9e14f71e7793e86cec9e74d",
+      "src/scholarloop/retrieval/bm25.py": "293778c689ad0688a17fe90448978b61b9160d1530bc264cd60b9da456c0eee1",
+      "src/scholarloop/retrieval/dense.py": "526b4ae6b78a93bc039e1fd0e2acccbc1aa4040c90ba658e9e8507bffdc8b469",
+      "src/scholarloop/query/decompose.py": "65f935c72b20e896b192fb87ec8df94df10d4b6b469b8fbe2865d488f7f9e9c4",
+      "spike/eval/run_spikes.py": "01c14d8f702e35804eb3f73729ab2df7a66f058ae99244d43c6e6632de6cd644"
+    }
+  },
+  "secret_scan": {
+    "scanned_dirs": [
+      "src",
+      "tests",
+      "reports",
+      "docs"
+    ],
+    "excluded": [
+      "secrets",
+      "spike",
+      "model/cache/binary files",
+      "__pycache__/.pytest_cache"
+    ],
+    "secret_like_hits": 0,
+    "hits": []
+  }
+}

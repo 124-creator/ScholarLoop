@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_146",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_146",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_146",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_146",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 737,
+      "latency_s": 3.3872112000826746
+    },
+    {
+      "query_id": "litsearch_146",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 310,
+      "latency_s": 2.5027830000035465
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_146",
+    "gold": [
+      244799249
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "late interaction dense retrieval performance",
+      "late interaction information retrieval dense",
+      "dense retrieval late interaction effectiveness"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        461396,
+        1420479,
+        59848390,
+        261341902,
+        21166550,
+        3262157,
+        115191769,
+        6185167,
+        38964517,
+        8940645,
+        1871953,
+        12808898,
+        219306987,
+        2184388,
+        817732,
+        8870875,
+        10108216,
+        6665269,
+        20056888,
+        14122119
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865198,
+        254877181,
+        256389427,
+        237592852,
+        244799249,
+        253762062,
+        258762869,
+        259370874,
+        259370750,
+        235720578,
+        237303821,
+        245131402,
+        249926985,
+        250163872,
+        248562640,
+        233219392,
+        258887561,
+        257913267,
+        248780209,
+        18282256
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        20798625,
+        10635870,
+        12712634,
+        59848390,
+        1743238,
+        5113468,
+        11895984,
+        67425046,
+        3042304,
+        17555240,
+        6216639,
+        247450700,
+        229680000,
+        3189871,
+        244799249,
+        19034908,
+        11317625,
+        1188168,
+        3092326,
+        10197382
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        244799249,
+        259370874
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        244799249,
+        247450700,
+        6216639,
+        229680000,
+        1188168,
+        11895984,
+        67425046,
+        20798625,
+        9268650,
+        259370874,
+        237592852,
+        6073991,
+        243865198,
+        12362348,
+        6910290,
+        254877181,
+        10197382,
+        258887561,
+        14200823,
+        3042304
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.184240899980068
+  },
+  "reason_example": {
+    "query_id": "litsearch_146",
+    "query": "Could you recommend articles that explore the role of late interaction in dense retrieval systems and its influence on the performance of information retrieval?",
+    "top_results": [
+      {
+        "corpusid": 244799249,
+        "score": 0.8801108598709106,
+        "reason": "bm25=0.946; dense=0.836; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247450700,
+        "score": 0.8623101115226746,
+        "reason": "bm25=0.866; dense=0.860; sub_bm25=0.770; sub_dense=0.912"
+      },
+      {
+        "corpusid": 6216639,
+        "score": 0.8594274520874023,
+        "reason": "bm25=0.857; dense=0.861; sub_bm25=0.357; sub_dense=0.711"
+      },
+      {
+        "corpusid": 229680000,
+        "score": 0.8351154923439026,
+        "reason": "bm25=0.822; dense=0.844; sub_bm25=0.697; sub_dense=0.859"
+      },
+      {
+        "corpusid": 1188168,
+        "score": 0.8297669887542725,
+        "reason": "bm25=0.846; dense=0.819; sub_bm25=0.199; sub_dense=0.648"
+      }
+    ]
+  }
+}

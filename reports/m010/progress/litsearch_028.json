@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_028",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_028",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_028",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_028",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 946,
+      "latency_s": 4.918310899985954
+    },
+    {
+      "query_id": "litsearch_028",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 264,
+      "latency_s": 2.0540746999904513
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_028",
+    "gold": [
+      236486314
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "binary classification clarification need sentences",
+      "wikiHowToImprove dataset clarification prediction",
+      "sentence-level clarification binary classifier"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258765297,
+        830744,
+        52838300,
+        14775851,
+        261494442,
+        5278106,
+        236486314,
+        5659368,
+        247613006,
+        9948250,
+        16067124,
+        250150973,
+        219305431,
+        46939562,
+        246063871,
+        583930,
+        235097436,
+        212725806,
+        12351972,
+        1705467
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258765297,
+        202773799,
+        236486314,
+        225094654,
+        247613006,
+        250150973,
+        254537485,
+        199452955,
+        830744,
+        248780198,
+        219558484,
+        21725403,
+        561168,
+        102353371,
+        12547301,
+        5659368,
+        243865668,
+        248426721,
+        212725806,
+        252819352
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        8727754,
+        13986201,
+        6838726,
+        250390720,
+        250391094,
+        1692763,
+        10630743,
+        174799844,
+        677816,
+        21024153,
+        202773799,
+        6665244,
+        1518710,
+        2624014,
+        14392723,
+        2896333,
+        249085,
+        5301683,
+        2677335,
+        215548904
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        236486314
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202773799,
+        258765297,
+        236486314,
+        21725403,
+        250390720,
+        219558484,
+        254537485,
+        10630743,
+        6827247,
+        250390711,
+        218974300,
+        5765399,
+        8727754,
+        251395144,
+        4383357,
+        63268486,
+        253761257,
+        2677335,
+        250391042,
+        235097436
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.044856399996206
+  },
+  "reason_example": {
+    "query_id": "litsearch_028",
+    "query": "Could you point me to research on binary classification systems that predict whether sentences within a context require clarification, particularly using the wikiHowToImprove dataset?",
+    "top_results": [
+      {
+        "corpusid": 202773799,
+        "score": 0.8773214817047119,
+        "reason": "bm25=0.848; dense=0.897; sub_bm25=1.000; sub_dense=0.613"
+      },
+      {
+        "corpusid": 258765297,
+        "score": 0.8484781980514526,
+        "reason": "bm25=1.000; dense=0.747; sub_bm25=0.876; sub_dense=0.805"
+      },
+      {
+        "corpusid": 236486314,
+        "score": 0.8477873802185059,
+        "reason": "bm25=0.825; dense=0.863; sub_bm25=0.808; sub_dense=0.730"
+      },
+      {
+        "corpusid": 21725403,
+        "score": 0.7898150682449341,
+        "reason": "bm25=0.759; dense=0.810; sub_bm25=0.513; sub_dense=0.835"
+      },
+      {
+        "corpusid": 250390720,
+        "score": 0.7814369797706604,
+        "reason": "bm25=0.521; dense=0.955; sub_bm25=0.504; sub_dense=0.712"
+      }
+    ]
+  }
+}

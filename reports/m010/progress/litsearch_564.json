@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_564",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_564",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_564",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_564",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 722,
+      "latency_s": 3.0855782999424264
+    },
+    {
+      "query_id": "litsearch_564",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 336,
+      "latency_s": 3.140990799991414
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_564",
+    "gold": [
+      259165262
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "backdoor attack CLIP suppress benign features enhance poisoning features trigger design",
+      "CLIP backdoor attack feature suppression poisoning enhancement trigger",
+      "first backdoor attack using CLIP to manipulate features for trigger"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51991797,
+        2645484,
+        17198322,
+        18854833,
+        16285911,
+        3198684,
+        129969,
+        2034680,
+        9497515,
+        13255447,
+        60718875,
+        654690,
+        2753493,
+        219305804,
+        4936662,
+        11606160,
+        562554,
+        566029,
+        1430616,
+        9829985
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237365058,
+        257984946,
+        246652381,
+        208139512,
+        259165262,
+        264172240,
+        260063191,
+        249018095,
+        235458091,
+        235196099,
+        253098063,
+        259833849,
+        250334789,
+        239009771,
+        258960289,
+        211146346,
+        235417102,
+        258352421,
+        244117423,
+        258987503
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237365058,
+        239009771,
+        256274566,
+        256275098,
+        259313791,
+        264172240,
+        257984946,
+        239016615,
+        249018095,
+        35645908,
+        235196099,
+        235417102,
+        258865597,
+        231627799,
+        222140954,
+        252846609,
+        6113477,
+        244117423,
+        45927246,
+        248834267
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235458091
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        237365058,
+        257984946,
+        239009771,
+        264172240,
+        256274566,
+        256275098,
+        259313791,
+        249018095,
+        246652381,
+        235196099,
+        235417102,
+        239016615,
+        231627799,
+        244117423,
+        259165262,
+        235458091,
+        258865597,
+        222140954,
+        258352421,
+        208139512
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.462554299971089
+  },
+  "reason_example": {
+    "query_id": "litsearch_564",
+    "query": "Which backdoor paper first used the CLIP to suppress benign features and enhance poisoning features to design triggers?",
+    "top_results": [
+      {
+        "corpusid": 237365058,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=0.915; sub_dense=1.000"
+      },
+      {
+        "corpusid": 257984946,
+        "score": 0.919424295425415,
+        "reason": "bm25=0.952; dense=0.898; sub_bm25=0.896; sub_dense=1.000"
+      },
+      {
+        "corpusid": 239009771,
+        "score": 0.9020990133285522,
+        "reason": "bm25=0.807; dense=0.966; sub_bm25=0.681; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264172240,
+        "score": 0.900385320186615,
+        "reason": "bm25=0.887; dense=0.909; sub_bm25=1.000; sub_dense=0.959"
+      },
+      {
+        "corpusid": 256274566,
+        "score": 0.8753865957260132,
+        "reason": "bm25=0.773; dense=0.944; sub_bm25=0.863; sub_dense=0.932"
+      }
+    ]
+  }
+}

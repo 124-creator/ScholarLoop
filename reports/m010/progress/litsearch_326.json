@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_326",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_326",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_326",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_326",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1273,
+      "latency_s": 8.77135699999053
+    },
+    {
+      "query_id": "litsearch_326",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 237,
+      "latency_s": 2.5859229000052437
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_326",
+    "gold": [
+      232075836
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "hybrid extractive abstractive summarization long documents",
+      "combining extractive and abstractive summarization",
+      "extractive-abstractive hybrid methods text summarization"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3247663,
+        29785361,
+        1631222,
+        1266013,
+        15007330,
+        7679092,
+        223798991,
+        8589715,
+        18650536,
+        3191517,
+        7236507,
+        28741867,
+        7658188,
+        21582009,
+        259833864,
+        15251605,
+        8852106,
+        10878179,
+        46937952,
+        8101866
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        12682781,
+        202541012,
+        227231198,
+        252907857,
+        18650536,
+        102352252,
+        222272417,
+        9508540,
+        233407785,
+        248780104,
+        237492025,
+        220045815,
+        201304248,
+        259370510,
+        245838323,
+        222341644,
+        5024817,
+        252596098,
+        244163635,
+        21723747
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        11944261,
+        1026180,
+        2244467,
+        203610250,
+        12968935,
+        6767366,
+        16188305,
+        52012773,
+        1550080,
+        8294822,
+        244163635,
+        201697450,
+        81603,
+        7179236,
+        10807387,
+        1465750,
+        2482257,
+        233189611,
+        2055498,
+        252907857
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        12682781,
+        102352252,
+        202541012,
+        252907857,
+        244163635,
+        9319303,
+        203610250,
+        227231198,
+        3120642,
+        9508540,
+        13752552,
+        2700066
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202541012,
+        252907857,
+        12682781,
+        1026180,
+        244163635,
+        203610250,
+        259370510,
+        2244467,
+        201697450,
+        245838231,
+        13752552,
+        2901559,
+        16188305,
+        241583641,
+        222341644,
+        9319303,
+        15342371,
+        253098395,
+        9508540,
+        227231198
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 12.277543099946342
+  },
+  "reason_example": {
+    "query_id": "litsearch_326",
+    "query": "What research is available on hybrid approaches that combine extractive and abstractive methods for summarizing extensive texts?",
+    "top_results": [
+      {
+        "corpusid": 202541012,
+        "score": 0.8753374218940735,
+        "reason": "bm25=0.941; dense=0.832; sub_bm25=0.827; sub_dense=0.777"
+      },
+      {
+        "corpusid": 252907857,
+        "score": 0.8712447881698608,
+        "reason": "bm25=0.875; dense=0.869; sub_bm25=1.000; sub_dense=0.883"
+      },
+      {
+        "corpusid": 12682781,
+        "score": 0.8560898303985596,
+        "reason": "bm25=1.000; dense=0.760; sub_bm25=1.000; sub_dense=0.816"
+      },
+      {
+        "corpusid": 1026180,
+        "score": 0.846420168876648,
+        "reason": "bm25=0.662; dense=0.970; sub_bm25=0.920; sub_dense=1.000"
+      },
+      {
+        "corpusid": 244163635,
+        "score": 0.8429991006851196,
+        "reason": "bm25=0.764; dense=0.896; sub_bm25=0.929; sub_dense=0.907"
+      }
+    ]
+  }
+}

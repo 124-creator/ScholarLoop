@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_051",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_051",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_051",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_051",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 939,
+      "latency_s": 3.62173549993895
+    },
+    {
+      "query_id": "litsearch_051",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 298,
+      "latency_s": 1.934800900053233
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_051",
+    "gold": [
+      229923069
+    ],
+    "pool_size": 261,
+    "decomposition": [
+      "attention distillation language model teacher student",
+      "attention transfer knowledge distillation NLP",
+      "teacher-student attention alignment transformer"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18324181,
+        252991162,
+        237250417,
+        259370700,
+        7542363,
+        227247936,
+        237433629,
+        261341855,
+        174797793,
+        16240697,
+        32487632,
+        7038187,
+        45246326,
+        53081421,
+        259002939,
+        15349950,
+        211205183,
+        10983275,
+        16265681,
+        33009628
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        256390109,
+        243865159,
+        239016109,
+        237250417,
+        252819437,
+        3323727,
+        259370551,
+        229923069,
+        227247952,
+        245219186,
+        257038997,
+        244909258,
+        253097876,
+        201670719,
+        249626454,
+        252693220,
+        258298441,
+        235390766,
+        218502458,
+        235720578
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252816092,
+        244909258,
+        2389139,
+        229923069,
+        252819059,
+        245219186,
+        258865530,
+        221995575,
+        243865159,
+        256390109,
+        260866107,
+        1964946,
+        8451212,
+        253097876,
+        7498059,
+        237563200,
+        234777911,
+        196176486,
+        13292366,
+        258461058
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        229923069,
+        243865159
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        244909258,
+        256390109,
+        229923069,
+        243865159,
+        2389139,
+        245219186,
+        253097876,
+        258865530,
+        252816092,
+        221995575,
+        8451212,
+        218502458,
+        239016109,
+        234771710,
+        258461058,
+        227247952,
+        259370551,
+        257038997,
+        252819437,
+        252819059
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.123578600003384
+  },
+  "reason_example": {
+    "query_id": "litsearch_051",
+    "query": "I'm looking into the distillation process of language models and would like to examine studies that specifically discuss the attention mechanism alignment in the teacher-student model architecture. Are there any papers you can suggest?",
+    "top_results": [
+      {
+        "corpusid": 244909258,
+        "score": 0.9497697353363037,
+        "reason": "bm25=0.892; dense=0.988; sub_bm25=0.946; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256390109,
+        "score": 0.8937696218490601,
+        "reason": "bm25=1.000; dense=0.823; sub_bm25=0.934; sub_dense=0.774"
+      },
+      {
+        "corpusid": 229923069,
+        "score": 0.8901964426040649,
+        "reason": "bm25=0.921; dense=0.870; sub_bm25=1.000; sub_dense=0.904"
+      },
+      {
+        "corpusid": 243865159,
+        "score": 0.8892382383346558,
+        "reason": "bm25=0.987; dense=0.824; sub_bm25=0.920; sub_dense=0.849"
+      },
+      {
+        "corpusid": 2389139,
+        "score": 0.8800960779190063,
+        "reason": "bm25=0.776; dense=0.950; sub_bm25=0.567; sub_dense=0.838"
+      }
+    ]
+  }
+}

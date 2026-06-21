@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_292",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_292",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_292",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_292",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 839,
+      "latency_s": 3.923053400008939
+    },
+    {
+      "query_id": "litsearch_292",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 325,
+      "latency_s": 2.6361377999419346
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_292",
+    "gold": [
+      237568724
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "transparency open access LLM training data importance case studies",
+      "arguing for transparent training data in large language models",
+      "case studies demonstrating importance of open training data for LLMs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        178267,
+        15373688,
+        6416117,
+        1405599,
+        203689059,
+        8852106,
+        15691543,
+        86866148,
+        583389,
+        6543362,
+        5146856,
+        21685135,
+        15597981,
+        232021759,
+        221970454,
+        394975,
+        1621037,
+        237491629,
+        227227651,
+        8674440
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        21684862,
+        259376713,
+        252847503,
+        7739932,
+        583389,
+        259144804,
+        259370671,
+        212747709,
+        981611,
+        259092939,
+        260887189,
+        258461287,
+        344350,
+        1485697,
+        258615193,
+        19859,
+        258841681,
+        12425053,
+        245297106,
+        18236601
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253244515,
+        36159928,
+        251403821,
+        252624703,
+        51869635,
+        37536762,
+        235458643,
+        8696462,
+        264555202,
+        220444942,
+        9042335,
+        61515948,
+        231861410,
+        21698577,
+        235248305,
+        252735292,
+        1978468,
+        247315260,
+        21690237,
+        259370572
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        253244515,
+        235248305,
+        21684862
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253244515,
+        36159928,
+        21684862,
+        21690237,
+        251403821,
+        235248305,
+        9042335,
+        8696462,
+        21698577,
+        12425053,
+        252624703,
+        220444942,
+        264555202,
+        37536762,
+        21481488,
+        51869635,
+        263610128,
+        263310823,
+        45535753,
+        260704206
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.892934000003152
+  },
+  "reason_example": {
+    "query_id": "litsearch_292",
+    "query": "Is there research that argues for transparency and open-access to the training data of LLMs and demontrates its importance with case studies of existing data?",
+    "top_results": [
+      {
+        "corpusid": 253244515,
+        "score": 0.8926414251327515,
+        "reason": "bm25=0.732; dense=1.000; sub_bm25=0.759; sub_dense=0.776"
+      },
+      {
+        "corpusid": 36159928,
+        "score": 0.8825799226760864,
+        "reason": "bm25=0.754; dense=0.969; sub_bm25=0.646; sub_dense=0.907"
+      },
+      {
+        "corpusid": 21684862,
+        "score": 0.8602722883224487,
+        "reason": "bm25=1.000; dense=0.767; sub_bm25=0.722; sub_dense=0.698"
+      },
+      {
+        "corpusid": 21690237,
+        "score": 0.8495814800262451,
+        "reason": "bm25=0.889; dense=0.823; sub_bm25=0.677; sub_dense=0.797"
+      },
+      {
+        "corpusid": 251403821,
+        "score": 0.837496817111969,
+        "reason": "bm25=0.648; dense=0.964; sub_bm25=0.534; sub_dense=0.889"
+      }
+    ]
+  }
+}

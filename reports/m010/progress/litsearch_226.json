@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_226",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_226",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_226",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_226",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1338,
+      "latency_s": 7.389522099983878
+    },
+    {
+      "query_id": "litsearch_226",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 263,
+      "latency_s": 1.8559263999341056
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_226",
+    "gold": [
+      233210199
+    ],
+    "pool_size": 238,
+    "decomposition": [
+      "soft prompt training methods in prompt tuning",
+      "learned continuous prompts vs discrete prompts",
+      "gradient-based optimization for soft prompts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        233029490,
+        962094,
+        248780043,
+        259370695,
+        201741604,
+        10982377,
+        12015221,
+        33548672,
+        252763288,
+        252763330,
+        220047833,
+        44134877,
+        9351556,
+        21547774,
+        235294015,
+        226262254,
+        259376720,
+        250390596,
+        3923764,
+        7551252
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248405974,
+        254125751,
+        248780043,
+        237452236,
+        253098972,
+        248085161,
+        258378153,
+        233231453,
+        252780166,
+        259833855,
+        264812826,
+        233296808,
+        245144420,
+        259370594,
+        248780177,
+        263830433,
+        236912915,
+        226262238,
+        259370695,
+        256459658
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252519660,
+        258041372,
+        264812826,
+        252780166,
+        252716013,
+        237416760,
+        259833814,
+        259342087,
+        252439170,
+        237452236,
+        245144420,
+        233029490,
+        259833855,
+        246485605,
+        253238066,
+        16412467,
+        248405974,
+        235652287,
+        25323554,
+        264172710
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252780166,
+        233231453,
+        248780177,
+        248780043,
+        254125751,
+        258378153,
+        237452236,
+        248405974,
+        264812826,
+        259833855,
+        233029490,
+        252439170
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248405974,
+        264812826,
+        252780166,
+        237452236,
+        252519660,
+        259833855,
+        245144420,
+        233231453,
+        233296808,
+        237416760,
+        258378153,
+        248780177,
+        253238066,
+        252439170,
+        254125751,
+        252716013,
+        259370594,
+        263830433,
+        253098972,
+        236912915
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.76935170008801
+  },
+  "reason_example": {
+    "query_id": "litsearch_226",
+    "query": "Could you suggest research that explores the idea of training soft prompts rather than identifying fixed ones within the realm of prompt tuning?",
+    "top_results": [
+      {
+        "corpusid": 248405974,
+        "score": 0.9106618165969849,
+        "reason": "bm25=1.000; dense=0.851; sub_bm25=0.939; sub_dense=0.899"
+      },
+      {
+        "corpusid": 264812826,
+        "score": 0.9003167152404785,
+        "reason": "bm25=0.811; dense=0.960; sub_bm25=0.741; sub_dense=0.926"
+      },
+      {
+        "corpusid": 252780166,
+        "score": 0.898591160774231,
+        "reason": "bm25=0.818; dense=0.952; sub_bm25=0.876; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237452236,
+        "score": 0.8956106305122375,
+        "reason": "bm25=0.912; dense=0.885; sub_bm25=1.000; sub_dense=0.942"
+      },
+      {
+        "corpusid": 252519660,
+        "score": 0.8808377981185913,
+        "reason": "bm25=0.702; dense=1.000; sub_bm25=0.971; sub_dense=0.972"
+      }
+    ]
+  }
+}

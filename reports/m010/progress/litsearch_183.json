@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_183",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_183",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_183",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_183",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 835,
+      "latency_s": 3.3286074000643566
+    },
+    {
+      "query_id": "litsearch_183",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 377,
+      "latency_s": 2.1733808000572026
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_183",
+    "gold": [
+      222377768
+    ],
+    "pool_size": 246,
+    "decomposition": [
+      "fine-tuning pre-trained language models weakly supervised learning",
+      "contrastive regularization fine-tuning pretrained language models",
+      "self-training fine-tuning pre-trained language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        252683822,
+        219309121,
+        243865412,
+        258765234,
+        235254286,
+        222377768,
+        253762073,
+        258352617,
+        233024836,
+        211205183,
+        252847501,
+        237490328,
+        226237047,
+        259370718,
+        85464175,
+        248779910,
+        225076039,
+        251929336,
+        258480094,
+        248810745
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        222377768,
+        235254286,
+        248810745,
+        258480094,
+        252734863,
+        221761685,
+        258959304,
+        226237047,
+        258079331,
+        252683822,
+        243865412,
+        250390500,
+        264306063,
+        247594694,
+        226283990,
+        226262238,
+        248779859,
+        254564418,
+        231592453,
+        252918345
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222377768,
+        253762079,
+        248665662,
+        226237047,
+        235436224,
+        226283990,
+        243865412,
+        222140635,
+        236486069,
+        210714061,
+        250391033,
+        247634813,
+        249121168,
+        259376711,
+        258079331,
+        231718729,
+        258959063,
+        1791805,
+        251594643,
+        7750511
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        222377768,
+        252734863,
+        226237047
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222377768,
+        226237047,
+        243865412,
+        226283990,
+        252734863,
+        258079331,
+        235436224,
+        258959304,
+        1791805,
+        250390500,
+        248810745,
+        258959063,
+        258352617,
+        250391033,
+        264306063,
+        210714061,
+        256868814,
+        251395365,
+        252847501,
+        235352852
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.163796399952844
+  },
+  "reason_example": {
+    "query_id": "litsearch_183",
+    "query": "Could you recommend studies that investigate fine-tuning pre-trained language models using weakly supervised learning, especially those employing techniques like contrastive regularization or self-training?",
+    "top_results": [
+      {
+        "corpusid": 222377768,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 226237047,
+        "score": 0.7838569283485413,
+        "reason": "bm25=0.772; dense=0.792; sub_bm25=0.720; sub_dense=0.943"
+      },
+      {
+        "corpusid": 243865412,
+        "score": 0.7743562459945679,
+        "reason": "bm25=0.763; dense=0.782; sub_bm25=0.764; sub_dense=0.864"
+      },
+      {
+        "corpusid": 226283990,
+        "score": 0.7716008424758911,
+        "reason": "bm25=0.744; dense=0.790; sub_bm25=0.842; sub_dense=0.927"
+      },
+      {
+        "corpusid": 252734863,
+        "score": 0.7500348091125488,
+        "reason": "bm25=0.816; dense=0.706; sub_bm25=1.000; sub_dense=0.883"
+      }
+    ]
+  }
+}

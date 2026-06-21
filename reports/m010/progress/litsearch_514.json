@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_514",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_514",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_514",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_514",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1057,
+      "latency_s": 5.507635199930519
+    },
+    {
+      "query_id": "litsearch_514",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 252,
+      "latency_s": 2.029818700044416
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_514",
+    "gold": [
+      263834884
+    ],
+    "pool_size": 274,
+    "decomposition": [
+      "datasets showing LLM evaluation unreliability",
+      "LLM-based evaluation bias dataset",
+      "evidence LLM evaluators not reliable"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        244093620,
+        8191030,
+        201682696,
+        2500356,
+        7440991,
+        9933207,
+        14326311,
+        15116729,
+        7275431,
+        247415510,
+        255393942,
+        16472801,
+        11285852,
+        690568,
+        243865212,
+        250144216,
+        1096089,
+        5147235,
+        14852080,
+        248300077
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259095643,
+        263834884,
+        244093620,
+        247411224,
+        219260136,
+        250390436,
+        258841681,
+        258486851,
+        17606580,
+        259108266,
+        9988433,
+        231592851,
+        258461287,
+        235386076,
+        260682249,
+        264406064,
+        220968818,
+        251040070,
+        264490642,
+        263609435
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        46919818,
+        259108266,
+        260682249,
+        260899983,
+        259165244,
+        258841681,
+        264490642,
+        259164815,
+        18332402,
+        11808595,
+        263834884,
+        9309095,
+        259075564,
+        252917981,
+        258887816,
+        247613500,
+        2404000,
+        263152829,
+        253107420,
+        13553861
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263834884,
+        259108266,
+        258841681,
+        250390436
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259108266,
+        263834884,
+        258841681,
+        260682249,
+        46919818,
+        264490642,
+        259075564,
+        260899983,
+        258959496,
+        258887816,
+        259165244,
+        17606580,
+        250089342,
+        258461287,
+        250390436,
+        263152829,
+        9988433,
+        16426981,
+        11897561,
+        244117341
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.398509099963121
+  },
+  "reason_example": {
+    "query_id": "litsearch_514",
+    "query": "Can you find a dataset that shows LLM-based evaluation may not be reliable enough?",
+    "top_results": [
+      {
+        "corpusid": 259108266,
+        "score": 0.9509240388870239,
+        "reason": "bm25=0.886; dense=0.994; sub_bm25=0.824; sub_dense=0.960"
+      },
+      {
+        "corpusid": 263834884,
+        "score": 0.9504329562187195,
+        "reason": "bm25=0.973; dense=0.936; sub_bm25=1.000; sub_dense=0.932"
+      },
+      {
+        "corpusid": 258841681,
+        "score": 0.9356322288513184,
+        "reason": "bm25=0.895; dense=0.963; sub_bm25=1.000; sub_dense=0.950"
+      },
+      {
+        "corpusid": 260682249,
+        "score": 0.9305503368377686,
+        "reason": "bm25=0.848; dense=0.986; sub_bm25=0.787; sub_dense=0.888"
+      },
+      {
+        "corpusid": 46919818,
+        "score": 0.9203571081161499,
+        "reason": "bm25=0.801; dense=1.000; sub_bm25=0.299; sub_dense=0.821"
+      }
+    ]
+  }
+}

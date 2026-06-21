@@ -1,0 +1,6 @@
+started http://127.0.0.1:51652 with SCHOLARLOOP_REALTIME_ENABLED=1 and warm runtime cache
+GET /healthz -> {'status': 200, 'bytes': 67, 'elapsed_s': 0.002973399998154491}
+GET /studio?lang=zh&qid=litsearch_000 -> {'status': 200, 'bytes': 75163, 'elapsed_s': 0.02847919997293502}
+GET /studio?lang=en&qid=litsearch_000 -> {'status': 200, 'bytes': 76014, 'elapsed_s': 0.014065099996514618}
+GET /api/graph_stable -> {'status': 200, 'bytes': 68716, 'elapsed_s': 0.007978200010256842}
+GET /api/search?q=large%20language%20model%20compression -> {'status': 200, 'bytes': 10406, 'elapsed_s': 10.966596599988407, 'payload_status': 'ok', 'count': 10, 'cost': {'llm_calls': 0, 'tokens': 277, 'latency_s': 10.935219000006327}, 'cache': None}

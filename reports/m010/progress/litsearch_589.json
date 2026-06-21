@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_589",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_589",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_589",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_589",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 740,
+      "latency_s": 3.7034033000236377
+    },
+    {
+      "query_id": "litsearch_589",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 375,
+      "latency_s": 3.4143723000306636
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_589",
+    "gold": [
+      264289064
+    ],
+    "pool_size": 289,
+    "decomposition": [
+      "alignment framework few-shot group preferences augmenting LLM with transformer module",
+      "few-shot alignment to group preferences using transformer adapter LLM",
+      "steer language model to group preferences few-shot transformer module"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6723570,
+        264289064,
+        17254158,
+        8517763,
+        932992,
+        248779924,
+        231741081,
+        1002058,
+        1182312,
+        219305462,
+        5539038,
+        5991920,
+        1906653,
+        3705175,
+        5810198,
+        252815848,
+        9359079,
+        7909356,
+        8292781,
+        143326
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        264289064,
+        52912260,
+        259370747,
+        260350986,
+        256461052,
+        256460900,
+        248572201,
+        257255456,
+        259376657,
+        248810745,
+        259370708,
+        248887351,
+        218614076,
+        250391034,
+        257279836,
+        260887189,
+        256461159,
+        225039774,
+        252519173,
+        235431632
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264289064,
+        51868318,
+        1949172,
+        17257526,
+        7498059,
+        260866107,
+        256461319,
+        15166874,
+        36116614,
+        7082252,
+        16722036,
+        233240686,
+        1718521,
+        2948428,
+        252438755,
+        225103404,
+        235258262,
+        8287419,
+        16848750,
+        250150874
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264289064
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264289064,
+        17257526,
+        51868318,
+        1949172,
+        202539004,
+        256460937,
+        2948428,
+        18077105,
+        3933963,
+        13635396,
+        260866107,
+        252438755,
+        250150874,
+        38075597,
+        7384097,
+        226940747,
+        15744099,
+        46922933,
+        6479169,
+        8287419
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.663718499941751
+  },
+  "reason_example": {
+    "query_id": "litsearch_589",
+    "query": "Which paper proposes an alignment framework that steers language models to preferences of individual groups in a few-shot manner through augmenting the LLM with a transformer module?",
+    "top_results": [
+      {
+        "corpusid": 264289064,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 17257526,
+        "score": 0.6356590390205383,
+        "reason": "bm25=0.362; dense=0.818; sub_bm25=0.219; sub_dense=0.618"
+      },
+      {
+        "corpusid": 51868318,
+        "score": 0.6294506788253784,
+        "reason": "bm25=0.304; dense=0.846; sub_bm25=0.329; sub_dense=0.624"
+      },
+      {
+        "corpusid": 1949172,
+        "score": 0.6277168393135071,
+        "reason": "bm25=0.332; dense=0.825; sub_bm25=0.212; sub_dense=0.580"
+      },
+      {
+        "corpusid": 202539004,
+        "score": 0.6221186518669128,
+        "reason": "bm25=0.402; dense=0.769; sub_bm25=0.360; sub_dense=0.724"
+      }
+    ]
+  }
+}

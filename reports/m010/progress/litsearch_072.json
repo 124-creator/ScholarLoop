@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_072",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_072",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_072",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_072",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 774,
+      "latency_s": 3.8152816999936476
+    },
+    {
+      "query_id": "litsearch_072",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 387,
+      "latency_s": 2.872056999942288
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_072",
+    "gold": [
+      246015393
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "compositional generalization semantic parsing unseen local structures",
+      "challenges compositional generalization program outputs semantic parsing",
+      "impact unseen structures compositional generalization semantic parsing"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219301332,
+        254591242,
+        239020521,
+        11378094,
+        12878133,
+        41465885,
+        12405045,
+        13351919,
+        12623074,
+        260734785,
+        19009543,
+        236965823,
+        246015393,
+        1420479,
+        9177856,
+        10166824,
+        33742593,
+        233029470,
+        18244804,
+        7791608
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        254591242,
+        222291650,
+        258558112,
+        253553137,
+        236965823,
+        238744116,
+        221655744,
+        18244804,
+        16598110,
+        258960278,
+        42929596,
+        20121365,
+        45592374,
+        426741,
+        261214454,
+        222290851,
+        221995543,
+        259370789,
+        2358945,
+        15986755
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390632,
+        222291650,
+        236965823,
+        222290851,
+        294175,
+        221655744,
+        252762446,
+        6349911,
+        235829155,
+        253553137,
+        225066984,
+        235490646,
+        252596001,
+        249017865,
+        219303057,
+        198937698,
+        238744116,
+        62365817,
+        208223604,
+        4758185
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        246015393,
+        222291650,
+        221655744,
+        235829155,
+        236965823,
+        254591242,
+        253553137,
+        258558112,
+        258960278,
+        222290851,
+        249017865,
+        238744116
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222291650,
+        236965823,
+        254591242,
+        221655744,
+        253553137,
+        222290851,
+        238744116,
+        258558112,
+        235829155,
+        249017865,
+        225066984,
+        250390632,
+        246015393,
+        247450844,
+        258960278,
+        259370677,
+        252762446,
+        8126929,
+        4758185,
+        51876481
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.416907600010745
+  },
+  "reason_example": {
+    "query_id": "litsearch_072",
+    "query": "What paper should I look at if I am interested in the challenges of compositional generalization in the context of semantic parsing, especially regarding the impact of unseen local structures in program outputs?",
+    "top_results": [
+      {
+        "corpusid": 222291650,
+        "score": 0.9397832155227661,
+        "reason": "bm25=0.917; dense=0.955; sub_bm25=0.995; sub_dense=0.941"
+      },
+      {
+        "corpusid": 236965823,
+        "score": 0.8861271142959595,
+        "reason": "bm25=0.841; dense=0.916; sub_bm25=1.000; sub_dense=0.896"
+      },
+      {
+        "corpusid": 254591242,
+        "score": 0.8810034990310669,
+        "reason": "bm25=1.000; dense=0.802; sub_bm25=1.000; sub_dense=0.860"
+      },
+      {
+        "corpusid": 221655744,
+        "score": 0.8661820888519287,
+        "reason": "bm25=0.829; dense=0.891; sub_bm25=0.911; sub_dense=0.889"
+      },
+      {
+        "corpusid": 253553137,
+        "score": 0.8636971712112427,
+        "reason": "bm25=0.866; dense=0.862; sub_bm25=0.667; sub_dense=0.820"
+      }
+    ]
+  }
+}

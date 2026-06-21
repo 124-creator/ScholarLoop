@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_262",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_262",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_262",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_262",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1517,
+      "latency_s": 9.314508600044064
+    },
+    {
+      "query_id": "litsearch_262",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 239,
+      "latency_s": 2.308160400018096
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_262",
+    "gold": [
+      239009871
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "user feedback LLM scientific writing study",
+      "real users evaluating LLM scientific writing",
+      "survey or interview LLM scientific writing experience"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        21698749,
+        15562838,
+        10497905,
+        15537717,
+        2819462,
+        2682493,
+        994729,
+        10853724,
+        3108329,
+        18757632,
+        18715949,
+        13623343,
+        27956208,
+        219302828,
+        247594811,
+        13286538,
+        235097633,
+        263609512,
+        10197382,
+        184483599
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235097633,
+        260063149,
+        233029468,
+        220665912,
+        52013638,
+        38034174,
+        252460901,
+        259088686,
+        254853913,
+        3960960,
+        174798022,
+        6029654,
+        8797227,
+        13286538,
+        3956381,
+        2682493,
+        231698515,
+        20813703,
+        253157749,
+        21728444
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258463983,
+        16361012,
+        16552814,
+        52013638,
+        220048265,
+        18539120,
+        239009871,
+        17152633,
+        14478849,
+        235097517,
+        236486298,
+        254217501,
+        258463979,
+        259376558,
+        18122479,
+        237558716,
+        9368557,
+        249204474,
+        260063149,
+        219872615
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        16552814,
+        260063149,
+        235097633,
+        52013638,
+        38034174,
+        15496821,
+        235097517,
+        233029468,
+        252460901,
+        258463983,
+        21698749,
+        3956381
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52013638,
+        16552814,
+        258463983,
+        260063149,
+        235097633,
+        16361012,
+        235097517,
+        17152633,
+        239009871,
+        258463979,
+        38034174,
+        233029468,
+        254217501,
+        15496821,
+        254853913,
+        259376558,
+        253107865,
+        252460901,
+        3956381,
+        258486923
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.107360900030471
+  },
+  "reason_example": {
+    "query_id": "litsearch_262",
+    "query": "Have any research papers collected feedback from real users who were using LLMs for scientific writing?",
+    "top_results": [
+      {
+        "corpusid": 52013638,
+        "score": 0.9114393591880798,
+        "reason": "bm25=0.903; dense=0.917; sub_bm25=0.657; sub_dense=0.969"
+      },
+      {
+        "corpusid": 16552814,
+        "score": 0.8663678169250488,
+        "reason": "bm25=0.781; dense=0.923; sub_bm25=0.872; sub_dense=0.964"
+      },
+      {
+        "corpusid": 258463983,
+        "score": 0.8640721440315247,
+        "reason": "bm25=0.660; dense=1.000; sub_bm25=0.437; sub_dense=0.984"
+      },
+      {
+        "corpusid": 260063149,
+        "score": 0.8551297783851624,
+        "reason": "bm25=0.936; dense=0.801; sub_bm25=1.000; sub_dense=0.899"
+      },
+      {
+        "corpusid": 235097633,
+        "score": 0.8385446667671204,
+        "reason": "bm25=1.000; dense=0.731; sub_bm25=0.707; sub_dense=0.832"
+      }
+    ]
+  }
+}

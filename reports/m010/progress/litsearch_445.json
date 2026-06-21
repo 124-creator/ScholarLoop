@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_445",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_445",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_445",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_445",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 994,
+      "latency_s": 5.600006300024688
+    },
+    {
+      "query_id": "litsearch_445",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 348,
+      "latency_s": 3.215448599890806
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_445",
+    "gold": [
+      259108831
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "mixture of experts first applied to large language models domain adaptation",
+      "domain adaptation mixture of experts early large language model paper",
+      "first paper mixture of experts for language model domain adaptation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        259833850,
+        955816,
+        2038851,
+        3675467,
+        8752606,
+        7619470,
+        7600496,
+        3705175,
+        31784305,
+        41981492,
+        235097568,
+        201666897,
+        18398544,
+        748386,
+        4306044,
+        199022672,
+        252815848,
+        7841001,
+        10164113,
+        14165286
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52178689,
+        221739041,
+        656434,
+        3675467,
+        11492613,
+        253384279,
+        1637080,
+        35290014,
+        14774824,
+        14691823,
+        248227273,
+        7623747,
+        254535822,
+        18398544,
+        261697072,
+        233739662,
+        237491600,
+        248239888,
+        247218249,
+        13008790
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        52178689,
+        14239487,
+        259370534,
+        115146939,
+        253098472,
+        235097568,
+        247315159,
+        39130572,
+        7619470,
+        245218833,
+        17647958,
+        5665802,
+        237020,
+        656434,
+        17974537,
+        235377208,
+        252376309,
+        155089817,
+        256105391,
+        10412283
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52178689
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        52178689,
+        656434,
+        221739041,
+        39130572,
+        259370534,
+        252376309,
+        1637080,
+        35290014,
+        11492613,
+        235097568,
+        14239487,
+        7619470,
+        245218833,
+        247315159,
+        13902850,
+        5665802,
+        14691823,
+        237020,
+        17647958,
+        5714733
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.03304060001392
+  },
+  "reason_example": {
+    "query_id": "litsearch_445",
+    "query": "Which paper first apply mixture of experts idea to large language models for domain adaptation?",
+    "top_results": [
+      {
+        "corpusid": 52178689,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 656434,
+        "score": 0.8570446968078613,
+        "reason": "bm25=0.827; dense=0.877; sub_bm25=0.855; sub_dense=0.959"
+      },
+      {
+        "corpusid": 221739041,
+        "score": 0.8208633065223694,
+        "reason": "bm25=0.947; dense=0.737; sub_bm25=1.000; sub_dense=0.772"
+      },
+      {
+        "corpusid": 39130572,
+        "score": 0.804412841796875,
+        "reason": "bm25=0.658; dense=0.902; sub_bm25=0.766; sub_dense=0.944"
+      },
+      {
+        "corpusid": 259370534,
+        "score": 0.7774738073348999,
+        "reason": "bm25=0.530; dense=0.943; sub_bm25=0.597; sub_dense=0.863"
+      }
+    ]
+  }
+}

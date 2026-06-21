@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_363",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_363",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_363",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_363",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1068,
+      "latency_s": 6.9198446000227705
+    },
+    {
+      "query_id": "litsearch_363",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 259,
+      "latency_s": 2.7695661999750882
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_363",
+    "gold": [
+      259370666
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "aspect-based sentiment classification dataset French news",
+      "French ABSA dataset news articles",
+      "sentiment analysis dataset French news aspects"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        5399186,
+        16566127,
+        11051461,
+        203688701,
+        225063191,
+        2782343,
+        261342040,
+        16715295,
+        188745,
+        11674639,
+        203626520,
+        14160045,
+        235482401,
+        53079301,
+        51990022,
+        14167126,
+        8110552,
+        250163996,
+        5078392,
+        14768937
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        18993998,
+        258463931,
+        102353837,
+        250163996,
+        247996769,
+        202782487,
+        261342052,
+        235416101,
+        251490897,
+        6786457,
+        51990022,
+        202537499,
+        11051461,
+        261341917,
+        225063187,
+        220045831,
+        13069084,
+        221836262,
+        201698084,
+        259370666
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        21687093,
+        15268705,
+        11051461,
+        4324024,
+        14142944,
+        9348004,
+        1075182,
+        7336552,
+        235416101,
+        2091993,
+        18766748,
+        1671104,
+        2486328,
+        195064079,
+        13997378,
+        5472627,
+        6472624,
+        7674114,
+        16706682,
+        9508638
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        21687093
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        21687093,
+        11051461,
+        235416101,
+        258463931,
+        6786457,
+        18993998,
+        251490897,
+        250163996,
+        15268705,
+        195064079,
+        18766748,
+        16908961,
+        1671104,
+        2486328,
+        202782487,
+        2239641,
+        202537499,
+        16814020,
+        225063187,
+        14975350
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.061234599910676
+  },
+  "reason_example": {
+    "query_id": "litsearch_363",
+    "query": "Is there a dataset that allows to perform aspect-based sentiment classification on French news?",
+    "top_results": [
+      {
+        "corpusid": 21687093,
+        "score": 0.918596625328064,
+        "reason": "bm25=0.796; dense=1.000; sub_bm25=0.877; sub_dense=1.000"
+      },
+      {
+        "corpusid": 11051461,
+        "score": 0.9147059321403503,
+        "reason": "bm25=0.846; dense=0.961; sub_bm25=0.825; sub_dense=0.994"
+      },
+      {
+        "corpusid": 235416101,
+        "score": 0.8886557817459106,
+        "reason": "bm25=0.874; dense=0.899; sub_bm25=0.844; sub_dense=0.932"
+      },
+      {
+        "corpusid": 258463931,
+        "score": 0.8794428706169128,
+        "reason": "bm25=0.947; dense=0.835; sub_bm25=0.888; sub_dense=0.876"
+      },
+      {
+        "corpusid": 6786457,
+        "score": 0.8721227645874023,
+        "reason": "bm25=0.868; dense=0.875; sub_bm25=0.814; sub_dense=0.893"
+      }
+    ]
+  }
+}

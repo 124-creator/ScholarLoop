@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_234",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_234",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_234",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_234",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1610,
+      "latency_s": 9.88640870002564
+    },
+    {
+      "query_id": "litsearch_234",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 241,
+      "latency_s": 1.6498203999362886
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_234",
+    "gold": [
+      248524998
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "graph attention network multimodal emotion recognition",
+      "graph attention for multimodal fusion emotion",
+      "multimodal emotion recognition using graph attention"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6113477,
+        235097361,
+        15084553,
+        1988431,
+        6293901,
+        15270509,
+        22114035,
+        8878897,
+        16472823,
+        259376680,
+        8643011,
+        32029618,
+        43257641,
+        44706178,
+        11391667,
+        252118392,
+        230349190,
+        15267141,
+        15527245,
+        254200096
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235097361,
+        246035684,
+        230349190,
+        254200096,
+        258378175,
+        259376659,
+        15084553,
+        173188167,
+        51870186,
+        252624748,
+        7861345,
+        252819166,
+        233364964,
+        14482092,
+        190001673,
+        258480094,
+        236460152,
+        256461141,
+        246863624,
+        202734183
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        220047822,
+        252624581,
+        17993065,
+        53080764,
+        251403526,
+        256461262,
+        202734183,
+        18501319,
+        1676848,
+        16145029,
+        16414948,
+        6992160,
+        226239363,
+        248524998,
+        248780475,
+        7669927,
+        7325515,
+        235097361,
+        15071198,
+        251449214
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097361,
+        51868869,
+        252819166,
+        244896303,
+        246863624,
+        252624748,
+        51870186,
+        202734183,
+        53080764,
+        220047822,
+        246035684,
+        2856630
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235097361,
+        220047822,
+        202734183,
+        53080764,
+        51870186,
+        252819166,
+        244896303,
+        252624748,
+        251449214,
+        246863624,
+        251403526,
+        6992160,
+        226239363,
+        16145029,
+        3843262,
+        202774140,
+        246035684,
+        541020,
+        51868869,
+        256461262
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.23368509998545
+  },
+  "reason_example": {
+    "query_id": "litsearch_234",
+    "query": "Could you suggest research that investigates employing graph attention techniques for integrating multiple modalities for identifying emotions?",
+    "top_results": [
+      {
+        "corpusid": 235097361,
+        "score": 0.8986649513244629,
+        "reason": "bm25=1.000; dense=0.831; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 220047822,
+        "score": 0.8369543552398682,
+        "reason": "bm25=0.592; dense=1.000; sub_bm25=0.525; sub_dense=0.785"
+      },
+      {
+        "corpusid": 202734183,
+        "score": 0.8318622708320618,
+        "reason": "bm25=0.756; dense=0.882; sub_bm25=0.603; sub_dense=0.852"
+      },
+      {
+        "corpusid": 53080764,
+        "score": 0.8110616207122803,
+        "reason": "bm25=0.633; dense=0.930; sub_bm25=0.697; sub_dense=0.955"
+      },
+      {
+        "corpusid": 51870186,
+        "score": 0.8064399361610413,
+        "reason": "bm25=0.790; dense=0.817; sub_bm25=0.615; sub_dense=0.855"
+      }
+    ]
+  }
+}

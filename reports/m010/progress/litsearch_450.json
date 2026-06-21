@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_450",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_450",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_450",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_450",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 930,
+      "latency_s": 4.321544299949892
+    },
+    {
+      "query_id": "litsearch_450",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 373,
+      "latency_s": 3.0958063000580296
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_450",
+    "gold": [
+      258715048
+    ],
+    "pool_size": 260,
+    "decomposition": [
+      "large-scale corpus pre-training in-context learning",
+      "first paper large corpus improve in-context learning pre-training",
+      "corpus construction for in-context learning during pre-training"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        30908728,
+        8693941,
+        3705175,
+        252815848,
+        252386188,
+        129969,
+        18318907,
+        2383221,
+        280387,
+        18627189,
+        259370786,
+        1588267,
+        14466257,
+        30963769,
+        3266239,
+        252993162,
+        7231337,
+        250390934,
+        243986012,
+        46936578
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        259370786,
+        236477669,
+        250390934,
+        248427215,
+        259064260,
+        264306063,
+        8693941,
+        258715048,
+        233296437,
+        251643779,
+        236459832,
+        238856697,
+        259370563,
+        15136978,
+        254564256,
+        252993162,
+        261341892,
+        248779922,
+        248406169,
+        258615723
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248427215,
+        258715048,
+        248665662,
+        259262608,
+        237352964,
+        241035330,
+        253762079,
+        233231336,
+        238583726,
+        236459832,
+        245131261,
+        254853961,
+        257353790,
+        243986012,
+        235352948,
+        259370786,
+        253553137,
+        258686160,
+        256461139,
+        259833805
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258715048,
+        248427215,
+        252815848,
+        259064260,
+        259370786,
+        237352964,
+        236460280,
+        250390934,
+        243986012,
+        236459832,
+        8693941,
+        233231336
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248427215,
+        258715048,
+        259370786,
+        236459832,
+        237352964,
+        241035330,
+        254853961,
+        250390934,
+        243986012,
+        256461139,
+        259064260,
+        203586495,
+        233231336,
+        264306063,
+        248085655,
+        248665662,
+        259262608,
+        238583726,
+        253553137,
+        235248419
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.811750099994242
+  },
+  "reason_example": {
+    "query_id": "litsearch_450",
+    "query": "Which paper first construct large-scale corpus to improve in-context learning of large language models in the pre-training stage?",
+    "top_results": [
+      {
+        "corpusid": 248427215,
+        "score": 0.9746639132499695,
+        "reason": "bm25=0.937; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258715048,
+        "score": 0.9511155486106873,
+        "reason": "bm25=0.926; dense=0.968; sub_bm25=1.000; sub_dense=0.998"
+      },
+      {
+        "corpusid": 259370786,
+        "score": 0.9124634265899658,
+        "reason": "bm25=1.000; dense=0.854; sub_bm25=1.000; sub_dense=0.903"
+      },
+      {
+        "corpusid": 236459832,
+        "score": 0.8837342262268066,
+        "reason": "bm25=0.910; dense=0.867; sub_bm25=0.768; sub_dense=0.865"
+      },
+      {
+        "corpusid": 237352964,
+        "score": 0.8737035989761353,
+        "reason": "bm25=0.831; dense=0.902; sub_bm25=0.869; sub_dense=0.761"
+      }
+    ]
+  }
+}

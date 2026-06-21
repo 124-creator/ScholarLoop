@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_217",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_217",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_217",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_217",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 978,
+      "latency_s": 4.527068100054748
+    },
+    {
+      "query_id": "litsearch_217",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 432,
+      "latency_s": 3.670516600017436
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_217",
+    "gold": [
+      247922354
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "structured pruning for compact accurate NLP models",
+      "effectiveness of structured pruning in natural language processing",
+      "structured pruning techniques for model compression in NLP"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        186206301,
+        3930720,
+        5472320,
+        9405005,
+        12762659,
+        186206487,
+        199022672,
+        1369914,
+        5162676,
+        248780137,
+        14068874,
+        253762079,
+        2249571,
+        6218136,
+        32306529,
+        239212345,
+        5832946,
+        219300512,
+        204957305,
+        15495226
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233297003,
+        230349190,
+        247187928,
+        35892073,
+        259370686,
+        251135247,
+        248780502,
+        222134008,
+        236478036,
+        248118886,
+        6521487,
+        233809880,
+        15495226,
+        204957305,
+        41780695,
+        46985924,
+        247939339,
+        237485472,
+        6215504,
+        258947701
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        3276484,
+        893688,
+        12951248,
+        3930720,
+        247741658,
+        254685796,
+        13307193,
+        6183421,
+        233297003,
+        8436921,
+        1128981,
+        204009154,
+        226262310,
+        7348738,
+        258686286,
+        11012792,
+        257985178,
+        1363892,
+        30740144,
+        237485472
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237485472,
+        254685796,
+        233297003,
+        247939339
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        233297003,
+        3276484,
+        254685796,
+        893688,
+        237485472,
+        257985178,
+        247741658,
+        12951248,
+        226262310,
+        263830786,
+        258686286,
+        247939339,
+        6183421,
+        247922354,
+        204009154,
+        250311509,
+        35892073,
+        7348738,
+        11012792,
+        239009625
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.490060100099072
+  },
+  "reason_example": {
+    "query_id": "litsearch_217",
+    "query": "Could you suggest research that examines how well structured pruning techniques perform in developing both small and precise models in natural language processing?",
+    "top_results": [
+      {
+        "corpusid": 233297003,
+        "score": 0.9268901348114014,
+        "reason": "bm25=1.000; dense=0.878; sub_bm25=0.919; sub_dense=0.876"
+      },
+      {
+        "corpusid": 3276484,
+        "score": 0.8757611513137817,
+        "reason": "bm25=0.689; dense=1.000; sub_bm25=0.740; sub_dense=0.924"
+      },
+      {
+        "corpusid": 254685796,
+        "score": 0.8730282783508301,
+        "reason": "bm25=0.834; dense=0.899; sub_bm25=0.899; sub_dense=0.800"
+      },
+      {
+        "corpusid": 893688,
+        "score": 0.847405195236206,
+        "reason": "bm25=0.643; dense=0.984; sub_bm25=0.729; sub_dense=1.000"
+      },
+      {
+        "corpusid": 237485472,
+        "score": 0.8450874090194702,
+        "reason": "bm25=0.873; dense=0.827; sub_bm25=0.758; sub_dense=0.840"
+      }
+    ]
+  }
+}

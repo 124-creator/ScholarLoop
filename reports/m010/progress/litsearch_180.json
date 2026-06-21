@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_180",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_180",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_180",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_180",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1626,
+      "latency_s": 13.123750200029463
+    },
+    {
+      "query_id": "litsearch_180",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 289,
+      "latency_s": 2.3661420999560505
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_180",
+    "gold": [
+      231672601
+    ],
+    "pool_size": 280,
+    "decomposition": [
+      "bias-only fine-tuning language models",
+      "modifying bias parameters in linear layers of transformers",
+      "efficient tuning of language models by updating bias terms only"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3923764,
+        29611640,
+        30908728,
+        2776389,
+        186206301,
+        219305462,
+        7619470,
+        3073489,
+        15751424,
+        2438164,
+        6583976,
+        218688152,
+        258486963,
+        16453936,
+        9027538,
+        1420479,
+        5153623,
+        7542363,
+        10513825,
+        196172773
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        14967558,
+        202537179,
+        255595748,
+        256390197,
+        237277931,
+        259376622,
+        4556853,
+        8227328,
+        232216972,
+        235097306,
+        232222259,
+        233296417,
+        259298795,
+        252534533,
+        222291680,
+        52255687,
+        12603509,
+        248227853,
+        8790370,
+        260063038
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        2558649,
+        239015827,
+        258486946,
+        27782996,
+        49741579,
+        248069254,
+        2772094,
+        259095584,
+        249017555,
+        258486910,
+        236460084,
+        234741913,
+        218971825,
+        248780380,
+        220056948,
+        115146939,
+        252624657,
+        227247851,
+        219308390,
+        13750296
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        218613632,
+        249889949,
+        237277931,
+        253762017,
+        252963279,
+        227230297,
+        249017555,
+        202537179,
+        232216972,
+        231740565,
+        258486946,
+        6037404
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        202537179,
+        232216972,
+        249889949,
+        239015827,
+        249017555,
+        218971825,
+        253762017,
+        259095584,
+        237277931,
+        248069254,
+        227230297,
+        2772094,
+        231740565,
+        227247851,
+        250391092,
+        236460084,
+        220056948,
+        258486946,
+        209461005,
+        252407674
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 16.832897900021635
+  },
+  "reason_example": {
+    "query_id": "litsearch_180",
+    "query": "Could you recommend scholarly articles that investigate the practice of refining language models through the exclusive modification of bias parameters in their linear components?",
+    "top_results": [
+      {
+        "corpusid": 202537179,
+        "score": 0.8988068699836731,
+        "reason": "bm25=0.980; dense=0.845; sub_bm25=0.744; sub_dense=0.797"
+      },
+      {
+        "corpusid": 232216972,
+        "score": 0.8886620998382568,
+        "reason": "bm25=0.925; dense=0.864; sub_bm25=0.858; sub_dense=0.889"
+      },
+      {
+        "corpusid": 249889949,
+        "score": 0.8857818841934204,
+        "reason": "bm25=0.879; dense=0.890; sub_bm25=0.641; sub_dense=0.836"
+      },
+      {
+        "corpusid": 239015827,
+        "score": 0.8848613500595093,
+        "reason": "bm25=0.723; dense=0.993; sub_bm25=0.618; sub_dense=1.000"
+      },
+      {
+        "corpusid": 249017555,
+        "score": 0.8843168020248413,
+        "reason": "bm25=0.815; dense=0.930; sub_bm25=0.648; sub_dense=0.949"
+      }
+    ]
+  }
+}

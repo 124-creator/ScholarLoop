@@ -1,0 +1,4 @@
+started http://127.0.0.1:49162 with realtime disabled
+GET /healthz -> {'status': 200, 'bytes': 67}
+GET /studio?lang=zh&qid=litsearch_000 -> {'status': 200, 'bytes': 75421, 'm180_copy_present': True}
+GET /studio?lang=en&qid=litsearch_000 -> {'status': 200, 'bytes': 76251, 'm180_copy_present': True}

@@ -1,0 +1,634 @@
+{
+  "status": "BLOCKED",
+  "query_count": 3,
+  "protocol": {
+    "top_k": 100,
+    "shared_candidate_pool": "keyword/BM25/neural top-k union; all systems scored or constrained on same pool",
+    "neural_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "neural_model_version": "sentence-transformers/all-MiniLM-L6-v2; dim=384; modules=['0', '1', '2']",
+    "neural_is_lsa": false,
+    "temperature": 0,
+    "seed": 42
+  },
+  "precheck": {
+    "present": {
+      "LLM_BASE_URL": true,
+      "LLM_API_KEY": true,
+      "LLM_MODEL": true
+    },
+    "valid": true,
+    "model": "deepseek-v4-flash",
+    "base_url_present": true,
+    "elapsed_s": 2.433738399995491,
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 8,
+      "total_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 24,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 8
+    },
+    "content_preview": "OK"
+  },
+  "aggregate": [
+    {
+      "system": "keyword",
+      "queries": 3,
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "bm25",
+      "queries": 3,
+      "P@10": 0.06666666666666667,
+      "R@20": 0.5,
+      "F1": 0.11616161616161617,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "neural_embedding",
+      "queries": 3,
+      "P@10": 0.06666666666666667,
+      "R@20": 0.5,
+      "F1": 0.11616161616161617,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "total_latency_s": 0.0
+    },
+    {
+      "system": "single_llm",
+      "queries": 3,
+      "P@10": 0.06666666666666667,
+      "R@20": 0.5,
+      "F1": 0.11616161616161617,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 14580,
+      "total_latency_s": 67.25966330000665
+    },
+    {
+      "system": "scholarloop_a",
+      "queries": 3,
+      "P@10": 0.06666666666666667,
+      "R@20": 0.5,
+      "F1": 0.11616161616161617,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 933,
+      "total_latency_s": 7.789336199988611
+    }
+  ],
+  "per_query": [
+    {
+      "query_id": "litsearch_000",
+      "gold": [
+        202719327
+      ],
+      "pool_size": 235,
+      "decomposition": [
+        "task-agnostic knowledge distillation for language model compression",
+        "large language model compression using knowledge distillation",
+        "task-agnostic distillation techniques for large-scale models"
+      ],
+      "keyword": {
+        "ranked_top20": [
+          219309121,
+          259833850,
+          248227350,
+          8176549,
+          250390577,
+          27016310,
+          5836395,
+          256461189,
+          16611324,
+          22421874,
+          260063173,
+          102483587,
+          238857158,
+          256460960,
+          221995575,
+          173990423,
+          16589571,
+          259833854,
+          226283737,
+          235166616
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "bm25": {
+        "ranked_top20": [
+          221995575,
+          259137871,
+          256900817,
+          215238664,
+          218502458,
+          257038997,
+          201670719,
+          222290473,
+          248227350,
+          226226888,
+          233024733,
+          239015981,
+          234482764,
+          3960960,
+          235294276,
+          258212842,
+          253080510,
+          2331610,
+          240070849,
+          258960671
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "neural_embedding": {
+        "ranked_top20": [
+          258212842,
+          256461337,
+          237563200,
+          227247952,
+          257219883,
+          235258277,
+          221995575,
+          218502458,
+          221702970,
+          248780060,
+          201670719,
+          257038997,
+          258833648,
+          259370700,
+          226226888,
+          227905681,
+          256461264,
+          239015981,
+          247741658,
+          256598338
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "single_llm": {
+        "ranked_top20": [
+          215238664,
+          257038997,
+          259137871,
+          218502458,
+          221995575,
+          201670719,
+          226226888,
+          256598338,
+          222133007,
+          227247952,
+          215416219,
+          257901132,
+          237563200,
+          239016109,
+          248227350,
+          253080510,
+          256900817,
+          235652233,
+          264172668,
+          263909387
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "scholarloop_a": {
+        "ranked_top20": [
+          221995575,
+          257038997,
+          218502458,
+          256900817,
+          201670719,
+          259137871,
+          258212842,
+          226226888,
+          239015981,
+          215238664,
+          235294276,
+          227247952,
+          235258277,
+          256461337,
+          258461336,
+          234482764,
+          258865530,
+          222290473,
+          257901132,
+          237563200
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "elapsed_s": 28.93182469997555
+    },
+    {
+      "query_id": "litsearch_001",
+      "gold": [
+        227231792
+      ],
+      "pool_size": 244,
+      "decomposition": [
+        "Tunisian Arabic dialect translation resources manually translated comments native speakers",
+        "Tunisian Arabic augmented data stop word segmentation",
+        "Tunisian Arabic dialect parallel corpus stop words level augmentation"
+      ],
+      "keyword": {
+        "ranked_top20": [
+          8057832,
+          12160022,
+          18184246,
+          252432736,
+          8333055,
+          388111,
+          252819180,
+          13996830,
+          204823809,
+          249980208,
+          15773620,
+          260063173,
+          916523,
+          3247663,
+          6497918,
+          47462067,
+          216011074,
+          219308406,
+          2115850,
+          16591834
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "bm25": {
+        "ranked_top20": [
+          252432736,
+          6825507,
+          233365022,
+          16825250,
+          12160022,
+          9517956,
+          227231792,
+          238583454,
+          15225095,
+          252873073,
+          256461096,
+          1644594,
+          8964961,
+          5797224,
+          249980208,
+          256739275,
+          10961392,
+          37366821,
+          32734599,
+          254293626
+        ],
+        "P@10": 0.1,
+        "R@20": 1.0,
+        "F1": 0.18181818181818182
+      },
+      "neural_embedding": {
+        "ranked_top20": [
+          227231792,
+          1644594,
+          21695693,
+          6825507,
+          9726397,
+          252432736,
+          15225095,
+          15618774,
+          5797224,
+          14722064,
+          253761435,
+          1889321,
+          214612326,
+          1999849,
+          89899,
+          29263038,
+          16563009,
+          34411614,
+          10934368,
+          21717882
+        ],
+        "P@10": 0.1,
+        "R@20": 1.0,
+        "F1": 0.18181818181818182
+      },
+      "single_llm": {
+        "ranked_top20": [
+          227231792,
+          15225095,
+          6825507,
+          252432736,
+          1644594,
+          245616856,
+          10961392,
+          12160022,
+          199379793,
+          14722064,
+          12678205,
+          16563009,
+          233365022,
+          16825250,
+          29263038,
+          199379584,
+          11745386,
+          8333055,
+          920499,
+          256461096
+        ],
+        "P@10": 0.1,
+        "R@20": 1.0,
+        "F1": 0.18181818181818182
+      },
+      "scholarloop_a": {
+        "ranked_top20": [
+          252432736,
+          6825507,
+          227231792,
+          233365022,
+          9517956,
+          16825250,
+          1644594,
+          15225095,
+          5797224,
+          214612326,
+          12160022,
+          15618774,
+          199379793,
+          16563009,
+          9653643,
+          9726397,
+          10934368,
+          38555749,
+          1999849,
+          12678205
+        ],
+        "P@10": 0.1,
+        "R@20": 1.0,
+        "F1": 0.18181818181818182
+      },
+      "elapsed_s": 28.170102400006726
+    },
+    {
+      "query_id": "litsearch_002",
+      "gold": [
+        226254579,
+        204976362
+      ],
+      "pool_size": 257,
+      "decomposition": [
+        "post-hoc hallucination detection token-level neural generation",
+        "sentence-level hallucination detection post-hoc neural text generation",
+        "token and sentence level hallucination detection post-hoc sequence generation"
+      ],
+      "keyword": {
+        "ranked_top20": [
+          15857378,
+          34405847,
+          252847531,
+          221265974,
+          241583448,
+          14054366,
+          7079385,
+          52090464,
+          126584,
+          12341085,
+          199501730,
+          235125766,
+          199551982,
+          2470574,
+          220046446,
+          30326019,
+          27834461,
+          6078795,
+          8787879,
+          198996284
+        ],
+        "P@10": 0.0,
+        "R@20": 0.0,
+        "F1": 0.0
+      },
+      "bm25": {
+        "ranked_top20": [
+          226254579,
+          199551982,
+          233296648,
+          235352852,
+          19973349,
+          233241116,
+          232185104,
+          52090464,
+          235248193,
+          259376803,
+          174800272,
+          253761434,
+          252907639,
+          254853721,
+          233231373,
+          216056470,
+          252847531,
+          222141002,
+          221265974,
+          51950470
+        ],
+        "P@10": 0.1,
+        "R@20": 0.5,
+        "F1": 0.16666666666666669
+      },
+      "neural_embedding": {
+        "ranked_top20": [
+          256000114,
+          222290728,
+          233296648,
+          226254579,
+          233231373,
+          244909449,
+          251468136,
+          233296487,
+          247476018,
+          253097869,
+          252907639,
+          248227301,
+          254853721,
+          237329050,
+          254823170,
+          250390457,
+          218538004,
+          247741137,
+          196183567,
+          224814113
+        ],
+        "P@10": 0.1,
+        "R@20": 0.5,
+        "F1": 0.16666666666666669
+      },
+      "single_llm": {
+        "ranked_top20": [
+          226254579,
+          233296648,
+          256000114,
+          254853721,
+          251468136,
+          253761434,
+          247741137,
+          233231373,
+          258557914
+        ],
+        "P@10": 0.1,
+        "R@20": 0.5,
+        "F1": 0.16666666666666669
+      },
+      "scholarloop_a": {
+        "ranked_top20": [
+          233296648,
+          226254579,
+          256000114,
+          252907639,
+          233231373,
+          199551982,
+          233296487,
+          254853721,
+          235352852,
+          253761434,
+          52090464,
+          252847535,
+          235248193,
+          235166394,
+          247741137,
+          235097634,
+          51950470,
+          196183567,
+          259370625,
+          22336489
+        ],
+        "P@10": 0.1,
+        "R@20": 0.5,
+        "F1": 0.16666666666666669
+      },
+      "elapsed_s": 24.56931980000809
+    }
+  ],
+  "hallucinated_or_out_of_pool": 0,
+  "efficiency": {
+    "total_wall_s": 240.492845700006,
+    "p50_query_s": 28.170102400006726,
+    "p95_query_s": 28.85565246997867,
+    "total_tokens": 15513,
+    "avg_tokens_per_query": 5171.0,
+    "api_calls_per_query": 2.0
+  },
+  "reason_examples": [
+    {
+      "query_id": "litsearch_000",
+      "query": "Are there any research papers on methods to compress large-scale language models using task-agnostic knowledge distillation techniques?",
+      "top_results": [
+        {
+          "corpusid": 221995575,
+          "score": 1.176936388015747,
+          "reason": "bm25=1.000; dense=0.927; sub_bm25=1.000; sub_dense=0.989"
+        },
+        {
+          "corpusid": 257038997,
+          "score": 1.0936310291290283,
+          "reason": "bm25=0.886; dense=0.891; sub_bm25=1.000; sub_dense=0.973"
+        },
+        {
+          "corpusid": 218502458,
+          "score": 1.0673927068710327,
+          "reason": "bm25=0.888; dense=0.912; sub_bm25=0.846; sub_dense=0.910"
+        },
+        {
+          "corpusid": 256900817,
+          "score": 1.0658365488052368,
+          "reason": "bm25=0.946; dense=0.716; sub_bm25=1.000; sub_dense=0.843"
+        },
+        {
+          "corpusid": 201670719,
+          "score": 1.0598878860473633,
+          "reason": "bm25=0.878; dense=0.893; sub_bm25=0.856; sub_dense=0.938"
+        }
+      ]
+    },
+    {
+      "query_id": "litsearch_001",
+      "query": "Are there any resources available for translating Tunisian Arabic dialect that contain both manually translated comments by native speakers and additional data augmented through methods like segmentation at stop words level?",
+      "top_results": [
+        {
+          "corpusid": 252432736,
+          "score": 1.1801111698150635,
+          "reason": "bm25=1.000; dense=0.943; sub_bm25=1.000; sub_dense=0.972"
+        },
+        {
+          "corpusid": 6825507,
+          "score": 1.1229015588760376,
+          "reason": "bm25=0.924; dense=0.958; sub_bm25=0.940; sub_dense=0.931"
+        },
+        {
+          "corpusid": 227231792,
+          "score": 1.0233432054519653,
+          "reason": "bm25=0.715; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+        },
+        {
+          "corpusid": 233365022,
+          "score": 0.9621948003768921,
+          "reason": "bm25=0.787; dense=0.816; sub_bm25=0.831; sub_dense=0.796"
+        },
+        {
+          "corpusid": 9517956,
+          "score": 0.9620811343193054,
+          "reason": "bm25=0.733; dense=0.790; sub_bm25=1.000; sub_dense=0.909"
+        }
+      ]
+    },
+    {
+      "query_id": "litsearch_002",
+      "query": "Are there any studies that explore post-hoc techniques for hallucination detection at both the token- and sentence-level in neural sequence generation tasks?",
+      "top_results": [
+        {
+          "corpusid": 233296648,
+          "score": 1.1582931280136108,
+          "reason": "bm25=0.980; dense=0.903; sub_bm25=1.000; sub_dense=1.000"
+        },
+        {
+          "corpusid": 226254579,
+          "score": 1.1142351627349854,
+          "reason": "bm25=1.000; dense=0.894; sub_bm25=0.725; sub_dense=0.954"
+        },
+        {
+          "corpusid": 256000114,
+          "score": 1.019640326499939,
+          "reason": "bm25=0.813; dense=1.000; sub_bm25=0.643; sub_dense=1.000"
+        },
+        {
+          "corpusid": 252907639,
+          "score": 1.0037109851837158,
+          "reason": "bm25=0.856; dense=0.804; sub_bm25=0.756; sub_dense=0.954"
+        },
+        {
+          "corpusid": 233231373,
+          "score": 0.9928713440895081,
+          "reason": "bm25=0.852; dense=0.886; sub_bm25=0.605; sub_dense=0.897"
+        }
+      ]
+    }
+  ]
+}

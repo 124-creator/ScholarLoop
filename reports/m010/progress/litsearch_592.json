@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_592",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_592",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_592",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_592",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2408,
+      "latency_s": 21.445271200034767
+    },
+    {
+      "query_id": "litsearch_592",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 349,
+      "latency_s": 2.856056399992667
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_592",
+    "gold": [
+      262054014
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "linear regression fine-tuning language models",
+      "training linear regression to analyze fine-tuning effects on LLMs",
+      "hypothesizing fine-tuning impact using linear regression"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2186770,
+        259833850,
+        250390508,
+        258461441,
+        7133409,
+        1891955,
+        26889702,
+        252091116,
+        258463920,
+        8265456,
+        8339153,
+        233365004,
+        4954256,
+        211205183,
+        227230285,
+        197254,
+        11637792,
+        27494062,
+        10740890,
+        233231621
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235658872,
+        216914339,
+        226283990,
+        262054014,
+        248780449,
+        247011290,
+        248693452,
+        247594470,
+        211532533,
+        252734863,
+        222341655,
+        237593117,
+        233189542,
+        256826766,
+        216914731,
+        259376505,
+        236460070,
+        239009828,
+        250390925,
+        226283557
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235294015,
+        247594470,
+        13848633,
+        226283990,
+        253098983,
+        247634813,
+        249121168,
+        249892255,
+        253244504,
+        219558836,
+        258960434,
+        235458576,
+        252815840,
+        253098758,
+        256868814,
+        237593117,
+        237346776,
+        231672601,
+        256460956,
+        233209922
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        216914339,
+        235658872,
+        247594470,
+        226283990,
+        222134013,
+        235458576,
+        237593117,
+        216914731,
+        253098983,
+        258461441,
+        248780449,
+        36725091
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        226283990,
+        247594470,
+        235658872,
+        237593117,
+        216914339,
+        219558836,
+        216914731,
+        235294015,
+        235458576,
+        247634813,
+        249121168,
+        253098983,
+        256460956,
+        235359141,
+        256868814,
+        262054014,
+        258960434,
+        220045413,
+        248779961,
+        248986389
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 25.252065900014713
+  },
+  "reason_example": {
+    "query_id": "litsearch_592",
+    "query": "Which paper trains on linear regression to hypothesize how fine-tuning affects language models?",
+    "top_results": [
+      {
+        "corpusid": 226283990,
+        "score": 0.9147544503211975,
+        "reason": "bm25=0.879; dense=0.938; sub_bm25=0.724; sub_dense=0.918"
+      },
+      {
+        "corpusid": 247594470,
+        "score": 0.896682858467102,
+        "reason": "bm25=0.783; dense=0.972; sub_bm25=0.666; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235658872,
+        "score": 0.8821741938591003,
+        "reason": "bm25=1.000; dense=0.804; sub_bm25=0.774; sub_dense=0.788"
+      },
+      {
+        "corpusid": 237593117,
+        "score": 0.8190727233886719,
+        "reason": "bm25=0.740; dense=0.871; sub_bm25=0.650; sub_dense=0.878"
+      },
+      {
+        "corpusid": 216914339,
+        "score": 0.8166192770004272,
+        "reason": "bm25=0.881; dense=0.774; sub_bm25=0.620; sub_dense=0.773"
+      }
+    ]
+  }
+}

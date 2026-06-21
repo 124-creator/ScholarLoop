@@ -1,0 +1,7 @@
+started http://127.0.0.1:52277
+SCHOLARLOOP_REALTIME_ENABLED unset for endpoint fallback smoke; enabled direct run evidence=reports/m150/realtime_run.json
+GET /healthz -> 200 ok=True mode=offline
+GET /api/search disabled -> 200 status=unavailable enabled=False results=0
+GET /studio?lang=zh -> 200 bytes=63453 contains_studio=True
+GET /api/graph_stable -> 200 client_force_simulation=False nodes=25
+status=PASS

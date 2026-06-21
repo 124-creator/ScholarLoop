@@ -1,0 +1,42 @@
+{
+  "resolvable": {
+    "a_v2_vs_bm25_f1": {
+      "bootstrap": {
+        "mean_delta": 0.09136378135549549,
+        "ci95": [
+          0.06571019836272088,
+          0.11762253037732011
+        ],
+        "resamples": 10000,
+        "passed": true
+      },
+      "permutation": {
+        "mean_delta": 0.09136378135549549,
+        "p_one_sided": 9.999000099990002e-05,
+        "resamples": 10000,
+        "passed": true
+      },
+      "passed": true
+    }
+  },
+  "full791": {
+    "a_v2_vs_bm25_f1": {
+      "bootstrap": {
+        "mean_delta": 0.08931685755796576,
+        "ci95": [
+          0.06428465981228801,
+          0.11508627280294362
+        ],
+        "resamples": 10000,
+        "passed": true
+      },
+      "permutation": {
+        "mean_delta": 0.08931685755796576,
+        "p_one_sided": 9.999000099990002e-05,
+        "resamples": 10000,
+        "passed": true
+      },
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_440",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_440",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_440",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_440",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1311,
+      "latency_s": 6.327715800027363
+    },
+    {
+      "query_id": "litsearch_440",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 413,
+      "latency_s": 3.0090534000191838
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_440",
+    "gold": [
+      258714602
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "two-stage generative model ABSA",
+      "generative aspect-based sentiment analysis multi-domain",
+      "ABSA generative two-stage approach"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        814211,
+        2266741,
+        8832939,
+        6723570,
+        236460053,
+        5453178,
+        14869687,
+        252819171,
+        257378222,
+        11612461,
+        19783999,
+        6104581,
+        1866991,
+        16715295,
+        2949977,
+        1906653,
+        5139774,
+        15966365,
+        10789508,
+        17727830
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        236460053,
+        258714602,
+        235367681,
+        252819488,
+        258378244,
+        7980451,
+        243865226,
+        233289438,
+        215786161,
+        252570877,
+        2486328,
+        253018703,
+        51990739,
+        252819171,
+        236478306,
+        250390934,
+        247446676,
+        6990380,
+        259370800,
+        252818941
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233864801,
+        263622244,
+        257365071,
+        210473577,
+        264038823,
+        203591409,
+        3508638,
+        51875400,
+        238420480,
+        219708602,
+        236460053,
+        222178254,
+        248780034,
+        20140417,
+        76666188,
+        258714602,
+        263609006,
+        14047116,
+        16040389,
+        219721462
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258714602,
+        236460053,
+        235367681,
+        252819488,
+        34732784
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236460053,
+        258714602,
+        235367681,
+        252819488,
+        233864801,
+        3508638,
+        248780034,
+        16040389,
+        203591409,
+        211069439,
+        248227547,
+        257365071,
+        222178254,
+        263622244,
+        210473577,
+        20140417,
+        2263947,
+        38234424,
+        252917661,
+        211132391
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.177059200010262
+  },
+  "reason_example": {
+    "query_id": "litsearch_440",
+    "query": "Which paper employs a two-stage approach in generative models to tackle ABSA tasks across various domains?",
+    "top_results": [
+      {
+        "corpusid": 236460053,
+        "score": 0.931786298751831,
+        "reason": "bm25=1.000; dense=0.886; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 258714602,
+        "score": 0.8532396554946899,
+        "reason": "bm25=0.846; dense=0.858; sub_bm25=0.939; sub_dense=0.967"
+      },
+      {
+        "corpusid": 235367681,
+        "score": 0.8221919536590576,
+        "reason": "bm25=0.802; dense=0.835; sub_bm25=0.881; sub_dense=0.965"
+      },
+      {
+        "corpusid": 252819488,
+        "score": 0.7975406646728516,
+        "reason": "bm25=0.787; dense=0.805; sub_bm25=0.949; sub_dense=0.962"
+      },
+      {
+        "corpusid": 233864801,
+        "score": 0.7790256142616272,
+        "reason": "bm25=0.448; dense=1.000; sub_bm25=0.274; sub_dense=0.860"
+      }
+    ]
+  }
+}

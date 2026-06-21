@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_212",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_212",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_212",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_212",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1684,
+      "latency_s": 10.947406099992804
+    },
+    {
+      "query_id": "litsearch_212",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 304,
+      "latency_s": 2.4515634999843314
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_212",
+    "gold": [
+      233296808
+    ],
+    "pool_size": 268,
+    "decomposition": [
+      "prompt tuning efficacy scaling language model",
+      "effect of model scale on prompt tuning performance",
+      "prompt tuning vs model size in language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        9830179,
+        7557552,
+        247315159,
+        252907549,
+        248779879,
+        10409467,
+        237592943,
+        716928,
+        8349712,
+        252439170,
+        34547425,
+        36468734,
+        221655783,
+        259376583,
+        256461004,
+        237604959,
+        14036748,
+        233365004,
+        211205183,
+        248405974
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249017865,
+        248084930,
+        248405974,
+        248780177,
+        237452236,
+        248366286,
+        236912915,
+        252780166,
+        248779986,
+        259370695,
+        248085161,
+        248693115,
+        9947240,
+        257365136,
+        258959304,
+        258378317,
+        248780476,
+        258378153,
+        232222259,
+        230349190
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247594470,
+        248780177,
+        259833814,
+        264306063,
+        253244504,
+        247619066,
+        254877112,
+        259833850,
+        246867041,
+        258947231,
+        248368718,
+        252780166,
+        1662042,
+        253762079,
+        262824542,
+        256461301,
+        264172710,
+        259833855,
+        259075538,
+        247613500
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780177,
+        252780166,
+        248405974,
+        259833855,
+        248693115,
+        249017865,
+        232185425,
+        259833814,
+        248084930,
+        264306063,
+        252439170,
+        247315159
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780177,
+        264306063,
+        249017865,
+        247594470,
+        252780166,
+        254877112,
+        259833855,
+        259833814,
+        264172710,
+        248693115,
+        232185425,
+        248405974,
+        248779986,
+        247619066,
+        253244504,
+        256461301,
+        236912915,
+        235294015,
+        262054014,
+        248084930
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.732768899993971
+  },
+  "reason_example": {
+    "query_id": "litsearch_212",
+    "query": "Could you suggest research that examines how prompt tuning efficacy in language model training is affected by scaling?",
+    "top_results": [
+      {
+        "corpusid": 248780177,
+        "score": 0.9238268136978149,
+        "reason": "bm25=0.922; dense=0.925; sub_bm25=0.814; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264306063,
+        "score": 0.878274142742157,
+        "reason": "bm25=0.834; dense=0.908; sub_bm25=0.701; sub_dense=0.855"
+      },
+      {
+        "corpusid": 249017865,
+        "score": 0.846442699432373,
+        "reason": "bm25=1.000; dense=0.744; sub_bm25=1.000; sub_dense=0.788"
+      },
+      {
+        "corpusid": 247594470,
+        "score": 0.8436427116394043,
+        "reason": "bm25=0.609; dense=1.000; sub_bm25=0.665; sub_dense=0.963"
+      },
+      {
+        "corpusid": 252780166,
+        "score": 0.8372759819030762,
+        "reason": "bm25=0.867; dense=0.817; sub_bm25=1.000; sub_dense=1.000"
+      }
+    ]
+  }
+}

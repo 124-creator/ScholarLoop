@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_140",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_140",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_140",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_140",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 962,
+      "latency_s": 5.605223599937744
+    },
+    {
+      "query_id": "litsearch_140",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 222,
+      "latency_s": 1.7351433000294492
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_140",
+    "gold": [
+      233210621
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "knowledge graph entity representation geometric shapes",
+      "probabilistic uncertainty modeling knowledge graphs",
+      "geometric embeddings uncertainty knowledge graphs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        559683,
+        1300761,
+        8083387,
+        10595802,
+        15562838,
+        18233668,
+        27539999,
+        253018966,
+        5638681,
+        14008641,
+        7405607,
+        248780039,
+        7126458,
+        8365362,
+        8955494,
+        33364495,
+        15623848,
+        666417,
+        2136580,
+        13010353
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258378190,
+        222124953,
+        21662980,
+        256460893,
+        258841105,
+        253157531,
+        825504,
+        226226846,
+        248780039,
+        258833259,
+        243865621,
+        247613006,
+        8083387,
+        3934380,
+        233210621,
+        221970688,
+        235097686,
+        245005831,
+        264490454,
+        263620393
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        238215189,
+        222124953,
+        233210621,
+        258378190,
+        252762171,
+        235313434,
+        259370782,
+        261341583,
+        249538526,
+        218487188,
+        140116781,
+        8201148,
+        252819383,
+        21662980,
+        19187663,
+        253098905,
+        5638681,
+        14047545,
+        130713,
+        37453604
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233210621,
+        21662980,
+        258378190,
+        238215189,
+        222124953,
+        256460893
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        222124953,
+        258378190,
+        238215189,
+        21662980,
+        233210621,
+        256460893,
+        235313434,
+        5638681,
+        252762171,
+        261341583,
+        252819383,
+        259370782,
+        140116781,
+        243865621,
+        258841105,
+        130713,
+        258833259,
+        263829977,
+        253157531,
+        253098905
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.56876649998594
+  },
+  "reason_example": {
+    "query_id": "litsearch_140",
+    "query": "Could you recommend a study that investigates representing entities in knowledge graphs with intricate geometric shapes, emphasizing probabilistic analysis and uncertainty modeling?",
+    "top_results": [
+      {
+        "corpusid": 222124953,
+        "score": 0.9526311755180359,
+        "reason": "bm25=0.987; dense=0.930; sub_bm25=0.931; sub_dense=0.990"
+      },
+      {
+        "corpusid": 258378190,
+        "score": 0.9221656322479248,
+        "reason": "bm25=1.000; dense=0.870; sub_bm25=1.000; sub_dense=0.934"
+      },
+      {
+        "corpusid": 238215189,
+        "score": 0.8900697231292725,
+        "reason": "bm25=0.725; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 21662980,
+        "score": 0.855624794960022,
+        "reason": "bm25=0.919; dense=0.814; sub_bm25=1.000; sub_dense=0.943"
+      },
+      {
+        "corpusid": 233210621,
+        "score": 0.8522819876670837,
+        "reason": "bm25=0.778; dense=0.902; sub_bm25=0.689; sub_dense=1.000"
+      }
+    ]
+  }
+}

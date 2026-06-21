@@ -1,0 +1,219 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_013",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_013",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_013",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_013",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 903,
+      "latency_s": 3.9406989999115467
+    },
+    {
+      "query_id": "litsearch_013",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 320,
+      "latency_s": 2.334239499992691
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_013",
+    "gold": [
+      235187266,
+      233296292
+    ],
+    "pool_size": 240,
+    "decomposition": [
+      "contrastive learning fine-tuning sentence representations in-batch negatives similar to positives",
+      "in-batch negative sampling issues contrastive learning sentence embeddings",
+      "false negatives in-batch contrastive learning sentence representation fine-tuning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        52183483,
+        226283759,
+        248496439,
+        248810745,
+        10419594,
+        221995575,
+        251643762,
+        3445212,
+        15925479,
+        231718729,
+        233296638,
+        38267620,
+        222272463,
+        246823772,
+        2937095,
+        259370620,
+        261342117,
+        32575724,
+        7785983,
+        202778086
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248496439,
+        222134076,
+        222272463,
+        246823772,
+        247244896,
+        235358707,
+        240288762,
+        261342117,
+        258959304,
+        258378211,
+        246411155,
+        252992654,
+        258947412,
+        247597138,
+        252847570,
+        250390592,
+        226283990,
+        235212057,
+        251643762,
+        257833684
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247158698,
+        248496439,
+        214802433,
+        229156351,
+        250390592,
+        246411155,
+        252438842,
+        259370833,
+        252847570,
+        248299679,
+        251643762,
+        233296292,
+        235422673,
+        248965162,
+        220302524,
+        258959304,
+        259370776,
+        222272463,
+        216642259,
+        258765279
+      ],
+      "P@10": 0.0,
+      "R@20": 0.5,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248496439,
+        222272463,
+        240288762,
+        252438842,
+        246823772
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248496439,
+        222272463,
+        246411155,
+        250390592,
+        247158698,
+        258959304,
+        240288762,
+        247244896,
+        252847570,
+        222134076,
+        235358707,
+        251643762,
+        252438842,
+        258378211,
+        247597138,
+        233219842,
+        235422673,
+        258588364,
+        229156351,
+        226237047
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.187327299965546
+  },
+  "reason_example": {
+    "query_id": "litsearch_013",
+    "query": "Can you point me towards research on contrastive learning methods used for fine-tuning sentence representations, where in-batch negatives may sometimes unintentionally be similar to the positive examples?",
+    "top_results": [
+      {
+        "corpusid": 248496439,
+        "score": 0.9950937032699585,
+        "reason": "bm25=1.000; dense=0.992; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222272463,
+        "score": 0.7994586825370789,
+        "reason": "bm25=0.753; dense=0.830; sub_bm25=0.956; sub_dense=0.780"
+      },
+      {
+        "corpusid": 246411155,
+        "score": 0.7905685901641846,
+        "reason": "bm25=0.660; dense=0.877; sub_bm25=0.870; sub_dense=0.879"
+      },
+      {
+        "corpusid": 250390592,
+        "score": 0.7727005481719971,
+        "reason": "bm25=0.606; dense=0.884; sub_bm25=0.609; sub_dense=0.900"
+      },
+      {
+        "corpusid": 247158698,
+        "score": 0.7707948684692383,
+        "reason": "bm25=0.427; dense=1.000; sub_bm25=0.811; sub_dense=1.000"
+      }
+    ]
+  }
+}

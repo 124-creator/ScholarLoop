@@ -1,0 +1,641 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_013",
+  "query": "Can you point me towards research on contrastive learning methods used for fine-tuning sentence representations, where in-batch negatives may sometimes unintentionally be similar to the positive examples?",
+  "criteria": [
+    "contrastive learning fine-tuning sentence representations in-batch negatives similar to positives",
+    "in-batch negative sampling issues contrastive learning sentence embeddings",
+    "false negatives in-batch contrastive learning sentence representation fine-tuning"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_013.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_013",
+      "corpusid": 248496439,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            70
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Kun Zhou, Beichen Zhang, Xin Zhao, Ji-Rong Wen (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4225385501",
+            "fetched_at": "2026-06-20T00:18:53Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\f68673d9d9eedf7cd467ef54.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2022.acl-long.423; Source: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers); OA: hybrid; Citations: 101",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4225385501",
+            "fetched_at": "2026-06-20T00:18:53Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\f68673d9d9eedf7cd467ef54.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "To address it, we present a new framework DCLR (Debiased Contrastive Learning of unsupervised sentence Representations) to alleviate the influence of these improper negatives.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            633,
+            808
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Recently, contrastive learning has been shown to be effective in improving pre-trained language models (PLM) to derive high-quality sentence representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "we design an instance weighting method to punish false negatives and generate noise-based negatives to guarantee the uniformity of the representation space.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            818,
+            974
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "previous works mostly adopt in-batch negatives or sample from training data at random.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            324,
+            410
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Experiments on seven semantic textual similarity tasks show that our approach is more effective than competitive baselines.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            975,
+            1098
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, previous works mostly adopt in-batch negatives or sample from training data at random.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            315,
+            410
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "improper negatives (e.g., false negatives and anisotropy representations) are used to learn sentence representations",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            455,
+            571
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1892,
+        "elapsed_s": 10.720512900035828,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_013_248496439.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4225385501",
+        "title": "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+        "authors": [
+          "Kun Zhou",
+          "Beichen Zhang",
+          "Xin Zhao",
+          "Ji-Rong Wen"
+        ],
+        "year": 2022,
+        "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "doi": "10.18653/v1/2022.acl-long.423",
+        "oa_status": "hybrid",
+        "citation_count": 101,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:53Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\f68673d9d9eedf7cd467ef54.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+          "candidate_title": "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_013",
+      "corpusid": 222272463,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Contrastive Learning with Hard Negative Samples",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            47
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Joshua Robinson, Ching-Yao Chuang, Suvrit Sra, Stefanie Jegelka (2020)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3091940082",
+            "fetched_at": "2026-06-20T00:18:55Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\5d3e9af2fe44e81a277167e3.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2010.04592; Source: arXiv (Cornell University); OA: green; Citations: 37",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3091940082",
+            "fetched_at": "2026-06-20T00:18:55Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\5d3e9af2fe44e81a277167e3.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We consider the question: how can you sample good negative examples for contrastive learning?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            93
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We argue that, as with metric learning, learning contrastive representations benefits from hard negative samples (i.e., points that are difficult to distinguish from an anchor point).",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            94,
+            277
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we develop a new class of unsupervised methods for selecting hard negative samples where the user can control the amount of hardness.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            487,
+            620
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "For instance, on certain computer vision tasks unsupervised contrastive learning methods have even outperformed supervised pre-training [30,20].",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            1494,
+            1638
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "The proposed method improves downstream performance across multiple modalities, requires only few additional lines of code to implement, and introduces no computational overhead.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            771,
+            949
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "The key challenge toward using hard negatives is that contrastive methods must remain unsupervised, making it infeasible to adopt existing negative sampling strategies that use label information.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            278,
+            473
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "The key challenge toward using hard negatives is that contrastive methods must remain unsupervised, making it infeasible to adopt existing negative sampling strategies that use label information.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            278,
+            473
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1643,
+        "elapsed_s": 9.709795900038444,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_013_222272463.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3091940082",
+        "title": "Contrastive Learning with Hard Negative Samples",
+        "authors": [
+          "Joshua Robinson",
+          "Ching-Yao Chuang",
+          "Suvrit Sra",
+          "Stefanie Jegelka"
+        ],
+        "year": 2020,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2010.04592",
+        "oa_status": "green",
+        "citation_count": 37,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:55Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\5d3e9af2fe44e81a277167e3.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Contrastive Learning with Hard Negative Samples",
+          "candidate_title": "Contrastive Learning with Hard Negative Samples",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_013",
+      "corpusid": 246411155,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "PCL: Peer-Contrastive Learning with Diverse Augmentations for Unsupervised Sentence Embeddings",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            94
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Qiyu Wu, Chongyang Tao, Tao Shen, Can Xu, Xiubo Geng, Daxin Jiang (2022)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4225671776",
+            "fetched_at": "2026-06-20T00:18:56Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\656ee3d110b1837f9bb5af17.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.48550/arxiv.2201.12093; Source: arXiv (Cornell University); OA: green; Citations: 1",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4225671776",
+            "fetched_at": "2026-06-20T00:18:56Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\656ee3d110b1837f9bb5af17.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Experiments on STS benchmarks verify the effectiveness of PCL against its competitors in unsupervised sentence embeddings.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1153,
+            1275
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "PCL performs peer-positive contrast as well as peer-network cooperation, which offers an inherent anti-bias ability and an effective way to learn from diverse augmentations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            979,
+            1152
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "A straightforward solution is resorting to more diverse positives from a multiaugmenting strategy, while an open question remains about how to unsupervisedly learn from the diverse positives but with uneven augmenting qualities in the text field.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            522,
+            768
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1263,
+        "elapsed_s": 5.4186304999748245,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_013_246411155.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4225671776",
+        "title": "PCL: Peer-Contrastive Learning with Diverse Augmentations for Unsupervised Sentence Embeddings",
+        "authors": [
+          "Qiyu Wu",
+          "Chongyang Tao",
+          "Tao Shen",
+          "Can Xu",
+          "Xiubo Geng",
+          "Daxin Jiang"
+        ],
+        "year": 2022,
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2201.12093",
+        "oa_status": "green",
+        "citation_count": 1,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:18:56Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\656ee3d110b1837f9bb5af17.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "PCL: Peer-Contrastive Learning with Diverse Augmentations for Unsupervised Sentence Embeddings",
+          "candidate_title": "PCL: Peer-Contrastive Learning with Diverse Augmentations for Unsupervised Sentence Embeddings",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 248496439,
+      "title": "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+      "cells": [
+        {
+          "criterion": "contrastive learning fine-tuning sentence representations in-batch negatives similar to positives",
+          "addresses": true,
+          "snippet": "Recently, contrastive learning has been shown to be effective in improving pre-trained language models (PLM) to derive high-quality sentence representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        },
+        {
+          "criterion": "in-batch negative sampling issues contrastive learning sentence embeddings",
+          "addresses": true,
+          "snippet": "Recently, contrastive learning has been shown to be effective in improving pre-trained language models (PLM) to derive high-quality sentence representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        },
+        {
+          "criterion": "false negatives in-batch contrastive learning sentence representation fine-tuning",
+          "addresses": true,
+          "snippet": "Recently, contrastive learning has been shown to be effective in improving pre-trained language models (PLM) to derive high-quality sentence representations.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            157
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 222272463,
+      "title": "Contrastive Learning with Hard Negative Samples",
+      "cells": [
+        {
+          "criterion": "contrastive learning fine-tuning sentence representations in-batch negatives similar to positives",
+          "addresses": true,
+          "snippet": "We consider the question: how can you sample good negative examples for contrastive learning?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            93
+          ]
+        },
+        {
+          "criterion": "in-batch negative sampling issues contrastive learning sentence embeddings",
+          "addresses": true,
+          "snippet": "We consider the question: how can you sample good negative examples for contrastive learning?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            93
+          ]
+        },
+        {
+          "criterion": "false negatives in-batch contrastive learning sentence representation fine-tuning",
+          "addresses": true,
+          "snippet": "We consider the question: how can you sample good negative examples for contrastive learning?",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            93
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 246411155,
+      "title": "PCL: Peer-Contrastive Learning with Diverse Augmentations for Unsupervised Sentence Embeddings",
+      "cells": [
+        {
+          "criterion": "contrastive learning fine-tuning sentence representations in-batch negatives similar to positives",
+          "addresses": true,
+          "snippet": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ]
+        },
+        {
+          "criterion": "in-batch negative sampling issues contrastive learning sentence embeddings",
+          "addresses": true,
+          "snippet": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ]
+        },
+        {
+          "criterion": "false negatives in-batch contrastive learning sentence representation fine-tuning",
+          "addresses": true,
+          "snippet": "Learning sentence embeddings in an unsupervised manner is fundamental in natural language processing.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            101
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      222272463,
+      246411155,
+      248496439
+    ],
+    "edges": [],
+    "scope": "top_n_internal_only"
+  }
+}

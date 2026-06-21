@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_351",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_351",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_351",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_351",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1444,
+      "latency_s": 10.812801399966702
+    },
+    {
+      "query_id": "litsearch_351",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 225,
+      "latency_s": 2.340404500020668
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_351",
+    "gold": [
+      252907578
+    ],
+    "pool_size": 283,
+    "decomposition": [
+      "dense phrase retrieval entity dictionary",
+      "automatic curation entity dictionaries",
+      "dense retrieval entity extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        38964517,
+        247594674,
+        23418116,
+        3073489,
+        8997127,
+        21166550,
+        1417087,
+        1420479,
+        3205160,
+        21022858,
+        15634149,
+        10513825,
+        12808898,
+        17353402,
+        6881747,
+        219307725,
+        2058285,
+        126584,
+        6439742,
+        15012834
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252819259,
+        217451634,
+        252907578,
+        233219392,
+        249926985,
+        26382870,
+        253762051,
+        229363636,
+        250279955,
+        237592852,
+        28284574,
+        237303821,
+        5698595,
+        257913267,
+        220302524,
+        253237545,
+        258762869,
+        3605426,
+        258833657,
+        248562640
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        62535552,
+        252907578,
+        5716928,
+        1107502,
+        1770944,
+        17207882,
+        52800038,
+        10479962,
+        16290098,
+        220047249,
+        15716679,
+        6439822,
+        159902784,
+        52013634,
+        3148637,
+        657749,
+        21018087,
+        45287459,
+        12061673,
+        18984131
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252907578,
+        14467084,
+        252819259,
+        233219392,
+        253762051
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252907578,
+        15716679,
+        1107502,
+        16290098,
+        52013634,
+        12061673,
+        252819259,
+        217451634,
+        52800038,
+        12631541,
+        26382870,
+        237303821,
+        220047249,
+        62535552,
+        1071914,
+        235422061,
+        237592852,
+        174797886,
+        3876333,
+        212717705
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.05109750002157
+  },
+  "reason_example": {
+    "query_id": "litsearch_351",
+    "query": "Are there any examples of using dense phrase retrieval systems in the automatic curation of entity dictionaries?",
+    "top_results": [
+      {
+        "corpusid": 252907578,
+        "score": 0.9863544702529907,
+        "reason": "bm25=0.970; dense=0.997; sub_bm25=0.822; sub_dense=1.000"
+      },
+      {
+        "corpusid": 15716679,
+        "score": 0.9002436399459839,
+        "reason": "bm25=0.837; dense=0.942; sub_bm25=0.406; sub_dense=0.951"
+      },
+      {
+        "corpusid": 1107502,
+        "score": 0.8844267129898071,
+        "reason": "bm25=0.755; dense=0.971; sub_bm25=0.671; sub_dense=0.960"
+      },
+      {
+        "corpusid": 16290098,
+        "score": 0.8806006908416748,
+        "reason": "bm25=0.777; dense=0.949; sub_bm25=0.296; sub_dense=0.934"
+      },
+      {
+        "corpusid": 52013634,
+        "score": 0.8779690265655518,
+        "reason": "bm25=0.790; dense=0.936; sub_bm25=0.398; sub_dense=0.950"
+      }
+    ]
+  }
+}

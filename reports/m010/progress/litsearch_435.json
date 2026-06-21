@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_435",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_435",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_435",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_435",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1167,
+      "latency_s": 6.753300699987449
+    },
+    {
+      "query_id": "litsearch_435",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 622,
+      "latency_s": 5.60356249997858
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_435",
+    "gold": [
+      258833648
+    ],
+    "pool_size": 259,
+    "decomposition": [
+      "capacity gap distillation language model",
+      "MoE student model distillation",
+      "first identified capacity gap distillation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        1412569,
+        280387,
+        17974121,
+        6891645,
+        12405045,
+        15213255,
+        654690,
+        1002058,
+        1182312,
+        219305804,
+        1400498,
+        921306,
+        748386,
+        13412990,
+        43335647,
+        10740890,
+        2034680,
+        9416280,
+        18414132,
+        25036575
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258833648,
+        249626454,
+        207847275,
+        243865159,
+        239016109,
+        257038997,
+        256461166,
+        259370551,
+        237250417,
+        233025422,
+        244909258,
+        233189631,
+        215416276,
+        237605176,
+        67856276,
+        256390109,
+        248227273,
+        253097876,
+        221995575,
+        234482764
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390701,
+        239016109,
+        256461337,
+        244909258,
+        250390702,
+        258833648,
+        259137871,
+        5498664,
+        8451212,
+        258765271,
+        45927246,
+        8125776,
+        235212428,
+        234771710,
+        252819437,
+        253097876,
+        258212842,
+        222291506,
+        221995575,
+        252846121
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258833648,
+        250390701,
+        239016109,
+        244909258,
+        257038997,
+        239009625,
+        253097876,
+        67856276,
+        256461337,
+        237250417,
+        221995575,
+        234771710
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258833648,
+        239016109,
+        250390701,
+        244909258,
+        256461337,
+        8451212,
+        257038997,
+        259137871,
+        250390702,
+        253097876,
+        234771710,
+        252819437,
+        221995575,
+        237605176,
+        237250417,
+        201670719,
+        239009625,
+        258865530,
+        226226888,
+        256390109
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.634039900032803
+  },
+  "reason_example": {
+    "query_id": "litsearch_435",
+    "query": "Which language model distillation paper that first identified the capacity gap in distillation and used the MoE student model to counter the curse of capacity gap?",
+    "top_results": [
+      {
+        "corpusid": 258833648,
+        "score": 0.9193627834320068,
+        "reason": "bm25=1.000; dense=0.866; sub_bm25=1.000; sub_dense=0.960"
+      },
+      {
+        "corpusid": 239016109,
+        "score": 0.8497819900512695,
+        "reason": "bm25=0.749; dense=0.917; sub_bm25=0.691; sub_dense=1.000"
+      },
+      {
+        "corpusid": 250390701,
+        "score": 0.8349043726921082,
+        "reason": "bm25=0.587; dense=1.000; sub_bm25=0.582; sub_dense=1.000"
+      },
+      {
+        "corpusid": 244909258,
+        "score": 0.8111671209335327,
+        "reason": "bm25=0.687; dense=0.894; sub_bm25=0.982; sub_dense=0.924"
+      },
+      {
+        "corpusid": 256461337,
+        "score": 0.77757728099823,
+        "reason": "bm25=0.600; dense=0.896; sub_bm25=0.653; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_021",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_021",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_021",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_021",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 848,
+      "latency_s": 3.4515960999997333
+    },
+    {
+      "query_id": "litsearch_021",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 277,
+      "latency_s": 2.4256892999401316
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_021",
+    "gold": [
+      2172129
+    ],
+    "pool_size": 272,
+    "decomposition": [
+      "neural network training text passage question generation",
+      "sequence-to-sequence model text to question translation",
+      "deep learning question generation from text passages"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        211205183,
+        233029490,
+        64902654,
+        250390466,
+        5832223,
+        21022858,
+        33742593,
+        250391050,
+        18094701,
+        10014954,
+        53216170,
+        250164361,
+        6114503,
+        14370835,
+        216848521,
+        9049347,
+        34491971,
+        258378315,
+        11635710,
+        247476180
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        249926985,
+        211205183,
+        34491971,
+        247447492,
+        235293739,
+        233324253,
+        9049347,
+        12164644,
+        5638176,
+        237491444,
+        222290588,
+        427742,
+        3488815,
+        3228703,
+        243865663,
+        12877866,
+        248571700,
+        15108674,
+        202769358,
+        222133308
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202718912,
+        10239453,
+        44099949,
+        12164644,
+        63695190,
+        6360322,
+        3834355,
+        20969045,
+        257039575,
+        202539373,
+        211205183,
+        53082495,
+        53081360,
+        4390256,
+        250164361,
+        195833318,
+        4025123,
+        174801285,
+        222132808,
+        231704318
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        427742,
+        258378315,
+        20969045,
+        12164644
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        211205183,
+        12164644,
+        249926985,
+        237491444,
+        427742,
+        4025123,
+        20969045,
+        11185579,
+        13699041,
+        243959875,
+        202769358,
+        44099949,
+        2172129,
+        249209905,
+        202539373,
+        32035413,
+        257039575,
+        5301090,
+        202718912,
+        3228703
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 7.713380399974994
+  },
+  "reason_example": {
+    "query_id": "litsearch_021",
+    "query": "Can you suggest any literature that explores the idea of training neural networks to translate text passages into related questions?",
+    "top_results": [
+      {
+        "corpusid": 211205183,
+        "score": 0.9261866807937622,
+        "reason": "bm25=0.913; dense=0.935; sub_bm25=0.384; sub_dense=0.807"
+      },
+      {
+        "corpusid": 12164644,
+        "score": 0.9076957106590271,
+        "reason": "bm25=0.810; dense=0.973; sub_bm25=0.817; sub_dense=0.880"
+      },
+      {
+        "corpusid": 249926985,
+        "score": 0.8744286894798279,
+        "reason": "bm25=1.000; dense=0.791; sub_bm25=0.810; sub_dense=0.799"
+      },
+      {
+        "corpusid": 237491444,
+        "score": 0.8430361747741699,
+        "reason": "bm25=0.800; dense=0.872; sub_bm25=0.555; sub_dense=0.792"
+      },
+      {
+        "corpusid": 427742,
+        "score": 0.8320931792259216,
+        "reason": "bm25=0.789; dense=0.861; sub_bm25=0.893; sub_dense=0.994"
+      }
+    ]
+  }
+}

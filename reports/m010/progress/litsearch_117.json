@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_117",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_117",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_117",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_117",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1165,
+      "latency_s": 7.832758600008674
+    },
+    {
+      "query_id": "litsearch_117",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 382,
+      "latency_s": 3.3965272000059485
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_117",
+    "gold": [
+      248780437
+    ],
+    "pool_size": 250,
+    "decomposition": [
+      "data augmentation biomedical named entity recognition entity replacement",
+      "biomedical NER data augmentation semantically similar sentences",
+      "entity swapping data augmentation for biomedical NER"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248780437,
+        15270509,
+        235482360,
+        259376738,
+        14409919,
+        225041226,
+        21700981,
+        41607,
+        8882495,
+        11406047,
+        17271239,
+        249062703,
+        244089861,
+        1770806,
+        247187671,
+        1529453,
+        129969,
+        7243224,
+        945247,
+        218974141
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780437,
+        258999951,
+        10573012,
+        248780132,
+        53101509,
+        51879406,
+        258060232,
+        247187671,
+        249062703,
+        1770806,
+        250391019,
+        261342031,
+        253761964,
+        250390543,
+        49331063,
+        14230149,
+        16921959,
+        8050769,
+        248085344,
+        13482248
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780437,
+        225041226,
+        236317335,
+        251564410,
+        259376738,
+        208232149,
+        237304281,
+        222290531,
+        41607,
+        290841,
+        16327342,
+        259376719,
+        2092677,
+        892890,
+        250390543,
+        220057135,
+        13751762,
+        218470396,
+        252819198,
+        11406047
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780437
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780437,
+        225041226,
+        250390543,
+        208232149,
+        248780132,
+        258999951,
+        251564410,
+        10573012,
+        9138951,
+        236317335,
+        290841,
+        259376738,
+        41607,
+        53101509,
+        2092677,
+        8720699,
+        199379633,
+        258060232,
+        226283634,
+        237304281
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.05546239996329
+  },
+  "reason_example": {
+    "query_id": "litsearch_117",
+    "query": "Could you recommend a study that does data-augmentation for biomedical named-entity recognition by replacing entities in the original sentence with entities of the same type from semantically similar sentences?",
+    "top_results": [
+      {
+        "corpusid": 248780437,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 225041226,
+        "score": 0.8291688561439514,
+        "reason": "bm25=0.695; dense=0.919; sub_bm25=0.933; sub_dense=0.936"
+      },
+      {
+        "corpusid": 250390543,
+        "score": 0.8194568753242493,
+        "reason": "bm25=0.857; dense=0.795; sub_bm25=0.660; sub_dense=0.762"
+      },
+      {
+        "corpusid": 208232149,
+        "score": 0.8162935972213745,
+        "reason": "bm25=0.784; dense=0.838; sub_bm25=0.625; sub_dense=0.784"
+      },
+      {
+        "corpusid": 248780132,
+        "score": 0.8109186887741089,
+        "reason": "bm25=0.895; dense=0.755; sub_bm25=0.735; sub_dense=0.754"
+      }
+    ]
+  }
+}

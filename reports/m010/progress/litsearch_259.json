@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_259",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_259",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_259",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_259",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1282,
+      "latency_s": 6.044313800055534
+    },
+    {
+      "query_id": "litsearch_259",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 243,
+      "latency_s": 1.7096033999696374
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_259",
+    "gold": [
+      198967754
+    ],
+    "pool_size": 248,
+    "decomposition": [
+      "neural network transformer readability metrics",
+      "novel readability metrics using transformers",
+      "deep learning readability measure recent"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        18076328,
+        1420479,
+        243865349,
+        222066982,
+        53246556,
+        56657817,
+        229365783,
+        11909076,
+        16232976,
+        38964517,
+        51868421,
+        5802667,
+        28730125,
+        7417943,
+        252847558,
+        254018206,
+        32679052,
+        42825371,
+        184482634,
+        8488024
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        35249929,
+        57825721,
+        51880415,
+        198967754,
+        258486902,
+        250390755,
+        244954585,
+        43591303,
+        53598006,
+        133597585,
+        7621282,
+        52141050,
+        259376695,
+        33513311,
+        252847558,
+        258463968,
+        4556853,
+        52206745,
+        210942708,
+        59553475
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        198967754,
+        35249929,
+        10484192,
+        259376803,
+        15344058,
+        257154229,
+        5474780,
+        43591303,
+        235377172,
+        235790693,
+        59524257,
+        257219774,
+        237940206,
+        233481113,
+        11866664,
+        1297763,
+        8499551,
+        253762030,
+        252992719,
+        245838270
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        35249929,
+        198967754,
+        43591303,
+        257154229
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        35249929,
+        198967754,
+        43591303,
+        257154229,
+        57825721,
+        10484192,
+        237940206,
+        257219774,
+        252992719,
+        245838270,
+        220057358,
+        259376803,
+        133597585,
+        15344058,
+        5474780,
+        235790693,
+        11866664,
+        252091118,
+        51880415,
+        1297763
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.598441499983892
+  },
+  "reason_example": {
+    "query_id": "litsearch_259",
+    "query": "Have any recent publications explored the use of neural network methods, like transformer architectures, in creating novel readability metrics?",
+    "top_results": [
+      {
+        "corpusid": 35249929,
+        "score": 0.9844013452529907,
+        "reason": "bm25=1.000; dense=0.974; sub_bm25=0.949; sub_dense=0.936"
+      },
+      {
+        "corpusid": 198967754,
+        "score": 0.9587223529815674,
+        "reason": "bm25=0.897; dense=1.000; sub_bm25=0.852; sub_dense=1.000"
+      },
+      {
+        "corpusid": 43591303,
+        "score": 0.8429823517799377,
+        "reason": "bm25=0.811; dense=0.865; sub_bm25=1.000; sub_dense=0.822"
+      },
+      {
+        "corpusid": 257154229,
+        "score": 0.8171471357345581,
+        "reason": "bm25=0.702; dense=0.894; sub_bm25=0.664; sub_dense=0.841"
+      },
+      {
+        "corpusid": 57825721,
+        "score": 0.7903710603713989,
+        "reason": "bm25=0.966; dense=0.673; sub_bm25=0.635; sub_dense=0.697"
+      }
+    ]
+  }
+}

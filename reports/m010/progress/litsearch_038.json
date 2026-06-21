@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_038",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_038",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_038",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_038",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1291,
+      "latency_s": 8.973190799937584
+    },
+    {
+      "query_id": "litsearch_038",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 306,
+      "latency_s": 2.2196940999710932
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_038",
+    "gold": [
+      52967399
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "bidirectional language representation models foundational",
+      "Transformer architecture for language models",
+      "pre-training tasks bidirectional language models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        241583700,
+        232404736,
+        237581068,
+        235097623,
+        256461142,
+        233429873,
+        155092004,
+        248780154,
+        220445474,
+        6552710,
+        253397458,
+        174799204,
+        189999088,
+        235097219,
+        3834355,
+        220047937,
+        254877265,
+        219964943,
+        14021168,
+        252963279
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252411574,
+        247657229,
+        250627596,
+        222133032,
+        249191720,
+        214742998,
+        248780154,
+        259108831,
+        220048538,
+        251403664,
+        252222370,
+        250164279,
+        241583700,
+        236460291,
+        221761146,
+        237572264,
+        248780459,
+        226283796,
+        238407985,
+        243865630
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        236460291,
+        235446334,
+        159041867,
+        202541078,
+        226283796,
+        252819023,
+        253762079,
+        229923720,
+        250072977,
+        222290948,
+        252183546,
+        226281941,
+        236459941,
+        208117506,
+        221139423,
+        247957977,
+        260539432,
+        184486755,
+        237513393,
+        258762609
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        226283796,
+        235446334,
+        237572264,
+        202541078,
+        236460291,
+        237581068,
+        253397458,
+        233429873,
+        3834355,
+        251403664,
+        248780154,
+        220047937
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        236460291,
+        226283796,
+        202541078,
+        235446334,
+        252819023,
+        251403664,
+        159041867,
+        237572264,
+        259108831,
+        248780154,
+        252968357,
+        220047270,
+        225067567,
+        247657229,
+        258715048,
+        216641856,
+        264146611,
+        251465374,
+        220047937,
+        256461052
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.21973359992262
+  },
+  "reason_example": {
+    "query_id": "litsearch_038",
+    "query": "I am exploring state-of-the-art techniques in language representation models that are trained to understand context from both the preceding and succeeding text. Where can I find foundational research on this topic, including information about the Transformer architecture, and the specific tasks such models are pre-trained on?",
+    "top_results": [
+      {
+        "corpusid": 236460291,
+        "score": 0.9573769569396973,
+        "reason": "bm25=0.893; dense=1.000; sub_bm25=0.679; sub_dense=0.812"
+      },
+      {
+        "corpusid": 226283796,
+        "score": 0.9277594089508057,
+        "reason": "bm25=0.883; dense=0.958; sub_bm25=0.902; sub_dense=0.876"
+      },
+      {
+        "corpusid": 202541078,
+        "score": 0.9241925477981567,
+        "reason": "bm25=0.863; dense=0.965; sub_bm25=0.705; sub_dense=0.853"
+      },
+      {
+        "corpusid": 235446334,
+        "score": 0.8918648958206177,
+        "reason": "bm25=0.765; dense=0.976; sub_bm25=0.764; sub_dense=0.940"
+      },
+      {
+        "corpusid": 252819023,
+        "score": 0.8689556121826172,
+        "reason": "bm25=0.760; dense=0.941; sub_bm25=0.670; sub_dense=0.865"
+      }
+    ]
+  }
+}

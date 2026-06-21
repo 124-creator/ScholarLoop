@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_057",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_057",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_057",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_057",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1097,
+      "latency_s": 5.390881399973296
+    },
+    {
+      "query_id": "litsearch_057",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 273,
+      "latency_s": 1.9134913999587297
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_057",
+    "gold": [
+      252818918
+    ],
+    "pool_size": 273,
+    "decomposition": [
+      "argument mining dependency parsing dialogue systems",
+      "dependency parser argumentativeness detection conversational agents",
+      "argument mining dependency tree dialogue argumentation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        218688152,
+        38964517,
+        20056888,
+        10791449,
+        12015221,
+        9526061,
+        16067124,
+        10367144,
+        21166550,
+        239050002,
+        1412569,
+        37780556,
+        29175200,
+        13642602,
+        15539503,
+        14178455,
+        7416907,
+        37409061,
+        1420479,
+        3205160
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        6464371,
+        6080002,
+        233189627,
+        236486231,
+        5562790,
+        219919,
+        252818918,
+        43985051,
+        17209169,
+        17774903,
+        62151592,
+        15745290,
+        9246755,
+        8301004,
+        2235108,
+        10334488,
+        17440846,
+        6003307,
+        239050002,
+        16134775
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        252818918,
+        174800816,
+        85152,
+        9896709,
+        8665449,
+        18425420,
+        9431339,
+        21694023,
+        6080002,
+        252847531,
+        14440175,
+        219308400,
+        4637320,
+        252547693,
+        236098006,
+        5607965,
+        236459881,
+        991531,
+        207616908,
+        21723833
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252818918
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252818918,
+        6464371,
+        6080002,
+        174800816,
+        9896709,
+        233189627,
+        9431339,
+        16134775,
+        8665449,
+        252819307,
+        1650038,
+        252847531,
+        18425420,
+        222140927,
+        11438927,
+        196178172,
+        85152,
+        10334488,
+        16416820,
+        5607965
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.642257000086829
+  },
+  "reason_example": {
+    "query_id": "litsearch_057",
+    "query": "In the area of argument mining, could you point to literature that uses of dependency parsers to determine the argumentativeness of texts in dialogue systems?",
+    "top_results": [
+      {
+        "corpusid": 252818918,
+        "score": 0.9401907920837402,
+        "reason": "bm25=0.850; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 6464371,
+        "score": 0.9192202091217041,
+        "reason": "bm25=1.000; dense=0.865; sub_bm25=0.845; sub_dense=0.832"
+      },
+      {
+        "corpusid": 6080002,
+        "score": 0.9123969078063965,
+        "reason": "bm25=0.914; dense=0.911; sub_bm25=0.693; sub_dense=0.919"
+      },
+      {
+        "corpusid": 174800816,
+        "score": 0.8699073195457458,
+        "reason": "bm25=0.780; dense=0.930; sub_bm25=0.750; sub_dense=0.913"
+      },
+      {
+        "corpusid": 9896709,
+        "score": 0.8640609979629517,
+        "reason": "bm25=0.768; dense=0.928; sub_bm25=0.597; sub_dense=0.900"
+      }
+    ]
+  }
+}

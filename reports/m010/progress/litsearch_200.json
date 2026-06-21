@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_200",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_200",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_200",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_200",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 934,
+      "latency_s": 4.930073500028811
+    },
+    {
+      "query_id": "litsearch_200",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.4581200999673456
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_200",
+    "gold": [
+      231672601
+    ],
+    "pool_size": 249,
+    "decomposition": [
+      "bias-only fine-tuning technique for large language models",
+      "BitFit: parameter efficient fine-tuning by training only bias terms",
+      "fine-tuning only bias terms in pre-trained models"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        231672601,
+        235313889,
+        17558767,
+        252763359,
+        16657732,
+        237500542,
+        258762309,
+        221655783,
+        11801961,
+        45438237,
+        15457133,
+        220045413,
+        14409919,
+        258765271,
+        3053521,
+        252624487,
+        259376659,
+        263609512,
+        15751424
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        231672601,
+        235359141,
+        258865689,
+        254125751,
+        248986389,
+        237500542,
+        253116931,
+        53033211,
+        220045413,
+        259370884,
+        258947572,
+        235313889,
+        248780547,
+        219558527,
+        259095584,
+        255440621,
+        253116759,
+        252819282,
+        258179227,
+        258960434
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        255440621,
+        259370884,
+        247594470,
+        246867041,
+        211532533,
+        259145131,
+        253018859,
+        259095584,
+        259833814,
+        51872536,
+        219558527,
+        248780177,
+        256868814,
+        264306063,
+        231672601,
+        3720457,
+        239009625,
+        247446857,
+        252847584,
+        1420583
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        231672601
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        255440621,
+        259370884,
+        231672601,
+        259095584,
+        219558527,
+        248986389,
+        259145131,
+        211532533,
+        235359141,
+        247594470,
+        253018859,
+        258960434,
+        258947572,
+        247011290,
+        248780177,
+        253116931,
+        246867041,
+        259833814,
+        264812826,
+        264306063
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.391413199948147
+  },
+  "reason_example": {
+    "query_id": "litsearch_200",
+    "query": "Could you suggest a study that proposes high-parameter efficeint fine-tuning techinque that only trains the bias terms?",
+    "top_results": [
+      {
+        "corpusid": 255440621,
+        "score": 0.9482656121253967,
+        "reason": "bm25=0.871; dense=1.000; sub_bm25=0.742; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370884,
+        "score": 0.9115915298461914,
+        "reason": "bm25=0.904; dense=0.917; sub_bm25=0.937; sub_dense=1.000"
+      },
+      {
+        "corpusid": 231672601,
+        "score": 0.8753945827484131,
+        "reason": "bm25=1.000; dense=0.792; sub_bm25=1.000; sub_dense=0.988"
+      },
+      {
+        "corpusid": 259095584,
+        "score": 0.861238956451416,
+        "reason": "bm25=0.884; dense=0.846; sub_bm25=1.000; sub_dense=0.985"
+      },
+      {
+        "corpusid": 219558527,
+        "score": 0.8565601110458374,
+        "reason": "bm25=0.887; dense=0.836; sub_bm25=0.757; sub_dense=0.962"
+      }
+    ]
+  }
+}

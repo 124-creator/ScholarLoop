@@ -1,0 +1,648 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_027",
+  "query": "Could you direct me towards a study that explores the potential to predict a reader's native language based on their eye movement patterns while reading English texts?",
+  "criteria": [
+    "native language prediction eye movements reading English",
+    "eye tracking L1 identification reading English",
+    "cross-linguistic eye movement patterns reading English"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_027.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_027",
+      "corpusid": 14515265,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Predicting Native Language from Gaze",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            36
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Yevgeni Berzak, Chie Nakamura, Suzanne Flynn, Boris Katz (2017)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2609504523",
+            "fetched_at": "2026-06-20T00:20:06Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\d43800ebcd25967ed399fb0d.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/p17-1050; Source: https://doi.org/10.18653/v1/p17-1050; OA: gold; Citations: 1",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2609504523",
+            "fetched_at": "2026-06-20T00:20:06Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\d43800ebcd25967ed399fb0d.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Using this methodology, we demonstrate for the first time that the native language of English learners can be predicted from their gaze fixations when reading English.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            263,
+            430
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "A fundamental question in language learning concerns the role of a speaker's first language in second language acquisition.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            123
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "analysis of eye-movement patterns in second language reading of free-form text",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            183,
+            261
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "second language reading of free-form text",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            220,
+            261
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Using this methodology, we demonstrate for the first time that the native language of English learners can be predicted from their gaze fixations when reading English.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            263,
+            430
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "All the sentences are manually annotated with part-of-speech (POS) tags and syntactic dependency trees.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2725,
+            2828
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present a novel methodology for studying this question: analysis of eye-movement patterns in second language reading of free-form text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            124,
+            262
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1353,
+        "elapsed_s": 5.9029053000267595,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_027_14515265.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2609504523",
+        "title": "Predicting Native Language from Gaze",
+        "authors": [
+          "Yevgeni Berzak",
+          "Chie Nakamura",
+          "Suzanne Flynn",
+          "Boris Katz"
+        ],
+        "year": 2017,
+        "venue": "https://doi.org/10.18653/v1/p17-1050",
+        "doi": "10.18653/v1/p17-1050",
+        "oa_status": "gold",
+        "citation_count": 1,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:06Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\d43800ebcd25967ed399fb0d.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Predicting Native Language from Gaze",
+          "candidate_title": "Predicting Native Language from Gaze",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_027",
+      "corpusid": 5024893,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Assessing Language Proficiency from Eye Movements in Reading",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            60
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Yevgeni Berzak, Boris Katz, Roger Lévy (2018)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2798281106",
+            "fetched_at": "2026-06-20T00:20:07Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\ac85b352dd8d53973938194b.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/n18-1180; Source: https://doi.org/10.18653/v1/n18-1180; OA: gold; Citations: 4",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2798281106",
+            "fetched_at": "2026-06-20T00:20:07Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\ac85b352dd8d53973938194b.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We present a novel approach for determining learners' second language proficiency which utilizes behavioral traces of eye movements during reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            147
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "reflect the extent to which the learner's gaze patterns in reading are similar to those of native English speakers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            232,
+            347
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "Our approach provides standalone eyetracking based English proficiency scores which reflect the extent to which the learner's gaze patterns in reading are similar to those of native English speakers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            148,
+            347
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Our approach yields the strongest performance when the test taker is presented with a suite of sentences for which we have eyetracking data from other readers.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            540,
+            699
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "our results open the door to future methods for inferring reader characteristics from the behavioral traces of reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            1034,
+            1153
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, it remains effective even using eyetracking with sentences for which eye movement data have not been previously collected.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            700,
+            831
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present a novel approach for determining learners' second language proficiency which utilizes behavioral traces of eye movements during reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            147
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1660,
+        "elapsed_s": 7.885967699927278,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_027_5024893.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2798281106",
+        "title": "Assessing Language Proficiency from Eye Movements in Reading",
+        "authors": [
+          "Yevgeni Berzak",
+          "Boris Katz",
+          "Roger Lévy"
+        ],
+        "year": 2018,
+        "venue": "https://doi.org/10.18653/v1/n18-1180",
+        "doi": "10.18653/v1/n18-1180",
+        "oa_status": "gold",
+        "citation_count": 4,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:07Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\ac85b352dd8d53973938194b.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Assessing Language Proficiency from Eye Movements in Reading",
+          "candidate_title": "Assessing Language Proficiency from Eye Movements in Reading",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_027",
+      "corpusid": 259370526,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Native Language Prediction from Gaze: a Reproducibility Study",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            61
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Lina Skerath, Paulina Toborek, Anita Zielińska, Maria Barrett, Rob van der Goot (2023)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570188",
+            "fetched_at": "2026-06-20T00:20:09Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\d0de66743b9f9fd214b01fc1.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2023.acl-srw.26; Source: https://doi.org/10.18653/v1/2023.acl-srw.26; OA: gold; Citations: 2",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W4385570188",
+            "fetched_at": "2026-06-20T00:20:09Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\d0de66743b9f9fd214b01fc1.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Numerous studies found that the linguistic properties of a person's native language affect the cognitive processing of other languages. However, only one study has shown that it was possible to identify the native language based on eye-tracking records of natural L2 reading using machine learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            298
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Native Language Prediction from Gaze",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            36
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "using machine learning",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            275,
+            297
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "eye-tracking records of natural L2 reading",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            232,
+            274
+          ],
+          "confidence": 0.65
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "comparable classification performance is maintained despite using less data.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            430,
+            506
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "the correlation between L2 eye movements and native language similarity may be more complex than the original study found.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            536,
+            658
+          ],
+          "confidence": 0.65
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Native Language Prediction from Gaze",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            36
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1377,
+        "elapsed_s": 7.091944200103171,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_027_259370526.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W4385570188",
+        "title": "Native Language Prediction from Gaze: a Reproducibility Study",
+        "authors": [
+          "Lina Skerath",
+          "Paulina Toborek",
+          "Anita Zielińska",
+          "Maria Barrett",
+          "Rob van der Goot"
+        ],
+        "year": 2023,
+        "venue": "https://doi.org/10.18653/v1/2023.acl-srw.26",
+        "doi": "10.18653/v1/2023.acl-srw.26",
+        "oa_status": "gold",
+        "citation_count": 2,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:20:09Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\d0de66743b9f9fd214b01fc1.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Native Language Prediction from Gaze: a Reproducibility Study",
+          "candidate_title": "Native Language Prediction from Gaze: a Reproducibility Study",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 14515265,
+      "title": "Predicting Native Language from Gaze",
+      "cells": [
+        {
+          "criterion": "native language prediction eye movements reading English",
+          "addresses": true,
+          "snippet": "We present a novel methodology for studying this question: analysis of eye-movement patterns in second language reading of free-form text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            124,
+            262
+          ]
+        },
+        {
+          "criterion": "eye tracking L1 identification reading English",
+          "addresses": true,
+          "snippet": "We present a novel methodology for studying this question: analysis of eye-movement patterns in second language reading of free-form text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            124,
+            262
+          ]
+        },
+        {
+          "criterion": "cross-linguistic eye movement patterns reading English",
+          "addresses": true,
+          "snippet": "We present a novel methodology for studying this question: analysis of eye-movement patterns in second language reading of free-form text.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            124,
+            262
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 5024893,
+      "title": "Assessing Language Proficiency from Eye Movements in Reading",
+      "cells": [
+        {
+          "criterion": "native language prediction eye movements reading English",
+          "addresses": true,
+          "snippet": "We present a novel approach for determining learners' second language proficiency which utilizes behavioral traces of eye movements during reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            147
+          ]
+        },
+        {
+          "criterion": "eye tracking L1 identification reading English",
+          "addresses": true,
+          "snippet": "We present a novel approach for determining learners' second language proficiency which utilizes behavioral traces of eye movements during reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            147
+          ]
+        },
+        {
+          "criterion": "cross-linguistic eye movement patterns reading English",
+          "addresses": true,
+          "snippet": "We present a novel approach for determining learners' second language proficiency which utilizes behavioral traces of eye movements during reading.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            147
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 259370526,
+      "title": "Native Language Prediction from Gaze: a Reproducibility Study",
+      "cells": [
+        {
+          "criterion": "native language prediction eye movements reading English",
+          "addresses": true,
+          "snippet": "Numerous studies found that the linguistic properties of a person's native language affect the cognitive processing of other languages.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            135
+          ]
+        },
+        {
+          "criterion": "eye tracking L1 identification reading English",
+          "addresses": true,
+          "snippet": "However, only one study has shown that it was possible to identify the native language based on eye-tracking records of natural L2 reading using machine learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            136,
+            298
+          ]
+        },
+        {
+          "criterion": "cross-linguistic eye movement patterns reading English",
+          "addresses": true,
+          "snippet": "However, only one study has shown that it was possible to identify the native language based on eye-tracking records of natural L2 reading using machine learning.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            136,
+            298
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      5024893,
+      14515265,
+      259370526
+    ],
+    "edges": [
+      {
+        "source": 5024893,
+        "target": 14515265
+      },
+      {
+        "source": 259370526,
+        "target": 14515265
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

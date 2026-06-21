@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_329",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_329",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_329",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_329",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1298,
+      "latency_s": 9.578793599968776
+    },
+    {
+      "query_id": "litsearch_329",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 325,
+      "latency_s": 3.4276421000249684
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_329",
+    "gold": [
+      241033259
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "prompt-based learning PyTorch toolkit",
+      "OpenPrompt PyTorch prompt tuning",
+      "prompt engineering resources PyTorch"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        257258185,
+        18468409,
+        31856765,
+        612963,
+        4643315,
+        10919045,
+        15854992,
+        33485732,
+        8436524,
+        246863795,
+        9260771,
+        252624666,
+        5710819,
+        252819053,
+        11437620,
+        14399727,
+        61121299,
+        13539149,
+        10419594,
+        4896064
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252668803,
+        246863795,
+        258212810,
+        259833809,
+        264172710,
+        19051464,
+        211132493,
+        252222470,
+        14937218,
+        241033259,
+        207869708,
+        259370512,
+        13208357,
+        250150813,
+        253116574,
+        237440234,
+        259370665,
+        51878395,
+        251402248,
+        258947039
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        241033259,
+        258041372,
+        247447170,
+        259108351,
+        253265328,
+        237416760,
+        8292447,
+        182178553,
+        237353222,
+        259376869,
+        256461264,
+        252519660,
+        246485605,
+        248506039,
+        9931535,
+        237532411,
+        254877399,
+        235652287,
+        229923710,
+        253098851
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        241033259,
+        246485605
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        241033259,
+        246485605,
+        237416760,
+        252668803,
+        247447170,
+        264172710,
+        237452236,
+        259833809,
+        259370512,
+        259108351,
+        257038347,
+        248084930,
+        248506039,
+        253116574,
+        229923710,
+        252519660,
+        253265328,
+        248572452,
+        252992469,
+        239016231
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.76201259996742
+  },
+  "reason_example": {
+    "query_id": "litsearch_329",
+    "query": "What resources or toolkits are available to facilitate prompt-based learning model development in PyTorch?",
+    "top_results": [
+      {
+        "corpusid": 241033259,
+        "score": 0.9495130777359009,
+        "reason": "bm25=0.874; dense=1.000; sub_bm25=0.995; sub_dense=1.000"
+      },
+      {
+        "corpusid": 246485605,
+        "score": 0.8278061151504517,
+        "reason": "bm25=0.820; dense=0.833; sub_bm25=0.449; sub_dense=0.987"
+      },
+      {
+        "corpusid": 237416760,
+        "score": 0.8241004943847656,
+        "reason": "bm25=0.720; dense=0.894; sub_bm25=0.587; sub_dense=0.882"
+      },
+      {
+        "corpusid": 252668803,
+        "score": 0.8053171634674072,
+        "reason": "bm25=1.000; dense=0.676; sub_bm25=0.626; sub_dense=0.832"
+      },
+      {
+        "corpusid": 247447170,
+        "score": 0.8031511902809143,
+        "reason": "bm25=0.624; dense=0.922; sub_bm25=0.504; sub_dense=0.960"
+      }
+    ]
+  }
+}

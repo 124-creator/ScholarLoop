@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_312",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_312",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_312",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_312",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1272,
+      "latency_s": 7.153566000051796
+    },
+    {
+      "query_id": "litsearch_312",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 280,
+      "latency_s": 2.176945499959402
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_312",
+    "gold": [
+      235358586
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "generative models latent variables conversational systems",
+      "semantic dependencies generative models dialogue",
+      "latent variable models capturing dependencies conversations"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        53639109,
+        1871953,
+        3920851,
+        11902522,
+        13095070,
+        51871733,
+        219686914,
+        5741058,
+        2038851,
+        10919045,
+        252873036,
+        13905238,
+        249204538,
+        13945591,
+        369738,
+        239016893,
+        248722179,
+        221995498,
+        248182532,
+        51977123
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        369738,
+        203610287,
+        207853396,
+        248722179,
+        53081212,
+        51871733,
+        67856324,
+        10480989,
+        53081344,
+        1392116,
+        252781163,
+        257365071,
+        239016893,
+        11902522,
+        11902748,
+        253530,
+        3461974,
+        2790981,
+        207930354,
+        258947486
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        9346726,
+        4829361,
+        202779299,
+        243865216,
+        250391061,
+        253530,
+        256460877,
+        201698224,
+        17611516,
+        219686949,
+        53096901,
+        44129557,
+        211146411,
+        213929104,
+        252439256,
+        253098345,
+        221702959,
+        207853191,
+        11902748,
+        52281610
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        9346726,
+        53081212,
+        67856324,
+        11902748
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253530,
+        202779299,
+        243865216,
+        248722179,
+        53081212,
+        11902748,
+        219686949,
+        9346726,
+        67856324,
+        203610287,
+        201698224,
+        10480989,
+        222178963,
+        9830566,
+        256460877,
+        258947486,
+        52281610,
+        236477596,
+        235358586,
+        14571902
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 10.670780399930663
+  },
+  "reason_example": {
+    "query_id": "litsearch_312",
+    "query": "What research exists on employing generative models with latent variable to capture semantic dependencies in conversational systems?",
+    "top_results": [
+      {
+        "corpusid": 253530,
+        "score": 0.9238560199737549,
+        "reason": "bm25=0.846; dense=0.976; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202779299,
+        "score": 0.9111690521240234,
+        "reason": "bm25=0.798; dense=0.987; sub_bm25=0.791; sub_dense=0.980"
+      },
+      {
+        "corpusid": 243865216,
+        "score": 0.9016680121421814,
+        "reason": "bm25=0.783; dense=0.981; sub_bm25=0.624; sub_dense=0.957"
+      },
+      {
+        "corpusid": 248722179,
+        "score": 0.8966655731201172,
+        "reason": "bm25=0.907; dense=0.890; sub_bm25=0.723; sub_dense=0.827"
+      },
+      {
+        "corpusid": 53081212,
+        "score": 0.8928623795509338,
+        "reason": "bm25=0.904; dense=0.886; sub_bm25=0.740; sub_dense=0.808"
+      }
+    ]
+  }
+}

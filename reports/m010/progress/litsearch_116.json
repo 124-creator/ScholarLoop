@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_116",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_116",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_116",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_116",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1145,
+      "latency_s": 7.763508699950762
+    },
+    {
+      "query_id": "litsearch_116",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 318,
+      "latency_s": 2.5725281999912113
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_116",
+    "gold": [
+      233231544
+    ],
+    "pool_size": 267,
+    "decomposition": [
+      "writing assistant autocomplete user intent",
+      "conditioned autocomplete writing assistant",
+      "user intent aware autocomplete"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        202783121,
+        7440991,
+        17423946,
+        51744460,
+        248427129,
+        6881568,
+        17796799,
+        5991920,
+        13907064,
+        2751063,
+        15879777,
+        219306987,
+        11574043,
+        23776473,
+        9429534,
+        233231544,
+        16505930,
+        5459392,
+        5523142,
+        2063206
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        233231544,
+        13488809,
+        235358232,
+        235097372,
+        6554837,
+        248427129,
+        44096230,
+        233189543,
+        252762419,
+        201698298,
+        220046205,
+        484398,
+        218973861,
+        11485057,
+        196200182,
+        652921,
+        254246982,
+        1994584,
+        226262313,
+        247613006
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        233231544,
+        259370527,
+        15789309,
+        175120,
+        13860564,
+        252762419,
+        10779062,
+        18884529,
+        235097517,
+        258378265,
+        202537185,
+        7874364,
+        6325705,
+        15074987,
+        5304321,
+        253107865,
+        6554837,
+        13368442,
+        257206132,
+        17710723
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        233231544,
+        252762419,
+        259370527
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        233231544,
+        259370527,
+        252762419,
+        6554837,
+        235097517,
+        18884529,
+        253107865,
+        13860564,
+        258378265,
+        235097372,
+        218973759,
+        196200182,
+        202537185,
+        7240730,
+        484398,
+        224725731,
+        15789309,
+        15074987,
+        13273770,
+        20628767
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.32925960002467
+  },
+  "reason_example": {
+    "query_id": "litsearch_116",
+    "query": "Could you recommend a paper that builds a writing assistant with autocomplete capabilities conditioned on user intent?",
+    "top_results": [
+      {
+        "corpusid": 233231544,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370527,
+        "score": 0.8284730911254883,
+        "reason": "bm25=0.598; dense=0.982; sub_bm25=0.750; sub_dense=0.971"
+      },
+      {
+        "corpusid": 252762419,
+        "score": 0.7656765580177307,
+        "reason": "bm25=0.653; dense=0.841; sub_bm25=0.968; sub_dense=0.921"
+      },
+      {
+        "corpusid": 6554837,
+        "score": 0.7627331018447876,
+        "reason": "bm25=0.705; dense=0.801; sub_bm25=0.634; sub_dense=0.803"
+      },
+      {
+        "corpusid": 235097517,
+        "score": 0.7343140244483948,
+        "reason": "bm25=0.591; dense=0.830; sub_bm25=0.345; sub_dense=0.733"
+      }
+    ]
+  }
+}

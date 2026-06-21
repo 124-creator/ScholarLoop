@@ -1,0 +1,226 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_568",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_568",
+      "system": "bm25",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_568",
+      "system": "neural_embedding",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_568",
+      "system": "single_llm",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1551,
+      "latency_s": 11.41965000005439
+    },
+    {
+      "query_id": "litsearch_568",
+      "system": "scholarloop_a",
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 764,
+      "latency_s": 9.302025300101377
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_568",
+    "gold": [
+      263889455,
+      261682321
+    ],
+    "pool_size": 252,
+    "decomposition": [
+      "multimodal large language model discrete visual tokens next-token prediction",
+      "unified next-token prediction objective multimodal model images as tokens",
+      "model training visual data discrete token sequences autoregressive"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        258557914,
+        248835547,
+        222341606,
+        248779964,
+        235489736,
+        7038187,
+        10480989,
+        229924184,
+        196019,
+        243865620,
+        264147017,
+        9590996,
+        7750511,
+        14791087,
+        260438589,
+        243830667,
+        235436185,
+        13883918,
+        247594788,
+        251196761
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        263889455,
+        261682321,
+        254044324,
+        259375870,
+        258947837,
+        235436185,
+        235489736,
+        235195674,
+        248965297,
+        244117525,
+        229924184,
+        260704723,
+        220045906,
+        252818926,
+        253370611,
+        221140098,
+        222341606,
+        258480094,
+        258557914,
+        258865335
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        253157438,
+        232185558,
+        261682321,
+        226262333,
+        263889455,
+        6618571,
+        252222320,
+        222341606,
+        261124675,
+        231698922,
+        252918091,
+        263797079,
+        252403001,
+        237605175,
+        226283672,
+        253116724,
+        12556365,
+        256901258,
+        21719536,
+        247434179
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "single_llm": {
+      "ranked_top20": [
+        263889455,
+        261682321,
+        222341606,
+        248965297,
+        254044324,
+        244117525,
+        235436185,
+        237605175,
+        258557914,
+        258480094,
+        6618571,
+        7038187
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        263889455,
+        261682321,
+        254044324,
+        222341606,
+        253157438,
+        6618571,
+        226262333,
+        237605175,
+        252222320,
+        252403001,
+        248965297,
+        252918091,
+        231698922,
+        258480094,
+        237291550,
+        252818926,
+        260704723,
+        259075352,
+        232185558,
+        203836064
+      ],
+      "P@10": 0.2,
+      "R@20": 1.0,
+      "F1": 0.33333333333333337
+    },
+    "elapsed_s": 36.95167500001844
+  },
+  "reason_example": {
+    "query_id": "litsearch_568",
+    "query": "Which multimodal large language model represents visual data as the discrete tokens like text and training with the unified next-token prediction objective?",
+    "top_results": [
+      {
+        "corpusid": 263889455,
+        "score": 0.9825160503387451,
+        "reason": "bm25=1.000; dense=0.971; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 261682321,
+        "score": 0.980212926864624,
+        "reason": "bm25=0.986; dense=0.976; sub_bm25=0.975; sub_dense=0.998"
+      },
+      {
+        "corpusid": 254044324,
+        "score": 0.8799120187759399,
+        "reason": "bm25=0.946; dense=0.836; sub_bm25=0.780; sub_dense=0.853"
+      },
+      {
+        "corpusid": 222341606,
+        "score": 0.8755277991294861,
+        "reason": "bm25=0.795; dense=0.929; sub_bm25=0.816; sub_dense=0.903"
+      },
+      {
+        "corpusid": 253157438,
+        "score": 0.8736293315887451,
+        "reason": "bm25=0.684; dense=1.000; sub_bm25=0.844; sub_dense=0.978"
+      }
+    ]
+  }
+}

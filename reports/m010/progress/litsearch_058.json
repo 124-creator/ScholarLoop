@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_058",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_058",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_058",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_058",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2079,
+      "latency_s": 13.69063670001924
+    },
+    {
+      "query_id": "litsearch_058",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 292,
+      "latency_s": 2.085973000037484
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_058",
+    "gold": [
+      202540591
+    ],
+    "pool_size": 237,
+    "decomposition": [
+      "Cross-lingual named entity recognition with knowledge retrieval",
+      "Retrieving related knowledge for ambiguous named entity annotation",
+      "Multilingual NER disambiguation using external knowledge"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        250391926,
+        15419664,
+        247187671,
+        5231912,
+        1412569,
+        12311990,
+        15270509,
+        17353402,
+        259376758,
+        247594716,
+        7107756,
+        874413,
+        10427464,
+        67855733,
+        9775710,
+        10319672,
+        219305420,
+        7471300,
+        250390922,
+        53601909
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        247187671,
+        6196776,
+        14943763,
+        6290772,
+        261342031,
+        245855700,
+        248085344,
+        258486937,
+        258587849,
+        252819161,
+        250391926,
+        6314715,
+        10319672,
+        8050769,
+        252819518,
+        11676263,
+        233365249,
+        1770806,
+        259376704,
+        104292554
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247187671,
+        259376704,
+        259376672,
+        250391019,
+        259376884,
+        2831294,
+        43571051,
+        259376502,
+        15441841,
+        14731867,
+        3262157,
+        6879481,
+        115191769,
+        259376850,
+        10625626,
+        5330813,
+        53603385,
+        259376482,
+        244464087,
+        306227
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        247187671,
+        258587849
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        247187671,
+        259376704,
+        259376502,
+        250391019,
+        14943763,
+        259376672,
+        14731867,
+        6196776,
+        259376850,
+        15441841,
+        3801685,
+        10625626,
+        53603385,
+        233365249,
+        258587849,
+        306227,
+        259376884,
+        1304185,
+        198162558,
+        259376482
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 17.467220699996687
+  },
+  "reason_example": {
+    "query_id": "litsearch_058",
+    "query": "In the context of Named Entity Recognition tasks across multiple languages, which work highlights the necessity of retrieving related knowledge to aid in the annotation of ambiguous named entities?",
+    "top_results": [
+      {
+        "corpusid": 247187671,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=0.900"
+      },
+      {
+        "corpusid": 259376704,
+        "score": 0.9241786003112793,
+        "reason": "bm25=0.833; dense=0.985; sub_bm25=0.824; sub_dense=0.768"
+      },
+      {
+        "corpusid": 259376502,
+        "score": 0.8855720162391663,
+        "reason": "bm25=0.824; dense=0.927; sub_bm25=0.505; sub_dense=0.802"
+      },
+      {
+        "corpusid": 250391019,
+        "score": 0.8834162354469299,
+        "reason": "bm25=0.777; dense=0.954; sub_bm25=0.673; sub_dense=0.856"
+      },
+      {
+        "corpusid": 14943763,
+        "score": 0.8778268098831177,
+        "reason": "bm25=0.887; dense=0.871; sub_bm25=0.825; sub_dense=0.880"
+      }
+    ]
+  }
+}

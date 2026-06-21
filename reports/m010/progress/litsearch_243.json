@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_243",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_243",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_243",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_243",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1398,
+      "latency_s": 9.16979580000043
+    },
+    {
+      "query_id": "litsearch_243",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 268,
+      "latency_s": 2.082182600046508
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_243",
+    "gold": [
+      235097662
+    ],
+    "pool_size": 266,
+    "decomposition": [
+      "retrieval-based conversational system masked language modeling relevance classification",
+      "combining masked language modeling and relevance classification for retrieval dialogue",
+      "improving response retrieval with masked language model and relevance scoring"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        219309121,
+        259370633,
+        263866951,
+        9830179,
+        17555240,
+        260063225,
+        5895802,
+        14344552,
+        10168327,
+        2478724,
+        46886854,
+        5837605,
+        11118417,
+        6105792,
+        7967538,
+        2375338,
+        235097662,
+        2445873,
+        259833896,
+        771053
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865375,
+        258967524,
+        26472001,
+        257255242,
+        256460881,
+        237421110,
+        252907593,
+        202629926,
+        14344552,
+        12271263,
+        239017038,
+        233296511,
+        17810027,
+        252682958,
+        1188168,
+        235097662,
+        230349190,
+        249892255,
+        9988418,
+        202541078
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        14589311,
+        19711128,
+        52139395,
+        1544522,
+        10576451,
+        245131173,
+        39506406,
+        3329936,
+        17454434,
+        52833427,
+        3068831,
+        174798391,
+        256460881,
+        247693669,
+        11163574,
+        3092326,
+        233210701,
+        17019383,
+        2555300,
+        44297035
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235097662,
+        256460881,
+        237421110,
+        1188168,
+        2478724,
+        17170018,
+        14589311,
+        52139395,
+        9611123,
+        14344552,
+        259370633,
+        263866951
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        256460881,
+        52139395,
+        14589311,
+        10576451,
+        1544522,
+        3092326,
+        233210701,
+        19711128,
+        8470323,
+        245131173,
+        235097662,
+        233296511,
+        39506406,
+        237490430,
+        9611123,
+        237421110,
+        3329936,
+        1188168,
+        245218415,
+        17170018
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.097437500022352
+  },
+  "reason_example": {
+    "query_id": "litsearch_243",
+    "query": "Could you suggest research that investigates improving retrieval-based conversational systems using by combining masked language modeling and relevance classification objectives?",
+    "top_results": [
+      {
+        "corpusid": 256460881,
+        "score": 0.8874013423919678,
+        "reason": "bm25=0.914; dense=0.870; sub_bm25=1.000; sub_dense=0.769"
+      },
+      {
+        "corpusid": 52139395,
+        "score": 0.8872511386871338,
+        "reason": "bm25=0.777; dense=0.960; sub_bm25=0.994; sub_dense=0.842"
+      },
+      {
+        "corpusid": 14589311,
+        "score": 0.8640203475952148,
+        "reason": "bm25=0.660; dense=1.000; sub_bm25=0.826; sub_dense=1.000"
+      },
+      {
+        "corpusid": 10576451,
+        "score": 0.862524151802063,
+        "reason": "bm25=0.739; dense=0.945; sub_bm25=0.747; sub_dense=0.935"
+      },
+      {
+        "corpusid": 1544522,
+        "score": 0.833424985408783,
+        "reason": "bm25=0.651; dense=0.955; sub_bm25=0.730; sub_dense=0.723"
+      }
+    ]
+  }
+}

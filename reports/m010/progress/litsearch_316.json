@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_316",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_316",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_316",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_316",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1105,
+      "latency_s": 6.927035800064914
+    },
+    {
+      "query_id": "litsearch_316",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 295,
+      "latency_s": 2.60025380004663
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_316",
+    "gold": [
+      237454564
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "reinforcement learning event prediction temporal knowledge graph",
+      "temporal knowledge graph prediction reinforcement learning",
+      "RL event forecasting temporal knowledge graph"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        39654639,
+        233029494,
+        237700510,
+        52183483,
+        3906867,
+        31313505,
+        221819199,
+        222303317,
+        252819130,
+        2245732,
+        235266233,
+        8265456,
+        8339153,
+        231821653,
+        31751314,
+        88517356,
+        196179812,
+        14493443,
+        235097561,
+        252624474
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        52183483,
+        235266233,
+        222205878,
+        235097561,
+        243865345,
+        248085410,
+        221978039,
+        224804104,
+        237454564,
+        260063107,
+        252781069,
+        252819398,
+        202558451,
+        256461192,
+        243865639,
+        201070814,
+        227231627,
+        248299724,
+        7294125,
+        10638526
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        235266233,
+        237454564,
+        52183483,
+        222205878,
+        259370542,
+        259370699,
+        248780039,
+        252819398,
+        222124934,
+        256461192,
+        13475624,
+        235097561,
+        243865345,
+        15847806,
+        222177069,
+        466246,
+        248085410,
+        4957206,
+        258971713,
+        8336242
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        237454564
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235266233,
+        52183483,
+        222205878,
+        237454564,
+        235097561,
+        243865345,
+        252819398,
+        222124934,
+        248085410,
+        256461192,
+        248780039,
+        259370542,
+        252781069,
+        260063107,
+        259370699,
+        222177069,
+        5106665,
+        259370736,
+        221978039,
+        235313508
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 11.033593700034544
+  },
+  "reason_example": {
+    "query_id": "litsearch_316",
+    "query": "What research exists on using reinforcement learning methods for event prediction in temporal knowledge graphs?",
+    "top_results": [
+      {
+        "corpusid": 235266233,
+        "score": 0.9573858976364136,
+        "reason": "bm25=0.893; dense=1.000; sub_bm25=0.876; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52183483,
+        "score": 0.9441461563110352,
+        "reason": "bm25=1.000; dense=0.907; sub_bm25=0.845; sub_dense=1.000"
+      },
+      {
+        "corpusid": 222205878,
+        "score": 0.8760026693344116,
+        "reason": "bm25=0.892; dense=0.865; sub_bm25=0.757; sub_dense=0.986"
+      },
+      {
+        "corpusid": 237454564,
+        "score": 0.8407614827156067,
+        "reason": "bm25=0.737; dense=0.910; sub_bm25=0.929; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235097561,
+        "score": 0.8081507086753845,
+        "reason": "bm25=0.843; dense=0.785; sub_bm25=1.000; sub_dense=0.937"
+      }
+    ]
+  }
+}

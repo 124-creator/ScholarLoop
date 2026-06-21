@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_525",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_525",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_525",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_525",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1040,
+      "latency_s": 5.3770940999966115
+    },
+    {
+      "query_id": "litsearch_525",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 287,
+      "latency_s": 2.5383385999593884
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_525",
+    "gold": [
+      258865444
+    ],
+    "pool_size": 251,
+    "decomposition": [
+      "image dataset with alt-text and surrounding text",
+      "dataset of images with captions and original post text",
+      "existing image alt-text dataset including post text"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        118679513,
+        1405599,
+        16408584,
+        252367822,
+        202780226,
+        258865444,
+        51873630,
+        253761985,
+        21709085,
+        2243270,
+        10201935,
+        5885266,
+        10643243,
+        9159237,
+        211481885,
+        252847523,
+        2069120,
+        2075057,
+        39661249,
+        18407315
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        258865444,
+        252847523,
+        16408584,
+        233296711,
+        244138387,
+        253018768,
+        56657855,
+        252547679,
+        253761985,
+        252365163,
+        259370754,
+        18213346,
+        6918146,
+        263792492,
+        119298411,
+        1780562,
+        263671826,
+        227231446,
+        252992913,
+        257102476
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258865444,
+        252547679,
+        34990046,
+        252596087,
+        222310689,
+        16408584,
+        21703757,
+        253224427,
+        247996596,
+        3097894,
+        12547672,
+        256274522,
+        202780226,
+        259376692,
+        246863624,
+        263671826,
+        237366250,
+        226283960,
+        252992913,
+        931913
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258865444
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258865444,
+        252547679,
+        16408584,
+        34990046,
+        252596087,
+        222310689,
+        252847523,
+        263671826,
+        253224427,
+        252992913,
+        246863624,
+        931913,
+        248987078,
+        56657855,
+        18213346,
+        202780226,
+        1780562,
+        9159237,
+        12547672,
+        3097894
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.280906799947843
+  },
+  "reason_example": {
+    "query_id": "litsearch_525",
+    "query": "Is there an existing dataset of images with alt-text that also includes the text the image was originally posted with?",
+    "top_results": [
+      {
+        "corpusid": 258865444,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252547679,
+        "score": 0.8482571840286255,
+        "reason": "bm25=0.708; dense=0.942; sub_bm25=0.809; sub_dense=1.000"
+      },
+      {
+        "corpusid": 16408584,
+        "score": 0.8328236937522888,
+        "reason": "bm25=0.741; dense=0.894; sub_bm25=0.887; sub_dense=0.972"
+      },
+      {
+        "corpusid": 34990046,
+        "score": 0.8305834531784058,
+        "reason": "bm25=0.664; dense=0.942; sub_bm25=0.866; sub_dense=1.000"
+      },
+      {
+        "corpusid": 252596087,
+        "score": 0.7944990396499634,
+        "reason": "bm25=0.637; dense=0.900; sub_bm25=0.676; sub_dense=0.894"
+      }
+    ]
+  }
+}

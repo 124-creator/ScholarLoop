@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_087",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_087",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_087",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_087",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1535,
+      "latency_s": 10.671096100006253
+    },
+    {
+      "query_id": "litsearch_087",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 274,
+      "latency_s": 2.0163094999734312
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_087",
+    "gold": [
+      19206893
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "self-attentive parser few-shot learning",
+      "few-shot parsing self-attention code hyperparameters",
+      "self-attentive dependency parser few-shot"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        17684363,
+        9462924,
+        221112385,
+        243865653,
+        21726677,
+        254877590,
+        258461313,
+        247656607,
+        237452237,
+        258378356,
+        237532574,
+        248810745,
+        259370566,
+        235313749,
+        245218525,
+        258960366,
+        10108216,
+        36483408,
+        13316167,
+        247450508
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        243865653,
+        215745503,
+        220424770,
+        254877590,
+        258461313,
+        235390935,
+        222341795,
+        246996668,
+        252816059,
+        222379753,
+        222140938,
+        232104960,
+        120360213,
+        258041372,
+        237353243,
+        227231868,
+        245218525,
+        67856712,
+        216642181,
+        253475828
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        16644681,
+        447315,
+        215745503,
+        15567883,
+        57300442,
+        65474830,
+        9934746,
+        10603940,
+        219303057,
+        10579581,
+        16440461,
+        222140735,
+        10028905,
+        2070967,
+        258041372,
+        19206893,
+        1622363,
+        219964943,
+        15030289,
+        1825866
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        245218525,
+        19206893,
+        231709547,
+        215745503
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        215745503,
+        258041372,
+        19206893,
+        16644681,
+        245218525,
+        231709547,
+        243865611,
+        252816059,
+        120360213,
+        237353243,
+        222140735,
+        259370729,
+        235390935,
+        10028905,
+        250391076,
+        252819507,
+        253237192,
+        236956577,
+        229923710,
+        15855502
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.205061500077136
+  },
+  "reason_example": {
+    "query_id": "litsearch_087",
+    "query": "Where can I find information on self-attentive parsers that have been trained in a few-shot learning setting, including their official code and hyperparameters?",
+    "top_results": [
+      {
+        "corpusid": 215745503,
+        "score": 0.9458719491958618,
+        "reason": "bm25=0.967; dense=0.932; sub_bm25=1.000; sub_dense=0.871"
+      },
+      {
+        "corpusid": 258041372,
+        "score": 0.8844708204269409,
+        "reason": "bm25=0.900; dense=0.874; sub_bm25=0.578; sub_dense=0.750"
+      },
+      {
+        "corpusid": 19206893,
+        "score": 0.8731140494346619,
+        "reason": "bm25=0.875; dense=0.872; sub_bm25=0.897; sub_dense=0.889"
+      },
+      {
+        "corpusid": 16644681,
+        "score": 0.8603960275650024,
+        "reason": "bm25=0.651; dense=1.000; sub_bm25=0.534; sub_dense=0.824"
+      },
+      {
+        "corpusid": 245218525,
+        "score": 0.8370182514190674,
+        "reason": "bm25=0.889; dense=0.802; sub_bm25=0.748; sub_dense=0.897"
+      }
+    ]
+  }
+}

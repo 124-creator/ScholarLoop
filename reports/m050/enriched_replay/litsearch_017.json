@@ -1,0 +1,644 @@
+{
+  "schema_version": "m050.enriched_query_evidence.v1",
+  "query_id": "litsearch_017",
+  "query": "Can you recommend a paper that uses an NLI model for sentence-level relation extraction using hypothesis generation and verification with entity-type constraints?",
+  "criteria": [
+    "NLI model sentence-level relation extraction hypothesis generation verification",
+    "entity-type constraints relation extraction NLI",
+    "sentence-level relation extraction natural language inference"
+  ],
+  "top_n": 3,
+  "source": {
+    "m010_results": "reports/m010/results.json",
+    "ranker": "scholarloop_a",
+    "upstream_read_only": true,
+    "m050_enrichment": {
+      "upstream_m020": "reports\\m020\\evidence\\litsearch_017.json",
+      "upstream_read_only": true,
+      "primary_connector": "openalex",
+      "min_title_score": 0.94,
+      "min_token_jaccard": 0.8
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_017",
+      "corpusid": 17034927,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            91
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Yang Liu, Kang Liu, Liheng Xu, Jun Zhao (2014)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2251315883",
+            "fetched_at": "2026-06-20T00:19:14Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\b89abeb8cd5839b7f04515e8.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "Source: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.656.4673; OA: closed; Citations: 47",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W2251315883",
+            "fetched_at": "2026-06-20T00:19:14Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\b89abeb8cd5839b7f04515e8.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            91
+          ],
+          "confidence": 0.65
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "Experimental results show that our methods achieve better precision/recall curves in sentential extraction with smoother curves in aggregated extraction which mean more stable models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            811,
+            994
+          ],
+          "confidence": 0.65
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "However, the coarse entity types are not sufficient to capture the constraints of a relation between entities.",
+          "status": "存在争议",
+          "source_field": "abstract",
+          "char_span": [
+            512,
+            622
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "we propose a novel method to explore fine-grained entity type constraints",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            638,
+            711
+          ],
+          "confidence": 0.65
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1857,
+        "elapsed_s": 11.650009199976921,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_017_17034927.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W2251315883",
+        "title": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+        "authors": [
+          "Yang Liu",
+          "Kang Liu",
+          "Liheng Xu",
+          "Jun Zhao"
+        ],
+        "year": 2014,
+        "venue": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.656.4673",
+        "doi": "",
+        "oa_status": "closed",
+        "citation_count": 47,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:14Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\b89abeb8cd5839b7f04515e8.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+          "candidate_title": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_017",
+      "corpusid": 231879840,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "An End-to-end Model for Entity-level Relation Extraction using Multi-instance Learning",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            86
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Markus Eberts, Adrian Ulges (2021)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3127672556",
+            "fetched_at": "2026-06-20T00:19:15Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\de2c7967178bdfe5e8b4ed25.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2021.eacl-main.319; Source: https://doi.org/10.18653/v1/2021.eacl-main.319; OA: gold; Citations: 1",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3127672556",
+            "fetched_at": "2026-06-20T00:19:15Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\de2c7967178bdfe5e8b4ed25.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ],
+          "confidence": 0.55
+        },
+        "method": {
+          "field": "method",
+          "value": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ],
+          "confidence": 0.55
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "To do so, a multi-task approach is followed that builds upon coreference resolution and gathers relevant signals via multi-instance learning with multi-level representations combining global entity and local mention information.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            244,
+            472
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "We achieve state-of-theart relation extraction results on the DocRED dataset and report the first entity-level end-toend relation extraction results for future reference.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            473,
+            643
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "In contrast to other approaches -which focus on local intra-sentence mention pairs and thus require annotations on mention level -our model operates on entity level.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            78,
+            243
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 995,
+        "elapsed_s": 4.337492400081828,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_017_231879840.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3127672556",
+        "title": "An End-to-end Model for Entity-level Relation Extraction using Multi-instance Learning",
+        "authors": [
+          "Markus Eberts",
+          "Adrian Ulges"
+        ],
+        "year": 2021,
+        "venue": "https://doi.org/10.18653/v1/2021.eacl-main.319",
+        "doi": "10.18653/v1/2021.eacl-main.319",
+        "oa_status": "gold",
+        "citation_count": 1,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:15Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\de2c7967178bdfe5e8b4ed25.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "An End-to-end Model for Entity-level Relation Extraction using Multi-instance Learning",
+          "candidate_title": "An End-to-end Model for Entity-level Relation Extraction using Multi-instance Learning",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    },
+    {
+      "schema_version": "m020.evidence_card.v1",
+      "query_id": "litsearch_017",
+      "corpusid": 236477597,
+      "fields": {
+        "title": {
+          "field": "title",
+          "value": "From What to Why: Improving Relation Extraction with Rationale Graph",
+          "status": "已有证据支持",
+          "source_field": "title",
+          "char_span": [
+            0,
+            68
+          ],
+          "confidence": 1.0
+        },
+        "authors_year": {
+          "field": "authors_year",
+          "value": "Zhenyu Zhang, Bowen Yu, Xiaobo Shu, Mengge Xue, Tingwen Liu, Li Guo (2021)",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3173682066",
+            "fetched_at": "2026-06-20T00:19:17Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\81b9889a02ff25ab346223f6.json"
+          }
+        },
+        "source_or_doi": {
+          "field": "source_or_doi",
+          "value": "DOI: 10.18653/v1/2021.findings-acl.8; Source: https://doi.org/10.18653/v1/2021.findings-acl.8; OA: gold; Citations: 5",
+          "status": "已有外部来源支持",
+          "source_field": "external_metadata",
+          "char_span": null,
+          "confidence": 1.0,
+          "resolution_hint": null,
+          "external_provenance": {
+            "source": "openalex",
+            "external_id": "https://openalex.org/W3173682066",
+            "fetched_at": "2026-06-20T00:19:17Z",
+            "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+            "cache_path": "reports\\m050\\cache\\openalex\\81b9889a02ff25ab346223f6.json"
+          }
+        },
+        "recommendation_reason": {
+          "field": "recommendation_reason",
+          "value": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ],
+          "confidence": 0.55
+        },
+        "supported_research_question": {
+          "field": "supported_research_question",
+          "value": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ],
+          "confidence": 0.65
+        },
+        "method": {
+          "field": "method",
+          "value": "we propose a novel RAtionale Graph (RAG) to organize such co-occurrence constraints among entity types, triggers and relations in a holistic graph view.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            386,
+            538
+          ],
+          "confidence": 0.65
+        },
+        "data_or_scenario": {
+          "field": "data_or_scenario",
+          "value": "Moreover, these indicative clues are always constrained to co-occur with specific relations at the corpus level.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            254,
+            366
+          ],
+          "confidence": 0.55
+        },
+        "main_conclusion": {
+          "field": "main_conclusion",
+          "value": "By introducing two subtasks of entity type prediction and trigger labeling, we build the connection between each instance and RAG, and then leverage relevant global co-occurrence knowledge stored in the graph to improve the performance of neural RE models.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            539,
+            795
+          ],
+          "confidence": 0.55
+        },
+        "limitations": {
+          "field": "limitations",
+          "value": "initially annotated the minimal contiguous indicative word span and named them trigger.",
+          "status": "已有证据支持",
+          "source_field": "full_paper",
+          "char_span": [
+            2632,
+            2719
+          ],
+          "confidence": 0.55
+        },
+        "relevance_strength": {
+          "field": "relevance_strength",
+          "value": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ],
+          "confidence": 0.55
+        }
+      },
+      "llm_meta": {
+        "total_tokens": 1456,
+        "elapsed_s": 7.7145113999722525,
+        "raw_path": "reports\\m020\\raw\\llm\\card_litsearch_017_236477597.json",
+        "llm_error": null
+      },
+      "m050_external_metadata": {
+        "source": "openalex",
+        "external_id": "https://openalex.org/W3173682066",
+        "title": "From What to Why: Improving Relation Extraction with Rationale Graph",
+        "authors": [
+          "Zhenyu Zhang",
+          "Bowen Yu",
+          "Xiaobo Shu",
+          "Mengge Xue",
+          "Tingwen Liu",
+          "Li Guo"
+        ],
+        "year": 2021,
+        "venue": "https://doi.org/10.18653/v1/2021.findings-acl.8",
+        "doi": "10.18653/v1/2021.findings-acl.8",
+        "oa_status": "gold",
+        "citation_count": 5,
+        "license": "CC0; https://help.openalex.org/hc/en-us/articles/24397762024087-Pricing",
+        "fetched_at": "2026-06-20T00:19:17Z",
+        "cache_path": "reports\\m050\\cache\\openalex\\81b9889a02ff25ab346223f6.json",
+        "title_score": 1.0,
+        "title_token_jaccard": 1.0,
+        "title_match": {
+          "query_title": "From What to Why: Improving Relation Extraction with Rationale Graph",
+          "candidate_title": "From What to Why: Improving Relation Extraction with Rationale Graph",
+          "normalized_score": 1.0,
+          "token_jaccard": 1.0,
+          "strong": true
+        }
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "rank": 1,
+      "corpusid": 17034927,
+      "title": "Exploring Fine-grained Entity Type Constraints for Distantly Supervised Relation Extraction",
+      "cells": [
+        {
+          "criterion": "NLI model sentence-level relation extraction hypothesis generation verification",
+          "addresses": true,
+          "snippet": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ]
+        },
+        {
+          "criterion": "entity-type constraints relation extraction NLI",
+          "addresses": true,
+          "snippet": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ]
+        },
+        {
+          "criterion": "sentence-level relation extraction natural language inference",
+          "addresses": true,
+          "snippet": "Distantly supervised relation extraction, which can automatically generate training data by aligning facts in the existing knowledge bases to text, has gained much attention.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            174
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "corpusid": 231879840,
+      "title": "An End-to-end Model for Entity-level Relation Extraction using Multi-instance Learning",
+      "cells": [
+        {
+          "criterion": "NLI model sentence-level relation extraction hypothesis generation verification",
+          "addresses": true,
+          "snippet": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ]
+        },
+        {
+          "criterion": "entity-type constraints relation extraction NLI",
+          "addresses": true,
+          "snippet": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ]
+        },
+        {
+          "criterion": "sentence-level relation extraction natural language inference",
+          "addresses": true,
+          "snippet": "We present a joint model for entity-level relation extraction from documents.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            77
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "corpusid": 236477597,
+      "title": "From What to Why: Improving Relation Extraction with Rationale Graph",
+      "cells": [
+        {
+          "criterion": "NLI model sentence-level relation extraction hypothesis generation verification",
+          "addresses": true,
+          "snippet": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ]
+        },
+        {
+          "criterion": "entity-type constraints relation extraction NLI",
+          "addresses": true,
+          "snippet": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ]
+        },
+        {
+          "criterion": "sentence-level relation extraction natural language inference",
+          "addresses": true,
+          "snippet": "Which type of information affects the existing neural relation extraction (RE) models to make correct decisions is an important question.",
+          "status": "已有证据支持",
+          "source_field": "abstract",
+          "char_span": [
+            0,
+            137
+          ]
+        }
+      ]
+    }
+  ],
+  "citation_graph": {
+    "nodes": [
+      17034927,
+      231879840,
+      236477597
+    ],
+    "edges": [
+      {
+        "source": 236477597,
+        "target": 17034927
+      }
+    ],
+    "scope": "top_n_internal_only"
+  }
+}

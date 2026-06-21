@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_239",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_239",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_239",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_239",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1432,
+      "latency_s": 9.894155999994837
+    },
+    {
+      "query_id": "litsearch_239",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 251,
+      "latency_s": 1.893132400000468
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_239",
+    "gold": [
+      226965200
+    ],
+    "pool_size": 244,
+    "decomposition": [
+      "hierarchical transformers task-oriented dialogue",
+      "transformer hierarchy dialogue system performance",
+      "multi-level transformer dialogue state tracking"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        248779950,
+        5775806,
+        499924,
+        5743458,
+        15797899,
+        247447718,
+        8734771,
+        219636414,
+        17616273,
+        259370838,
+        259370595,
+        259290499,
+        236477368,
+        34703679,
+        16617118,
+        29816847,
+        257687773,
+        1650314,
+        253802645,
+        10046379
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        5743458,
+        499924,
+        252819406,
+        219636414,
+        236477368,
+        15797899,
+        247863127,
+        21692511,
+        259290499,
+        9090411,
+        229924005,
+        225068315,
+        259370595,
+        5562790,
+        236460291,
+        222133138,
+        215238613,
+        1941969,
+        234487236,
+        251465356
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        20243833,
+        51918794,
+        14333577,
+        17589803,
+        404542,
+        18792136,
+        1184214,
+        226965200,
+        209062599,
+        262064592,
+        7651994,
+        252819211,
+        2817150,
+        243865400,
+        14983394,
+        311594,
+        732089,
+        5566492,
+        15668825,
+        15951571
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        219636414,
+        252819406
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        499924,
+        5743458,
+        404542,
+        226965200,
+        215238613,
+        10151778,
+        243865400,
+        219636414,
+        7651994,
+        20243833,
+        219401758,
+        252819406,
+        1184214,
+        258967837,
+        51918794,
+        15668825,
+        14333577,
+        5566492,
+        1941969,
+        15797899
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 13.296799800009467
+  },
+  "reason_example": {
+    "query_id": "litsearch_239",
+    "query": "Could you suggest research that investigates how hierarchical structures within transformers enhance task-oriented dialogue systems?",
+    "top_results": [
+      {
+        "corpusid": 499924,
+        "score": 0.9038633108139038,
+        "reason": "bm25=0.953; dense=0.871; sub_bm25=0.763; sub_dense=0.780"
+      },
+      {
+        "corpusid": 5743458,
+        "score": 0.8204574584960938,
+        "reason": "bm25=1.000; dense=0.701; sub_bm25=0.983; sub_dense=0.809"
+      },
+      {
+        "corpusid": 404542,
+        "score": 0.8095813393592834,
+        "reason": "bm25=0.598; dense=0.950; sub_bm25=0.630; sub_dense=0.815"
+      },
+      {
+        "corpusid": 226965200,
+        "score": 0.7957732081413269,
+        "reason": "bm25=0.593; dense=0.931; sub_bm25=0.848; sub_dense=1.000"
+      },
+      {
+        "corpusid": 215238613,
+        "score": 0.7859902381896973,
+        "reason": "bm25=0.674; dense=0.861; sub_bm25=1.000; sub_dense=0.929"
+      }
+    ]
+  }
+}

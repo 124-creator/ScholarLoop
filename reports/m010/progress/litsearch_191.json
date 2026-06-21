@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_191",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_191",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_191",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_191",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 914,
+      "latency_s": 4.836787899956107
+    },
+    {
+      "query_id": "litsearch_191",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 375,
+      "latency_s": 2.5630398999201134
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_191",
+    "gold": [
+      233296292
+    ],
+    "pool_size": 241,
+    "decomposition": [
+      "contrastive learning sentence embeddings performance evaluation",
+      "unimodal representation learning contrastive sentence embeddings",
+      "contrastive learning for sentence embedding representation quality"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        13488062,
+        221761488,
+        233029494,
+        247450777,
+        994500,
+        237365390,
+        7181600,
+        240288762,
+        6215504,
+        14015791,
+        39654639,
+        53643423,
+        208058457,
+        250390721,
+        220047102,
+        258463915,
+        261494433,
+        5702359,
+        8535026,
+        15204692
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237386548,
+        252819166,
+        246411155,
+        247410985,
+        240288762,
+        235422673,
+        249625545,
+        247450777,
+        21719536,
+        231592776,
+        259370605,
+        222272463,
+        243865667,
+        252847570,
+        248299679,
+        219530980,
+        174799473,
+        7861345,
+        252918423,
+        254926550
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248377556,
+        174798413,
+        252847570,
+        248299679,
+        3525802,
+        247158698,
+        259370776,
+        240288762,
+        233296292,
+        231709407,
+        250390973,
+        237491889,
+        229924402,
+        235422673,
+        258765234,
+        24461982,
+        219530980,
+        252918345,
+        248496439,
+        223953658
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        252847570,
+        235422673,
+        248299679,
+        247450777,
+        246411155,
+        240288762,
+        247410985,
+        237386548,
+        252438842,
+        248377556,
+        7181600,
+        252819166
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        240288762,
+        248377556,
+        235422673,
+        252847570,
+        248299679,
+        247410985,
+        246411155,
+        219530980,
+        233296292,
+        3525802,
+        21719536,
+        252819166,
+        174799473,
+        247158698,
+        237386548,
+        259370776,
+        252438842,
+        247450777,
+        259370605,
+        259370654
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.748206099960953
+  },
+  "reason_example": {
+    "query_id": "litsearch_191",
+    "query": "Could you suggest a study that examines how well contrastive learning performs in unimodal representation learning, specifically for sentence embeddings?",
+    "top_results": [
+      {
+        "corpusid": 240288762,
+        "score": 0.9412864446640015,
+        "reason": "bm25=0.965; dense=0.925; sub_bm25=0.858; sub_dense=0.944"
+      },
+      {
+        "corpusid": 248377556,
+        "score": 0.938782811164856,
+        "reason": "bm25=0.847; dense=1.000; sub_bm25=0.890; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235422673,
+        "score": 0.9197235703468323,
+        "reason": "bm25=0.950; dense=0.899; sub_bm25=0.946; sub_dense=0.895"
+      },
+      {
+        "corpusid": 252847570,
+        "score": 0.9161159992218018,
+        "reason": "bm25=0.886; dense=0.936; sub_bm25=1.000; sub_dense=0.988"
+      },
+      {
+        "corpusid": 248299679,
+        "score": 0.9100202322006226,
+        "reason": "bm25=0.875; dense=0.933; sub_bm25=1.000; sub_dense=0.937"
+      }
+    ]
+  }
+}

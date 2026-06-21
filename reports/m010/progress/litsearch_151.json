@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_151",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_151",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_151",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_151",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 875,
+      "latency_s": 5.365066800033674
+    },
+    {
+      "query_id": "litsearch_151",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 232,
+      "latency_s": 2.1587271000025794
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_151",
+    "gold": [
+      259376566
+    ],
+    "pool_size": 263,
+    "decomposition": [
+      "ChatGPT reading comprehension task generation educational software",
+      "language model performance creating comprehension questions education",
+      "evaluation of AI-generated reading tasks for learning systems"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        235485037,
+        17347947,
+        17063555,
+        18009801,
+        52969056,
+        258486873,
+        218763259,
+        49667446,
+        235313749,
+        259376566,
+        8752606,
+        186206208,
+        84846285,
+        174800751,
+        6089322,
+        226283830,
+        666688,
+        254854373,
+        235097494,
+        53081058
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        259376566,
+        259376659,
+        259096053,
+        222124366,
+        474465,
+        259290499,
+        53113673,
+        261705995,
+        52011616,
+        14091969,
+        247996779,
+        247762948,
+        237563143,
+        207926231,
+        233365078,
+        209485573,
+        17347947,
+        222066993,
+        3933075,
+        51876026
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        259376566,
+        30866421,
+        865293,
+        6149114,
+        259376659,
+        16381451,
+        261341778,
+        150996427,
+        58114068,
+        237532411,
+        12667554,
+        15999969,
+        4951516,
+        18922107,
+        247762948,
+        15197674,
+        3935253,
+        15174121,
+        211990050,
+        10920633
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259376566,
+        259376659,
+        247996779,
+        258486873,
+        174798153,
+        865293,
+        52011616,
+        474465,
+        247762948,
+        84846285,
+        174800751,
+        14091969
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        259376566,
+        259376659,
+        261341778,
+        247762948,
+        30866421,
+        3935253,
+        865293,
+        150996427,
+        6149114,
+        4951516,
+        247996779,
+        58114068,
+        52011616,
+        16381451,
+        15174121,
+        12667554,
+        1400417,
+        474465,
+        46937316,
+        17041746
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 8.818709000013769
+  },
+  "reason_example": {
+    "query_id": "litsearch_151",
+    "query": "Could you recommend research that assesses how well language learning models, such as ChatGPT, perform in creating reading comprehension tasks for educational software?",
+    "top_results": [
+      {
+        "corpusid": 259376566,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259376659,
+        "score": 0.9181424379348755,
+        "reason": "bm25=0.959; dense=0.891; sub_bm25=0.774; sub_dense=0.735"
+      },
+      {
+        "corpusid": 261341778,
+        "score": 0.7379655838012695,
+        "reason": "bm25=0.543; dense=0.868; sub_bm25=0.826; sub_dense=0.862"
+      },
+      {
+        "corpusid": 247762948,
+        "score": 0.7286102175712585,
+        "reason": "bm25=0.574; dense=0.832; sub_bm25=1.000; sub_dense=0.956"
+      },
+      {
+        "corpusid": 30866421,
+        "score": 0.7260974049568176,
+        "reason": "bm25=0.408; dense=0.938; sub_bm25=0.828; sub_dense=0.915"
+      }
+    ]
+  }
+}

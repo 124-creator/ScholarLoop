@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_543",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_543",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_543",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_543",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1195,
+      "latency_s": 8.393293300061487
+    },
+    {
+      "query_id": "litsearch_543",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 286,
+      "latency_s": 2.6013177001150325
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_543",
+    "gold": [
+      258832501
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "sensitive data leakage in LLM prompt injection",
+      "privacy risks when prompting large language model APIs",
+      "confidential data exposure via LLM API prompts"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2186770,
+        42149039,
+        10441858,
+        17914161,
+        252991162,
+        6396257,
+        219309121,
+        258486910,
+        259833850,
+        257026,
+        252386188,
+        9149592,
+        237485280,
+        2021876,
+        258486877,
+        238259474,
+        248779887,
+        11614881,
+        260379071,
+        2057430
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        252991162,
+        253116650,
+        256461099,
+        243865365,
+        254877569,
+        259833814,
+        254408974,
+        258587920,
+        241583486,
+        249018130,
+        260379071,
+        14931569,
+        258832540,
+        256846498,
+        260334759,
+        250279831,
+        252715485,
+        256415953,
+        239016123,
+        252070588
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        261341825,
+        253080602,
+        248780476,
+        263311025,
+        252907607,
+        248779883,
+        264172710,
+        264935143,
+        259202685,
+        253383782,
+        246863735,
+        237353275,
+        263609662,
+        250089342,
+        256389762,
+        233289659,
+        16920454,
+        221655783,
+        252968000,
+        248512871
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        259370520,
+        253080602,
+        248227918,
+        221655783,
+        252847511,
+        250390702,
+        250279831,
+        259833814,
+        252991162,
+        249018130,
+        253447291,
+        253116650
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        253080602,
+        250279831,
+        259833814,
+        264172710,
+        253447291,
+        252917981,
+        263311025,
+        260334759,
+        248227918,
+        252070588,
+        249018130,
+        252439170,
+        252991162,
+        252847511,
+        233289659,
+        221655783,
+        241583486,
+        257378358,
+        252090014,
+        252716013
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.963781800004654
+  },
+  "reason_example": {
+    "query_id": "litsearch_543",
+    "query": "What paper considers sensitive data issue when prompting large language model APIs?",
+    "top_results": [
+      {
+        "corpusid": 253080602,
+        "score": 0.7898235321044922,
+        "reason": "bm25=0.615; dense=0.906; sub_bm25=0.914; sub_dense=0.996"
+      },
+      {
+        "corpusid": 250279831,
+        "score": 0.7775880098342896,
+        "reason": "bm25=0.776; dense=0.779; sub_bm25=0.586; sub_dense=0.742"
+      },
+      {
+        "corpusid": 259833814,
+        "score": 0.7675023078918457,
+        "reason": "bm25=0.841; dense=0.718; sub_bm25=0.698; sub_dense=0.641"
+      },
+      {
+        "corpusid": 264172710,
+        "score": 0.7672843933105469,
+        "reason": "bm25=0.648; dense=0.847; sub_bm25=0.676; sub_dense=0.755"
+      },
+      {
+        "corpusid": 253447291,
+        "score": 0.7516971230506897,
+        "reason": "bm25=0.699; dense=0.787; sub_bm25=0.573; sub_dense=0.684"
+      }
+    ]
+  }
+}

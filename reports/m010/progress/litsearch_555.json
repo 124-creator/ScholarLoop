@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_555",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_555",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_555",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_555",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 790,
+      "latency_s": 3.493333899998106
+    },
+    {
+      "query_id": "litsearch_555",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 280,
+      "latency_s": 3.0133133999770507
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_555",
+    "gold": [
+      263608672
+    ],
+    "pool_size": 276,
+    "decomposition": [
+      "mitigating softmax bottleneck language model",
+      "sampling errors softmax bottleneck",
+      "overcome softmax bottleneck sampling"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        3920851,
+        1891955,
+        10919045,
+        60718875,
+        33871285,
+        11200749,
+        12405045,
+        3923764,
+        30908728,
+        53093808,
+        17418191,
+        25036575,
+        12795660,
+        45438237,
+        70019618,
+        27838901,
+        227905451,
+        423521,
+        53222920,
+        696787
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        211132867,
+        26238954,
+        263608672,
+        248780434,
+        53113692,
+        174800527,
+        235254145,
+        244130351,
+        246904340,
+        54472058,
+        6035643,
+        252735034,
+        202775896,
+        5730661,
+        52012577,
+        221818756,
+        10583358,
+        15251907,
+        257557548,
+        214802971
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        26238954,
+        247447100,
+        263608672,
+        221818756,
+        52012577,
+        6035643,
+        248780434,
+        184488346,
+        249892255,
+        248478169,
+        238856739,
+        52892477,
+        237346776,
+        258187051,
+        220837131,
+        253397955,
+        253383782,
+        236134371,
+        30205929,
+        237523514
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        26238954,
+        248780434,
+        263608672,
+        214802971
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        26238954,
+        263608672,
+        248780434,
+        211132867,
+        53113692,
+        221818756,
+        6035643,
+        52012577,
+        244130351,
+        54472058,
+        174800527,
+        10583358,
+        247447100,
+        214802971,
+        235254145,
+        220837131,
+        237523514,
+        2922805,
+        16299141,
+        46929672
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.162132999976166
+  },
+  "reason_example": {
+    "query_id": "litsearch_555",
+    "query": "What paper mitigates language model sampling errors due to the softmax bottleneck?",
+    "top_results": [
+      {
+        "corpusid": 26238954,
+        "score": 0.9974216818809509,
+        "reason": "bm25=0.994; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 263608672,
+        "score": 0.939888596534729,
+        "reason": "bm25=0.983; dense=0.911; sub_bm25=1.000; sub_dense=0.855"
+      },
+      {
+        "corpusid": 248780434,
+        "score": 0.9231835007667542,
+        "reason": "bm25=0.964; dense=0.896; sub_bm25=1.000; sub_dense=0.959"
+      },
+      {
+        "corpusid": 211132867,
+        "score": 0.876619279384613,
+        "reason": "bm25=1.000; dense=0.794; sub_bm25=0.905; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53113692,
+        "score": 0.867652416229248,
+        "reason": "bm25=0.941; dense=0.819; sub_bm25=0.797; sub_dense=0.925"
+      }
+    ]
+  }
+}

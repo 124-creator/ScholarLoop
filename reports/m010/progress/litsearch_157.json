@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_157",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_157",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_157",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_157",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1301,
+      "latency_s": 8.997144100023434
+    },
+    {
+      "query_id": "litsearch_157",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 333,
+      "latency_s": 3.1246132999658585
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_157",
+    "gold": [
+      233296059
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "effect of top-k sampling on hallucination in text generation",
+      "decoding strategies and hallucination in language models",
+      "top-k sampling hallucination reduction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        51918763,
+        5213689,
+        13539364,
+        37532748,
+        207852724,
+        15664187,
+        35260301,
+        256390197,
+        64631730,
+        6665269,
+        12385862,
+        17620646,
+        248780155,
+        258378181,
+        248496538,
+        36159928,
+        7691927,
+        20625904,
+        248887396,
+        239020521
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        207852724,
+        256390197,
+        252683543,
+        257833668,
+        51918763,
+        248496538,
+        8790370,
+        215754413,
+        243865304,
+        248887396,
+        253098066,
+        2760413,
+        6526153,
+        253157949,
+        252355558,
+        252819365,
+        259370827,
+        247839276,
+        225062282,
+        236486127
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        247476018,
+        222290728,
+        253097869,
+        248227301,
+        18122479,
+        233296648,
+        234337004,
+        237558716,
+        244909449,
+        256000114,
+        250479403,
+        9368557,
+        207852724,
+        18186138,
+        10507068,
+        233296487,
+        233231373,
+        2340683,
+        259370827,
+        15628268
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        207852724,
+        257833668,
+        253097869,
+        259370827,
+        215754413,
+        235368160,
+        248887396
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        207852724,
+        253097869,
+        259370827,
+        234337004,
+        247476018,
+        215754413,
+        256000114,
+        257365979,
+        257833668,
+        253157949,
+        250479403,
+        252818942,
+        248887396,
+        235368160,
+        218487034,
+        247839276,
+        222290728,
+        248779872,
+        13250527,
+        256390197
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 13.71593110007234
+  },
+  "reason_example": {
+    "query_id": "litsearch_157",
+    "query": "Could you recommend research that examines how decoding strategies like top-k impact hallucinatory in generated text?",
+    "top_results": [
+      {
+        "corpusid": 207852724,
+        "score": 0.9018927812576294,
+        "reason": "bm25=1.000; dense=0.836; sub_bm25=1.000; sub_dense=0.725"
+      },
+      {
+        "corpusid": 253097869,
+        "score": 0.8174310922622681,
+        "reason": "bm25=0.629; dense=0.943; sub_bm25=0.777; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370827,
+        "score": 0.7422536015510559,
+        "reason": "bm25=0.653; dense=0.802; sub_bm25=1.000; sub_dense=0.928"
+      },
+      {
+        "corpusid": 234337004,
+        "score": 0.7408967018127441,
+        "reason": "bm25=0.564; dense=0.859; sub_bm25=0.770; sub_dense=0.685"
+      },
+      {
+        "corpusid": 247476018,
+        "score": 0.7389070987701416,
+        "reason": "bm25=0.347; dense=1.000; sub_bm25=0.561; sub_dense=0.911"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_039",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_039",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_039",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_039",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1246,
+      "latency_s": 7.698971999925561
+    },
+    {
+      "query_id": "litsearch_039",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 244,
+      "latency_s": 1.5905024000676349
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_039",
+    "gold": [
+      218470025
+    ],
+    "pool_size": 286,
+    "decomposition": [
+      "topic conditioning transformer argument generation",
+      "frame conditioning language models argument claims",
+      "transformer model argument generation conditioning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        15218055,
+        241583483,
+        36242,
+        2338256,
+        17409270,
+        218613661,
+        16985582,
+        13927379,
+        31466544,
+        8150087,
+        13412990,
+        11527895,
+        2375338,
+        1182312,
+        2421447,
+        249204538,
+        11789111,
+        18359398,
+        8985962,
+        8621713
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        21686891,
+        186228023,
+        17154841,
+        252818918,
+        3927803,
+        233189627,
+        2243454,
+        18770689,
+        17774903,
+        219401872,
+        248069254,
+        52155319,
+        244527086,
+        8985962,
+        219308399,
+        250390755,
+        18272731,
+        260063117,
+        235254233,
+        226262286
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248069254,
+        235446334,
+        257258185,
+        252819023,
+        247084163,
+        254535794,
+        253761976,
+        202541078,
+        233324363,
+        14599021,
+        252819463,
+        1197999,
+        204807333,
+        16134775,
+        232035936,
+        258832652,
+        252917728,
+        252367427,
+        10375802,
+        258378156
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248069254,
+        257258185,
+        252367427,
+        252819170,
+        18770689,
+        248118886,
+        241583483,
+        21686891,
+        218613661,
+        259290499,
+        36242,
+        8985962
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248069254,
+        235446334,
+        204807333,
+        257258185,
+        247084163,
+        239885913,
+        252819023,
+        3032231,
+        248118886,
+        241583483,
+        253384612,
+        226262286,
+        14599021,
+        186228023,
+        252819307,
+        250164349,
+        231698575,
+        226262313,
+        252367427,
+        258378156
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 11.304937699926086
+  },
+  "reason_example": {
+    "query_id": "litsearch_039",
+    "query": "I am looking for research that has explored topic and frame conditioning in transformer language models to enhance the quality of generated argument claims. Is there a paper discussing this approach?",
+    "top_results": [
+      {
+        "corpusid": 248069254,
+        "score": 0.9515334367752075,
+        "reason": "bm25=0.879; dense=1.000; sub_bm25=0.510; sub_dense=0.982"
+      },
+      {
+        "corpusid": 235446334,
+        "score": 0.8093339204788208,
+        "reason": "bm25=0.565; dense=0.972; sub_bm25=0.890; sub_dense=0.876"
+      },
+      {
+        "corpusid": 204807333,
+        "score": 0.7932114005088806,
+        "reason": "bm25=0.749; dense=0.823; sub_bm25=0.694; sub_dense=0.853"
+      },
+      {
+        "corpusid": 257258185,
+        "score": 0.7811806201934814,
+        "reason": "bm25=0.611; dense=0.895; sub_bm25=0.817; sub_dense=0.858"
+      },
+      {
+        "corpusid": 247084163,
+        "score": 0.7795745134353638,
+        "reason": "bm25=0.633; dense=0.878; sub_bm25=0.503; sub_dense=0.757"
+      }
+    ]
+  }
+}

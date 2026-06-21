@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_154",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_154",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_154",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_154",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1317,
+      "latency_s": 9.288758300011978
+    },
+    {
+      "query_id": "litsearch_154",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 429,
+      "latency_s": 3.701213899999857
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_154",
+    "gold": [
+      247922354
+    ],
+    "pool_size": 269,
+    "decomposition": [
+      "relaxed l0 regularization structured pruning transformer language model",
+      "structured pruning using L0 regularization for transformer models",
+      "downsizing large language models with relaxed l0 norm pruning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        23025063,
+        33871285,
+        8517763,
+        8752606,
+        221097249,
+        8028944,
+        218613661,
+        53639109,
+        199022672,
+        253098557,
+        249204538,
+        14775851,
+        250144216,
+        243865349,
+        202750230,
+        258685798,
+        2840902,
+        6293901,
+        7591554,
+        8191960
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235265761,
+        202750230,
+        237940329,
+        222134166,
+        52978527,
+        231925071,
+        244908535,
+        229297917,
+        246430598,
+        51880415,
+        263830786,
+        204009154,
+        254685796,
+        251135247,
+        220871147,
+        221879071,
+        258557145,
+        221845203,
+        189898449,
+        237485472
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        204009154,
+        259203115,
+        221761597,
+        239009625,
+        247939339,
+        245855868,
+        254685796,
+        250311509,
+        233210504,
+        233297003,
+        893688,
+        226262233,
+        2973141,
+        5057965,
+        246430598,
+        3276484,
+        237485472,
+        263830786,
+        14842352,
+        247922354
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        204009154,
+        263830786
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        204009154,
+        235265761,
+        254685796,
+        222134166,
+        202750230,
+        246430598,
+        263830786,
+        237485472,
+        250311509,
+        229297917,
+        221761597,
+        233297003,
+        247939339,
+        233210504,
+        52978527,
+        259203115,
+        239009625,
+        247922354,
+        5057965,
+        226262233
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.754259799956344
+  },
+  "reason_example": {
+    "query_id": "litsearch_154",
+    "query": "Could you recommend research that employs a relaxed l0 regularization for structured pruning to downsize language models with transformer architectures?",
+    "top_results": [
+      {
+        "corpusid": 204009154,
+        "score": 0.9187556505203247,
+        "reason": "bm25=0.797; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235265761,
+        "score": 0.8456393480300903,
+        "reason": "bm25=1.000; dense=0.743; sub_bm25=0.931; sub_dense=0.750"
+      },
+      {
+        "corpusid": 254685796,
+        "score": 0.8414504528045654,
+        "reason": "bm25=0.796; dense=0.872; sub_bm25=0.843; sub_dense=0.856"
+      },
+      {
+        "corpusid": 222134166,
+        "score": 0.835688054561615,
+        "reason": "bm25=0.865; dense=0.816; sub_bm25=0.970; sub_dense=1.000"
+      },
+      {
+        "corpusid": 202750230,
+        "score": 0.8306475281715393,
+        "reason": "bm25=0.898; dense=0.786; sub_bm25=0.961; sub_dense=0.774"
+      }
+    ]
+  }
+}

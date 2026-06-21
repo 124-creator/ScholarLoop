@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_378",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_378",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_378",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_378",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 946,
+      "latency_s": 5.852976000052877
+    },
+    {
+      "query_id": "litsearch_378",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 314,
+      "latency_s": 2.9816840999992564
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_378",
+    "gold": [
+      259063887
+    ],
+    "pool_size": 282,
+    "decomposition": [
+      "similarity score knowledge evaluation diffusion models",
+      "knowledge checking diffusion models similarity",
+      "diffusion model knowledge assessment similarity metric"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        6609459,
+        4380524,
+        4948322,
+        1936997,
+        7796573,
+        14395450,
+        2730165,
+        6368337,
+        5399186,
+        2156506,
+        1137464,
+        1913374,
+        14859639,
+        13984488,
+        18489348,
+        18597583,
+        10627917,
+        11754739,
+        256697545,
+        10975793
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        212414986,
+        245144350,
+        246823323,
+        15908805,
+        238354021,
+        249395201,
+        247011082,
+        252544798,
+        257767736,
+        252668297,
+        222140788,
+        252780146,
+        263909446,
+        264128429,
+        253018768,
+        480303,
+        261682404,
+        245131359,
+        252818958,
+        259341735
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        7604967,
+        6789063,
+        4948322,
+        6305097,
+        5696027,
+        1499545,
+        263047040,
+        813476,
+        257154238,
+        17786749,
+        9924879,
+        14378727,
+        15628981,
+        820832,
+        805379,
+        246016304,
+        6238699,
+        1359050,
+        1748444,
+        17107031
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        14378727,
+        5696027,
+        4948322,
+        7604967,
+        6368337,
+        15592518,
+        30958369,
+        257154238,
+        12823405,
+        14859639,
+        257767736,
+        15628981
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        4948322,
+        7604967,
+        5696027,
+        257154238,
+        14378727,
+        264128429,
+        9924879,
+        263047040,
+        15628981,
+        252438904,
+        246016304,
+        257255036,
+        257767736,
+        256662277,
+        3412920,
+        17107031,
+        256390009,
+        12395815,
+        1499545,
+        849597
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 9.810802099993452
+  },
+  "reason_example": {
+    "query_id": "litsearch_378",
+    "query": "Is there a paper that uses similarity scores to check knowledge in diffusion models",
+    "top_results": [
+      {
+        "corpusid": 4948322,
+        "score": 0.9396840929985046,
+        "reason": "bm25=0.859; dense=0.993; sub_bm25=0.726; sub_dense=0.973"
+      },
+      {
+        "corpusid": 7604967,
+        "score": 0.9365311861038208,
+        "reason": "bm25=0.841; dense=1.000; sub_bm25=0.509; sub_dense=1.000"
+      },
+      {
+        "corpusid": 5696027,
+        "score": 0.9114907383918762,
+        "reason": "bm25=0.820; dense=0.972; sub_bm25=0.738; sub_dense=0.999"
+      },
+      {
+        "corpusid": 257154238,
+        "score": 0.8996504545211792,
+        "reason": "bm25=0.811; dense=0.959; sub_bm25=1.000; sub_dense=0.841"
+      },
+      {
+        "corpusid": 14378727,
+        "score": 0.8957788944244385,
+        "reason": "bm25=0.831; dense=0.939; sub_bm25=0.750; sub_dense=1.000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_240",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_240",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_240",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_240",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1767,
+      "latency_s": 11.146018799976446
+    },
+    {
+      "query_id": "litsearch_240",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 239,
+      "latency_s": 1.9114436000818387
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_240",
+    "gold": [
+      235313346
+    ],
+    "pool_size": 253,
+    "decomposition": [
+      "document-level relation extraction evidence sentence quantity",
+      "number of evidence sentences needed for document-level RE",
+      "evidence sentence selection document-level relation extraction"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        220647035,
+        199553035,
+        3191517,
+        248182533,
+        10243239,
+        51876439,
+        7487870,
+        4943174,
+        7861345,
+        1119274,
+        235313346,
+        53083054,
+        6037404,
+        241583515,
+        645616,
+        53079679,
+        220041678,
+        8808686,
+        16783997,
+        252847468
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        235313346,
+        7861345,
+        189898081,
+        241583515,
+        220647035,
+        53083054,
+        16128424,
+        199553035,
+        230349190,
+        243865275,
+        256461026,
+        234776197,
+        196209746,
+        248405819,
+        202540088,
+        53079679,
+        226237381,
+        9021280,
+        3937260,
+        30041860
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        222291705,
+        256461026,
+        235313346,
+        1544522,
+        259376619,
+        51969223,
+        53081560,
+        21686891,
+        253384612,
+        218930278,
+        14181397,
+        231779510,
+        5979574,
+        12705175,
+        16463625,
+        232021663,
+        196209746,
+        821034,
+        15336646,
+        259376747
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        235313346,
+        248405819,
+        256461026,
+        189898081,
+        241583515,
+        196209746,
+        259376619,
+        226237381,
+        17252009,
+        6037404,
+        7861345,
+        220647035
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        235313346,
+        256461026,
+        222291705,
+        241583515,
+        259376619,
+        51969223,
+        189898081,
+        196209746,
+        1544522,
+        253185143,
+        5979574,
+        226237381,
+        53081560,
+        248405819,
+        1804771,
+        4711425,
+        231779510,
+        259376747,
+        6037404,
+        53599961
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.70846489991527
+  },
+  "reason_example": {
+    "query_id": "litsearch_240",
+    "query": "Could you suggest research that investigates how many evidence sentences are needed for document-level RE?",
+    "top_results": [
+      {
+        "corpusid": 235313346,
+        "score": 0.964990496635437,
+        "reason": "bm25=1.000; dense=0.942; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 256461026,
+        "score": 0.8662367463111877,
+        "reason": "bm25=0.715; dense=0.967; sub_bm25=0.853; sub_dense=0.933"
+      },
+      {
+        "corpusid": 222291705,
+        "score": 0.819110631942749,
+        "reason": "bm25=0.548; dense=1.000; sub_bm25=0.640; sub_dense=1.000"
+      },
+      {
+        "corpusid": 241583515,
+        "score": 0.7956773638725281,
+        "reason": "bm25=0.832; dense=0.772; sub_bm25=0.884; sub_dense=0.824"
+      },
+      {
+        "corpusid": 259376619,
+        "score": 0.789533257484436,
+        "reason": "bm25=0.667; dense=0.871; sub_bm25=0.667; sub_dense=0.817"
+      }
+    ]
+  }
+}

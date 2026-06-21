@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_139",
+      "system": "keyword",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_139",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_139",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_139",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 831,
+      "latency_s": 3.8689052999252453
+    },
+    {
+      "query_id": "litsearch_139",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 275,
+      "latency_s": 2.0285613000160083
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_139",
+    "gold": [
+      250390946
+    ],
+    "pool_size": 248,
+    "decomposition": [
+      "knowledge transfer structured database unstructured data question answering",
+      "transfer learning structured to unstructured for QA systems",
+      "improving question answering using structured knowledge base"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        247594811,
+        250390946,
+        199022673,
+        235482414,
+        4380524,
+        20167120,
+        18957176,
+        247363039,
+        2131938,
+        5541486,
+        67239762,
+        1405030,
+        1189640,
+        3841315,
+        2441567,
+        2491133,
+        5104836,
+        235482370,
+        12305296,
+        15164488
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "bm25": {
+      "ranked_top20": [
+        250390946,
+        248505942,
+        236459854,
+        16131683,
+        16534280,
+        5104836,
+        258866132,
+        247594360,
+        2131938,
+        249890268,
+        1405030,
+        44071286,
+        158047045,
+        228172,
+        12305296,
+        227230410,
+        235254629,
+        53249440,
+        4390256,
+        30656263
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        250390946,
+        247363039,
+        247594360,
+        52009210,
+        9753280,
+        132630,
+        236459854,
+        2136580,
+        3453374,
+        248780482,
+        232478685,
+        158047045,
+        52012400,
+        224803601,
+        255775285,
+        1263341,
+        215785913,
+        53079802,
+        1428529,
+        2131938
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        250390946,
+        236459854,
+        248505942,
+        247594360,
+        158047045
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390946,
+        247594360,
+        236459854,
+        248505942,
+        5104836,
+        2131938,
+        158047045,
+        1405030,
+        52009210,
+        232478685,
+        228172,
+        52012400,
+        14999613,
+        258866132,
+        3453374,
+        224803601,
+        16639862,
+        9753280,
+        132630,
+        16534280
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 7.5807555000064895
+  },
+  "reason_example": {
+    "query_id": "litsearch_139",
+    "query": "Could you recommend a study that investigates knowledge transfer from structured databases to unstructured data sources for improving sophisticated question-answering systems?",
+    "top_results": [
+      {
+        "corpusid": 250390946,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 247594360,
+        "score": 0.8342864513397217,
+        "reason": "bm25=0.770; dense=0.877; sub_bm25=0.659; sub_dense=0.925"
+      },
+      {
+        "corpusid": 236459854,
+        "score": 0.8270856142044067,
+        "reason": "bm25=0.811; dense=0.838; sub_bm25=0.662; sub_dense=0.929"
+      },
+      {
+        "corpusid": 248505942,
+        "score": 0.7962045669555664,
+        "reason": "bm25=0.867; dense=0.749; sub_bm25=0.902; sub_dense=0.878"
+      },
+      {
+        "corpusid": 5104836,
+        "score": 0.7902387380599976,
+        "reason": "bm25=0.789; dense=0.791; sub_bm25=0.931; sub_dense=0.835"
+      }
+    ]
+  }
+}

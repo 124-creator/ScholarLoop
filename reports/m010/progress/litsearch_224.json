@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_224",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_224",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_224",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_224",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1843,
+      "latency_s": 11.239967399975285
+    },
+    {
+      "query_id": "litsearch_224",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 310,
+      "latency_s": 2.6230005000252277
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_224",
+    "gold": [
+      237452236
+    ],
+    "pool_size": 243,
+    "decomposition": [
+      "synthetic label generation sentence pre-training few-shot learning",
+      "sentence-level synthetic labels pre-training large text corpus few-shot",
+      "self-supervised sentence labeling pre-training few-shot learning"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        254877171,
+        238857158,
+        237416585,
+        247594392,
+        33378828,
+        259370522,
+        52812604,
+        201126736,
+        17491681,
+        9359079,
+        258486935,
+        1705467,
+        220249727,
+        9685049,
+        230799344,
+        237353243,
+        218763259,
+        208058457,
+        253628242,
+        250391076
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        237353243,
+        247222714,
+        256461159,
+        252907242,
+        227231868,
+        53082972,
+        250391076,
+        248118703,
+        6926532,
+        259370751,
+        201696748,
+        248810745,
+        248779918,
+        252819502,
+        243865402,
+        221761685,
+        7861345,
+        248780145,
+        243844970,
+        247497303
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        237091103,
+        259370708,
+        252819017,
+        248779924,
+        238260199,
+        235755110,
+        238259429,
+        248177895,
+        252818945,
+        237502871,
+        226226658,
+        253237192,
+        243865402,
+        237099273,
+        239016858,
+        252280753,
+        256460948,
+        229923710,
+        222291675,
+        252819380
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        243844970,
+        254877171,
+        237353243,
+        259370751,
+        237416585,
+        259370708,
+        243865402,
+        230799344,
+        256461159,
+        250391076,
+        247222714,
+        211532588
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        252907242,
+        256461159,
+        259370708,
+        237353243,
+        250391076,
+        243865402,
+        237091103,
+        238260199,
+        256460948,
+        259370751,
+        252819017,
+        252818945,
+        211532588,
+        247497303,
+        243844970,
+        53082972,
+        254877171,
+        248177895,
+        246823215,
+        222133909
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 15.839731900021434
+  },
+  "reason_example": {
+    "query_id": "litsearch_224",
+    "query": "Could you suggest research that explores generating synthetic labels for sentences within a vast text collection to pre-train models for few-shot learning applications?",
+    "top_results": [
+      {
+        "corpusid": 252907242,
+        "score": 0.9045238494873047,
+        "reason": "bm25=0.973; dense=0.859; sub_bm25=0.920; sub_dense=0.820"
+      },
+      {
+        "corpusid": 256461159,
+        "score": 0.8904502987861633,
+        "reason": "bm25=0.978; dense=0.832; sub_bm25=0.823; sub_dense=0.793"
+      },
+      {
+        "corpusid": 259370708,
+        "score": 0.8881808519363403,
+        "reason": "bm25=0.808; dense=0.942; sub_bm25=0.754; sub_dense=0.778"
+      },
+      {
+        "corpusid": 237353243,
+        "score": 0.8747206926345825,
+        "reason": "bm25=1.000; dense=0.791; sub_bm25=0.996; sub_dense=0.845"
+      },
+      {
+        "corpusid": 250391076,
+        "score": 0.8684017658233643,
+        "reason": "bm25=0.871; dense=0.867; sub_bm25=0.797; sub_dense=0.882"
+      }
+    ]
+  }
+}

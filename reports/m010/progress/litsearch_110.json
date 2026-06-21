@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_110",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_110",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_110",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_110",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1403,
+      "latency_s": 10.093015899998136
+    },
+    {
+      "query_id": "litsearch_110",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 249,
+      "latency_s": 2.151782200089656
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_110",
+    "gold": [
+      221507798
+    ],
+    "pool_size": 255,
+    "decomposition": [
+      "large structured knowledge base Wikipedia entity linking",
+      "building knowledge base from Wikipedia for entity ranking",
+      "Wikipedia-derived knowledge base entity linking ranking tasks"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        2500356,
+        32027418,
+        1540972,
+        16711873,
+        2882092,
+        1100665,
+        8783027,
+        10206836,
+        7964196,
+        9859804,
+        13916271,
+        2745326,
+        14646431,
+        52969056,
+        250390913,
+        7500844,
+        12207182,
+        226226505,
+        577937,
+        226283893
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        8783027,
+        12207182,
+        32027418,
+        2745326,
+        5641077,
+        2882092,
+        1100665,
+        17266267,
+        12666306,
+        1663004,
+        195742461,
+        1240882,
+        216642086,
+        236459830,
+        49664709,
+        5815755,
+        238408158,
+        1662965,
+        226283893,
+        16677041
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        3800182,
+        8787864,
+        2815038,
+        10824175,
+        619056,
+        1835722,
+        10640473,
+        231698698,
+        1240882,
+        1943911,
+        1103103,
+        32027418,
+        29658212,
+        11830848,
+        5641077,
+        14392847,
+        4330038,
+        1125678,
+        250390913,
+        44161847
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        8783027,
+        32027418
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        8783027,
+        32027418,
+        12207182,
+        3800182,
+        5641077,
+        1240882,
+        1835722,
+        8787864,
+        17266267,
+        10824175,
+        10640473,
+        12666306,
+        231698698,
+        1125678,
+        1663004,
+        8360741,
+        1100665,
+        195742461,
+        13462726,
+        1943911
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 14.17707660002634
+  },
+  "reason_example": {
+    "query_id": "litsearch_110",
+    "query": "Can you show me a paper that built a large structured knowledge base from wikipedia, that can then be used for entity linking and ranking tasks?",
+    "top_results": [
+      {
+        "corpusid": 8783027,
+        "score": 0.9168974161148071,
+        "reason": "bm25=1.000; dense=0.861; sub_bm25=1.000; sub_dense=0.872"
+      },
+      {
+        "corpusid": 32027418,
+        "score": 0.9148090481758118,
+        "reason": "bm25=0.943; dense=0.896; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 12207182,
+        "score": 0.8971110582351685,
+        "reason": "bm25=0.999; dense=0.829; sub_bm25=1.000; sub_dense=0.907"
+      },
+      {
+        "corpusid": 3800182,
+        "score": 0.8920094966888428,
+        "reason": "bm25=0.730; dense=1.000; sub_bm25=0.777; sub_dense=0.937"
+      },
+      {
+        "corpusid": 5641077,
+        "score": 0.8879263401031494,
+        "reason": "bm25=0.894; dense=0.884; sub_bm25=0.890; sub_dense=0.934"
+      }
+    ]
+  }
+}

@@ -1,18 +1,18 @@
-# ScholarLoop · Trusted Paper Search and Evidence-Chain Agent
+# ScholarLoop - Trusted Paper Search and Evidence-Chain Agent
 
 **Live Demo:** https://124-creator.github.io/ScholarLoop/ | **GitHub:** https://github.com/124-creator/ScholarLoop
 
-ScholarLoop 是一个面向复杂学术查询的 AI Agent 原型：它把研究问题拆成可检索子问题，融合 BM25、Embedding 与 Cross-Encoder 排序，并把推荐论文组织成可核验的 evidence card / evidence matrix。
+ScholarLoop is a competition-grade AI Agent prototype for complex academic paper search. It decomposes research questions, combines BM25, dense retrieval and cross-encoder reranking, then presents recommendations as verifiable evidence cards and evidence matrices.
 
-> Status: **work in progress**. This repository is a public-safe snapshot for portfolio review. Runtime caches, private credentials, raw corpora, and large benchmark files are intentionally excluded. The GitHub Pages demo is a static, public-safe interactive walkthrough of the verified local demo, not a fake live search service.
+> Status: **public-safe competition snapshot, updated through M180**. The GitHub Pages demo is a static Studio walkthrough. Realtime endpoints are included in the source for local execution, but the public page does not call private keys or fabricate live results.
 
 ## Why this project
 
-普通论文搜索通常只给标题列表。ScholarLoop 关注科研流程里的三个问题：
+A normal paper search page usually returns a title list. ScholarLoop focuses on three stricter questions:
 
-1. 用户问题是否被拆成了可检索的研究对象、方法、数据、指标与争议点？
-2. 推荐结果是否比 BM25 / 单轮检索更好，并且可复现？
-3. 每个推荐理由是否能追溯到论文标题、摘要、正文片段或外部元数据，而不是模型自行编造？
+1. Is the user question decomposed into searchable objects, methods, datasets, metrics and controversy points?
+2. Are the recommendations better than BM25 / single-pass retrieval under a reproducible benchmark protocol?
+3. Can each recommendation reason be traced back to a title, abstract, source span or external metadata record instead of being invented by a model?
 
 ## Current verified results
 
@@ -23,25 +23,26 @@ The following metrics come from saved evaluation artifacts under `reports/`.
 | Retrieval benchmark | LitSearch 597 queries |
 | A-v2 ranking | F1 = 0.1312, Recall@20 = 0.7564, NDCG@20 = 0.5657 |
 | BM25 baseline | F1 = 0.0964, Recall@20 = 0.5683, NDCG@20 = 0.3931 |
-| Significance (LitSearch) | A-v2 vs BM25 ΔF1 = 0.0348, 95% CI = [0.0287, 0.0409] |
-| Cross-benchmark (zero-shot) | RealScholarQuery/PaSa: A-v2 F1 = 0.1972 vs BM25 F1 = 0.1058, ΔF1 = 0.0914, 95% CI = [0.0657, 0.1176], permutation p < 1e-4 — frozen M040 config |
+| Significance (LitSearch) | A-v2 vs BM25 delta-F1 = 0.0348, 95% CI = [0.0287, 0.0409] |
+| Cross-benchmark zero-shot | RealScholarQuery/PaSa: A-v2 F1 = 0.1972 vs BM25 F1 = 0.1058, delta-F1 = 0.0914, 95% CI = [0.0657, 0.1176], permutation p < 1e-4 under the frozen M040 config |
 | Evidence matrix | 30 rendered query docs, 0 fabricated citation fields in the public report |
 | External metadata | OpenAlex / Crossref resolver layer; 82 / 90 sample cards resolved in M050 |
 | Click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
-| Public smoke tests | 17 lightweight tests pass in this public snapshot |
-
+| Public smoke tests | 6 lightweight public-snapshot tests pass; the original full local suite recorded 77 passed in `reports/m180/pytest.txt` |
+| Latest presentation polish | M180 keeps live-query author/year/DOI as "to be verified" instead of guessing |
 
 ## Public demo
 
 Open: **https://124-creator.github.io/ScholarLoop/**
 
-The public page is designed for recruiter review and shows the core workflow without exposing private corpora or credentials:
+The public page is designed for recruiter and judge review:
 
 - **Search Loop:** query decomposition -> hybrid retrieval -> reranking -> evidence cards.
 - **Trust Loop:** source-span verification -> artifact trace -> human-review boundary.
 - **Click-to-verify:** fields are highlighted only when `source_text[char_span] == field value`; otherwise they remain marked for manual review.
+- **Realtime honesty:** live search is optional in local runtime; unavailable states stay explicit and never fabricate recommendation rows.
 
-Verified offline demo endpoints: `/pro`, `/api/verify_span`, `/api/trail` (offline, 0 LLM calls per request).
+Verified offline demo endpoints in local runtime: `/`, `/pro`, `/studio`, `/api/search`, `/api/verify_span`, `/api/trail`.
 
 ## Architecture
 
@@ -65,23 +66,23 @@ src/scholarloop/
   query/          query decomposition
   rank/           fusion and reranking logic
   retrieval/      BM25 and dense retrieval helpers
+  demo/           offline Studio, realtime wrapper, graph and click-to-verify views
   web/            lightweight stdlib Web demo renderer
 ```
 
 ## Reports included
 
 ```text
-reports/m010/A-main-evaluation-report.md       A-v1 retrieval/ranking evaluation
-reports/m020/evidence-matrix-report.md         evidence card / matrix report
-reports/m030/web-verification.json             Web rendering verification
-reports/m040/A-v2评测报告.md                    A-v2 ranking and significance report
-reports/m050/final_summary.json                metadata resolver summary
-reports/m050/data-sources.md                   public data-source notes
-reports/m060/RealScholarQuery-cross-benchmark.md  second-benchmark zero-shot generalization summary
-reports/m120/public_validation_summary.json      public demo verification summary
+reports/m040/results.json                  A-v2 ranking and significance artifacts
+reports/m060/results.json                  second-benchmark zero-shot generalization artifacts
+reports/m100/                              expert-score demo and graph/realtime additions
+reports/m120/validation_summary.json       interactive demo verification summary
+reports/m130..m180/validation_summary.json flagship Studio, bilingual, a11y and realtime-polish checks
+docs/submission/                           competition submission materials
+docs/dev/plans/                            original module plans through M180
 ```
 
-Large files are excluded on purpose: raw corpora, model caches, `.npy`, `.parquet`, `.zip`, `.omx`, and secrets are not part of this public snapshot.
+Large files are excluded on purpose: raw corpora, model caches, `.npy`, `.parquet`, `.zip`, `.omx`, and secrets are not part of this public snapshot. See `PUBLIC_SNAPSHOT.json` for the snapshot manifest.
 
 ## Quick validation
 
@@ -97,21 +98,14 @@ Run public smoke tests:
 python -m pytest -q
 ```
 
-These tests cover:
+These tests cover the static Studio page, verified metric artifacts, M180 validation summaries, OpenAlex fixture parsing, public-snapshot exclusions, and high-risk secret scanning.
 
-- deterministic train / holdout / test split logic;
-- metric and fusion behavior;
-- OpenAlex fixture parsing;
-- metadata resolver behavior;
-- cache redaction behavior.
-
-Full LitSearch evaluation is not included because it depends on excluded benchmark/corpus artifacts and runtime caches.
+The original full local suite recorded `77 passed` in `reports/m180/pytest.txt`, but reproducing it requires excluded raw/parquet corpora and optional model dependencies. Full LitSearch / RealScholarQuery evaluation is not included because it depends on excluded benchmark/corpus artifacts and runtime caches.
 
 ## Relationship to ResearchLoop
 
-ScholarLoop is one applied case of [ResearchLoop](https://github.com/124-creator/ResearchLoop): the project was planned and reviewed with a dual-loop workflow covering problem freezing, route selection, Test Oracle, implementation review, and retrospective artifacts.
+ScholarLoop is one applied case of [ResearchLoop](https://github.com/124-creator/ResearchLoop): the project was planned and reviewed with a dual-loop workflow covering problem freezing, route selection, Test Oracle, implementation review and retrospective artifacts.
 
 ## Author
 
-田中斐 · AI Agent / LLM application engineering portfolio
-
+Tian Zhongfei - AI Agent / LLM application engineering portfolio

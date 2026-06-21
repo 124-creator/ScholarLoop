@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_424",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_424",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_424",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_424",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1047,
+      "latency_s": 6.049066900042817
+    },
+    {
+      "query_id": "litsearch_424",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 433,
+      "latency_s": 4.002148300060071
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_424",
+    "gold": [
+      258865260
+    ],
+    "pool_size": 226,
+    "decomposition": [
+      "large event argument extraction dataset general domain",
+      "event coverage dataset event argument extraction",
+      "general domain event argument extraction dataset"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        7440991,
+        202770954,
+        189928589,
+        3264135,
+        235732095,
+        2460299,
+        247447718,
+        802701,
+        12005221,
+        6622478,
+        221819199,
+        222303317,
+        235097211,
+        174800674,
+        15332396,
+        838836,
+        248666079,
+        252090194,
+        53630335,
+        10229533
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258865260,
+        234347897,
+        250390839,
+        189928589,
+        238856763,
+        235694418,
+        2941631,
+        257154221,
+        8319029,
+        236460308,
+        7735519,
+        237940254,
+        226283533,
+        250390824,
+        235097211,
+        245144610,
+        218630327,
+        802701,
+        225063037,
+        256697370
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        202770954,
+        250390839,
+        252090194,
+        258865260,
+        238856763,
+        227905305,
+        222177108,
+        233219850,
+        30963769,
+        216562779,
+        257154221,
+        35386653,
+        250390824,
+        2941631,
+        253510953,
+        2114517,
+        235694418,
+        251903701,
+        236460308,
+        247618895
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258865260,
+        250390839
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        250390839,
+        258865260,
+        238856763,
+        235694418,
+        257154221,
+        2941631,
+        202770954,
+        30963769,
+        227905305,
+        250390824,
+        236460308,
+        252090194,
+        233219850,
+        222177108,
+        216562779,
+        234347897,
+        253223829,
+        225063037,
+        253761361,
+        216562330
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.864543100004084
+  },
+  "reason_example": {
+    "query_id": "litsearch_424",
+    "query": "What is a large event-coverage general-domain event argument extraction dataset?",
+    "top_results": [
+      {
+        "corpusid": 250390839,
+        "score": 0.9819053411483765,
+        "reason": "bm25=0.970; dense=0.990; sub_bm25=0.962; sub_dense=0.973"
+      },
+      {
+        "corpusid": 258865260,
+        "score": 0.964684247970581,
+        "reason": "bm25=1.000; dense=0.941; sub_bm25=1.000; sub_dense=0.888"
+      },
+      {
+        "corpusid": 238856763,
+        "score": 0.9160963296890259,
+        "reason": "bm25=0.920; dense=0.914; sub_bm25=0.990; sub_dense=0.899"
+      },
+      {
+        "corpusid": 235694418,
+        "score": 0.8809117078781128,
+        "reason": "bm25=0.919; dense=0.855; sub_bm25=0.889; sub_dense=0.832"
+      },
+      {
+        "corpusid": 257154221,
+        "score": 0.8776153326034546,
+        "reason": "bm25=0.886; dense=0.872; sub_bm25=0.866; sub_dense=0.846"
+      }
+    ]
+  }
+}

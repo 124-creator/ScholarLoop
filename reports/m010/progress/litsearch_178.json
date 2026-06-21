@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_178",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_178",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_178",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_178",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1546,
+      "latency_s": 11.304911000072025
+    },
+    {
+      "query_id": "litsearch_178",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 285,
+      "latency_s": 2.301426399964839
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_178",
+    "gold": [
+      248780467
+    ],
+    "pool_size": 230,
+    "decomposition": [
+      "autoencoder text generation e-commerce product description",
+      "autoencoder integrating product title features description generation",
+      "autoencoder multi-modal text generation for product descriptions"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        261494454,
+        53245252,
+        12706259,
+        15256469,
+        16637528,
+        17604219,
+        1880320,
+        233364937,
+        248780461,
+        397093,
+        5639223,
+        258486873,
+        15569102,
+        62132187,
+        7294484,
+        6681692,
+        13298036,
+        44072769,
+        13479388,
+        231709283
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        248780467,
+        248780483,
+        53245252,
+        261494454,
+        102486945,
+        220445938,
+        222178293,
+        221703022,
+        2088138,
+        18840587,
+        234096175,
+        12104663,
+        3279351,
+        248780342,
+        17078659,
+        218862749,
+        219124093,
+        2839322,
+        7729831,
+        227231218
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        248780483,
+        53245252,
+        248780467,
+        373945,
+        36574384,
+        18840587,
+        15395664,
+        14131495,
+        235352757,
+        229297480,
+        233033716,
+        260704672,
+        258564539,
+        146120527,
+        250391024,
+        51965823,
+        261494454,
+        227231218,
+        259370711,
+        233033554
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        248780467,
+        36574384,
+        53245252,
+        248780483,
+        102486945
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        248780467,
+        248780483,
+        53245252,
+        261494454,
+        18840587,
+        36574384,
+        102486945,
+        15395664,
+        222178293,
+        220445938,
+        373945,
+        221703022,
+        227231218,
+        2088138,
+        14131495,
+        250391024,
+        258564539,
+        218862749,
+        219124093,
+        235352757
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 14.92488379997667
+  },
+  "reason_example": {
+    "query_id": "litsearch_178",
+    "query": "Could you recommend research that investigates using autoencoder architectures to generate e-commerce product descriptions by integrating product titles, features, and supplementary descriptions crafted by marketers?",
+    "top_results": [
+      {
+        "corpusid": 248780467,
+        "score": 0.96443772315979,
+        "reason": "bm25=1.000; dense=0.941; sub_bm25=1.000; sub_dense=0.927"
+      },
+      {
+        "corpusid": 248780483,
+        "score": 0.9567713737487793,
+        "reason": "bm25=0.892; dense=1.000; sub_bm25=0.895; sub_dense=1.000"
+      },
+      {
+        "corpusid": 53245252,
+        "score": 0.9389530420303345,
+        "reason": "bm25=0.885; dense=0.975; sub_bm25=0.836; sub_dense=0.970"
+      },
+      {
+        "corpusid": 261494454,
+        "score": 0.7983293533325195,
+        "reason": "bm25=0.816; dense=0.787; sub_bm25=0.610; sub_dense=0.860"
+      },
+      {
+        "corpusid": 18840587,
+        "score": 0.7782174348831177,
+        "reason": "bm25=0.685; dense=0.840; sub_bm25=0.699; sub_dense=0.810"
+      }
+    ]
+  }
+}

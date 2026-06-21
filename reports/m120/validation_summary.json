@@ -1,0 +1,53 @@
+{
+  "schema_version": "m120.validation_summary.v1",
+  "checked_at_utc": "2026-06-21T01:07:55.749589+00:00",
+  "status": "implemented_not_verified",
+  "span_fidelity": {
+    "report": "reports/m120/span_fidelity.json",
+    "status": "PASS",
+    "mismatch_count": 0,
+    "total_checks": 1170,
+    "highlightable_count": 989
+  },
+  "trail_fidelity": {
+    "report": "reports/m120/trail_fidelity.json",
+    "status": "PASS",
+    "fabrication": 0,
+    "missing_source_count": 0,
+    "step_count": 120
+  },
+  "smoke": {
+    "report": "reports/m120/smoke.txt",
+    "passed": true
+  },
+  "m080_verify_replay": {
+    "report": "reports/m120/m080_verify_replay/fidelity_audit.json",
+    "status": "PASS",
+    "fabrication": 0,
+    "out_of_pool": 0,
+    "runnable": true
+  },
+  "tests": {
+    "report": "reports/m120/pytest.txt",
+    "passed": true,
+    "summary_line": "50 passed in 98.13s (0:01:38)"
+  },
+  "secret_scan": {
+    "report": "reports/m120/secret_scan.json",
+    "passed": true,
+    "findings_count": 0
+  },
+  "upstream_hashes": {
+    "report": "reports/m120/upstream_hashes.json",
+    "passed": true,
+    "changed_count": 0
+  },
+  "new_files": [
+    "src/scholarloop/demo/source_text.py",
+    "src/scholarloop/demo/interactive.py",
+    "tests/test_m120_interactive_demo.py"
+  ],
+  "passed_for_implementation": true,
+  "plan_status_line": "- 状态：implemented（2026-06-21 Codex 执行完成，待总指挥初查；不自宣 verified；原 Router 人类批准 draft→approved；**基于网络调研把 Demo 提到顶尖：以\"可核验的可信\"为中心**；三支柱=点即核验+推理轨迹+视觉打磨均必做）",
+  "retrospective": "docs/dev/retrospectives/120-Demo顶尖化升级-复盘.md"
+}

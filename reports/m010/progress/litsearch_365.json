@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_365",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_365",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_365",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_365",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1134,
+      "latency_s": 6.913807500037365
+    },
+    {
+      "query_id": "litsearch_365",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 387,
+      "latency_s": 3.675716800033115
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_365",
+    "gold": [
+      258959116
+    ],
+    "pool_size": 264,
+    "decomposition": [
+      "dialogue dataset persona image-text episodic memory",
+      "image-grounded dialogue persona memory dataset",
+      "conversational dataset speaker persona grounded in image text pairs"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        37409061,
+        5899668,
+        36102155,
+        18792136,
+        245616871,
+        247940018,
+        252211995,
+        3765717,
+        153312318,
+        56417298,
+        259370734,
+        258959116,
+        39774871,
+        247447718,
+        1257680,
+        3458362,
+        8535026,
+        11846872,
+        29974541,
+        31856765
+      ],
+      "P@10": 0.0,
+      "R@20": 1.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        258959116,
+        237416535,
+        258378309,
+        259370734,
+        215786161,
+        67956318,
+        153312318,
+        259370742,
+        216914409,
+        252819352,
+        1788,
+        2135692,
+        248780162,
+        245616873,
+        233295981,
+        230433768,
+        259164710,
+        258971765,
+        252211995,
+        44164810
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        258959116,
+        247411350,
+        54000086,
+        2955580,
+        259370742,
+        236034497,
+        52197708,
+        44164810,
+        11278768,
+        830109,
+        251718707,
+        216914409,
+        253553371,
+        16886023,
+        207853069,
+        3146372,
+        21692777,
+        250210913,
+        2817150,
+        263609485
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        258959116,
+        259370742,
+        67956318,
+        237416535,
+        215786161,
+        3458362,
+        37409061,
+        259370734,
+        56417298,
+        153312318,
+        235253731,
+        216914409
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        258959116,
+        259370742,
+        237416535,
+        216914409,
+        247411350,
+        44164810,
+        251718707,
+        67956318,
+        2955580,
+        263609485,
+        252819278,
+        215786161,
+        258378309,
+        253553371,
+        235417177,
+        249017982,
+        215745354,
+        54000086,
+        250210913,
+        222178118
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 12.1308960999595
+  },
+  "reason_example": {
+    "query_id": "litsearch_365",
+    "query": "Is there a dialogue dataset where a speaker's utterance is grounded in their persona, consisting of image-text pairs representing their episodic memories?",
+    "top_results": [
+      {
+        "corpusid": 258959116,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 259370742,
+        "score": 0.7812992930412292,
+        "reason": "bm25=0.669; dense=0.856; sub_bm25=0.582; sub_dense=0.895"
+      },
+      {
+        "corpusid": 237416535,
+        "score": 0.7705583572387695,
+        "reason": "bm25=0.771; dense=0.770; sub_bm25=0.942; sub_dense=0.925"
+      },
+      {
+        "corpusid": 216914409,
+        "score": 0.7560935616493225,
+        "reason": "bm25=0.664; dense=0.818; sub_bm25=0.565; sub_dense=0.961"
+      },
+      {
+        "corpusid": 247411350,
+        "score": 0.7427324056625366,
+        "reason": "bm25=0.562; dense=0.863; sub_bm25=0.756; sub_dense=0.905"
+      }
+    ]
+  }
+}

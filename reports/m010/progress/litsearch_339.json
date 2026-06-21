@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_339",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_339",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_339",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_339",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 972,
+      "latency_s": 5.955849299905822
+    },
+    {
+      "query_id": "litsearch_339",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 290,
+      "latency_s": 3.226229300023988
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_339",
+    "gold": [
+      235265909
+    ],
+    "pool_size": 275,
+    "decomposition": [
+      "language model architecture comparison natural language text properties",
+      "transformer LSTM generated text alignment with human language",
+      "analysis of language model output deviating from natural language statistics"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        243865349,
+        1010309,
+        2896894,
+        21706647,
+        1144879,
+        219964943,
+        11815268,
+        1617038,
+        252367603,
+        10986188,
+        219305462,
+        438559,
+        297068,
+        8502465,
+        6600319,
+        24337225,
+        1585700,
+        10047522,
+        16163624,
+        211205183
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        11815268,
+        260887250,
+        257038005,
+        218487293,
+        57373775,
+        438559,
+        248084939,
+        247597105,
+        14950200,
+        53598310,
+        252624545,
+        248693452,
+        7637949,
+        231709283,
+        51880415,
+        13321212,
+        7592530,
+        226283796,
+        260125086,
+        25940328
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        18816789,
+        2652169,
+        235265909,
+        256627634,
+        14162,
+        232021982,
+        15628268,
+        215754413,
+        15595465,
+        5387767,
+        46533943,
+        9771696,
+        33107619,
+        13250527,
+        248779883,
+        4898223,
+        7295189,
+        608189,
+        261507859,
+        261509673
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        18816789,
+        215754413,
+        237507028
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        18816789,
+        235265909,
+        2652169,
+        215754413,
+        7295189,
+        5387767,
+        7637949,
+        15628268,
+        235293810,
+        8861532,
+        256627634,
+        13250527,
+        229371403,
+        14162,
+        5489162,
+        9771696,
+        232097626,
+        261507859,
+        261509673,
+        17623895
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 10.92003489995841
+  },
+  "reason_example": {
+    "query_id": "litsearch_339",
+    "query": "Which paper has conducted a thorough analysis of how language models of different architectures generate text that either aligns with or deviates from the properties of natural human language?",
+    "top_results": [
+      {
+        "corpusid": 18816789,
+        "score": 0.8873683214187622,
+        "reason": "bm25=0.718; dense=1.000; sub_bm25=0.530; sub_dense=1.000"
+      },
+      {
+        "corpusid": 235265909,
+        "score": 0.8244776129722595,
+        "reason": "bm25=0.775; dense=0.858; sub_bm25=0.786; sub_dense=1.000"
+      },
+      {
+        "corpusid": 2652169,
+        "score": 0.8234832286834717,
+        "reason": "bm25=0.738; dense=0.881; sub_bm25=0.442; sub_dense=0.653"
+      },
+      {
+        "corpusid": 215754413,
+        "score": 0.8108982443809509,
+        "reason": "bm25=0.852; dense=0.784; sub_bm25=0.432; sub_dense=0.690"
+      },
+      {
+        "corpusid": 7295189,
+        "score": 0.7792204022407532,
+        "reason": "bm25=0.840; dense=0.739; sub_bm25=0.686; sub_dense=0.713"
+      }
+    ]
+  }
+}

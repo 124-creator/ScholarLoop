@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_166",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_166",
+      "system": "bm25",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_166",
+      "system": "neural_embedding",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_166",
+      "system": "single_llm",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 2096,
+      "latency_s": 19.243329500081018
+    },
+    {
+      "query_id": "litsearch_166",
+      "system": "scholarloop_a",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 328,
+      "latency_s": 2.738334900001064
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_166",
+    "gold": [
+      237353321
+    ],
+    "pool_size": 239,
+    "decomposition": [
+      "knowledge base generation non-differentiable evaluation metrics",
+      "using BLEU METEOR chrF++ to improve knowledge base generation",
+      "reinforcement learning for knowledge base generation with BLEU METEOR chrF++"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        324333,
+        2136580,
+        10297558,
+        231709269,
+        220047812,
+        247613006,
+        51985622,
+        186206216,
+        559683,
+        1300761,
+        1397505,
+        9181672,
+        245297783,
+        52898286,
+        1612367,
+        10595802,
+        15562838,
+        259129582,
+        16930771,
+        11795155
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        231709269,
+        13048371,
+        201742649,
+        186206216,
+        201742578,
+        10297558,
+        52898286,
+        870211,
+        258685435,
+        51985622,
+        247613006,
+        220047812,
+        258967321,
+        207901226,
+        253761140,
+        259129582,
+        250390603,
+        10198985,
+        222140805,
+        5189165
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        1851959,
+        253098066,
+        253098905,
+        208541377,
+        235097584,
+        10438447,
+        17640147,
+        259165244,
+        174797747,
+        52010727,
+        21713497,
+        49742509,
+        8842519,
+        703192,
+        253761140,
+        236477697,
+        15493755,
+        259370779,
+        226282223,
+        13048371
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "single_llm": {
+      "ranked_top20": [
+        52898286,
+        13048371,
+        186206216,
+        201742649,
+        10438447,
+        1851959,
+        253761140,
+        253098066,
+        207901226,
+        231709269,
+        324333,
+        10297558
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        1851959,
+        13048371,
+        10438447,
+        253098066,
+        253761140,
+        186206216,
+        235097584,
+        207901226,
+        17640147,
+        258685435,
+        174797747,
+        15493755,
+        201742649,
+        253098905,
+        237492016,
+        52898286,
+        10297558,
+        254877384,
+        9914195,
+        201742578
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "elapsed_s": 23.40107620006893
+  },
+  "reason_example": {
+    "query_id": "litsearch_166",
+    "query": "Could you recommend research that improves knowledge base generation using non-differentiable evaluation metrics like BLEU, METEOR, and chrF++?",
+    "top_results": [
+      {
+        "corpusid": 1851959,
+        "score": 0.8711768388748169,
+        "reason": "bm25=0.678; dense=1.000; sub_bm25=0.765; sub_dense=0.915"
+      },
+      {
+        "corpusid": 13048371,
+        "score": 0.8637042045593262,
+        "reason": "bm25=0.969; dense=0.793; sub_bm25=0.823; sub_dense=0.859"
+      },
+      {
+        "corpusid": 10438447,
+        "score": 0.8447699546813965,
+        "reason": "bm25=0.750; dense=0.908; sub_bm25=0.802; sub_dense=0.945"
+      },
+      {
+        "corpusid": 253098066,
+        "score": 0.8314224481582642,
+        "reason": "bm25=0.682; dense=0.931; sub_bm25=0.515; sub_dense=0.883"
+      },
+      {
+        "corpusid": 253761140,
+        "score": 0.811863899230957,
+        "reason": "bm25=0.811; dense=0.813; sub_bm25=0.787; sub_dense=0.683"
+      }
+    ]
+  }
+}

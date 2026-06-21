@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "query_id": "litsearch_529",
+      "system": "keyword",
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_529",
+      "system": "bm25",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_529",
+      "system": "neural_embedding",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 0,
+      "latency_s": 0.0
+    },
+    {
+      "query_id": "litsearch_529",
+      "system": "single_llm",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 1180,
+      "latency_s": 6.515351099893451
+    },
+    {
+      "query_id": "litsearch_529",
+      "system": "scholarloop_a",
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182,
+      "hallucinated_or_out_of_pool": 0,
+      "total_tokens": 312,
+      "latency_s": 2.430700899916701
+    }
+  ],
+  "per_query": {
+    "query_id": "litsearch_529",
+    "gold": [
+      264426077
+    ],
+    "pool_size": 270,
+    "decomposition": [
+      "parameterizing neural networks as proximal operators",
+      "neural network proximal operator parameterization",
+      "deep learning proximal operator representation"
+    ],
+    "keyword": {
+      "ranked_top20": [
+        27628462,
+        126584,
+        15378527,
+        52894354,
+        17575823,
+        5077395,
+        12160022,
+        202780226,
+        1937581,
+        3097133,
+        215806653,
+        234487239,
+        1870512,
+        14029756,
+        34359113,
+        945800,
+        53093808,
+        252624698,
+        202734152,
+        1463401
+      ],
+      "P@10": 0.0,
+      "R@20": 0.0,
+      "F1": 0.0
+    },
+    "bm25": {
+      "ranked_top20": [
+        264426077,
+        246411377,
+        27628462,
+        52895739,
+        3421136,
+        264825357,
+        52116963,
+        1870512,
+        224705257,
+        13239389,
+        251649222,
+        211838009,
+        52948476,
+        238583252,
+        231855326,
+        7586401,
+        234357656,
+        231749906,
+        210861275,
+        238419267
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "neural_embedding": {
+      "ranked_top20": [
+        264426077,
+        203641746,
+        15872881,
+        264825357,
+        17611960,
+        252780488,
+        8739352,
+        59551640,
+        211838009,
+        52894354,
+        257365037,
+        224705257,
+        3421136,
+        203734686,
+        201058750,
+        229371253,
+        208309981,
+        208921206,
+        6666117,
+        52895739
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "single_llm": {
+      "ranked_top20": [
+        264426077,
+        246411377,
+        52895739,
+        3421136
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "scholarloop_a": {
+      "ranked_top20": [
+        264426077,
+        264825357,
+        52895739,
+        246411377,
+        3421136,
+        224705257,
+        211838009,
+        52894354,
+        208921206,
+        15872881,
+        203593355,
+        203641746,
+        53327717,
+        52948476,
+        257365037,
+        17611960,
+        234357656,
+        252780488,
+        238419267,
+        201058750
+      ],
+      "P@10": 0.1,
+      "R@20": 1.0,
+      "F1": 0.18181818181818182
+    },
+    "elapsed_s": 9.779459799989127
+  },
+  "reason_example": {
+    "query_id": "litsearch_529",
+    "query": "Is there any paper that explores ways to parameterize neural networks as proximal operators?",
+    "top_results": [
+      {
+        "corpusid": 264426077,
+        "score": 1.0,
+        "reason": "bm25=1.000; dense=1.000; sub_bm25=1.000; sub_dense=1.000"
+      },
+      {
+        "corpusid": 264825357,
+        "score": 0.7654209136962891,
+        "reason": "bm25=0.528; dense=0.924; sub_bm25=0.789; sub_dense=1.000"
+      },
+      {
+        "corpusid": 52895739,
+        "score": 0.7532117366790771,
+        "reason": "bm25=0.578; dense=0.870; sub_bm25=0.628; sub_dense=0.918"
+      },
+      {
+        "corpusid": 246411377,
+        "score": 0.7433452606201172,
+        "reason": "bm25=0.608; dense=0.833; sub_bm25=1.000; sub_dense=0.842"
+      },
+      {
+        "corpusid": 3421136,
+        "score": 0.741263747215271,
+        "reason": "bm25=0.530; dense=0.882; sub_bm25=0.561; sub_dense=0.908"
+      }
+    ]
+  }
+}
