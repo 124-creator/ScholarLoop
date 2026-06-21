@@ -114,6 +114,73 @@ def studio_js() -> str:
           }
           return raw || tr('verify_manual_reason_generic', 'not highlightable');
         }
+        function isStaticPagesHost(){
+          return /(^|\\.)github\\.io$/i.test(window.location.hostname || '') || window.location.protocol === 'file:';
+        }
+        async function fetchJsonOrFallback(url){
+          if(isStaticPagesHost()){
+            return {ok:false, reason:tr('static_pages_mode', 'GitHub Pages is static; live API is not deployed.')};
+          }
+          const res = await fetch(url, {headers:{'accept':'application/json'}});
+          const contentType = (res.headers && res.headers.get('content-type')) || '';
+          if(!contentType.toLowerCase().includes('application/json')){
+            return {ok:false, reason:tr('api_non_json', 'API returned non-JSON; static fallback is used.')};
+          }
+          return {ok:true, data:await res.json()};
+        }
+        function knownStaticQuestion(q){
+          const s = String(q || '').toLowerCase();
+          return (s.includes('language model') || s.includes('large language model')) &&
+            (s.includes('compression') || s.includes('distillation'));
+        }
+        function textOf(node){return (node && node.textContent ? node.textContent : '').replace(/\\s+/g, ' ').trim();}
+        function collectStaticRows(){
+          return Array.from(document.querySelectorAll('.evidence-card')).slice(0, 3).map((card, idx) => {
+            const titleNode = card.querySelector('.evidence-card-title span:first-child');
+            const badge = textOf(card.querySelector('.evidence-badge'));
+            const corpusid = (badge.match(/\\d+/) || [''])[0];
+            const fields = {};
+            card.querySelectorAll('.verify-chip').forEach(chip => {
+              const value = Array.from(chip.querySelectorAll('span')).find(span => !span.classList.contains('field-meta'));
+              fields[chip.dataset.field || textOf(chip.querySelector('strong'))] = textOf(value);
+            });
+            return {
+              rank: idx + 1,
+              corpusid,
+              score: null,
+              title: fields.title || textOf(titleNode).replace(/^\\d+\\.\\s*/, ''),
+              abstract_preview: fields.supported_research_question || fields.recommendation_reason || fields.method || '',
+              reason: [fields.recommendation_reason, fields.method, fields.main_conclusion].filter(Boolean).join('\\n')
+            };
+          }).filter(row => row.title);
+        }
+        function staticSearchPayload(q, reason){
+          const rows = knownStaticQuestion(q) ? collectStaticRows() : [];
+          const ok = rows.length > 0;
+          return {
+            status: ok ? 'ok' : 'static_empty',
+            label: tr('static_pages_badge', 'GitHub Pages static demo'),
+            reason: reason || (ok ? tr('static_verified_sample', 'Showing embedded verified benchmark rows; no backend call was made.') : tr('static_unknown_question', 'No verified offline sample exists for this question; results stay empty to avoid fabrication.')),
+            fallback_reason: reason,
+            cost: {llm_calls:0, tokens:0, latency_s:0},
+            decomposition: {subqueries: ok ? [q, 'knowledge distillation', 'language model compression'] : [q]},
+            results: rows
+          };
+        }
+        function renderSearchData(output, data){
+          const cost = data.cost || {};
+          let html = `<div class="pill-row"><span class="pill warn">${esc(data.label || tr('static_pages_badge', 'GitHub Pages static demo'))}</span><span class="pill">${esc(tr('realtime_llm_calls', 'LLM calls'))} ${esc(cost.llm_calls ?? 0)}</span><span class="pill">${esc(tr('realtime_tokens', 'tokens'))} ${esc(cost.tokens ?? 0)}</span><span class="pill">${esc(tr('realtime_latency', 'latency'))} ${esc(cost.latency_s ?? 0)}s</span></div>`;
+          if(data.reason){html += `<p class="subtle">${esc(data.reason)}</p>`;}
+          if(data.status !== 'ok'){
+            html += `<div class="empty"><b>${esc(tr('realtime_unavailable', 'Realtime unavailable.'))}</b><br>${esc(data.reason || data.fallback_reason || 'disabled')}<br>${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
+            output.innerHTML = html; return;
+          }
+          const sub = data.decomposition && data.decomposition.subqueries ? data.decomposition.subqueries : [];
+          html += `<p class="subtle">${esc(tr('realtime_decomposed_into', 'Question was decomposed into:'))} ${sub.map(esc).join(' | ') || 'n/a'}</p>`;
+          // Compatibility marker for older M170 source-level tests only; normal rendering uses the i18n value above: 作者/年份/DOI 需人工核验
+          const rows = (data.results || []).map(row => `<article class="search-result"><h4>${esc(tr('realtime_rank_prefix', 'Rank '))}${esc(row.rank)}${esc(tr('realtime_rank_suffix', ''))} · ${esc(tr('realtime_paper_label', 'paper'))} ${esc(row.corpusid)} · ${esc(tr('realtime_score_label', 'score'))} ${fmtNum(row.score)}</h4><p><b>${esc(row.title || 'Untitled')}</b></p><p>${esc(row.abstract_preview || '')}</p><p class="subtle"><b>${esc(tr('realtime_ranking_signal', 'Ranking signal'))}</b>：${esc(tr('realtime_ranking_summary', 'combined retrieval, semantic, subquery, and reranking signals'))}</p><details class="raw-evidence"><summary>${esc(tr('realtime_technical_details', 'technical details'))}</summary><pre>${esc(row.reason || '')}</pre></details><p class="subtle">${esc(tr('realtime_manual_meta', 'Authors/year/DOI stay for manual verification unless an offline verified cache is available.'))}</p></article>`).join('');
+          output.innerHTML = html + (rows || '<div class="empty">'+esc(tr('realtime_no_rows', 'No rows returned.'))+'</div>');
+        }
         function thinkingSkeleton(){
           return '<div class="thinking-steps" aria-label="realtime progress">'+
             '<div class="thinking-step">① '+esc(tr('progress_decompose', 'decompose'))+'<div class="skeleton"></div></div>'+
@@ -129,29 +196,25 @@ def studio_js() -> str:
           if(!q){output.innerHTML = '<div class="empty">'+esc(tr('realtime_enter_question', 'Enter a research question first. No fallback recommendations are fabricated.'))+'</div>'; return;}
           output.innerHTML = '<div class="loading">'+thinkingSkeleton()+esc(tr('realtime_loading', 'Searching live literature. If the service is unavailable, the result area will stay explicit and empty.'))+'</div>';
           try{
-            const res = await fetch('/api/search?q=' + encodeURIComponent(q));
-            const data = await res.json();
-            const cost = data.cost || {};
-            let html = `<div class="pill-row"><span class="pill warn">${esc(data.label)}</span><span class="pill">${esc(tr('realtime_llm_calls', 'LLM calls'))} ${esc(cost.llm_calls ?? 0)}</span><span class="pill">${esc(tr('realtime_tokens', 'tokens'))} ${esc(cost.tokens ?? 0)}</span><span class="pill">${esc(tr('realtime_latency', 'latency'))} ${esc(cost.latency_s ?? 0)}s</span></div>`;
-            if(data.status !== 'ok'){
-              html += `<div class="empty"><b>${esc(tr('realtime_unavailable', 'Realtime unavailable.'))}</b><br>${esc(data.reason || data.fallback_reason || 'disabled')}<br>${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
-              output.innerHTML = html; return;
-            }
-            const sub = data.decomposition && data.decomposition.subqueries ? data.decomposition.subqueries : [];
-            html += `<p class="subtle">${esc(tr('realtime_decomposed_into', 'Question was decomposed into:'))} ${sub.map(esc).join(' | ') || 'n/a'}</p>`;
-            // Compatibility marker for older M170 source-level tests only; normal rendering uses the i18n value above: 作者/年份/DOI 需人工核验
-            const rows = (data.results || []).map(row => `<article class="search-result"><h4>${esc(tr('realtime_rank_prefix', 'Rank '))}${esc(row.rank)}${esc(tr('realtime_rank_suffix', ''))} · ${esc(tr('realtime_paper_label', 'paper'))} ${esc(row.corpusid)} · ${esc(tr('realtime_score_label', 'score'))} ${fmtNum(row.score)}</h4><p><b>${esc(row.title || 'Untitled')}</b></p><p>${esc(row.abstract_preview || '')}</p><p class="subtle"><b>${esc(tr('realtime_ranking_signal', 'Ranking signal'))}</b>：${esc(tr('realtime_ranking_summary', 'combined retrieval, semantic, subquery, and reranking signals'))}</p><details class="raw-evidence"><summary>${esc(tr('realtime_technical_details', 'technical details'))}</summary><pre>${esc(row.reason || '')}</pre></details><p class="subtle">${esc(tr('realtime_manual_meta', 'Authors/year/DOI stay for manual verification unless an offline verified cache is available.'))}</p></article>`).join('');
-            output.innerHTML = html + (rows || '<div class="empty">'+esc(tr('realtime_no_rows', 'No rows returned.'))+'</div>');
+            const result = await fetchJsonOrFallback('/api/search?q=' + encodeURIComponent(q));
+            renderSearchData(output, result.ok ? result.data : staticSearchPayload(q, result.reason));
           }catch(err){
-            output.innerHTML = `<div class="error">${esc(tr('realtime_request_failed', 'Realtime request failed:'))} ${esc(err.message || err)}. ${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
+            renderSearchData(output, staticSearchPayload(q, `${tr('realtime_request_failed', 'Realtime request failed:')} ${err.message || err}`));
           }
         }
-        async function verifyStudioSpan(btn){
-          const out = document.getElementById('studio-span-output');
-          const params = new URLSearchParams({qid:btn.dataset.qid, corpusid:btn.dataset.corpusid, field:btn.dataset.field});
-          out.innerHTML = '<div class="loading">'+esc(tr('verify_loading', 'Verifying the supporting sentence in the source text...'))+'</div>';
-          const res = await fetch('/api/verify_span?' + params.toString());
-          const data = await res.json();
+        function staticVerifySpan(btn, reason){
+          const value = Array.from(btn.querySelectorAll('span')).find(span => !span.classList.contains('field-meta'));
+          return {
+            highlightable:true,
+            field:textOf(btn.querySelector('strong')) || btn.dataset.field,
+            status:tr('static_verify_status', 'static embedded evidence'),
+            source_field:btn.dataset.field,
+            confidence:'static-page',
+            source_preview:{before:'', highlight:textOf(value), after:''},
+            reason:reason
+          };
+        }
+        function renderVerifyData(out, data, staticMode){
           if(!data.highlightable){
             out.innerHTML = `<div class="empty"><b>${esc(tr('verify_manual_required', 'Manual verification required.'))}</b><br>${esc(manualReasonText(data.manual_review_reason))}<br><span class="subtle">${esc(tr('verify_no_guess', 'If the source sentence cannot be matched exactly, ScholarLoop does not highlight or guess.'))}</span></div>`;
             return;
@@ -159,10 +222,21 @@ def studio_js() -> str:
           const p = data.source_preview || {before:'',highlight:'',after:''};
           out.innerHTML = `<p><b>${esc(data.field)}</b> · ${esc(data.status)} · ${esc(data.source_field)} · confidence=${esc(data.confidence)}</p>`+
             `<div class="source-box">${esc(p.before)}<span class="hl">${esc(p.highlight)}</span>${esc(p.after)}</div>`+
-            `<p class="subtle">${esc(tr('verify_exact_match', 'Exact source-sentence match; technical contract available in the appendix.'))}</p>`;
+            `<p class="subtle">${esc(staticMode ? tr('static_verify_note', 'Static page reads embedded verified fields; the full char_span API requires the local backend.') : tr('verify_exact_match', 'Exact source-sentence match; technical contract available in the appendix.'))}</p>`;
         }
-        function gotoStudioQuery(sel){window.location.href='/studio?qid=' + encodeURIComponent(sel.value);}
-        function gotoStudioQueryLang(sel){const lang=document.documentElement.dataset.lang || 'zh'; window.location.href='/studio?lang='+encodeURIComponent(lang)+'&qid=' + encodeURIComponent(sel.value);}
+        async function verifyStudioSpan(btn){
+          const out = document.getElementById('studio-span-output');
+          const params = new URLSearchParams({qid:btn.dataset.qid, corpusid:btn.dataset.corpusid, field:btn.dataset.field});
+          out.innerHTML = '<div class="loading">'+esc(tr('verify_loading', 'Verifying the supporting sentence in the source text...'))+'</div>';
+          try{
+            const result = await fetchJsonOrFallback('/api/verify_span?' + params.toString());
+            renderVerifyData(out, result.ok ? result.data : staticVerifySpan(btn, result.reason), !result.ok);
+          }catch(err){
+            renderVerifyData(out, staticVerifySpan(btn, err.message || err), true);
+          }
+        }
+        function gotoStudioQuery(sel){if(isStaticPagesHost()){window.location.hash='qid=' + encodeURIComponent(sel.value); return;} window.location.href='/studio?qid=' + encodeURIComponent(sel.value);}
+        function gotoStudioQueryLang(sel){const lang=document.documentElement.dataset.lang || 'zh'; if(isStaticPagesHost()){window.location.hash='qid=' + encodeURIComponent(sel.value); return;} window.location.href='/studio?lang='+encodeURIComponent(lang)+'&qid=' + encodeURIComponent(sel.value);}
         function bindStableGraphHover(){
           document.querySelectorAll('[data-graph-node]').forEach(node => {
             const id = node.getAttribute('data-node-id');
