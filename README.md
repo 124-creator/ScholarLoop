@@ -1,8 +1,10 @@
 # ScholarLoop · Trusted Paper Search and Evidence-Chain Agent
 
+**Live Demo:** https://124-creator.github.io/ScholarLoop/ | **GitHub:** https://github.com/124-creator/ScholarLoop
+
 ScholarLoop 是一个面向复杂学术查询的 AI Agent 原型：它把研究问题拆成可检索子问题，融合 BM25、Embedding 与 Cross-Encoder 排序，并把推荐论文组织成可核验的 evidence card / evidence matrix。
 
-> Status: **work in progress**. This repository is a public-safe snapshot for portfolio review. Runtime caches, private credentials, raw corpora, and large benchmark files are intentionally excluded.
+> Status: **work in progress**. This repository is a public-safe snapshot for portfolio review. Runtime caches, private credentials, raw corpora, and large benchmark files are intentionally excluded. The GitHub Pages demo is a static, public-safe interactive walkthrough of the verified local demo, not a fake live search service.
 
 ## Why this project
 
@@ -24,7 +26,21 @@ The following metrics come from saved evaluation artifacts under `reports/`.
 | Significance | A-v2 vs BM25 ΔF1 = 0.0348, 95% CI = [0.0287, 0.0409] |
 | Evidence matrix | 30 rendered query docs, 0 fabricated citation fields in the public report |
 | External metadata | OpenAlex / Crossref resolver layer; 82 / 90 sample cards resolved in M050 |
-| Public smoke tests | 10 lightweight tests pass in this public snapshot |
+| M120 click-to-verify demo | 1170 span checks; 989 highlightable fields; mismatch = 0; 120 trace steps; fabrication = 0 |
+| Public smoke tests | 12 lightweight tests pass in this public snapshot |
+
+
+## Public demo
+
+Open: **https://124-creator.github.io/ScholarLoop/**
+
+The public page is designed for recruiter review and shows the core workflow without exposing private corpora or credentials:
+
+- **Search Loop:** query decomposition -> hybrid retrieval -> reranking -> evidence cards.
+- **Trust Loop:** source-span verification -> artifact trace -> human-review boundary.
+- **Click-to-verify:** fields are highlighted only when `source_text[char_span] == field value`; otherwise they remain marked for manual review.
+
+Local verified demo endpoints from M120: `/pro`, `/api/verify_span`, `/api/trail` (offline, 0 LLM calls per request).
 
 ## Architecture
 
@@ -60,6 +76,7 @@ reports/m030/web-verification.json             Web rendering verification
 reports/m040/A-v2评测报告.md                    A-v2 ranking and significance report
 reports/m050/final_summary.json                metadata resolver summary
 reports/m050/data-sources.md                   public data-source notes
+reports/m120/public_validation_summary.json      public demo verification summary
 ```
 
 Large files are excluded on purpose: raw corpora, model caches, `.npy`, `.parquet`, `.zip`, `.omx`, and secrets are not part of this public snapshot.
@@ -95,3 +112,4 @@ ScholarLoop is one applied case of [ResearchLoop](https://github.com/124-creator
 ## Author
 
 田中斐 · AI Agent / LLM application engineering portfolio
+

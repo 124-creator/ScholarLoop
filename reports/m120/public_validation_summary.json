@@ -1,0 +1,23 @@
+{
+  "schema_version": "scholarloop.public_demo_summary.v1",
+  "demo_url": "https://124-creator.github.io/ScholarLoop/",
+  "local_verified_demo": {
+    "endpoints": ["/pro", "/api/verify_span", "/api/trail"],
+    "mode": "offline",
+    "llm_calls_per_request": 0
+  },
+  "span_fidelity": {
+    "status": "PASS",
+    "total_checks": 1170,
+    "highlightable_count": 989,
+    "mismatch_count": 0,
+    "contract": "highlight_text == source_text[char_span] == field value; non-verifiable fields are not highlighted"
+  },
+  "trail_fidelity": {
+    "status": "PASS",
+    "step_count": 120,
+    "fabrication": 0,
+    "missing_source_count": 0
+  },
+  "public_boundary": "GitHub Pages is a static, public-safe interactive walkthrough. It does not expose private corpora, secrets, raw caches, or live API keys."
+}
