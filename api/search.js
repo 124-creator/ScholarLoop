@@ -1,5 +1,5 @@
 const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || process.env.LLM_MODEL || "deepseek-chat";
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || process.env.LLM_MODEL || "deepseek-v4-flash";
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || process.env.LLM_API_KEY || "";
 
 function setCors(res) {
