@@ -6,7 +6,7 @@
 
 ScholarLoop is a competition-grade AI Agent prototype for complex academic paper search. It decomposes research questions, combines BM25, dense retrieval and cross-encoder reranking, then presents recommendations as verifiable evidence cards and evidence matrices.
 
-> Status: **public-safe competition snapshot, updated with five-page topic-research demo**. The GitHub Pages demo is a static Studio walkthrough with embedded safe snapshots for `碳价格` and `large language model compression`. Realtime endpoints are included in the source for local execution; the public page does not expose private DeepSeek keys or fabricate live results.
+> Status: **public-safe competition snapshot, updated with five-page topic-research demo**. The GitHub Pages demo now supports browser-side OpenAlex realtime search for arbitrary topics, with embedded safe snapshots as fallback. A serverless `/api/search` backend is included for OpenAlex + DeepSeek realtime mode; private DeepSeek keys are never exposed in the browser.
 
 ## Why this project
 
@@ -43,9 +43,11 @@ The public page is designed for recruiter and judge review:
 - **Search Loop:** query decomposition -> hybrid retrieval -> reranking -> evidence cards.
 - **Trust Loop:** source-span verification -> artifact trace -> human-review boundary.
 - **Click-to-verify:** fields are highlighted only when `source_text[char_span] == field value`; otherwise they remain marked for manual review.
-- **Realtime honesty:** GitHub Pages uses public-safe static snapshots; local runtime can call OpenAlex + DeepSeek for realtime topic research. Unavailable states stay explicit and never fabricate recommendation rows.
+- **Realtime honesty:** GitHub Pages performs public OpenAlex realtime search in the browser and falls back to safe snapshots if unavailable. For DeepSeek summarization, deploy the included serverless API and keep the key in environment variables. Unavailable states stay explicit and never fabricate recommendation rows.
 
 Verified offline demo endpoints in local runtime: `/`, `/pro`, `/studio`, `/api/search`, `/api/verify_span`, `/api/trail`.
+
+Realtime deployment guide: [`docs/deploy-realtime.md`](docs/deploy-realtime.md).
 
 ## Architecture
 

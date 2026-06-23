@@ -1,6 +1,6 @@
 {
-  "file_count": 1144,
-  "total_bytes": 25786984,
+  "file_count": 1147,
+  "total_bytes": 25832621,
   "included_reports": [
     "m010",
     "m010_diag",
@@ -38,5 +38,5 @@
   ],
   "public_tests": "tests/test_public_snapshot.py",
   "full_local_test_evidence": "reports/m180/pytest.txt",
-  "static_demo_note": "GitHub Pages includes safe five-page topic-research snapshots for carbon price and large language model compression; local runtime remains realtime."
+  "static_demo_note": "GitHub Pages includes browser-side OpenAlex realtime search plus safe five-page snapshots; serverless API enables optional DeepSeek summarization."
 }
