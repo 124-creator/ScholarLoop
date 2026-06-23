@@ -1,0 +1,15 @@
+﻿{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "studio-en.html", "use": "@vercel/static" },
+    { "src": "PUBLIC_SNAPSHOT.json", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "src": "/studio-en.html", "dest": "/studio-en.html" },
+    { "src": "/PUBLIC_SNAPSHOT.json", "dest": "/PUBLIC_SNAPSHOT.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
