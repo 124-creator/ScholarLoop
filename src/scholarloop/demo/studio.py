@@ -23,7 +23,7 @@ from scholarloop.demo.enrich_view import ENRICHED_FIELDS, display_field_from_m05
 from scholarloop.demo.graph_layout import render_stable_graph_svg, stable_graph_payload, verify_graph_determinism
 from scholarloop.demo.i18n import EXAMPLE_QUESTIONS, TRANSLATIONS, catalog_keys, normalize_lang, tr
 from scholarloop.demo.interactive import build_span_fidelity, build_trail, build_trail_fidelity
-from scholarloop.demo.realtime import run_realtime_query
+from scholarloop.demo.realtime import run_realtime_query, run_topic_research_query
 
 NEEDS_REVIEW = "\u9700\u4eba\u5de5\u6838\u9a8c"
 
@@ -42,9 +42,9 @@ def _json_preview(value: Any, limit: int = 1500) -> str:
 
 
 def search_payload(query: str) -> dict[str, Any]:
-    """Wrap the existing realtime path without changing retrieval logic."""
+    """Return the public search payload in the unified five-page research format."""
 
-    raw = run_realtime_query(query)
+    raw = run_topic_research_query(query)
     status = raw.get("status")
     ok = status == "ok"
     cost = raw.get("cost") or {"llm_calls": 0, "tokens": 0, "latency_s": 0.0}
@@ -65,6 +65,8 @@ def search_payload(query: str) -> dict[str, Any]:
         "cost": cost,
         "notice": raw.get("notice") or NON_VERIFIED_NOTE,
         "raw_mode": raw.get("mode"),
+        "source": raw.get("source") or {},
+        "topic_research": raw.get("topic_research") or {},
     }
 
 
@@ -297,13 +299,6 @@ def render_studio_page(qid: str | None = None, lang: str | None = None) -> str:
         "realtime_manual_meta",
         "realtime_no_rows",
         "realtime_request_failed",
-        "static_pages_badge",
-        "static_pages_mode",
-        "api_non_json",
-        "static_verified_sample",
-        "static_unknown_question",
-        "static_verify_status",
-        "static_verify_note",
         "verify_loading",
         "verify_manual_required",
         "verify_manual_reason_source_missing",
@@ -316,6 +311,7 @@ def render_studio_page(qid: str | None = None, lang: str | None = None) -> str:
         ensure_ascii=False,
         separators=(",", ":"),
     )
+    default_realtime_query = "碳价格" if lang == "zh" else "large language model compression"
     return (
         f'<!doctype html><html lang="{_e(tr(lang, "html_lang"))}" data-lang="{_e(lang)}"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<title>{_e(tr(lang, "studio_title"))}</title>'
@@ -328,7 +324,7 @@ def render_studio_page(qid: str | None = None, lang: str | None = None) -> str:
         + f'<div class="pill-row"><span class="pill ok">{_e(tr(lang, "offline_default"))}</span><span class="pill ok">{_e(tr(lang, "zero_fabrication"))}</span><span class="pill">{_e(tr(lang, "stable_svg"))}</span><span class="pill">{_e(tr(lang, "span_contract"))}</span></div>'
         f'<div class="onboarding" aria-label="{_e(tr(lang, "how_to_use"))}"><div class="step"><b>{_e(tr(lang, "how_to_use"))}</b><br>{_e(tr(lang, "how_to_use_body"))}</div><div class="step"><b>{_e(tr(lang, "trust_title"))}</b><br>{_e(tr(lang, "trust_body"))}</div><div class="step"><b>{_e(tr(lang, "source_paths"))}</b><br>{_e(tr(lang, "trust_source_body"))}</div></div>'
         f'</div><div class="search-panel"><label for="studio-search-input"><b>{_e(tr(lang, "ask_any"))}</b><br><span class="subtle" style="color:rgba(255,255,255,.78)">{_e(tr(lang, "optional_realtime"))}</span></label>'
-        f'<div class="search-row"><input id="studio-search-input" class="search-input" value="large language model compression" autocomplete="off" aria-label="{_e(tr(lang, "ask_any"))}"><button type="button" class="btn btn-primary" onclick="runStudioSearch()">{_e(tr(lang, "run_search"))}</button></div>'
+        f'<div class="search-row"><input id="studio-search-input" class="search-input" value="{_e(default_realtime_query)}" autocomplete="off" aria-label="{_e(tr(lang, "ask_any"))}"><button type="button" class="btn btn-primary" onclick="runStudioSearch()">{_e(tr(lang, "run_search"))}</button></div>'
         + _example_chips(lang)
         + f'<p class="subtle" style="color:rgba(255,255,255,.78)">{_e(NON_VERIFIED_NOTE)}</p></div></div></section>'
         '<section class="section-grid"><div>'

@@ -63,6 +63,32 @@ class OpenAlexConnector:
         scored.sort(key=lambda r: (-r.title_score, -r.title_token_jaccard, r.external_id))
         return scored
 
+    def search_topic(self, query: str, *, max_results: int = 10, force_live: bool = False) -> list[WorkMetadata]:
+        """Search OpenAlex works for a research topic.
+
+        This is intentionally separate from ``search_title``: title search is a
+        strict metadata-verification helper, while topic search is a live,
+        non-load-bearing discovery path for demo queries that are outside the
+        frozen LitSearch corpus.
+        """
+
+        query_text = " ".join((query or "").replace("?", " ").replace("*", " ").split())
+        if not query_text:
+            return []
+        params = self._params(
+            {
+                "search": query_text,
+                "per-page": max_results,
+                "sort": "relevance_score:desc",
+                "select": (
+                    "id,doi,title,display_name,authorships,publication_year,"
+                    "primary_location,open_access,cited_by_count,abstract_inverted_index"
+                ),
+            }
+        )
+        entry = self.client.get_json(self.source_name, self.base_url, params, force_live=force_live)
+        return [self.parse_work(item, entry) for item in (entry.body_json.get("results") or [])]
+
     def by_doi(self, doi: str, *, force_live: bool = False) -> WorkMetadata | None:
         cleaned = clean_doi(doi)
         if not cleaned:

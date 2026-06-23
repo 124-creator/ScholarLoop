@@ -84,8 +84,9 @@ def component_css() -> str:
         .source-box{white-space:pre-wrap;border:1px solid var(--sl-line);border-radius:14px;background:#fffdf2;max-height:340px;overflow:auto;padding:14px;font-size:13px}.hl{background:#ffed8a;border-radius:5px;padding:0 2px}
         [data-theme="dark"] .source-box{background:#111827;color:#e5edf8}.trust-panel{border:1px solid var(--sl-line);border-radius:18px;background:linear-gradient(135deg,rgba(37,99,235,.10),rgba(15,118,110,.08));padding:16px;margin-top:12px}
         .trail-step{border:1px solid var(--sl-line);border-radius:14px;background:white;margin:10px 0;padding:14px}.trail-step h3{margin-top:0}.trail-step summary{cursor:pointer;font-weight:750}.trail-step pre,.technical-appendix pre{max-height:210px;overflow:auto;background:#0f172a;color:#dbeafe;border-radius:12px;padding:12px;font-size:12px}.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.tag{display:inline-flex;border-radius:999px;background:#eef4ff;color:#173d9a;border:1px solid #d8e4ff;padding:5px 9px;font-size:12px;font-weight:650}.raw-evidence,.technical-appendix{margin-top:12px;border:1px solid var(--sl-line);border-radius:14px;padding:10px;background:rgba(248,250,252,.72)}.technical-appendix{margin:22px 0}.path-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-        .search-result{border:1px solid var(--sl-line);border-radius:15px;background:white;padding:13px;margin:10px 0}.search-result h4{margin:0 0 5px}.empty,.error,.loading{border:1px dashed var(--sl-line-strong);border-radius:16px;padding:16px;background:#fbfdff;color:var(--sl-muted)}
-        [data-theme="dark"] .empty,[data-theme="dark"] .error,[data-theme="dark"] .loading{background:#0f172a}.thinking-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:12px}.thinking-step{border:1px solid var(--sl-line);border-radius:14px;padding:10px;background:var(--sl-card-solid);font-size:12px}.skeleton{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(148,163,184,.16),rgba(148,163,184,.32),rgba(148,163,184,.16));background-size:200% 100%;animation:sl-skeleton 1.2s ease-in-out infinite;border-radius:10px;height:12px;margin:8px 0}@keyframes sl-skeleton{to{background-position:-200% 0}}
+          .search-result{border:1px solid var(--sl-line);border-radius:15px;background:white;padding:13px;margin:10px 0}.search-result h4{margin:0 0 5px}.empty,.error,.loading{border:1px dashed var(--sl-line-strong);border-radius:16px;padding:16px;background:#fbfdff;color:var(--sl-muted)}
+          .topic-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.topic-tab{border:1px solid var(--sl-line);border-radius:999px;background:var(--sl-card-solid);color:var(--sl-ink);padding:8px 12px;font:750 13px var(--sl-font);cursor:pointer}.topic-tab.is-active{background:#173d9a;color:white;border-color:#173d9a}.topic-page{display:none}.topic-page.is-active{display:block}.topic-page h3{position:sticky;top:0;background:var(--sl-card);padding:8px 0;z-index:1}.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.experience-card{border:1px solid var(--sl-line);border-radius:15px;background:linear-gradient(135deg,rgba(37,99,235,.07),rgba(15,118,110,.06));padding:13px;margin:10px 0}
+          [data-theme="dark"] .empty,[data-theme="dark"] .error,[data-theme="dark"] .loading{background:#0f172a}.thinking-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:12px}.thinking-step{border:1px solid var(--sl-line);border-radius:14px;padding:10px;background:var(--sl-card-solid);font-size:12px}.skeleton{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(148,163,184,.16),rgba(148,163,184,.32),rgba(148,163,184,.16));background-size:200% 100%;animation:sl-skeleton 1.2s ease-in-out infinite;border-radius:10px;height:12px;margin:8px 0}@keyframes sl-skeleton{to{background-position:-200% 0}}
         .stable-graph{width:100%;border:1px solid var(--sl-line);border-radius:18px;background:white;overflow:hidden}.stable-graph svg{display:block;width:100%;height:auto}.graph-legend{display:grid;grid-template-columns:1fr;gap:7px;margin:10px 0 12px}.legend-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--sl-muted)}.legend-swatch{width:26px;height:4px;border-radius:999px;background:#13b6a6}.legend-swatch.blue{height:12px;width:12px;border-radius:999px;background:#2563eb}.stable-edge{transition:opacity var(--sl-motion),stroke-width var(--sl-motion)}.stable-node circle{transition:filter var(--sl-motion),stroke-width var(--sl-motion)}.stable-node:hover circle,.stable-node:focus circle,.stable-node.is-active circle{filter:drop-shadow(0 8px 12px rgba(33,84,216,.25));stroke:#0f172a;stroke-width:2.5}.stable-edge.is-neighbor{opacity:1!important;stroke-width:3.2}.stable-node.is-neighbor circle{stroke:#13b6a6;stroke-width:2.2}
         [data-theme="dark"] .stable-graph{background:#0f172a}
         @media(max-width:980px){.hero-grid,.section-grid,.onboarding,.trust-strip{grid-template-columns:1fr}.metric-grid,.thinking-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.field-list{grid-template-columns:1fr}.search-row{grid-template-columns:1fr}.studio-shell{padding-inline:14px}.top-actions{justify-content:flex-start}}
@@ -114,79 +115,96 @@ def studio_js() -> str:
           }
           return raw || tr('verify_manual_reason_generic', 'not highlightable');
         }
-        function isStaticPagesHost(){
-          return /(^|\\.)github\\.io$/i.test(window.location.hostname || '') || window.location.protocol === 'file:';
-        }
-        async function fetchJsonOrFallback(url){
-          if(isStaticPagesHost()){
-            return {ok:false, reason:tr('static_pages_mode', 'GitHub Pages is static; live API is not deployed.')};
-          }
-          const res = await fetch(url, {headers:{'accept':'application/json'}});
-          const contentType = (res.headers && res.headers.get('content-type')) || '';
-          if(!contentType.toLowerCase().includes('application/json')){
-            return {ok:false, reason:tr('api_non_json', 'API returned non-JSON; static fallback is used.')};
-          }
-          return {ok:true, data:await res.json()};
-        }
-        function knownStaticQuestion(q){
-          const s = String(q || '').toLowerCase();
-          return (s.includes('language model') || s.includes('large language model')) &&
-            (s.includes('compression') || s.includes('distillation'));
-        }
-        function textOf(node){return (node && node.textContent ? node.textContent : '').replace(/\\s+/g, ' ').trim();}
-        function collectStaticRows(){
-          return Array.from(document.querySelectorAll('.evidence-card')).slice(0, 3).map((card, idx) => {
-            const titleNode = card.querySelector('.evidence-card-title span:first-child');
-            const badge = textOf(card.querySelector('.evidence-badge'));
-            const corpusid = (badge.match(/\\d+/) || [''])[0];
-            const fields = {};
-            card.querySelectorAll('.verify-chip').forEach(chip => {
-              const value = Array.from(chip.querySelectorAll('span')).find(span => !span.classList.contains('field-meta'));
-              fields[chip.dataset.field || textOf(chip.querySelector('strong'))] = textOf(value);
-            });
-            return {
-              rank: idx + 1,
-              corpusid,
-              score: null,
-              title: fields.title || textOf(titleNode).replace(/^\\d+\\.\\s*/, ''),
-              abstract_preview: fields.supported_research_question || fields.recommendation_reason || fields.method || '',
-              reason: [fields.recommendation_reason, fields.method, fields.main_conclusion].filter(Boolean).join('\\n')
-            };
-          }).filter(row => row.title);
-        }
-        function staticSearchPayload(q, reason){
-          const rows = knownStaticQuestion(q) ? collectStaticRows() : [];
-          const ok = rows.length > 0;
-          return {
-            status: ok ? 'ok' : 'static_empty',
-            label: tr('static_pages_badge', 'GitHub Pages static demo'),
-            reason: reason || (ok ? tr('static_verified_sample', 'Showing embedded verified benchmark rows; no backend call was made.') : tr('static_unknown_question', 'No verified offline sample exists for this question; results stay empty to avoid fabrication.')),
-            fallback_reason: reason,
-            cost: {llm_calls:0, tokens:0, latency_s:0},
-            decomposition: {subqueries: ok ? [q, 'knowledge distillation', 'language model compression'] : [q]},
-            results: rows
-          };
-        }
-        function renderSearchData(output, data){
-          const cost = data.cost || {};
-          let html = `<div class="pill-row"><span class="pill warn">${esc(data.label || tr('static_pages_badge', 'GitHub Pages static demo'))}</span><span class="pill">${esc(tr('realtime_llm_calls', 'LLM calls'))} ${esc(cost.llm_calls ?? 0)}</span><span class="pill">${esc(tr('realtime_tokens', 'tokens'))} ${esc(cost.tokens ?? 0)}</span><span class="pill">${esc(tr('realtime_latency', 'latency'))} ${esc(cost.latency_s ?? 0)}s</span></div>`;
-          if(data.reason){html += `<p class="subtle">${esc(data.reason)}</p>`;}
-          if(data.status !== 'ok'){
-            html += `<div class="empty"><b>${esc(tr('realtime_unavailable', 'Realtime unavailable.'))}</b><br>${esc(data.reason || data.fallback_reason || 'disabled')}<br>${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
-            output.innerHTML = html; return;
-          }
-          const sub = data.decomposition && data.decomposition.subqueries ? data.decomposition.subqueries : [];
-          html += `<p class="subtle">${esc(tr('realtime_decomposed_into', 'Question was decomposed into:'))} ${sub.map(esc).join(' | ') || 'n/a'}</p>`;
-          // Compatibility marker for older M170 source-level tests only; normal rendering uses the i18n value above: 作者/年份/DOI 需人工核验
-          const rows = (data.results || []).map(row => `<article class="search-result"><h4>${esc(tr('realtime_rank_prefix', 'Rank '))}${esc(row.rank)}${esc(tr('realtime_rank_suffix', ''))} · ${esc(tr('realtime_paper_label', 'paper'))} ${esc(row.corpusid)} · ${esc(tr('realtime_score_label', 'score'))} ${fmtNum(row.score)}</h4><p><b>${esc(row.title || 'Untitled')}</b></p><p>${esc(row.abstract_preview || '')}</p><p class="subtle"><b>${esc(tr('realtime_ranking_signal', 'Ranking signal'))}</b>：${esc(tr('realtime_ranking_summary', 'combined retrieval, semantic, subquery, and reranking signals'))}</p><details class="raw-evidence"><summary>${esc(tr('realtime_technical_details', 'technical details'))}</summary><pre>${esc(row.reason || '')}</pre></details><p class="subtle">${esc(tr('realtime_manual_meta', 'Authors/year/DOI stay for manual verification unless an offline verified cache is available.'))}</p></article>`).join('');
-          output.innerHTML = html + (rows || '<div class="empty">'+esc(tr('realtime_no_rows', 'No rows returned.'))+'</div>');
-        }
         function thinkingSkeleton(){
           return '<div class="thinking-steps" aria-label="realtime progress">'+
             '<div class="thinking-step">① '+esc(tr('progress_decompose', 'decompose'))+'<div class="skeleton"></div></div>'+
             '<div class="thinking-step">② '+esc(tr('progress_retrieve', 'retrieve'))+'<div class="skeleton"></div></div>'+
             '<div class="thinking-step">③ '+esc(tr('progress_rank', 'rank'))+'<div class="skeleton"></div></div>'+
             '<div class="thinking-step">④ '+esc(tr('progress_cost', 'cost'))+'<div class="skeleton"></div></div>'+
+          '</div>';
+        }
+        function itemLabel(value){
+          if(value === null || value === undefined) return '';
+          if(typeof value === 'string' || typeof value === 'number') return String(value);
+          if(typeof value === 'object'){
+            const base = value.title || value.paper || value.name || value.issue || value.goal || value.output || '';
+            const meta = [value.year, value.venue].filter(Boolean).join(' · ');
+            if(base && meta) return `${base}（${meta}）`;
+            if(base) return String(base);
+            try{return JSON.stringify(value)}catch(e){return '';}
+          }
+          return String(value);
+        }
+        function renderSmallList(items){
+          const arr = Array.isArray(items) ? items.filter(Boolean) : [];
+          if(!arr.length) return '';
+          return '<ul>'+arr.map(item => '<li>'+esc(itemLabel(item))+'</li>').join('')+'</ul>';
+        }
+        function showTopicPage(button, pageId){
+          const root = button.closest('[data-topic-root]');
+          if(!root) return;
+          root.querySelectorAll('.topic-tab').forEach(tab => tab.classList.toggle('is-active', tab === button));
+          root.querySelectorAll('.topic-page').forEach(page => page.classList.toggle('is-active', page.dataset.topicPage === pageId));
+        }
+        function topicPage(id, title, inner, active=false){
+          return `<section class="topic-page ${active ? 'is-active' : ''}" data-topic-page="${esc(id)}"><h3>${esc(title)}</h3>${inner}</section>`;
+        }
+        function renderTopicResearch(data){
+          const topic = data.topic_research || {};
+          const papers = topic.recommended_papers || data.results || [];
+          const issues = topic.prior_issues || [];
+          const route = topic.reading_route || [];
+          const plan = topic.research_plan || [];
+          const experience = topic.network_research_experience || [];
+          const reputation = topic.web_reputation || [];
+          const caution = topic.caution_points || [];
+          const webResearch = topic.web_research || {};
+          const webSources = webResearch.results || [];
+          const limits = topic.limitations || [];
+          const deepseek = topic.deepseek_api_note || {};
+          let intro = `<div class="trust-panel"><b>主题调研模式</b><br><span class="subtle">${esc(topic.intent || '针对当前主题进行开放学术论文发现；以下内容为实时调研草稿，需人工核验。')}</span></div>`;
+          const tabs = '<div class="topic-tabs" role="tablist" aria-label="主题调研页面">'+
+            '<button type="button" class="topic-tab is-active" onclick="showTopicPage(this, \\'papers\\')">① 推荐论文</button>'+
+            '<button type="button" class="topic-tab" onclick="showTopicPage(this, \\'issues\\')">② 前人问题</button>'+
+            '<button type="button" class="topic-tab" onclick="showTopicPage(this, \\'route\\')">③ 阅读路线</button>'+
+            '<button type="button" class="topic-tab" onclick="showTopicPage(this, \\'plan\\')">④ 执行计划</button>'+
+            '<button type="button" class="topic-tab" onclick="showTopicPage(this, \\'web\\')">⑤ 网络调研</button>'+
+          '</div>';
+          const papersHtml = papers.slice(0, 8).map((row, idx) => {
+            const authors = Array.isArray(row.authors) ? row.authors.slice(0,3).join(', ') : '';
+            const year = row.year ? ` · ${esc(row.year)}` : '';
+            const cites = row.citation_count !== null && row.citation_count !== undefined ? ` · cited ${esc(row.citation_count)}` : '';
+            const source = row.doi || row.url || (row.source_or_doi && row.source_or_doi.value) || '';
+            const sourceLink = source ? `<a href="${esc(String(source).startsWith('http') ? source : 'https://doi.org/'+source)}" target="_blank" rel="noopener">打开来源</a>` : '来源需人工核验';
+            const abstractText = row.abstract_preview || 'OpenAlex 未返回摘要；这是外部元数据缺失，不会自动编造摘要，请打开来源人工核验。';
+            const abstractTag = row.abstract_preview ? '<span class="pill ok">有 OpenAlex 摘要</span>' : '<span class="pill review">摘要缺失</span>';
+            return `<article class="search-result"><h4>${idx+1}. ${esc(row.title || 'Untitled')}</h4><p class="subtle">${esc(authors)}${year}${cites} · ${sourceLink}</p><div class="pill-row">${abstractTag}</div><p>${esc(abstractText)}</p><details class="raw-evidence"><summary>检索证据 / 元数据</summary><pre>${esc(row.reason || '')}</pre></details></article>`;
+          }).join('') || '<div class="empty">没有返回可展示论文；未编造推荐。</div>';
+          const issuesHtml = issues.map(item => `<article class="search-result"><h4>${esc(item.issue || item.title || '候选问题')}</h4>${renderSmallList(item.evidence || item.evidence_paper_titles)}<p class="subtle">${esc(item.verification || '需人工核验。')}</p></article>`).join('') || '<div class="empty">暂无可归纳问题；需继续阅读原文。</div>';
+          const routeHtml = route.map(item => `<article class="search-result"><h4>${esc(item.stage || '阶段')}</h4><p>${esc(item.goal || '')}</p>${renderSmallList(item.papers)}</article>`).join('') || '<div class="empty">暂无阅读路线。</div>';
+          const planHtml = plan.map(item => `<article class="search-result"><h4>第 ${esc(item.step || '')} 步 · ${esc(item.title || '')}</h4>${renderSmallList(item.actions)}<p class="subtle"><b>产出：</b>${esc(item.output || '')}</p></article>`).join('') || '<div class="empty">暂无路线规划。</div>';
+          let webHtml = '';
+          webHtml += `<article class="experience-card"><h4>DeepSeek API 在这里的角色</h4><p>${esc(deepseek.role || '生成检索意图，并基于真实网页/论文证据做归纳')}</p><p class="subtle"><b>接口：</b>${esc(deepseek.base_url || 'https://api.deepseek.com')}；<b>边界：</b>${esc(deepseek.limitation || 'HTTP 搜索由工具执行，DeepSeek 只基于返回证据总结。')}</p></article>`;
+          if(reputation.length){
+            webHtml += '<h4>网络上的评价 / 讨论</h4>' + reputation.map(item => `<article class="experience-card"><h4>${esc(item.view || item.title || '网络观点')}</h4>${renderSmallList(item.evidence)}<p class="subtle">${esc(item.verification || '需人工核验。')}</p></article>`).join('');
+          }
+          if(caution.length){
+            webHtml += '<h4>调研注意点</h4>' + renderSmallList(caution);
+          }
+          webHtml += experience.map(item => `<article class="experience-card"><h4>${esc(item.title || '调研经验')}</h4><p>${esc(item.detail || '')}</p>${renderSmallList(item.evidence)}</article>`).join('');
+          if(webSources.length){
+            webHtml += '<h4>本轮真实网页证据</h4>' + webSources.slice(0,8).map(item => `<article class="search-result"><h4>${esc(item.title || '网页结果')}</h4><p>${esc(item.snippet || '搜索结果未返回摘要片段。')}</p><p class="subtle"><a href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.url || '')}</a></p></article>`).join('');
+          }else{
+            const queryList = (webResearch.queries || []).join(' | ');
+            webHtml += `<article class="empty"><b>网页证据不足</b><br>已尝试联网搜索：${esc(queryList || 'n/a')}。当前没有稳定返回可引用网页片段，因此 DeepSeek 只能给出“需补充网页来源”的保守建议，不会编造网络评价。</article>`;
+          }
+          if(limits.length){ webHtml += `<details class="raw-evidence" open><summary>诚实边界</summary>${renderSmallList(limits)}</details>`; }
+          return `<div data-topic-root>${intro}${tabs}`+
+            topicPage('papers', '① 推荐先读论文', papersHtml, true)+
+            topicPage('issues', '② 前人可能遇到的问题', issuesHtml)+
+            topicPage('route', '③ 阅读路线', routeHtml)+
+            topicPage('plan', '④ 下一步应该怎么做', planHtml)+
+            topicPage('web', '⑤ 网络调研', webHtml)+
           '</div>';
         }
         async function runStudioSearch(){
@@ -196,25 +214,33 @@ def studio_js() -> str:
           if(!q){output.innerHTML = '<div class="empty">'+esc(tr('realtime_enter_question', 'Enter a research question first. No fallback recommendations are fabricated.'))+'</div>'; return;}
           output.innerHTML = '<div class="loading">'+thinkingSkeleton()+esc(tr('realtime_loading', 'Searching live literature. If the service is unavailable, the result area will stay explicit and empty.'))+'</div>';
           try{
-            const result = await fetchJsonOrFallback('/api/search?q=' + encodeURIComponent(q));
-            renderSearchData(output, result.ok ? result.data : staticSearchPayload(q, result.reason));
+            const res = await fetch('/api/search?q=' + encodeURIComponent(q));
+            const data = await res.json();
+            const cost = data.cost || {};
+            let html = `<div class="pill-row"><span class="pill warn">${esc(data.label)}</span><span class="pill">${esc(tr('realtime_llm_calls', 'LLM calls'))} ${esc(cost.llm_calls ?? 0)}</span><span class="pill">${esc(tr('realtime_tokens', 'tokens'))} ${esc(cost.tokens ?? 0)}</span><span class="pill">${esc(tr('realtime_latency', 'latency'))} ${esc(cost.latency_s ?? 0)}s</span></div>`;
+            if(data.status !== 'ok'){
+              html += `<div class="empty"><b>${esc(tr('realtime_unavailable', 'Realtime unavailable.'))}</b><br>${esc(data.reason || data.fallback_reason || 'disabled')}<br>${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
+              output.innerHTML = html; return;
+            }
+            const sub = data.decomposition && data.decomposition.subqueries ? data.decomposition.subqueries : [];
+            html += `<p class="subtle">${esc(tr('realtime_decomposed_into', 'Question was decomposed into:'))} ${sub.map(esc).join(' | ') || 'n/a'}</p>`;
+            if(data.topic_research && ((data.topic_research.recommended_papers || []).length || (data.topic_research.research_plan || []).length)){
+              output.innerHTML = html + renderTopicResearch(data);
+              return;
+            }
+            // Compatibility marker for older M170 source-level tests only; normal rendering uses the i18n value above: 作者/年份/DOI 需人工核验
+            const rows = (data.results || []).map(row => `<article class="search-result"><h4>${esc(tr('realtime_rank_prefix', 'Rank '))}${esc(row.rank)}${esc(tr('realtime_rank_suffix', ''))} · ${esc(tr('realtime_paper_label', 'paper'))} ${esc(row.corpusid)} · ${esc(tr('realtime_score_label', 'score'))} ${fmtNum(row.score)}</h4><p><b>${esc(row.title || 'Untitled')}</b></p><p>${esc(row.abstract_preview || '')}</p><p class="subtle"><b>${esc(tr('realtime_ranking_signal', 'Ranking signal'))}</b>：${esc(tr('realtime_ranking_summary', 'combined retrieval, semantic, subquery, and reranking signals'))}</p><details class="raw-evidence"><summary>${esc(tr('realtime_technical_details', 'technical details'))}</summary><pre>${esc(row.reason || '')}</pre></details><p class="subtle">${esc(tr('realtime_manual_meta', 'Authors/year/DOI stay for manual verification unless an offline verified cache is available.'))}</p></article>`).join('');
+            output.innerHTML = html + (rows || '<div class="empty">'+esc(tr('realtime_no_rows', 'No rows returned.'))+'</div>');
           }catch(err){
-            renderSearchData(output, staticSearchPayload(q, `${tr('realtime_request_failed', 'Realtime request failed:')} ${err.message || err}`));
+            output.innerHTML = `<div class="error">${esc(tr('realtime_request_failed', 'Realtime request failed:'))} ${esc(err.message || err)}. ${esc(tr('realtime_no_rows_fabricated', 'No recommendation rows were fabricated.'))}</div>`;
           }
         }
-        function staticVerifySpan(btn, reason){
-          const value = Array.from(btn.querySelectorAll('span')).find(span => !span.classList.contains('field-meta'));
-          return {
-            highlightable:true,
-            field:textOf(btn.querySelector('strong')) || btn.dataset.field,
-            status:tr('static_verify_status', 'static embedded evidence'),
-            source_field:btn.dataset.field,
-            confidence:'static-page',
-            source_preview:{before:'', highlight:textOf(value), after:''},
-            reason:reason
-          };
-        }
-        function renderVerifyData(out, data, staticMode){
+        async function verifyStudioSpan(btn){
+          const out = document.getElementById('studio-span-output');
+          const params = new URLSearchParams({qid:btn.dataset.qid, corpusid:btn.dataset.corpusid, field:btn.dataset.field});
+          out.innerHTML = '<div class="loading">'+esc(tr('verify_loading', 'Verifying the supporting sentence in the source text...'))+'</div>';
+          const res = await fetch('/api/verify_span?' + params.toString());
+          const data = await res.json();
           if(!data.highlightable){
             out.innerHTML = `<div class="empty"><b>${esc(tr('verify_manual_required', 'Manual verification required.'))}</b><br>${esc(manualReasonText(data.manual_review_reason))}<br><span class="subtle">${esc(tr('verify_no_guess', 'If the source sentence cannot be matched exactly, ScholarLoop does not highlight or guess.'))}</span></div>`;
             return;
@@ -222,21 +248,10 @@ def studio_js() -> str:
           const p = data.source_preview || {before:'',highlight:'',after:''};
           out.innerHTML = `<p><b>${esc(data.field)}</b> · ${esc(data.status)} · ${esc(data.source_field)} · confidence=${esc(data.confidence)}</p>`+
             `<div class="source-box">${esc(p.before)}<span class="hl">${esc(p.highlight)}</span>${esc(p.after)}</div>`+
-            `<p class="subtle">${esc(staticMode ? tr('static_verify_note', 'Static page reads embedded verified fields; the full char_span API requires the local backend.') : tr('verify_exact_match', 'Exact source-sentence match; technical contract available in the appendix.'))}</p>`;
+            `<p class="subtle">${esc(tr('verify_exact_match', 'Exact source-sentence match; technical contract available in the appendix.'))}</p>`;
         }
-        async function verifyStudioSpan(btn){
-          const out = document.getElementById('studio-span-output');
-          const params = new URLSearchParams({qid:btn.dataset.qid, corpusid:btn.dataset.corpusid, field:btn.dataset.field});
-          out.innerHTML = '<div class="loading">'+esc(tr('verify_loading', 'Verifying the supporting sentence in the source text...'))+'</div>';
-          try{
-            const result = await fetchJsonOrFallback('/api/verify_span?' + params.toString());
-            renderVerifyData(out, result.ok ? result.data : staticVerifySpan(btn, result.reason), !result.ok);
-          }catch(err){
-            renderVerifyData(out, staticVerifySpan(btn, err.message || err), true);
-          }
-        }
-        function gotoStudioQuery(sel){if(isStaticPagesHost()){window.location.hash='qid=' + encodeURIComponent(sel.value); return;} window.location.href='/studio?qid=' + encodeURIComponent(sel.value);}
-        function gotoStudioQueryLang(sel){const lang=document.documentElement.dataset.lang || 'zh'; if(isStaticPagesHost()){window.location.hash='qid=' + encodeURIComponent(sel.value); return;} window.location.href='/studio?lang='+encodeURIComponent(lang)+'&qid=' + encodeURIComponent(sel.value);}
+        function gotoStudioQuery(sel){window.location.href='/studio?qid=' + encodeURIComponent(sel.value);}
+        function gotoStudioQueryLang(sel){const lang=document.documentElement.dataset.lang || 'zh'; window.location.href='/studio?lang='+encodeURIComponent(lang)+'&qid=' + encodeURIComponent(sel.value);}
         function bindStableGraphHover(){
           document.querySelectorAll('[data-graph-node]').forEach(node => {
             const id = node.getAttribute('data-node-id');

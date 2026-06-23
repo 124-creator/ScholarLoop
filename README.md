@@ -1,10 +1,12 @@
 # ScholarLoop - Trusted Paper Search and Evidence-Chain Agent
 
+**Portfolio link:** ScholarLoop 可信论文搜索与证据链推荐智能体｜GitHub: https://github.com/124-creator/ScholarLoop ｜ Demo: https://124-creator.github.io/ScholarLoop/
+
 **Live Demo:** https://124-creator.github.io/ScholarLoop/ | **GitHub:** https://github.com/124-creator/ScholarLoop
 
 ScholarLoop is a competition-grade AI Agent prototype for complex academic paper search. It decomposes research questions, combines BM25, dense retrieval and cross-encoder reranking, then presents recommendations as verifiable evidence cards and evidence matrices.
 
-> Status: **public-safe competition snapshot, updated through M180**. The GitHub Pages demo is a static Studio walkthrough. Realtime endpoints are included in the source for local execution, but the public page does not call private keys or fabricate live results.
+> Status: **public-safe competition snapshot, updated with five-page topic-research demo**. The GitHub Pages demo is a static Studio walkthrough with embedded safe snapshots for `碳价格` and `large language model compression`. Realtime endpoints are included in the source for local execution; the public page does not expose private DeepSeek keys or fabricate live results.
 
 ## Why this project
 
@@ -37,10 +39,11 @@ Open: **https://124-creator.github.io/ScholarLoop/**
 
 The public page is designed for recruiter and judge review:
 
+- **Five-page topic research:** recommended papers -> prior issues -> reading route -> execution plan -> web research notes.
 - **Search Loop:** query decomposition -> hybrid retrieval -> reranking -> evidence cards.
 - **Trust Loop:** source-span verification -> artifact trace -> human-review boundary.
 - **Click-to-verify:** fields are highlighted only when `source_text[char_span] == field value`; otherwise they remain marked for manual review.
-- **Realtime honesty:** live search is optional in local runtime; unavailable states stay explicit and never fabricate recommendation rows.
+- **Realtime honesty:** GitHub Pages uses public-safe static snapshots; local runtime can call OpenAlex + DeepSeek for realtime topic research. Unavailable states stay explicit and never fabricate recommendation rows.
 
 Verified offline demo endpoints in local runtime: `/`, `/pro`, `/studio`, `/api/search`, `/api/verify_span`, `/api/trail`.
 
