@@ -250,6 +250,95 @@ function fallbackSummary(query, rows, webResearch) {
   };
 }
 
+function valueList(value) {
+  if (Array.isArray(value)) return value.filter((v) => v !== null && v !== undefined && v !== "");
+  if (value === null || value === undefined || value === "") return [];
+  if (typeof value === "object") return Object.values(value).flatMap((v) => Array.isArray(v) ? v : [v]).filter((v) => v !== null && v !== undefined && v !== "");
+  return [value];
+}
+
+function evidenceItems(value) {
+  if (Array.isArray(value)) return value.flatMap(evidenceItems).filter((v) => v !== null && v !== undefined && v !== "");
+  if (value === null || value === undefined || value === "") return [];
+  if (typeof value === "object") return Object.values(value).flatMap(evidenceItems).filter((v) => v !== null && v !== undefined && v !== "");
+  return [value];
+}
+
+function objectValue(value) {
+  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+}
+
+function evidenceList(value) {
+  return evidenceItems(value).map((item) => {
+    if (typeof item === "string" || typeof item === "number") return cleanText(item, 500);
+    if (item && typeof item === "object") {
+      return cleanText(item.title || item.paper || item.name || item.url || item.snippet || JSON.stringify(item), 500);
+    }
+    return cleanText(item, 500);
+  }).filter(Boolean);
+}
+
+function normalizeCardList(items, normalizer, fallbackItems = []) {
+  const source = valueList(items).length ? valueList(items) : valueList(fallbackItems);
+  return source.map(normalizer).filter((item) => Object.values(item).some((value) => Array.isArray(value) ? value.length : Boolean(value)));
+}
+
+function sanitizeSummary(summary, fallback) {
+  const src = objectValue(summary);
+  const fb = objectValue(fallback);
+  const briefSrc = objectValue(src.deepseek_cn_summary || fb.deepseek_cn_summary);
+  return {
+    prior_issues: normalizeCardList(src.prior_issues, (item) => {
+      const obj = objectValue(item);
+      return {
+        issue: cleanText(obj.issue || obj.title || obj.view || item, 700),
+        evidence: evidenceList(obj.evidence || obj.papers || obj.sources),
+        verification: cleanText(obj.verification || "manual verification required", 400),
+      };
+    }, fb.prior_issues),
+    reading_route: normalizeCardList(src.reading_route, (item) => {
+      const obj = objectValue(item);
+      return {
+        stage: cleanText(obj.stage || obj.title || item, 500),
+        goal: cleanText(obj.goal || obj.summary || obj.detail, 800),
+        papers: evidenceList(obj.papers || obj.evidence || obj.sources),
+      };
+    }, fb.reading_route),
+    research_plan: normalizeCardList(src.research_plan, (item) => {
+      const obj = objectValue(item);
+      return {
+        step: obj.step || "",
+        title: cleanText(obj.title || obj.stage || item, 500),
+        actions: evidenceList(obj.actions || obj.action || obj.evidence),
+        output: cleanText(obj.output || obj.deliverable || obj.result, 500),
+      };
+    }, fb.research_plan),
+    network_research_experience: normalizeCardList(src.network_research_experience, (item) => {
+      const obj = objectValue(item);
+      return {
+        title: cleanText(obj.title || obj.view || item, 500),
+        detail: cleanText(obj.detail || obj.summary || obj.verification, 900),
+        evidence: evidenceList(obj.evidence || obj.sources),
+      };
+    }, fb.network_research_experience),
+    web_reputation: normalizeCardList(src.web_reputation, (item) => {
+      const obj = objectValue(item);
+      return {
+        view: cleanText(obj.view || obj.title || item, 800),
+        evidence: evidenceList(obj.evidence || obj.sources),
+        verification: cleanText(obj.verification || "open sources manually before citing", 400),
+      };
+    }, fb.web_reputation),
+    caution_points: evidenceList(src.caution_points || fb.caution_points),
+    deepseek_cn_summary: {
+      title: cleanText(briefSrc.title || "DeepSeek research summary", 200),
+      summary: cleanText(briefSrc.summary || "", 1200),
+      findings: evidenceList(briefSrc.findings),
+      evidence: evidenceList(briefSrc.evidence),
+    },
+  };
+}
+
 function parseJsonContent(text) {
   const raw = cleanText(text, 8000).replace(/^```json\s*/i, "").replace(/```$/i, "");
   return JSON.parse(raw);
@@ -284,7 +373,9 @@ async function buildPayload(query) {
   const queries = fallbackQueries(query).slice(0, 6);
   const { rows, used } = await paperRows(query, queries, 8);
   const webResearch = seedWebResearch(query, used.length ? used : queries);
-  const { summary, meta } = await deepseekSummary(query, rows, webResearch).catch(() => ({ summary: fallbackSummary(query, rows, webResearch), meta: { calls: 0, tokens: 0, fallback: true } }));
+  const fallback = fallbackSummary(query, rows, webResearch);
+  const { summary: rawSummary, meta } = await deepseekSummary(query, rows, webResearch).catch(() => ({ summary: fallback, meta: { calls: 0, tokens: 0, fallback: true } }));
+  const summary = sanitizeSummary(rawSummary, fallback);
   return {
     schema_version: "m130.search_response.v1",
     label: DEEPSEEK_API_KEY ? "后端实时：OpenAlex + DeepSeek" : "后端实时：OpenAlex only",

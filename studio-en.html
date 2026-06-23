@@ -145,6 +145,12 @@ function thinkingSkeleton(){
     '<div class="thinking-step">④ '+esc(tr('progress_cost', 'cost'))+'<div class="skeleton"></div></div>'+
   '</div>';
 }
+function asList(value){
+  if(Array.isArray(value)) return value.filter(v => v !== null && v !== undefined && v !== '');
+  if(value === null || value === undefined || value === '') return [];
+  if(typeof value === 'object') return Object.values(value).flatMap(v => Array.isArray(v) ? v : [v]).filter(v => v !== null && v !== undefined && v !== '');
+  return [value];
+}
 function itemLabel(value){
   if(value === null || value === undefined) return '';
   if(typeof value === 'string' || typeof value === 'number') return String(value);
@@ -158,7 +164,7 @@ function itemLabel(value){
   return String(value);
 }
 function renderSmallList(items){
-  const arr = Array.isArray(items) ? items.filter(Boolean) : [];
+  const arr = asList(items);
   if(!arr.length) return '';
   return '<ul>'+arr.map(item => '<li>'+esc(itemLabel(item))+'</li>').join('')+'</ul>';
 }
@@ -173,15 +179,16 @@ function topicPage(id, title, inner, active=false){
 }
 function renderTopicResearch(data){
   const topic = data.topic_research || {};
-  const papers = topic.recommended_papers || data.results || [];
-  const issues = topic.prior_issues || [];
-  const route = topic.reading_route || [];
-  const plan = topic.research_plan || [];
-  const experience = topic.network_research_experience || [];
-  const reputation = topic.web_reputation || [];
-  const caution = topic.caution_points || [];
+  const topicPapers = asList(topic.recommended_papers);
+  const papers = topicPapers.length ? topicPapers : asList(data.results);
+  const issues = asList(topic.prior_issues);
+  const route = asList(topic.reading_route);
+  const plan = asList(topic.research_plan);
+  const experience = asList(topic.network_research_experience);
+  const reputation = asList(topic.web_reputation);
+  const caution = asList(topic.caution_points);
   const webResearch = topic.web_research || {};
-  const webSources = webResearch.results || [];
+  const webSources = asList(webResearch.results);
   const limits = topic.limitations || [];
   const deepseek = topic.deepseek_api_note || {};
   let intro = `<div class="trust-panel"><b>主题调研模式</b><br><span class="subtle">${esc(topic.intent || '针对当前主题进行开放学术论文发现；以下内容为实时调研草稿，需人工核验。')}</span></div>`;
@@ -217,7 +224,7 @@ function renderTopicResearch(data){
   if(webSources.length){
     webHtml += '<h4>本轮真实网页证据</h4>' + webSources.slice(0,8).map(item => `<article class="search-result"><h4>${esc(item.title || '网页结果')}</h4><p>${esc(item.snippet || '搜索结果未返回摘要片段。')}</p><p class="subtle"><a href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.url || '')}</a></p></article>`).join('');
   }else{
-    const queryList = (webResearch.queries || []).join(' | ');
+    const queryList = asList(webResearch.queries).map(itemLabel).join(' | ');
     webHtml += `<article class="empty"><b>网页证据不足</b><br>已尝试联网搜索：${esc(queryList || 'n/a')}。当前没有稳定返回可引用网页片段，因此 DeepSeek 只能给出“需补充网页来源”的保守建议，不会编造网络评价。</article>`;
   }
   if(limits.length){ webHtml += `<details class="raw-evidence" open><summary>诚实边界</summary>${renderSmallList(limits)}</details>`; }
