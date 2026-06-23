@@ -34,10 +34,10 @@ def test_public_links_and_static_studio_contract():
     assert "GitHub Pages" in html
     assert "isStaticPagesHost" in html
     assert "staticSearchPayload" in html
-    assert "GitHub Pages static demo" in html
+    assert "GitHub Pages 静态 Demo" in html
     assert "Unexpected " + "token" not in html
     assert "static Studio" in read_text("docs/demo/README.md")
-    assert "No recommendation rows were fabricated" in html
+    assert "不编造" in html
     assert "react.development" not in html.lower()
     assert "vue.global" not in html.lower()
     assert "cdn.jsdelivr" not in html.lower()

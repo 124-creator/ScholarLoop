@@ -268,8 +268,8 @@ async function deepseekSummary(query, rows, webResearch) {
       max_tokens: 2200,
       response_format: { type: "json_object" },
       messages: [
-        { role: "system", content: "You are a cautious research planning assistant. Return JSON only. Use only supplied papers and web snippets. Do not invent papers, URLs, metrics, market prices, or online opinions." },
-        { role: "user", content: `Topic: ${query}\nOpenAlex papers: ${JSON.stringify(paperPayload)}\nWeb/context snippets: ${JSON.stringify(webPayload)}\nReturn JSON with keys: prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string].` },
+        { role: "system", content: "你是谨慎的中文科研调研助手。只返回 JSON。只能使用提供的 OpenAlex 论文和网页片段，不得编造论文、URL、指标、价格或网络观点。" },
+        { role: "user", content: `主题: ${query}\nOpenAlex 候选论文: ${JSON.stringify(paperPayload)}\n网页/背景片段: ${JSON.stringify(webPayload)}\n请用中文返回 JSON，键包括：prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string], deepseek_cn_summary:{title,summary,findings,evidence}.` },
       ],
     }),
   });
