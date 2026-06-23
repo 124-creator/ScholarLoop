@@ -373,10 +373,16 @@ document.addEventListener('DOMContentLoaded', () => {
     url.searchParams.set('search', searchQuery);
     url.searchParams.set('per-page', '25');
     url.searchParams.set('sort', 'relevance_score:desc');
-    const response = await window.__scholarloopRealFetch(url.toString(), {headers:{accept:'application/json'}});
-    if(!response.ok) throw new Error('OpenAlex ' + response.status);
-    const data = await response.json();
-    return Array.isArray(data.results) ? data.results : [];
+    const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    const timer = controller ? setTimeout(() => controller.abort(), 8000) : null;
+    try{
+      const response = await window.__scholarloopRealFetch(url.toString(), {headers:{accept:'application/json'}, signal:controller ? controller.signal : undefined});
+      if(!response.ok) throw new Error('OpenAlex ' + response.status);
+      const data = await response.json();
+      return Array.isArray(data.results) ? data.results : [];
+    }finally{
+      if(timer) clearTimeout(timer);
+    }
   }
   function rowFromWork(item, rank){
     const work = item.work;
@@ -516,7 +522,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const seen = new Set();
     const candidates = [];
     for(const searchQuery of queries.slice(0,3)){
-      const works = await fetchOpenAlex(searchQuery);
+      let works = [];
+      try{ works = await fetchOpenAlex(searchQuery); }
+      catch(error){ works = []; }
       works.forEach((work, idx) => {
         const title = clean(work.title || work.display_name || 'Untitled', 500);
         const key = work.doi || work.id || title.toLowerCase();
