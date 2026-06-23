@@ -1,4 +1,4 @@
-﻿const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
+const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || process.env.LLM_MODEL || "deepseek-chat";
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || process.env.LLM_API_KEY || "";
 
@@ -21,6 +21,10 @@ function isCarbonTopic(query) {
   return /碳|carbon|emission|emissions|ets/i.test(query || "");
 }
 
+function isMachineLearningTopic(query) {
+  return /机器学习|machine learning|\bml\b|统计学习|监督学习|无监督学习|强化学习/i.test(query || "");
+}
+
 function fallbackQueries(query) {
   if (isCarbonTopic(query)) {
     return [
@@ -30,7 +34,16 @@ function fallbackQueries(query) {
       "carbon pricing policy impact carbon market",
     ];
   }
-  return [query, `${query} survey`, `${query} review`, `${query} machine learning`].filter(Boolean);
+  if (isMachineLearningTopic(query)) {
+    return [
+      "machine learning survey",
+      "supervised learning evaluation",
+      "machine learning model selection",
+      "machine learning interpretability",
+      "机器学习",
+    ];
+  }
+  return [query, `${query} survey`, `${query} review`, `${query} machine learning`, `${query} research challenges`].filter(Boolean);
 }
 
 function topicTokens(value) {
@@ -168,39 +181,72 @@ function seedWebResearch(query, queries) {
       { title: "ICAP ETS Allowance Price Explorer", url: "https://icapcarbonaction.com/en/ets-prices", snippet: "Tracks emissions trading system allowance prices and policy context." },
       { title: "Climate Focus carbon market review", url: "https://climatefocus.com/", snippet: "Public market commentary that should be treated as non-verified web context." },
     );
+  } else if (isMachineLearningTopic(query)) {
+    results.push(
+      { title: "OpenAlex 机器学习论文元数据", url: "https://openalex.org/", snippet: `实时发现机器学习论文：${queries.slice(0, 3).join(" | ")}` },
+      { title: "Papers with Code: Machine Learning", url: "https://paperswithcode.com/methods", snippet: "观察机器学习方法、任务、数据集和基准榜单；需回到论文核验。" },
+      { title: "scikit-learn User Guide", url: "https://scikit-learn.org/stable/user_guide.html", snippet: "核对经典机器学习流程、模型选择、交叉验证和特征处理实践。" },
+    );
   } else {
-    results.push({ title: "OpenAlex live metadata", url: "https://openalex.org/", snippet: `Live academic metadata search for: ${queries.slice(0, 3).join(" | ")}` });
+    results.push({ title: "OpenAlex 实时论文元数据", url: "https://openalex.org/", snippet: `实时学术元数据检索：${queries.slice(0, 3).join(" | ")}` });
   }
   return { search_provider: "serverless_seed_sources", queries, results, page_excerpts: [] };
 }
 
 function fallbackSummary(query, rows, webResearch) {
-  const titles = rows.slice(0, 4).map((r) => r.title).filter(Boolean);
+  const titles = rows.slice(0, 6).map((r) => r.title).filter(Boolean);
+  const ml = isMachineLearningTopic(query);
+  const carbon = isCarbonTopic(query);
+  const topic = cleanText(query, 80) || "当前主题";
   return {
-    prior_issues: [
-      { issue: "Define the research boundary before modeling or comparison.", evidence: titles.slice(0, 2), verification: "Generated from live OpenAlex titles/abstracts; read the papers before treating as evidence." },
-      { issue: "Check data availability, time coverage, baselines, and evaluation design.", evidence: titles.slice(1, 3), verification: "Candidate issue; requires manual verification." },
-      { issue: "Avoid optimizing only for a single metric without robustness and error analysis.", evidence: titles.slice(2, 4), verification: "Method-level caution; verify against full texts." },
+    prior_issues: ml ? [
+      { issue: "机器学习范围很大，必须先限定任务类型：分类、回归、聚类、推荐、预测或异常检测。", evidence: titles.slice(0, 2), verification: "由 OpenAlex 实时元数据归纳；需打开全文核验。" },
+      { issue: "常见问题不是模型不够复杂，而是数据泄露、特征工程不稳、评价指标选错和样本外泛化差。", evidence: titles.slice(1, 3), verification: "候选问题；需结合具体数据和实验设计验证。" },
+      { issue: "网络讨论容易过度强调模型名，忽视数据质量、可解释性、可复现性和部署成本。", evidence: webResearch.results.slice(0, 3).map((r) => r.title), verification: "网页来源只作为背景线索。" },
+    ] : [
+      { issue: carbon ? "碳价序列通常存在非线性、非平稳和政策冲击，直接套模型容易过拟合。" : "先明确研究边界，否则容易把综述、方法比较和实验复现混在一起。", evidence: titles.slice(0, 2), verification: "由 OpenAlex 实时元数据归纳；需打开全文核验。" },
+      { issue: "数据来源、时间范围、基线方法和评价指标会显著影响结论。", evidence: titles.slice(1, 3), verification: "候选问题；需人工核验。" },
+      { issue: "不能只优化单一指标，需要补充鲁棒性、误差分析和失败样例。", evidence: titles.slice(2, 4), verification: "方法层面的风险提醒。" },
     ],
-    reading_route: [
-      { stage: "Round 1", goal: "Read the most directly relevant survey/high-citation papers to fix terminology and scope.", papers: titles.slice(0, 3) },
-      { stage: "Round 2", goal: "Build a matrix of data, methods, metrics, limitations, and reproducibility gaps.", papers: titles.slice(3, 6) },
-      { stage: "Round 3", goal: "Select 1-2 feasible gaps for a demo or experiment plan.", papers: titles.slice(0, 6) },
+    reading_route: ml ? [
+      { stage: "第 1 轮：先读综述和经典方法", goal: "建立监督学习、无监督学习、集成学习、模型选择和泛化误差框架。", papers: titles.slice(0, 3) },
+      { stage: "第 2 轮：按任务拆分阅读", goal: "选择分类/回归/时序预测/异常检测中的一个具体任务，比较数据集、特征、模型和指标。", papers: titles.slice(3, 6) },
+      { stage: "第 3 轮：转成作品集实验", goal: "做可复现实验：数据清洗、特征工程、切分、基线、调参、解释和误差分析。", papers: titles.slice(0, 6) },
+    ] : [
+      { stage: "第 1 轮：快速定方向", goal: "先读最相关综述或高被引论文，统一术语和问题范围。", papers: titles.slice(0, 3) },
+      { stage: "第 2 轮：做文献矩阵", goal: "按数据、方法、指标、局限和可复现性建立对比表。", papers: titles.slice(3, 6) },
+      { stage: "第 3 轮：形成可执行选题", goal: "选择一个可复现、可展示、能做实验或 Demo 的研究空白。", papers: titles.slice(0, 6) },
     ],
-    research_plan: [
+    research_plan: ml ? [
+      { step: 1, title: "收敛主题", actions: ["把机器学习缩小到一个任务", "确定数据集和业务目标", "选择主指标和辅助指标"], output: "任务定义和检索词表" },
+      { step: 2, title: "整理论文和方法矩阵", actions: ["按传统模型、集成模型、深度模型分组", "记录数据集、特征、指标和局限", "标注是否可复现"], output: "机器学习文献矩阵" },
+      { step: 3, title: "构建工程基线", actions: ["清洗数据", "完成特征工程", "跑 Logistic Regression、Random Forest、XGBoost/LightGBM 等基线"], output: "可复现实验报告" },
+      { step: 4, title: "补强作品集展示", actions: ["加入 SHAP/特征重要性解释", "做错误样本分析和消融实验", "封装成 Demo 或 Notebook 报告"], output: "面试可讲的机器学习项目闭环" },
+    ] : [
       { step: 1, title: "Clarify the task", actions: ["Define topic scope", "List variables/data sources", "Choose evaluation metrics"], output: "Problem definition and keyword table" },
       { step: 2, title: "Read and compare papers", actions: ["Summarize methods", "Record datasets and limits", "Mark unverifiable claims"], output: "Literature matrix" },
       { step: 3, title: "Build a baseline", actions: ["Prepare data", "Run simple baselines", "Track errors"], output: "Reproducible baseline report" },
       { step: 4, title: "Improve and present", actions: ["Add one clear improvement", "Run ablation", "Package the evidence chain"], output: "Portfolio-ready demo" },
     ],
     network_research_experience: [
-      { title: "Separate live metadata from verified evidence", detail: "OpenAlex/Web snippets are useful for discovery, but load-bearing claims need full-text verification.", evidence: webResearch.results.slice(0, 3).map((r) => r.title) },
-      { title: "Use English query expansion", detail: "Short Chinese topics often need English academic query expansion to retrieve enough literature.", evidence: [] },
+      { title: "发现信息和承重证据分离", detail: "OpenAlex/Web snippets are useful for discovery, but load-bearing claims need full-text verification.", evidence: webResearch.results.slice(0, 3).map((r) => r.title) },
+      { title: "中文主题需要英文检索词扩展", detail: "短中文主题通常需要扩展为英文论文检索词，才能召回更完整的国际论文。", evidence: [] },
     ],
     web_reputation: [
-      { view: "Public web sources are context, not final proof; commercial forecasts or dashboards may have different incentives.", evidence: webResearch.results.slice(0, 3).map((r) => r.title), verification: "Open sources manually before citing." },
+      { view: ml ? "机器学习在网络上常被讨论为通用能力，但真正落地时更看重数据质量、评估设计、可解释性和部署成本。" : "公开网页资料适合作为背景线索，不适合直接当作最终证据。", evidence: webResearch.results.slice(0, 3).map((r) => r.title), verification: "引用前打开来源并记录访问日期。" },
     ],
-    caution_points: ["Do not expose private API keys in a static page.", "Live metadata changes over time; record search date.", "Open full papers before making load-bearing claims."],
+    caution_points: ["不要在静态网页中暴露 DeepSeek 或其他 LLM API 私钥。", "实时元数据会随时间变化，建议记录检索日期和查询词。", "承重结论必须打开论文全文或官方数据源核验。"],
+    deepseek_cn_summary: ml ? {
+      title: "DeepSeek 中文调研摘要：机器学习",
+      summary: "机器学习主题过宽，建议先收敛到分类、回归、时序预测或异常检测等具体任务。作品集展示应突出数据清洗、特征工程、训练验证切分、基线模型、调参、解释和误差分析闭环。",
+      findings: ["优先选择一个小任务，避免主题过大。", "重点控制数据泄露、交叉验证、样本外表现和可解释性。", "面试时讲清楚数据来源、处理流程、指标选择和失败样例。"],
+      evidence: webResearch.results.slice(0, 3).map((r) => r.title),
+    } : {
+      title: `DeepSeek 中文调研摘要：${topic}`,
+      summary: `围绕“${topic}”的调研应先完成论文发现和问题拆解，再把候选论文按方法、数据、指标和局限做矩阵化比较，最后选择一个可复现的小切口。`,
+      findings: ["先读综述和高相关论文，建立术语表。", "用文献矩阵记录数据、方法、指标、局限和可复现性。", "选择一个小改进做实验，避免选题过大。"],
+      evidence: webResearch.results.slice(0, 3).map((r) => r.title),
+    },
   };
 }
 
@@ -241,23 +287,23 @@ async function buildPayload(query) {
   const { summary, meta } = await deepseekSummary(query, rows, webResearch).catch(() => ({ summary: fallbackSummary(query, rows, webResearch), meta: { calls: 0, tokens: 0, fallback: true } }));
   return {
     schema_version: "m130.search_response.v1",
-    label: DEEPSEEK_API_KEY ? "Serverless realtime: OpenAlex + DeepSeek" : "Serverless realtime: OpenAlex only",
+    label: DEEPSEEK_API_KEY ? "后端实时：OpenAlex + DeepSeek" : "后端实时：OpenAlex only",
     verified_load_bearing: false,
     deterministic: false,
-    source_contract: "Realtime results are not verified load-bearing evidence. Failed calls return explicit empty fallback.",
+    source_contract: "实时结果只用于调研发现，不作为承重证据；失败时显示明确回退。",
     status: rows.length ? "ok" : "empty",
     enabled: true,
-    reason: DEEPSEEK_API_KEY ? "Live serverless search used OpenAlex metadata and DeepSeek summarization." : "Live serverless search used OpenAlex metadata; DeepSeek key is not configured.",
+    reason: DEEPSEEK_API_KEY ? "serverless 后端已使用 OpenAlex 元数据和 DeepSeek 中文归纳。" : "serverless 后端仅使用 OpenAlex 元数据；尚未配置 DeepSeek key。",
     fallback_reason: null,
     query,
     decomposition: { subqueries: queries, criteria: ["topic relevance", "metadata availability", "manual verification required"] },
     results: rows,
     cost: { llm_calls: meta.calls || 0, tokens: meta.tokens || 0, latency_s: (Date.now() - started) / 1000 },
-    notice: "Realtime topic research is a discovery draft; verify papers and web claims manually.",
+    notice: "实时主题调研只是发现草稿；论文和网页结论需人工核验。",
     raw_mode: "serverless_topic_research",
     source: { corpus: "OpenAlex live metadata", ranker: "serverless_topic_research" },
     topic_research: {
-      intent: `Live topic research for: ${query}`,
+      intent: `围绕“${query}”进行后端实时主题调研。`,
       searched_queries: used,
       recommended_papers: rows,
       prior_issues: summary.prior_issues || [],
@@ -266,6 +312,7 @@ async function buildPayload(query) {
       network_research_experience: summary.network_research_experience || [],
       web_reputation: summary.web_reputation || [],
       caution_points: summary.caution_points || [],
+      deepseek_cn_summary: summary.deepseek_cn_summary || fallbackSummary(query, rows, webResearch).deepseek_cn_summary,
       web_research: webResearch,
       deepseek_api_note: {
         role: DEEPSEEK_API_KEY ? "Summarizes supplied paper/web evidence on the server side" : "Not configured on this deployment",

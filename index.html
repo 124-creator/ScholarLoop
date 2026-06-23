@@ -314,10 +314,20 @@ document.addEventListener('DOMContentLoaded', () => {
   function clone(obj){ return JSON.parse(JSON.stringify(obj)); }
   function clean(value, limit){ return String(value || '').replace(/\s+/g, ' ').trim().slice(0, limit || 800); }
   function isCarbon(q){ return /\u78b3|carbon|emission|emissions|ets/i.test(String(q || '')); }
+  function isMachineLearning(q){ return /机器学习|machine learning|\bml\b|统计学习|监督学习|无监督学习|强化学习/i.test(String(q || '')); }
+  function isDeepLearning(q){ return /深度学习|deep learning|神经网络|neural network/i.test(String(q || '')); }
+  function topicKind(q){
+    if(isCarbon(q)) return 'carbon';
+    if(isMachineLearning(q)) return 'machine_learning';
+    if(isDeepLearning(q)) return 'deep_learning';
+    return 'generic';
+  }
   function fallbackQueries(q){
-    if(isCarbon(q)) return ['carbon price forecasting','carbon market price prediction machine learning','emissions trading scheme carbon price volatility','carbon pricing policy impact carbon market'];
     const base = clean(q, 160);
-    return [base, base + ' survey', base + ' review', base + ' machine learning'].filter(Boolean);
+    if(isCarbon(q)) return ['carbon price forecasting','carbon market price prediction machine learning','emissions trading scheme carbon price volatility','carbon pricing policy impact carbon market'];
+    if(isMachineLearning(q)) return ['machine learning survey','supervised learning evaluation','machine learning model selection','machine learning interpretability','机器学习'];
+    if(isDeepLearning(q)) return ['deep learning survey','neural network representation learning','deep learning optimization generalization','深度学习'];
+    return [base, base + ' survey', base + ' review', base + ' machine learning', base + ' research challenges'].filter(Boolean);
   }
   function abstractFromIndex(index, limit){
     if(!index || typeof index !== 'object') return '';
@@ -394,45 +404,110 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
   function seedWebResearch(q, queries){
-    const results = isCarbon(q) ? [
+    const kind = topicKind(q);
+    const results = kind === 'carbon' ? [
       {title:'World Bank 碳定价仪表盘', url:'https://carbonpricingdashboard.worldbank.org/', snippet:'用于了解全球碳定价机制、覆盖范围和政策背景；引用前需核验具体页面数据。'},
       {title:'ICAP ETS 价格观察', url:'https://icapcarbonaction.com/en/ets-prices', snippet:'用于观察排放交易体系配额价格和政策语境，适合作为宏观背景来源。'},
       {title:'OpenAlex 实时论文元数据', url:'https://openalex.org/', snippet:'用于发现候选论文、作者、年份、引用量和 DOI；承重结论仍需回到原文核验。'}
-    ] : [{title:'OpenAlex 实时论文元数据', url:'https://openalex.org/', snippet:'浏览器端实时检索学术元数据，用于发现候选论文；不替代原文阅读。'}];
+    ] : kind === 'machine_learning' ? [
+      {title:'OpenAlex 机器学习论文元数据', url:'https://openalex.org/', snippet:'用于实时发现机器学习综述、方法论文、评测论文和引用信息。'},
+      {title:'Papers with Code: Machine Learning', url:'https://paperswithcode.com/methods', snippet:'用于观察机器学习方法、任务、数据集和基准榜单；榜单结论需结合论文核验。'},
+      {title:'scikit-learn User Guide', url:'https://scikit-learn.org/stable/user_guide.html', snippet:'用于核对经典机器学习流程、模型选择、交叉验证和特征处理的工程实践。'}
+    ] : kind === 'deep_learning' ? [
+      {title:'OpenAlex 深度学习论文元数据', url:'https://openalex.org/', snippet:'用于发现深度学习综述、神经网络方法和评测论文。'},
+      {title:'Papers with Code: Deep Learning', url:'https://paperswithcode.com/methods', snippet:'用于观察深度学习任务、数据集、模型和 SOTA 变化。'},
+      {title:'PyTorch Documentation', url:'https://pytorch.org/docs/stable/index.html', snippet:'用于核对深度学习工程实现、训练和部署相关实践。'}
+    ] : [
+      {title:'OpenAlex 实时论文元数据', url:'https://openalex.org/', snippet:'浏览器端实时检索学术元数据，用于发现候选论文；不替代原文阅读。'},
+      {title:'Papers with Code', url:'https://paperswithcode.com/', snippet:'用于观察相关任务、数据集、基准和方法趋势；需要回到原论文核验。'}
+    ];
     return {search_provider:'browser_openalex_seed_sources', queries, results, page_excerpts:[]};
   }
   function fallbackSummary(q, rows, webResearch){
     const titles = rows.slice(0, 6).map(r => r.title).filter(Boolean);
-    const carbon = isCarbon(q);
+    const kind = topicKind(q);
+    const carbon = kind === 'carbon';
+    const ml = kind === 'machine_learning';
+    const deep = kind === 'deep_learning';
+    const topic = clean(q, 80) || '当前主题';
+    const prior_issues = carbon ? [
+      {issue:'碳价序列通常存在非线性、非平稳和政策冲击，直接套模型容易过拟合。', evidence:titles.slice(0,2), verification:'由 OpenAlex 实时元数据归纳，必须打开论文原文人工核验。'},
+      {issue:'不同市场的数据口径、交易制度和时间跨度差异明显，跨市场比较要谨慎。', evidence:titles.slice(1,3), verification:'候选问题，需核验全文中的数据和实验设计。'},
+      {issue:'只追求预测精度会掩盖极端波动、政策事件和样本外泛化问题。', evidence:titles.slice(2,4), verification:'方法层面的风险提醒，需结合全文和实验复查。'}
+    ] : ml ? [
+      {issue:'机器学习范围很大，必须先限定任务类型：分类、回归、聚类、推荐、预测或异常检测。', evidence:titles.slice(0,2), verification:'根据实时论文题名/摘要归纳；需打开全文核验。'},
+      {issue:'常见问题不是“模型不够复杂”，而是数据泄露、特征工程不稳、评价指标选错和样本外泛化差。', evidence:titles.slice(1,3), verification:'候选问题；需要结合具体数据集和实验设计验证。'},
+      {issue:'网络上对机器学习的讨论容易过度强调模型名，忽视数据质量、可解释性、可复现性和部署成本。', evidence:webResearch.results.slice(0,3).map(r => r.title), verification:'网页来源只作为背景线索，不能直接当最终证据。'}
+    ] : deep ? [
+      {issue:'深度学习效果高度依赖数据规模、标签质量、算力和调参，不能只比较模型结构。', evidence:titles.slice(0,2), verification:'根据实时论文题名/摘要归纳；需打开全文核验。'},
+      {issue:'过拟合、训练不稳定、可解释性不足和分布外泛化是常见风险。', evidence:titles.slice(1,3), verification:'候选问题；需结合实验结果验证。'},
+      {issue:'SOTA 榜单更新快，必须记录检索日期和具体数据集版本。', evidence:webResearch.results.slice(0,3).map(r => r.title), verification:'网页来源只作背景线索。'}
+    ] : [
+      {issue:'先明确研究边界，否则容易把综述、方法比较和实验复现混在一起。', evidence:titles.slice(0,2), verification:'由 OpenAlex 实时元数据归纳，必须打开论文原文人工核验。'},
+      {issue:'数据来源、时间范围、基线方法和评价指标会显著影响结论。', evidence:titles.slice(1,3), verification:'候选问题，需核验全文中的数据和实验设计。'},
+      {issue:'不能只优化单一指标，需要补充鲁棒性、误差分析和失败样例。', evidence:titles.slice(2,4), verification:'方法层面的风险提醒，需结合全文和实验复查。'}
+    ];
+    const reading_route = carbon ? [
+      {stage:'第 1 轮：快速定方向', goal:'先读碳价预测和碳市场机制相关高匹配论文，确认术语、市场范围和数据口径。', papers:titles.slice(0,3)},
+      {stage:'第 2 轮：做文献矩阵', goal:'按“数据来源 / 方法 / 指标 / 局限 / 可复现性”建立对比表，标出证据不足处。', papers:titles.slice(3,6)},
+      {stage:'第 3 轮：形成可执行选题', goal:'选择一个可复现的小切口，例如政策变量增强、滚动验证或极端波动解释。', papers:titles.slice(0,6)}
+    ] : ml ? [
+      {stage:'第 1 轮：先读综述和经典方法', goal:'用综述建立监督学习、无监督学习、集成学习、模型选择和泛化误差的基本框架。', papers:titles.slice(0,3)},
+      {stage:'第 2 轮：按任务拆分阅读', goal:'选择一个具体任务，例如分类/回归/时序预测/异常检测，再比较数据集、特征、模型和指标。', papers:titles.slice(3,6)},
+      {stage:'第 3 轮：转成作品集实验', goal:'做一个可复现实验：数据清洗、特征工程、训练验证切分、基线模型、调参、解释和误差分析。', papers:titles.slice(0,6)}
+    ] : [
+      {stage:'第 1 轮：快速定方向', goal:'先读最相关综述或高被引论文，统一术语和问题范围。', papers:titles.slice(0,3)},
+      {stage:'第 2 轮：做文献矩阵', goal:'按“数据来源 / 方法 / 指标 / 局限 / 可复现性”建立对比表，标出证据不足处。', papers:titles.slice(3,6)},
+      {stage:'第 3 轮：形成可执行选题', goal:'选择一个可复现、可展示、能做实验或 Demo 的研究空白。', papers:titles.slice(0,6)}
+    ];
+    const research_plan = carbon ? [
+      {step:1,title:'定义问题和检索词',actions:['确定研究市场：EU ETS / 中国试点 / 全国碳市场','列出价格、能源、宏观和政策变量','确定 MAE、RMSE、MAPE 与滚动验证方案'],output:'问题定义、关键词表和数据清单'},
+      {step:2,title:'阅读并做对比表',actions:['提取每篇论文的方法、数据、指标和结论','记录不可核验或摘要缺失的地方','把候选论文按相关性排序'],output:'文献矩阵和证据备注'},
+      {step:3,title:'搭建可复现基线',actions:['清洗时间序列数据','按时间切分训练/验证/测试','先跑 ARIMA、XGBoost、LightGBM 或 LSTM 基线'],output:'可复现基线报告'},
+      {step:4,title:'做一个可展示改进',actions:['加入外生变量或政策事件特征','做滚动窗口和消融实验','输出误差分析和可视化'],output:'可放入作品集的 Demo 和结论页'}
+    ] : ml ? [
+      {step:1,title:'收敛主题',actions:['把“机器学习”缩小到一个任务，例如分类/回归/预测/异常检测','确定数据集和业务目标','选择主指标和辅助指标'],output:'任务定义和检索词表'},
+      {step:2,title:'整理论文和方法矩阵',actions:['按传统模型、集成模型、深度模型分组','记录数据集、特征、指标和局限','标注是否有代码或可复现细节'],output:'机器学习文献矩阵'},
+      {step:3,title:'构建工程基线',actions:['完成数据清洗、缺失值处理、类别编码和特征工程','使用 train/valid/test 或交叉验证','跑 Logistic Regression、Random Forest、XGBoost/LightGBM 等基线'],output:'可复现实验报告'},
+      {step:4,title:'补强作品集展示',actions:['加入 SHAP/特征重要性解释','做错误样本分析和消融实验','封装成可点击 Demo 或 Notebook 报告'],output:'面试可讲的机器学习项目闭环'}
+    ] : [
+      {step:1,title:'定义问题和检索词',actions:['定义主题范围','列出关键词和同义词','确定评价指标'],output:'问题定义、关键词表和数据清单'},
+      {step:2,title:'阅读并做对比表',actions:['提取每篇论文的方法、数据、指标和结论','记录不可核验或摘要缺失的地方','把候选论文按相关性排序'],output:'文献矩阵和证据备注'},
+      {step:3,title:'搭建可复现基线',actions:['准备数据','运行简单基线','记录失败样例'],output:'可复现基线报告'},
+      {step:4,title:'做一个可展示改进',actions:['加入一个清晰改进点','做消融实验','整理证据链'],output:'可放入作品集的 Demo 和结论页'}
+    ];
+    const deepseek_cn_summary = carbon ? {
+      title:'DeepSeek 中文调研摘要：碳价格/碳价预测',
+      summary:'从当前论文和网页线索看，碳价预测不能只作为单纯时间序列问题处理。更稳妥的研究路线是：先明确市场和数据口径，再比较传统统计、机器学习和深度学习基线，最后把政策事件、能源价格、经济不确定性等外生变量纳入解释。',
+      findings:['重点先查数据来源：交易所价格、配额制度、成交量、能源价格和政策事件。','模型路线建议从 ARIMA / XGBoost / LightGBM / LSTM 基线开始，再做分解、注意力或外生变量增强。','风险点是未来信息泄露、样本外失效、政策冲击和跨市场迁移。'],
+      evidence:webResearch.results.slice(0,3).map(r => r.title)
+    } : ml ? {
+      title:'DeepSeek 中文调研摘要：机器学习',
+      summary:'“机器学习”本身太宽，网络调研后更适合把它收敛为一个可实验任务。求职作品集应展示从数据清洗、特征工程、训练验证切分、基线模型、调参、解释到误差分析的完整闭环，而不是只列模型名称。',
+      findings:['推荐优先做分类/回归/时序预测/异常检测中的一个小任务，避免主题过大。','评估重点不是模型越复杂越好，而是数据泄露控制、交叉验证、样本外表现和可解释性。','面试展示时要讲清楚数据从哪里来、如何处理、为什么选这些指标、模型失败在哪里。'],
+      evidence:webResearch.results.slice(0,3).map(r => r.title)
+    } : deep ? {
+      title:'DeepSeek 中文调研摘要：深度学习',
+      summary:'深度学习主题需要先限定到具体任务和数据集。调研时应同时关注模型结构、训练稳定性、数据规模、算力成本、泛化能力和部署约束，避免只追逐 SOTA 名称。',
+      findings:['先选定任务和数据集，再比较模型。','记录训练配置、消融实验和失败样例。','关注可解释性、鲁棒性和部署成本。'],
+      evidence:webResearch.results.slice(0,3).map(r => r.title)
+    } : {
+      title:'DeepSeek 中文调研摘要：' + topic,
+      summary:`围绕“${topic}”的调研应先完成论文发现和问题拆解，再把候选论文按方法、数据、指标和局限做矩阵化比较，最后选择一个可复现的小切口。`,
+      findings:['先读综述和高相关论文，建立术语表。','用文献矩阵记录数据、方法、指标、局限和可复现性。','选择一个小改进做实验，避免选题过大。'],
+      evidence:webResearch.results.slice(0,3).map(r => r.title)
+    };
     return {
-      prior_issues:[
-        {issue:carbon ? '碳价序列通常存在非线性、非平稳和政策冲击，直接套模型容易过拟合。' : '先明确研究边界，否则容易把综述、方法比较和实验复现混在一起。', evidence:titles.slice(0,2), verification:'由 OpenAlex 实时元数据归纳，必须打开论文原文人工核验。'},
-        {issue:carbon ? '不同市场的数据口径、交易制度和时间跨度差异明显，跨市场比较要谨慎。' : '数据来源、时间范围、基线方法和评价指标会显著影响结论。', evidence:titles.slice(1,3), verification:'候选问题，需核验全文中的数据和实验设计。'},
-        {issue:carbon ? '只追求预测精度会掩盖极端波动、政策事件和样本外泛化问题。' : '不能只优化单一指标，需要补充鲁棒性、误差分析和失败样例。', evidence:titles.slice(2,4), verification:'方法层面的风险提醒，需结合全文和实验复查。'}
-      ],
-      reading_route:[
-        {stage:'第 1 轮：快速定方向', goal:carbon ? '先读碳价预测和碳市场机制相关高匹配论文，确认术语、市场范围和数据口径。' : '先读最相关综述或高被引论文，统一术语和问题范围。', papers:titles.slice(0,3)},
-        {stage:'第 2 轮：做文献矩阵', goal:'按“数据来源 / 方法 / 指标 / 局限 / 可复现性”建立对比表，标出证据不足处。', papers:titles.slice(3,6)},
-        {stage:'第 3 轮：形成可执行选题', goal:carbon ? '选择一个可复现的小切口，例如政策变量增强、滚动验证或极端波动解释。' : '选择一个可复现、可展示、能做实验或 Demo 的研究空白。', papers:titles.slice(0,6)}
-      ],
-      research_plan:[
-        {step:1,title:'定义问题和检索词',actions:carbon ? ['确定研究市场：EU ETS / 中国试点 / 全国碳市场','列出价格、能源、宏观和政策变量','确定 MAE、RMSE、MAPE 与滚动验证方案'] : ['定义主题范围','列出关键词和同义词','确定评价指标'],output:'问题定义、关键词表和数据清单'},
-        {step:2,title:'阅读并做对比表',actions:['提取每篇论文的方法、数据、指标和结论','记录不可核验或摘要缺失的地方','把候选论文按相关性排序'],output:'文献矩阵和证据备注'},
-        {step:3,title:'搭建可复现基线',actions:carbon ? ['清洗时间序列数据','按时间切分训练/验证/测试','先跑 ARIMA、XGBoost、LightGBM 或 LSTM 基线'] : ['准备数据','运行简单基线','记录失败样例'],output:'可复现基线报告'},
-        {step:4,title:'做一个可展示改进',actions:carbon ? ['加入外生变量或政策事件特征','做滚动窗口和消融实验','输出误差分析和可视化'] : ['加入一个清晰改进点','做消融实验','整理证据链'],output:'可放入作品集的 Demo 和结论页'}
-      ],
+      prior_issues,
+      reading_route,
+      research_plan,
       network_research_experience:[
         {title:'公网 Demo 的安全边界', detail:'公开页面直接调用 OpenAlex 做实时论文发现；DeepSeek 需要经过 serverless 后端调用，避免把私钥暴露在浏览器代码里。', evidence:webResearch.results.slice(0,3).map(r => r.title)},
         {title:'发现信息和承重证据分离', detail:'论文元数据和网页摘要只用于快速判断方向；简历、论文或报告中的关键结论必须回到 DOI、原文和官方数据源核验。', evidence:titles.slice(0,2)}
       ],
-      web_reputation:[{view:carbon ? '碳价格研究在网络上常被放在政策、交易制度、能源价格和气候风险背景下讨论，不能只看预测模型。' : '公开网页资料适合作为背景线索，不适合直接当作最终证据。', evidence:webResearch.results.slice(0,3).map(r => r.title), verification:'引用前打开来源并记录访问日期。'}],
+      web_reputation:[{view:carbon ? '碳价格研究在网络上常被放在政策、交易制度、能源价格和气候风险背景下讨论，不能只看预测模型。' : ml ? '机器学习在网络上常被讨论为通用能力，但真正落地时更看重数据质量、评估设计、可解释性和部署成本。' : '公开网页资料适合作为背景线索，不适合直接当作最终证据。', evidence:webResearch.results.slice(0,3).map(r => r.title), verification:'引用前打开来源并记录访问日期。'}],
       caution_points:['不要在静态网页中暴露 DeepSeek 或其他 LLM API 私钥。','实时元数据会随时间变化，建议记录检索日期和查询词。','承重结论必须打开论文全文或官方数据源核验。'],
-      deepseek_cn_summary:{
-        title:carbon ? 'DeepSeek 中文调研摘要：碳价格/碳价预测' : 'DeepSeek 中文调研摘要',
-        summary:carbon ? '从当前论文和网页线索看，碳价预测不能只作为单纯时间序列问题处理。更稳妥的研究路线是：先明确市场和数据口径，再比较传统统计、机器学习和深度学习基线，最后把政策事件、能源价格、经济不确定性等外生变量纳入解释。' : '当前主题适合先做论文发现和问题拆解，再把候选论文按方法、数据、指标和局限做矩阵化比较，最后选择一个可复现的小切口。DeepSeek 在这里负责把检索到的论文/网页证据归纳成中文调研草稿，不替代搜索引擎和原文核验。',
-        findings: carbon ? ['重点先查数据来源：交易所价格、配额制度、成交量、能源价格和政策事件。','模型路线建议从 ARIMA / XGBoost / LightGBM / LSTM 基线开始，再做分解、注意力或外生变量增强。','风险点是未来信息泄露、样本外失效、政策冲击和跨市场迁移。'] : ['先看综述和高相关论文，快速建立术语表。','用文献矩阵记录数据、方法、指标、局限和可复现性。','选择一个小改进做实验，避免选题过大。'],
-        evidence:webResearch.results.slice(0,3).map(r => r.title)
-      }
+      deepseek_cn_summary
     };
   }
   async function browserLiveSearchPayload(q){
@@ -489,17 +564,74 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   }
+  function staticPaperRow(rank, title, year, url, reason){
+    return {
+      rank,
+      corpusid:'static-ml-' + rank,
+      external_id:url,
+      score:0.62 - rank * 0.03,
+      title,
+      abstract_preview:'静态兜底阅读锚点：用于公网无法实时访问 OpenAlex 时保持演示完整；引用前请打开来源核验全文。',
+      abstract_status:'static_fallback_anchor',
+      reason,
+      authors:[],
+      year,
+      venue:'需打开来源核验',
+      doi:url && url.includes('doi.org/') ? url.split('doi.org/').pop() : null,
+      url,
+      source:'static_fallback_anchor',
+      citation_count:null,
+      authors_year:{status:'manual_review', value:year ? String(year) : '需人工核验'},
+      source_or_doi:{status:'manual_review', value:url}
+    };
+  }
+  function staticTopicPayload(q){
+    const kind = topicKind(q);
+    const rows = kind === 'machine_learning' ? [
+      staticPaperRow(1, 'A Few Useful Things to Know about Machine Learning', 2012, 'https://doi.org/10.1145/2347736.2347755', '机器学习入门和实践风险的经典阅读锚点；非实时结果，需人工核验。'),
+      staticPaperRow(2, 'Random Forests', 2001, 'https://doi.org/10.1023/A:1010933404324', '经典集成学习方法阅读锚点；非实时结果，需人工核验。'),
+      staticPaperRow(3, 'XGBoost: A Scalable Tree Boosting System', 2016, 'https://doi.org/10.1145/2939672.2939785', '工业常用梯度提升方法阅读锚点；非实时结果，需人工核验。'),
+      staticPaperRow(4, 'Deep Learning', 2015, 'https://doi.org/10.1038/nature14539', '连接机器学习与深度学习的综述阅读锚点；非实时结果，需人工核验。')
+    ] : [];
+    const queries = fallbackQueries(q);
+    const webResearch = seedWebResearch(q, queries);
+    const summary = fallbackSummary(q, rows, webResearch);
+    return {
+      schema_version:'m130.search_response.v1',
+      label:rows.length ? 'GitHub Pages 静态主题调研' : 'GitHub Pages 静态调研草稿',
+      verified_load_bearing:false,
+      deterministic:false,
+      source_contract:'静态兜底只用于演示调研结构，不作为承重证据；承重结论必须打开原文核验。',
+      status:'ok', enabled:true,
+      reason:'公网实时检索不可用时的安全兜底：保留中文五页调研结构，不暴露 DeepSeek API 密钥，不编造实时搜索结果。',
+      fallback_reason:STATIC_REASON,
+      query:q,
+      raw_mode:'topic_research_static_fallback',
+      cost:{llm_calls:0,tokens:0,latency_s:0},
+      decomposition:{subqueries:queries, criteria:['主题相关性','静态兜底阅读锚点','需要人工核验全文']},
+      results:rows,
+      topic_research:{
+        intent:'围绕“' + (clean(q,80) || '当前主题') + '”生成中文调研草稿；实时检索不可用时使用静态兜底。',
+        searched_queries:queries,
+        recommended_papers:rows,
+        prior_issues:summary.prior_issues,
+        reading_route:summary.reading_route,
+        research_plan:summary.research_plan,
+        network_research_experience:summary.network_research_experience,
+        web_reputation:summary.web_reputation,
+        caution_points:summary.caution_points,
+        deepseek_cn_summary:summary.deepseek_cn_summary,
+        web_research:webResearch,
+        deepseek_api_note:{role:'公网静态页不直接调用 DeepSeek；真实 DeepSeek 调用需要部署 serverless 后端。', base_url:'https://api.deepseek.com', limitation:'密钥不能放在浏览器 JavaScript 中。'},
+        limitations:['这是静态兜底草稿，不代表实时 DeepSeek 调用。','推荐论文若来自静态锚点，引用前必须打开 DOI/来源核验。','如需真正 DeepSeek 实时归纳，请部署 api/search.js serverless 并配置 DEEPSEEK_API_KEY。']
+      }
+    };
+  }
   function staticSearchPayload(q){
     const s = String(q || '').toLowerCase();
     if(s.includes('\u78b3') || s.includes('carbon')) return clone(SAMPLES.carbon);
     if((s.includes('language model') || s.includes('llm')) && (s.includes('compression') || s.includes('distillation') || s.includes('compress'))) return clone(SAMPLES.llm_compression);
-    return {
-      schema_version:'m130.search_response.v1', label:'GitHub Pages 静态 Demo', status:'static_empty', enabled:false,
-      reason:'OpenAlex 实时回退没有返回可展示论文。静态页只保留安全样例；需要更强实时能力时请部署 serverless API。',
-      fallback_reason:STATIC_REASON, query:q, raw_mode:'topic_research_static_snapshot_empty', cost:{llm_calls:0,tokens:0,latency_s:0},
-      decomposition:{subqueries:[q]}, results:[],
-      topic_research:{recommended_papers:[], prior_issues:[], reading_route:[], research_plan:[], network_research_experience:[], web_research:{results:[]}}
-    };
+    return staticTopicPayload(q);
   }
   if(!isStaticPagesHost() || !window.fetch) return;
   window.__scholarloopRealFetch = window.fetch.bind(window);
