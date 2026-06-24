@@ -4,6 +4,7 @@
 secrets/
 .env
 .env.*
+!.env.example
 *.local
 
 # Large data / cache artifacts

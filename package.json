@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "check": "node --check server.cjs && node --check api/search.js && node --check ecosystem.config.cjs"
+  },
   "engines": {
     "node": "22.x"
   }
