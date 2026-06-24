@@ -1,12 +1,18 @@
+const fs = require("fs");
+const path = require("path");
+
 const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || process.env.LLM_MODEL || "deepseek-v4-flash";
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || process.env.LLM_API_KEY || "";
 const OPENALEX_API_KEY = process.env.OPENALEX_API_KEY || "";
 const OPENALEX_CONTACT_EMAIL = process.env.OPENALEX_CONTACT_EMAIL || process.env.CONTACT_EMAIL || "";
-const OPENALEX_REQUESTS_PER_SEARCH = Math.max(1, Math.min(4, Number(process.env.OPENALEX_REQUESTS_PER_SEARCH || 2)));
+const OPENALEX_REQUESTS_PER_SEARCH = Math.max(1, Math.min(4, Number(process.env.OPENALEX_REQUESTS_PER_SEARCH || 3)));
 const CACHE_TTL_MS = Math.max(60_000, Number(process.env.SCHOLARLOOP_CACHE_TTL_MS || 30 * 60 * 1000));
+const CACHE_VERSION = "m141_planned_openalex_local";
+const LOCAL_INDEX_PATH = process.env.LITSEARCH_INDEX_PATH || path.join(__dirname, "..", "data", "litsearch_seed_index.json");
 const openAlexCache = new Map();
 const payloadCache = new Map();
+let localIndexCache = null;
 
 function setCors(res) {
   res.setHeader("Access-Control-Allow-Origin", process.env.ALLOWED_ORIGIN || "*");
@@ -30,25 +36,113 @@ function isCarbonTopic(query) {
 function isMachineLearningTopic(query) {
   return /\u673a\u5668\u5b66\u4e60|machine learning|\bml\b|\u7edf\u8ba1\u5b66\u4e60|\u76d1\u7763\u5b66\u4e60|\u65e0\u76d1\u7763\u5b66\u4e60|\u5f3a\u5316\u5b66\u4e60/i.test(query || "");
 }
+
+function isRagTopic(query) {
+  return /\brag\b|retrieval[-\s]?augmented generation|\u68c0\u7d22\u589e\u5f3a\u751f\u6210|\u68c0\u7d22\u589e\u5f3a|\u5fe0\u5b9e\u5ea6|faithfulness|context precision|answer relevancy|RAGAS|ARES/i.test(query || "");
+}
+
+function isCompressionTopic(query) {
+  return /compression|\u538b\u7f29|distillation|\u77e5\u8bc6\u84b8\u998f|pruning|\u526a\u679d|quantization|\u91cf\u5316|efficient\s+(llm|language model)/i.test(query || "");
+}
+
+function uniqueStrings(items, limit = 12) {
+  const seen = new Set();
+  const out = [];
+  asArray(items).forEach((item) => {
+    const text = cleanText(item, 160);
+    const key = text.toLowerCase();
+    if (!text || seen.has(key)) return;
+    seen.add(key);
+    out.push(text);
+  });
+  return out.slice(0, limit);
+}
+
+function staticQueryPlan(query) {
+  const topic = cleanText(query, 120);
+  if (isCarbonTopic(topic)) {
+    return {
+      planner: "static_topic_rules",
+      intent_cn: `围绕“${topic}”检索碳价格/碳市场预测与政策影响论文。`,
+      openalex_queries: [
+        "carbon price forecasting",
+        "carbon market price prediction machine learning",
+        "emissions trading scheme carbon price volatility",
+        "carbon pricing policy impact carbon market",
+      ],
+      local_queries: ["carbon price", "carbon market", "emissions trading", "price forecasting"],
+      must_terms: ["carbon", "price", "pricing", "market", "emissions trading", "forecasting", "volatility"],
+      reject_if_missing_any: ["carbon"],
+      exclude_terms: [],
+      strict_topic_gate: true,
+    };
+  }
+  if (isRagTopic(topic)) {
+    return {
+      planner: "static_topic_rules",
+      intent_cn: `围绕“${topic}”检索 RAG / 检索增强生成评测论文。`,
+      openalex_queries: [
+        "retrieval augmented generation evaluation",
+        "RAG evaluation benchmark",
+        "RAGAs automated evaluation retrieval augmented generation",
+        "ARES automated evaluation framework retrieval augmented generation",
+        "faithfulness context precision answer relevancy RAG evaluation",
+      ],
+      local_queries: ["retrieval augmented generation", "RAG evaluation", "question answering retrieval", "faithfulness benchmark"],
+      must_terms: ["retrieval augmented generation", "rag", "faithfulness", "context precision", "answer relevancy", "benchmark", "question answering", "retriever"],
+      reject_if_missing_any: ["retrieval augmented generation", "rag", "question answering", "retriever"],
+      exclude_terms: ["soil", "orchard", "cadmium", "lead", "zinc", "philosophy"],
+      strict_topic_gate: true,
+    };
+  }
+  if (isCompressionTopic(topic)) {
+    return {
+      planner: "static_topic_rules",
+      intent_cn: `围绕“${topic}”检索模型压缩、蒸馏、剪枝、量化与高效 LLM 论文。`,
+      openalex_queries: [
+        "large language model compression survey",
+        "knowledge distillation language model compression",
+        "LLM pruning quantization evaluation",
+        "efficient transformer model compression benchmark",
+      ],
+      local_queries: ["language model compression", "knowledge distillation", "model pruning", "quantization"],
+      must_terms: ["compression", "distillation", "pruning", "quantization", "efficient", "language model"],
+      reject_if_missing_any: ["compression", "distillation", "pruning", "quantization"],
+      exclude_terms: [],
+      strict_topic_gate: true,
+    };
+  }
+  if (isMachineLearningTopic(topic)) {
+    return {
+      planner: "static_topic_rules",
+      intent_cn: `围绕“${topic}”检索机器学习综述、评估、模型选择与可解释性论文。`,
+      openalex_queries: [
+        "machine learning survey",
+        "supervised learning evaluation",
+        "machine learning model selection",
+        "machine learning interpretability",
+      ],
+      local_queries: ["machine learning", "model selection", "supervised learning", "interpretability"],
+      must_terms: ["machine learning", "supervised", "model selection", "interpretability", "classification", "regression"],
+      reject_if_missing_any: [],
+      exclude_terms: [],
+      strict_topic_gate: false,
+    };
+  }
+  return {
+    planner: "static_generic",
+    intent_cn: `围绕“${topic}”进行主题检索，优先扩展为英文论文检索词。`,
+    openalex_queries: [topic, `${topic} survey`, `${topic} review`, `${topic} benchmark`, `${topic} research challenges`].filter(Boolean),
+    local_queries: [topic],
+    must_terms: topicTokens(topic),
+    reject_if_missing_any: [],
+    exclude_terms: [],
+    strict_topic_gate: false,
+  };
+}
+
 function fallbackQueries(query) {
-  if (isCarbonTopic(query)) {
-    return [
-      "carbon price forecasting",
-      "carbon market price prediction machine learning",
-      "emissions trading scheme carbon price volatility",
-      "carbon pricing policy impact carbon market",
-    ];
-  }
-  if (isMachineLearningTopic(query)) {
-    return [
-      "machine learning survey",
-      "supervised learning evaluation",
-      "machine learning model selection",
-      "machine learning interpretability",
-      "机器学习",
-    ];
-  }
-  return [query, `${query} survey`, `${query} review`, `${query} machine learning`, `${query} research challenges`].filter(Boolean);
+  return staticQueryPlan(query).openalex_queries;
 }
 
 function cacheGet(cache, key) {
@@ -76,6 +170,36 @@ function sleep(ms) {
 function topicTokens(value) {
   const stop = new Set(["the", "and", "for", "with", "from", "into", "using", "based", "about", "under", "over", "large", "small", "model", "models", "language"]);
   return String(value || "").toLowerCase().match(/[a-z][a-z0-9-]{2,}/g)?.filter((t) => !stop.has(t)) || [];
+}
+
+function queryPlanTerms(queryPlan, query = "") {
+  const terms = [
+    ...topicTokens(query),
+    ...topicTokens(asArray(queryPlan?.openalex_queries).join(" ")),
+    ...topicTokens(asArray(queryPlan?.local_queries).join(" ")),
+    ...topicTokens(asArray(queryPlan?.must_terms).join(" ")),
+  ];
+  return uniqueStrings(terms, 40);
+}
+
+function textHasAny(text, terms) {
+  const haystack = String(text || "").toLowerCase();
+  return asArray(terms).some((term) => {
+    const needle = String(term || "").toLowerCase().trim();
+    if (!needle) return false;
+    if (/^[a-z0-9-]{2,4}$/.test(needle)) {
+      return new RegExp(`\\b${needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(haystack);
+    }
+    return haystack.includes(needle);
+  });
+}
+
+function passesTopicGate(queryPlan, text) {
+  if (!queryPlan?.strict_topic_gate) return true;
+  if (textHasAny(text, queryPlan.exclude_terms)) return false;
+  const required = asArray(queryPlan.reject_if_missing_any);
+  if (required.length && !textHasAny(text, required)) return false;
+  return true;
 }
 
 function abstractFromInvertedIndex(index, limit = 900) {
@@ -110,11 +234,11 @@ function venue(work) {
   return work?.primary_location?.source?.display_name || work?.host_venue?.display_name || "";
 }
 
-function relevanceScore(query, work, abstract) {
+function relevanceScore(query, work, abstract, queryPlan = null) {
   const title = cleanText(work?.title || work?.display_name || "", 500).toLowerCase();
   const text = `${title} ${String(abstract || "").toLowerCase()}`;
   const queryText = String(query || "").toLowerCase();
-  const tokens = topicTokens(queryText);
+  const tokens = uniqueStrings([...topicTokens(queryText), ...queryPlanTerms(queryPlan)], 50);
   let score = Math.min(Number(work?.cited_by_count || 0), 1000) / 1000;
   if (abstract) score += 3;
   if (queryText && title.includes(queryText)) score += 5;
@@ -127,6 +251,11 @@ function relevanceScore(query, work, abstract) {
     if (textHits === 0) score -= 3;
   }
   if (/compression/.test(queryText) && !/compress|compression/.test(text)) score -= 3;
+  if (queryPlan?.strict_topic_gate && !passesTopicGate(queryPlan, text)) score -= 20;
+  if (isRagTopic(`${queryText} ${asArray(queryPlan?.must_terms).join(" ")}`)) {
+    if (/(retrieval[-\s]?augmented generation|\brag\b|faithfulness|context precision|answer relevancy|ragas|benchmark|retriever|question answering)/i.test(text)) score += 6;
+    if (/(soil|orchard|cadmium|lead|zinc|philosophy)/i.test(text)) score -= 12;
+  }
   if (isCarbonTopic(queryText)) {
     if (/carbon/.test(text)) score += 3;
     if (/(price|pricing|market|trading|emission|emissions|ets)/.test(text)) score += 2;
@@ -187,7 +316,7 @@ async function fetchOpenAlex(searchQuery, maxResults = 16) {
   }
   return [];
 }
-async function paperRows(query, queries, limit = 8) {
+async function paperRows(query, queries, limit = 8, queryPlan = null) {
   const seen = new Set();
   const candidates = [];
   const used = [];
@@ -202,7 +331,10 @@ async function paperRows(query, queries, limit = 8) {
         if (!key || seen.has(key)) return;
         seen.add(key);
         const abstract = abstractFromInvertedIndex(work?.abstract_inverted_index);
-        const score = relevanceScore(searchQuery, work, abstract) - (localRank + 1) * 0.01;
+        const combinedText = `${title}\n${abstract}`;
+        if (!passesTopicGate(queryPlan, combinedText)) return;
+        const score = relevanceScore(searchQuery, work, abstract, queryPlan) - (localRank + 1) * 0.01;
+        if (queryPlan?.strict_topic_gate && score < 1) return;
         candidates.push({ work, title, abstract, score, searchQuery, localRank: localRank + 1 });
       });
     } catch (error) {
@@ -236,6 +368,75 @@ async function paperRows(query, queries, limit = 8) {
   });
   return { rows, used, errors };
 }
+
+function loadLocalIndex() {
+  if (localIndexCache) return localIndexCache;
+  const empty = { available: false, source_total: 0, records: [], reason: "local index not found" };
+  try {
+    if (!fs.existsSync(LOCAL_INDEX_PATH)) {
+      localIndexCache = empty;
+      return localIndexCache;
+    }
+    const data = JSON.parse(fs.readFileSync(LOCAL_INDEX_PATH, "utf8"));
+    localIndexCache = {
+      available: true,
+      source_total: Number(data.source_total || 64183),
+      note: cleanText(data.note || "Lightweight LitSearch local supplement.", 500),
+      records: asArray(data.records),
+    };
+    return localIndexCache;
+  } catch (error) {
+    localIndexCache = { ...empty, reason: cleanText(error.message || error, 200) };
+    return localIndexCache;
+  }
+}
+
+function localRecordScore(record, query, queryPlan) {
+  const text = `${record.title || ""}\n${record.abstract_preview || ""}`.toLowerCase();
+  if (!passesTopicGate(queryPlan, text)) return -999;
+  const terms = uniqueStrings([
+    ...topicTokens(query),
+    ...topicTokens(asArray(queryPlan?.local_queries).join(" ")),
+    ...topicTokens(asArray(queryPlan?.openalex_queries).join(" ")),
+    ...topicTokens(asArray(queryPlan?.must_terms).join(" ")),
+  ], 50);
+  let score = Number(record.local_score || 0) / 10;
+  terms.forEach((term) => {
+    if (text.includes(term)) score += term.length > 8 ? 2 : 0.7;
+  });
+  if (queryPlan?.strict_topic_gate && score < 2) return -999;
+  return score;
+}
+
+function searchLocalCorpus(query, queryPlan, limit = 5) {
+  const index = loadLocalIndex();
+  if (!index.available) {
+    return { available: false, source_total: index.source_total || 64183, note: index.reason, matches: [] };
+  }
+  const matches = index.records
+    .map((record) => ({ record, score: localRecordScore(record, query, queryPlan) }))
+    .filter((item) => item.score > -100)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item, idx) => ({
+      rank: idx + 1,
+      corpusid: item.record.corpusid,
+      title: cleanText(item.record.title, 260),
+      abstract_preview: cleanText(item.record.abstract_preview, 420),
+      score: Number(item.score.toFixed(3)),
+      profile: item.record.profile || "local",
+      source: item.record.source || "LitSearch local seed",
+      reason: `Local LitSearch seed index; source_total=${index.source_total}; profile=${item.record.profile || "local"}; lexical_score=${item.score.toFixed(3)}.`,
+    }));
+  return {
+    available: true,
+    source_total: index.source_total,
+    note: index.note,
+    index_path: path.basename(LOCAL_INDEX_PATH),
+    matches,
+  };
+}
+
 function seedWebResearch(query, queries) {
   const results = [];
   if (isCarbonTopic(query)) {
@@ -243,6 +444,12 @@ function seedWebResearch(query, queries) {
       { title: "World Bank State and Trends of Carbon Pricing", url: "https://carbonpricingdashboard.worldbank.org/", snippet: "Authoritative policy and market dashboard for carbon pricing mechanisms." },
       { title: "ICAP ETS Allowance Price Explorer", url: "https://icapcarbonaction.com/en/ets-prices", snippet: "Tracks emissions trading system allowance prices and policy context." },
       { title: "Climate Focus carbon market review", url: "https://climatefocus.com/", snippet: "Public market commentary that should be treated as non-verified web context." },
+    );
+  } else if (isRagTopic(query)) {
+    results.push(
+      { title: "OpenAlex RAG evaluation metadata", url: "https://openalex.org/", snippet: `实时论文发现：${queries.slice(0, 3).join(" | ")}` },
+      { title: "RAGAS evaluation framework", url: "https://docs.ragas.io/", snippet: "Common RAG evaluation vocabulary: faithfulness, answer relevance, context precision and recall; verify against papers before citing." },
+      { title: "arXiv RAG evaluation papers", url: "https://arxiv.org/", snippet: "Used for manually checking preprint titles, authors, years and claims after OpenAlex discovery." },
     );
   } else if (isMachineLearningTopic(query)) {
     results.push(
@@ -407,9 +614,87 @@ function parseJsonContent(text) {
   return JSON.parse(raw);
 }
 
-async function deepseekSummary(query, rows, webResearch) {
+function normalizeQueryPlan(query, candidate, fallback) {
+  const src = objectValue(candidate);
+  const fb = objectValue(fallback);
+  const openalex = uniqueStrings([
+    ...asArray(src.openalex_queries),
+    ...asArray(src.queries),
+    ...asArray(fb.openalex_queries),
+  ], 8);
+  const localQueries = uniqueStrings([
+    ...asArray(src.local_queries),
+    ...asArray(src.local_search_queries),
+    ...asArray(fb.local_queries),
+  ], 8);
+  const mustTerms = uniqueStrings([
+    ...asArray(src.must_terms),
+    ...asArray(src.required_terms),
+    ...asArray(fb.must_terms),
+  ], 16);
+  const rejectIfMissingAny = uniqueStrings([
+    ...asArray(src.reject_if_missing_any),
+    ...asArray(src.required_any),
+    ...asArray(fb.reject_if_missing_any),
+  ], 12);
+  const excludeTerms = uniqueStrings([
+    ...asArray(src.exclude_terms),
+    ...asArray(fb.exclude_terms),
+  ], 12);
+  return {
+    planner: src.planner || (src.openalex_queries ? "deepseek_query_planner" : fb.planner || "static_topic_rules"),
+    intent_cn: cleanText(src.intent_cn || src.intent || fb.intent_cn || `围绕“${query}”进行主题检索。`, 500),
+    openalex_queries: openalex.length ? openalex : fallbackQueries(query),
+    local_queries: localQueries.length ? localQueries : [query],
+    must_terms: mustTerms,
+    reject_if_missing_any: rejectIfMissingAny,
+    exclude_terms: excludeTerms,
+    strict_topic_gate: Boolean(src.strict_topic_gate ?? fb.strict_topic_gate),
+    warnings: evidenceList(src.warnings || []),
+  };
+}
+
+async function deepseekQueryPlan(query, fallbackPlan) {
+  if (!DEEPSEEK_API_KEY) return { plan: fallbackPlan, meta: { calls: 0, tokens: 0, fallback: true, reason: "DeepSeek key not configured" } };
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 9000);
+  try {
+    const response = await fetch(`${DEEPSEEK_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
+      method: "POST",
+      signal: controller.signal,
+      headers: { "content-type": "application/json", authorization: `Bearer ${DEEPSEEK_API_KEY}` },
+      body: JSON.stringify({
+        model: DEEPSEEK_MODEL,
+        temperature: 0,
+        max_tokens: 850,
+        response_format: { type: "json_object" },
+        messages: [
+          { role: "system", content: "你是科研检索 Query Planner。只返回 JSON，不返回论文标题，不编造论文。你的任务是把中文/混合主题改写成适合 OpenAlex 的英文检索词，并给出本地语料补强词和过滤边界。" },
+          { role: "user", content: `用户主题: ${query}\n静态兜底计划: ${JSON.stringify(fallbackPlan)}\n请返回 JSON：{intent_cn, openalex_queries:[3到5个英文查询], local_queries:[3到5个短查询], must_terms:[相关关键词], reject_if_missing_any:[至少命中一个的关键词], exclude_terms:[明显排除词], strict_topic_gate:boolean, warnings:[string]}。要求：OpenAlex 查询优先英文；RAG/检索增强生成主题必须包含 retrieval augmented generation/RAG/evaluation/benchmark/faithfulness 等词；不要输出具体论文标题。` },
+        ],
+      }),
+    });
+    if (!response.ok) throw new Error(`DeepSeek planner ${response.status}`);
+    const data = await response.json();
+    const content = data?.choices?.[0]?.message?.content || "{}";
+    return {
+      plan: normalizeQueryPlan(query, parseJsonContent(content), fallbackPlan),
+      meta: { calls: 1, tokens: data?.usage?.total_tokens || 0, fallback: false },
+    };
+  } catch (error) {
+    return {
+      plan: fallbackPlan,
+      meta: { calls: 0, tokens: 0, fallback: true, reason: cleanText(error.message || error, 160) },
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function deepseekSummary(query, rows, webResearch, queryPlan = null, localCorpus = null) {
   if (!DEEPSEEK_API_KEY || !rows.length) return { summary: fallbackSummary(query, rows, webResearch), meta: { calls: 0, tokens: 0, cached: false } };
   const paperPayload = rows.slice(0, 8).map((r) => ({ title: r.title, year: r.year, venue: r.venue, citations: r.citation_count, abstract_preview: r.abstract_preview }));
+  const localPayload = asArray(localCorpus?.matches).slice(0, 5).map((r) => ({ title: r.title, corpusid: r.corpusid, abstract_preview: r.abstract_preview, profile: r.profile }));
   const webPayload = (webResearch.results || []).slice(0, 6).map((r) => ({ title: r.title, url: r.url, snippet: r.snippet }));
   const response = await fetch(`${DEEPSEEK_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
@@ -421,7 +706,7 @@ async function deepseekSummary(query, rows, webResearch) {
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: "你是谨慎的中文科研调研助手。只返回 JSON。只能使用提供的 OpenAlex 论文和网页片段，不得编造论文、URL、指标、价格或网络观点。" },
-        { role: "user", content: `主题: ${query}\nOpenAlex 候选论文: ${JSON.stringify(paperPayload)}\n网页/背景片段: ${JSON.stringify(webPayload)}\n请用中文返回 JSON，键包括：prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string], deepseek_cn_summary:{title,summary,findings,evidence}.` },
+        { role: "user", content: `主题: ${query}\n查询规划: ${JSON.stringify(queryPlan || {})}\nOpenAlex 候选论文（主证据）: ${JSON.stringify(paperPayload)}\n本地 64,183 篇 LitSearch 语料补强候选（只作补充/兜底，不替代 OpenAlex 元数据）: ${JSON.stringify(localPayload)}\n网页/背景片段: ${JSON.stringify(webPayload)}\n请用中文返回 JSON，键包括：prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string], deepseek_cn_summary:{title,summary,findings,evidence}.` },
       ],
     }),
   });
@@ -489,37 +774,54 @@ function rateLimitFallbackPayload(query, queries, used, errors, started) {
 
 async function buildPayload(query) {
   const started = Date.now();
-  const queries = fallbackQueries(query).slice(0, 6);
-  const { rows, used, errors } = await paperRows(query, queries, 8);
+  const fallbackPlan = staticQueryPlan(query);
+  const { plan: queryPlan, meta: plannerMeta } = await deepseekQueryPlan(query, fallbackPlan);
+  const queries = uniqueStrings(queryPlan.openalex_queries, 8);
+  const localCorpus = searchLocalCorpus(query, queryPlan, 5);
+  const { rows, used, errors } = await paperRows(query, queries, 8, queryPlan);
   if (!rows.length) {
     const fallbackErrors = errors.length ? errors : [{ query: queries[0] || query, status: "empty", message: "OpenAlex returned no candidates" }];
-    return rateLimitFallbackPayload(query, queries, used, fallbackErrors, started);
+    const fallbackPayload = rateLimitFallbackPayload(query, queries, used, fallbackErrors, started);
+    fallbackPayload.label = localCorpus.matches.length ? "OpenAlex 暂无强相关结果：本地语料兜底" : fallbackPayload.label;
+    fallbackPayload.query_plan = queryPlan;
+    fallbackPayload.local_corpus = localCorpus;
+    fallbackPayload.topic_research.local_corpus_matches = localCorpus.matches;
+    fallbackPayload.topic_research.deepseek_api_note = {
+      role: "DeepSeek 先做检索规划；OpenAlex 暂无强相关候选时，本地 LitSearch seed 只作兜底线索。",
+      base_url: DEEPSEEK_BASE_URL,
+      limitation: "不把本地兜底线索冒充为 OpenAlex 实时论文证据。",
+    };
+    return fallbackPayload;
   }
   const webResearch = seedWebResearch(query, used.length ? used : queries);
   const fallback = fallbackSummary(query, rows, webResearch);
-  const { summary: rawSummary, meta } = await deepseekSummary(query, rows, webResearch).catch(() => ({ summary: fallback, meta: { calls: 0, tokens: 0, fallback: true } }));
+  const { summary: rawSummary, meta } = await deepseekSummary(query, rows, webResearch, queryPlan, localCorpus).catch(() => ({ summary: fallback, meta: { calls: 0, tokens: 0, fallback: true } }));
   const summary = sanitizeSummary(rawSummary, fallback);
   return {
     schema_version: "m130.search_response.v1",
-    label: DEEPSEEK_API_KEY ? "后端实时：OpenAlex + DeepSeek" : "后端实时：OpenAlex only",
+    label: DEEPSEEK_API_KEY ? "DeepSeek规划 + OpenAlex主检索 + 本地语料补强" : "OpenAlex主检索 + 本地语料补强",
     verified_load_bearing: false,
     deterministic: false,
     source_contract: "实时结果只用于调研发现，不作为承重证据；失败时显示明确回退。",
     status: rows.length ? "ok" : "empty",
     enabled: true,
-    reason: DEEPSEEK_API_KEY ? "serverless 后端已使用 OpenAlex 元数据和 DeepSeek 中文归纳。" : "serverless 后端仅使用 OpenAlex 元数据；尚未配置 DeepSeek key。",
+    reason: DEEPSEEK_API_KEY ? "DeepSeek 先生成英文检索规划，OpenAlex 负责真实论文元数据，本地 64,183 篇 LitSearch seed 负责补强/兜底，DeepSeek 最后做中文归纳。" : "OpenAlex 负责真实论文元数据，本地 64,183 篇 LitSearch seed 负责补强/兜底。",
     fallback_reason: null,
     query,
-    decomposition: { subqueries: queries, criteria: ["topic relevance", "metadata availability", "manual verification required"] },
+    query_plan: queryPlan,
+    decomposition: { subqueries: queries, criteria: ["DeepSeek query planning", "OpenAlex primary evidence", "LitSearch local supplement", "manual verification required"] },
     results: rows,
-    cost: { llm_calls: meta.calls || 0, tokens: meta.tokens || 0, latency_s: (Date.now() - started) / 1000 },
+    local_corpus: localCorpus,
+    cost: { llm_calls: (plannerMeta.calls || 0) + (meta.calls || 0), tokens: (plannerMeta.tokens || 0) + (meta.tokens || 0), latency_s: (Date.now() - started) / 1000, planner_fallback: Boolean(plannerMeta.fallback) },
     notice: "实时主题调研只是发现草稿；论文和网页结论需人工核验。",
     raw_mode: "serverless_topic_research",
-    source: { corpus: "OpenAlex live metadata", ranker: "serverless_topic_research" },
+    source: { corpus: "OpenAlex live metadata + LitSearch local seed", ranker: "deepseek_planned_openalex_with_local_supplement" },
     topic_research: {
       intent: `围绕“${query}”进行后端实时主题调研。`,
       searched_queries: used,
+      query_planner: queryPlan,
       recommended_papers: rows,
+      local_corpus_matches: localCorpus.matches,
       prior_issues: summary.prior_issues || [],
       reading_route: summary.reading_route || [],
       research_plan: summary.research_plan || [],
@@ -529,7 +831,7 @@ async function buildPayload(query) {
       deepseek_cn_summary: summary.deepseek_cn_summary || fallbackSummary(query, rows, webResearch).deepseek_cn_summary,
       web_research: webResearch,
       deepseek_api_note: {
-        role: DEEPSEEK_API_KEY ? "Summarizes supplied paper/web evidence on the server side" : "Not configured on this deployment",
+        role: DEEPSEEK_API_KEY ? "Query planner first, then Chinese synthesis from supplied OpenAlex/local/web evidence on the server side" : "Not configured on this deployment",
         base_url: DEEPSEEK_BASE_URL,
         limitation: "DeepSeek is called only from the serverless backend; keys are never exposed to the browser.",
       },
@@ -544,7 +846,7 @@ module.exports = async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ status: "error", reason: "GET only" });
   const query = cleanText(req.query?.q || req.query?.query || "", 200);
   if (!query) return res.status(400).json({ status: "empty", reason: "Missing q parameter", results: [] });
-  const payloadCacheKey = query.toLowerCase();
+  const payloadCacheKey = `${CACHE_VERSION}::${query.toLowerCase()}`;
   const cachedPayload = cacheGet(payloadCache, payloadCacheKey);
   if (cachedPayload) {
     return res.status(200).json({
