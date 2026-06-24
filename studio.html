@@ -1,633 +1,121 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ScholarLoop Research Intelligence Studio</title>
+  <title>ScholarLoop · Research Intelligence Studio</title>
   <style>
     :root{
       color-scheme:dark;
-      --sl-bg:#030406;
-      --sl-bg-2:#07111f;
-      --sl-ink:#f6fbff;
-      --sl-muted:#9aa8bc;
-      --sl-soft:#c8d5e6;
-      --sl-card:rgba(8,14,24,.76);
-      --sl-card-solid:#0d1422;
-      --sl-card-strong:rgba(13,20,34,.92);
-      --sl-line:rgba(255,255,255,.12);
-      --sl-line-strong:rgba(255,255,255,.22);
-      --sl-brand:#5eead4;
-      --sl-brand-2:#60a5fa;
-      --sl-brand-3:#a78bfa;
-      --sl-warn:#fbbf24;
-      --sl-bad:#fb7185;
-      --sl-ok:#34d399;
-      --sl-shadow:0 30px 90px rgba(0,0,0,.48);
-      --sl-shadow-soft:0 16px 48px rgba(0,0,0,.30);
-      --sl-radius-xl:30px;
-      --sl-radius-lg:22px;
-      --sl-radius-md:16px;
-      --sl-font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
-      --sl-mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
-      --sl-motion:180ms cubic-bezier(.2,.8,.2,1);
+      --bg:#020304;--ink:#f4f7fb;--muted:#8f9bad;--soft:#c9d3df;
+      --line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.22);
+      --card:rgba(8,11,16,.68);--card2:rgba(13,18,27,.84);
+      --cyan:#61f1df;--blue:#7cc7ff;--violet:#a88cff;--amber:#f2c76b;--green:#32d29b;
+      --radius:24px;--radius2:18px;--font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+      --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
     }
-    *{box-sizing:border-box}
+    *{box-sizing:border-box;min-width:0}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      min-height:100vh;
-      color:var(--sl-ink);
-      font-family:var(--sl-font);
-      line-height:1.56;
-      background:
-        radial-gradient(circle at 50% 38%,rgba(94,234,212,.16),transparent 20rem),
-        radial-gradient(circle at 76% 20%,rgba(96,165,250,.14),transparent 24rem),
-        radial-gradient(circle at 18% 24%,rgba(167,139,250,.12),transparent 24rem),
-        linear-gradient(180deg,#000 0%,#030406 46%,#07111f 100%);
-      overflow-x:hidden;
-    }
-    body:before{
-      content:"";
-      position:fixed;
-      inset:auto -12vw 21vh;
-      height:1px;
-      pointer-events:none;
-      background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),rgba(94,234,212,.48),rgba(255,255,255,.18),transparent);
-      box-shadow:0 0 46px 12px rgba(94,234,212,.18),0 0 120px 42px rgba(96,165,250,.10);
-      z-index:-1;
-    }
-    body:after{
-      content:"";
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      background:
-        linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
-      background-size:48px 48px;
-      mask-image:linear-gradient(180deg,transparent 0%,#000 28%,transparent 100%);
-      z-index:-1;
-    }
-    a{color:var(--sl-brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    :focus-visible{outline:2px solid var(--sl-brand);outline-offset:3px;border-radius:10px}
-    .shell{width:min(1320px,calc(100% - 32px));margin:0 auto;padding:22px 0 64px}
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:20;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:12px 0;
-      backdrop-filter:blur(18px);
-    }
-    .brand{display:flex;align-items:center;gap:10px;color:var(--sl-soft);font-weight:760;letter-spacing:.02em}
-    .brand-dot{width:12px;height:12px;border-radius:99px;background:var(--sl-brand);box-shadow:0 0 24px rgba(94,234,212,.9)}
-    .top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-    .top-actions a,.status-pill{
-      border:1px solid var(--sl-line);
-      background:rgba(255,255,255,.055);
-      color:var(--sl-soft);
-      border-radius:999px;
-      padding:7px 11px;
-      font-size:12px;
-      font-weight:720;
-    }
-    .status-pill{display:inline-flex;align-items:center;gap:7px}
-    .status-dot{width:8px;height:8px;border-radius:99px;background:var(--sl-ok);box-shadow:0 0 18px rgba(52,211,153,.7)}
-    .hero{
-      min-height:520px;
-      display:grid;
-      grid-template-columns:minmax(0,.92fr) minmax(360px,1.08fr);
-      gap:28px;
-      align-items:center;
-      padding:58px clamp(18px,3vw,44px) 44px;
-      border:1px solid var(--sl-line);
-      border-radius:var(--sl-radius-xl);
-      background:
-        linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),
-        radial-gradient(circle at 72% 18%,rgba(96,165,250,.18),transparent 26rem),
-        rgba(3,4,6,.38);
-      box-shadow:var(--sl-shadow);
-      position:relative;
-      overflow:hidden;
-    }
-    .hero:before{
-      content:"";
-      position:absolute;
-      left:8%;
-      right:8%;
-      top:50%;
-      height:1px;
-      background:linear-gradient(90deg,transparent,rgba(255,255,255,.34),rgba(94,234,212,.72),rgba(255,255,255,.22),transparent);
-      filter:blur(.25px);
-      opacity:.75;
-    }
-    .hero-copy,.mission-panel{position:relative;z-index:1}
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      border:1px solid var(--sl-line-strong);
-      border-radius:999px;
-      padding:7px 12px;
-      color:var(--sl-brand);
-      background:rgba(94,234,212,.07);
-      font-size:12px;
-      font-weight:780;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-    }
-    h1{
-      margin:18px 0 14px;
-      font-size:clamp(40px,6.2vw,88px);
-      line-height:.96;
-      letter-spacing:-.07em;
-    }
-    .lead{max-width:780px;margin:0;color:#dbe7f7;font-size:clamp(16px,1.9vw,20px)}
-    .hero-note{max-width:720px;color:var(--sl-muted);font-size:13px;margin-top:16px}
-    .metric-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:24px}
-    .metric{
-      border:1px solid var(--sl-line);
-      border-radius:18px;
-      background:rgba(255,255,255,.055);
-      padding:14px;
-    }
-    .metric b{display:block;font-size:22px;letter-spacing:-.04em}
-    .metric span{display:block;margin-top:4px;color:var(--sl-muted);font-size:12px}
-    .mission-panel{
-      border:1px solid var(--sl-line-strong);
-      border-radius:26px;
-      background:linear-gradient(180deg,rgba(10,18,32,.84),rgba(7,12,20,.92));
-      box-shadow:var(--sl-shadow-soft);
-      padding:18px;
-    }
-    .search-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
-    .search-title b{font-size:18px}
-    .search-title span{display:block;color:var(--sl-muted);font-size:12px;margin-top:2px}
-    .search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
-    .search-input{
-      width:100%;
-      border:1px solid var(--sl-line-strong);
-      border-radius:18px;
-      background:rgba(255,255,255,.96);
-      color:#07111f;
-      padding:15px 16px;
-      font:760 15px var(--sl-font);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.32);
-    }
-    .btn{
-      appearance:none;
-      border:0;
-      border-radius:18px;
-      padding:14px 18px;
-      font:820 14px var(--sl-font);
-      color:#04111d;
-      background:linear-gradient(135deg,#e9fffb,#7dd3fc);
-      cursor:pointer;
-      transition:transform var(--sl-motion),box-shadow var(--sl-motion),opacity var(--sl-motion);
-      box-shadow:0 16px 34px rgba(94,234,212,.22);
-    }
-    .btn:hover{transform:translateY(-1px)}
-    .btn:disabled{cursor:not-allowed;opacity:.62;transform:none}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .chip{
-      border:1px solid var(--sl-line);
-      border-radius:999px;
-      color:var(--sl-soft);
-      background:rgba(255,255,255,.055);
-      padding:7px 10px;
-      font:720 12px var(--sl-font);
-      cursor:pointer;
-    }
-    .pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:16px}
-    .pipe-step{
-      min-height:70px;
-      border:1px solid var(--sl-line);
-      border-radius:16px;
-      background:rgba(255,255,255,.045);
-      padding:11px;
-      color:var(--sl-muted);
-      font-size:12px;
-    }
-    .pipe-step b{display:block;color:var(--sl-soft);font-size:13px;margin-bottom:4px}
-    .workspace{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:22px;margin-top:22px;align-items:start}
-    .card{
-      border:1px solid var(--sl-line);
-      border-radius:var(--sl-radius-lg);
-      background:var(--sl-card);
-      box-shadow:var(--sl-shadow-soft);
-      padding:20px;
-      backdrop-filter:blur(18px);
-    }
-    .card h2{margin:0 0 8px;font-size:22px;letter-spacing:-.035em}
-    .subtle{color:var(--sl-muted);font-size:13px}
-    .module-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:16px 0}
-    .module-card{
-      border:1px solid var(--sl-line);
-      border-radius:18px;
-      min-height:118px;
-      padding:14px;
-      background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.035));
-    }
-    .module-card strong{display:block;font-size:14px;margin-bottom:8px}
-    .module-card span{color:var(--sl-muted);font-size:12px}
-    .livebar{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-      border:1px solid var(--sl-line);
-      border-radius:18px;
-      background:rgba(255,255,255,.045);
-      padding:11px;
-      margin:14px 0;
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      border:1px solid rgba(94,234,212,.24);
-      border-radius:999px;
-      padding:6px 10px;
-      color:#c8fff6;
-      background:rgba(94,234,212,.08);
-      font-size:12px;
-      font-weight:720;
-    }
-    .pill.warn{border-color:rgba(251,191,36,.28);background:rgba(251,191,36,.08);color:#ffe5a3}
-    .topic-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-    .topic-tab{
-      border:1px solid var(--sl-line);
-      border-radius:999px;
-      background:rgba(255,255,255,.055);
-      color:var(--sl-soft);
-      padding:9px 12px;
-      font:820 13px var(--sl-font);
-      cursor:pointer;
-    }
-    .topic-tab.is-active{background:linear-gradient(135deg,rgba(94,234,212,.24),rgba(96,165,250,.18));border-color:rgba(94,234,212,.58);color:#fff}
-    .topic-page{display:none}
-    .topic-page.is-active{display:block}
-    .topic-page h3{margin:12px 0 10px;font-size:19px}
-    .result-list{display:grid;gap:10px}
-    .search-result,.experience-card,.empty,.error,.loading,.trust-panel{
-      border:1px solid var(--sl-line);
-      border-radius:18px;
-      background:rgba(255,255,255,.055);
-      padding:15px;
-    }
-    .search-result h4,.experience-card h4{margin:0 0 7px;font-size:16px}
-    .search-result p,.experience-card p{margin:7px 0}
-    .raw-evidence{
-      margin-top:10px;
-      border:1px solid var(--sl-line);
-      border-radius:14px;
-      padding:10px;
-      background:rgba(0,0,0,.18);
-    }
-    .raw-evidence summary{cursor:pointer;font-weight:820}
-    .raw-evidence pre{
-      white-space:pre-wrap;
-      overflow:auto;
-      color:#d7e7ff;
-      font:12px/1.45 var(--sl-mono);
-    }
-    ul{padding-left:20px;margin:8px 0}
-    li{margin:4px 0}
-    .side-stack{display:grid;gap:16px}
-    .agent-core{
-      display:grid;
-      place-items:center;
-      min-height:220px;
-      position:relative;
-      overflow:hidden;
-    }
-    .agent-core:before{
-      content:"";
-      position:absolute;
-      inset:22px;
-      border-radius:999px;
-      background:radial-gradient(circle,rgba(94,234,212,.22),transparent 62%);
-      filter:blur(14px);
-    }
-    .core-node{
-      position:relative;
-      width:132px;
-      height:132px;
-      border-radius:999px;
-      display:grid;
-      place-items:center;
-      text-align:center;
-      border:1px solid rgba(94,234,212,.42);
-      background:linear-gradient(135deg,rgba(94,234,212,.20),rgba(96,165,250,.08));
-      box-shadow:0 0 70px rgba(94,234,212,.22);
-      font-size:13px;
-      font-weight:820;
-    }
-    .audit details{border:1px solid var(--sl-line);border-radius:18px;padding:14px;background:rgba(255,255,255,.035)}
-    .audit summary{cursor:pointer;font-weight:850}
-    .audit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
-    @media(max-width:1080px){
-      .hero,.workspace{grid-template-columns:1fr}
-      .module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pipeline,.metric-row,.audit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-    }
-    @media(max-width:640px){
-      .shell{width:min(100% - 20px,1320px);padding-top:8px}
-      .hero{min-height:auto;padding:28px 16px}
-      .search-row,.pipeline,.metric-row,.module-grid,.audit-grid{grid-template-columns:1fr}
-      h1{font-size:40px}
-      .topbar{position:relative;align-items:flex-start;flex-direction:column}
-    }
-    @media(prefers-reduced-motion:reduce){
-      *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
-    }
+    body{margin:0;min-height:100vh;background:#000;color:var(--ink);font-family:var(--font);line-height:1.55;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:
+      radial-gradient(circle at 50% 48%,rgba(132,230,255,.18),transparent 18rem),
+      radial-gradient(circle at 50% 62%,rgba(75,255,220,.12),transparent 22rem),
+      linear-gradient(180deg,#000 0%,#020304 46%,#07101a 100%);z-index:-3}
+    body:after{content:"";position:fixed;left:-10vw;right:-10vw;top:52vh;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),rgba(97,241,223,.76),rgba(255,255,255,.22),transparent);box-shadow:0 0 42px 12px rgba(97,241,223,.16),0 0 140px 54px rgba(124,199,255,.08);z-index:-2}
+    .grid-bg{position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:54px 54px;mask-image:radial-gradient(circle at 50% 50%,#000 0,transparent 68%);z-index:-1}
+    a{color:var(--soft);text-decoration:none}a:hover{color:#fff;text-decoration:none}
+    button,input{font-family:inherit}:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:12px}
+    .shell{width:min(1280px,calc(100% - 40px));margin:0 auto;padding:26px 0 62px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:26px;color:var(--soft)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:760;letter-spacing:.01em}.dot{width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 24px rgba(97,241,223,.9)}
+    .nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a,.badge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);padding:8px 13px;color:var(--soft);font-size:12px;font-weight:750}.badge .dot{width:7px;height:7px;background:var(--green)}
+    .stage{position:relative;min-height:670px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.014));box-shadow:0 34px 100px rgba(0,0,0,.42);overflow:hidden;padding:48px clamp(22px,4vw,60px)}
+    .stage:before{content:"";position:absolute;left:8%;right:8%;top:58%;height:1px;background:linear-gradient(90deg,transparent,rgba(97,241,223,.38),rgba(255,255,255,.18),transparent)}
+    .stage-head{text-align:center;margin:0 auto 48px;max-width:980px;position:relative;z-index:2}.kicker{display:inline-flex;border:1px solid rgba(97,241,223,.30);border-radius:999px;background:rgba(97,241,223,.06);color:var(--cyan);padding:7px 15px;font-size:11px;font-weight:850;letter-spacing:.22em;text-transform:uppercase}.stage-head h1{margin:18px 0 10px;font-size:clamp(30px,3.2vw,48px);line-height:1.08;letter-spacing:-.045em}.stage-head p{margin:0 auto;color:var(--muted);font-size:15px;max-width:700px}
+    .flow{position:relative;z-index:2;display:grid;grid-template-columns:minmax(260px,.9fr) 170px minmax(310px,1.05fr);gap:clamp(18px,3vw,38px);align-items:center;margin:16px auto 0;max-width:1120px}
+    .flow-lines{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.82}.flow-line{stroke:rgba(97,241,223,.28);stroke-width:1.2}.flow-line.hot{stroke:rgba(124,199,255,.36)}
+    .glass{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);backdrop-filter:blur(18px);box-shadow:0 22px 70px rgba(0,0,0,.28)}
+    .input-card{padding:18px}.caption{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.caption b{font-size:15px}.caption span{color:var(--muted);font-size:12px}.safe{border:1px solid rgba(242,199,107,.30);border-radius:999px;color:#ffe4a3;background:rgba(242,199,107,.07);padding:5px 9px;font-size:11px;font-weight:800;white-space:nowrap}
+    .search{display:grid;gap:10px}.search input{width:100%;border:1px solid var(--line2);border-radius:18px;background:rgba(255,255,255,.94);color:#071018;padding:14px 15px;font-weight:800;font-size:15px}.search button{border:0;border-radius:18px;background:linear-gradient(135deg,#e8fffb,#82ddff);color:#061018;padding:13px 15px;font-weight:900;cursor:pointer;box-shadow:0 18px 38px rgba(97,241,223,.16)}.search button:disabled{opacity:.58;cursor:not-allowed}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.chip{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:var(--soft);padding:6px 9px;font-size:11px;font-weight:760;cursor:pointer}
+    .core{display:grid;place-items:center;min-height:230px}.core-node{width:142px;height:142px;border-radius:50%;display:grid;place-items:center;text-align:center;border:1px solid rgba(97,241,223,.45);background:radial-gradient(circle at 50% 34%,rgba(97,241,223,.28),rgba(124,199,255,.09) 58%,rgba(255,255,255,.025));box-shadow:0 0 80px rgba(97,241,223,.18),inset 0 0 32px rgba(255,255,255,.045);font-weight:900;font-size:13px;letter-spacing:.05em}.core-node small{display:block;margin-top:5px;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    .module-stack{display:grid;gap:10px}.module{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.045);padding:12px 13px}.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(97,241,223,.09);color:var(--cyan);font:900 12px var(--mono)}.module b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.module span{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tag{color:var(--cyan);font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+    .result{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px;align-items:start}.panel{border:1px solid var(--line);border-radius:26px;background:rgba(5,8,12,.72);backdrop-filter:blur(18px);padding:18px}.panel h2{margin:0 0 6px;font-size:18px}.subtle{color:var(--muted);font-size:13px}.livebar{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(97,241,223,.22);border-radius:999px;background:rgba(97,241,223,.055);color:#d8fffa;padding:6px 10px;font-size:11px;font-weight:800}.pill.warn{border-color:rgba(242,199,107,.25);background:rgba(242,199,107,.06);color:#ffe7ac}
+    .topic-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.topic-tab{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);color:var(--soft);padding:8px 10px;font-size:12px;font-weight:850;cursor:pointer}.topic-tab.is-active{border-color:rgba(97,241,223,.55);background:rgba(97,241,223,.12);color:#fff}.topic-page{display:none}.topic-page.is-active{display:block}.topic-page h3{margin:12px 0 10px;font-size:16px}.list{display:grid;gap:10px}.item,.empty,.error,.loading,.trust{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04);padding:13px}.item h4{margin:0 0 6px;font-size:14px}.item p{margin:6px 0}.item ul{margin:7px 0 0;padding-left:18px;color:var(--soft);font-size:13px}.item li{margin:3px 0}.raw{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}.raw summary{cursor:pointer;font-size:12px;color:var(--muted)}.raw pre{white-space:pre-wrap;overflow:auto;font:11px/1.45 var(--mono);color:#cfe4ff}.side-note{display:grid;gap:12px}.mini{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035);padding:13px}.mini b{display:block;margin-bottom:5px;font-size:13px}.mini span{color:var(--muted);font-size:12px}.audit details{border:1px solid var(--line);border-radius:18px;padding:13px;background:rgba(255,255,255,.035)}.audit summary{cursor:pointer;font-weight:850}.audit p{margin-bottom:0}
+    @media(max-width:980px){.flow,.result{grid-template-columns:1fr}.core{min-height:150px}.flow-lines{display:none}.stage{min-height:auto}.module b,.module span{white-space:normal}.nav{justify-content:flex-start}.topbar{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.shell{width:min(100% - 22px,1280px);padding-top:14px}.stage{padding:26px 14px;border-radius:24px}.stage-head h1{font-size:34px}.module{grid-template-columns:auto 1fr}.tag{display:none}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
   </style>
 </head>
 <body>
+  <div class="grid-bg"></div>
   <main class="shell">
     <header class="topbar">
-      <div class="brand"><span class="brand-dot"></span>ScholarLoop · Research Intelligence Studio</div>
-      <nav class="top-actions" aria-label="项目链接">
-        <span class="status-pill"><span class="status-dot"></span>阿里云在线</span>
-        <a href="https://github.com/124-creator/ScholarLoop" target="_blank" rel="noopener">GitHub</a>
-        <a href="/" target="_blank" rel="noopener">技术审计版</a>
-        <a href="/api/search?q=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" target="_blank" rel="noopener">API 自测</a>
-      </nav>
+      <div class="brand"><span class="dot"></span>ScholarLoop</div>
+      <nav class="nav" aria-label="项目导航"><span class="badge"><span class="dot"></span>阿里云在线</span><a href="https://github.com/124-creator/ScholarLoop" target="_blank" rel="noopener">GitHub</a><a href="/" target="_blank" rel="noopener">技术审计版</a><a href="/api/search?q=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" target="_blank" rel="noopener">API 自测</a></nav>
     </header>
 
-    <section class="hero" aria-label="ScholarLoop 首屏">
-      <div class="hero-copy">
-        <span class="eyebrow">Research Intelligence Studio</span>
-        <h1>可信科研调研智能体</h1>
-        <p class="lead">输入任意研究主题，后端实时调用 OpenAlex 检索论文，并用 DeepSeek 在服务端生成中文调研草稿：推荐论文、前人问题、阅读路线、执行计划、网络调研，一屏看清。</p>
-        <p class="hero-note">这是求职作品集演示：展示检索、证据边界、后端接口、部署和产品化表达。实时结果用于调研发现，引用或简历承重前必须人工核验。</p>
-        <div class="metric-row" aria-label="可信指标">
-          <div class="metric"><b>OpenAlex</b><span>真实论文元数据检索</span></div>
-          <div class="metric"><b>DeepSeek</b><span>服务端中文归纳，不暴露密钥</span></div>
-          <div class="metric"><b>5 模块</b><span>HR/面试官能快速看懂</span></div>
-        </div>
+    <section class="stage" aria-label="ScholarLoop Research Studio">
+      <div class="stage-head">
+        <span class="kicker">Research Intelligence Studio</span>
+        <h1>输入主题，生成可核验调研路线</h1>
+        <p>OpenAlex 负责真实论文检索，DeepSeek 在服务端基于证据做中文归纳。页面只突出一个闭环：输入 → Agent → 五模块输出。</p>
       </div>
 
-      <div class="mission-panel">
-        <div class="search-title">
-          <div><b>输入一个研究主题</b><span>默认显示静态示例；点击按钮后才运行实时搜索。</span></div>
-          <span class="pill warn">不自动消耗 API</span>
-        </div>
-        <div class="search-row">
-          <input id="studio-search-input" class="search-input" value="机器学习" autocomplete="off" aria-label="输入研究主题">
-          <button id="studio-search-button" class="btn" type="button" onclick="runStudioSearch()">运行实时搜索</button>
-        </div>
-        <div class="chips" aria-label="示例主题">
-          <button class="chip" type="button" data-question="碳价格预测" onclick="fillExample(this)">碳价格预测</button>
-          <button class="chip" type="button" data-question="RAG 评测" onclick="fillExample(this)">RAG 评测</button>
-          <button class="chip" type="button" data-question="AI Agent 自动化评测" onclick="fillExample(this)">AI Agent 自动化评测</button>
-          <button class="chip" type="button" data-question="large language model compression" onclick="fillExample(this)">LLM compression</button>
-        </div>
-        <div class="pipeline" aria-label="执行链路">
-          <div class="pipe-step"><b>01 拆解主题</b>生成检索意图与子查询</div>
-          <div class="pipe-step"><b>02 搜论文</b>OpenAlex 返回候选论文</div>
-          <div class="pipe-step"><b>03 归纳</b>DeepSeek 基于证据写中文草稿</div>
-          <div class="pipe-step"><b>04 输出</b>五模块 + 可信边界</div>
-        </div>
+      <div class="flow">
+        <svg class="flow-lines" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path class="flow-line hot" d="M245 150 C345 80 415 95 500 150" fill="none"/><path class="flow-line" d="M245 150 C345 218 415 205 500 150" fill="none"/><path class="flow-line hot" d="M500 150 C610 58 704 54 780 58" fill="none"/><path class="flow-line" d="M500 150 C620 116 704 116 780 116" fill="none"/><path class="flow-line" d="M500 150 C620 174 704 174 780 174" fill="none"/><path class="flow-line" d="M500 150 C610 238 704 236 780 236" fill="none"/></svg>
+
+        <section class="glass input-card">
+          <div class="caption"><div><b>研究主题</b><span>默认静态示例，点击后实时检索</span></div><em class="safe">不自动消耗 API</em></div>
+          <div class="search"><input id="studio-search-input" value="RAG 评测" autocomplete="off" aria-label="输入研究主题"><button id="studio-search-button" type="button" onclick="runStudioSearch()">运行实时搜索</button></div>
+          <div class="chips"><button class="chip" type="button" data-question="碳价格预测" onclick="fillExample(this)">碳价格预测</button><button class="chip" type="button" data-question="机器学习" onclick="fillExample(this)">机器学习</button><button class="chip" type="button" data-question="AI Agent 自动化评测" onclick="fillExample(this)">AI Agent 自动化评测</button><button class="chip" type="button" data-question="large language model compression" onclick="fillExample(this)">LLM compression</button></div>
+        </section>
+
+        <section class="core" aria-label="Agent Core"><div class="core-node">Agent Core<small>OpenAlex · DeepSeek</small></div></section>
+
+        <section class="glass module-stack" aria-label="五模块输出">
+          <div class="module"><i class="num">01</i><div><b>推荐论文</b><span>题名、年份、DOI、摘要状态</span></div><em class="tag">Paper</em></div>
+          <div class="module"><i class="num">02</i><div><b>前人问题</b><span>常见坑、空白与核验要求</span></div><em class="tag">Risk</em></div>
+          <div class="module"><i class="num">03</i><div><b>阅读路线</b><span>综述 → 方法 → 选题</span></div><em class="tag">Route</em></div>
+          <div class="module"><i class="num">04</i><div><b>执行计划</b><span>把调研转成作品集闭环</span></div><em class="tag">Plan</em></div>
+          <div class="module"><i class="num">05</i><div><b>网络调研</b><span>DeepSeek 角色与注意点</span></div><em class="tag">Web</em></div>
+        </section>
       </div>
     </section>
 
-    <section class="workspace">
-      <section class="card" aria-label="五模块调研结果">
-        <h2>五模块实时调研结果</h2>
-        <p class="subtle">默认是可读的静态示例，保证 HR 第一眼能看懂；点击实时搜索后会替换为 `/api/search?q=主题` 的真实返回。</p>
+    <section class="result">
+      <section class="panel">
+        <h2>调研输出</h2>
+        <p class="subtle">这里展示完整五模块；默认示例保证首屏美观，实时搜索成功后自动替换。</p>
         <div id="live-status" class="livebar" aria-live="polite"></div>
-        <div class="module-grid" aria-label="输出模块总览">
-          <div class="module-card"><strong>① 推荐论文</strong><span>看标题、年份、DOI/来源、摘要状态。</span></div>
-          <div class="module-card"><strong>② 前人问题</strong><span>总结常见坑、研究空白和核验要求。</span></div>
-          <div class="module-card"><strong>③ 阅读路线</strong><span>从综述到方法、再到可执行选题。</span></div>
-          <div class="module-card"><strong>④ 执行计划</strong><span>把调研转成作品集或实验闭环。</span></div>
-          <div class="module-card"><strong>⑤ 网络调研</strong><span>说明网页线索、DeepSeek 角色和注意点。</span></div>
-        </div>
         <div id="studio-output"></div>
       </section>
-
-      <aside class="side-stack">
-        <section class="card agent-core" aria-label="Agent Core">
-          <div class="core-node">OpenAlex<br>+<br>DeepSeek</div>
+      <aside class="side-note">
+        <section class="panel">
+          <h2>作品集看点</h2>
+          <div class="mini"><b>真实后端</b><span>Node + Nginx + PM2 部署在阿里云。</span></div>
+          <div class="mini"><b>真实检索</b><span>/api/search 调用 OpenAlex，服务端可接 DeepSeek。</span></div>
+          <div class="mini"><b>可信边界</b><span>候选论文与网页线索不直接当承重证据。</span></div>
         </section>
-        <section class="card">
-          <h2>为什么这版更适合投实习</h2>
-          <p class="subtle">把“学术审计”下沉，把“能交互的 AI Agent 产品”放到首屏。HR 不需要理解 64,183 篇语料和评测矩阵，也能先看到真实后端、实时检索、五模块输出。</p>
-          <div class="livebar">
-            <span class="pill">Node + Nginx + PM2</span>
-            <span class="pill">无外部 CDN</span>
-            <span class="pill">可公网访问</span>
-          </div>
-        </section>
-        <section class="card audit">
-          <h2>技术评审入口</h2>
-          <details>
-            <summary>展开查看学术审计与可信边界</summary>
-            <div class="audit-grid">
-              <div class="metric"><b>64,183</b><span>文献语料/检索库，不是训练大模型权重</span></div>
-              <div class="metric"><b>BM25/Embedding</b><span>检索与候选生成，不夸大为万能模型</span></div>
-              <div class="metric"><b>Cross-Encoder</b><span>重排信号，承重结论仍需原文核验</span></div>
-            </div>
-            <p class="subtle">完整基准、证据卡、关系图和 JSON 契约仍保留在 <a href="/" target="_blank" rel="noopener">技术审计版首页</a>。</p>
-          </details>
+        <section class="panel audit">
+          <h2>技术审计</h2>
+          <details><summary>展开</summary><p class="subtle">64,183 篇是文献语料/检索库，不是训练大模型。完整基准、证据卡和关系图保留在 <a href="/" target="_blank" rel="noopener">技术审计版</a>。</p></details>
         </section>
       </aside>
     </section>
   </main>
 
   <script>
-    const DEFAULT_PAYLOAD = {
-      schema_version:"m130.search_response.v1",
-      label:"静态示例：五模块结构预览",
-      status:"ok",
-      enabled:true,
-      verified_load_bearing:false,
-      deterministic:true,
-      query:"机器学习",
-      reason:"首屏默认示例，不自动调用实时接口；点击运行实时搜索后替换为 OpenAlex + DeepSeek 真实结果。",
-      decomposition:{subqueries:["machine learning survey","model selection","interpretability","evaluation"],criteria:["主题相关","元数据可用","需人工核验"]},
-      cost:{llm_calls:0,tokens:0,latency_s:0},
-      results:[
-        {rank:1,title:"A Few Useful Things to Know about Machine Learning",year:2012,authors:["Pedro Domingos"],citation_count:0,doi:"10.1145/2347736.2347755",url:"https://doi.org/10.1145/2347736.2347755",abstract_preview:"经典机器学习实践文章，用于建立数据、泛化、特征和评估的基本认知。",reason:"静态示例；引用前需打开来源核验。"},
-        {rank:2,title:"Random Forests",year:2001,authors:["Leo Breiman"],citation_count:0,doi:"10.1023/A:1010933404324",url:"https://doi.org/10.1023/A:1010933404324",abstract_preview:"经典集成学习方法，可作为机器学习调研中的基础方法锚点。",reason:"静态示例；引用前需打开来源核验。"},
-        {rank:3,title:"XGBoost: A Scalable Tree Boosting System",year:2016,authors:["Tianqi Chen","Carlos Guestrin"],citation_count:0,doi:"10.1145/2939672.2939785",url:"https://doi.org/10.1145/2939672.2939785",abstract_preview:"工程常用梯度提升方法，适合连接模型选择、调参与可解释性。",reason:"静态示例；引用前需打开来源核验。"}
-      ],
-      topic_research:{
-        intent:"围绕“机器学习”展示五模块调研结构；这是静态示例，不冒充实时结果。",
-        recommended_papers:[],
-        prior_issues:[
-          {issue:"主题过宽：需要收敛到分类、回归、时序预测或异常检测等具体任务。",evidence:["OpenAlex 候选论文元数据","机器学习方法综述"],verification:"需结合具体数据集和任务核验。"},
-          {issue:"常见失败点不是模型不够复杂，而是数据泄露、评估指标选择错误和样本外泛化差。",evidence:["模型选择与评估相关文献"],verification:"需在实验中用切分策略和误差分析验证。"}
-        ],
-        reading_route:[
-          {stage:"第 1 轮：快速建立框架",goal:"先读综述和经典方法，建立监督学习、集成学习、模型选择、泛化误差的基本概念。",papers:["A Few Useful Things to Know about Machine Learning","Random Forests"]},
-          {stage:"第 2 轮：任务化阅读",goal:"选择一个小任务，把论文按数据、特征、模型、指标、局限做矩阵。",papers:["XGBoost: A Scalable Tree Boosting System"]},
-          {stage:"第 3 轮：转成作品集",goal:"做数据清洗、基线模型、调参、解释、误差分析和可点击 Demo。",papers:["候选论文与公开数据集"]}        
-        ],
-        research_plan:[
-          {step:1,title:"收敛主题",actions:["选择分类/回归/预测/异常检测中的一个任务","确定数据集、指标和基线"],output:"任务定义与检索词表"},
-          {step:2,title:"建立可复现实验",actions:["完成数据清洗和特征工程","做 train/valid/test 或交叉验证","跑基础模型和集成模型"],output:"可复现实验报告"},
-          {step:3,title:"补强面试展示",actions:["加入 SHAP/特征重要性","输出错误样本分析","封装成 Demo 或 Notebook"],output:"可展示作品集闭环"}
-        ],
-        network_research_experience:[
-          {title:"实时与承重分离",detail:"OpenAlex/网页线索用于发现方向；真正写进简历或报告的结论需要回到 DOI、论文原文和官方数据源。",evidence:["OpenAlex","Papers with Code","scikit-learn 文档"]},
-          {title:"DeepSeek 的正确角色",detail:"DeepSeek 在服务端基于已返回的论文/网页线索做中文归纳，不直接替代搜索引擎，也不在浏览器暴露 API Key。",evidence:["/api/search 服务端调用"]}
-        ],
-        web_reputation:[
-          {view:"网络讨论容易把机器学习简化为模型名堆叠，但工程落地更看重数据质量、评估设计、可解释性和部署成本。",evidence:["Papers with Code","scikit-learn User Guide"],verification:"网页来源只作背景线索。"}
-        ],
-        caution_points:["不要把静态示例说成实时结果。","不要把 64,183 篇文献说成训练大模型。","引用前必须打开 DOI 或原文核验。"],
-        deepseek_cn_summary:{title:"示例摘要：机器学习调研路线",summary:"机器学习主题应先收敛任务，再用文献矩阵比较方法、数据、指标和局限，最后转化为可复现实验和可展示 Demo。",findings:["先确定任务和数据。","评估要关注样本外泛化。","作品集需要展示完整工程闭环。"],evidence:["静态示例"]},
-        web_research:{search_provider:"static_demo",queries:["machine learning survey","model selection"],results:[{title:"OpenAlex",url:"https://openalex.org/",snippet:"用于发现候选论文和元数据。"},{title:"Papers with Code",url:"https://paperswithcode.com/",snippet:"用于观察任务、数据集和基准。"}]},
-        deepseek_api_note:{role:"服务端中文归纳；此处默认态不调用。",base_url:"https://api.deepseek.com",limitation:"密钥不能放在浏览器代码中。"},
-        limitations:["默认示例不是实时搜索。","实时搜索结果会随 OpenAlex 更新变化。","所有候选结论需人工核验。"]
-      }
-    };
-
-    function esc(value){return String(value ?? "").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));}
-    function asList(value){
-      if(Array.isArray(value)) return value.filter(v=>v!==null&&v!==undefined&&v!=="");
-      if(value===null||value===undefined||value==="") return [];
-      if(typeof value==="object") return Object.values(value).flatMap(v=>Array.isArray(v)?v:[v]).filter(v=>v!==null&&v!==undefined&&v!=="");
-      return [value];
-    }
-    function itemLabel(value){
-      if(value===null||value===undefined) return "";
-      if(typeof value==="string"||typeof value==="number") return String(value);
-      if(typeof value==="object"){
-        const base=value.title||value.paper||value.name||value.issue||value.goal||value.output||value.url||"";
-        const meta=[value.year,value.venue].filter(Boolean).join(" · ");
-        if(base&&meta) return `${base}（${meta}）`;
-        if(base) return String(base);
-        try{return JSON.stringify(value)}catch(e){return "";}
-      }
-      return String(value);
-    }
-    function renderSmallList(items){
-      const arr=asList(items);
-      if(!arr.length) return "";
-      return "<ul>"+arr.map(item=>"<li>"+esc(itemLabel(item))+"</li>").join("")+"</ul>";
-    }
-    function fmtNum(value){
-      const n=Number(value);
-      if(!Number.isFinite(n)) return esc(value ?? "0");
-      return n > 99 ? String(Math.round(n)) : n.toFixed(n < 10 ? 2 : 1);
-    }
-    function showTopicPage(button,pageId){
-      const root=button.closest("[data-topic-root]");
-      if(!root) return;
-      root.querySelectorAll(".topic-tab").forEach(tab=>tab.classList.toggle("is-active",tab===button));
-      root.querySelectorAll(".topic-page").forEach(page=>page.classList.toggle("is-active",page.dataset.topicPage===pageId));
-    }
-    function topicPage(id,title,inner,active=false){
-      return `<section class="topic-page ${active?"is-active":""}" data-topic-page="${esc(id)}"><h3>${esc(title)}</h3>${inner}</section>`;
-    }
-    function renderTopicResearch(data){
-      const topic=data.topic_research||{};
-      const papers=asList(topic.recommended_papers).length?asList(topic.recommended_papers):asList(data.results);
-      const issues=asList(topic.prior_issues);
-      const route=asList(topic.reading_route);
-      const plan=asList(topic.research_plan);
-      const experience=asList(topic.network_research_experience);
-      const reputation=asList(topic.web_reputation);
-      const caution=asList(topic.caution_points);
-      const webResearch=topic.web_research||{};
-      const webSources=asList(webResearch.results);
-      const limits=asList(topic.limitations);
-      const deepseek=topic.deepseek_api_note||{};
-      const brief=topic.deepseek_cn_summary||null;
-      const intro=`<div class="trust-panel"><b>主题调研模式</b><br><span class="subtle">${esc(topic.intent||"开放主题调研草稿，需人工核验。")}</span></div>`;
-      const tabs="<div class=\"topic-tabs\" role=\"tablist\" aria-label=\"主题调研模块\">"+
-        "<button type=\"button\" class=\"topic-tab is-active\" onclick=\"showTopicPage(this, 'papers')\">① 推荐论文</button>"+
-        "<button type=\"button\" class=\"topic-tab\" onclick=\"showTopicPage(this, 'issues')\">② 前人问题</button>"+
-        "<button type=\"button\" class=\"topic-tab\" onclick=\"showTopicPage(this, 'route')\">③ 阅读路线</button>"+
-        "<button type=\"button\" class=\"topic-tab\" onclick=\"showTopicPage(this, 'plan')\">④ 执行计划</button>"+
-        "<button type=\"button\" class=\"topic-tab\" onclick=\"showTopicPage(this, 'web')\">⑤ 网络调研</button>"+
-      "</div>";
-      const papersHtml=papers.slice(0,8).map((row,idx)=>{
-        const authors=Array.isArray(row.authors)?row.authors.slice(0,3).join(", "):"";
-        const year=row.year?` · ${esc(row.year)}`:"";
-        const cites=row.citation_count!==null&&row.citation_count!==undefined?` · cited ${esc(row.citation_count)}`:"";
-        const source=row.doi||row.url||(row.source_or_doi&&row.source_or_doi.value)||"";
-        const href=source?String(source).startsWith("http")?source:"https://doi.org/"+source:"";
-        const sourceLink=href?`<a href="${esc(href)}" target="_blank" rel="noopener">打开来源</a>`:"来源需人工核验";
-        const abstract=row.abstract_preview||"OpenAlex 未返回摘要；不会自动编造摘要，请打开来源人工核验。";
-        return `<article class="search-result"><h4>${idx+1}. ${esc(row.title||"Untitled")}</h4><p class="subtle">${esc(authors)}${year}${cites} · ${sourceLink}</p><p>${esc(abstract)}</p><details class="raw-evidence"><summary>检索证据 / 元数据</summary><pre>${esc(row.reason||"")}</pre></details></article>`;
-      }).join("")||'<div class="empty">没有返回可展示论文；未编造推荐。</div>';
-      const issuesHtml=issues.map(item=>`<article class="search-result"><h4>${esc(item.issue||item.title||"候选问题")}</h4>${renderSmallList(item.evidence||item.evidence_paper_titles)}<p class="subtle">${esc(item.verification||"需人工核验。")}</p></article>`).join("")||'<div class="empty">暂无可归纳问题；需继续阅读原文。</div>';
-      const routeHtml=route.map(item=>`<article class="search-result"><h4>${esc(item.stage||"阶段")}</h4><p>${esc(item.goal||"")}</p>${renderSmallList(item.papers)}</article>`).join("")||'<div class="empty">暂无阅读路线。</div>';
-      const planHtml=plan.map(item=>`<article class="search-result"><h4>第 ${esc(item.step||"")} 步 · ${esc(item.title||"")}</h4>${renderSmallList(item.actions)}<p class="subtle"><b>产出：</b>${esc(item.output||"")}</p></article>`).join("")||'<div class="empty">暂无执行计划。</div>';
-      let webHtml=`<article class="experience-card"><h4>DeepSeek API 在这里的角色</h4><p>${esc(deepseek.role||"服务端中文归纳")}</p><p class="subtle"><b>接口：</b>${esc(deepseek.base_url||"https://api.deepseek.com")}；<b>边界：</b>${esc(deepseek.limitation||"DeepSeek 只基于返回证据总结。")}</p></article>`;
-      if(brief){webHtml+=`<article class="experience-card"><h4>${esc(brief.title||"中文调研摘要")}</h4><p>${esc(brief.summary||"")}</p>${renderSmallList(brief.findings)}<p class="subtle"><b>参考线索：</b>${esc(asList(brief.evidence).slice(0,3).map(itemLabel).join("；")||"OpenAlex / 网页调研结果")}</p></article>`;}
-      if(reputation.length){webHtml+='<h4>网络上的评价 / 讨论</h4>'+reputation.map(item=>`<article class="experience-card"><h4>${esc(item.view||item.title||"网络观点")}</h4>${renderSmallList(item.evidence)}<p class="subtle">${esc(item.verification||"需人工核验。")}</p></article>`).join("");}
-      if(caution.length){webHtml+='<h4>调研注意点</h4>'+renderSmallList(caution);}
-      webHtml+=experience.map(item=>`<article class="experience-card"><h4>${esc(item.title||"调研经验")}</h4><p>${esc(item.detail||"")}</p>${renderSmallList(item.evidence)}</article>`).join("");
-      if(webSources.length){webHtml+='<h4>本轮网页/背景线索</h4>'+webSources.slice(0,8).map(item=>`<article class="search-result"><h4>${esc(item.title||"网页结果")}</h4><p>${esc(item.snippet||"搜索结果未返回摘要片段。")}</p><p class="subtle"><a href="${esc(item.url||"#")}" target="_blank" rel="noopener">${esc(item.url||"")}</a></p></article>`).join("");}
-      else{webHtml+='<article class="empty"><b>网页证据不足</b><br>当前没有稳定返回可引用网页片段，因此不编造网络评价。</article>';}
-      if(limits.length){webHtml+=`<details class="raw-evidence" open><summary>诚实边界</summary>${renderSmallList(limits)}</details>`;}
-      return `<div data-topic-root>${intro}${tabs}`+
-        topicPage("papers","① 推荐先读论文",`<div class="result-list">${papersHtml}</div>`,true)+
-        topicPage("issues","② 前人可能遇到的问题",`<div class="result-list">${issuesHtml}</div>`)+
-        topicPage("route","③ 阅读路线",`<div class="result-list">${routeHtml}</div>`)+
-        topicPage("plan","④ 下一步应该怎么做",`<div class="result-list">${planHtml}</div>`)+
-        topicPage("web","⑤ 网络调研",`<div class="result-list">${webHtml}</div>`)+
-      "</div>";
-    }
-    function setLiveStatus(data,mode){
-      const cost=data.cost||{};
-      const count=asList(data.results).length;
-      document.getElementById("live-status").innerHTML=
-        `<span class="pill ${mode==="static"?"warn":""}">${esc(data.label||"状态")}</span>`+
-        `<span class="pill">结果 ${count}</span>`+
-        `<span class="pill">LLM ${esc(cost.llm_calls??0)}</span>`+
-        `<span class="pill">tokens ${esc(cost.tokens??0)}</span>`+
-        `<span class="pill">耗时 ${esc(cost.latency_s??0)}s</span>`+
-        `<span class="pill">部署 阿里云/Nginx/PM2</span>`;
-    }
-    function renderPayload(data,mode="live"){
-      setLiveStatus(data,mode);
-      const output=document.getElementById("studio-output");
-      if(data.status!=="ok"){
-        output.innerHTML=`<div class="empty"><b>实时检索暂不可用</b><br>${esc(data.reason||data.fallback_reason||"unknown")}<br>未编造任何推荐结果。</div>`;
-        return;
-      }
-      output.innerHTML=renderTopicResearch(data);
-    }
-    function fillExample(button){
-      const input=document.getElementById("studio-search-input");
-      if(input){input.value=button.dataset.question||button.textContent;input.focus();}
-    }
-    async function runStudioSearch(){
-      const input=document.getElementById("studio-search-input");
-      const button=document.getElementById("studio-search-button");
-      const output=document.getElementById("studio-output");
-      const q=(input&&input.value||"").trim();
-      if(!q){output.innerHTML='<div class="empty">请先输入研究主题；系统不会自动编造兜底推荐。</div>';return;}
-      button.disabled=true;
-      button.textContent="检索中...";
-      document.getElementById("live-status").innerHTML='<span class="pill warn">正在调用 /api/search</span><span class="pill">OpenAlex</span><span class="pill">DeepSeek</span><span class="pill">请等待 20-60 秒</span>';
-      output.innerHTML='<div class="loading"><b>正在实时检索论文并生成中文调研草稿</b><br>如果服务不可用，会明确显示错误，不编造推荐。</div>';
-      const controller=new AbortController();
-      const timer=setTimeout(()=>controller.abort(),65000);
-      try{
-        const res=await fetch("/api/search?q="+encodeURIComponent(q),{signal:controller.signal,headers:{accept:"application/json"}});
-        const data=await res.json();
-        renderPayload(data,"live");
-      }catch(error){
-        output.innerHTML=`<div class="error"><b>实时请求失败</b><br>${esc(error.message||error)}<br>未编造任何推荐结果；可以稍后重试或查看默认示例。</div>`;
-      }finally{
-        clearTimeout(timer);
-        button.disabled=false;
-        button.textContent="运行实时搜索";
-      }
-    }
-    renderPayload(DEFAULT_PAYLOAD,"static");
+    const DEFAULT_PAYLOAD={schema_version:"m130.search_response.v1",label:"静态示例：五模块结构预览",status:"ok",enabled:true,verified_load_bearing:false,deterministic:true,query:"RAG 评测",reason:"首屏默认示例，不自动调用实时接口；点击运行实时搜索后替换为真实结果。",decomposition:{subqueries:["retrieval augmented generation evaluation","RAG benchmark","faithfulness evaluation"],criteria:["主题相关","元数据可用","需人工核验"]},cost:{llm_calls:0,tokens:0,latency_s:0},results:[{rank:1,title:"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",year:2020,authors:["Patrick Lewis"],citation_count:0,doi:"10.48550/arXiv.2005.11401",url:"https://arxiv.org/abs/2005.11401",abstract_preview:"RAG 经典基础论文，用于理解检索增强生成的基本框架。",reason:"静态示例；引用前需打开来源核验。"},{rank:2,title:"RAGAS: Automated Evaluation of Retrieval Augmented Generation",year:2023,authors:["RAGAS authors"],citation_count:0,url:"https://arxiv.org/",abstract_preview:"用于理解 RAG 评测中 faithfulness、answer relevance、context precision 等维度。",reason:"静态示例；引用前需打开来源核验。"}],topic_research:{intent:"围绕“RAG 评测”展示五模块调研结构；这是静态示例，不冒充实时结果。",recommended_papers:[],prior_issues:[{issue:"RAG 评测不能只看答案是否流畅，还要区分检索质量、证据支撑和生成忠实度。",evidence:["RAG 基础论文","RAG 评测框架"],verification:"需结合具体数据集和指标核验。"},{issue:"很多系统没有把检索失败和生成幻觉分开评估，导致问题定位困难。",evidence:["RAGAS / 相关评测论文"],verification:"需在实验中记录检索上下文。"}],reading_route:[{stage:"第 1 轮：基础框架",goal:"先读 RAG 基础论文，理解检索器、生成器和知识源如何协作。",papers:["Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"]},{stage:"第 2 轮：评测指标",goal:"重点看 faithfulness、context precision、answer relevancy 和人工核验边界。",papers:["RAGAS / RAG evaluation papers"]},{stage:"第 3 轮：作品集落地",goal:"做一个可点击 Demo：输入问题、展示检索证据、生成答案和指标说明。",papers:["候选论文与开源工具"]}],research_plan:[{step:1,title:"定义评测任务",actions:["选择问答或论文检索场景","确定数据集和基准问题","定义召回与忠实度指标"],output:"任务定义与指标表"},{step:2,title:"搭建可复现链路",actions:["实现检索、重排、生成","保存上下文和引用证据","输出失败案例"],output:"可复现实验报告"},{step:3,title:"封装成作品集",actions:["设计前端结果卡","加入证据展开","记录 API 耗时和 token"],output:"可演示 Demo"}],network_research_experience:[{title:"实时与承重分离",detail:"OpenAlex/网页线索用于发现方向；真正写进报告的结论要回到 DOI 和原文核验。",evidence:["OpenAlex","arXiv"]},{title:"DeepSeek 的正确角色",detail:"DeepSeek 在服务端基于已返回证据做中文归纳，不直接替代搜索引擎。",evidence:["/api/search 服务端调用"]}],web_reputation:[{view:"RAG 评测讨论通常集中在忠实度、检索上下文质量和自动评测可靠性。",evidence:["RAGAS","RAG benchmark"],verification:"网页来源只作背景线索。"}],caution_points:["不要把静态示例说成实时结果。","引用前必须打开 DOI 或原文核验。","自动评测指标不能完全替代人工检查。"],deepseek_cn_summary:{title:"示例摘要：RAG 评测路线",summary:"RAG 评测应把检索、证据和生成三个环节拆开看，先建立指标体系，再做可复现 Demo。",findings:["先区分检索失败和生成幻觉。","展示证据比只展示答案更有说服力。","作品集要保留耗时、token 和失败样例。"],evidence:["静态示例"]},web_research:{search_provider:"static_demo",queries:["RAG evaluation","RAG benchmark"],results:[{title:"OpenAlex",url:"https://openalex.org/",snippet:"用于发现候选论文和元数据。"},{title:"arXiv",url:"https://arxiv.org/",snippet:"用于核验预印本文献。"}]},deepseek_api_note:{role:"服务端中文归纳；默认态不调用。",base_url:"https://api.deepseek.com",limitation:"密钥不能放在浏览器代码中。"},limitations:["默认示例不是实时搜索。","实时搜索结果会随 OpenAlex 更新变化。","所有候选结论需人工核验。"]}};
+    function esc(v){return String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]))}
+    function asList(v){if(Array.isArray(v))return v.filter(x=>x!==null&&x!==undefined&&x!=="");if(v===null||v===undefined||v==="")return[];if(typeof v==="object")return Object.values(v).flatMap(x=>Array.isArray(x)?x:[x]).filter(x=>x!==null&&x!==undefined&&x!=="");return[v]}
+    function label(v){if(v===null||v===undefined)return"";if(typeof v==="string"||typeof v==="number")return String(v);if(typeof v==="object"){const b=v.title||v.paper||v.name||v.issue||v.goal||v.output||v.url||"";const m=[v.year,v.venue].filter(Boolean).join(" · ");if(b&&m)return`${b}（${m}）`;if(b)return String(b);try{return JSON.stringify(v)}catch(e){return""}}return String(v)}
+    function smallList(items){const a=asList(items);return a.length?"<ul>"+a.map(x=>"<li>"+esc(label(x))+"</li>").join("")+"</ul>":""}
+    function showTopicPage(btn,id){const root=btn.closest("[data-topic-root]");if(!root)return;root.querySelectorAll(".topic-tab").forEach(t=>t.classList.toggle("is-active",t===btn));root.querySelectorAll(".topic-page").forEach(p=>p.classList.toggle("is-active",p.dataset.topicPage===id))}
+    function page(id,title,inner,active=false){return`<section class="topic-page ${active?"is-active":""}" data-topic-page="${esc(id)}"><h3>${esc(title)}</h3>${inner}</section>`}
+    function render(data){const topic=data.topic_research||{};const papers=asList(topic.recommended_papers).length?asList(topic.recommended_papers):asList(data.results);const tabs='<div class="topic-tabs" role="tablist"><button class="topic-tab is-active" onclick="showTopicPage(this, \'papers\')">① 推荐论文</button><button class="topic-tab" onclick="showTopicPage(this, \'issues\')">② 前人问题</button><button class="topic-tab" onclick="showTopicPage(this, \'route\')">③ 阅读路线</button><button class="topic-tab" onclick="showTopicPage(this, \'plan\')">④ 执行计划</button><button class="topic-tab" onclick="showTopicPage(this, \'web\')">⑤ 网络调研</button></div>';const paperHtml=papers.slice(0,6).map((r,i)=>{const source=r.doi||r.url||(r.source_or_doi&&r.source_or_doi.value)||"";const href=source?(String(source).startsWith("http")?source:"https://doi.org/"+source):"";return`<article class="item"><h4>${i+1}. ${esc(r.title||"Untitled")}</h4><p class="subtle">${esc(Array.isArray(r.authors)?r.authors.slice(0,3).join(", "):"")}${r.year?" · "+esc(r.year):""}${r.citation_count!==null&&r.citation_count!==undefined?" · cited "+esc(r.citation_count):""}${href?` · <a href="${esc(href)}" target="_blank" rel="noopener">打开来源</a>`:" · 来源需核验"}</p><p>${esc(r.abstract_preview||"OpenAlex 未返回摘要；不会自动编造摘要。")}</p><details class="raw"><summary>检索证据</summary><pre>${esc(r.reason||"")}</pre></details></article>`}).join("")||'<div class="empty">没有返回可展示论文；未编造推荐。</div>';const issues=asList(topic.prior_issues).map(x=>`<article class="item"><h4>${esc(x.issue||x.title||"候选问题")}</h4>${smallList(x.evidence)}<p class="subtle">${esc(x.verification||"需人工核验。")}</p></article>`).join("")||'<div class="empty">暂无可归纳问题。</div>';const route=asList(topic.reading_route).map(x=>`<article class="item"><h4>${esc(x.stage||"阶段")}</h4><p>${esc(x.goal||"")}</p>${smallList(x.papers)}</article>`).join("")||'<div class="empty">暂无阅读路线。</div>';const plan=asList(topic.research_plan).map(x=>`<article class="item"><h4>第 ${esc(x.step||"")} 步 · ${esc(x.title||"")}</h4>${smallList(x.actions)}<p class="subtle"><b>产出：</b>${esc(x.output||"")}</p></article>`).join("")||'<div class="empty">暂无执行计划。</div>';let web=`<article class="item"><h4>DeepSeek 的角色</h4><p>${esc((topic.deepseek_api_note||{}).role||"服务端中文归纳")}</p><p class="subtle">边界：${esc((topic.deepseek_api_note||{}).limitation||"基于返回证据总结")}</p></article>`;if(topic.deepseek_cn_summary)web+=`<article class="item"><h4>${esc(topic.deepseek_cn_summary.title||"中文摘要")}</h4><p>${esc(topic.deepseek_cn_summary.summary||"")}</p>${smallList(topic.deepseek_cn_summary.findings)}</article>`;web+=asList(topic.network_research_experience).map(x=>`<article class="item"><h4>${esc(x.title||"调研经验")}</h4><p>${esc(x.detail||"")}</p>${smallList(x.evidence)}</article>`).join("");web+=asList(topic.caution_points).length?`<article class="item"><h4>注意点</h4>${smallList(topic.caution_points)}</article>`:"";document.getElementById("studio-output").innerHTML=`<div data-topic-root><div class="trust"><b>${esc(topic.intent||"主题调研模式")}</b></div>${tabs}${page("papers","① 推荐论文","<div class='list'>"+paperHtml+"</div>",true)}${page("issues","② 前人问题","<div class='list'>"+issues+"</div>")}${page("route","③ 阅读路线","<div class='list'>"+route+"</div>")}${page("plan","④ 执行计划","<div class='list'>"+plan+"</div>")}${page("web","⑤ 网络调研","<div class='list'>"+web+"</div>")}</div>`;const c=data.cost||{};document.getElementById("live-status").innerHTML=`<span class="pill ${data.deterministic?"warn":""}">${esc(data.label||"状态")}</span><span class="pill">结果 ${asList(data.results).length}</span><span class="pill">LLM ${esc(c.llm_calls??0)}</span><span class="pill">tokens ${esc(c.tokens??0)}</span><span class="pill">耗时 ${esc(c.latency_s??0)}s</span>`}
+    function fillExample(btn){const i=document.getElementById("studio-search-input");i.value=btn.dataset.question||btn.textContent;i.focus()}
+    async function runStudioSearch(){const input=document.getElementById("studio-search-input"),btn=document.getElementById("studio-search-button"),out=document.getElementById("studio-output");const q=(input.value||"").trim();if(!q){out.innerHTML='<div class="empty">请先输入研究主题。</div>';return}btn.disabled=true;btn.textContent="检索中...";document.getElementById("live-status").innerHTML='<span class="pill warn">正在调用 /api/search</span><span class="pill">OpenAlex</span><span class="pill">DeepSeek</span>';out.innerHTML='<div class="loading"><b>正在实时检索并生成中文调研草稿</b><br>失败时会明确显示，不编造推荐。</div>';const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),65000);try{const res=await fetch("/api/search?q="+encodeURIComponent(q),{signal:controller.signal,headers:{accept:"application/json"}});const data=await res.json();if(data.status!=="ok"){out.innerHTML=`<div class="error"><b>实时检索暂不可用</b><br>${esc(data.reason||data.fallback_reason||"unknown")}<br>未编造任何推荐。</div>`;return}render(data)}catch(e){out.innerHTML=`<div class="error"><b>实时请求失败</b><br>${esc(e.message||e)}<br>未编造任何推荐。</div>`}finally{clearTimeout(timer);btn.disabled=false;btn.textContent="运行实时搜索"}}
+    render(DEFAULT_PAYLOAD);
   </script>
 </body>
 </html>
