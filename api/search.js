@@ -1,6 +1,12 @@
 const DEEPSEEK_BASE_URL = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || process.env.LLM_MODEL || "deepseek-v4-flash";
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || process.env.LLM_API_KEY || "";
+const OPENALEX_API_KEY = process.env.OPENALEX_API_KEY || "";
+const OPENALEX_CONTACT_EMAIL = process.env.OPENALEX_CONTACT_EMAIL || process.env.CONTACT_EMAIL || "";
+const OPENALEX_REQUESTS_PER_SEARCH = Math.max(1, Math.min(4, Number(process.env.OPENALEX_REQUESTS_PER_SEARCH || 2)));
+const CACHE_TTL_MS = Math.max(60_000, Number(process.env.SCHOLARLOOP_CACHE_TTL_MS || 30 * 60 * 1000));
+const openAlexCache = new Map();
+const payloadCache = new Map();
 
 function setCors(res) {
   res.setHeader("Access-Control-Allow-Origin", process.env.ALLOWED_ORIGIN || "*");
@@ -18,13 +24,12 @@ function cleanText(value, limit = 800) {
 }
 
 function isCarbonTopic(query) {
-  return /碳|carbon|emission|emissions|ets/i.test(query || "");
+  return /\u78b3|\u78b3\u4ef7|\u78b3\u4ef7\u683c|\u78b3\u5e02\u573a|carbon|emission|emissions|ets/i.test(query || "");
 }
 
 function isMachineLearningTopic(query) {
-  return /机器学习|machine learning|\bml\b|统计学习|监督学习|无监督学习|强化学习/i.test(query || "");
+  return /\u673a\u5668\u5b66\u4e60|machine learning|\bml\b|\u7edf\u8ba1\u5b66\u4e60|\u76d1\u7763\u5b66\u4e60|\u65e0\u76d1\u7763\u5b66\u4e60|\u5f3a\u5316\u5b66\u4e60/i.test(query || "");
 }
-
 function fallbackQueries(query) {
   if (isCarbonTopic(query)) {
     return [
@@ -44,6 +49,28 @@ function fallbackQueries(query) {
     ];
   }
   return [query, `${query} survey`, `${query} review`, `${query} machine learning`, `${query} research challenges`].filter(Boolean);
+}
+
+function cacheGet(cache, key) {
+  const hit = cache.get(key);
+  if (!hit) return null;
+  if (hit.expiresAt <= Date.now()) {
+    cache.delete(key);
+    return null;
+  }
+  return hit.value;
+}
+
+function cacheSet(cache, key, value, ttlMs = CACHE_TTL_MS) {
+  if (cache.size > 200) {
+    const firstKey = cache.keys().next().value;
+    if (firstKey) cache.delete(firstKey);
+  }
+  cache.set(key, { value, expiresAt: Date.now() + ttlMs });
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function topicTokens(value) {
@@ -109,42 +136,79 @@ function relevanceScore(query, work, abstract) {
   return score;
 }
 
-async function fetchOpenAlex(searchQuery, maxResults = 25) {
+async function fetchOpenAlex(searchQuery, maxResults = 16) {
+  const cacheKey = `${searchQuery}::${maxResults}::${OPENALEX_API_KEY ? "key" : "anon"}`;
+  const cached = cacheGet(openAlexCache, cacheKey);
+  if (cached) return cached;
+
   const url = new URL("https://api.openalex.org/works");
   url.searchParams.set("search", searchQuery);
-  url.searchParams.set("per-page", String(maxResults));
+  url.searchParams.set("per-page", String(Math.max(5, Math.min(25, maxResults))));
   url.searchParams.set("sort", "relevance_score:desc");
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 12000);
-  try {
-    const response = await fetch(url, {
-      signal: controller.signal,
-      headers: { "user-agent": "ScholarLoop realtime demo (public portfolio)" },
-    });
-    if (!response.ok) throw new Error(`OpenAlex ${response.status}`);
-    const data = await response.json();
-    return asArray(data.results);
-  } finally {
-    clearTimeout(timer);
-  }
-}
+  url.searchParams.set("select", "id,doi,title,display_name,publication_year,cited_by_count,authorships,primary_location,abstract_inverted_index");
+  if (OPENALEX_API_KEY) url.searchParams.set("api_key", OPENALEX_API_KEY);
+  if (OPENALEX_CONTACT_EMAIL) url.searchParams.set("mailto", OPENALEX_CONTACT_EMAIL);
 
+  const userAgent = OPENALEX_CONTACT_EMAIL
+    ? `ScholarLoop realtime demo (${OPENALEX_CONTACT_EMAIL})`
+    : "ScholarLoop realtime demo (public portfolio)";
+
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 12000);
+    try {
+      const response = await fetch(url, { signal: controller.signal, headers: { "user-agent": userAgent } });
+      if (response.status === 429) {
+        const retryAfter = Number(response.headers.get("retry-after") || 0);
+        const error = new Error("OpenAlex 429");
+        error.status = 429;
+        error.retryAfter = retryAfter;
+        error.rateLimitRemaining = response.headers.get("x-ratelimit-remaining") || "";
+        error.rateLimitLimit = response.headers.get("x-ratelimit-limit") || "";
+        if (attempt === 0 && retryAfter > 0 && retryAfter <= 2) {
+          clearTimeout(timer);
+          await sleep(retryAfter * 1000);
+          continue;
+        }
+        throw error;
+      }
+      if (!response.ok) {
+        const error = new Error(`OpenAlex ${response.status}`);
+        error.status = response.status;
+        throw error;
+      }
+      const data = await response.json();
+      const works = asArray(data.results);
+      cacheSet(openAlexCache, cacheKey, works);
+      return works;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  return [];
+}
 async function paperRows(query, queries, limit = 8) {
   const seen = new Set();
   const candidates = [];
   const used = [];
-  for (const searchQuery of queries.slice(0, 4)) {
-    const works = await fetchOpenAlex(searchQuery, Math.max(limit * 3, 25));
-    used.push(searchQuery);
-    works.forEach((work, localRank) => {
-      const title = cleanText(work?.title || work?.display_name || "Untitled", 500);
-      const key = work?.doi || work?.id || title.toLowerCase();
-      if (!key || seen.has(key)) return;
-      seen.add(key);
-      const abstract = abstractFromInvertedIndex(work?.abstract_inverted_index);
-      const score = relevanceScore(searchQuery, work, abstract) - (localRank + 1) * 0.01;
-      candidates.push({ work, title, abstract, score, searchQuery, localRank: localRank + 1 });
-    });
+  const errors = [];
+  for (const searchQuery of queries.slice(0, OPENALEX_REQUESTS_PER_SEARCH)) {
+    try {
+      const works = await fetchOpenAlex(searchQuery, Math.max(limit * 2, 16));
+      used.push(searchQuery);
+      works.forEach((work, localRank) => {
+        const title = cleanText(work?.title || work?.display_name || "Untitled", 500);
+        const key = work?.doi || work?.id || title.toLowerCase();
+        if (!key || seen.has(key)) return;
+        seen.add(key);
+        const abstract = abstractFromInvertedIndex(work?.abstract_inverted_index);
+        const score = relevanceScore(searchQuery, work, abstract) - (localRank + 1) * 0.01;
+        candidates.push({ work, title, abstract, score, searchQuery, localRank: localRank + 1 });
+      });
+    } catch (error) {
+      errors.push({ query: searchQuery, status: error?.status || error?.name || "error", message: cleanText(error?.message || error, 160) });
+      if (error?.status === 429) break;
+    }
   }
   candidates.sort((a, b) => b.score - a.score || Number(b.work?.cited_by_count || 0) - Number(a.work?.cited_by_count || 0));
   const rows = candidates.slice(0, limit).map((item, index) => {
@@ -170,9 +234,8 @@ async function paperRows(query, queries, limit = 8) {
       source_or_doi: { status: work?.doi || url ? "openalex_metadata" : "manual_review", value: work?.doi || url },
     };
   });
-  return { rows, used };
+  return { rows, used, errors };
 }
-
 function seedWebResearch(query, queries) {
   const results = [];
   if (isCarbonTopic(query)) {
@@ -368,10 +431,70 @@ async function deepseekSummary(query, rows, webResearch) {
   return { summary: parseJsonContent(content), meta: { calls: 1, tokens: data?.usage?.total_tokens || 0, cached: false } };
 }
 
+
+function rateLimitFallbackPayload(query, queries, used, errors, started) {
+  const topicIssue = isCarbonTopic(query)
+    ? "\u78b3\u4ef7\u7814\u7a76\u8981\u5148\u533a\u5206\u5e02\u573a\u673a\u5236\u3001\u653f\u7b56\u51b2\u51fb\u548c\u4ef7\u683c\u6ce2\u52a8\u3002"
+    : isMachineLearningTopic(query)
+      ? "\u673a\u5668\u5b66\u4e60\u4e3b\u9898\u9700\u8981\u5148\u6536\u7a84\u5230\u4e00\u4e2a\u5177\u4f53\u4efb\u52a1\u3002"
+      : "\u5148\u660e\u786e\u4e3b\u9898\u8fb9\u754c\u3001\u6570\u636e\u6765\u6e90\u548c\u8bc4\u4ef7\u6307\u6807\u3002";
+  const webResearch = seedWebResearch(query, used.length ? used : queries);
+  return {
+    schema_version: "m130.search_response.v1",
+    label: "OpenAlex \u9650\u6d41\u4fdd\u62a4\uff1a\u7ed3\u6784\u5316\u56de\u9000",
+    verified_load_bearing: false,
+    deterministic: true,
+    source_contract: "OpenAlex 429 \u6216\u989d\u5ea6\u4e0d\u8db3\u65f6\uff0c\u4e0d\u5c55\u793a\u4f2a\u9020\u8bba\u6587\uff0c\u53ea\u5c55\u793a\u5f85\u6838\u9a8c\u7684\u8c03\u7814\u8def\u7ebf\u3002",
+    status: "ok",
+    enabled: true,
+    reason: "\u5b9e\u65f6\u8bba\u6587\u6e90\u5f53\u524d\u88ab\u9650\u6d41\uff1b\u5df2\u8fd4\u56de\u53ef\u8bfb\u7684\u4e94\u6a21\u5757\u56de\u9000\uff0c\u672a\u7f16\u9020\u8bba\u6587\u63a8\u8350\u3002",
+    fallback_reason: errors.map((e) => `${e.query}: ${e.message || e.status}`).join("; "),
+    query,
+    decomposition: { subqueries: queries, criteria: ["topic scoping", "retry later", "manual verification required"] },
+    results: [],
+    cost: { llm_calls: 0, tokens: 0, latency_s: (Date.now() - started) / 1000 },
+    notice: "\u8fd9\u662f\u9650\u6d41\u4fdd\u62a4\u56de\u9000\uff1a\u7b49 OpenAlex \u6062\u590d\u6216\u914d\u7f6e API key \u540e\u4f1a\u81ea\u52a8\u56de\u5230\u5b9e\u65f6\u8bba\u6587\u7ed3\u679c\u3002",
+    raw_mode: "openalex_rate_limit_fallback",
+    source: { corpus: "OpenAlex temporarily rate-limited", ranker: "structured_fallback" },
+    topic_research: {
+      intent: "\u5f53\u524d OpenAlex \u8fd4\u56de\u9650\u6d41\u6216\u4e34\u65f6\u4e0d\u53ef\u7528\uff0c\u5148\u7ed9\u51fa\u4e0d\u5192\u5145\u5b9e\u65f6\u8bba\u6587\u7684\u8c03\u7814\u6846\u67b6\u3002",
+      searched_queries: used,
+      recommended_papers: [],
+      prior_issues: [
+        { issue: topicIssue, evidence: ["\u6682\u65e0\u5b9e\u65f6\u5019\u9009\u8bba\u6587\uff1aOpenAlex \u5f53\u524d\u9650\u6d41\uff0c\u9875\u9762\u4e0d\u4f1a\u7f16\u9020\u6807\u9898\u3001DOI \u6216\u5f15\u7528\u91cf\u3002"], verification: "OpenAlex 429; retry after quota/rate window or configure OPENALEX_API_KEY." },
+        { issue: "\u4e0d\u628a\u56de\u9000\u5185\u5bb9\u5192\u5145\u4e3a\u5b9e\u65f6\u8bba\u6587\u8bc1\u636e\u3002", evidence: ["/api/search fallback"], verification: "\u9700\u8981\u7a0d\u540e\u91cd\u65b0\u8fd0\u884c\u5b9e\u65f6\u641c\u7d22\u3002" },
+      ],
+      reading_route: [
+        { stage: "\u7b2c 1 \u6b65\uff1a\u6536\u7a84\u4e3b\u9898", goal: "\u628a\u8f93\u5165\u4e3b\u9898\u62c6\u6210 3-5 \u4e2a\u53ef\u68c0\u7d22\u5b50\u95ee\u9898\uff0c\u907f\u514d\u4e00\u6b21\u641c\u5f97\u8fc7\u5bbd\u3002", papers: [] },
+        { stage: "\u7b2c 2 \u6b65\uff1a\u6062\u590d\u5b9e\u65f6\u8bba\u6587\u540e\u6838\u9a8c", goal: "\u7b49 OpenAlex \u6062\u590d\u540e\uff0c\u4f18\u5148\u6838\u9a8c\u6807\u9898\u3001\u5e74\u4efd\u3001DOI\u3001\u6458\u8981\u548c\u6765\u6e90\u94fe\u63a5\u3002", papers: [] },
+        { stage: "\u7b2c 3 \u6b65\uff1a\u5f62\u6210\u8ba1\u5212", goal: "\u628a\u524d\u4eba\u95ee\u9898\u3001\u9605\u8bfb\u8def\u7ebf\u3001\u6267\u884c\u8ba1\u5212\u548c\u7f51\u7edc\u8c03\u7814\u6574\u5408\u6210\u4e00\u5c4f\u53ef\u770b\u7684\u7ed3\u679c\u3002", papers: [] },
+      ],
+      research_plan: [
+        { step: 1, title: "\u5b9a\u4e49\u4e3b\u9898\u8fb9\u754c", actions: ["\u660e\u786e\u7814\u7a76\u5bf9\u8c61", "\u786e\u5b9a\u6570\u636e\u6765\u6e90", "\u5217\u51fa\u8bc4\u4ef7\u6307\u6807"], output: "\u5b50\u95ee\u9898\u6e05\u5355" },
+        { step: 2, title: "\u5efa\u7acb\u5019\u9009\u8bba\u6587\u8868", actions: ["\u7b49\u5f85 OpenAlex \u6062\u590d", "\u8bb0\u5f55 DOI/URL", "\u6807\u6ce8\u6458\u8981\u662f\u5426\u7f3a\u5931"], output: "\u6587\u732e\u6838\u9a8c\u8868" },
+        { step: 3, title: "\u505a\u53ef\u590d\u73b0\u5c0f\u5b9e\u9a8c", actions: ["\u9009\u62e9\u4e00\u4e2a\u5c0f\u5207\u53e3", "\u5b9e\u73b0\u57fa\u7ebf", "\u5c55\u793a\u8bef\u5dee\u548c\u5931\u8d25\u6837\u4f8b"], output: "\u53ef\u6f14\u793a Demo" },
+      ],
+      network_research_experience: [
+        { title: "\u7f51\u7edc\u8c03\u7814\u7ecf\u9a8c", detail: "OpenAlex \u662f\u8bba\u6587\u53d1\u73b0\u6e90\uff1b\u9047\u5230 429 \u65f6\u5e94\u51cf\u5c11\u8bf7\u6c42\u3001\u4f7f\u7528\u7f13\u5b58\u3001\u52a0\u9000\u907f\uff0c\u6700\u597d\u914d\u7f6e OpenAlex API key\u3002", evidence: ["OpenAlex 429", "cache", "backoff"] },
+      ],
+      web_reputation: [],
+      caution_points: ["\u5f53\u524d\u662f\u9650\u6d41\u56de\u9000\uff0c\u4e0d\u662f\u5b9e\u65f6\u8bba\u6587\u7ed3\u679c\u3002", "\u5f15\u7528\u524d\u5fc5\u987b\u6838\u9a8c\u539f\u6587\u3002", "\u5efa\u8bae\u914d\u7f6e OPENALEX_API_KEY \u63d0\u5347\u7a33\u5b9a\u6027\u3002"],
+      deepseek_cn_summary: { title: "\u9650\u6d41\u65f6\u7684\u53ef\u9760\u56de\u9000", summary: "\u5b9e\u65f6\u8bba\u6587\u63a5\u53e3\u6682\u65f6\u4e0d\u53ef\u7528\u65f6\uff0c\u7cfb\u7edf\u4e0d\u5e94\u7f16\u9020\u8bba\u6587\u3002\u66f4\u5408\u9002\u7684\u505a\u6cd5\u662f\u5c55\u793a\u8c03\u7814\u8def\u7ebf\u3001\u95ee\u9898\u5206\u89e3\u548c\u5f85\u6838\u9a8c\u6e05\u5355\u3002", findings: ["\u4e0d\u7f16\u9020\u8bba\u6587", "\u4fdd\u7559\u8c03\u7814\u8def\u7ebf", "\u6062\u590d\u540e\u81ea\u52a8\u56de\u5230\u5b9e\u65f6\u68c0\u7d22"], evidence: ["OpenAlex 429"] },
+      web_research: webResearch,
+      deepseek_api_note: { role: "OpenAlex \u9650\u6d41\u65f6\u4e0d\u989d\u5916\u6d88\u8017 DeepSeek\uff1b\u5b9e\u65f6\u6062\u590d\u540e\u7ee7\u7eed\u670d\u52a1\u7aef\u5f52\u7eb3\u3002", base_url: DEEPSEEK_BASE_URL, limitation: "API key never exposed to browser." },
+      limitations: ["No live papers in fallback mode.", "Retry after OpenAlex quota/rate window.", "Use an OpenAlex API key for production demos."],
+    },
+  };
+}
+
 async function buildPayload(query) {
   const started = Date.now();
   const queries = fallbackQueries(query).slice(0, 6);
-  const { rows, used } = await paperRows(query, queries, 8);
+  const { rows, used, errors } = await paperRows(query, queries, 8);
+  if (!rows.length) {
+    const fallbackErrors = errors.length ? errors : [{ query: queries[0] || query, status: "empty", message: "OpenAlex returned no candidates" }];
+    return rateLimitFallbackPayload(query, queries, used, fallbackErrors, started);
+  }
   const webResearch = seedWebResearch(query, used.length ? used : queries);
   const fallback = fallbackSummary(query, rows, webResearch);
   const { summary: rawSummary, meta } = await deepseekSummary(query, rows, webResearch).catch(() => ({ summary: fallback, meta: { calls: 0, tokens: 0, fallback: true } }));
@@ -421,8 +544,18 @@ module.exports = async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ status: "error", reason: "GET only" });
   const query = cleanText(req.query?.q || req.query?.query || "", 200);
   if (!query) return res.status(400).json({ status: "empty", reason: "Missing q parameter", results: [] });
+  const payloadCacheKey = query.toLowerCase();
+  const cachedPayload = cacheGet(payloadCache, payloadCacheKey);
+  if (cachedPayload) {
+    return res.status(200).json({
+      ...cachedPayload,
+      label: cachedPayload.label.startsWith("缓存：") ? cachedPayload.label : `缓存：${cachedPayload.label}`,
+      cache: { hit: true, ttl_ms: CACHE_TTL_MS },
+    });
+  }
   try {
     const payload = await buildPayload(query);
+    cacheSet(payloadCache, payloadCacheKey, payload, payload.raw_mode === "openalex_rate_limit_fallback" ? 60_000 : CACHE_TTL_MS);
     return res.status(200).json(payload);
   } catch (error) {
     return res.status(200).json({
