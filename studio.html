@@ -121,8 +121,8 @@
     /* ===== final polish ===== */
     *{transition:color .2s,background-color .2s,border-color .2s,box-shadow .2s}
     ::-webkit-scrollbar{width:12px;height:12px}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:999px;border:3px solid var(--bg)}::-webkit-scrollbar-thumb:hover{background:#94a3b8}
-    .topbar{position:sticky;top:14px;z-index:30}
-    .topbar.is-stuck{background:rgba(255,255,255,.92);box-shadow:0 12px 34px rgba(15,23,42,.12)}
+    .topbar{position:static}
+    .topbar.is-stuck{background:rgba(255,255,255,.78);box-shadow:var(--shadow-soft)}
     .badge .dot{animation:dotpulse 2.2s ease-in-out infinite}
     @keyframes dotpulse{0%,100%{box-shadow:0 0 0 0 rgba(37,99,235,.35)}50%{box-shadow:0 0 0 7px rgba(37,99,235,0)}}
     @keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
