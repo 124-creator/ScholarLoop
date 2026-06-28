@@ -484,6 +484,15 @@ def _topic_summary(
             {"stage": "第一轮", "goal": "先读题名/摘要最相关的论文，确认术语和问题边界。", "papers": [row.get("title") for row in rows[:3] if row.get("title")]},
             {"stage": "第二轮", "goal": "按方法、数据、评价指标和局限整理文献矩阵。", "papers": [row.get("title") for row in rows[3:6] if row.get("title")]},
         ],
+        "web_research_digest": {
+            "overview": "本轮基于 DuckDuckGo Lite 实时检索到的公开网页/社区讨论做方向性综述；以下均需打开原文核验，不作为承重证据。",
+            "community_views": [
+                {"point": item.get("title"), "source_title": item.get("title"), "url": item.get("url")}
+                for item in (web_research.get("results") or [])[:4]
+                if item.get("url")
+            ],
+            "conclusion": "建议先打开上述真实来源核验，再结合 OpenAlex 论文与本地语料形成判断；网络讨论仅作线索，不当承重证据。",
+        },
     }
     if not precheck.get("valid") or not rows:
         return fallback, {"cached": True, "usage": {"total_tokens": 0}, "fallback": "no_llm_or_no_rows"}
@@ -501,7 +510,7 @@ def _topic_summary(
         "search_provider": web_research.get("search_provider"),
         "queries": web_research.get("queries") or [],
         "results": [
-            {"title": item.get("title"), "url": item.get("url"), "snippet": item.get("snippet")}
+            {"title": item.get("title"), "url": item.get("url"), "snippet": item.get("snippet"), "is_forum": item.get("is_forum")}
             for item in (web_research.get("results") or [])[:8]
         ],
         "page_excerpts": [
@@ -525,8 +534,10 @@ def _topic_summary(
         "reading_route:[{stage,goal,papers}], "
         "network_research_experience:[{title,detail,evidence}], "
         "web_reputation:[{view,evidence,verification}], "
-        "caution_points:[string]}。\n"
-        "目标是帮助用户先找推荐论文，再总结前人可能遇到的问题，最后给出第一步、第二步等执行路线，并说明网络上对该主题的评价/讨论和注意点。"
+        "caution_points:[string], "
+        "web_research_digest:{overview, community_views:[{point, source_title, url}], conclusion}}。\n"
+        "目标是帮助用户先找推荐论文，再总结前人可能遇到的问题，最后给出第一步、第二步等执行路线，并说明网络上对该主题的评价/讨论和注意点。\n"
+        "其中 web_research_digest 要做厚：overview 写一段较充实的网络调研综述；community_views 必须逐条来自上面“公开网页调研证据”里的真实条目，point 写该来源反映的观点、source_title 与 url 只能用证据里出现过的真实标题/链接（is_forum 为 true 的论坛/社区条目优先选取）；conclusion 给出“该怎么做”的综合结论。严禁编造任何不在所给证据里的链接、论坛帖、指标或市场价格。"
     )
     try:
         summary_cache_basis = query + str([r.get("external_id") for r in rows[:6]]) + str([item.get("url") for item in (web_research.get("results") or [])[:6]])
@@ -535,7 +546,7 @@ def _topic_summary(
             system,
             user,
             {"module": "demo.realtime.topic_summary", "query_sha12": hashlib.sha256(query.encode("utf-8")).hexdigest()[:12]},
-            max_tokens=2400,
+            max_tokens=3200,
         )
         return {
             "prior_issues": list(parsed.get("prior_issues") or fallback["prior_issues"]),
@@ -544,6 +555,7 @@ def _topic_summary(
             "network_research_experience": list(parsed.get("network_research_experience") or fallback["network_research_experience"]),
             "web_reputation": list(parsed.get("web_reputation") or fallback["web_reputation"]),
             "caution_points": list(parsed.get("caution_points") or fallback["caution_points"]),
+            "web_research_digest": parsed.get("web_research_digest") or fallback["web_research_digest"],
         }, meta
     except Exception as exc:
         return fallback | {"summary_exception": type(exc).__name__}, {"cached": True, "usage": {"total_tokens": 0}, "fallback": str(exc)[:160]}
@@ -600,6 +612,7 @@ def run_topic_research_query(query: str, limit: int = 8, timeout_s: float = DEFA
                 "web_reputation": summary.get("web_reputation") or [],
                 "caution_points": summary.get("caution_points") or [],
                 "web_research": web_research,
+                "web_research_digest": summary.get("web_research_digest") or {},
                 "deepseek_api_note": {
                     "role": "生成检索意图，并基于真实网页/论文证据做归纳",
                     "base_url": "https://api.deepseek.com",

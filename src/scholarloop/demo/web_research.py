@@ -19,6 +19,11 @@ SCRIPT_STYLE_RE = re.compile(r"<(script|style|noscript)\b.*?</\1>", re.I | re.S)
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"\s+")
 CARBON_RE = re.compile(r"碳价|碳价格|碳市场|碳交易|碳定价|carbon|emissions?\s+trading|ETS", re.I)
+FORUM_DOMAINS = (
+    "reddit.com", "news.ycombinator.com", "ycombinator.com", "stackexchange.com",
+    "stackoverflow.com", "quora.com", "zhihu.com", "v2ex.com", "segmentfault.com",
+    "csdn.net", "groups.google.com", "discuss.", "forum.", "community.",
+)
 
 
 @dataclass(frozen=True)
@@ -27,9 +32,10 @@ class WebSearchItem:
     url: str
     snippet: str
     source: str = "duckduckgo_lite"
+    is_forum: bool = False
 
-    def to_dict(self) -> dict[str, str]:
-        return {"title": self.title, "url": self.url, "snippet": self.snippet, "source": self.source}
+    def to_dict(self) -> dict[str, Any]:
+        return {"title": self.title, "url": self.url, "snippet": self.snippet, "source": self.source, "is_forum": self.is_forum}
 
 
 def _clean_text(value: str) -> str:
@@ -46,6 +52,16 @@ def _decode_duck_url(url: str) -> str:
     if "uddg" in qs and qs["uddg"]:
         return qs["uddg"][0]
     return urllib.parse.urlunparse(parsed)
+
+
+def _is_forum_url(url: str) -> bool:
+    """按域名判断来源是否为论坛/社区，用于在前端分组展示，不改变抓取本身。"""
+
+    try:
+        host = urllib.parse.urlparse(url or "").netloc.lower()
+    except Exception:
+        return False
+    return any(domain in host for domain in FORUM_DOMAINS)
 
 
 def _cache_path(query: str) -> Path:
@@ -89,7 +105,7 @@ def search_web(query: str, *, max_results: int = 8, force_live: bool = False) ->
         snippet_match = re.search(r"<td class=['\"]result-snippet['\"]>(.*?)</td>", row, re.I | re.S)
         snippet = _clean_text(snippet_match.group(1)) if snippet_match else ""
         if title and href:
-            items.append(WebSearchItem(title=title, url=href, snippet=snippet))
+            items.append(WebSearchItem(title=title, url=href, snippet=snippet, is_forum=_is_forum_url(href)))
         if len(items) >= max_results:
             break
 
@@ -155,24 +171,28 @@ def fetch_page_excerpt(url: str, *, max_chars: int = 900) -> dict[str, Any]:
 
 
 def web_research_for_topic(topic: str, queries: list[str], *, max_results: int = 8) -> dict[str, Any]:
-    search_queries = []
     topic = " ".join((topic or "").split())
+    general_queries: list[str] = []
     if topic:
-        search_queries.append(f"{topic} current discussion risks policy market review")
-    search_queries.extend([f"{query} review outlook risks policy market" for query in queries[:2] if query])
+        general_queries.append(f"{topic} current discussion risks policy market review")
+    general_queries.extend([f"{query} review outlook risks policy market" for query in queries[:2] if query])
+    forum_query = f"{topic} 讨论 经验 reddit hacker news stackexchange zhihu" if topic else ""
+
     seen_query: set[str] = set()
+    seen_url: set[str] = set()
     all_items: list[WebSearchItem] = []
     used_queries: list[str] = []
     errors: list[dict[str, str]] = []
-    seen_url: set[str] = set()
 
-    for query in search_queries:
+    def _run(query: str, cap: int) -> None:
+        if not query:
+            return
         key = query.lower()
         if key in seen_query:
-            continue
+            return
         seen_query.add(key)
         try:
-            items = search_web(query, max_results=max_results)
+            items = search_web(query, max_results=cap)
             used_queries.append(query)
             for item in items:
                 if item.url in seen_url:
@@ -181,22 +201,31 @@ def web_research_for_topic(topic: str, queries: list[str], *, max_results: int =
                 all_items.append(item)
         except Exception as exc:
             errors.append({"query": query, "error_type": type(exc).__name__, "error": str(exc)[:200]})
-        if len(all_items) >= max_results:
+
+    # 先抓社区/论坛，给论坛结果预留名额；再抓通用主题检索补满。
+    _run(forum_query, max(3, max_results // 2))
+    for query in general_queries:
+        if len(all_items) >= max_results + 4:
             break
+        _run(query, max_results)
 
     if not all_items:
         all_items.extend(authoritative_seed_sources(topic)[:max_results])
 
-    page_excerpts = []
-    for item in all_items[:4]:
-        page_excerpts.append(fetch_page_excerpt(item.url))
+    # 论坛/社区来源优先排序，但不丢弃普通来源。
+    forum_items = [item for item in all_items if getattr(item, "is_forum", False)]
+    other_items = [item for item in all_items if not getattr(item, "is_forum", False)]
+    ordered = (forum_items + other_items)[:max_results]
+
+    page_excerpts = [fetch_page_excerpt(item.url) for item in ordered[:4]]
 
     return {
-        "status": "ok" if all_items else "unavailable",
+        "status": "ok" if ordered else "unavailable",
         "search_provider": "duckduckgo_lite",
         "queries": used_queries,
-        "results": [item.to_dict() for item in all_items[:max_results]],
+        "results": [item.to_dict() for item in ordered],
         "page_excerpts": page_excerpts,
+        "forum_count": len(forum_items),
         "errors": errors,
         "notice": "Web research is live and non-verified; search snippets/pages may change and must be cited/checked before use.",
     }

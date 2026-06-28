@@ -463,6 +463,122 @@ function seedWebResearch(query, queries) {
   return { search_provider: "serverless_seed_sources", queries, results, page_excerpts: [] };
 }
 
+const WEB_USER_AGENT = "ScholarLoop-Demo-WebResearch/0.1 (academic demo; no secrets)";
+const WEB_SEARCH_URL = "https://lite.duckduckgo.com/lite/";
+const FORUM_DOMAINS = ["reddit.com", "news.ycombinator.com", "ycombinator.com", "stackexchange.com", "stackoverflow.com", "quora.com", "zhihu.com", "v2ex.com", "segmentfault.com", "csdn.net", "groups.google.com"];
+
+function isForumUrl(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return FORUM_DOMAINS.some((domain) => host.includes(domain));
+  } catch (e) {
+    return false;
+  }
+}
+
+function decodeEntities(text) {
+  return String(text || "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+}
+
+function stripHtml(value) {
+  return decodeEntities(String(value || "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+}
+
+function decodeDuckUrl(href) {
+  try {
+    let raw = decodeEntities(href);
+    if (raw.startsWith("//")) raw = "https:" + raw;
+    const parsed = new URL(raw, "https://lite.duckduckgo.com/");
+    const uddg = parsed.searchParams.get("uddg");
+    return uddg ? uddg : parsed.toString();
+  } catch (e) {
+    return href;
+  }
+}
+
+async function searchDuckDuckGo(query, maxResults, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const url = WEB_SEARCH_URL + "?q=" + encodeURIComponent(query);
+    const response = await fetch(url, { signal: controller.signal, headers: { "user-agent": WEB_USER_AGENT, accept: "text/html" } });
+    if (!response.ok) return [];
+    const body = await response.text();
+    const rows = body.split(/<tr>\s*<td valign="top">/);
+    const items = [];
+    for (const row of rows) {
+      const link = row.match(/<a\b([^>]*result-link[^>]*)>(.*?)<\/a>/is);
+      if (!link) continue;
+      const hrefMatch = link[1].match(/href=["']([^"']+)["']/i);
+      if (!hrefMatch) continue;
+      const title = stripHtml(link[2]);
+      const href = decodeDuckUrl(hrefMatch[1]);
+      const snippetMatch = row.match(/<td class=["']result-snippet["']>(.*?)<\/td>/is);
+      const snippet = snippetMatch ? stripHtml(snippetMatch[1]) : "";
+      if (title && href) items.push({ title, url: href, snippet, is_forum: isForumUrl(href), source: "duckduckgo_lite" });
+      if (items.length >= maxResults) break;
+    }
+    return items;
+  } catch (e) {
+    return [];
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function liveWebResearch(query, queries) {
+  const topic = String(query || "").split(/\s+/).filter(Boolean).join(" ");
+  if (!topic) return null;
+  const generalQueries = [`${topic} current discussion risks policy market review`];
+  asArray(queries).slice(0, 2).forEach((q) => { if (q) generalQueries.push(`${q} review outlook risks policy market`); });
+  const forumQuery = `${topic} 讨论 经验 reddit hacker news stackexchange zhihu`;
+
+  const maxResults = 8;
+  const seenQuery = new Set();
+  const seenUrl = new Set();
+  const allItems = [];
+  const usedQueries = [];
+  const errors = [];
+
+  async function run(q, cap) {
+    if (!q) return;
+    const key = q.toLowerCase();
+    if (seenQuery.has(key)) return;
+    seenQuery.add(key);
+    const items = await searchDuckDuckGo(q, cap, 7000);
+    usedQueries.push(q);
+    for (const item of items) {
+      if (seenUrl.has(item.url)) continue;
+      seenUrl.add(item.url);
+      allItems.push(item);
+    }
+  }
+
+  try {
+    await run(forumQuery, Math.max(3, Math.floor(maxResults / 2)));
+    for (const q of generalQueries) {
+      if (allItems.length >= maxResults + 4) break;
+      await run(q, maxResults);
+    }
+  } catch (e) {
+    errors.push({ error: String((e && e.message) || e).slice(0, 200) });
+  }
+
+  if (!allItems.length) return null;
+  const forumItems = allItems.filter((i) => i.is_forum);
+  const otherItems = allItems.filter((i) => !i.is_forum);
+  const ordered = forumItems.concat(otherItems).slice(0, maxResults);
+  return {
+    search_provider: "duckduckgo_lite",
+    queries: usedQueries,
+    results: ordered,
+    page_excerpts: [],
+    forum_count: forumItems.length,
+    errors,
+    notice: "Web research is live and non-verified; links must be opened and verified before citing.",
+  };
+}
+
 function fallbackSummary(query, rows, webResearch) {
   const titles = rows.slice(0, 6).map((r) => r.title).filter(Boolean);
   const ml = isMachineLearningTopic(query);
@@ -516,6 +632,11 @@ function fallbackSummary(query, rows, webResearch) {
       summary: `围绕“${topic}”的调研应先完成论文发现和问题拆解，再把候选论文按方法、数据、指标和局限做矩阵化比较，最后选择一个可复现的小切口。`,
       findings: ["先读综述和高相关论文，建立术语表。", "用文献矩阵记录数据、方法、指标、局限和可复现性。", "选择一个小改进做实验，避免选题过大。"],
       evidence: webResearch.results.slice(0, 3).map((r) => r.title),
+    },
+    web_research_digest: {
+      overview: "基于本轮检索到的公开网页 / 社区来源做的方向性综述；以下均需打开原文核验，不作为承重证据。",
+      community_views: webResearch.results.slice(0, 4).filter((r) => r.url).map((r) => ({ point: r.title, source_title: r.title, url: r.url })),
+      conclusion: "先打开上述真实来源核验，再结合 OpenAlex 论文与本地语料形成判断；网络 / 社区讨论只作线索，不当承重证据。",
     },
   };
 }
@@ -606,6 +727,17 @@ function sanitizeSummary(summary, fallback) {
       findings: evidenceList(briefSrc.findings),
       evidence: evidenceList(briefSrc.evidence),
     },
+    web_research_digest: (() => {
+      const d = objectValue(src.web_research_digest || fb.web_research_digest);
+      return {
+        overview: cleanText(d.overview || "", 1400),
+        community_views: valueList(d.community_views).map((v) => {
+          const o = objectValue(v);
+          return { point: cleanText(o.point || o.view || o.title || v, 500), source_title: cleanText(o.source_title || o.title || "", 200), url: cleanText(o.url || o.link || "", 400) };
+        }).filter((v) => v.point || v.url).slice(0, 8),
+        conclusion: cleanText(d.conclusion || "", 1000),
+      };
+    })(),
   };
 }
 
@@ -695,18 +827,18 @@ async function deepseekSummary(query, rows, webResearch, queryPlan = null, local
   if (!DEEPSEEK_API_KEY || !rows.length) return { summary: fallbackSummary(query, rows, webResearch), meta: { calls: 0, tokens: 0, cached: false } };
   const paperPayload = rows.slice(0, 8).map((r) => ({ title: r.title, year: r.year, venue: r.venue, citations: r.citation_count, abstract_preview: r.abstract_preview }));
   const localPayload = asArray(localCorpus?.matches).slice(0, 5).map((r) => ({ title: r.title, corpusid: r.corpusid, abstract_preview: r.abstract_preview, profile: r.profile }));
-  const webPayload = (webResearch.results || []).slice(0, 6).map((r) => ({ title: r.title, url: r.url, snippet: r.snippet }));
+  const webPayload = (webResearch.results || []).slice(0, 6).map((r) => ({ title: r.title, url: r.url, snippet: r.snippet, is_forum: r.is_forum }));
   const response = await fetch(`${DEEPSEEK_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: { "content-type": "application/json", authorization: `Bearer ${DEEPSEEK_API_KEY}` },
     body: JSON.stringify({
       model: DEEPSEEK_MODEL,
       temperature: 0.2,
-      max_tokens: 2200,
+      max_tokens: 3200,
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: "你是谨慎的中文科研调研助手。只返回 JSON。只能使用提供的 OpenAlex 论文和网页片段，不得编造论文、URL、指标、价格或网络观点。" },
-        { role: "user", content: `主题: ${query}\n查询规划: ${JSON.stringify(queryPlan || {})}\nOpenAlex 候选论文（主证据）: ${JSON.stringify(paperPayload)}\n本地 64,183 篇 LitSearch 语料补强候选（只作补充/兜底，不替代 OpenAlex 元数据）: ${JSON.stringify(localPayload)}\n网页/背景片段: ${JSON.stringify(webPayload)}\n请用中文返回 JSON，键包括：prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string], deepseek_cn_summary:{title,summary,findings,evidence}.` },
+        { role: "user", content: `主题: ${query}\n查询规划: ${JSON.stringify(queryPlan || {})}\nOpenAlex 候选论文（主证据）: ${JSON.stringify(paperPayload)}\n本地 64,183 篇 LitSearch 语料补强候选（只作补充/兜底，不替代 OpenAlex 元数据）: ${JSON.stringify(localPayload)}\n网页/背景片段: ${JSON.stringify(webPayload)}\n请用中文返回 JSON，键包括：prior_issues:[{issue,evidence,verification}], reading_route:[{stage,goal,papers}], research_plan:[{step,title,actions,output}], network_research_experience:[{title,detail,evidence}], web_reputation:[{view,evidence,verification}], caution_points:[string], deepseek_cn_summary:{title,summary,findings,evidence}, web_research_digest:{overview, community_views:[{point, source_title, url}], conclusion}。其中 web_research_digest 要做厚：overview 写一段较充实的网络调研综述；community_views 必须逐条来自上面“网页/背景片段”里的真实条目，point 写该来源反映的观点、source_title 与 url 只能用片段里出现过的真实标题/链接（is_forum 为 true 的论坛/社区条目优先选取）；conclusion 给出“该怎么做”的综合结论。严禁编造任何不在所给片段里的链接、论坛帖、指标或价格。` },
       ],
     }),
   });
@@ -793,7 +925,8 @@ async function buildPayload(query) {
     };
     return fallbackPayload;
   }
-  const webResearch = seedWebResearch(query, used.length ? used : queries);
+  let webResearch = await liveWebResearch(query, used.length ? used : queries).catch(() => null);
+  if (!webResearch || !(webResearch.results || []).length) webResearch = seedWebResearch(query, used.length ? used : queries);
   const fallback = fallbackSummary(query, rows, webResearch);
   const { summary: rawSummary, meta } = await deepseekSummary(query, rows, webResearch, queryPlan, localCorpus).catch(() => ({ summary: fallback, meta: { calls: 0, tokens: 0, fallback: true } }));
   const summary = sanitizeSummary(rawSummary, fallback);
@@ -829,6 +962,7 @@ async function buildPayload(query) {
       web_reputation: summary.web_reputation || [],
       caution_points: summary.caution_points || [],
       deepseek_cn_summary: summary.deepseek_cn_summary || fallbackSummary(query, rows, webResearch).deepseek_cn_summary,
+      web_research_digest: summary.web_research_digest || fallbackSummary(query, rows, webResearch).web_research_digest,
       web_research: webResearch,
       deepseek_api_note: {
         role: DEEPSEEK_API_KEY ? "Query planner first, then Chinese synthesis from supplied OpenAlex/local/web evidence on the server side" : "Not configured on this deployment",
